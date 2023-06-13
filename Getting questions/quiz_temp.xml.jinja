@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+{{questionid}}
+  <question type="stack">
+    {%- for info in info_template %}
+    {%- if info.tag in ['questiontext','generalfeedback']%}
+    <{{info.tag}} format="moodle_auto_format">{{info.text}}</{{info.tag}}>
+    {%- elif info.tag in ['specificfeedback','prtcorrect','prtpartiallycorrect','prtincorrect']%}
+    <{{info.tag}} format="html">{{info.text}}</{{info.tag}}>
+    {%- else %}
+    <{{info.tag}}>{{info.text or ''}}</{{info.tag}}>
+    {%- endif %}
+    {%- endfor %}
+    {% for inputs in input_template -%}
+    <input>
+    {%- for input in inputs %}
+      <{{input.tag}}>{{input.text or ''}}</{{input.tag}}>
+    {%- endfor %}
+    </input>
+    {% endfor -%}
+    {% for prts in prt_template -%}
+    <prt>
+    {%- for prt in prts %}
+    {%- if loop.first %}
+    {%- for p in prt%}
+      <{{p.tag}}>{{p.text or ''}}</{{p.tag}}>
+    {%- endfor %}
+    {%- else %}
+      <node>
+      {%- for nodes in prt %}
+      {%- if 'feedback' in nodes.tag%}
+        <{{nodes.tag}} format="html">{{nodes.text or ''}}</{{nodes.tag}}>
+      {%- else %}
+        <{{nodes.tag}}>{{nodes.text or ''}}</{{nodes.tag}}>
+      {%- endif %}
+      {%- endfor %}
+      </node>
+    {%- endif %}
+    {%- endfor %}
+    </prt>
+    {% endfor -%}
+    <tags>
+      <tag><text>stamp:{{tag[0].text}}</text></tag>
+      <tag><text>version:{{tag[1].text}}</text></tag>
+    </tags>
+    {% for seed in deployedseed -%}
+    <deployedseed>{{seed.text}}</deployedseed>
+    {% endfor -%}
+    {%- for qtest in qtests %}
+    <qtest>
+      <testcase>{{qtest[0].text}}</testcase>
+    {%- for testinput in qtest[1] %}
+      <testinput>
+        <name>{{testinput[0].text or ''}}</name>
+        <value>{{testinput[1].text or ''}}</value>
+      </testinput>
+    {%- endfor %}
+    {%- for expected in qtest[2] %}
+      <expected>
+    {%- for expect in expected %}
+        <{{expect.tag}}>{{expect.text or ''}}</{{expect.tag}}>
+    {%- endfor %}
+      </expected>
+    {%- endfor %}
+    </qtest>
+    {%- endfor %}
+</question>
+</quiz>
