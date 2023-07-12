@@ -1,4 +1,4 @@
-This is a collection of useful tools for working with XML files of moodle questions, especially of the question type STACK. The work was presented at the International Meeting of the STACK Community 2023, Tallinn, Estonia, 24 - 26 April 2023. See also: (https://zenodo.org/record/8032232)[https://zenodo.org/record/8032232]
+This is a collection of useful tools for working with XML files of moodle questions, especially of the question type STACK. The work was presented at the International Meeting of the STACK Community 2023, Tallinn, Estonia, 24 - 26 April 2023. See also: https://zenodo.org/record/8032232
 
 ## Getting questions
 ### Splitting an exported xml file
