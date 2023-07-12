@@ -25,7 +25,7 @@ This makes it easy to see in a diff which changes in HTML (for example translati
 
 Usage: `python prettfy_cli.py XMLFILE`
 
-## Helping with doing translation work
+## Helping with translation work
 Tools: `xml2csv.py` and `csv2xml.py`.
 
 `xml2csv` opens all (moodle) xml files in the current directory and extracts the translations (`<span class="multilang">`) to csv files. The different strings are in rows, their translations in columns.
