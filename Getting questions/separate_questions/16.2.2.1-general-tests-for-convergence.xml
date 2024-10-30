@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24378">
+        <parent>0</parent>
+        <name>16.2.2.1 General tests for convergence</name>
+        <questiontext>&lt;h4&gt;The alternating series&amp;nbsp;test and ratio test&lt;/h4&gt;&lt;p&gt;The techniques we have applied to analyse the harmonic and the alternating harmonic series are
+&#8216;one-off&#8217;:- they cannot be applied to infinite series in general. However, there are many tests that
+can be used to determine the convergence properties of many infinite series. Of the large number available
+we shall only consider two such tests in detail, namely the ratio test and alternating series test.&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+201012152539+kD6cbD</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609161003+RQ8K3D</version>
+        <hidden>0</hidden>
+        <timecreated>1602516339</timecreated>
+        <timemodified>1623255003</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26566">
+        <parent>0</parent>
+        <name>7.1.2.3 Classify the following matrices</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;&lt;p&gt;Classify the following \(3\times 3\) matrices. If multiple options are valid then choose the most restrictive option.&lt;br&gt;&lt;/p&gt;&lt;p&gt;\(A=\left[\begin{array}{lll}\hfill 1&amp;amp;\hfill 1&amp;amp;\hfill 2\\ \hfill 1&amp;amp;\hfill 1&amp;amp;\hfill 1\\ \hfill 0&amp;amp;\hfill 1&amp;amp;\hfill 3 \end{array}\right]\), \(B=\left[\begin{array}{lll}\hfill 1&amp;amp;\hfill 0&amp;amp;\hfill 0\\ \hfill 1&amp;amp;\hfill 1&amp;amp;\hfill 0\\ \hfill 0&amp;amp;\hfill 1&amp;amp;\hfill 3 \end{array}\right]\), \(C=\left[\begin{array}{lll}\hfill 1&amp;amp;\hfill 2&amp;amp;\hfill 1\\ \hfill 0&amp;amp;\hfill 1&amp;amp;\hfill 4\\ \hfill 0&amp;amp;\hfill 0&amp;amp;\hfill 1 \end{array}\right]\), \(D=\left[\begin{array}{lll}\hfill 1&amp;amp;\hfill 0&amp;amp;\hfill 0\\ \hfill 0&amp;amp;\hfill 3&amp;amp;\hfill 0\\ \hfill 0&amp;amp;\hfill 0&amp;amp;\hfill 2 \end{array}\right]\)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Matrix \(A\) is: [[1]]&lt;/p&gt;&lt;p&gt;Matrix \(B\) is: [[3]]&lt;/p&gt;&lt;p&gt;Matrix \(C\) is: [[4]]&lt;/p&gt;&lt;p&gt;Matrix \(D\) is: [[2]]&lt;br&gt;&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>gapselect</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200619104755+gFQAva</stamp>
+        <version>stack2.maths.ed.ac.uk+200912104250+H943Xd</version>
+        <hidden>0</hidden>
+        <timecreated>1592563675</timecreated>
+        <timemodified>1599907370</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_gapselect_question>
+          <answers>
+            <answer id="10135">
+              <answertext>A Square Matrix</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="10136">
+              <answertext>Diagonal</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="10137">
+              <answertext>Lower triangular</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="10138">
+              <answertext>Upper triangular</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="10139">
+              <answertext>None of the above apply</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+          </answers>
+          <gapselect id="201">
+            <shuffleanswers>0</shuffleanswers>
+            <correctfeedback>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <shownumcorrect>1</shownumcorrect>
+          </gapselect>
+        </plugin_qtype_gapselect_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

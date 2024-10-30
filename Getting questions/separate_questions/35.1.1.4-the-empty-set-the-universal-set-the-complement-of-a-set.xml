@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27177">
+        <parent>0</parent>
+        <name>35.1.1.4 The empty set, the universal set, the complement of a set</name>
+        <questiontext>&lt;h4&gt;The empty set and the universal set&lt;/h4&gt;
+&lt;p&gt;Sometimes a set will contain no elements. For example, suppose we define the set \(K\) by
+\[ K = \{\hbox{all odd numbers which are divisible by 4}\}. \]
+Since there are no odd numbers which are divisible by 4, then \(K\) has no elements. The set with no elements is called the &lt;b&gt;empty set&lt;/b&gt;, and it is denoted by \(\emptyset\).&lt;/p&gt;
+&lt;p&gt;On the other hand, the set containing all the objects of interest in a particular situation is called the &lt;b&gt;universal set&lt;/b&gt;, denoted by \(S\). The precise universal set will depend upon the context. If, for example, we are concerned only with whole numbers then \(S\) will be the set of whole numbers. If we are concerned only with the decimal digits then we take \(S = \{0,1,2,3,4,5,6,7,8,9\}\).&lt;/p&gt;
+&lt;h4&gt;The complement of a set&lt;/h4&gt;
+&lt;p&gt;Given a set \(A\) and a universal set \(S\) we can define a new set, called the &lt;b&gt;complement&lt;/b&gt; of \(A\) and denoted by \(A'\).  The complement of \(A\) contains all the elements of the universal set that are not in \(A\).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Given \(A = \{2,3,7\}\), \(B = \{0,1,2,3,4\}\) and \(S = \{0,1,2,3,4,5,6,7,8,9\}\) state&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt; \(A'\)&lt;/li&gt;
+&lt;li&gt; \(B'\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;The elements of \(A'\) are those which belong to \(S\) but not to \(A\):
+\[A'= \{0,1,4,5,6,8,9\}.\]&lt;/li&gt;
+&lt;li&gt;\(B' = \{5,6,7,8,9\}\).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sometimes a set is described in a mathematical way. Suppose the set \(Q\) contains all numbers which are divisible by 4 and 7. We can write
+\[Q = \{x: x \hbox{ is divisible by 4 and }x \hbox{ is divisible by 7}\}.\]&lt;/p&gt;
+&lt;p&gt;The symbol : stands for 'such that '. We read the above as '\(Q\) is the set comprising all elements \(x\), such that \(x\) is divisible by 4  and  by 7'.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630233931+UJFbQJ</stamp>
+        <version>stack2.maths.ed.ac.uk+200727212507+fr1ZF9</version>
+        <hidden>0</hidden>
+        <timecreated>1593560371</timecreated>
+        <timemodified>1595885107</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

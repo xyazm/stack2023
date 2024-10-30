@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26326 -->
+  <question type="stack">
+    <name>
+				<text>2.3.1.2 Task: Function identification</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Study the graphs shown below. Decide which, if any, are graphs of functions. For those which are, state if the function is one-to-one or many-to-one.</p>
+<p><img src="@@PLUGINFILE@@/block4-fig6-1.svg" alt="Three graphs of potential one-to-many, one-to-one, and many-to-one functions" width="664" height="125" class="img-responsive atto_image_button_text-bottom"></p>
+<p>Graph (a) shows: [[1]]</p>
+<p>Graph (b) shows: [[2]]</p>
+<p>Graph (c) shows: [[3]]<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200616155023+dQriwB</text></tag>
+      <tag><text>version:moodle2.maths.ed.ac.uk+200921112940+3Oprug</text></tag>
+    </tags>
+    
+</question>
+</quiz>

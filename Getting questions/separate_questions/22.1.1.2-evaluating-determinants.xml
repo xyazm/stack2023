@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26776">
+        <parent>0</parent>
+        <name>22.1.1.2 Evaluating determinants</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;span lang="en" class="multilang"&gt;Compute the determinants of
+\[
+\mathrm{A}=\begin{bmatrix}{@a@}&amp;amp;{@a@}&amp;amp;{@c@}\\ {@a@}&amp;amp;{@b@}&amp;amp;{@a@}\\ {@a@}&amp;amp;{@b@}&amp;amp;{@c@}\\ \end{bmatrix}
+\ \text{ and } \
+\mathrm{B}=\begin{bmatrix}{@a@}&amp;amp;0&amp;amp;0&amp;amp;{@c@}\\ {@c@}&amp;amp;0&amp;amp;0&amp;amp;{@a@}\\ {@a@}&amp;amp;0&amp;amp;{@c@}&amp;amp;0\\ 0&amp;amp;{@c@}&amp;amp;{@a@}&amp;amp;{@b@}\\ \end{bmatrix} .
+\]
+&lt;/span&gt;
+&lt;span lang="fi" hidden="" class="multilang"&gt;Laske matriisien
+\[
+\mathrm{A}=\begin{bmatrix}{@a@}&amp;amp;{@a@}&amp;amp;{@c@}\\ {@a@}&amp;amp;{@b@}&amp;amp;{@a@}\\ {@a@}&amp;amp;{@b@}&amp;amp;{@c@}\\ \end{bmatrix}
+\ \text{ ja } \
+\mathrm{B}=\begin{bmatrix}{@a@}&amp;amp;0&amp;amp;0&amp;amp;{@c@}\\ {@c@}&amp;amp;0&amp;amp;0&amp;amp;{@a@}\\ {@a@}&amp;amp;0&amp;amp;{@c@}&amp;amp;0\\ 0&amp;amp;{@c@}&amp;amp;{@a@}&amp;amp;{@b@}\\ \end{bmatrix}
+\]
+determinantit.&lt;/span&gt;
+
+&lt;p&gt;\(\operatorname{det}(\mathrm{A})=\) [[input:SAns1]] [[validation:SAns1]]&lt;/p&gt;
+[[feedback:detA]]
+&lt;p&gt;\(\operatorname{det}(\mathrm{B})=\) [[input:SAns2]] [[validation:SAns2]]&lt;/p&gt;
+[[feedback:detB]]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;span lang="en" class="multilang"&gt;Determinants can be calculated for example by reducing the matrix to an upper triangle matrix or developing the determinant with respect to some row or column. Let's compute \(\det(\mathrm{A})\) by developing it with respect to the first row:
+\begin{eqnarray}
+\det(\mathrm{A})&amp;amp;=&amp;amp;{@a@}\left| \begin{matrix}{@b@} &amp;amp; {@a@} \\ {@b@} &amp;amp; {@c@} \\
+\end{matrix}\right| -{@a@} \left| \begin{matrix}{@a@} &amp;amp; {@a@} \\ {@a@} &amp;amp; {@c@} \\ \end{matrix}\right| +({@c@}) \left| \begin{matrix}{@a@} &amp;amp; {@b@} \\ {@a@} &amp;amp; {@b@} \\ \end{matrix}\right| \nonumber \\
+&amp;amp;=&amp;amp; {@a@}({@b@}\cdot ({@c@})-{@a@}\cdot {@b@})-{@a@}({@a@}\cdot ({@c@})-{@a@}^2)+({@c@})({@a@}\cdot {@b@}-{@a@}\cdot {@b@})\nonumber \\
+&amp;amp;=&amp;amp; {@TAns1@}. \nonumber
+\end{eqnarray}
+
+The column of \(\mathrm{B}\) with the most zeros is the second column, so let's develop the determinant with respect to that:
+\[
+\det(\mathrm{B}) = ({@c@})\left| \begin{matrix} {@a@}&amp;amp;0&amp;amp;{@c@}\\ {@c@}&amp;amp;0&amp;amp;{@a@}\\ {@a@}&amp;amp;{@c@}&amp;amp;0\\ \end{matrix}\right| .
+\]
+Here the \(3\times 3\)-determinant reduces to a \(2\times 2\)-determinant when developed with respect to the second column:
+\[
+\det(\mathrm{B})=({@c@})\cdot (-({@c@}))\left| \begin{matrix} {@a@}&amp;amp;{@c@}\\ {@c@}&amp;amp;{@a@}\\ \end{matrix}\right| = -{@d@}^2({@a@}^2-({@c@})^2)={@TAns2@}.
+\]&lt;/span&gt;
+
+&lt;span lang="fi" hidden="" class="multilang"&gt;&lt;br&gt;&lt;div style="font-weight:bold"&gt;Mallivastaus:&lt;/div&gt;
+Determinantti voidaan laskea joko muuntamalla se yl&#228;kolmiomuotoon tai kehitt&#228;m&#228;ll&#228; sopivan rivin tai sarakkeen mukaan. Lasketaan \(\det(\mathrm{A})\) kehitt&#228;m&#228;ll&#228; 1. rivin mukaan:
+\begin{eqnarray}
+\det(\mathrm{A})&amp;amp;=&amp;amp;{@a@}\left| \begin{matrix}{@b@} &amp;amp; {@a@} \\ {@b@} &amp;amp; {@c@} \\
+\end{matrix}\right| -{@a@} \left| \begin{matrix}{@a@} &amp;amp; {@a@} \\ {@a@} &amp;amp; {@c@} \\ \end{matrix}\right| +({@c@}) \left| \begin{matrix}{@a@} &amp;amp; {@b@} \\ {@a@} &amp;amp; {@b@} \\ \end{matrix}\right| \nonumber \\
+&amp;amp;=&amp;amp; {@a@}({@b@}\cdot ({@c@})-{@a@}\cdot {@b@})-{@a@}({@a@}\cdot ({@c@})-{@a@}^2)+({@c@})({@a@}\cdot {@b@}-{@a@}\cdot {@b@})\nonumber \\
+&amp;amp;=&amp;amp; {@TAns1@}. \nonumber
+\end{eqnarray}
+
+Matriisissa \(\mathrm{B}\) on paljon nollia, eniten niit&#228; on 2. sarakkeessa, joten kehitet&#228;&#228;n determinantti sen mukaan:
+\[
+\det(\mathrm{B}) = ({@c@})\left| \begin{matrix} {@a@}&amp;amp;0&amp;amp;{@c@}\\ {@c@}&amp;amp;0&amp;amp;{@a@}\\ {@a@}&amp;amp;{@c@}&amp;amp;0\\ \end{matrix}\right| .
+\]
+T&#228;ss&#228; \(3\times 3\)-determinantti kannattaa kehitt&#228;&#228; 2. sarakkeen mukaan, jolloin saadaan
+\[
+\det(\mathrm{B})=({@c@})\cdot (-({@c@}))\left| \begin{matrix} {@a@}&amp;amp;{@c@}\\ {@c@}&amp;amp;{@a@}\\ \end{matrix}\right| = -{@d@}^2({@a@}^2-({@c@})^2)={@TAns2@}.
+\]&lt;/span&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200623155205+jBCtK4</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210708113126+tBrkMc</version>
+        <hidden>0</hidden>
+        <timecreated>1592927525</timecreated>
+        <timemodified>1625743886</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18089">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>a : rand([1,3,5])
+b : rand([2,4,6])
+d : rand([2,4])
+c : -d
+TAns1 : b*a*c-a^2*b-a^2*c+a^3
+TAns2 : -a^2*c^2+c^4</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>det(A)={@TAns1@}, det(B)={@TAns2@}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span lang="en" class="multilang"&gt;Your answer is correct!&lt;/span&gt;&lt;span lang="fi" hidden="" class="multilang"&gt;Vastauksesi on oikein!&lt;/span&gt;</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span lang="en" class="multilang"&gt;Your answer is partially correct. Keep trying!&lt;/span&gt;&lt;span lang="fi" hidden="" class="multilang"&gt;Vastauksesi on osittain oikein. Jatka yritt&#228;mist&#228;!&lt;/span&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span lang="en" class="multilang"&gt;Your answer is incorrect.&lt;/span&gt;&lt;span lang="fi" hidden="" class="multilang"&gt;Vastauksesi on v&#228;&#228;rin.&lt;/span&gt;</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42645">
+              <name>SAns1</name>
+              <type>algebraic</type>
+              <tans>TAns1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>[[basic-matrix]],[[basic-algebra]]</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="42646">
+              <name>SAns2</name>
+              <type>algebraic</type>
+              <tans>TAns2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>[[basic-matrix]],[[basic-algebra]]</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36946">
+              <name>detA</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="55284">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>SAns1</sans>
+                  <tans>TAns1</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>detA-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>detA-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36947">
+              <name>detB</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="55285">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>SAns2</sans>
+                  <tans>TAns2</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>detB-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>detB-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41758">
+              <testcase>1</testcase>
+              <timemodified>1592927525</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90947">
+                  <inputname>SAns1</inputname>
+                  <value>TAns1</value>
+                </stackqtestinput>
+                <stackqtestinput id="90948">
+                  <inputname>SAns2</inputname>
+                  <value>TAns2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78763">
+                  <prtname>detA</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>detA-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78764">
+                  <prtname>detB</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>detB-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41760">
+              <testcase>3</testcase>
+              <timemodified>1592927525</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90951">
+                  <inputname>SAns1</inputname>
+                  <value>TAns1+1</value>
+                </stackqtestinput>
+                <stackqtestinput id="90952">
+                  <inputname>SAns2</inputname>
+                  <value>TAns2+1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78767">
+                  <prtname>detA</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>detA-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78768">
+                  <prtname>detB</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>detB-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="176287">
+              <seed>1734624408</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176288">
+              <seed>461796495</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176289">
+              <seed>720053171</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176290">
+              <seed>187592802</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176291">
+              <seed>1869102650</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176292">
+              <seed>142393368</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176293">
+              <seed>2053584684</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176294">
+              <seed>1827697411</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176295">
+              <seed>220258874</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176296">
+              <seed>1946823857</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+          <tag id="78" contextid="10325">
+            <name>fi</name>
+            <rawname>FI</rawname>
+          </tag>
+          <tag id="79" contextid="10325">
+            <name>aalto</name>
+            <rawname>aalto</rawname>
+          </tag>
+          <tag id="81" contextid="10325">
+            <name>matrix algebra</name>
+            <rawname>matrix algebra</rawname>
+          </tag>
+          <tag id="82" contextid="10325">
+            <name>abacus</name>
+            <rawname>Abacus</rawname>
+          </tag>
+          <tag id="117" contextid="10325">
+            <name>ojala</name>
+            <rawname>Ojala</rawname>
+          </tag>
+          <tag id="206" contextid="10325">
+            <name>matriisi</name>
+            <rawname>matriisi</rawname>
+          </tag>
+          <tag id="211" contextid="10325">
+            <name>3x3</name>
+            <rawname>3x3</rawname>
+          </tag>
+          <tag id="212" contextid="10325">
+            <name>determinantti</name>
+            <rawname>determinantti</rawname>
+          </tag>
+          <tag id="213" contextid="10325">
+            <name>4x4</name>
+            <rawname>4x4</rawname>
+          </tag>
+        </tags>
+      </question>
+      
+
+</quiz>

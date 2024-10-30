@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27192">
+        <parent>0</parent>
+        <name>35.1.4.7 Complement of union, intersection</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Given 2 sets \(A, B\) and a universal set \(S\), recall that the complement of \(A\) is denoted by 
+\(A'\) and the complement of \(B\) is denoted by \(B'\). Which of the following statements are true?&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;To see that these 2 statements are true, use definitions of complement, union, intersection. Alternatively, draw Venn diagrams representing the sets in question.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200703224346+YY2Gcr</stamp>
+        <version>stack2.maths.ed.ac.uk+200710174633+pZaujY</version>
+        <hidden>0</hidden>
+        <timecreated>1593816226</timecreated>
+        <timemodified>1594403193</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="10230">
+              <answertext>&lt;p&gt;\( (A \cap B)' = A' \cup B' \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10231">
+              <answertext>&lt;p&gt;\( (A \cup B)' = A' \cap B' \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.5000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10232">
+              <answertext>&lt;p&gt;\( (A \cap B)' = A' \cap B' \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10233">
+              <answertext>&lt;p&gt;\( (A \cup B)' = A' \cup B' \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10234">
+              <answertext>&lt;p&gt;\(A \cup B = A' \cup B'\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="1770">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>none</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>1</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26034 -->
+  <question type="stack">
+    <name>
+				<text>4.5.1.1 Intro</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>d<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200619131211+taO5uI</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200619131211+4h9BBz</text></tag>
+    </tags>
+    
+</question>
+</quiz>

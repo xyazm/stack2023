@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 84682 -->
+  <question type="stack">
+    <name>
+				<text>18.3.3.1 The nature of a stationary point (copy)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>The nature of a stationary point</span><br></h3>
+
+<p>We state, without proof, a relatively simple test to determine the nature of a stationary point, once located. If the surface is very flat near the stationary point then the test will not be sensitive enough to determine the nature of the point. The test
+    is dependent upon the values of the second order derivatives: \(f_{xx}, f_{yy}, f_{xy}\) and also upon a combination of second order derivatives denoted by \(D\) where \( D \equiv\dfrac{\partial^2f}{\partial x^2}\times\dfrac{\partial^2f}{\partial
+    y^2}-\left(\dfrac{\partial^2f}{\partial x\partial y}\right)^2\) , which is also expressible as \(D\equiv f_{xx}f_{yy}- (f_{yx})^2\). The test is as follows:</p>
+<p><br></p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <strong>Test to Determine the Nature of Stationary Points</strong>
+    <p><br></p>
+    <ol>
+        <li>At each stationary point work out the three second order partial derivatives.</li>
+        <p><br></p>
+        <li>Calculate the value of \(D=f_{xx}f_{yy}-(f_{yx})^2\) at each stationary point.Then, test each stationary point in turn:</li>
+        <p><br></p>
+        <li>If \(D&lt;0\) the stationary point is a <strong>saddle point</strong>.
+            <p><br></p>
+            If \(D&gt;0\) and \(\dfrac{\partial^2f}{\partial x^2}&gt;0\) the stationary point is a <strong>local
+minimum</strong>.
+            <p><br></p>
+            If \(D&gt;0\) and \(\dfrac{\partial^2f}{\partial x^2}&lt;0\) the stationary point is a <strong>local
+maximum</strong>.
+            <p><br></p>
+            If \(D=0\) then the test is inconclusive (we need an alternative test).</li>
+    </ol>
+    <p></p>
+</div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>The function: \(f(x,y)=x^4+y^4-36 xy\) has stationary points at \((0,0),\ (-3,-3),\ (3,3).\) Use Key Point 4 to determine the nature of each stationary point.</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p>We have \(\dfrac{\partial f}{\partial x}=f_x=4x^3-36y\) and \(\dfrac{\partial f}{\partial y}=f_y=4y^3-36x\).</p>
+<p>Then \(\dfrac{\partial^2f}{\partial x^2}=f_{xx}=12x^2, \dfrac{\partial^2f}{\partial y^2}=f_{yy}=12y^2\), \(\dfrac{\partial^2f}{\partial x\partial y}=f_{yx}=-36\).</p>
+<p>A tabular presentation is useful for calculating \(D=f_{xx}f_{yy}-(f_{yx})^2\):</p>
+
+<table class="HELM_table">
+    <thead>
+        <tr>
+            <th> </th>
+            <th>Point</th>
+            <th>Point</th>
+            <th>Point</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Derivatives</td>
+            <td>(0, 0)</td>
+            <td>(-3, -3)</td>
+            <td>(3, 3)</td>
+        </tr>
+        <tr>
+            <td>\(f_{xx}\)</td>
+            <td>0</td>
+            <td>108</td>
+            <td>108</td>
+        </tr>
+        <tr>
+            <td>\(f_{yy}\)</td>
+            <td>0</td>
+            <td>108</td>
+            <td>108</td>
+        </tr>
+        <tr>
+            <td>\(f_{xy}\)</td>
+            <td>-36</td>
+            <td>-36</td>
+            <td>-36</td>
+        </tr>
+        <tr>
+            <td><em>D</em></td>
+            <td>&lt;0</td>
+            <td>&gt;0</td>
+            <td>&gt;0</td>
+        </tr>
+    </tbody>
+</table>
+<p></p>
+<p>\((0,0)\) is a saddle point; \((-3,-3)\) and \((3,3)\) are both local minima.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220307124716+fKJ9ni</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220307124716+lCACW6</text></tag>
+    </tags>
+    
+</question>
+</quiz>

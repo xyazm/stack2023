@@ -48,7 +48,7 @@ questions=root.findall(".//question")
 
 for question in questions:
     if question not in root.findall(".//question[@type='category']"):
-        name=question.find('name').find('text').text
+        name=question.find('name').text
         print(name)
         filename=slugify(name)
         path=os.path.join(folder,filename+'.xml')

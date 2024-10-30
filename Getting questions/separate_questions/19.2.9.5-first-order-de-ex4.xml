@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33709">
+        <parent>0</parent>
+        <name>19.2.9.5 First Order DE Ex4</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Solve the equation&lt;/p&gt;
+\[\frac{\mathrm{d}y}{\mathrm{d}t} + \cot t \cdot y = \sin t.\]
+&lt;p&gt;\(y = \) [[input:ans1]] [[validation:ans1]] \(\displaystyle + \frac{C}{\sin t}\) [[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;This is a linear differential equation that is already in standard form.
+    Note that here \(f(t) = \cot t\) and \(g(t) = \sin t\).
+&lt;/p&gt;
+\[\frac{\mathrm{d}y}{\mathrm{d}t} + \cot t \cdot y = \sin t.\]
+&lt;p&gt;We use the key point to find the integrating factor:&lt;/p&gt;
+\[\begin{aligned}
+    \text{I.F.} &amp;amp;= \exp \left[ \int \cot t \,\mathrm{d}t \right] \\
+                &amp;amp;= \exp \left[ \int \frac{\cos t}{\sin t} \,\mathrm{d}t \right] \\
+                &amp;amp;= \exp [ \ln (\sin t) ] \\
+                &amp;amp;= \sin t
+\end{aligned}\]
+&lt;p&gt;Next we transform the equation into exact form by multiplying both sides with the
+    integrating factor. It becomes:
+&lt;/p&gt;
+\[\sin t \cdot \frac{\mathrm{d}y}{\mathrm{d}t} + \cos t \cdot y = \sin^2 t\]
+&lt;p&gt;Note that the left-hand side is the derivative of \(\sin t \cdot y\) with respect to \(t\).
+    Our equation then becomes:
+&lt;/p&gt;
+\[\frac{\mathrm{d}}{\mathrm{d}t} \left( \sin t \cdot y \right) = \sin^2 t\]
+&lt;p&gt;Therefore, we can find an expression for \(\sin t \cdot y\) by integrating the right-hand side.
+    The result is:
+&lt;/p&gt;
+\[\begin{aligned}
+    \sin t \cdot y &amp;amp;= \int \sin^2 t \,\mathrm{d}t \\
+                   &amp;amp;= \int (1 - \cos^2 t) \,\mathrm{d}t \\
+                   &amp;amp;= \int \left(1 - \frac{1 + \cos(2t)}{2}\right) \,\mathrm{d}t \\
+                   &amp;amp;= \int \left(\frac{1}{2} - \frac{\cos(2t)}{2}\right) \,\mathrm{d}t \\
+                   &amp;amp;= \frac{t}{2} - \frac{\sin(2t)}{4} + C
+\end{aligned}\]
+&lt;p&gt;Which then gives the following general solution:&lt;/p&gt;
+\[y = \frac{t}{2\sin t} - \frac{\sin(2t)}{4\sin t} + \frac{C}{\sin t}\]</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210617112326+WOYZeH</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210617112538+VBgdYB</version>
+        <hidden>0</hidden>
+        <timecreated>1623929006</timecreated>
+        <timemodified>1623929138</timemodified>
+        <createdby>2661</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23423">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>ta: t / (2 * sin(t)) - sin(2 * t) / (4 * sin(t))
+
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(y' \cot t \cdot y = \sin t \implies y = {@ta@} + \frac{C}{\sin t}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54067">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46390">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71316">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54186">
+              <testcase>1</testcase>
+              <timemodified>1623929117</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117255">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100196">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54187">
+              <testcase>2</testcase>
+              <timemodified>1623929131</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117256">
+                  <inputname>ans1</inputname>
+                  <value>ta+1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100197">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="234954">
+              <seed>1637073094</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234955">
+              <seed>321574568</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234956">
+              <seed>257950607</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234957">
+              <seed>54555136</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234958">
+              <seed>2109550951</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234959">
+              <seed>1567919944</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234960">
+              <seed>1910671046</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234961">
+              <seed>1468801973</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234962">
+              <seed>1907207895</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

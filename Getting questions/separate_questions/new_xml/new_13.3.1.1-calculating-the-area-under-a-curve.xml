@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24520 -->
+  <question type="stack">
+    <name>
+				<text>13.3.1.1 Calculating the area under a curve</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Calculating the area under a curve</span><br></h3>
+
+<p>Let us denote the area under \(y=f(x)\) between a fixed point \(a\) and a variable point \(x\) by \(A(x)\):</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/13.3%20area%20under%20a%20curve.svg" alt="Area under a generic function " width="303" height="119" class="img-responsive atto_image_button_text-bottom"><br></p>
+
+<p>\(A(x)\) is clearly a function of \(x\) since as the upper limit changes so does the area. How does the area change if we change the upper limit by a very small amount \(\delta x\)? See the figure below.</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/13.3.1.1%20approximation%20%281%29.svg" alt="Area under a generic function ii" width="388" height="116" class="img-responsive atto_image_button_text-bottom"><br></p><p><br></p>
+
+<p>To a good approximation the change in the area is: \(A(x+\delta x)-A(x)\approx f(x)\delta x\) [This is because the shaded area is approximately a rectangle with base \(\delta x\) and height \(f(x)\).] <br>This approximation gets better and better as \(\delta x\) gets smaller and smaller. <br>Rearranging gives: \(f(x)\approx \dfrac{A(x+\delta x)-A(x)}{\delta x}\)<br> Clearly, in the limit as \(\delta x\to 0\) we have \(f(x)={\displaystyle\lim_{\delta x\to 0}} \dfrac{A(x+\delta x)-A(x)}{\delta x}\) <br>But this limit on the right-hand side is the <strong>derivative</strong> of \(A(x)\) with respect to \(x\) so \(f(x)=\dfrac{d A(x)}{d x}\) <br>Thus \(A(x)\) is an <strong>indefinite integral</strong> of \(f(x)\) and we can therefore write: \(A(x)={\displaystyle\int f(x)\ \mathrm{d}x}\) <br>Now the area under the curve from \(a\) to \(b\) is clearly \(A(b)-A(a)\).</p>
+
+<p>But remembering our shorthand notation for this difference, introduced in the last Section we have, finally \(A(b)-A(a)\equiv\left[\phantom{\dfrac{1}{1}}\!\!\!A(x)\right]_a^b={\displaystyle\int_a^bf(x)\ \mathrm{d} x}\) <br>We conclude that the area under the curve \(y=f(x)\) from \(a\) to \(b\) is given by the definite integral of \(f(x)\) from \(a\) to \(b\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200730093838+MuhbRh</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210604091825+SRGP9n</text></tag>
+    </tags>
+    
+</question>
+</quiz>

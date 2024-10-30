@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25721">
+        <parent>0</parent>
+        <name>2.4.2.2 Quadratic continuity</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Study the graphs of the functions \(y=x^2\) and \(y=-x^2\), \(x \in \mathbb{R}\) and fill in the blanks:&lt;/p&gt;&lt;p&gt;\(y=x^2\) is [[1]] and&lt;/p&gt;&lt;p&gt;\(y=-x^2\) is [[1]].&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Note: after checking the answer you will need to drag the items out of the boxes before allowing you to drag back in for the next attempt.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>ddwtos</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618160812+hj63MU</stamp>
+        <version>moodle2.maths.ed.ac.uk+200929092935+TvHLGB</version>
+        <hidden>0</hidden>
+        <timecreated>1592496492</timecreated>
+        <timemodified>1601371775</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_ddwtos_question>
+          <answers>
+            <answer id="9934">
+              <answertext>continuous</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>O:8:"stdClass":2:{s:9:"draggroup";s:1:"1";s:8:"infinite";b:1;}</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9935">
+              <answertext>discontinuous</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>O:8:"stdClass":2:{s:9:"draggroup";s:1:"1";s:8:"infinite";b:1;}</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9936">
+              <answertext>neither continuous nor discontinuous</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>O:8:"stdClass":2:{s:9:"draggroup";s:1:"1";s:8:"infinite";b:1;}</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9937">
+              <answertext>continuous at all but two points</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>O:8:"stdClass":2:{s:9:"draggroup";s:1:"1";s:8:"infinite";b:1;}</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+          </answers>
+          <ddwtos id="36">
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <shownumcorrect>1</shownumcorrect>
+          </ddwtos>
+        </plugin_qtype_ddwtos_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

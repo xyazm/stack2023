@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26728 -->
+  <question type="stack">
+    <name>
+				<text>10.1.1.9 What is a Complex Number?</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4 class="HELM_example">Example</h4>
+<p>If <span class="math inline">\(z=3-2i\)</span> then find \(\textrm{Re}(z)\), \(\textrm{Im}(z)\) and <span class="math inline">\(|z|\)</span>.</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Here \(\textrm{Re}(z)=3\), \(\textrm{Im}(z)=-2\) and <span class="math inline">\(|z|=\sqrt{3^2+(-2)^2}=\sqrt{13}\)</span>.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200625155843+RC7kzx</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210706164652+CfVdBo</text></tag>
+    </tags>
+    
+</question>
+</quiz>

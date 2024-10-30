@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26600">
+        <parent>0</parent>
+        <name>(not in quiz) 8.3.2.3 Remarks after describing Gauss Elimination</name>
+        <questiontext>&lt;p&gt;You should always check your solution in the original equations to ensure that the equations balance.&lt;/p&gt;
+&lt;p&gt;Again we emphasise that we chose a particular set of procedures in Stage 1. This was chosen mainly to keep the arithmetic simple by delaying the introduction of fractions. Sometimes we are courageous and take fewer, harder steps.&lt;/p&gt;
+&lt;p&gt;An important point to note is that when in Stage 2 we wrote &lt;span class="math inline"&gt;\(R2-2R1\)&lt;/span&gt; against row 2; what we meant is that row 2 is replaced by the combination (row &lt;span class="math inline"&gt;\(2)-2\times\)&lt;/span&gt;(row 1).&lt;/p&gt;
+&lt;p&gt;In general, the operation &lt;span class="math display"&gt;\[\text{ row } i-\alpha \times \text{ row }\ j\]&lt;/span&gt; means replace &lt;span&gt;&lt;strong&gt;row &lt;span class="math inline"&gt;\(i\)&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt; by the combination &lt;span class="math display"&gt;\[\text{ row } i-\alpha \times \text{ row } j.\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630111956+f2DT3f</stamp>
+        <version>stack2.maths.ed.ac.uk+200813095951+FUByef</version>
+        <hidden>0</hidden>
+        <timecreated>1593515996</timecreated>
+        <timemodified>1597312791</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

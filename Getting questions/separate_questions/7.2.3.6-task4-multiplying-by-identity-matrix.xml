@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26219">
+        <parent>0</parent>
+        <name>7.2.3.6 Task4: Multiplying by identity matrix</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find the product \(AB\) where \(A = {@matrixa@}\) and \(B={@matrixb@}\).&lt;/p&gt;
+&lt;div&gt;\(AB=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the matrices \(A = {@matrixa@}\) and \(B = {@matrixb@}\) and are asked to compute their product \(AB\).&lt;/p&gt;
+\[AB = {@CC@} = {@DD@}\]</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200619141006+23JPec</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702094357+rhmGrS</version>
+        <hidden>0</hidden>
+        <timecreated>1592575806</timecreated>
+        <timemodified>1625219037</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17776">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+matrixb: matrix([1,0],[0,1]);
+matrixb: ev(matrixb,simp);
+
+ta1: matrixa;
+ta2: matrixa;
+
+AA: matrixa;
+BBT: transpose(matrixb);
+CC: zeromatrix (first(matrix_size(AA)), first(matrix_size(BBT)));
+SS: for a:1 thru first(matrix_size(AA)) do for b:1 thru first(matrix_size(BBT)) do CC[ev(a,simp),ev(b,simp)]:apply("+",zip_with("*",AA[ev(a,simp)],BBT[ev(b,simp)]));
+DD: ev(CC,simp);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\({\bf A} = {@matrixa@}, {\bf B} = {@matrixb@}, {\bf A} {\bf B} ={@ta1@}\)</questionnote>
+            <questionsimplify>0</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41762">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>ta1</tans>
+              <boxsize>1</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36193">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54149">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41023">
+              <testcase>1</testcase>
+              <timemodified>1625218973</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="118188">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100780">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41024">
+              <testcase>2</testcase>
+              <timemodified>1625219007</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="118190">
+                  <inputname>ans1</inputname>
+                  <value>ev(matrixb+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100782">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="235538">
+              <seed>1269467708</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235539">
+              <seed>211888483</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235540">
+              <seed>1393842159</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235541">
+              <seed>41338697</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235542">
+              <seed>1841216690</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26702">
+        <parent>0</parent>
+        <name>10.1.2.4  Multiplying one complex number by another</name>
+        <questiontext>&lt;h3&gt; Multiplying complex numbers &lt;/h3&gt;
+&lt;p&gt;In multiplication we proceed using an obvious approach: again consider any two complex numbers &lt;span class="math inline"&gt;\(z=a+i b\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(w=c+i d\)&lt;/span&gt;. Then &lt;span class="math display"&gt;\[\begin{aligned}
+zw&amp;amp;=(a+i b)(c+i d)\\
+&amp;amp;=ac+aid+ibc+i^2bd\qquad\end{aligned}\]&lt;/span&gt; obtained in the usual way by multiplying all the terms in one bracket by all the terms in the other bracket. Now we use the fundamental relation &lt;span class="math inline"&gt;\(i^2=-1\)&lt;/span&gt; so that &lt;span class="math display"&gt;\[\begin{aligned}
+zw&amp;amp;=ac+ai d+i bc-bd\\
+&amp;amp;=ac-bd+i(ad+bc)\qquad\end{aligned}\]&lt;/span&gt; where we have re-grouped terms with the &#8216;&lt;span class="math inline"&gt;\(i\)&lt;/span&gt;&#8217; symbol and terms without the &#8216;&lt;span class="math inline"&gt;\(i\)&lt;/span&gt;&#8217; symbol separately. These are the real and imaginary parts of the product &lt;span class="math inline"&gt;\(zw\)&lt;/span&gt; respectively. A numerical example will confirm the approach. If &lt;span class="math inline"&gt;\(z=2-3i\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(w=-4+2i\)&lt;/span&gt; then &lt;span class="math display"&gt;\[\begin{aligned}
+zw&amp;amp;=(2-3i)(-4+2i)\\
+&amp;amp;=2(-4)+2(2i)-3i(-4)-3i(2i)\qquad\\
+&amp;amp;=-8+4i+12i-6i^2\\
+&amp;amp;=-8+16i+6\\
+&amp;amp;=-2+16i\end{aligned}\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617120506+Olrq5H</stamp>
+        <version>stack2.maths.ed.ac.uk+200914122208+y3tP1p</version>
+        <hidden>0</hidden>
+        <timecreated>1592395506</timecreated>
+        <timemodified>1600086128</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

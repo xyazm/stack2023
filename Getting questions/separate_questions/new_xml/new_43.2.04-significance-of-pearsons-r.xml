@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62173 -->
+  <question type="stack">
+    <name>
+				<text>43.2.04 Significance of Pearson’s r</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>The significance of Pearson’s \(r\)</h3>
+
+In order to test the significance of a calculated value of \(r\) we assume that both \(x\) and \(y\) are normally distributed and set up the hypotheses:
+\[ H_0: \rho = 0 \hspace{2cm} H_1: \rho \neq 0 \]
+where \(\rho\) is the `true' value of the population correlation. If the assumption of normality is false the test must not be used. We know that the value of \(-1 \leq r \leq 1\) and we wish to know whether our correlation coefficient is significantly different to zero.
+
+<p>A generalisation of the third law of indices states:</p>
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p><b>Significance of Pearson's \(r\)</b></p>
+
+<p></p> It can be shown that the test statistic 
+\[ r_{test} = \dfrac{\lvert r \rvert \sqrt{n - 2}}{\sqrt{1-r^2}} \]
+calculated from a sample of \(n\) pairs of values, follows a \(t\)-distribution with \(n-2\) degrees of freedom.
+</div>
+Note that many authors simply miss out the modulus sign and ignore the sign of \(r\) should it be
+negative. The test statistic is then written
+\[ r_{test} = \dfrac{r  \sqrt{n - 2}}{\sqrt{1-r^2}} \]
+and critical values depending on the level of significance required are read off from \(t\)-tables in the usual way. A copy of \(t\)-distribution tables is included at the end of this Section (Table 2).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200708184901+uNCmG8</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200708184922+9O9oHR</text></tag>
+    </tags>
+    
+</question>
+</quiz>

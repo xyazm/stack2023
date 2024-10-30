@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26191 -->
+  <question type="stack">
+    <name>
+				<text>5.3.2.1 Oscillating functions: modelling tides</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p></p>
+<h4>Oscillating functions: modelling tides</h4>
+<p>We consider how the function</p>
+<p>\[\qquad h = 3.2 \sin (2.7t + 8.5)\]</p>
+<p>might be used to model the rise and fall of the tide in a harbour. The figure below shows a graph of this function for \((0\ge t \ge 5)\).<br></p>
+<p><img src="@@PLUGINFILE@@/5-3-fig-2-height_vs_time.svg" alt="" width="324" height="187" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p>We consider some aspects of this graph and model. It seems reasonable to suppose that the tide creates an oscillation of the water level in the harbour of \(h\)m about some mean value represented on the graph by \(h = 0\). There seems to be a low tide near \(t = 1\) and another low tide just after \(t = 3\). Since we expect intervals of 12 to 14 hours between low tides around the U.K., this suggests that time in this graph is specified in 6-hour intervals.</p>
+<p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200810085237+7XoI69</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220214123538+ho3RNm</text></tag>
+    </tags>
+    
+</question>
+</quiz>

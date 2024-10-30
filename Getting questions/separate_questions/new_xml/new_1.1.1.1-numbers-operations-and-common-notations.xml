@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 37690 -->
+  <question type="stack">
+    <name>
+				<text>1.1.1.1 Numbers, operations and common notations</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span style="color: inherit; font-family: inherit;">Numbers, Operations and Common Notations</span><br></h3>
+<p>A knowledge of the properties of numbers is fundamental to the study of engineering mathematics. Students who possess this knowledge will be well-prepared for the study of algebra. Much of the terminology used throughout the rest of this Section can be most easily illustrated by applying it to numbers. For this reason we strongly recommend that you work through this Section even if the material is familiar.</p>
+<h5><span style="color: inherit; font-family: inherit;">The number line</span><br></h5>
+<p>A useful way of picturing numbers is to use a <strong>number line</strong>. Figure 1 shows part of this line. Positive numbers are represented on the right-hand side of this line, negative numbers on the left-hand side. Any whole or fractional number can be represented by a point on this line which is also called the <strong>real number line</strong>, or simply the <strong>real line</strong>. Study Figure 1 and note that a minus sign is always used to indicate that a number is negative, whereas the use of a plus sign is optional when describing positive numbers.</p>
+<p>The line extends indefinitely both to the left and to the right. Mathematically we say that the line extends from minus infinity to plus infinity. The symbol for <strong>infinity</strong> is \(\infty\).</p>
+<br>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/1-1-fig-1.svg" alt="Numbers can be represented on a number line" width="591" height="57" class="img-responsive atto_image_button_text-bottom">
+<figcaption>Numbers can be represented on a number line</figcaption>
+</figure>
+<p>The symbol \(&gt;\) means ‘greater than’; for example \(6&gt;4\). Given any number, all numbers to the right of it on the number line are greater than the given number. The symbol \(&lt;\) means ‘less than’; for example \(-3&lt;19\). We also use the symbols \(\ge\) meaning ‘greater than or equal to’ and \(\le\) meaning ‘less than or equal to’. For example, \(7\le 10\) and \(7\le 7\) are both true statements.</p>
+<p>Sometimes we are interested in only a small section, or <strong>interval</strong>, of the real line. We write \([1,3]\) to denote all the real numbers between 1 and 3 inclusive, that is 1 and 3 are included in the interval. Therefore the interval \([1,3]\) consists of all real numbers \(x\), such that \(1\le x\le 3\). The square brackets, \([,]\) mean that the end-points are included in the interval and such an interval is said to be <strong>closed</strong>. We write \((1,3)\) to represent all real numbers between 1 and 3, but not including the end-points. Thus \((1,3)\) means all real numbers \(x\) such that \(1&lt;x&lt;3\), and such an interval is said to be <strong>open</strong>. An interval may be closed at one end and open at the other. For example, \((1,3]\) consists of all numbers \(x\) such that \(1&lt;x\le 3\). Intervals can be represented on a number line. A <strong>closed end-point</strong> is denoted by \(\bullet\); an <strong>open end-point</strong> is denoted by \(\circ\). The intervals \((-6,-4)\), \([-1,2]\) and \((3,4]\) are illustrated in Figure 2.</p>
+<br>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/1-1-fig-2.svg" alt="The intervals (−6, −4), [−1, 2] and (3, 4] depicted on the real line" width="591" height="34" class="img-responsive atto_image_button_text-bottom">
+<figcaption>The intervals \((-6,-4)\), \([-1,2]\) and \((3,4]\) depicted on the real line</figcaption>
+</figure>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210831143950+TEYsHC</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210831163633+ZsmlnF</text></tag>
+    </tags>
+    
+</question>
+</quiz>

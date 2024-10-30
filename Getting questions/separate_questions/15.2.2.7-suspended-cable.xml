@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24573">
+        <parent>0</parent>
+        <name>15.2.2.7 Suspended cable</name>
+        <questiontext>&lt;h4&gt;Application: Suspended cable&lt;/h4&gt;
+&lt;h5&gt;Introduction&lt;/h5&gt;
+&lt;p&gt;A cable of constant line density is suspended between two vertical poles of equal height such that it takes the shape of a curve, \(y = 6 \cosh(\dfrac{x}{6})\). The origin of the curve is a point mid-way between the feet of the poles and \(y\) is the height
+    above the ground. If the cable is 600 &lt;b&gt;metres&lt;/b&gt; long show that the distance between the poles is 55 &lt;b&gt;metres&lt;/b&gt; to the nearest metre. Find the height of the centre of mass of the cable above the ground to the nearest metre.&lt;/p&gt;
+&lt;h5&gt;Mathematical statement of the problem&amp;nbsp;&lt;/h5&gt;
+&lt;p&gt;We can draw a picture of the cable, as below, where \(A\) and \(B\) denote the end points.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/15-2-fig-7-Chain.svg" alt="" width="400" height="283" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/figure&gt;
+&lt;p&gt;For the first part of this problem we use the result that the distance along a curve \(y = f(x)\) from \(x = a\) to \(x = b\) is given by&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;\(\displaystyle{s = \int_{a}^{b} \sqrt{ 1 + \left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)^2 } \mathrm{d}x}\),&lt;/p&gt;
+&lt;p&gt;where in this case we are given \(y = 6 \cosh\left(\dfrac{x}{6}\right)\), and therefore \(\dfrac{\mathrm{d}y}{\mathrm{d}x} = \sinh\left(\dfrac{x}{6}\right)\). If we take the distance between the poles to be \(2d\) then the values of \(x\) in this integration go from \(-d\)
+    to \(+d\). So we need to find \(d\) such that:&lt;/p&gt;
+&lt;p&gt;\(\displaystyle{600 = \int_{-d}^{+d} \sqrt{1 + \left(\sinh\left(\dfrac{x}{6}\right)\right)^2} \mathrm{d}x}.\)&lt;/p&gt;
+&lt;p&gt;For the&amp;nbsp;second part of this problem we need to find the centre of mass of the cable. From the symmetry of the problem we know that the centre of mass must lie on the \(x\)-axis. To find the height of the centre of mass we need to take each section
+    of the cable and consider the moment about the
+    &lt;i&gt;x&lt;/i&gt;-axis through the origin. A section of the cable has mass \(\rho \delta s\) where \(\rho\) is the line density of the cable and \(\delta s\) is the length of a small section of the cable.&lt;/p&gt;
+&lt;p&gt;so the moment about the \(x\)-axis will be \(\displaystyle{\sum_{x=-d}^{x=+d} \rho y \delta s}\),&lt;/p&gt;
+&lt;p&gt;taking the limit as \(\delta s \to 0\) and using the fact that \(\delta s = \sqrt{1 + \left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)^2} \delta x\).&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;We get that the moment about the \(x\)-axis to be \(\displaystyle{\rho \int_{-d}^{d} y \sqrt{ 1 + \left(\dfrac{\mathrm{d}y}{\mathrm{d}x}\right)^2 } \mathrm{d}x}\).&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;This must equal the moment of a single point mass, equal to the total mass of the cable, placed at its centre of mass. As the length of the cable is 600&lt;b&gt; metres &lt;/b&gt;then the mass of the cable is \(600 \rho\) and we have&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;\(\displaystyle{600 \rho \bar{y} = \rho \int_{-d}^{d} y \sqrt{ 1 + \left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)^2 } \mathrm{d}x}.\)&lt;/p&gt;
+&lt;p&gt;Dividing both sides of this equation by \(\rho\) we get:&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;\(\displaystyle{600 \bar{y} = \int_{-d}^{d} y \sqrt{ 1 + \left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)^2 } \mathrm{d}x}.\)&lt;/p&gt;
+&lt;p&gt;where we have already established the value of \(d\) from Equation (1) so we can solve this equation to find \(\bar{y}\).&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;Mathematical analysis&lt;/h5&gt;
+&lt;p&gt;We need to find \(d\) so that \(\displaystyle{600 = \int_{-d}^{+d}\sqrt{1 + \left(\sinh\left(\frac{x}{6}\right) \right)^2}\mathrm{d}x}.\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Rearranging the hyperbolic identity \(\cosh^{2}(u) - \sinh^{2}(u)&amp;nbsp;\equiv 1\) we obtain \(\sqrt{1 + (\sinh(u))^2} = \cosh(u)\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;so the integral becomes \(\displaystyle{\int_{-d}^{d} \cosh\left(\dfrac{x}{6}\right)\mathrm{d}x = \left[6 \sinh\left(\frac{x}{6}\right)\right]^{+d}_{&#8722;d} = 6 \left(\sinh\left(\frac{d}{6}\right) - \sinh\left(-\frac{d}{6}\right)\right)}.\) so \(12 \sinh\left(\dfrac{d}{6}\right)
+    = 600\) and \({d = 6 \sinh^{&#8722;1}(50)}.\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Using the log identity for the \(\sinh^{-1}\) function:&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;\(\sinh^{-1}(x) \equiv \ln(x + \sqrt{x^2 + 1})\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;we find that \(d = 27.63\) &lt;b&gt;m&lt;/b&gt; so the distance between the poles is \(55\)&lt;b&gt; m&lt;/b&gt; to the nearest metre. To find the height of the centre of mass above the ground we use&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;\(\displaystyle{600 \bar{y} = \int_{-d}^{+d} y \sqrt{ 1 + \left(\frac{\mathrm{d}y}{\mathrm{d}x}\right)^2 }\ \mathrm{d}x}\)&lt;br&gt;&lt;/p&gt;Substituting \(y = 6 \cosh\left(\dfrac{x}{6}\right)\) and therefore \(\displaystyle{\sqrt{1 + (\frac{\mathrm{d}y }{\mathrm{d}x})^2} = \sqrt{1 + \left(\sinh\left(\frac{x}{6}\right)\right)^2}
+= \cosh\left(\frac{x}{6}\right)}\) we get \(\displaystyle{\int_{-d}^{d} 6 \cosh\left(\frac{x}{6}\right) \cosh\left(\frac{x}{6}\right) \ \mathrm{d}x = \int_{-d}^{d} 6 \cosh^{2}\left(\frac{x}{6}\right)\ \mathrm{d}x}. \)&lt;br&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;From the hyperbolic identities we know that \(\cosh^{2}(x) \equiv \dfrac{(\cosh(2x) + 1)}{2}\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;so this integral becomes \(\displaystyle{\int_{-d}^{d} 3\left(\cosh\left(\frac{x}{3}\right) + 1\right) \ \mathrm{d}x = \left[9 \sinh\left(\frac{x}{3}\right) + 3x\right]_{-d}^{+d} = 18 \sinh\left(\frac{d}{3}\right) + 6d}\).&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;So we have that \(600\bar{y} = 18 \sinh\left(\dfrac{d}{3}\right) + 6d\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;From the first part of this problem we found that \(d = 27.63\) so substituting for \(d\) we find \(\bar{y} = 150\) metres to the nearest metre.&lt;br&gt;&lt;/p&gt;
+&lt;h5&gt;Interpretation&lt;/h5&gt;
+&lt;p&gt;We have found that the two vertical poles holding the cable have a distance between them of 55
+    &lt;b&gt;metres&lt;/b&gt; and the height of the centre of mass of the cable above the ground is 150 &lt;b&gt;metres&lt;/b&gt;.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200817143754+Pwz8YK</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210611115743+txKhPF</version>
+        <hidden>0</hidden>
+        <timecreated>1597675074</timecreated>
+        <timemodified>1623412663</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

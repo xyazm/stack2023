@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27363 -->
+  <question type="stack">
+    <name>
+				<text>39.1.6.3 Applications of the Normal Distribution - Complex Examples</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Applications</h3>
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Piston rings are mass-produced. The target internal diameter is \(45\) mm but
+records show that the diameters are normally distributed with mean \(45\) mm and standard deviation \(0.05\) mm. An acceptable diameter is one within the range \(44.95\) mm to
+\(45.05\) mm. What proportion of the output is unacceptable?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>There are many words in the statement of the problem; we must read them
+carefully to extract the necessary information. If \(X\) is the diameter of a piston ring, then  \(X\ \sim\ N (45,(0.05)^2)\).</p>
+<p>The transformation is \(Z=\dfrac{X-\mu}{\sigma}=\dfrac{X-45}{0.05}.\)</p>
+<p>The upper limit of acceptability is \(x_2=45.05\) so that \(z_2=(45.05 -45)/0.05=1.\)</p>
+<p>The lower limit of acceptability is \(x_1=44.95\) so that \(z_1=(44.95-45)/0.05=-1\)</p>
+<p>The range of `acceptable' \(Z\) values is therefore \(-1\) to \(1\), as shown in the Figure below.</p>
+<center><img src="@@PLUGINFILE@@/39-1-fig-11-minus1and1.svg" alt="The Normal distribution curve with vertical lines drawn at z1=-1 and z2=1." width="229" height="78" class="img-responsive atto_image_button_text-bottom"><br></center><p></p>
+<p>Using the symmetry of the curves, \(\text{P}(-1 &lt; Z &lt; 1) = 2\times \text{P}(0 &lt; Z &lt; 2) = 2 \times 0.3413 = 0.6826\).</p>
+<p>Thus the proportion of unacceptable items is \(1-0.6826=0.3174\), or \(31.74\%\).</p>
+<hr>
+
+<h4 class="HELM_example">Example</h4>
+<p>If the standard deviation is halved by improved production practices, what is now
+the proportion of unacceptable items?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>Now \(\sigma=0.025\) so that:</p>
+<p>\(\qquad z_2=\dfrac{45.05-45}{0.025}=2\qquad\text{and}\qquad z_1=-2.\)</p>
+<p>Then, \(\text{P}(-2 &lt; Z &lt; 2) = 2 \times \text{P}(0 &lt; Z &lt; 2)=2\times 0.4772=0.9544\). Hence the proportion of unacceptable items is reduced to \(1-0.9544=0.0456\) or \(4.56\%\).</p>
+<p>We observe that less of the area under the curve now lies outside the interval \((44.95, 45.05)\).</p>
+<p></p><center><img src="@@PLUGINFILE@@/39-1-fig-12-minus2and2.svg" alt="The normal distribution curve is shaded z=-2 and z=2." width="227" height="105" class="img-responsive atto_image_button_text-bottom"><br></center><p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200730105643+NKeF2w</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200820155140+xQuETm</text></tag>
+    </tags>
+    
+</question>
+</quiz>

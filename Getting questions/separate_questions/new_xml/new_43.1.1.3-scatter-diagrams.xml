@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62147 -->
+  <question type="stack">
+    <name>
+				<text>43.1.1.3 Scatter diagrams</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Scatter diagrams</h3>
+
+
+A useful first step in establishing the degree of association between two variables is the plotting of a scatter diagram. Examples of pairs of measurements which an engineer might plot are:&nbsp;<p><br></p><div class="editor-indent" style="margin-left: 30px;"><p>(a) volume and pressure;&nbsp;</p><p>(b) acceleration and tyre wear;&nbsp;</p><p>(c) current and magnetic field;&nbsp;</p><p>(d) torsion strength of an alloy and purity.</p></div>
+
+If there exists a relationship between measured variables, it can take many forms. Even though an outline introduction to non-linear regression is given at the end of this Workbook, we shall focus on the linear relationship only.
+In order to produce a good scatter diagram you should follow the steps given below:&nbsp;<p><br></p><p></p><ol><li>Give the diagram a clear title and indicate exactly what information is being displayed;&nbsp;<br></li><li>Choose and clearly mark the axes;&nbsp;<br></li><li>Choose carefully and clearly mark the scales on the axes;&nbsp;<br></li><li>Indicate the source of the data.<br></li></ol><p><br></p><p>Examples of scatter diagrams are shown below.<br></p><p><br></p><p><br></p><p><img src="@@PLUGINFILE@@/43-fig-1-scatter.svg" alt="" width="529" height="159" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p><p><br></p><p><br></p><p>Figure 1 shows an association which follows a curve, possibly exponential, quadratic or cubic;</p><p>Figure 2 shows a reasonable degree of linear association where the points of the scatter diagram lie in an area surrounding a straight line;</p><p>Figure 3 represents a randomly placed set of points and no linear association is present between the variables.</p><p><br></p><p>Note that in Figure 2, the word `reasonable' is not defined and that while points `close' to the indicated straight line may be explained by random variation, those `far away' may be due to assignable variation.</p><p><br></p><p>The rest of this Section will deal with linear association only although it is worth noting that techniques do exist for transforming many non-linear relationships into linear ones. We shall investigate linear association in two ways, firstly by using educated guess work to obtain a regression line `by eye' and secondly by using the well-known technique called the method of least squares.</p><p><br></p><p></p><p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200630201405+ENO4ZD</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715053413+RcBGBF</text></tag>
+    </tags>
+    
+</question>
+</quiz>

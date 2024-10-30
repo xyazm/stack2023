@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33818">
+        <parent>0</parent>
+        <name>13.3.2.4 Curve above the x-axis - example</name>
+        <questiontext>&lt;h3&gt;&lt;/h3&gt;&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;The figure shows the graphs of \(y=\sin x\) and \(y=\cos x\) for \({0\le x\le \dfrac{1}{2}\pi}\). The two graphs intersect at the point where \(x=\dfrac{1}{4}\pi\). Find the shaded area.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/13.3.2.2%20Area%20between%20two%20curves.svg" alt="Area between y = sin(x) and y = cos(x) between 0 and pi/4" width="425" height="139" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;To find the shaded area we could calculate the area under the graph of \(y=\sin x\) for \(x\) between 0 and \(\dfrac{1}{4} \pi\), and subtract this from the area under the graph of \(y=\cos x\) between the same limits. Alternatively the two processes
+    can be combined into one and we can write&lt;/p&gt;
+
+&lt;p&gt;shaded area \(\\={\displaystyle\int_0^{\pi/4}( \cos x - \sin x )\ \mathrm{d}x} \\= \bigg[ \sin x + \cos x\bigg]_0^{\pi/4} \\= \left(\sin \left(\tfrac{1}{4}\pi\right) + \cos \left(\tfrac{1}{4}\pi\right)\right) -\left( \sin 0 +\cos 0\right) \\= \left(\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{2}}\right)-(0+1)\\=\dfrac{2}{\sqrt{2}}-1\\=\sqrt{2}-1\)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210628181842+yHgCzA</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210628182231+GeupBD</version>
+        <hidden>0</hidden>
+        <timecreated>1624904322</timecreated>
+        <timemodified>1624904551</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

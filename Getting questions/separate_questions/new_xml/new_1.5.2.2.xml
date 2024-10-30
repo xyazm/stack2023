@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 35627 -->
+  <question type="stack">
+    <name>
+				<text>1.5.2.2</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3> Engineering Example: Heat flow in an insulated metal plate </h3><b>
+
+Introduction</b>&nbsp;
+<br>
+
+<p>Thermal insulation is important in many domestic (e.g. central heating) and industrial (e.g cooling and heating) situations. Although many real situations involve heat flow in more than one dimension, we consider only a one dimensional case here. The flow of heat is determined by temperature and thermal conductivity. It is possible to model the amount of heat \(Q\) (\(\textrm{J}\)) crossing point \(x\) in one dimension (the heat flow in the \(x\) direction) from temperature \(T_2\) \((\textrm{K})\) to temperature \(T_1\) \((\textrm{K})\) (in which \(T_2&gt;T_1\)) in time \(t\) (\(\textrm{s}\)) by <p>\(\qquad\dfrac{Q}{t}=\lambda A\left(\dfrac{T_2-T_1}{x}\right),\)</p> where \(\lambda\) is the thermal conductivity in \(\textrm{Wm}^{-1}\textrm{K}\).</p>
+<p><strong>Problem in words</strong></p>
+<p>Suppose that the upper and lower sides of a metal plate connecting two containers are insulated and one end is maintained at a temperature \(T_2\) \((\textrm{K})\) (see the figure below)</p>
+<p>The plate is assumed to be infinite in the direction perpendicular to the sheet of paper.</p>
+<br>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/1-5-fig-7.svg" alt="A laterally insulated metal plate" width="437" height="92" class="img-responsive atto_image_button_text-bottom">
+<figcaption>A laterally insulated metal plate</figcaption>
+</figure>
+<ol type="a">
+<li> Find a formula for \(T\).</li> 
+<li> If \(\lambda =205\) \((\textrm{Wm}^{-1}\textrm{K})\), \(T_1 = 300\) \((\textrm{K})\), \(A=0.004\) \((\textrm{m}^2)\), \(x=0.5\) \((\textrm{m})\), calculate the value of \(T_2\) required to achieve a heat flow of \(100\) \((\textrm{Js}^{-1})\).</li> 
+</ol>
+<p><strong>Mathematical statement of the problem</strong></p> 
+<ol type="a">
+<li> Given \(\dfrac{Q}{t}=\lambda A\left(\dfrac{T_2-T_1}{x}\right)\) express \(T_2\) as the subject of the formula.</li>
+<li> In the formula found in part (a) substitute \(\lambda =205,\ T_1 =300,\ A=0.004\), \(x=0.5\) and \(\dfrac{Q}{t}=100\) to find \(T_2\).</li>
+</ol>
+<p><strong>Mathematical analysis</strong></p>
+<ol type="a">
+<li><p>\(\dfrac{Q}{t}=\lambda A\left(\dfrac{T_2-T_1}{x}\right)\)</p> Divide both sides by \(\lambda A\) <p>\(\qquad\dfrac{Q}{t \lambda A}=\dfrac{T_2-T_1}{x}\)</p> Multiply both sides by \(x\) <p>\(\qquad\dfrac{Qx}{t \lambda A}=T_2-T_1\)</p Add \(T_1\) to both sides <p>\(\qquad\dfrac{Qx}{t \lambda A}+T_1=T_2\)</p> which is equivalent to <p>\(\qquad T_2=\dfrac{Qx}{t \lambda A}+T_1\)</p></li> 
+<li> Substitute \(\quad \lambda =205,\ T_1 =300,\ A=0.004 ,\ x=0.5\) and \(\dfrac{Q}{t}=100\) to find \(T_2\): \[T_2=\dfrac{100\times 0.5}{205\times 0.004}+300 \approx 60.9 +300=360.9\] So the temperature in container 2 is \(361\) \((\textrm{K})\) to 3 sig.fig.</li> 
+</ol>
+<p><strong>Interpretation</strong></p>
+<p>The formula \(\ T_2=\dfrac{Qx}{t \lambda A}+T_1\) can be used to find a value for \(T_2\) that would achieve any desired heat flow. In the example given \(T_2\) would need to be about \(361\) \((\textrm{K})\) \((\approx 78^\circ\textrm{C})\) to produce a heat flow of \(100\) \((\textrm{Js}^{-1})\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210804172821+G1YPwD</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210827112622+on77SG</text></tag>
+    </tags>
+    
+</question>
+</quiz>

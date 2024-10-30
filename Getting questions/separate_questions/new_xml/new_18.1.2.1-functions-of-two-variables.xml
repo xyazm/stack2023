@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24663 -->
+  <question type="stack">
+    <name>
+				<text>18.1.2.1 Functions of two variables</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Functions of two variables</span><br></h3>
+
+<p>The aim of this Section is to enable the reader to gain confidence in dealing with functions of several variables. In order to do this we often concentrate on functions of just two variables. The latter have an easy geometrical interpretation and we can
+    therefore use our geometrical intuition to help understand the meaning of much of the mathematics associated with such functions. We begin by reminding the reader of the Cartesian coordinate system used to locate points in three dimensions. A point
+    \(P\) is located by specifying its Cartesian coordinates \((a,b,c)\) defined in the following Figure.</p>
+
+<figure class="HELM_figure">
+    <img src="@@PLUGINFILE@@/18.2.1.1%20Point%20in%20cartesian%20coords.svg" alt="A point P in 3 dimensional cartesian coordinates." width="281" height="177" class="img-responsive atto_image_button_text-bottom"></figure>
+
+<p>Within this 3-dimensional space, we can consider simple surfaces. Perhaps the simplest is the plane.</p>
+<p>From the Section on vectors, we recall the general equation of a plane: \(Ax+By+Cz=D\) where \(A,\ B,\ C,\ D\) are constants.</p>
+<p> This plane intersects the \(x\)-axis (where \(y=z=0\)) at the point \(\left(\dfrac{D}{A},\ 0,\ 0\right)\), intersects the \(y\)-axis (where \(x=z=0\)) at the point \(\left(0,\ \dfrac{D}{B},0\right)\) and the \(z\)-axis (where \(x=y=0\)) at the point \(\left(0,\
+    0,\ \dfrac{D}{C}\right)\).</p>
+
+<p>See the following Figure where the dotted lines are hidden from view behind the plane which passes through three points marked on the axes.</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/18.2.1.1%20Equation%20of%20a%20plane.svg" alt="A plane in 3 dimensional space intersecting the coordinate axes." width="244" height="203" class="img-responsive atto_image_button_text-bottom">
+</figure>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200814091314+wWVJAu</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210611115842+F9PfeO</text></tag>
+    </tags>
+    
+</question>
+</quiz>

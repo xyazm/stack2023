@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25126 -->
+  <question type="stack">
+    <name>
+				<text>12.5.1.1 Differentiation of Vectors</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Differentiation of vectors</h3>
+
+<p>Consider the figure below.</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/Figure%201.svg" alt="See the text below." width="330" height="189" class="img-responsive atto_image_button_text-bottom"><br></figure>
+
+
+<p>If \({\underline r}\) represents the <strong>position vector</strong> of an object which is moving along a curve \(C\), then the position vector will be dependent upon the time, \(t\). We write \({\underline r}={\underline r}(t)\) to show the dependence
+    upon time. Suppose that the object is at the point \(P\), with position vector \(\underline{r}(t)\) at time \(t\) and at the point \(Q\), with position vector \({\underline r}(t+\delta t)\), at the later time \(t+\delta t\), as shown in the figure
+    below.
+</p>
+
+
+   <figure class="HELM_figure"><img src="@@PLUGINFILE@@/Figure_12_5_2.svg" alt="See the text above and below." width="322" height="181" class="img-responsive atto_image_button_text-bottom"></figure>
+
+
+<p>Then \(\overrightarrow{PQ}\) represents the <strong>displacement vector</strong> of the object during the interval of time \(\delta t.\) The length of the displacement vector represents the distance travelled, and its direction gives the direction of
+    motion. The average velocity during the time from \(t\) to \(t+\delta t\) is defined as the displacement vector divided by the time interval \(\delta t,\) that is,</p>
+
+<p>\[\mathrm{average} \; \mathrm{velocity} \; =\dfrac{\overrightarrow{PQ}}{\delta t}=\dfrac{{\underline r} (t+\delta t)-{\underline r}(t)}{\delta t}\]</p>
+
+<p>If we now take the limit as the interval of time \(\delta t\) tends to zero then the expression on the right hand side is the <strong>derivative</strong> of \(\underline r\) with respect to \(t\). Not surprisingly we refer to this derivative as <strong>the instantaneous velocity</strong>,
+    \({\underline v}\). By its very construction we see that the velocity vector is always tangential to the curve as the object moves along it. We have:</p>
+
+<p> \[ \underline{v} = \lim_{\delta t \to 0} \frac{{\underline r}(t+\delta t)-{\underline r}(t)}{\delta t}=\frac{\mathrm{d}{\underline r}}{\mathrm{d}t}\]</p>
+
+<p>Now, since the \(x\) and \(y\) coordinates of the object depend upon time, we can write the position vector \({\underline r}\) in Cartesian coordinates as:</p>
+
+<p> \(\qquad {\underline r}(t)=x(t){\underline i}+y(t){\underline j}\)</p>
+
+<p>Therefore, </p>
+<p>\(\qquad {\underline r}(t+\delta t)=x(t+\delta t){\underline i}+y(t+\delta t){\underline j}\)</p>
+
+<p>so that,</p>
+<p>\[\begin{aligned} {\underline v}(t)&amp;=\lim_{\delta t\to 0}\dfrac{x(t+\delta t){\underline i}+y(t+\delta t){\underline j}-x(t){\underline i}-y(t){\underline j}}{\delta t}\\ &amp;= \lim_{\delta t\to 0}\left\{\dfrac{x(t+\delta t)-x(t)}{\delta t}{\underline
+    i}+\dfrac{y(t+\delta t)-y(t)}{\delta t}{\underline j}\right\}\\ &amp;=\dfrac{\mathrm{d}x}{\mathrm{d}t}{\underline i}+\dfrac{\mathrm{d}y}{\mathrm{d}t}{\underline j}\end{aligned}\]</p>
+<p>This is often abbreviated to \({\underline v}=\dot{\underline r}=\dot x{\underline i}+\dot y{\underline j}\), using notation for derivatives with respect to time. So we see that the velocity vector is the derivative of the position vector with respect
+    to time. This result generalizes in an obvious way to three dimensions as summarized in the following key point.</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p>Given \(\qquad {\underline r}(t)=x(t){\underline i}+y(t){\underline j}+z(t){\underline k}\)</p>
+    <p> then the velocity vector is \[\qquad {\underline v} =\dot{\underline r}(t)=\dot x(t){\underline i}+\dot y(t){\underline j}+\dot z(t){\underline k}\] The magnitude of the velocity vector gives the speed of the object. </p>
+    <p>We can define the acceleration vector in a similar way, as the rate of change (i.e. the derivative) of the velocity with respect to the time: \[\qquad {\underline a}=\dfrac{\mathrm{d}{\underline v}}{\mathrm{d}t}=\dfrac{\mathrm{d}^2{\underline r}}{\mathrm{d}t^2}=\ddot {\underline r}=\ddot
+        x{\underline i}+\ddot y{\underline j}+\ddot z{\underline k}\] </p>
+</div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>If \({\underline w}=3t^2{\underline i}+\cos 2t{\underline j},\) find</p>
+<ol class="HELM_parts_inline">
+    <li>\({\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}}\)</li>
+    <li>\({\left|\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\right|}\)</li>
+    <li>\({\dfrac{\mathrm{d}^2{\underline w}}{\mathrm{d}t^2}}\)</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>If <span class="math inline">\({\underline w}=3t^2{\underline i}+\cos 2t{\underline j},\)</span> then differentiation with respect to <span class="math inline">\(t\)</span> yields: <span class="math inline">\({\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}}=6t{\underline i}-2\sin 2t{\underline j}\)</span></p>
+    </li>
+    <li>
+        <p><span class="math inline">\({\left|\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\right|}=\sqrt{(6t)^2+(-2\sin
+2t)^2}=\sqrt{36t^2+4\sin^2 2t}\)</span></p>
+    </li>
+    <li>
+        <p><span class="math inline">\({\dfrac{\mathrm{d}^2{\underline w}}{\mathrm{d}t^2}=6{\underline i}-4\cos 2t{\underline j}}\)</span></p>
+    </li>
+</ol>
+<hr>
+
+<p>It is possible to differentiate more complicated expressions involving vectors provided certain rules are adhered to as summarized in the following key point.</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p>If <span class="math inline">\({\underline w}\)</span> and <span class="math inline">\({\underline z}\)</span> are vectors and <span class="math inline">\(c\)</span> is a scalar, all these being functions of time <span class="math inline">\(t\)</span>,
+        then: <span class="math display">\[\begin{aligned}
+\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}+{\underline z})&amp;=\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}(c{\underline w})&amp;=c\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}+\dfrac{\mathrm{d}c}{\mathrm{d}t}{\underline w}\\
+\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\cdot {\underline z})&amp;={\underline w}\cdot \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\cdot {\underline z}\\ \dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\times {\underline z})&amp;={\underline w}\times \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\times {\underline z}\end{aligned}\]</span></p>
+</div>
+
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>If <span class="math inline">\({\underline w}=3t{\underline i}-t^2{\underline j}\)</span> and <span class="math inline">\({\underline z}=2t^2{\underline i}+3{\underline j}\)</span>, verify the result</p>
+<p><span class="math inline">\({\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\cdot {\underline z})={\underline w}\cdot \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\cdot {\underline z}}\)</span></p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p><span class="math inline">\({\underline w}\cdot {\underline z}=(3t{\underline i}-t^2{\underline j})\cdot (2t^2{\underline i}+3{\underline j})=6t^3-3t^2.\)</span></p>
+
+<p>Therefore <span class="math inline">\(\qquad \dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\cdot {\underline z})=18t^2-6t \qquad (1)\)</span></p>
+<p>Also <span class="math inline">\(\qquad \dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}=3{\underline i}-2t{\underline j}\qquad\text{and}\qquad \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}=4t{\underline i}\)</span></p>
+
+<p><span class="math display">\(\begin{aligned}
+\text{so}\qquad{\underline w}\cdot \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+{\underline z}\cdot \dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}&amp;=(3t{\underline i}-t^2{\underline j})\cdot (4t{\underline i})+(2t^2{\underline i}+3{\underline j})\cdot
+(3{\underline i}-2t{\underline j})\\ &amp;=12t^2+6t^2-6t\\ &amp;=18t^2-6t \qquad\qquad (2)\end{aligned}\)</span></p>
+
+<p>We have verified <span class="math inline">\({\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\cdot {\underline z})={\underline w}\cdot \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\cdot {\underline z}}\)</span> since (1) is the same as (2).</p>
+<hr>
+
+<h4 class="HELM_example">Example</h4>
+<p>If <span class="math inline">\({\underline w}=3t{\underline i}-t^2{\underline j}\)</span> and <span class="math inline">\({\underline z}=2t^2{\underline i}+3{\underline j}\)</span>, verify the result</p>
+<p> <span class="math inline">\({\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\times {\underline z})={\underline w}\times \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\times {\underline z}}\)</span></p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p><span class="math inline">\({\underline w}\times {\underline z}=\left|\begin{array}{ccc}{\underline
+i}&amp;{\underline j}&amp;{\underline k}\\ 3t&amp;-t^2&amp;0\\ 2t^2&amp;3&amp;0
+\end{array}\right|
+=(9t+2t^4){\underline k}\)</span> \(\qquad \text{implying} \qquad\) <span class="math inline">\({\dfrac{\mathrm{d}}{\mathrm{d}t}({\underline w}\times {\underline z})=(9+8t^3){\underline k}} \qquad (1)\)</span></p>
+
+<p><span class="math display">\(\begin{aligned}
+{\underline w}\times \dfrac{\mathrm{d}{\underline z}}{\mathrm{d}t}&amp;=&amp;\left|\begin{array}{ccc}{\underline i}&amp;{\underline
+j}&amp;{\underline k}\\ 3t&amp;-t^2&amp;0\\
+4t&amp;0&amp;0
+\end{array}\right|=4t^3{\underline k}\qquad (2)\end{aligned}\)</span></p>
+
+<p><span class="math display">\(\begin{aligned}
+\dfrac{\mathrm{d}{\underline w}}{\mathrm{d}t}\times {\underline z}&amp;=&amp;\left|\begin{array}{ccc}{\underline i}&amp;{\underline
+j}&amp;{\underline k}\\ 3&amp;-2t&amp;0\\ 2t^2&amp;3&amp;0
+\end{array}\right|=(9+4t^3){\underline k}\qquad (3)\end{aligned}\)</span></p>
+
+<p>We can see that (1) is the same as (2) <span class="math inline">\(+\)</span> (3) as required.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200820115654+8wmFVL</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210611163440+iIAfRy</text></tag>
+    </tags>
+    
+</question>
+</quiz>

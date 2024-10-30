@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 84092 -->
+  <question type="stack">
+    <name>
+				<text>5.3.2.7 Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>The diagram shows a typical variation of the depth (\(d\) metres) of water in a particular harbour with time (\(t\) hours) as the depth changes with the tide.</p>
+<p><img src="@@PLUGINFILE@@/5-3-tide_depth_time.svg" alt="" width="335" height="245" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p>
+
+<ol class="HELM_parts">
+    <li>Find a suitable equation for the curve in the diagram</li>
+    <li>A boat enters the harbour in late morning on a day when the high tide is at 2 p.m. The boat needs a water depth of \(4\,\textrm{m}\) to sail safely. What advice would you give to its pilot about when to leave the harbour if the boat is not to be forced
+        to wait in the harbour through the evening low tide?
+    </li>
+    <li>State two modelling assumptions you have made</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>The equation is of the form</p>
+        <p>\( \quad h = a+b\cos(\omega t) \quad \) (or \(h= a+b\sin \left(\omega t + \frac{\pi}{2}\right)\) )</p>
+        <p>By inspection, \( a= 5 \) and \(b=3.\)</p>
+        <p>The period \( T = 12.5 = \dfrac{2 \pi}{\omega}\) so \(\omega = \dfrac{4 \pi}{25} = 0.502655\)</p>
+        <p>so the equation of the curve is \(h = 5+3 \cos \left(\dfrac{4 \pi}{25}t \right).\)</p>
+    </li>
+
+    <li>
+        <p>Put \( h= 4 \) into the equation:</p>
+        <p>\( \quad 4 = 5+3\cos \left(\dfrac{4 \pi}{25}t \right) \) implying \( -\dfrac{1}{3}= \cos\left(\dfrac{4 \pi}{25}t \right) \)</p>
+        <p>Now, inverting the cosine:</p>
+        <p>\( \dfrac{4 \pi}{25}t = \cos^{-1} \left(-\dfrac{1}{3}\right) = 1.91063\) giving \(t = 3.80108\) hours.</p>
+        <p>So the advice to the pilot should be that he needs to be clear of the harbour by 5:45 pm at the very latest - and that he should allow a safety margin.</p>
+    </li>
+  
+  <li><p>Assumptions likely are:</p>
+    <p>The tide on the day in question is typical.</p>
+    <p>No waves.</p><p>
+    </p><p>A sinusoidal function accurately models the effect of the tide on sea level.</p>
+  </li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220217151405+6mEWz7</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220217152550+tcoANL</text></tag>
+    </tags>
+    
+</question>
+</quiz>

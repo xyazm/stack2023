@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25967">
+        <parent>0</parent>
+        <name>19.2.3.1 Exact equations</name>
+        <questiontext>&lt;h4&gt;Exact equations&lt;/h4&gt;
+&lt;p&gt;Consider the differential equation \[\dfrac{\mathrm{d}y}{\mathrm{d}x}=3x^2.\] By direct integration we find that the general solution of this equation is \[y=x^3+C, \] where &lt;span class="math inline"&gt;\(C\)&lt;/span&gt; is, as usual, an arbitrary constant of integration.&lt;/p&gt;
+&lt;p&gt;Next, consider the differential equation \[\dfrac{\mathrm{d}}{\mathrm{d}x}(yx)=3x^2.\] Again, by direct integration we find that the general solution is \[yx=x^3+C.\]&lt;/p&gt;
+&lt;p&gt;We now divide this equation by &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; to obtain \[y=x^2+\dfrac{C}{x}. \] The differential equation \[\dfrac{\mathrm{d}}{\mathrm{d}x}(yx)=3x^2\] is called an &lt;strong&gt;exact equation&lt;/strong&gt;. It can effectively be solved by integrating both sides.&lt;/p&gt;
+&lt;p&gt;If we consider examples of this kind in a more general setting we obtain the following Key Point:&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;The solution of the equation \[\dfrac{\mathrm{d}}{\mathrm{d}x}(f(x)\cdot y)=g(x)
+\] is \[f(x)\cdot y=\int g(x)\, \mathrm{d}x \quad \text{or}\quad y=\dfrac{1}{f(x)}\int g(x) \, \mathrm{d}x.
+\] &lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210308134548+V4ZS9A</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614115818+HxUWuJ</version>
+        <hidden>0</hidden>
+        <timecreated>1615211148</timecreated>
+        <timemodified>1623671898</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

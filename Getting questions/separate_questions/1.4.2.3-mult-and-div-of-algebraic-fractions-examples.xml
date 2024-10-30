@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="71600">
+        <parent>0</parent>
+        <name>1.4.2.3 Mult and div of algebraic fractions - examples</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Simplify: \( \dfrac{\dfrac{2x}{y}}{\dfrac{3x}{2y}}\)&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We can write the fraction as \(\dfrac{2x}{y} \div \dfrac{3x}{2y}.\)&lt;/p&gt;
+&lt;p&gt;Inverting the second fraction and multiplying we find:&lt;/p&gt;
+&lt;p&gt;\[\dfrac{2x}{y} \times \dfrac{2y}{3x} = \dfrac{4xy}{3xy} = \dfrac{4}{3}\]&lt;/p&gt;
+
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Simplify: \[ \dfrac{4x+2}{x^2+4x+3} \times \dfrac{x+3}{7x+5} \]&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Factorising the numerator and denominator we find&lt;/p&gt;
+&lt;p&gt;\[\dfrac{4x+2}{x^2+4x+3} \times \dfrac{x+3}{7x+5} = \dfrac{2(2x+1)}{(x+1)(x+3)} \times \dfrac{x+3}{7x+5}\]&lt;/p&gt;&lt;p&gt;\[ = \dfrac{2(2x+1)(x+3)}{(x+1)(x+3)(7x+5)}\] &lt;/p&gt;
+&lt;p&gt; \[= \dfrac{2(2x+1)}{(x+1)(7x+5)}\]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220117162122+2soCIC</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220117162325+KxM50Q</version>
+        <hidden>0</hidden>
+        <timecreated>1642436482</timecreated>
+        <timemodified>1642436605</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

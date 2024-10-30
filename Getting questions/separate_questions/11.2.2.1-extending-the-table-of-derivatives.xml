@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24420">
+        <parent>0</parent>
+        <name>11.2.2.1 Extending the table of derivatives</name>
+        <questiontext>&lt;h4&gt;Extending the table of derivatives&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+We now quote simple rules which enable us to extend the range of functions which we can differentiate. The first two rules are for differentiating sums or differences of functions. The reader should note that all of the rules quoted below can be obtained from first principles using the approach outlined previously.&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+Rule 1: The derivative of \(f(x) + g(x)\) is \( \dfrac{df}{dx} + \dfrac{dg}{dx} \) i.e. \[\dfrac{d}{dx} (f(x)+g(x))=\dfrac{df}{dx} + \dfrac{dg}{dx}. \]&lt;p&gt;&lt;/p&gt;
+Rule 2: The derivative of \(f(x) - g(x)\) is \( \dfrac{df}{dx} - \dfrac{dg}{dx} \)&amp;nbsp;i.e. \[\dfrac{d}{dx} (f(x)-g(x))=\dfrac{df}{dx} - \dfrac{dg}{dx} .\]&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+These rules say that to find the derivative of the sum (or difference) of two functions, we simply
+calculate the sum (or difference) of the derivatives of each function.
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the derivative of \(y = x^6 + x^4\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We simply calculate the sum of the derivatives of each separate function:
+\[ \dfrac{dy}{dx} = 6x^5 + 4x^3\]&lt;/p&gt;&lt;hr&gt;
+
+The third rule tells us how to differentiate a multiple of a function. We have already met and applied particular cases of this rule which appear in the Table of derivatives.
+
+&lt;p&gt;&lt;/p&gt;&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+Rule 3: If \(k\) is a constant, the derivative of \(kf(x)\) is \(k \dfrac{df}{dx}  \)&amp;nbsp;i.e. \(\dfrac{d}{dx} (kf(x))=k\dfrac{df}{dx} \).&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+This rule tells us that if a function is multiplied by a constant, \(k\), then the derivative is also multiplied by the same constant, \(k\).
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the derivative of \(y = 8e^{2x} \).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt; Here we are interested in differentiating a multiple of the function \(e^{2x}\). We differentiate \(e^{2x}\), giving \(2e^{2x}\), and multiply the result by \(8\). Thus 
+\[ \dfrac{dy}{dx} = 8 \times 2e^{2x} = 16 e^{2x} \]
+&lt;/p&gt;&lt;hr&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the derivative of \(y = 6\sin 2x  + 3x^2 - 5e^{3x} \).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt; We differentiate each part of the function in turn.
+\begin{align}
+y &amp;amp;= 6\sin 2x  + 3x^2 - 5e^{3x} \\
+\dfrac{dy}{dx} &amp;amp;= 6(2\cos 2x) + 3(2x) - 5(3e^{3x}) \\
+&amp;amp;= 12\cos 2x + 6x - 15e^{3x}
+\end{align}
+&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200725062341+U3QM9p</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210901193354+oyi6nN</version>
+        <hidden>0</hidden>
+        <timecreated>1595658221</timecreated>
+        <timemodified>1630524834</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

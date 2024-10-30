@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24601 -->
+  <question type="stack">
+    <name>
+				<text>14.2.1.3 Engineering example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Engineering Example</h4><br><br>
+<h5>Sonic boom</h5><br>
+<h6>Introduction</h6>
+
+<p>Impulsive signals are described by their peak amplitudes and their duration. Another quantity of interest is the total energy of the impulse. The effect of a blast wave from an explosion on structures, for example, is related to its total energy. This
+    Example looks at the calculation of the energy on a sonic boom. Sonic booms are caused when an aircraft travels faster than the speed of sound in air. An idealized sonic-boom pressure waveform is shown in the figure below where the instantaneous sound
+    pressure \(p(t)\) is plotted versus time \(t\). This wave type is often called an N-wave because it resembles the shape of the letter N. The energy in a sound wave is proportional to the square of the sound pressure.</p>
+<img src="@@PLUGINFILE@@/14-2-fig-6-Sonic.svg" alt=" An idealized sonic-boom pressure waveform (an N-wave)." width="389" height="125" class="img-responsive atto_image_button_text-bottom"><br><br>
+
+    <h6>Problem in words</h6>
+
+    <p>Calculate the energy in an ideal N-wave sonic boom in terms of its peak pressure, its duration and the density and sound speed in air.</p><br>
+
+    <h6>Mathematical statement of problem</h6>
+
+    <p>Represent the positive peak pressure by \(P_0\) and the duration by \(T\). The total acoustic energy \(E\) carried across unit area normal to the sonic-boom wave front during time \(T\) is defined by \[E ~=~ &lt;\! p(t)^2\!&gt; T /\rho c\qquad \text{(1)}\]
+        where \(\rho\) is the air density, \(c\) the speed of sound and the time average of \([p(t)]^2\) is \[ &lt;\!p(t)^2\!&gt; ~=~ \frac{1}{T}\int_0^T p(t)^2\,\mathrm{d}t\qquad \text{(2)}\]</p>
+
+    <ol class="HELM_parts">
+        <li>Find an appropriate expression for \(p(t)\).</li>
+        <li>Hence show that \(E\) can be expressed in terms of \(P_0,\ T,\ \rho\) and \(c\) as \(\displaystyle E ~=~\frac{TP_0^2}{3\rho c}\).</li>
+    </ol><br>
+
+    <h6>Mathematical analysis</h6><br>
+
+    <ol class="HELM_parts">
+        <li>
+            <p>The interval of integration needed to compute (2) is \([0, T].\) Therefore it is necessary to find an expression for \(p(t)\) only in this interval. The figure above shows that, in this interval, the dependence of the sound pressure \(p\)
+                on the variable \(t\) is linear, i.e. \(p(t) = a t + b.\)</p>
+            <p>From the figure above also \(p(0) = P_0\) and \(p(T) = - P_0\). The constants \(a\) and \(b\) are determined from these conditions.</p>
+            <p>At \(t = 0,\ a \times 0 + b = P_0\) implies that \(b = P_0\).</p>
+            <p>At \(t = T,\ a \times T + b = - P_0\) implies that \(a = -2P_0/T.\)</p>
+            <p>Consequently, the sound pressure in the interval \([0, T]\) may be written \(\displaystyle p(t) = \frac{-2P_0}{T}\ t + P_0.\)</p>
+        </li>
+        <li>This expression for \(p(t)\) may be used to compute the integral (2) \[\begin{aligned} \frac{1}{T}\int_0^T p(t)^2 \,\mathrm{d}t&amp;~=\frac{1}{T}\int_0^T\ \left(\frac{-2P_0}{T}\ t+P_0\right)^2 \,\mathrm{d}t =\frac{1}{T}\ \int_0^T\ \left(\frac{4P_0^2}{T^2}\ t^2-\frac{4P_0^2}{T}\
+            t+P_0^2\right) \,\mathrm{d}t\\ \\ &amp;~=\frac{1}{T}\left[\frac{4P_0^2}{3T^2}\ t^3-\frac{2P_0^2}{T}\ t^2+P_0^2 t\right]_0^T\\ \\ &amp;~=\frac{P_0^2}{T}\left(\frac{4}{3T^2}\ T^3-\frac{2}{T}\ T^2+T\right)-0=P_0^2/3.\end{aligned}\] Hence, from Equation
+            (1), the total acoustic energy \(E\) carried across unit area normal to the sonic-boom wave front during time \(T\) is \(E = \dfrac{TP_0^2}{3\rho c}.\)</li>
+    </ol><br>
+
+    <h6>Interpretation</h6>
+
+    <p>The energy in an N-wave is given by a third of the sound intensity corresponding to the peak pressure multiplied by the duration.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+201128115441+ppwXFc</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210607154153+i5YBkg</text></tag>
+    </tags>
+    
+</question>
+</quiz>

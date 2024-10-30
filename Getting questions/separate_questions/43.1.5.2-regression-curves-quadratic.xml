@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62160">
+        <parent>0</parent>
+        <name>43.1.5.2 Regression Curves - Quadratic</name>
+        <questiontext>&lt;h3&gt;Regression Curves - the Quadratic Case&lt;/h3&gt;
+
+We are looking for a functional relation of the form
+\[ y = \alpha + \beta x+ \gamma x^2 , \] 
+and so, using the method of least squares, we require the values of \(a\), \(b\) and \(c\_ which minimize the
+expression
+\[ f(a,b,c) = \sum_{r=1}^n \left( y_r - a - bx_r  - cx_r^2 \right)^2 . \]
+Note here that the regression described by the form
+\[ y = \alpha  + \beta x  + \gamma x^2 \]
+is actually a linear regression since the expression is linear in \(\alpha\), \(\beta\) and \(\gamma\). 
+
+Omitting the subscripts and using partial differentiation gives 
+\[ \dfrac{\partial f}{\partial a} = -2 \sum \left( y - a - bx -cx^2 \right)\]
+\[ \dfrac{\partial f}{\partial b} = -2 \sum x \left( y - a - bx -cx^2 \right)\]
+\[ \dfrac{\partial f}{\partial c} = -2 \sum x^2 \left( y - a - bx -cx^2 \right)\]
+
+At a minimum we require
+\[ \dfrac{\partial f}{\partial a} = \dfrac{\partial f}{\partial b}  = \dfrac{\partial f}{\partial c}= 0, \]
+which results in the three linear equations
+\[ \sum y - na -b\sum x - c\sum x^2 = 0\]
+\[ \sum xy - a\sum x -b \sum x^2 - c \sum x^3 = 0\]
+\[ \sum x^2 y - a\sum x^2  - b \sum x^3 - c\sum x^4 = 0\]
+which can be solved to give the values of \(a\), \(b\) and \(c\).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704150837+tkGKwL</stamp>
+        <version>stack2.maths.ed.ac.uk+200715054213+vG3SuH</version>
+        <hidden>0</hidden>
+        <timecreated>1593875317</timecreated>
+        <timemodified>1594791733</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

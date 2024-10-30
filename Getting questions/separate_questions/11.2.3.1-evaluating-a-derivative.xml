@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24425">
+        <parent>0</parent>
+        <name>11.2.3.1 Evaluating a derivative</name>
+        <questiontext>&lt;h4&gt;Evaluating a derivative&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+The need to find the rate of change of a function at a particular point occurs often. We do this by finding the derivative of the function, and then evaluating the derivative at that point. When taking derivatives of trigonometric functions, any angles must be measured in radians. Consider a function, \(y(x)\). We use the notation \(\dfrac{dy}{dx}(a)\) or \(y'(a)\) to denote the derivative of \(y\) evaluated at \(x = a\). So \(y'(0.5)\) means the value of the derivative of \(y\) when \(x = 0.5\).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200725095607+0HmVtF</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210901194545+6pypFi</version>
+        <hidden>0</hidden>
+        <timecreated>1595670967</timecreated>
+        <timemodified>1630525545</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

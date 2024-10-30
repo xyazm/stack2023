@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27337">
+        <parent>0</parent>
+        <name>38.1.1.5 The Cumulative Distribution Function</name>
+        <questiontext>&lt;h5&gt;The Cumulative Distribution Function&lt;/h5&gt;
+&lt;p&gt;Analogous to the formula for the cumulative distribution function:&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \(F(x) = \displaystyle{\sum_{x_i \leq x}} \text{P}(X = x_i) \)&lt;/p&gt;&lt;p&gt;used in the case of a discrete random variable \(X\) with associated probabilities \(\text{P}(X = x_i)\), we define
+a &lt;span&gt;&lt;strong&gt;cumulative probability distribution function &lt;/strong&gt;&lt;span style=""&gt;(cdf)&lt;/span&gt;&lt;/span&gt;&amp;nbsp;\(F(x)\) by means of the integral (being a form of a
+sum):&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; \(F(x) = \displaystyle{\int_{-\infty}^x} f(t) \; dt \)&lt;/p&gt;&lt;p&gt;The cdf represents the probability of observing a value less than or equal to \(x\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200729102143+pvAct5</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211013113534+fBGtCt</version>
+        <hidden>0</hidden>
+        <timecreated>1596018103</timecreated>
+        <timemodified>1634124934</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25724 -->
+  <question type="stack">
+    <name>
+				<text>2.4.3.1 Periodic functions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Periodic functions</h3>
+<p>Any function that has a definite pattern repeated at regular intervals is said to be periodic. The interval over which the repetition takes place is called the&nbsp;<b>period</b> of the function, and is usually given the symbol <span class="math inline">\(T\)</span>. The period of a periodic function is usually obvious from its graph.</p>
+<p>The figure below shows a graph of a periodic function with period <span class="math inline">\(T=3\)</span>. This function has discontinuities at values of <span class="math inline">\(x\)</span> which are divisible by <span class="math inline">\(3\)</span>.</p>
+<p style="text-align: center;"><span class="math display"><img src="@@PLUGINFILE@@/block6-fig8-1.svg" alt="A discontinuous periodic function" width="409" height="156" class="img-responsive atto_image_button_text-bottom"></span></p>
+<p><br></p>
+<p>The figure below shows a graph of a periodic function with period <span class="math inline">\(T=6\)</span>. This function has no discontinuities.</p>
+<p style="text-align: center;"><span class="math display"><img src="@@PLUGINFILE@@/block6-fig9-1.svg" alt="A continuous periodic function" width="465" height="156" class="img-responsive atto_image_button_text-bottom"></span></p>
+<p><br></p>
+<p>If a function is a periodic function with period <span class="math inline">\(T\)</span> then, for any value of the independent variable <span class="math inline">\(x\)</span>, the value of <span class="math inline">\(f(x+T)\)</span> is the <span><strong>same</strong></span> as the value of <span class="math inline">\(f(x)\)</span>.</p>
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p>A function \(f(x)\) is <span><strong>periodic</strong></span> if we can find a number \(T\) such that</p>
+<p><span class="math inline">\(\qquad f(x+T)=f(x)\qquad\text{for all values of}\ x\)</span></p>
+</div>
+<p>Often a periodic function will be defined by simply specifying the period of the function and by stating the rule for the function within one period. This information alone is sufficient to draw the graph for all values of the independent variable.</p><p>The figure below shows a graph of the periodic function defined by</p><p><span class="math inline">\(\qquad f(x) = x, \quad -\pi&lt;x&lt;\pi, \qquad \hbox{ period } T=2\pi\).</span></p>
+<p style="text-align: center;"><span class="math display"><img src="@@PLUGINFILE@@/block6-fig3-1.svg" alt="A periodic function with period 2*pi" width="353" height="159" class="img-responsive atto_image_button_text-bottom"></span></p>
+<p><br></p><p><i>Try for yourself</i>:&nbsp;Sketch a graph of a periodic function which has no discontinuities.</p><p><i>Try for yourself</i>:&nbsp;Sketch a graph of a periodic function which has discontinuities.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618173415+K6Kn2n</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200819143600+sk1yW8</text></tag>
+    </tags>
+    
+</question>
+</quiz>

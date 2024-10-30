@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 32196 -->
+  <question type="stack">
+    <name>
+				<text>19.2.5.3 T Recognising an Exact Equation</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Solve the equation \({@f1@}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@y*diff(f1,x)@} = {@gg@}\).</p>
+<p>\({@gg@} {@int(gg,x)@} {@diff(gg,x)@}\)</p>
+<p>\(y =\) [[input:ans1]] [[validation:ans1]]&nbsp; \(+ \dfrac{C}{{@f1@}}\) [[feedback:prt1]]</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>Notice that in exact form  \[ f(x){\mathrm{d}y\over \mathrm{d}x}+y\ f'(x)=g(x)\] here \(f(x) = {@f1@}\) and \(g(x) = {@gg@}\).</p>
+<p>We may rewrite the equation then as \( \dfrac{\mathrm{d}}{\mathrm{d}x}({@ff@}) = {@gg@}\). Integrating both sides yields \({@ff@} = {@int(gg,x)@} + C\), where \(C\) is some constant.</p>
+
+<p>We may then rearrange to find \(y\).</p>
+<p>\[ y = {@ta1@}+ \frac{C}{{@f1@}}.\]</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2020120600</text>
+		</stackversion>
+    <questionvariables>
+				<text>a1: 1 + rand(5);
+a2: 1 + rand(5);
+f1: a1*sin(x);
+gg: a2*cos(x);
+
+ff: y*f1;
+
+ta1: int(gg,x)/(f1)
+</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text></text>
+		</specificfeedback>
+    <questionnote>
+				<text>\({@f1@}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@y*diff(f1,x)@} = {@gg@}\)</text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210614163433+Nxz6Cs</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210615112635+CNHlP9</text></tag>
+    </tags>
+    <deployedseed>1908629387</deployedseed>
+    <deployedseed>1039253525</deployedseed>
+    <deployedseed>452399870</deployedseed>
+    <deployedseed>1906269734</deployedseed>
+    <deployedseed>927048323</deployedseed>
+    <deployedseed>786510398</deployedseed>
+    <deployedseed>1824242486</deployedseed>
+    <deployedseed>1557733607</deployedseed>
+    <deployedseed>973102759</deployedseed>
+    <deployedseed>118905917</deployedseed>
+    
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+</question>
+</quiz>

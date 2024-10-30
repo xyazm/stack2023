@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27354">
+        <parent>0</parent>
+        <name>39.1.6.2 Applications Simple Question</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+
+&lt;p&gt;A worn, poorly set-up machine is observed to produce components whose length
+\(X\) follows a normal distribution with mean \({@mu@}\text{cm}\) and variance \({@var@}\text{cm}^2\). Calculate, to &lt;strong&gt;4 decimal places&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+
+&lt;li&gt;&lt;p&gt; the probability that a component is at least \({@numa@}\text{cm}\) long: [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt; the probability that the length of a component lies between \({@numc@}\text{cm}\) and \({@numb@}\text{cm}\): [[input:ans2]] [[validation:ans2]] [[feedback:prt2]] &lt;/p&gt;&lt;/li&gt;
+
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;Let \(X\) be the random variable for the length of the component produced by the machine, then \(X \sim N({@mu@}, {@var@})\). The standardised Normal distribution \(Z \sim N(0,1)\) is obtained through the transformation \(Z = \dfrac{X - {@mu@}}{\sqrt{{@var@}}}
+= \dfrac{X - {@mu@}}{{@sd@}}\).&lt;br&gt;&lt;br&gt;
+&lt;ol class="HELM_parts"&gt;
+
+    &lt;li&gt;
+        &lt;p&gt;The first stage is to transform the probability with respect to the standard Normal random variable: \[\text{P}(X \geq {@numa@}) = \text{P}\left(\dfrac{X - {@mu@}}{{@sd@}} \geq \dfrac{{@numa@} - {@mu@}}{{@sd@}}\right) = \text{P}(Z \geq {@zscorea@}).\]&lt;/p&gt;
+        &lt;p&gt;Next, transform the probability so that we can use the standard Normal table: \[\text{P}(Z \geq {@zscorea@}) = 1 - \text{P}(Z &amp;lt; {@zscorea@}) = 0.5 - \text{P}(0&amp;nbsp; &amp;lt; Z &amp;lt; {@zscorea@}).\]&lt;/p&gt;
+        &lt;p&gt;Reading this value from the table obtains the required probability to be \(\text{P}(X \geq {@numa@}) = 0.5 - {@displaydp(enta,4)@} = {@displaydp(ta1,4)@}\) to 4 decimal places.&lt;/p&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+        &lt;p&gt; Again, the first stage is to standardise the probability: \[ \begin{align} \text{P}({@numc@} &amp;lt; X &amp;lt; {@numb@}) &amp;amp; = \text{P}\left(\dfrac{{@numc@} - {@mu@}}{{@sd@}} &amp;lt; \dfrac{X - {@mu@}}{{@sd@}} &amp;lt; \dfrac{{@numb@} - {@mu@}}{{@sd@}}\right)
+            \\ &amp;amp; = \text{P}({@zscorec@} &amp;lt; Z &amp;lt; {@zscoreb@}). \end{align}\]&lt;/p&gt;
+        &lt;p&gt;Note that this probability is symmetric around the mean of \(0\), so: \[\text{P}({@zscorec@} &amp;lt; Z &amp;lt; {@zscoreb@}) = 2 \times \text{P}(0 &amp;lt; Z &amp;lt; {@zscoreb@}).\]&lt;/p&gt;
+        &lt;p&gt;The value for \({@zscoreb@}\) is not in the standard Normal table, but it is the mid-point between \({@displaydp(zscoreb-0.005,2)@}\) and \({@displaydp(zscoreb+0.005,2)@}\). So an approximate of this probability is:&lt;/p&gt;
+      &lt;p&gt;\[\text{P}(0 &amp;lt; Z &amp;lt; {@zscoreb@}) \approx \dfrac{{@displaydp(entb1,4)@}+{@displaydp(entb2,4)@}}{2}.\]&lt;/p&gt;
+      &lt;p&gt;Using this value, the required probability is approximated to be: \(\text{P}({@numc@} &amp;lt; X &amp;lt; {@numb@}) \approx 2 \times \dfrac{{@entb1@}+{@entb2@}}{2} = {@displaydp(ta2,4)@}\)to 4 decimal places.&lt;/p&gt;
+      &lt;p&gt;When using a statistical calculator, a more accurate calculation of the probability returns \(\text{P}({@numc@} &amp;lt; X &amp;lt; {@numb@}) = {@displaydp(EXACTta2,4)@} \) to 4 decimal places.&lt;/p&gt;
+    &lt;/li&gt;
+
+&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200722115640+1LAP1X</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211018142538+WE0Hez</version>
+        <hidden>0</hidden>
+        <timecreated>1595419000</timecreated>
+        <timemodified>1634567138</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18473">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>mu:20
+var:2.56
+sd:sqrt(var)
+zscorea:decimalplaces(rand_with_step(1.1,2.9,0.1),1)
+numa:decimalplaces(mu+(zscorea*sd),2)
+zscoreb:decimalplaces(rand_with_step(0.375,1.375,0.05),3)
+numb:decimalplaces(mu+(zscoreb*sd),2)
+zscorec:-zscoreb
+numc:decimalplaces(mu+(zscorec*sd),2)
+enta:decimalplaces(float(cdf_normal(zscorea,0,1)-0.5),4);
+entb1:decimalplaces(float(cdf_normal(zscoreb-0.005,0,1)-0.5),4);
+entb2:decimalplaces(float(cdf_normal(zscoreb+0.005,0,1)-0.5),4);
+ta1:decimalplaces(float(0.5-enta),4)
+ta2:decimalplaces(float(2*(entb1+(0.5*(entb2-entb1)))),4)
+EXACTta2: decimalplaces(float(cdf_normal(numb, mu, sd) - cdf_normal(numc, mu, sd)),4);
+
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\({@numa@}, {@numb@}\). Answers: \({@ta1@}, {@ta2@}\), Approx req?: \({@zscoreb@}\), Accuracy?: \({@EXACTta2@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43644">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>dispdp(ta1,4)</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>4 d.p.</syntaxhint>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:4, mindp:4</options>
+            </stackinput>
+            <stackinput id="43645">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>dispdp(ta2,4)</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>4 d.p.</syntaxhint>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:4, mindp:4</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37904">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56494">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions>4</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37905">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56495">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions>4</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="118416">
+                  <nodename>1</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans2</sans>
+                  <tans>EXACTta2</tans>
+                  <testoptions>4</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42612">
+              <testcase>1</testcase>
+              <timemodified>1596583900</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92968">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ta1,4)</value>
+                </stackqtestinput>
+                <stackqtestinput id="92969">
+                  <inputname>ans2</inputname>
+                  <value>dispdp(ta2,4)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="80672">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80673">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="42613">
+              <testcase>2</testcase>
+              <timemodified>1634220717</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="196253">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ev(ta1+1,simp),4)</value>
+                </stackqtestinput>
+                <stackqtestinput id="196254">
+                  <inputname>ans2</inputname>
+                  <value>dispdp(ev(ta2+1,simp),4)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="168667">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="168668">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="179913">
+              <seed>744500437</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179914">
+              <seed>718466084</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179915">
+              <seed>1397772625</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179916">
+              <seed>729583730</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179917">
+              <seed>884191055</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179918">
+              <seed>573369753</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179919">
+              <seed>1305207610</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179920">
+              <seed>1819778619</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179921">
+              <seed>1725944745</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179922">
+              <seed>1711947598</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179923">
+              <seed>1886405894</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

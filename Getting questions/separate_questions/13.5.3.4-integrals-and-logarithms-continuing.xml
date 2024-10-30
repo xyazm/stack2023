@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33816">
+        <parent>0</parent>
+        <name>13.5.3.4 Integrals and logarithms- continuing</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Evaluate the definite integral:&lt;/p&gt;
+&lt;p&gt;\({\displaystyle\int \dfrac{x^2}{x^3 +1 }\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;In this Example the derivative of the denominator is \(3x^2\) whereas the numerator is just \(x^2\). We adjust the numerator as follows:&lt;/p&gt;
+&lt;p&gt;\({\displaystyle\int \dfrac{x^2}{x^3 +1 }\ \mathrm{d}x} = {\displaystyle\dfrac{1}{3}\int \dfrac{3x^2}{x^3 +1 }\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;p&gt;and integrate by the rule to get &lt;/p&gt;
+\(\dfrac{1}{3}\ln|x^3 + 1| + c\)
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Note that the sort of procedure in the last Example is only possible because we can move &lt;strong&gt;constant factors&lt;/strong&gt; through the integral sign. It would be wrong to try to move terms involving the &lt;strong&gt;variable&lt;/strong&gt; \(x\) in a similar way.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210628144009+biCdhl</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210628144557+J9Dmnb</version>
+        <hidden>0</hidden>
+        <timecreated>1624891209</timecreated>
+        <timemodified>1624891557</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

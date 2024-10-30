@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24673">
+        <parent>0</parent>
+        <name>19.1.2.1 The general solution of a differential equation</name>
+        <questiontext>&lt;h4&gt;The general solution of a differential equation&lt;/h4&gt;
+&lt;p&gt;Consider the equation &lt;span class="math inline"&gt;\(y=A \text{e}^{2x}\)&lt;/span&gt; where &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is an arbitrary constant. If we differentiate it we obtain &lt;span class="math inline"&gt;\[
+{dy\over dx}=2A\text{e}^{2x}\]&lt;/span&gt; and so, since &lt;span class="math inline"&gt;\[y=A\text{e}^{2x}\]&lt;/span&gt; we obtain &lt;span class="math inline"&gt;\[ {dy\over {dx}}=2y.\]&lt;/span&gt; Thus a differential equation satisfied by &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; is &lt;span class="math inline"&gt;\[{dy\over dx}=2y.\]&lt;/span&gt; Note that we have eliminated the arbitrary constant.&lt;/p&gt;
+&lt;p&gt;Now consider the equation &lt;span class="math inline"&gt;\[y=A\cos 3x+B\sin 3x\]&lt;/span&gt; where &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(B\)&lt;/span&gt; are arbitrary constants. Differentiating, we obtain &lt;span class="math inline"&gt;\[ 
+{dy\over dx}=-3A\sin 3x+3B\cos 3x.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Differentiating a second time gives &lt;span class="math inline"&gt;\[
+{d^2y\over dx^2}=-9\,A\cos 3x-9\,B\sin 3x.\]&lt;/span&gt; The right-hand side is simply &lt;span class="math inline"&gt;\((-9)\)&lt;/span&gt; times the expression for &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;. Hence &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; satisfies the differential
+    equation &lt;span class="math inline"&gt;\[ 
+{d^2y\over dx^2}=-9y.\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201215161240+ul8Fbb</stamp>
+        <version>moodle2.maths.ed.ac.uk+210315130226+G2oqy9</version>
+        <hidden>0</hidden>
+        <timecreated>1608048760</timecreated>
+        <timemodified>1615813346</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

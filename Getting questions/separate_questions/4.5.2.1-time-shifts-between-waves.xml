@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26040">
+        <parent>0</parent>
+        <name>4.5.2.1 Time shifts between  waves</name>
+        <questiontext>&lt;h4&gt;Time shifts between waves&lt;/h4&gt;
+&lt;p&gt;We recall that \(\cos\left(\theta-\dfrac{\pi}{2}\right)=\sin\theta\) which means that the graph of \(x=\sin\theta\) is the same shape as that of \(x=\cos\theta\) but is shifted to the right by \(\dfrac{\pi}{2}\) radians. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;
+Suppose now that we consider the waves \[ \quad \qquad x_1=R\cos 2t\qquad\qquad x_2=R\sin 2t\] &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Both have amplitude \(R\), angular frequency \(\omega=2\) rad \(s^{-1}\). 
+Also \[ \quad x_2=R\cos\left(2t-\dfrac{\pi}{2}\right)=R\cos\left[2\left(t-\dfrac{\pi}{4}\right)\right] \] 
+The graphs of \(x_1\) against \(t\) and of \(x_2\) against
+ \(t\) are said to have a &lt;b&gt;time shift&lt;/b&gt; of \(\dfrac{\pi}{4}\). Specifically \(x_1\) is ahead of, or 'leads' \(x_2\) by a time \(\dfrac{\pi}{4}\) s.&lt;/p&gt;
+&lt;p&gt;More generally, consider the following two sine waves of the same amplitude and frequency: \[ \quad \qquad x_1(t)=R\sin\omega t\] \[ \quad \qquad x_2(t)=R\sin (\omega t-\alpha)\]
+&lt;/p&gt;&lt;p&gt;Now \(x_1\left(t-\dfrac{\alpha}{\omega}\right)=R\sin \left[\omega\left(t-\dfrac{\alpha}{\omega}\right)\right]=R\sin(\omega t-\alpha)=x_2(t)\) so it is clear that the waves \(x_1\) and \(x_2\) are shifted in time by \(\dfrac{\alpha}{\omega}\). Specifically \(x_1\) leads \(x_2\) by \(\dfrac{\alpha}{\omega}\) (if \(\alpha\ &amp;gt;0)\).&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622161345+dwyxBc</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210909113556+2IP8xh</version>
+        <hidden>0</hidden>
+        <timecreated>1592842425</timecreated>
+        <timemodified>1631187356</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

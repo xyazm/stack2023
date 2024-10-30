@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26738 -->
+  <question type="stack">
+    <name>
+				<text>10.2.3.4 Complex numbers and rotations</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Complex Numbers and Rotations</h4>
+<p>We have seen that, when multiplying one complex number by another, the moduli multiply together and the arguments add together. If, in particular, <span class="math inline">\(w\)</span> is a complex number with a modulus <span class="math inline">\(t\)</span>    <span class="math inline">that is \( w=t(\cos\phi +i\sin\phi) (\text{i.e.}\ r=t)\)</span> and if <span class="math inline">\(z\)</span> is a complex number with modulus 1 that is&nbsp;<span class="math inline">\( z=(\cos\theta +i\sin\theta )\)</span>    (i.e. <span class="math inline">\(r=1\)</span>) then multiplying <span class="math inline">\(w\)</span> by <span class="math inline">\(z\)</span> gives <span class="math inline">\(wz=t(\cos (\theta +\phi ) +i\sin (\theta +\phi ))\)</span>(using the
+    Key Point above). We see that the effect of multiplying <span class="math inline">\(w\)</span> by <span class="math inline">\(z\)</span> is to <span><em>rotate</em></span> the line representing the complex number <span class="math inline">\(w\)</span>    anti-clockwise through an angle <span class="math inline">\(\theta\)</span> which is arg<span class="math inline">\((z)\)</span>, and preserving the length.</p><br>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/10.2-fig4-rotation.svg" alt="" width="621" height="187" class="img-responsive atto_image_button_text-bottom"></figure><br>
+<p>This result would certainly be difficult to obtain had we continued to use the Cartesian form. Since, in terms of the polar form of a complex number <span class="math inline">\(-1=1(\cos 180^{\circ}+i\sin 180^{\circ})\)</span> we see that multiplying
+    a number by <span class="math inline">\(-1\)</span> produces a rotation through <span class="math inline">\(180^{\circ}\)</span>. In particular multiplying a number by <span class="math inline">\(-1\)</span> and then by <span class="math inline">\((-1)\)</span>    again (i.e. <span class="math inline">\((-1)(-1)\)</span>) rotates the number through <span class="math inline">\(180^{\circ}\)</span> twice, totalling <span class="math inline">\(360^\circ\)</span>, which is equivalent to leaving the number unchanged.
+    Hence the introduction of complex numbers has ‘ explained’ the accepted (though not obvious) result <span class="math inline">\((-1)(-1)=+1\)</span>.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200629125806+XMSALa</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210702110637+Hqo8R9</text></tag>
+    </tags>
+    
+</question>
+</quiz>

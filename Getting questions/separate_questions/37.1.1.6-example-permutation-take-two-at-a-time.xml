@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27310">
+        <parent>0</parent>
+        <name>37.1.1.6 Example permutation take two at a time</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the number of permutations of the four letters \(A, B, C\) and \(D\) taken two at a time.&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We may choose the first letter in 4 ways and the second letter in 3 ways giving us 
+\(\qquad
+4\times 3=\dfrac{4\times 3\times 2\times 1}{1\times 2}=\dfrac{4!}{2!}=12\quad\) permutations</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200714145557+AQWCyi</stamp>
+        <version>stack2.maths.ed.ac.uk+200715155756+4nxN3L</version>
+        <hidden>0</hidden>
+        <timecreated>1594738557</timecreated>
+        <timemodified>1594828676</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

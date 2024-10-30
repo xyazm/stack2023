@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24389 -->
+  <question type="stack">
+    <name>
+				<text>16.4.2 The radius of convergence</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Radius of convergence</h4>
+<p>The most important statement one can make about a power series is that there exists a number, \(R\), called the radius of convergence, such that if \(|x| &lt; R\) the power series is absolutely convergent and if \(|x| &gt; R\) the power series is divergent.
+    At the two points \(x = −R\) and \(x = R\) the power series may be convergent or divergent.
+</p>
+
+<p></p>
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p>For a power series \(\displaystyle{\sum_{p=0}^\infty b_p x^p}\) with radius of convergence \(R\) then </p>
+    <li> the series converges absolutely if \(|x|&lt;R\)</li>
+    <li> the series diverges if \(|x|&gt;R\)
+    </li>
+    <li> the series may be convergent or divergent at \(x=\pm R\)</li>
+    <figure class="HELM_figure"><img src="@@PLUGINFILE@@/16-4-KeyPoint11.svg" alt="Convergence of power series" width="455" height="65" class="img-responsive atto_image_button_text-bottom"></figure>
+</div>
+
+<p>For any particular power series \(\displaystyle{\sum_{p=0}^\infty b_p x^p}\) the value of \(R\) can be obtained using the ratio test.&nbsp;</p>
+<p>To do this, we apply the ratio test for a general \(x\), we can think of this as fixing \(x\) and asking if the series is convergent. We know, from the ratio test that \(\displaystyle{\sum_{p=0}^\infty b_p x^p}\) is absolutely convergent if \[ \lim_{p
+    \to \infty} \dfrac{|b_{p+1} x^{p+1}|}{|b_p x^p|} = \lim_{p \to \infty}\left|\dfrac{b_{p+1}}{b_p}\right| |x|&lt;1 \quad \mathrm{implying} \quad |x|&lt;\lim_{p\to\infty}\left|\dfrac{b_p}{b_{p+1}}\right| \qquad \mathrm{and \; so} \quad R = \lim_{p\to\infty}\left|\dfrac{b_p}{b_{p+1}}\right|&nbsp;\]
+</p>
+<p>Warning: Note that the terms appearing in the numerator and denominator for the ratio are reversed in the definition of \(R\). This for a good reason, it happens when we divide in the final step above.</p>
+<p>It can help to remember that the ratio test looks at how the terms grow by considering the ratio of a term with the previous term. If this is less than \(1\) then the terms are decreasing which is necessary for convergence. We essentially compare the
+    series with a geometric series. In a power series, it looks a little bit like a geometric series with common ratio \(x\), the series converges if the growth rate \(x\) is sufficiently slowed by the growth (or decay) of the coefficients. Hence the
+    series converges if the growth of \(x\) is less than "one over the growth of the coefficients" as the product needs to be less than \(1\).</p>
+<p>If nothing else, take care to return to the definitions when you need.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<ol class="HELM_parts">
+    <li>Find the radius of convergence of the series \[1 + \dfrac{x}{2} + \dfrac{x^2}{3} + \dfrac{x^3}{4} + \cdots\] </li>
+    <li>Investigate what happens at the end-points \(x=-1, x=+1\) of the region of absolute convergence.</li>
+</ol>
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+    <li>Here \[1 + \dfrac{x}{2} + \dfrac{x^2}{3} + \dfrac{x^3}{4} + \cdots = \sum_{p=0}^\infty \dfrac{x^p}{p+1} \] so \[b_p = \dfrac{1}{p+1} \quad \therefore \quad b_{p+1}=\dfrac{1}{p+2}.\] In this case, \[R= \lim_{p \to \infty}\left| \dfrac{p+2}{p+1}\right|
+        = 1\] so the given series is absolutely convergent if \(|x|&lt;1\) and is divergent if \(|x|&gt;1\). </li>
+    <li>
+        <p>At \(x=+1\) the series is \[1+\dfrac{1}{2} + \dfrac{1}{3} + \cdots\] which is divergent (the harmonic series). However, at \(x=-1\) the series is \[1-\dfrac{1}{2} + \dfrac{1}{3} - \dfrac{1}{4} + \cdots \] which is convergent (the alternative harmonic
+            series).
+        </p>
+        <p> Finally, therefore, the series \[ 1 + \dfrac{x}{2} + \dfrac{x^2}{3} + \dfrac{x^3}{4} + \cdots \] is convergent if \(-1\leq x &lt; 1\). </p>
+    </li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+201020190150+1ilaRG</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210610151251+7OgYlc</text></tag>
+    </tags>
+    
+</question>
+</quiz>

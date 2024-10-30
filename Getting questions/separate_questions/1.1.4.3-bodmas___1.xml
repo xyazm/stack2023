@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="37742">
+        <parent>0</parent>
+        <name>1.1.4.3 BODMAS</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Evaluate \(8 \div 2 &#8722; (4 &#8722; 5)\)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The bracketed expression is evaluated first:&lt;/p&gt;
+&lt;p&gt;\(\qquad 8 \div 2 &#8722; (4 &#8722; 5) = 8 \div 2 &#8722; (&#8722;1)\)&lt;/p&gt;
+&lt;p&gt;Division has higher priority than subtraction and so this is carried out next giving&lt;/p&gt;
+&lt;p&gt;\(\qquad 8 \div 2 &#8722; (&#8722;1) = 4 &#8722; (&#8722;1)\)&lt;/p&gt;
+&lt;p&gt;Subtracting a negative number is equivalent to adding a positive number. Thus&lt;/p&gt;
+&lt;p&gt;\(\qquad 4 &#8722; (&#8722;1) = 4 + 1 = 5\)&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210902124900+tiUPYM</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210902125114+FWHwl3</version>
+        <hidden>0</hidden>
+        <timecreated>1630586940</timecreated>
+        <timemodified>1630587074</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

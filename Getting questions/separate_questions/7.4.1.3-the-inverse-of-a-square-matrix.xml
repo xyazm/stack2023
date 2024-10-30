@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26275">
+        <parent>0</parent>
+        <name>7.4.1.3 The inverse of a square matrix</name>
+        <questiontext>&lt;ul&gt;
+    &lt;li&gt;&lt;p&gt;A matrix that has no inverse is said to be a &lt;b&gt;singular matrix&lt;/b&gt;. A matrix which has an inverse is said to be &lt;b&gt;non-singular&lt;/b&gt;.&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;If a matrix has an inverse then that inverse is unique.&lt;/p&gt;
+        &lt;p&gt;Suppose \(B\) and \(C\) are both inverses of \(A\). Then, by definition of the inverse,&lt;/p&gt;
+        &lt;p style="text-align: center;"&gt;\(AB = BA = I\) &amp;emsp; &lt;b&gt;and&lt;/b&gt; &amp;emsp; \(AC = CA = I\).&lt;/p&gt;
+        &lt;p&gt;Consider the two ways of forming the product \(CAB\).&lt;/p&gt;
+        &lt;ol type="1"&gt;
+            &lt;li&gt;\(CAB = C(AB) = CI = C\).&lt;/li&gt;
+            &lt;li&gt;\(CAB = (CA)B = IB = B\).&lt;/li&gt;
+        &lt;/ol&gt;
+        &lt;p&gt;Hence, \(B = C\) and the &lt;b&gt;inverse is unique&lt;/b&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;There is no such operation as division in matrix algebra.&lt;/p&gt;
+        &lt;p&gt;We do not write \(\dfrac{B}{A}\) but rather \(A^{-1}B\) or \(BA^{-1}\), depending on the order required.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Assuming that the square matrix \(A\) has an inverse \(A^{-1}\) then the solution of the systems of equations \(AX = B\) is found by pre-multiplying both sides by \(A^{-1}\).&lt;/p&gt;
+        &lt;table style="margin: auto;"&gt;
+            &lt;tbody&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                    &lt;td style="text-align: right;"&gt;\(AX\)&lt;/td&gt;
+                    &lt;td style="text-align: center;"&gt;&amp;ensp;\(=\)&amp;ensp;&lt;/td&gt;
+                    &lt;td style="text-align: left;"&gt;\(B\),&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;pre-multiplying by \(A^{-1}\): &amp;emsp;&lt;/td&gt;
+                    &lt;td style="text-align: right;"&gt;\(A^{-1}(AX)\)&lt;/td&gt;
+                    &lt;td style="text-align: center;"&gt;\(=\)&lt;/td&gt;
+                    &lt;td style="text-align: left;"&gt;\(A^{-1}B\),&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;using associativity:&lt;/td&gt;
+                    &lt;td style="text-align: right;"&gt;\((A^{-1}A)X\)&lt;/td&gt;
+                    &lt;td style="text-align: center;"&gt;\(=\)&lt;/td&gt;
+                    &lt;td style="text-align: left;"&gt;\(B\),&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;using \(A^{-1}A = \):&lt;/td&gt;
+                    &lt;td style="text-align: right;"&gt;\(IX\)&lt;/td&gt;
+                    &lt;td style="text-align: center;"&gt;\(=\)&lt;/td&gt;
+                    &lt;td style="text-align: left;"&gt;\(A^{-1}B\),&lt;/td&gt;
+                    &lt;td&gt;&lt;/td&gt;
+                &lt;/tr&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;using property of \(I\):&lt;/td&gt;
+                    &lt;td style="text-align: right;"&gt;\(X\)&lt;/td&gt;
+                    &lt;td style="text-align: center;"&gt;\(=\)&lt;/td&gt;
+                    &lt;td style="text-align: left;"&gt;\(A^{-1}B\)&lt;/td&gt;
+                    &lt;td&gt;&amp;emsp; which is the solution we seek.&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/tbody&gt;
+        &lt;/table&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622100653+O0weUL</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702145946+U2ylYZ</version>
+        <hidden>0</hidden>
+        <timecreated>1592820413</timecreated>
+        <timemodified>1625237986</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="84108">
+        <parent>0</parent>
+        <name>5.1.1.x Methods for calc gradient -contintue</name>
+        <questiontext>&lt;p dir="ltr" style="text-align: left;"&gt;
+&lt;/p&gt;&lt;p&gt;Linear functions may be useful in economics. A lot of attention is paid to the way in which &lt;strong&gt;demand&lt;/strong&gt; for a product varies with its price. A measure of demand is the number of items sold, if available, in a given period.&lt;/p&gt;
+
+&lt;p&gt;For example, the purpose might be to determine the best price for a product given certain details about costs and with certain assumptions about the way the number of items sold per month varies with price. The price affects the profit and hence, in turn, the number manufactured in response to the demand. The number of items manufactured in a given period is known as the &lt;strong&gt;supply&lt;/strong&gt;. Information about the variation of demand or supply with price may be obtained from market surveys. Constant functions are not appropriate in this context since both demand and supply vary with price. In the absence of other information the simplest way to model the variation of either demand or supply with price is to use a linear function.
+&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220224131619+7Hc3Jq</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220224131624+Y9oyfF</version>
+        <hidden>0</hidden>
+        <timecreated>1645708579</timecreated>
+        <timemodified>1645708584</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

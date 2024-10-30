@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27206">
+        <parent>0</parent>
+        <name>35.2.2.3 Defining probability</name>
+        <questiontext>&lt;h5&gt; Notation &lt;/h5&gt;
+&lt;p&gt; If \(A\) is an event associated with a sample space \(S\) then the probability of \(A\) occurring is denoted by \(\mathbb{P}(A)\). Referring to the examples above we may immediately deduce that&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt; \(\displaystyle \text{P}(H) = \text{P}(T) =\frac12\) &lt;/li&gt;
+&lt;li&gt; \(\displaystyle \text{P}(1) = \text{P}(2) = \text{P}(3) = \text{P}(4) = \text{P}(5) = \text{P}(6) = \frac16\) &lt;/li&gt;
+&lt;li&gt; \(\displaystyle \text{P}(HHH) = \text{P}(HHT) = \text{P}(HTH) = \text{P}(THH)= \text{P}(HTT)\)\[ =\text{P}(THT) = \text{P}(TTH) = \text{P}(TTT) = \frac18\] &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5&gt; Definition &lt;/h5&gt;
+&lt;p&gt; We can now define probability using the Principle of Equally Likely Outcomes as follows:
+If a sample space \(S\) consists of \(n\) simple outcomes which are equally likely and an event \(A\) consists of \(m\) of those simple outcomes, then\[\text{P}(A) = \frac{m}{n} = \frac{\text{the number of simple outcomes in }A}{\text{the number of simple outcomes in }S}.\]It follows from definition that \(0\leq\text{P}(A)\leq1\).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; If \(\text{P}(A) = 1\) we say that the event \(A\) is &lt;strong&gt;certain&lt;/strong&gt; because \(A\) is identical to \(S\). &lt;/li&gt;
+&lt;li&gt; If \(\text{P}(A) = 0\) we say that the event \(A\) is &lt;strong&gt;impossible&lt;/strong&gt; because \(A\) is empty. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; The set with no outcomes in it is called the &lt;strong&gt;empty set&lt;/strong&gt; and is written \(\varnothing\); therefore \(\text{P}(\varnothing)=0\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701105802+icma4A</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211020103135+Wqy38b</version>
+        <hidden>0</hidden>
+        <timecreated>1593601082</timecreated>
+        <timemodified>1634725895</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

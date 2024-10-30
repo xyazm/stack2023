@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33706">
+        <parent>0</parent>
+        <name>19.2.9.6 Temperature ODE</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;The temperature \(\theta\) (measured in degrees) of a body immersed in an atmosphere of varying
+    temperature is given by&lt;/p&gt;
+\[\frac{\mathrm{d}\theta}{\mathrm{d}t} + {@l@} \theta = {@g@}.\]
+&lt;p&gt;Find the temperature at time \(t\) if \(\theta = {@theta0@}^{\circ} \mathrm{C}\) when \(t = 0\).&lt;/p&gt;
+&lt;p&gt;\(\theta(t) = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;This is a linear differential equation that is already written in standard form.
+Note that here \(f(t) = {@l@}\) and \(g(t) = {@g@}\).&lt;/p&gt;
+&lt;p&gt;We use the key point to find the integrating factor:&lt;/p&gt;
+\[\text{I.F.} = \exp \left[ \int f(t) \,\mathrm{d}t \right] = {@IF@}\]
+&lt;p&gt;Next we transform the equation into exact form by multiplying both sides with the
+    integrating factor. It becomes:
+&lt;/p&gt;
+\[{@IF@} \cdot \frac{\mathrm{d}\theta}{\mathrm{d}t} + {@l * IF@} \cdot \theta = {@IF@} \cdot ({@g@})\]
+&lt;p&gt;Note that the left-hand side is the derivative of \({@IF@} \cdot \theta\) with respect to \(t\).
+    Our equation then becomes:
+&lt;/p&gt;
+\[\frac{\mathrm{d}}{\mathrm{d}t} \left( {@IF@} \cdot \theta \right) = {@IF * g@}\]
+&lt;p&gt;Therefore, we can find an expression for \({@IF@} \cdot \theta\) by integrating the right-hand side.
+    This can be done using integration by parts, which you can review in previous workbooks.
+    The result is:
+&lt;/p&gt;
+\[{@IF@} \cdot \theta = {@I@}\]
+&lt;p&gt;Which then gives the following general solution:&lt;/p&gt;
+\[\theta = {@gsol@}\]
+&lt;p&gt;We can now solve for \(C\) and use the given boundary conditions:&lt;/p&gt;
+\[C = {@Cexp@}\]
+\[\theta(0) = {@theta0@} \implies C = {@C0@}\]
+&lt;p&gt;This gives the particular solution we seek:&lt;/p&gt;
+\[\theta(t) = {@ta@}\]</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210617095512+tASTMi</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210617105620+ur788s</version>
+        <hidden>0</hidden>
+        <timecreated>1623923712</timecreated>
+        <timemodified>1623927380</timemodified>
+        <createdby>2661</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23420">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>/* Randomisation */
+l: rand([0.1, 0.2, 0.5]);
+a: rand_with_step(3, 7, 2);
+b: float(a / 2);
+theta0: rand_with_step(30, 80, 10);
+
+g: a - b * t;
+IF: e^(int(l, t));
+I: expand(int(IF * g, t)) + C;
+gsol: expand(I / IF);
+Cexp: rhs(solve(theta = gsol, C)[1]);
+C0: float(ev(Cexp, t=0, theta=theta0));
+ta: ev(gsol, C=C0);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\theta' + {@l@} \theta = {@g@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54064">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta</tans>
+              <boxsize>20</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46387">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71313">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54180">
+              <testcase>1</testcase>
+              <timemodified>1623925502</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117247">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100188">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54181">
+              <testcase>2</testcase>
+              <timemodified>1623925521</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117248">
+                  <inputname>ans1</inputname>
+                  <value>ta+1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100189">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="575582">
+              <seed>207087991</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575583">
+              <seed>2123924174</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575584">
+              <seed>560644367</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575585">
+              <seed>1205434721</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575586">
+              <seed>839656071</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575587">
+              <seed>2125588050</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575588">
+              <seed>1999063934</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575589">
+              <seed>78417243</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575590">
+              <seed>1936429163</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

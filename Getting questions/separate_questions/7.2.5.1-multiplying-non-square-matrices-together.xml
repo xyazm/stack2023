@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26223">
+        <parent>0</parent>
+        <name>7.2.5.1 Multiplying non-square matrices together</name>
+        <questiontext>&lt;h3&gt;Multiplying non-square matrices together&lt;/h3&gt;
+&lt;p&gt;So far, we have just looked at multiplying \(2\times
+2\) matrices and \(3\times 3\) matrices. However, products between non-square matrices may be possible.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p style="text-align:center;"&gt;&lt;b&gt;General Matrix Products&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The general rule is that an \(n \times p\) matrix \(A\) can be multiplied by a \(p \times m\) matrix \(B\) to form an \(n \times m\) matrix \(AB = C.\)&lt;/p&gt;
+
+&lt;p&gt;In words:&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;For the matrix product \(AB\) to be defined the number
+of columns of \(A\) must equal the number of rows of \(B\).&lt;/p&gt;
+
+&lt;p&gt;The elements of \(C\) are found in the usual way:&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;The element in the \(i^{\text{th}}\) row and \(j^{\text{th}}\) column of \(C\) is obtained
+by multiplying the \(i^{\text{th}}\) row of \(A\) with the \(j^{\text{th}}\) column of \(B\).&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622101247+YltWTq</stamp>
+        <version>stack2.maths.ed.ac.uk+200814121416+Jr1dHx</version>
+        <hidden>0</hidden>
+        <timecreated>1592820767</timecreated>
+        <timemodified>1597407256</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

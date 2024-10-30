@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24427 -->
+  <question type="stack">
+    <name>
+				<text>11.2.3.2 Engineering Example 2</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Engineering Example 2</h4>
+
+<h5>Electromotive force</h5>
+
+<p></p>
+<b>Introduction</b>
+<p></p>
+Potential difference in an electrical circuit is produced by <b>electromotive force</b> (e.m.f) which is measured in <b>volts</b> and describes the force that maintains current flow around a closed path. Every source of continuous electrical energy, including batteries, generators and thermocouples, consist essentially of an energy converter that produces an e.m.f. An electric current always produces a
+magnetic field. So the current \(i\) which flows round any closed path produces a magnetic flux \(\phi\) which passes through that path. Conversely, if another closed path, i.e. another coil, is placed within the first path, then the magnetic field due to the first circuit can induce an e.m.f and hence a current in the second coil. The simplest closed path is a single loop. More commonly, helical coils, known as search coils, with known area and number of turns, are used. The induced e.m.f depends upon the number of turns in the coil. The search coil is used with a fluxmeter to measure the change of flux linkage.
+<p></p>
+<b>Problem in words</b>
+<p></p>
+A current \(i\) is travelling through a single turn loop of radius \(1 \ \mathrm{m}\). A 4-turn search coil of effective area \(0.03 \ \mathrm{m^2}\)&nbsp;is placed inside the loop. The magnetic flux in <b>weber</b> (<b>Wb</b>) linking the search coil is
+given by:
+\[ \phi = \mu_0\dfrac{iA}{2r} \]
+where \(r\) (<b>m</b>) is the radius of the current carrying loop, \(A\) (<b>m<sup>2</sup></b>) is the area of the search coil and \(\mu_0\) is the permeability of free space, \( 4 \pi \times 10^{-7} \ \mathrm{Hm}^{-1}\).<p><br></p>
+<p></p>
+Find the e.m.f. (in volts) induced in the search coil, given by \( \epsilon = -N \left( \dfrac{d\phi}{dt} \right) \) where \(N\) is the number of turns in the search coil, and the current is given by
+\[ i = 20\sin(20\pi t) + 50 \sin(30\pi t).\]
+<p></p>
+<b>Mathematical statement of the problem</b>
+<p></p>
+Substitute \( i = 20 \sin (20 \pi t) + 50 \sin(30 \pi t) \) into \(\phi = \mu_0 \dfrac{iA}{2r} \) and find \(\epsilon = -N \left( \dfrac{d\phi}{dt} \right) \) where \(r = 1 \ \mathrm{m}\), \(A = 0.03 \ \mathrm{m}^2\), \(\mu_0 = 4 \times 10^{-7} \ \mathrm{Hm}^{-1}\)&nbsp;and \(N = 4\).
+<p></p>
+<b>Mathematical analysis</b>
+<p></p>
+\[ \phi = \mu_0 \dfrac{iA}{2r} = \dfrac{\mu_0 A}{2r} (20\sin (20 \pi t) + 50 \sin( 30 \pi t)) \]
+So 
+\begin{align}
+\dfrac{d\phi}{dt} &amp;= \dfrac{\mu_0 A}{2r} ( 20\pi \times 20\cos(20\pi t) + 30\pi \times 50\cos(30\pi t) ) \\
+&amp;= \dfrac{\mu_0 A}{2r} ( 400\pi \cos(20 \pi t) + 1500 \pi \cos(30\pi t)   )
+\end{align}
+so
+\[ \epsilon = -N \dfrac{d\phi}{dt} = -4 \dfrac{\mu_0 A}{2r}( 400\pi \cos(20 \pi t) + 1500 \pi \cos(30 \pi t)).\]
+Now, \( \mu_0 = 4\pi \times 10^{-7} \), \(A = 0.03\) and \(r = 1\). So
+\begin{align}
+\epsilon &amp;= \dfrac{-4 \times 4\pi \times 10^{-7} \times 0.03}{2 \times 1} ( 400\pi \cos(20 \pi t) + 1500 \pi \cos(30\pi t)   ) \\
+&amp;= -7.5398 \times 10^{-8}(1256.64 \cos(20 \pi t) + 4712.39 \cos(30 \pi t)) \\
+&amp;= -9.475 \times 10^{-5} \cos(20 \pi t) + 3.553 \times 10^{-4} \cos(30\pi t)
+\end{align}
+<p></p>
+<b>Interpretation</b>
+<p></p>
+The induced e.m.f. is \( -9.475 \times 10^{-5} \cos(20 \pi t) + 3.553 \times 10^{-4} \cos(30\pi t) \).
+<p></p>
+The graphs below show the initial current in the single loop and the e.m.f induced in the search coil.<p><br></p><p><img src="@@PLUGINFILE@@/11-2-fig-8-current.svg" alt="" width="332" height="417" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p>
+
+Note that the induced e.m.f does not start at zero, which the initial current does, and has a different pattern of variation with time.]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200725100702+wprPAD</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210901194600+aPnqLW</text></tag>
+    </tags>
+    
+</question>
+</quiz>

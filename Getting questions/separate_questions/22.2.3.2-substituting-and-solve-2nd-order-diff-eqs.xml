@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26803">
+        <parent>0</parent>
+        <name>22.2.3.2 Substituting and solve 2nd order diff eqs</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Make the substitution &lt;span class="math inline"&gt;\(\underline{x}=P\underline{y}\)&lt;/span&gt; in the equation \(\ddot{\underline{x}}=A \underline{x}\) where &lt;span class="math inline"&gt;\(\underline{y}=\left[\begin{array}{c}r(t)\\ s(t)\end{array}\right]\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; is the modal matrix of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. \(A\) is assumed to have distinct eigenvalues &lt;span class="math inline"&gt;\(\lambda_1\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\lambda_2\)&lt;/span&gt;.
+&lt;br&gt; Let \(D={@matD@}\).&lt;/p&gt;
+
+&lt;br&gt;
+
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;div&gt;What is the result of the substitution? [[input:ans_a]]
+[[validation:ans_a]][[feedback:prt_a]]&lt;/div&gt;&lt;/li&gt;&lt;br&gt;
+
+&lt;p&gt;Now suppose \(\lambda_1\) and \(\lambda_2\) are both negative. You may let \(\lambda_1=-\omega_1^2\),\(\lambda_2=-\omega_2^2\) for \(\omega_1, \omega_2 &amp;gt;0\). Solve the pair of decoupled equations for \(r(t)\) and \(s(t)\) in terms of \(\omega_1, \omega_2\). You can type \(\omega_1\) and \(\omega_2\) as "omega_1" and "omega_2", respectively.
+&lt;br&gt;
+&lt;/p&gt;&lt;li&gt;&lt;div&gt;
+\(r(t)=\) [[input:ans1]][[validation:ans1]]&lt;br&gt;
+\(s(t)=\) [[input:ans2]][[validation:ans2]]
+[[feedback:prt1]]
+&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;(a) Putting &lt;span class="math inline"&gt;\(\underline{x}=P\underline{y}\)&lt;/span&gt; into the second order system  &lt;span class="math inline"&gt;\(\ddot{\underline{x}}=A \underline{x}\)&lt;/span&gt; gives &lt;span class="math inline"&gt;\(\ddot{\underline{y}} =P^{-1}AP \underline{y}\)&lt;/span&gt;, that is &lt;span class="math inline"&gt;\(\ddot{\underline{y}}=D\underline{y}\)&lt;/span&gt; where &lt;span class="math inline"&gt;\(\quad D=\left[\begin{array}{cc}\lambda_1&amp;amp;0\\ 0&amp;amp;\lambda_2\end{array}\right]\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\ddot{\underline{y}}= \left[\begin{array}{c}\ddot r\\ \ddot
+s\end{array}\right]\)&lt;/span&gt;.
+
+&lt;br&gt;(b) Hence &lt;span class="math inline"&gt;\(\qquad\left[\begin{array}{c}\ddot r\\ \ddot s\end{array}\right]=\left[\begin{array}{cc}\lambda_1&amp;amp;0\\
+0&amp;amp;\lambda_2\end{array}\right]\left[\begin{array}{c}r\\ s\end{array}\right]\)&lt;/span&gt;. &lt;br&gt;&lt;br&gt;That is, &lt;span class="math inline"&gt;\(\ddot
+r=\lambda_1r=-\omega_1^2 r\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\ddot s=\lambda_2 s=-\omega_2^2s\)&lt;/span&gt; (where &lt;span class="math inline"&gt;\(\lambda_1\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\lambda_2\)&lt;/span&gt; are both negative.) The two decoupled equations are of the form of the differential equation governing simple harmonic motion, hence the general solution is &lt;span class="math inline"&gt;\(r=K\cos\omega_1t+L\sin \omega_1t\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(s=M\cos\omega _2t+N\sin \omega_2 t\)&lt;/span&gt;.
+
+&lt;br&gt;The solutions for &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; could then be obtained by use of &lt;span class="math inline"&gt;\(\underline{x}=P\underline{y}.\)&lt;/span&gt; Note that in this second order case four initial conditions, two each for both &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;, are required because four constants &lt;span class="math inline"&gt;\(K,L,M,N\)&lt;/span&gt; arise in the solution.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618155344+DvCnOQ</stamp>
+        <version>moodle2.maths.ed.ac.uk+200930140510+JgcKb6</version>
+        <hidden>0</hidden>
+        <timecreated>1592495624</timecreated>
+        <timemodified>1601474710</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18100">
+            <stackversion>2020081700</stackversion>
+            <questionvariables>simp:true
+/*Possible answers for a*/
+statements:[[true,"\\(\\ddot{\\underline{y}}= D\\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= PAP^{-1} \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= A \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= AP \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}=D^{-1}AD \\underline{y}\\)"]]
+
+/* shuffle */
+statements:random_permutation(statements)
+/* add letters, and append the letters to the text of the statements: */
+statements:makelist([sconcat("(",ascii(96+i),")"),statements[i][1],statements[i][2]],i,1,length(statements))
+statements:maplist(lambda([ex],[ex[1],ex[2],sconcat("&lt;b&gt;",ex[1],"&lt;/b&gt; ",ex[3])]),statements)
+
+/* produce lists of correct and incorrect statements: */
+sola:mcq_correct(statements)[1]
+incorr:maplist(first, sublist(statements, lambda([ex], not(second(ex)))))
+
+simp:true
+sol1:K*cos(omega_1*t)+L*sin(omega_1*t)
+sol2: M*cos(omega_2*t)+N*sin(omega_2*t)
+
+matD:matrix([lambda_1,0],[0,lambda_2])
+
+sol1_alt: A*cos(omega_1*t)+B*sin(omega_1*t)
+sol2_alt: C*cos(omega_2*t)+D*sin(omega_2*t)
+sol1_alt2:K*cos(-sqrt(lambda_1)*t)+L*sin(-sqrt(lambda_1)*t)
+sol2_alt2:M*cos(-sqrt(lambda_2)*t)+N*sin(-sqrt(lambda_2)*t)
+simp:false</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>{@statements@}</questionnote>
+            <questionsimplify>0</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42668">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>sol1</tans>
+              <boxsize>20</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>lambda,lambda_1,lambda_2</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="42669">
+              <name>ans2</name>
+              <type>algebraic</type>
+              <tans>sol2</tans>
+              <boxsize>20</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>lambda,lambda_1,lambda_2</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="42670">
+              <name>ans_a</name>
+              <type>radio</type>
+              <tans>statements</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>Use . for matrix multiplication</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>omega</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36968">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>ans1p:diff(diff(ans1,t),t)
+ans2p:diff(diff(ans2,t),t)
+ansp:matrix([ans1p,ans2p])
+lans1:ans1*(-omega_1^2)
+lans2:ans2*(-omega_2^2)
+lans:matrix([lans1,lans2])</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="55324">
+                  <nodename>2</nodename>
+                  <answertest>SubstEquiv</answertest>
+                  <sans>ans1p</sans>
+                  <tans>lans1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2500000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>3</truenextnode>
+                  <trueanswernote>r_correct</trueanswernote>
+                  <truefeedback>Your equation for \(r(t)\) satisfies \(\ddot r(t)=-\omega_1^2 r(t)=\lambda_1 r(t)\).&lt;br&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>3</falsenextnode>
+                  <falseanswernote>r_wrong</falseanswernote>
+                  <falsefeedback>Your equation for \(r(t)\) does not satisfy \(\ddot r(t)=-\omega_1^2 r(t)=\lambda_1 r(t)\). In your case,
+\[(t)={@diff(diff(ans1,t),t)@}\]
+\[-\omega_1^2 r(t)={@ans1*-omega_1^2@}.\]</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55325">
+                  <nodename>3</nodename>
+                  <answertest>SubstEquiv</answertest>
+                  <sans>ans2p</sans>
+                  <tans>lans2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2500000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>5</truenextnode>
+                  <trueanswernote>s_correct</trueanswernote>
+                  <truefeedback>Your equation for \(s(t)\) satisfies \(\ddot s(t)=-\omega_2^2 r(t)=\lambda_2 s(t)\).&lt;br&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>+</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>s_wrong</falseanswernote>
+                  <falsefeedback>Your equation for \(s(t)\) does not satisfy \(\ddot s(t)=-\omega_2^2 r(t)=\lambda_2 s(t)\). In your case,
+\[s(t)={@diff(diff(ans2,t),t)@}.\]
+\[-\omega_2^2 s(t)={@ans2*-omega_2^2@}.\]</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55326">
+                  <nodename>4</nodename>
+                  <answertest>SubstEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>sol1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-5-T</trueanswernote>
+                  <truefeedback>You have found the correct general solution.</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-5-F</falseanswernote>
+                  <falsefeedback>However, your answer is not equivalent to the correct general answer, even when taking into account any difference in variable names. Perhaps you found a specific answer, instead of the general answer?</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55327">
+                  <nodename>5</nodename>
+                  <answertest>SubstEquiv</answertest>
+                  <sans>ansp</sans>
+                  <tans>lans</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>4</truenextnode>
+                  <trueanswernote>prt1-6-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-6-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36969">
+              <name>prt_a</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>/*old code:
+simp:true
+matY:matrix([r(t)],[s(t)])
+matP:matrix([a_1,b_1],[a_2,b_2])
+sola_alg:matD.matY
+ansa_alg:subst(P=matP,subst(Y=matY,subst(D=matD,ans_a)))
+simp:false*/</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="55328">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans_a</sans>
+                  <tans>sola</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt_a-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt_a-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41794">
+              <testcase>1</testcase>
+              <timemodified>1592927388</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="91022">
+                  <inputname>ans1</inputname>
+                  <value>sol1</value>
+                </stackqtestinput>
+                <stackqtestinput id="91023">
+                  <inputname>ans2</inputname>
+                  <value>sol2</value>
+                </stackqtestinput>
+                <stackqtestinput id="91024">
+                  <inputname>ans_a</inputname>
+                  <value>sola</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78835">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-5-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78836">
+                  <prtname>prt_a</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt_a-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41795">
+              <testcase>2</testcase>
+              <timemodified>1592927402</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="91025">
+                  <inputname>ans1</inputname>
+                  <value>sol1_alt</value>
+                </stackqtestinput>
+                <stackqtestinput id="91026">
+                  <inputname>ans2</inputname>
+                  <value>sol2_alt</value>
+                </stackqtestinput>
+                <stackqtestinput id="91027">
+                  <inputname>ans_a</inputname>
+                  <value>sola</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78837">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-5-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78838">
+                  <prtname>prt_a</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt_a-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41796">
+              <testcase>3</testcase>
+              <timemodified>1592927422</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="91028">
+                  <inputname>ans1</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+                <stackqtestinput id="91029">
+                  <inputname>ans2</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+                <stackqtestinput id="91030">
+                  <inputname>ans_a</inputname>
+                  <value>incorr[1]</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78839">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.5000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-5-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78840">
+                  <prtname>prt_a</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt_a-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41797">
+              <testcase>4</testcase>
+              <timemodified>1594041334</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="91031">
+                  <inputname>ans1</inputname>
+                  <value>sol1_alt2</value>
+                </stackqtestinput>
+                <stackqtestinput id="91032">
+                  <inputname>ans2</inputname>
+                  <value>sol2_alt2</value>
+                </stackqtestinput>
+                <stackqtestinput id="91033">
+                  <inputname>ans_a</inputname>
+                  <value>sola</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78841">
+                  <prtname>prt1</prtname>
+                  <expectedscore>$@NULL@$</expectedscore>
+                  <expectedpenalty>$@NULL@$</expectedpenalty>
+                  <expectedanswernote>NULL</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78842">
+                  <prtname>prt_a</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt_a-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="176374">
+              <seed>2109047495</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176375">
+              <seed>1580326410</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176376">
+              <seed>1619903051</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176377">
+              <seed>786071693</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176378">
+              <seed>1430274363</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176379">
+              <seed>1165504645</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176380">
+              <seed>131939980</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176381">
+              <seed>574077978</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176382">
+              <seed>1927499770</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176383">
+              <seed>1700634343</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

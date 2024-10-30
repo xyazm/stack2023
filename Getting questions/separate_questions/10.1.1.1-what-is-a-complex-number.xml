@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26698">
+        <parent>0</parent>
+        <name>10.1.1.1 What is a Complex Number?</name>
+        <questiontext>&lt;h3&gt; What is a Complex Number?&lt;/h3&gt;
+
+&lt;p&gt;We assume that you are familiar with the properties of the real numbers; examples are:&lt;/p&gt;
+&lt;p&gt; &lt;span class="math inline"&gt;\[1,\ -2,\ {3\over
+{10}},\ 2.634,\ -3.111,\ \pi ,\ e ,\ \sqrt{2}.\]&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;We all know how to add, subtract and multiply such numbers. We can also divide by any number which is non-zero. We are aware that the numbers can be positive or negative or zero and also aware of their geometrical interpretation as being represented by
+    points on a &#8216;real&#8217; axis known as a number line as in the figure below.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/10-1-fig2-axis.svg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="560" height="34"&gt;&lt;/figure&gt;
+&lt;p&gt;The real axis is a line with a direction (usually chosen to be from left to right) indicated by an arrow. We shall refer to this as the &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;-axis. On this axis, we select a point, arbitrarily, and refer to this as the
+    O. The origin, where zero is located, distinguishes positive numbers from negative numbers: the numbers to the right of the origin are the positive numbers and the numbers to the left of the origin are the negative numbers. Thus we can &#8216;locate&#8217; the
+    numbers in our example.&lt;/p&gt;
+
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/fig1.svg" alt="" role="presentation" class="atto_image_button_text-bottom" width="560" height="45"&gt;&lt;/figure&gt;
+
+&lt;p&gt;We can formalise the algebra of real numbers into a set of rules which they obey.&lt;/p&gt;
+
+&lt;p&gt;So if &lt;span class="math inline"&gt;\(x_1,x_2\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(x_3\)&lt;/span&gt; are any three real numbers then we know that, in particular:&lt;/p&gt;
+
+&lt;p&gt; &lt;span class="math inline"&gt; \[x_1+x_2=x_2+x_1\qquad
+x_1+(x_2+x_3)=(x_1+x_2)+x_3\] &lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;span class="math inline"&gt;\[1\times x_1=x_1\qquad 0\times
+x_1=0\]&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;span class="math inline"&gt;\[x_1\times x_2=x_2\times
+x_1\qquad x_1\times (x_2+x_3)=x_1\times x_2+x_1\times x_3\]&lt;/span&gt; &lt;/p&gt;
+
+&lt;p&gt;Also, in multiplication we are familiar with the elementary rules: &lt;span class="math inline"&gt;\(\qquad\text{(positive)}\times\text{(positive)}=\text{positive}\qquad\qquad\ \;
+\text{(positive)}\times\text{(negative)}=\text{negative}\)&lt;/span&gt; &lt;span class="math inline"&gt;\(\qquad\text{(negative)}\times\text{(positive)}=\text{negative}\qquad\qquad
+\text{(negative)}\times\text{(negative)}=\text{positive}\)&lt;/span&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It follows that if &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; represents &lt;span&gt;&lt;em&gt;any&lt;/em&gt;&lt;/span&gt; real number then &lt;span class="math inline"&gt;\[\qquad x^2\ge 0\] &lt;/span&gt; in words, &lt;span&gt;&lt;strong&gt;the square of a real number is always non-negative&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here we will consider a kind of number (a generalisation of a real number) whose square is not necessarily positive (and not necessarily real either). However, it is important to get to know how to handle complex numbers before using them in calculations.
+    This will not be difficult as the new set of rules is, in fact, precisely the same set of rules obeyed by the &#8216;real&#8217; numbers. These new numbers are called complex numbers.
+
+&lt;/p&gt;
+&lt;p&gt;A &lt;span&gt;&lt;strong&gt;complex number&lt;/strong&gt;&lt;/span&gt; is an ordered pair of real numbers, usually denoted by &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; or &lt;span class="math inline"&gt;\(w\)&lt;/span&gt; etc. So if &lt;span class="math inline"&gt;\(a,b\)&lt;/span&gt; are real numbers
+    then we designate a complex number through: &lt;span class="math inline"&gt;\[\qquad z=a+i b\]&lt;/span&gt; where &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is a symbol obeying the rule&lt;span class="math inline"&gt;\[\qquad i^2=-1.\]&lt;/span&gt; For simplicity we shall assume
+    we can write &lt;span class="math inline"&gt;\[\qquad i=\sqrt{-1}.\]&lt;/span&gt;Often, particularly in electrical engineering applications, the symbol &lt;span class="math inline"&gt;\(\text{j}\)&lt;/span&gt; is used instead of &lt;span class="math inline"&gt;\(i.\)&lt;/span&gt; Also
+    note that, conventially, examples of actual complex numbers such as &lt;span class="math inline"&gt;\(2+3i\)&lt;/span&gt; are written like this and not &lt;span class="math inline"&gt;\(2+i 3\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt; Consider for a moment \(\sqrt{-4}\). Clearly this can't be a real number since we would like \((\sqrt{-4})^2=-4\), and the square of any real number is non-negative. Using the rule that \(\sqrt{-1}=i\) we can follow familiar algebraic rules and write
+    &lt;span class="math inline"&gt;\[\sqrt{-4}=\sqrt{(4)(-1)}=\sqrt{4}\sqrt{-1}=2i,\]&lt;/span&gt; a complex number.&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200616103958+gCWeYO</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210706164007+lmBE4o</version>
+        <hidden>0</hidden>
+        <timecreated>1592303998</timecreated>
+        <timemodified>1625589607</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26331 -->
+  <question type="stack">
+    <name>
+				<text>2.3.3.4 Explain non-invertible many-to-one *****</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Explain why a many-to-one function does not have an inverse function. Give an example.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200617155709+SOLiWO</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200622151739+URLDOH</text></tag>
+    </tags>
+    
+</question>
+</quiz>

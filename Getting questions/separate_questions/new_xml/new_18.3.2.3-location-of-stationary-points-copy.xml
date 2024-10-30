@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 84681 -->
+  <question type="stack">
+    <name>
+				<text>18.3.2.3 Location of stationary points (copy)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4 class="HELM_example">Example</h4>
+<p>Find a second stationary point of \(f(x,y)=8x^2+6y^2-2y^3+5\).</p>
+
+<h4 class="HELM_solution">Solution</h4>
+\(f_x=16x\) and \(f_y\equiv 6y(2-y)\).
+<p>From this we note that \(f_x=0\) when \(x=0\), and \(f_y=0\) when \(y=0\).</p>
+<p>So \(x=0,\ y=0\)</p>
+<p> i.e. \((0,0)\) is a second stationary point of the function.</p>
+<hr>
+
+<p>It is important when solving the simultaneous equations \(f_x=0\) and \(f_y=0\) to find stationary points not to miss any solutions. A useful tip is to factorise the left-hand sides and consider systematically all the possibilities.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Locate the stationary points of \(f(x,y)=x^4+y^4-36xy\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p>First we write down the partial derivatives of \(f(x,y)\)</p>
+<p>\(\dfrac{\partial f}{\partial x}=4x^3-36y=4(x^3-9y)\)</p>
+<p>\(\dfrac{\partial f}{\partial y}=4y^3-36x=4(y^3-9x)\)</p>
+<p>Now we solve the equations \(\dfrac{\partial f}{\partial x}=0\) and \(\dfrac{\partial f}{\partial y}=0\):
+</p>
+<p>\(x^3-9y = 0 \quad \) (i)</p>
+<p>\(y^3-9x = 0 \quad \) (ii) </p>
+<p>From (ii) we obtain</p>
+<p>\(x = \dfrac{y^3}{9} \quad\) (iii) </p>
+<p>Now substitute from (iii) into (i) </p>
+
+\(\dfrac{y^9}{9^3}-9y = 0\\ \) \(\Rightarrow y^9-9^4y = 0\\ \)
+<p>\(\Rightarrow y(y^8-3^8) = 0 \) (removing the common factor) \( \\ \)</p>
+<p>\(\Rightarrow y(y^4-3^4)(y^4+3^4) = 0 \) (using the difference of two squares)\( \\ \)</p>
+<p>We therefore obtain as the only solutions:</p>
+<p>\(y=0\) or \(y^4-3^4 = 0\) (since \(y^4+3^4\) is never zero) \( \\ \)</p>
+<p>The last equation implies:</p>
+<p>\((y^2-9)(y^2+9) = 0\) (using the difference of two squares) \( \\ \)</p>
+<p>therefore \(y^2=9\) and \(y =\pm\ 3\).</p>
+<p></p>
+<p>Now, using (iii): when \(y=0,\ x=0\), when \(y=3,\ x=3\), and when \(y=-3,\ x=-3\).
+</p>
+<p>The stationary points are \((0,0), (-3,-3)\) and \((3,3)\).</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Locate the stationary points of \(f(x,y)=x^4+y^4-36xy\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+\(\dfrac{\partial f}{\partial x}=3x^2-3,\\ \dfrac{\partial f}{\partial y}=2y-6\)
+<p>Now solve simultaneously the equations \(\dfrac{\partial f}{\partial x}=0\) and \(\dfrac{\partial f}{\partial y}=0\):</p>
+\(3x^2-3=0\) and \(2y-6=0\).
+<p></p>
+<p>Hence \(x^2=1\) and \(y=3\), giving stationary points at \((1,3)\) and \((-1,3)\).
+</p>
+<hr>
+
+
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p><strong>The Partial Derivative of  \(\pmb f\) with respect to \(\pmb x\)</strong></p>
+    <p> For a function of two variables \(z=f(x,y)\) the partial derivative of \(f\) with respect to \(x\) is denoted by \(\dfrac{\partial f}{\partial x}\) and is obtained by differentiating \(f(x,y)\) with respect to \(x\) in the usual way but treating the
+        \(y\)-variable as if it were a constant.</p>
+    <p>Alternative notations for \(\dfrac{\partial f}{\partial x}\) are \(f_x(x,y)\) or \(f_x\) or \(\dfrac{\partial z}{\partial x}\)
+    </p>
+</div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<ol class="HELM_parts_inline">
+    <p>Find \(\dfrac{\partial f}{\partial x}\) for</p>
+    <li> \(f(x,y)=x^3+x+y^2+y\), </li>
+    <li> \(f(x,y)=x^2y+xy^3\).</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+    <li>\(\dfrac{\partial f}{\partial x}=3x^2+1+0+0=3x^2+1\)</li>
+    <li>\(\dfrac{\partial f}{\partial x}=2x\times y+1\times y^3=2xy+y^3\)</li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220307124708+UToh4O</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220329204048+8QGsgD</text></tag>
+    </tags>
+    
+</question>
+</quiz>

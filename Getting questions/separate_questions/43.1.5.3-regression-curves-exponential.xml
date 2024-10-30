@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62161">
+        <parent>0</parent>
+        <name>43.1.5.3 Regression Curves - Exponential</name>
+        <questiontext>&lt;h3&gt;Regression Curves - the Exponential Case&lt;/h3&gt;
+
+We use the same technique to look for a functional relation of the form
+\[ y = \alpha e^{\beta x}. \] 
+As before, using the method of least squares, we require the values of \(a\) and \(b\) which minimize the
+expression
+\[ f(a,b) = \sum_{r=1}^n \left( y_r - a e ^{bx_r} \right)^2 . \]
+Again omitting the subscripts and using partial differentiation gives
+\[ \dfrac{\partial f}{\partial a} = -2 \sum e^{bx} \left( y - a e ^{bx} \right)\]
+\[ \dfrac{\partial f}{\partial b} = -2 \sum axe^{bx} \left( y - a e ^{bx} \right).\]
+
+At a minimum we require
+\[ \dfrac{\partial f}{\partial a} = \dfrac{\partial f}{\partial b} = 0, \]
+which results in the two linear equations
+\[ \sum y e^{bx} - a\sum e^{2bx} = 0\]
+\[ \sum xy e^{bx} - a\sum xe^{2bx} = 0\]
+which can be solved by iterative methods to give the values of \(a\) and \(b\).
+
+Note that it is possible to combine (for example) linear and exponential regression to obtain a
+regression equation of the form
+\[ y = \left( \alpha + \beta x \right) e^{\gamma x} .\]
+The method of least squares may then be used to find estimates \(a\), \(b\), \(c\) of \(\alpha\), \(\beta\), \(\gamma\).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704153050+Zujb0A</stamp>
+        <version>stack2.maths.ed.ac.uk+200715054241+hEtKi5</version>
+        <hidden>0</hidden>
+        <timecreated>1593876650</timecreated>
+        <timemodified>1594791761</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

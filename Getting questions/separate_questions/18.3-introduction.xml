@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24651">
+        <parent>0</parent>
+        <name>18.3 Introduction</name>
+        <questiontext>&lt;p&gt;The calculation of the optimum value of a function of two variables is a common requirement in many areas of engineering, for example in thermodynamics. Unlike the case of a function of one variable we have to use more complicated criteria to distinguish
+    between the various types of stationary point.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200820132846+5YOG4i</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210611134555+g9LOYg</version>
+        <hidden>0</hidden>
+        <timecreated>1597930126</timecreated>
+        <timemodified>1623419155</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27262">
+        <parent>0</parent>
+        <name>36.1.6.2 Exercise 1 (continued) - Calculate mean, median, sd, IQR</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;The following data set which represents the numbers of days between consecutive failures in a machine (sorted into increasing order):&lt;/p&gt;
+&lt;p&gt;\(x = {@L@}\).&lt;/p&gt;&lt;br&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;p&gt;Find the mean and standard deviation of the above data set.&lt;/p&gt;
+&lt;p&gt;Syntax hint: Round up each answer at the final step and enter 3 decimal places. If the answer has less than 3 decimal places, then enter zero(s) at the end.&lt;/p&gt;
+&lt;p&gt;Mean: \(\bar{x} =\) [[input:ans1]] [[validation:ans1]]. [[feedback:prt1]]&lt;/p&gt;
+&lt;p&gt;Standard deviation: \(s =\)&amp;nbsp; [[input:ans2]] [[validation:ans2]]. [[feedback:prt2]]&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Next, find the median and inter-quartile range&lt;/p&gt;
+&lt;p&gt;Syntax hint: Enter 1 decimal place. If the answer has less than 1 decimal place, then enter zero(s) at the end.&lt;/p&gt;
+&lt;p&gt;Median = [[input:ans3]] [[validation:ans3]]. [[feedback:prt3]]&lt;/p&gt;
+&lt;p&gt;Inter-quartile range = [[input:ans4]] [[validation:ans4]]. [[feedback:prt4]]&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Which set of summary would you use to summarise the data?&lt;p&gt;&lt;/p&gt; 
+&lt;p&gt;[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;(a) The sample size is \(n = 16\), so the mean is given by \[\bar{x} = \dfrac{\sum x}{16} = {@m@} = {@ta1@}. \]&lt;/p&gt;
+&lt;p&gt;The standard deviation is \[ s = \sqrt{\dfrac{\sum(x - \bar{x})^2}{n-1}} =&amp;nbsp;\sqrt{\dfrac{\sum x^2 - n \bar{x}^2}{n-1}}&amp;nbsp;= \sqrt{\dfrac{{@v@}}{15}} ={@ta2@}.\]&lt;/p&gt;
+&lt;p&gt;(b) The median is the average of the observations with rank 8 and 9, so \[ \text{Median} = \dfrac{{@l8@}+{@l9@}}{2} = {@ta3@}.\]&lt;/p&gt;
+&lt;p&gt;The lower quartile is given by the average of the observations with rank 4 and 5: 
+\[\dfrac{{@l4@}+{@l5@}}{2} = {@r1@},\] and the upper quartile is given by the average of the observations with rank 12 and 13: \[\dfrac{{@l12@}+{@l13@}}{2} = {@r3@}.\] So the inter-quartile range is \({@r3@} - {@r1@} = {@ta4@}\).&lt;/p&gt;
+&lt;p&gt;(c) The mean and standard deviation have been markedly increased compared with the previous question. Here the median and inter-quartile range are preferable to the mean and standard deviation - they represent the bulk of the data much more realistically.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200714173231+uQcGXJ</stamp>
+        <version>stack2.maths.ed.ac.uk+200817114855+XpoddD</version>
+        <hidden>0</hidden>
+        <timecreated>1594747951</timecreated>
+        <timemodified>1597664935</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18425">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>L: [rand([3,4,5]),rand(4)+10,rand(4)+10,rand(4)+10,rand(4)+10,rand(4)+10,rand([17,18,19]),rand([24,25,26]),rand(3)+10,rand(10)+40, rand(10)+40, rand(10)+50, rand(10)+50, rand(10)+50, rand(10)+60, rand(10)+150];
+L:sort(L);
+r1:float((L[4]+L[5])/2);
+r3:float((L[12]+L[13])/2);
+ta1:decimalplaces(float(mean(L)),3);
+ta2:decimalplaces(float(std1(L)),3);
+ta3:decimalplaces(float(median(L)),1);
+ta4:decimalplaces(r3-r1,1);
+ans:"Median and IQR";
+ta5:[["Mean and standard deviation",false],[ans,true]];
+m:lsum(i,i,L)/length(L);
+v:float(var1(L)*(length(L)-1));
+l4:L[4];l5:L[5];l8:L[8]; l9:L[9];l12:L[12];l13:L[13];
+
+
+
+
+
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[x = {@L@}\]
+\[ \text{mean} = {@float(mean(L))@} = {@dispdp(float(mean(L)),3)@} = {@ta1@}, \quad  \text{sd} = {@float(std1(L))@} = {@ta2@}, \quad \text{median} = {@ta3@}, \quad \text{IQR} = {@ta4@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed>36.1exercise1</variantsselectionseed>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43449">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta1</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>mean,+,1</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:3,mindp:3</options>
+            </stackinput>
+            <stackinput id="43450">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta2</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>std1,var1,+,-</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:3,mindp:3</options>
+            </stackinput>
+            <stackinput id="43451">
+              <name>ans3</name>
+              <type>numerical</type>
+              <tans>ta3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>median,+,-</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:1,mindp:1</options>
+            </stackinput>
+            <stackinput id="43452">
+              <name>ans4</name>
+              <type>numerical</type>
+              <tans>ta4</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>qrange,+,-</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:1,mindp:1</options>
+            </stackinput>
+            <stackinput id="43453">
+              <name>ans5</name>
+              <type>dropdown</type>
+              <tans>ta5</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>2</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37709">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56297">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions>3</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37710">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56298">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions>3</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37711">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56299">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta3</tans>
+                  <testoptions>1</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37712">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56300">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans4</sans>
+                  <tans>ta4</tans>
+                  <testoptions>1</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37713">
+              <name>prt5</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56301">
+                  <nodename>0</nodename>
+                  <answertest>StringSloppy</answertest>
+                  <sans>ans5</sans>
+                  <tans>ans</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt5-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt5-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42520">
+              <testcase>1</testcase>
+              <timemodified>1595852420</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92597">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ta1,3)</value>
+                </stackqtestinput>
+                <stackqtestinput id="92598">
+                  <inputname>ans2</inputname>
+                  <value>dispdp(ta2,3)</value>
+                </stackqtestinput>
+                <stackqtestinput id="92599">
+                  <inputname>ans3</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+                <stackqtestinput id="92600">
+                  <inputname>ans4</inputname>
+                  <value>ta4</value>
+                </stackqtestinput>
+                <stackqtestinput id="92601">
+                  <inputname>ans5</inputname>
+                  <value>ans</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="80301">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80302">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80303">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80304">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80305">
+                  <prtname>prt5</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt5-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="42521">
+              <testcase>2</testcase>
+              <timemodified>1595852455</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92602">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ta2,3)</value>
+                </stackqtestinput>
+                <stackqtestinput id="92603">
+                  <inputname>ans2</inputname>
+                  <value>dispdp(ta1,3)</value>
+                </stackqtestinput>
+                <stackqtestinput id="92604">
+                  <inputname>ans3</inputname>
+                  <value>ta4</value>
+                </stackqtestinput>
+                <stackqtestinput id="92605">
+                  <inputname>ans4</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+                <stackqtestinput id="92606">
+                  <inputname>ans5</inputname>
+                  <value>"Mean and standard deviation"</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="80306">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80307">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80308">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80309">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80310">
+                  <prtname>prt5</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt5-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="179489">
+              <seed>1263942892</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179490">
+              <seed>1208239356</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179491">
+              <seed>316633610</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179492">
+              <seed>743478348</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179493">
+              <seed>1865265606</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179494">
+              <seed>1941747221</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179495">
+              <seed>890287565</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179496">
+              <seed>1211967956</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

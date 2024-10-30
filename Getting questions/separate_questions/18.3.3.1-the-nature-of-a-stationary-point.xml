@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24655">
+        <parent>0</parent>
+        <name>18.3.3.1 The nature of a stationary point</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The nature of a stationary point&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;We state, without proof, a relatively simple test to determine the nature of a stationary point, once located. If the surface is very flat near the stationary point then the test will not be sensitive enough to determine the nature of the point. The test
+    is dependent upon the values of the second order derivatives: \(f_{xx}, f_{yy}, f_{xy}\) and also upon a combination of second order derivatives denoted by \(D\) where \( D \equiv\dfrac{\partial^2f}{\partial x^2}\times\dfrac{\partial^2f}{\partial
+    y^2}-\left(\dfrac{\partial^2f}{\partial x\partial y}\right)^2\) , which is also expressible as \(D\equiv f_{xx}f_{yy}- (f_{yx})^2\). The test is as follows:&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;strong&gt;Test to Determine the Nature of Stationary Points&lt;/strong&gt;
+    &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+    &lt;ol&gt;
+        &lt;li&gt;At each stationary point work out the three second order partial derivatives.&lt;/li&gt;
+        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+        &lt;li&gt;Calculate the value of \(D=f_{xx}f_{yy}-(f_{yx})^2\) at each stationary point.Then, test each stationary point in turn:&lt;/li&gt;
+        &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+        &lt;li&gt;If \(D&amp;lt;0\) the stationary point is a &lt;strong&gt;saddle point&lt;/strong&gt;.
+            &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+            If \(D&amp;gt;0\) and \(\dfrac{\partial^2f}{\partial x^2}&amp;gt;0\) the stationary point is a &lt;strong&gt;local
+minimum&lt;/strong&gt;.
+            &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+            If \(D&amp;gt;0\) and \(\dfrac{\partial^2f}{\partial x^2}&amp;lt;0\) the stationary point is a &lt;strong&gt;local
+maximum&lt;/strong&gt;.
+            &lt;p&gt;&lt;br&gt;&lt;/p&gt;
+            If \(D=0\) then the test is inconclusive (we need an alternative test).&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;The function: \(f(x,y)=x^4+y^4-36 xy\) has stationary points at \((0,0),\ (-3,-3),\ (3,3).\) Use Key Point 4 to determine the nature of each stationary point.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We have \(\dfrac{\partial f}{\partial x}=f_x=4x^3-36y\) and \(\dfrac{\partial f}{\partial y}=f_y=4y^3-36x\).&lt;/p&gt;
+&lt;p&gt;Then \(\dfrac{\partial^2f}{\partial x^2}=f_{xx}=12x^2, \dfrac{\partial^2f}{\partial y^2}=f_{yy}=12y^2\), \(\dfrac{\partial^2f}{\partial x\partial y}=f_{yx}=-36\).&lt;/p&gt;
+&lt;p&gt;A tabular presentation is useful for calculating \(D=f_{xx}f_{yy}-(f_{yx})^2\):&lt;/p&gt;
+
+&lt;table class="HELM_table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt; &lt;/th&gt;
+            &lt;th&gt;Point&lt;/th&gt;
+            &lt;th&gt;Point&lt;/th&gt;
+            &lt;th&gt;Point&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Derivatives&lt;/td&gt;
+            &lt;td&gt;(0, 0)&lt;/td&gt;
+            &lt;td&gt;(-3, -3)&lt;/td&gt;
+            &lt;td&gt;(3, 3)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{xx}\)&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;108&lt;/td&gt;
+            &lt;td&gt;108&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{yy}\)&lt;/td&gt;
+            &lt;td&gt;0&lt;/td&gt;
+            &lt;td&gt;108&lt;/td&gt;
+            &lt;td&gt;108&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{xy}\)&lt;/td&gt;
+            &lt;td&gt;-36&lt;/td&gt;
+            &lt;td&gt;-36&lt;/td&gt;
+            &lt;td&gt;-36&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;em&gt;D&lt;/em&gt;&lt;/td&gt;
+            &lt;td&gt;&amp;lt;0&lt;/td&gt;
+            &lt;td&gt;&amp;gt;0&lt;/td&gt;
+            &lt;td&gt;&amp;gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;\((0,0)\) is a saddle point; \((-3,-3)\) and \((3,3)\) are both local minima.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200821082748+oFnBcX</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210611134508+EaAIqm</version>
+        <hidden>0</hidden>
+        <timecreated>1597998468</timecreated>
+        <timemodified>1623419108</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

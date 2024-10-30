@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24526">
+        <parent>0</parent>
+        <name>13.3.3.4 Finding areas</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Calculate the area enclosed by the curve \(y=x^3\) and the line \(y=x\). [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;The curve \(y=x^3\) and the line \(y=x\) intersect at \(x=-1,0,1\). Between 0 and 1 the graph is above the \(x\) axis and \(y=x\) is greater than \(y=x^3\). Between -1 and 0, the graph is below the \(x\) axis and \(y=x^3\) is greater than \(y=x\). Hence
+    the area is \[- \int_{-1}^0 (x^3 -x) \,\mathrm{d}x + \int_0^1 (x-x^3) \, \mathrm{d}x = {@ta4@}\]&lt;/p&gt;
+&lt;p&gt;A sketch of the graph is shown below.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;/p&gt;
+        &lt;div style="margin-left:4em;margin-right:auto;"&gt;[[jsxgraph width='300px' height='350px']]
+JXG.Options.axis.ticks.insertTicks = false; /*don't insert extra ticks between major ticks*/ 
+JXG.Options.axis.ticks.majorHeight = 10; 
+JXG.Options.axis.ticks.minorHeight = 0.5; /*if minor ticks needed adjust height*/
+JXG.Options.text.fontSize = 16; 
+JXG.Options.axis.ticks.ticksDistance=1; 
+var board = JXG.JSXGraph.initBoard(divid, {boundingbox: {#BB#}, axis: true, showCopyright:false, showNavigation:false}); 
+var f = board.jc.snippet('{#curve#}', true, 'x', true); 
+var ff = board.create('functiongraph',[f,-1.2,1.2], {strokeColor:'#003399',strokeWidth:2});
+var g = board.jc.snippet('{#line#}', true, 'x', true);
+var plotg = board.create('functiongraph', [g,-1.2,1.2],{strokeColor:'#003399',strokeWidth:2});
+ var pa = board.create('point', [-1,-1], {label: { offset: [15, 0], anchorX: 'middle', anchorY: 'middle' }});
+ var pb = board.create('point', [1, 1], {label: { offset: [15, 0], anchorX: 'middle', anchorY: 'middle' }});
+[[/jsxgraph]] 
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>moodle2.maths.ed.ac.uk+210205103206+yeQSHa</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210713152736+xuA7Nt</version>
+        <hidden>0</hidden>
+        <timecreated>1612521126</timecreated>
+        <timemodified>1626190056</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16695">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>exp4: x-x^3;
+curve: x^3
+line: x; 
+ta4: 2*int(exp4, x, 0, 1); 
+
+/*jsxgraph settings */ 
+BB: [-1.5, 2, 1.5, -2]     /* boundingbox:[left, top, right, bottom]*/ 
+c: ev(exp4, x=0);    /* y axis ticks*/
+d: ev(exp4, x=1);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>{{@ta1@}, {@ta2@}, {@ta3@}, {@ta4@}, {@ta5@}, {@ta6@}}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38713">
+              <name>ans4</name>
+              <type>numerical</type>
+              <tans>ta4</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33370">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50424">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>ta4</tans>
+                  <testoptions>x</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38543">
+              <testcase>1</testcase>
+              <timemodified>1612521126</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82394">
+                  <inputname>ans4</inputname>
+                  <value>ta4</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71223">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38544">
+              <testcase>2</testcase>
+              <timemodified>1612521126</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82395">
+                  <inputname>ans4</inputname>
+                  <value>ev(ta4+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71224">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+          <question_hint id="378">
+            <hint>&lt;p&gt;If you are unsure of the limits of integration draw a diagram.&lt;/p&gt;</hint>
+            <hintformat>1</hintformat>
+            <shownumcorrect>$@NULL@$</shownumcorrect>
+            <clearwrong>$@NULL@$</clearwrong>
+            <options>$@NULL@$</options>
+          </question_hint>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

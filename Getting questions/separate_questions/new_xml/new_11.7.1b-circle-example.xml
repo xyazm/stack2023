@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24473 -->
+  <question type="stack">
+    <name>
+				<text>11.7.1b circle example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Sketch the graphs of \( f_1(x) =  \sqrt{1 - x^2} \) and \( f_2(x) = - \sqrt{1 - x^2} \).</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Since \(x^2 + y^2 = 1\) is the well-known equation of the circle with centre at the origin and radius \(1\), it follows that the graphs of \(f_1(x)\) and \(f_2(x)\) are the upper and lower halves of this circle.
+</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/11-7%20circle.svg" alt="unit circle" width="451" height="153" class="img-responsive atto_image_button_text-bottom"><br></p>
+<hr>
+<p></p>
+Sometimes it is difficult or even impossible to solve an equation in \(x\) and \(y\) to obtain \(y\) explicitly in terms of \(x\).
+<p></p>
+Examples where explicit expressions for \(y\) cannot be obtained are
+\[\sin(xy) = y\]
+and
+\[x^2 + \sin y = 2y.\]]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200809094610+lZDWAd</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200809094847+snJKLw</text></tag>
+    </tags>
+    
+</question>
+</quiz>

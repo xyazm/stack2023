@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24671 -->
+  <question type="stack">
+    <name>
+				<text>18.1.2.3 Sketching surfaces</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Sketching surfaces</span><br></h3>
+<p>A plane is relatively easy to sketch since it is flat all we need to know about it is where it intersects the three coordinate axes. For more general surfaces what we do is to sketch curves (like contours) which lie on the surface. If we draw enough of
+    these curves our ‘eye’ will naturally interpret the shape of the surface.</p>
+<p>Let us see, for example, how we sketch \(z=x^2+y^2\).</p>
+<p></p>
+Firstly we confirm that \(z=x^2+y^2\) <strong>is a surface</strong> since this is a relation connecting the three coordinate variables \(x,y,z\). In the standard notation our function of two variables is \(f(x,y)= x^2+y^2\). To sketch the surface we fix
+one of the variables at a constant value.
+<p></p>
+
+<p>\(\bullet\) &nbsp; Fix \(x\) at value \(x_0\).</p>
+
+<p>From our discussion above we remember that \(x=x_0\) is the equation of a plane parallel to the \(zy\) plane. In this case our relation becomes: \(z=x_0^2+y^2\).</p>
+
+<p>Since \(z\) is now a function of a <strong>single</strong> variable \(y\), with \(x_0^2\) held constant, this relation: \(z=x_0^2+y^2\) defines a <strong>curve</strong> which <strong>lies in the plane \(x=x_0\)</strong>.</p>
+
+<p>In the first of the following Figures, we have drawn this curve (a <strong>parabola</strong>). Now by changing the value chosen for \(x_0\) we will obtain a sequence of curves, each a parabola, lying in a different plane, and each being a part of the
+    surface we are trying to sketch. In the second Figure we have drawn some of the curves of this sequence.</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/18.2.1.1%20Plots%20of%20curves%20.svg" alt="Illustration of how to plot curves by fixing the value of one variable." width="483" height="171" class="img-responsive atto_image_button_text-bottom"></figure>
+
+<p>What we have done is to <strong>slice</strong> the surface by planes parallel to the \(zy\) plane. Each slice intersects the surface in a curve. In this case we have not yet plotted enough curves to accurately visualise the surface so we need to draw
+    other surface curves.</p>
+
+<p>\(\bullet\) &nbsp; Fix \(y\) at value \(y_0\)</p>
+
+<p>Here \(y=y_0\) (the equation of a plane parallel to the \(zx\) plane.) In this case the surface becomes \(z=x^2+y_0^2\). Again \(z\) is a function of single variable (since \(y_0\) is fixed) and describes a curve: again the curve is a <strong>parabola</strong>,
+    but this time residing on the plane \(y=y_0\). For each different \(y_0\) we choose a different parabola is obtained: each lying on the surface \(z=x^2+y^2\). Some of these curves have been sketched below. These have then combined with the curves
+    in the previous Figure.</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/18.2.1.1%20Parabolas.svg" alt="Plots of parabolas in the zx plane" width="533" height="183" class="img-responsive atto_image_button_text-bottom"></figure>
+
+<p>We now have an idea of what the surface defined by \(z=x^2+y^2\) looks like but to complete the picture we draw a final sequence of curves.</p>
+
+<p>\(\bullet\)Fix \(z\) at value \(z_0\).</p>
+
+<p>We have \(z=z_0\) (the equation of a plane parallel to the \(xy\) plane.) In this case the surface becomes \(z_0=x^2+y^2\)</p>
+<p> But this is the equation of a <strong>circle</strong> centred on \(x=0\), \(y=0\) of radius \(\sqrt{z_0}\). (Clearly we <strong>must</strong> choose \(z_0\ge 0\) because \(x^2+y^2\) cannot be negative.) As we vary \(z_0\) we obtain different circles,
+    each lying on a different plane \(z=z_0\). In the following Figure we have combined the circles with the curves of in the previous Figures to obtain a good visualisation of the surface \(z=x^2+y^2\).</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/18.2.1.1%20Surface%20sketch.svg" alt="Completed sketch showing a surface in cartesian coordinates." width="504" height="181" class="img-responsive atto_image_button_text-bottom"></figure>
+
+<p>(Technically the surface is called a <strong>paraboloid</strong>, obtained by <strong>rotating</strong> a parabola about the \(z-\)axis.)</p>
+<p>With the wide availability of sophisticated graphics packages the need to be able to sketch a surface is not as important as once it was. However, we urge the reader to attempt simple surface sketching in the initial stages of this study as it will enhance
+    understanding of functions of two variables.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+201215144416+cpKhBe</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210610150117+s9UFsB</text></tag>
+    </tags>
+    
+</question>
+</quiz>

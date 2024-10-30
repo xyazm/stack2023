@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27319">
+        <parent>0</parent>
+        <name>37.1.3.2 Variance of a discrete probability distribution</name>
+        <questiontext>&lt;p&gt;The variance is usually written as &lt;span class="math inline"&gt;\(\sigma^2\)&lt;/span&gt;. For a frequency distribution it is: 
+&lt;br&gt; &lt;span class="math inline"&gt;\[\displaystyle{\sigma^2=\frac{1}{N}\sum_{i=1}^n f_i(x_i-\mu)^2\qquad \text{where } \mu \text{ is the
+mean value}.}\]&lt;/span&gt;&amp;nbsp;&lt;br&gt;and can be expanded and &#8216;simplified&#8217; to appear as: 
+&lt;br&gt;&lt;span class="math inline"&gt;\[\displaystyle{\sigma^2=\frac{1}{N}\sum_{i=1}^n
+f_ix_i^2-\mu^2.}\]&lt;/span&gt;&amp;nbsp;&lt;br&gt; This is often quoted in words:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;\(\qquad\)The variance is equal to the mean of the squares minus the square of the mean.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;We now extend the concept of variance to a random variable.&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;Let &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; be a random variable with values &lt;span class="math inline"&gt;\(x_1,x_2,\ldots , x_n\)&lt;/span&gt;. The variance of &lt;span class="math inline"&gt;\(X\)&lt;/span&gt;, which is written &lt;span class="math inline"&gt;\(\text{V}(X)\)&lt;/span&gt; is defined by &lt;span class="math display"&gt;\[\text{V}(X)=\sum_{i=1}^n p_i(x_i-\mu)^2\]&lt;/span&gt; where &lt;span class="math inline"&gt;\(\mu\equiv \text{E}(X)\)&lt;/span&gt;. We note that &lt;span class="math inline"&gt;\(\text{V}(X)\)&lt;/span&gt; can be written in the alternative form &lt;span class="math display"&gt;\[\text{V}(X)=\text{E}(X^2)-[\text{E}(X)]^2\]&lt;/span&gt; The standard deviation &lt;span class="math inline"&gt;\(\sigma\)&lt;/span&gt; of a random variable is &lt;span class="math inline"&gt;\(\sqrt{\text{V}(X)}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200715142323+WZhItx</stamp>
+        <version>stack2.maths.ed.ac.uk+200813112128+BZH37u</version>
+        <hidden>0</hidden>
+        <timecreated>1594823003</timecreated>
+        <timemodified>1597317688</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

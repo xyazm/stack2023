@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27344 -->
+  <question type="stack">
+    <name>
+				<text>38.2.1.1 The uniform distribution</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>The uniform distribution</h4><p><br></p><p>The Uniform or Rectangular distribution has random variable \(X\)&nbsp; restricted to a finite interval \([a,b]\)&nbsp; and has&nbsp; \(f(x)\) constant over the interval.&nbsp; An illustration is shown in the figure below: <br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/38.2-fig1-constant_function.svg" alt="" width="385" height="197" role="presentation" class="img-responsive atto_image_button_middle"></p><p style="text-align: center;"><br></p><p style="text-align: left;">The function \(f(x)\)&nbsp; is defined by: \[ f(x)=\left\{\begin{matrix} \dfrac{1}{b-a},&amp; a\le x\le b\\\\ 0&amp; \text{otherwise} \end{matrix}\right.\]<b><br></b></p><p style="text-align: left;"><b><br></b></p><p style="text-align: left;"><b>Mean and variance of a uniform distribution</b></p><p style="text-align: left;"><br></p><p style="text-align: left;">Using the definitions of expectation and variance leads to the following calculations.&nbsp;&nbsp; As you might expect, for a uniform distribution, the calculations are not difficult.&nbsp; Using the basic definition of expectation we may write:<br></p><p style="text-align: left;"><br></p><p style="text-align: left;">\begin{eqnarray*} \text{E}(X)&amp;=&amp;\int_{-\infty}^{\infty} x \cdot f(x)\;dx=\int_a^b x\dfrac{1}{b-a}\;dx =\dfrac{1}{2(b-a)}\left[\phantom{\dfrac{1}{1}}\!\!\! x^2\right]_a^b\qquad\qquad\qquad\qquad\qquad\qquad\\ &amp;=&amp;\dfrac{b^2-a^2}{2(b-a)}\\ &amp;=&amp;\dfrac{b+a}{2} \end{eqnarray*}</p><p><br></p><p>Using the formula for the variance, we may write:<b><br></b></p><p><b><br></b></p><p>\begin{eqnarray*} \text{V}(X)&amp;=&amp; \text{E}(X^2)-[\text{E}(X)]^2\\ &amp;=&amp;\int_a^bx^2 \cdot \dfrac{1}{b-a}\;dx-\left(\dfrac{b+a}{2}\right)^2= \dfrac{1}{3(b-a)}\left[\phantom{\dfrac{1}{1}}\!\!\!x^3\right]_a^b-\left(\dfrac{b+a}{2}\right)^2\qquad\qquad\qquad\qquad\\\ &amp;=&amp;\dfrac{b^3-a^3}{3(b-a)}-\left(\dfrac{b+a}{2}\right)^2\\ &amp;=&amp;\dfrac{b^2+ab+a^2}{3}-\dfrac{b^2+2ab+a^2}{4}\\ &amp;=&amp;\dfrac{(b-a)^2}{12} \end{eqnarray*}<b><br></b></p><p></p><p style="text-align: left;"><b><br></b></p>
+
+
+<div class="HELM_keypoint">
+<h4>Key Point <br></h4>The <b>Uniform</b> random variable \(X\) whose density function \(f(x)\)&nbsp; is defined by \[ f(x)=\left\{\begin{matrix} \dfrac{1}{b-a},&amp; a\le x\le b\\\\ 0&amp; \text{otherwise} \end{matrix}\right.\] has expectation and variance given by the formulae \[ \text{E}(X)=\dfrac{b+a}{2}\qquad\text{and}\qquad \text{V}(X)=\dfrac{(b-a)^2}{12}\]<span class="math inline"><br></span><span class="math inline"><span></span></span></div><p>
+
+</p><hr>
+<h4 class="HELM_example">Example <br></h4>
+<p><span>The current (in mA) measured in a piece of copper wire is known to follow a uniform distribution over the interval \([0,25]\).&nbsp; Write down the formula for the probability density function \(f(x)\)&nbsp; of the random variable \(X\) representing the current.&nbsp; Calculate the mean and variance of the distribution and find the cumulative distribution function&nbsp; \(F(x)\).</span><span class="math inline"></span><span class="math inline"></span></p>
+<h4 class="HELM_solution">Solution</h4><p>Over the interval \([0,25]\)&nbsp; the probability density function \(f(x)\)&nbsp; is given by the formula \[ f(x)=\left\{\begin{matrix} \dfrac{1}{25-0}=0.04,&amp; 0\le x\le 25\\\\ 0&amp; \text{otherwise} \end{matrix}\right.\] Using the formulae developed for the mean and variance gives \[ \text{E}(X)=\dfrac{25+0}{2}=12.5\ \text{mA}\qquad\text{and}\qquad \text{V}(X)=\dfrac{(25-0)^2}{12}=52.08\ \text{mA}^2\] The cumulative distribution function is obtained by integrating the probability density function as shown below. \[ F(x)=\int_{-\infty}^xf(t)\,dt\] Hence, choosing the three distinct regions \(x&lt;0\), \(0\le x\le 25\) and \(x&gt; 25\) in turn gives: \[ F(x)=\left\{\begin{matrix}0,&amp; x&lt;0\\ \dfrac{x}{25}&amp; 0\le x\le 25\\ 1&amp; x&gt; 25 \end{matrix}\right.\]<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200708161238+bzAOPG</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211013135624+t2OAEI</text></tag>
+    </tags>
+    
+</question>
+</quiz>

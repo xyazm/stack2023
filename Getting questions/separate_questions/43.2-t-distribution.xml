@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62181">
+        <parent>0</parent>
+        <name>43.2 t distribution</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;&lt;h3&gt;Critical points of student&#8217;s \(t\) distribution&lt;/h3&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/43_2_t_Table_fig.svg" alt="" width="236" height="132" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;h3&gt;&lt;img src="@@PLUGINFILE@@/43_2_t_Table.svg" alt="" width="489" height="582" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/h3&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200712061446+hs48Hm</stamp>
+        <version>stack2.maths.ed.ac.uk+200712061726+PjT3el</version>
+        <hidden>0</hidden>
+        <timecreated>1594534486</timecreated>
+        <timemodified>1594534646</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

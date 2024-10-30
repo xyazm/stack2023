@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27205">
+        <parent>0</parent>
+        <name>35.2.2.2 Equi-probable spaces and the principle of equally likely outcomes</name>
+        <questiontext>&lt;h4&gt; Equi-probable spaces and the principle of equally likely outcomes &lt;/h4&gt;
+&lt;p&gt;An equi-probable space is a sample space in which the chance that any one sample point occurs is equal to the chance that any other sample point occurs. Whether a sample space is an equi-probable space is usually determined by inspection or logic.&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;ol type="a"&gt;
+&lt;li&gt; Tossing a coin. The sample space \(S\) is, using an obvious notation\[S = \{H,T\}\]\(H\) and \(T\) are the two simple outcomes and are equally likely to occur.&lt;/li&gt;
+&lt;li&gt; Rolling a 6-faced die. A sample space is:\[S = \{1,2,3,4,5,6\}\]Each number from \(1\) to \(6\) is a simple outcome and is equally likely to occur.&lt;/li&gt;
+&lt;li&gt; Tossing three coins. A sample space comprised of simple outcomes is:\[S = \{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\}\]Each of the eight outcomes stated is equally likely to occur.&lt;/li&gt;
+&lt;li&gt; Counting the number of heads when three coins are tossed. Here\[S = \{3\text{ Heads},2\text{ Heads},1\text{ Head},0\text{ Heads}\}.\]This is not an equi-probable space and the outcomes are not equally likely. (For example: the event \(\{2\text{ Heads}\}\) is the union of three simple events
+\(\{HHT,HTH,THH\}\) so must occur more often than the event \(\{HHH\}\).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Of the sample spaces above all are equi-probable spaces except for (d).&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt; Key Point &lt;/h4&gt;
+&lt;h5&gt; The Principle of Equally Likely Outcomes &lt;/h5&gt;
+&lt;p&gt;This states that each simple outcome in an equi-probable space is equally likely to occur. This
+principle enables us to deduce the probabilities that simple events (and hence more complicated
+events which are combinations of simple events) occur.&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701095509+VHJL2X</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211008153638+kLgcCA</version>
+        <hidden>0</hidden>
+        <timecreated>1593597309</timecreated>
+        <timemodified>1633707398</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

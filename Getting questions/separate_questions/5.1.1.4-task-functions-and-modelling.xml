@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24296">
+        <parent>0</parent>
+        <name>5.1.1.4 Task: functions and modelling</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;&lt;ol class="HELM_parts"&gt;&lt;p&gt;For the above example modelling a falling rock:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;li&gt;Determine whether T&lt;sub&gt;1&lt;/sub&gt; is [[2]] \(2.7\)&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;[[5]] is a sketched graph of &lt;em&gt;v&lt;/em&gt; for 0 &#8804; &lt;em&gt;t&lt;/em&gt; &#8804; T&lt;sub&gt;1&lt;/sub&gt;
+&lt;table&gt;
+  &lt;tbody&gt;&lt;tr&gt;
+    &lt;td style="text-align: center;"&gt;&lt;b&gt;Graph A&lt;/b&gt;&lt;/td&gt;
+    &lt;td style="text-align: center;"&gt;&lt;b&gt;Graph B&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td style="text-align: center;"&gt;&lt;img width="384" height="131" class="img-responsive atto_image_button_text-bottom" alt="graph velocity vs time y = 9.8t+0" src="@@PLUGINFILE@@/5.1%20linear%20functions%20AnswerA.svg"&gt;&lt;/td&gt;
+    &lt;td style="text-align: center;"&gt;&lt;img width="377" height="161" class="img-responsive atto_image_button_text-bottom" alt="velocity vs time graph y = 9.8t + 5" src="@@PLUGINFILE@@/5.1%20linear%20functions%20AnswerB.svg"&gt;&lt;/td&gt;
+  &lt;/tr&gt;&lt;tr&gt;
+    &lt;td style="text-align: center;"&gt;&amp;nbsp;&lt;/td&gt;
+    &lt;td style="text-align: center;"&gt;&amp;nbsp;&lt;/td&gt;
+  &lt;/tr&gt;&lt;tr&gt;
+    &lt;td style="text-align: center;"&gt;&amp;nbsp;&lt;b&gt;Graph C&lt;/b&gt;&lt;/td&gt;
+    &lt;td style="text-align: center;"&gt;&lt;b&gt;&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;&lt;tr&gt;
+    &lt;td style="text-align: center;"&gt;&amp;nbsp;&lt;img width="376" height="136" class="img-responsive atto_image_button_text-bottom" alt="graph velocity vs time y = 9.8t - 5" src="@@PLUGINFILE@@/5.1%20linear%20functions%20AnswerC.svg"&gt;&lt;/td&gt;
+    &lt;td style="text-align: center;"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  
+  
+&lt;/tbody&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;ol class="HELM_parts"&gt;
+&lt;p&gt;&lt;/p&gt;&lt;li&gt; T&lt;sub&gt;1&lt;/sub&gt; will be less thatn 2.7 since the rock will be moving faster throughout its descent.&lt;/li&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;li&gt;The graph is still a straight line but displaced upwards compared to the example above, therefore the y intercept is at 5. The equation of the line is &lt;em&gt;v&lt;/em&gt; = 9.8&lt;em&gt;t&lt;/em&gt; + 5 for the falling rock&lt;/li&gt;&lt;p&gt;&lt;/p&gt;&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>gapselect</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200724201759+F7qSoK</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220214100907+TqTGFh</version>
+        <hidden>0</hidden>
+        <timecreated>1595621879</timecreated>
+        <timemodified>1644833347</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_gapselect_question>
+          <answers>
+            <answer id="9712">
+              <answertext>more than</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9713">
+              <answertext>less than</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9714">
+              <answertext>equal to</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>1</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9715">
+              <answertext>Graph A</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>2</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9716">
+              <answertext>Graph B</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>2</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+            <answer id="9717">
+              <answertext>Graph C</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>2</feedback>
+              <feedbackformat>0</feedbackformat>
+            </answer>
+          </answers>
+          <gapselect id="173">
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <shownumcorrect>1</shownumcorrect>
+          </gapselect>
+        </plugin_qtype_gapselect_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

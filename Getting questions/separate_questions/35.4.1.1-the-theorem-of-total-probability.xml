@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27230">
+        <parent>0</parent>
+        <name>35.4.1.1 The theorem of total probability</name>
+        <questiontext>&lt;h3&gt; 1.1 The theorem of Total Probability and Bayes' theorem &lt;/h3&gt;
+&lt;p&gt; To establish these results we start with the definition of a partition of a sample space. &lt;/p&gt;
+&lt;h4&gt; A partition of a sample space &lt;/h4&gt;
+&lt;p&gt; The collection of events \(A_1,A_2,\dots,A_n\) is said to &lt;strong&gt;partition&lt;/strong&gt; a sample space \(S\) if &lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt; \(A_1\cup A_2 \cup\cdots\cup A_n = S\); &lt;/li&gt;
+&lt;li&gt; \(A_i\cap A_j = \varnothing\) for all \(i, j\) with \(i\neq j\); &lt;/li&gt;
+&lt;li&gt; \(A_i\neq\varnothing\) for all \(i\). &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt; In essence, a partition is a collection of non-empty, non-overlapping subsets of a sample space whose union is the sample space itself. The definition is illustrated by the figure below. &lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;strong&gt;&lt;img src="@@PLUGINFILE@@/3-5-4-partition1.svg" alt="" role="presentation"&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Partition of a set.&lt;/p&gt;
+&lt;p&gt; If \(B\) is any event within \(S\) then we can express \(B\) as the union of subsets:\[B = (B \cap A_1) \cup (B \cap A_2) \cup\cdots\cup(B \cap A_n)\]The definition is illustrated in the figure below in which an event B in S is represented by the shaded region.&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;strong&gt;&lt;img src="@@PLUGINFILE@@/3-5-4-partition2.svg" alt="" role="presentation"&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;strong&gt;Figure:&lt;/strong&gt; A subset in a set partition.&lt;/p&gt;
+&lt;p&gt; The bracketed events \((B\cap A_1),(B\cap A_2),\dots,(B\cap A_n)\) are mutually exclusive (if one occurs then none of the others can occur) and so, using the addition law of probability for mutually exclusive events:\[\mathbb{P}(B) = \mathbb{P}(B\cap A_1) + \mathbb{P}(B\cap A_2) +\cdots+ \mathbb{P}(B\cap A_n)\]Each of the probabilities on the right-hand side may be expressed in terms of conditional probabilities:\[\mathbb{P}(B\cap A_i) = \mathbb{P}(B|A_i)\mathbb{P}(A_i)\quad\text{for all }i.\]Using these in the expression for \(\mathbb{P}(B)\), above, gives:\[\begin{aligned}\mathbb{P}(B) &amp;amp;= \mathbb{P}(B|A_1)\mathbb{P}(A_1) + \mathbb{P}(B|A_2)\mathbb{P}(A_2) +\cdots+ \mathbb{P}(B|A_n)\mathbb{P}(A_n)\\ &amp;amp;= \sum_{i=1}^n\mathbb{P}(B|A_i)\mathbb{P}(A_i).\end{aligned}\]This is the &lt;strong&gt;theorem of Total Probability&lt;/strong&gt;. A related theorem with many applications in statistics can be deduced from this, known as &lt;strong&gt;Bayes&#8217; theorem&lt;/strong&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200706143515+n9M9Dh</stamp>
+        <version>stack2.maths.ed.ac.uk+200904105134+kHmdEY</version>
+        <hidden>0</hidden>
+        <timecreated>1594046115</timecreated>
+        <timemodified>1599216694</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

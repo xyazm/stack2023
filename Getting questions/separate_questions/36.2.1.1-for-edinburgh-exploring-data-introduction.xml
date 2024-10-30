@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27116">
+        <parent>0</parent>
+        <name>36.2.1.1 (for Edinburgh) Exploring data: introduction</name>
+        <questiontext>&lt;h3&gt;Exploratory data analysis&lt;/h3&gt;
+
+
+&lt;h4&gt;The basics of EDA&lt;/h4&gt;
+&lt;p&gt;The basic principles followed in EDA are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To measure the location and spread of a distribution we use statistics which are &lt;b&gt;resistant&lt;/b&gt; to departures from normality;&lt;/li&gt;
+&lt;li&gt;To summarise shape location and spread we use several statistics rather than just two;&lt;/li&gt;
+&lt;li&gt;Visual displays as well as numerical displays are used to summarise information obtained about shape, location and spread.&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;You can see these principles illustrated below.&lt;/p&gt;
+&lt;p&gt;Traditionally, the location and spread of a distribution are measured by calculating its mean and standard deviation. The problem with these statistics is that is sensitive to the influence of extreme values. For example, the data set
+\[1,2,2,3,3,3,4,4,4,5,5,6\]
+has mean \(\bar{x}=3.5\) and standard deviation \(s_{n-1}=1.45\). These values are quite acceptable since the distribution is symmetrical about its mean of \(3.5\). The symmetry is easily seen simply by inspecting the data although the bar chart below might make the symmetry more obvious.&lt;/p&gt;
+&lt;br&gt;&lt;div style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/36.2.1%20symmetrical%20distribution.svg" alt="It is a data bar chart, in which any coloumn represents how many times (namely the frequency) the numbers of the data set appear" role="presentation" class="img-responsive atto_image_button_text-bottom" width="435" height="203"&gt;&lt;br&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;The effects of changes in extreme values are easily illustrated by looking at what happens if we take the last number to be \(60\) instead of \(6\). This destroys the symmetry of the distribution and gives mean \(\bar{x}=8\) and standard deviation \(s_{n-1}=16.42\). Clearly, these values do not describe the distribution very well at all; a mean which is higher than \(92\%\) of the members of the distribution can hardly be described as a representative!&lt;/p&gt;
+&lt;p&gt;The simplest and most common examples of &lt;b&gt;resistant or robust statistics&lt;/b&gt; are those based on the idea of  rank order. These are the:
+&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;Minimum value&lt;/li&gt;
+&lt;li&gt;Lower quartile&lt;/li&gt;
+&lt;li&gt;Median&lt;/li&gt;
+&lt;li&gt;Upper quartile&lt;/li&gt;
+&lt;li&gt;Maximum value&lt;/li&gt;
+&lt;/ul&gt;
+You will find that this &lt;b&gt;five-number summary&lt;/b&gt;, especially when used in conjunction with the inter-quartile range, gives an adequate representation of a non-symmetrical distribution.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Notice that the median and quartile values in the above example are unaffected by the change in extreme value for the above example.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200907020518+6hvEKQ</stamp>
+        <version>stack2.maths.ed.ac.uk+200907021420+ymkcA4</version>
+        <hidden>0</hidden>
+        <timecreated>1599444318</timecreated>
+        <timemodified>1599444860</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

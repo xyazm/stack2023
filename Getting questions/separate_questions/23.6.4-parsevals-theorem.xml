@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62202">
+        <parent>0</parent>
+        <name>23.6.4 Parseval&#8217;s theorem</name>
+        <questiontext>&lt;h4&gt;Parseval&#8217;s theorem&lt;/h4&gt;
+
+This is essentially a mathematical theorem but has, as we shall see, an important
+engineering interpretation particularly in electrical engineering. Parseval's theorem states that if \(f(t)\) is a periodic function with period \(T\) and if \(c_n\) \( (n=0,\pm 1,\pm 2,\ldots)\) denotes the complex Fourier coefficients of \(f(t)\), then
+\[ \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} f^2(t)\, dt=\sum_{n=-\infty}^\infty
+|c_n|^2.\]
+In words the theorem states that the mean square value of the signal \(f(t)\) over one period
+equals the sum of the squared magnitudes of all the complex Fourier coefficients.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Proof of Parseval&#8217;s theorem&lt;/b&gt;
+&lt;p&gt;&lt;/p&gt;
+Assume \(f(t)\) has a complex Fourier series of the usual form:
+\[ f(t)=\sum_{n=-\infty}^{\infty} c_n e^{ in\omega_0t}\qquad
+\left(\omega_0=\frac{2\pi}{T}\right) \]
+where
+\[  c_n=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} f(t)e^{- in\omega_0t}dt \]
+Then
+\[ f^2(t)=f(t)f(t)=f(t)\sum c_n e^{ in\omega_0t}=\sum c_n f(t) e^{in\omega_0t} \]
+Hence
+\[
+\begin{eqnarray*}
+\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}} f^2(t)\,dt&amp;amp;=&amp;amp;
+\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}\sum c_n f(t) e^{ in\omega_0t}dt\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\quad\\
+\\
+&amp;amp;=&amp;amp;\frac{1}{T}\sum c_n \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) e^{ in\omega_0t}dt\\
+\\
+&amp;amp;=&amp;amp;\sum c_n {c^*_n}\\
+\\
+&amp;amp;=&amp;amp;\sum_{n=-\infty}^\infty |c_n|^2
+\end{eqnarray*}
+\]
+which completes the proof.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200920184059+lXf0G9</stamp>
+        <version>stack2.maths.ed.ac.uk+200920185624+vyVNs5</version>
+        <hidden>0</hidden>
+        <timecreated>1600627259</timecreated>
+        <timemodified>1600628184</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24474 -->
+  <question type="stack">
+    <name>
+				<text>11.7.2 Differentiation of implicit functions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Differentiation of implicit functions</h4>
+Fortunately it is not necessary to obtain \(y\) in terms of \(x\) in order to <b>differentiate</b> a function defined implicitly.
+<p></p>
+Consider the simple equation
+\[ xy = 1\]
+Here it <b>is</b> clearly possible to obtain \(y\) as the subject of this equation and hence obtain
+\( \dfrac{dy}{dx} \).
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Express \(y\) explicitly in terms of \(x\) and find \( \dfrac{dy}{dx} \) for the case \(xy = 1\).</p>
+<h4 class="HELM_solution">Solution</h4>
+We have immediately \(y = \dfrac{1}{x}\), so
+\[ \dfrac{dy}{dx} = - \dfrac{1}{x^2} \]
+<hr>
+<p></p>
+We now show an alternative way of obtaining \( \dfrac{dy}{dx}\) which does <b>not</b> involve writing \(y\) explicitly in terms of \(x\) at the outset. We simply treat \(y\) as an (unspecified) function of \(x\).
+<p></p>
+Hence if \(xy = 1\) we obtain
+\[ \dfrac{d}{dx}(xy) = \dfrac{d}{dx}(1) .\]
+The right-hand side differentiates to \(0\) as \(1\) is a constant. On the left-hand side we must use the <b>product</b> rule of differentiation:
+\[ \dfrac{d}{dx}(xy) = x\dfrac{dy}{dx} + y\dfrac{dx}{dx} = x\dfrac{dy}{dx} + y   .\]
+Hence \(xy = 1\) becomes, after differentiation,
+\[x\dfrac{dy}{dx} + y = 0\]
+or
+\[\dfrac{dy}{dx}  = -\dfrac{y}{x}\]
+In this case we can of course substitute \(y = \dfrac{1}{x}\) to obtain
+\[ y = - \dfrac{1}{x^2}\]
+as before.
+<p>
+The method used here is called <b>implicit differentiation</b> and, apart from the final step, it can be applied even if \(y\) cannot be expressed explicitly in terms of \(x\). Indeed, on occasions, it is easier to differentiate implicitly even if an explicit expression is possible.
+
+</p><hr>
+<h4 class="HELM_example">Example</h4>
+<p>Obtain the derivative \( \dfrac{dy}{dx}\) where
+\[ x^2 + y = 1 + y^3.\]</p>
+<h4 class="HELM_solution">Solution</h4>
+We begin by differentiating the left-hand side of the equation with respect to \(x\) to get:
+\[ \dfrac{d}{dx}(x^2+y) = 2x  + \dfrac{dy}{dx}. \]
+We now differentiate the right-hand side of with respect to \(x\). Using the chain (or function of a function) rule to deal with the \(y^3\) term:
+\[ \dfrac{d}{dx}(1+y^3) = \dfrac{d}{dx}(1) + \dfrac{d}{dx}(y^3) = 0 +3y^2\dfrac{dy}{dx}. \]
+Now by equating the left-hand side and right-hand side derivatives, we have:
+\[ 2x  + \dfrac{dy}{dx} = 3y^2\dfrac{dy}{dx}. \]
+We can make \( \dfrac{dy}{dx}\)  the subject of this equation:
+\[  \dfrac{dy}{dx} - 3y^2\dfrac{dy}{dx}= -2x\]
+which gives
+\[ \dfrac{dy}{dx} = \dfrac{2x}{3y^2 - 1}. \]
+<hr>
+We note that \( \dfrac{dy}{dx} \) has to be expressed in terms of both \(x\) and \(y\). This is quite usual if \(y\) cannot be obtained explicitly in terms of \(x\).
+<p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200809095324+4R5CJC</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210601140818+kVI0ie</text></tag>
+    </tags>
+    
+</question>
+</quiz>

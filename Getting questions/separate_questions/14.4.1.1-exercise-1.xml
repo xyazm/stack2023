@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24626">
+        <parent>0</parent>
+        <name>14.4.1.1 Exercise 1</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find the length of the line \(y = {@y@}\) between \(x = {@a@}\) and \(x = {@b@}\) using the technique of this Section. Verify your result from your knowledge of the straight line. Give your answer in &lt;b&gt;exact&lt;/b&gt; form.&lt;/p&gt;
+&lt;p&gt;The length is [[input:ans1]] [[validation:ans1]]. &lt;/p&gt;
+&lt;p&gt;[[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;The distance is from \(({@a@},{@y_a@})\) to \(({@b@},{@y_b@})\) along the line. This is given using Pythagoras' theorem as \(\sqrt{({@b@}-{@a@})^2+({@y_b@}-{@y_a@})^2}={@ta1@} \)&lt;/p&gt;
+&lt;p&gt;Using the formula \[\text{length of curve}=\int_a^b \sqrt{1+\left(\frac{dy}{dx}\right)^2}\&amp;nbsp; \mathrm{d}x,\] the length of the line is calculated to be \[\int_{{@a@}}^{{@b@}} \sqrt{1+({@dy@})^2} \ \mathrm{d}x={@ta1@}.\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201202062607+4qbL87</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210608110214+TCmeWN</version>
+        <hidden>0</hidden>
+        <timecreated>1606890367</timecreated>
+        <timemodified>1623150134</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16758">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>a: rand_with_step(0,3,1);
+b: a+2;
+m: rand_with_step(2,5,1);
+c: rand_with_prohib(-5,5,[0]);
+y: m*x + c;
+y_a: m*a+c;
+y_b: m*b+c;
+dy: diff(y, x)
+ta1: integrate(sqrt(1+(dy)^2), x, a, b);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\( y={@y@}, \, x=[{@a@}, {@b@}], \, l={@ta1@} \)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt; Your answer is partially correct.&lt;/span&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38946">
+              <name>ans1</name>
+              <type>units</type>
+              <tans>ta1</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33560">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50686">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38689">
+              <testcase>1</testcase>
+              <timemodified>1612970957</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="83000">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71666">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38690">
+              <testcase>2</testcase>
+              <timemodified>1623160489</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="104980">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta1+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="90713">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="237755">
+              <seed>1353566626</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237756">
+              <seed>922363332</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237757">
+              <seed>733795246</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237758">
+              <seed>2053700472</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237759">
+              <seed>136601151</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237760">
+              <seed>337263064</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237761">
+              <seed>813504560</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237762">
+              <seed>1335482690</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237763">
+              <seed>112380295</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237764">
+              <seed>1586231821</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237765">
+              <seed>1237756843</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237766">
+              <seed>1036858917</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237767">
+              <seed>1346648312</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237768">
+              <seed>1269866539</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="237769">
+              <seed>1357371083</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

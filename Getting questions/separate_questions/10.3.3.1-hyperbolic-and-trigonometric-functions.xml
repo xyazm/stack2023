@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26761">
+        <parent>0</parent>
+        <name>10.3.3.1 Hyperbolic and trigonometric functions</name>
+        <questiontext>&lt;h3&gt;Hyperbolic and trigonometric functions&lt;/h3&gt;
+&lt;p&gt;We have seen previously that \[\qquad e^{i\theta}=\cos\theta +i\sin\theta\] It follows from this that \[\qquad e^{-i\theta}=\cos (-\theta)+i\sin (-\theta)=\cos\theta -i\sin\theta\] Now if we add these two relations together we obtain \[\qquad \cos\theta ={e^{i\theta}+e^{-i\theta}\over {2}}\] whereas if we subtract the second from the first we have\[\qquad \sin\theta ={e^{i\theta}-e^{-i\theta}\over {2i}}\] These new relations are reminiscent of the hyperbolic functions introduced in a previous quiz. There we defined \(\cosh x\) and \(\sinh x\) in terms of the exponential function: \[\qquad \cosh x ={e^{x}+e^{-x}\over {2}}\qquad \sinh x ={e^{x}-e^{-x}\over {2}}\] In fact, if we replace \(x\) by \(i\theta\) in these last two equations we obtain \[\qquad \cosh (i\theta) ={e^{i\theta } +e^{-i\theta}\over 2}\equiv \cos \theta\qquad \text{and}\qquad \sinh (i\theta) ={e^{i\theta } -e^{-i\theta}\over 2}\equiv i\sin \theta\] Although, by our notation, we have implied that both \(x\) and \(\theta\) are real quantities in fact these expressions for \(\cosh\) and \(\sinh\) in terms of \(\cos\) and \(\sin\) are quite general.&lt;br&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt; If \(z\) is any complex number then \[\cosh(iz) \equiv \cos z\quad\text{and}\quad\sinh(iz) \equiv i\sin z\] Equivalently, replacing \(z\) by \(iz\): \[\cosh z \equiv \cos(iz) \quad\text{and}\quad i\sinh z \equiv \sin(iz)\]&lt;/p&gt;&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200618200819+tfLIEt</stamp>
+        <version>stack2.maths.ed.ac.uk+200714093832+ytW9Am</version>
+        <hidden>0</hidden>
+        <timecreated>1592510899</timecreated>
+        <timemodified>1594719512</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

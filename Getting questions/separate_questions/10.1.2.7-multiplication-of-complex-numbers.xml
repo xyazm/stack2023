@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26714">
+        <parent>0</parent>
+        <name>10.1.2.7 Multiplication of Complex numbers</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;If \( z = {@z@} \) determine \( z^2. \)&amp;nbsp; Input your answer, in the form &lt;span style="font-family: 'courier new', courier, monospace;"&gt;p + q*i&lt;/span&gt;, in the box below:&lt;/p&gt;
+&lt;p&gt;\(z^2 =\) [[input:ans1]] [[validation:ans1]]&amp;nbsp;[[feedback:Result]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given \(z = {@z@}\).&lt;/p&gt;
+&lt;p&gt;Therefore \( z^2 =({@z@})^2 = ({@z@})({@z@}) = {@ta@} \)&lt;br&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618114227+5XuOmv</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210701114105+Qkxa2l</version>
+        <hidden>0</hidden>
+        <timecreated>1592480547</timecreated>
+        <timemodified>1625139665</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18055">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>n1:rand(8)+1;
+n2:rand(6)+2;
+z: n1+%i*n2;
+ta:ev(expand((n1+%i*n2)^2),simp);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(z = {@z@}\),    so \(z^2 = {@ta@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42572">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta</tans>
+              <boxsize>8</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>1</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36878">
+              <name>Result</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>sansr:ev(realpart(ans1),simp);
+sansi:ev(imagpart(ans1),simp);</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="55174">
+                  <nodename>0</nodename>
+                  <answertest>EqualComAss</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>CMP-MUL-TRUE</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>3</falsenextnode>
+                  <falseanswernote>CMP-MUL-FALSE-0</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55175">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>sansr</sans>
+                  <tans>pval</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>2</truenextnode>
+                  <trueanswernote>REAL_PART_CORRECT</trueanswernote>
+                  <truefeedback>&lt;p&gt;The real part of your answer is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>2</falsenextnode>
+                  <falseanswernote>CMP-QUOT-FALSE-2</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55176">
+                  <nodename>2</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>sansi</sans>
+                  <tans>qval</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>IM_PART_CORRECT</trueanswernote>
+                  <truefeedback>&lt;p&gt;The imaginary part of your answer is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>CMP-QUOT-FALSE-3</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55177">
+                  <nodename>3</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>wrong1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>NOT_SIMPLIFIED_ENOUGH</trueanswernote>
+                  <truefeedback>&lt;p&gt;Your answer is equivalent to the correct answer, but not in the required form \(p + q\,i\).&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>CMP-QUOT-FALSE-1</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41657">
+              <testcase>1</testcase>
+              <timemodified>1592480547</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90748">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78583">
+                  <prtname>Result</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>CMP-MUL-TRUE</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41658">
+              <testcase>2</testcase>
+              <timemodified>1592480547</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90749">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78584">
+                  <prtname>Result</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>CMP-QUOT-FALSE-3</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41659">
+              <testcase>3</testcase>
+              <timemodified>1592480547</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90750">
+                  <inputname>ans1</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78585">
+                  <prtname>Result</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>CMP-QUOT-FALSE-3</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41660">
+              <testcase>4</testcase>
+              <timemodified>1592480547</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90751">
+                  <inputname>ans1</inputname>
+                  <value>z^2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78586">
+                  <prtname>Result</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>CMP-QUOT-FALSE-3</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="175955">
+              <seed>1181331979</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175956">
+              <seed>1061939536</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175957">
+              <seed>943677024</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175958">
+              <seed>390567766</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175959">
+              <seed>1751471833</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175960">
+              <seed>1748398506</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175961">
+              <seed>1377512507</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175962">
+              <seed>2070986315</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175963">
+              <seed>357697941</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175964">
+              <seed>2128708882</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

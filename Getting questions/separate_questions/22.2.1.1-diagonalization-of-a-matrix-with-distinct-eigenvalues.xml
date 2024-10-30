@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26791">
+        <parent>0</parent>
+        <name>22.2.1.1 Diagonalization of a matrix with distinct eigenvalues</name>
+        <questiontext>&lt;h3&gt;Diagonalization of a matrix with distinct eigenvalues&lt;/h3&gt;
+
+&lt;p&gt;Diagonalization means transforming a non-diagonal matrix into an equivalent matrix which is diagonal and hence is simpler to deal with.&lt;/p&gt;
+
+&lt;p&gt;A matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; with distinct eigenvalues has eigenvectors which are linearly independent. If we form a matrix \(P\) whose columns are these eigenvectors, it can be shown that \( \det (P)\neq 0\) so that &lt;span class="math inline"&gt;\(P^{-1}\)&lt;/span&gt; exists.&lt;/p&gt;
+
+&lt;p&gt;The product &lt;span class="math inline"&gt;\(P^{-1}AP\)&lt;/span&gt; is then a &lt;span&gt;&lt;strong&gt;diagonal&lt;/strong&gt;&lt;/span&gt; matrix &lt;span class="math inline"&gt;\(D\)&lt;/span&gt; whose diagonal elements are the eigenvalues of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. Thus if &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots \lambda_n\)&lt;/span&gt; are the distinct eigenvalues of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; with associated eigenvectors &lt;span class="math inline"&gt;\(\underline{x}_1,\underline{x}_2,\ldots , \underline{x}_n\)&lt;/span&gt; respectively, then&lt;/p&gt;
+\[P = [\underline{x}_1 : \underline{x}_2 : \ \cdots\ : \underline{x}_n]\]
+&lt;p&gt;will produce a product&lt;/p&gt;
+\[P^{-1}AP = D = \begin{bmatrix}
+\lambda_1 &amp;amp; 0 &amp;amp; \cdots &amp;amp; 0 \\
+0 &amp;amp; \lambda_2 &amp;amp; \cdots &amp;amp; 0 \\
+\vdots &amp;amp; \vdots &amp;amp; \ddots &amp;amp; \vdots \\
+0 &amp;amp; \cdots &amp;amp; \cdots &amp;amp; \lambda_n
+\end{bmatrix}\]
+
+&lt;p&gt;We see that the order of the eigenvalues in \(D\) matches the order in which &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; is formed from the eigenvectors.&lt;/p&gt;
+&lt;p&gt;Note that:&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;&lt;p&gt;The matrix \(P\) is called the &lt;span&gt;&lt;strong&gt;modal matrix&lt;/strong&gt;&lt;/span&gt; of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Since &lt;span class="math inline"&gt;\(D\)&lt;/span&gt; is a diagonal matrix with eigenvalues &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots,\lambda_n\)&lt;/span&gt; which are the same as those of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;, then the matrices &lt;span class="math inline"&gt;\(D\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; are said to be &lt;span&gt; &lt;strong&gt;similar&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The transformation of \(A\) into \(D\) using  \(P^{-1}AP=D\) is said to be a &lt;strong&gt;similarity transformation.&lt;/strong&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+
+&lt;p&gt;Let &lt;span class="math inline"&gt;\(A=\left[\begin{array}{cc}2&amp;amp;3\\ 3&amp;amp;2\end{array}\right]\)&lt;/span&gt;. Obtain the modal matrix &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; and calculate the product &lt;span class="math inline"&gt;\(P^{-1}AP\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; has two distinct eigenvalues &lt;span class="math inline"&gt;\(\lambda_1=-1\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(\lambda_2=5\)&lt;/span&gt; with corresponding eigenvectors &lt;span class="math inline"&gt;\(\underline{x_1}=\left[\begin{array}{r}x\\ -x\end{array}\right]\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\underline{x_2}=\left[\begin{array}{c}x\\
+x\end{array}\right]\)&lt;/span&gt;. We can therefore form the modal matrix from the simplest eigenvectors of these forms:&lt;/p&gt;
+\[ P=\left[\begin{array}{rr}1&amp;amp;1\\ -1&amp;amp;1\end{array}\right]\]
+&lt;p&gt;(Other eigenvectors would be acceptable e.g. we could use &lt;span class="math inline"&gt;\(P=\left[\begin{array}{rr}2&amp;amp;3\\
+-2&amp;amp;3\end{array}\right]\)&lt;/span&gt; but there is no reason to over complicate the calculation.)&lt;/p&gt;
+&lt;p&gt;It is easy to obtain the inverse of this &lt;span class="math inline"&gt;\(2\times 2\)&lt;/span&gt; matrix &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; and the reader should confirm that:&lt;/p&gt;
+\[P^{-1}=\dfrac{1}{\text{det}(P)}\ \text{adj}
+(P)=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;amp;1\\
+-1&amp;amp;1\end{array}\right]^T=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;amp;-1\\ 1&amp;amp;1\end{array}\right]\]
+
+&lt;p&gt;We can now construct the product \(P^{-1}AP\):&lt;/p&gt;
+\[\begin{aligned}
+P^{-1}AP&amp;amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;amp;-1\\
+1&amp;amp;1\end{array}\right]\left[\begin{array}{cc}2&amp;amp;3\\ 3&amp;amp;2\end{array}\right]\left[\begin{array}{rr}1&amp;amp;1\\
+-1&amp;amp;1\end{array}\right]\\
+&amp;amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;amp;-1\\
+1&amp;amp;1\end{array}\right]\left[\begin{array}{rr}-1&amp;amp;5\\
+1&amp;amp;5\end{array}\right]\\
+\\
+&amp;amp;= \dfrac{1}{2}\left[\begin{array}{rr}-2&amp;amp;0\\
+0&amp;amp;10\end{array}\right]\\
+&amp;amp;= \left[\begin{array}{rr}-1&amp;amp;0\\ 0&amp;amp;5\end{array}\right]\end{aligned}\]
+&lt;p&gt;which is a diagonal matrix with entries that are the eigenvalues, as expected. Show (by repeating the method outlined above) that had we defined &lt;span class="math inline"&gt;\(P=\left[\begin{array}{rr}1&amp;amp;1\\ 1&amp;amp;-1\end{array}\right]\)&lt;/span&gt; (i.e. interchanged the order in which the eigenvectors were taken) we would find &lt;span class="math inline"&gt;\(P^{-1}AP=\left[\begin{array}{rr}5&amp;amp;0\\ 0&amp;amp;-1\end{array}\right]\)&lt;/span&gt; (i.e. the resulting diagonal elements would also be interchanged.)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617144600+2zkUbi</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210708135009+TcCB8J</version>
+        <hidden>0</hidden>
+        <timecreated>1592405160</timecreated>
+        <timemodified>1625752209</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

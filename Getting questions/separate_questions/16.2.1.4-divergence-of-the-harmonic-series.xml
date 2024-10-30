@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24376">
+        <parent>0</parent>
+        <name>16.2.1.4 Divergence of the harmonic series</name>
+        <questiontext>&lt;p&gt;The harmonic series:&lt;br&gt;&lt;/p&gt;&lt;p&gt;\[ 1 + \dfrac{1}{2} +&amp;nbsp;\dfrac{1}{3} +&amp;nbsp;\dfrac{1}{4} + \dfrac{1}{5} + \dots\]&amp;nbsp;&lt;/p&gt;&lt;p&gt;has a general term \(a_n=\dfrac{1}{n}\) which clearly gets smaller and smaller as \(n \to \infty\). However, surprisingly,
+the series is divergent. Its divergence is demonstrated by showing that the harmonic series is greater
+than another series which is obviously divergent. We do this by grouping the terms of the harmonic
+series in a particular way:&amp;nbsp;&lt;/p&gt;&lt;p&gt;\[&amp;nbsp;1 + \dfrac{1}{2} +&amp;nbsp;\dfrac{1}{3} +&amp;nbsp;\dfrac{1}{4} + \dfrac{1}{5} + \dots \equiv 1 + \left(\dfrac{1}{2}\right) +&amp;nbsp;&amp;nbsp;\left(\dfrac{1}{3} + \dfrac{1}{4}\right) +&amp;nbsp;&amp;nbsp;\left(\dfrac{1}{5}+\dfrac{1}{6}+\dfrac{1}{7}+\dfrac{1}{8}\right) + \dots\]&lt;/p&gt;&lt;p&gt;Now \[ \begin{aligned}&amp;nbsp;\left(\dfrac{1}{3} + \dfrac{1}{4}\right) &amp;amp; &amp;gt; \dfrac{1}{4} + \dfrac{1}{4} = \dfrac{1}{2} \\&amp;nbsp;&amp;nbsp;\left(\dfrac{1}{5}+\dfrac{1}{6}+\dfrac{1}{7}+\dfrac{1}{8}\right) &amp;amp; &amp;gt; \dfrac{1}{8} + \dfrac{1}{8} +&amp;nbsp;\dfrac{1}{8} +&amp;nbsp;\dfrac{1}{8} = \dfrac{1}{2} \\ \left(\dfrac{1}{9}+\dfrac{1}{10}+\dfrac{1}{11}+\dfrac{1}{12} + \dfrac{1}{13} + \dfrac{1}{14}+ \dfrac{1}{15}+ \dfrac{1}{16}\right) &amp;amp; &amp;gt;&amp;nbsp;\left(\dfrac{1}{16}+\dfrac{1}{16}+\dfrac{1}{16}+\dfrac{1}{16} + \dfrac{1}{16} + \dfrac{1}{16}+ \dfrac{1}{16}+ \dfrac{1}{16}\right) = \dfrac{1}{2} \end{aligned}\]&lt;/p&gt;&lt;p&gt;and so on. Hence the harmonic series satisfies:&lt;/p&gt;&lt;p&gt;\[\begin{aligned}1+\dfrac{1}{2} +&amp;nbsp;\dfrac{1}{3} +&amp;nbsp;\dfrac{1}{4} + \dfrac{1}{5} + \dots &amp;amp; \equiv 1 + \left(\dfrac{1}{2}\right) +&amp;nbsp;&amp;nbsp;\left(\dfrac{1}{3} + \dfrac{1}{4}\right) +&amp;nbsp;&amp;nbsp;\left(\dfrac{1}{5}+\dfrac{1}{6}+\dfrac{1}{7}+\dfrac{1}{8}\right)+ \dots \\ &amp;amp; &amp;gt;1 + \dfrac{1}{2} +&amp;nbsp;\dfrac{1}{2} +&amp;nbsp;\dfrac{1}{2} + \dots \end{aligned}\]&lt;/p&gt;&lt;p&gt;The right hand side of this inequality is clearly divergent so &lt;b&gt;the harmonic series is divergent.&lt;/b&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+201012150120+RXKu03</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609160929+2r7f5E</version>
+        <hidden>0</hidden>
+        <timecreated>1602514880</timecreated>
+        <timemodified>1623254969</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

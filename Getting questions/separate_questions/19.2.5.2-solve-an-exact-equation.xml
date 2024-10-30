@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25970">
+        <parent>0</parent>
+        <name>19.2.5.2 Solve an exact equation</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt; Solve the equation \[ x^3 \dfrac{\mathrm{d}y}{\mathrm{d}x}+3x^2y=x\]&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Comparing this equation with the form in the Key Point before we see that \(f(x)=x^3\) and \(g(x)=x\). Hence the equation can be written \[ \dfrac{\mathrm{d}}{\mathrm{d}x}(yx^3)=x,\] which has solution \[yx^3=\int x\, \mathrm{d}x=\dfrac{1}{2}x^2+C.\]Therefore \[ y=\dfrac{1}{2x}+\dfrac{C}{x^3}.\]
+    &lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210308154806+T5i6vd</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614120408+3lkm64</version>
+        <hidden>0</hidden>
+        <timecreated>1615218486</timecreated>
+        <timemodified>1623672248</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

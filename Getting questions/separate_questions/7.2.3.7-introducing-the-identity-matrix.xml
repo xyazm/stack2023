@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26220">
+        <parent>0</parent>
+        <name>7.2.3.7 Introducing the identity matrix</name>
+        <questiontext>&lt;h4&gt;The identity matrix&lt;/h4&gt;
+&lt;p&gt;The matrix \(\begin{bmatrix}1 &amp; 0 \\ 0 &amp; 1\end{bmatrix}\) is called the &lt;b&gt;identity matrix&lt;/b&gt; or &lt;b&gt;unit matrix&lt;/b&gt; of order 2, and is usually denoted by the symbol \(I.\) (Strictly we should write \(I_{2},\) to indicate the size.) The matrix \(I\) plays the same role in matrix multiplication as the number \(1\) does in number multiplication.&lt;/p&gt;
+&lt;p&gt; Hence, just as \[ a \times 1 = 1 \times a = a \qquad \text{ for any number } a, \] so \[ AI = IA = A \qquad \text{ for any matrix } A. \]&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619141620+BJQnNg</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210701150704+UY56Jn</version>
+        <hidden>0</hidden>
+        <timecreated>1592576180</timecreated>
+        <timemodified>1625152024</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

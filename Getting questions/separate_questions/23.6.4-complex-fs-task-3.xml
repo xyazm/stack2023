@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62201">
+        <parent>0</parent>
+        <name>23.6.4 Complex FS Task 3</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+Find the complex Fourier series of the periodic function:
+\[ f(t)=e^t \qquad -\pi &amp;lt; t &amp;lt; \pi \hspace{1cm} f(t+2\pi)=f(t)\]&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-6-4%20e%5Et.svg" alt="e^t" width="547" height="176" class="img-responsive atto_image_button_text-bottom"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;\(f(t) = \displaystyle{\sum_{n=-\infty}^\infty}\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>We have, since \(T=2\pi\), so \(\omega_0=1\)
+\[ 
+\begin{align}
+c_n &amp;amp; =\frac{1}{2\pi}\int_{-\pi}^\pi e^te^{-i nt} dt \\
+&amp;amp;= \frac{1}{2\pi}\int_{-\pi}^\pi e^{(1- in)t}dt=\frac{1}{2\pi}\left[\frac{e^{(1- in)t}}{(1- in)}\right]_{-\pi}^\pi \\
+&amp;amp;=\frac{1}{2\pi}\frac{1}{(1- in)}\left(e^{(1-in)\pi}-e^{-(1- in)\pi}\right)
+\end{align}
+\]
+Now simplify this as far as possible and write out the Fourier series:
+\[ e^{(1- in)\pi}=e^\pi\ e^{- in\pi}=e^\pi (\cos
+n\pi- i\sin n\pi)=e^\pi\cos n\pi \]
+\[ e^{-(1-in)\pi}=e^{-\pi}e^{ in\pi}=e^{-\pi}\cos n\pi \]
+Hence  \( c_n=\dfrac{1}{2\pi}\dfrac{1}{(1- in)}(e^\pi-e^{-\pi})\cos
+n\pi=\dfrac{\sinh\pi}{\pi}\dfrac{(1+ in)}{(1+n^2)}\cos n\pi\).
+&lt;p&gt;&lt;/p&gt;
+Note that the coefficients \(c_n\) \(n=\pm 1,\pm 2,\ldots\) have both real and
+imaginary parts in this case as the function being expanded is neither even nor odd.
+&lt;p&gt;&lt;/p&gt;
+Also \( c_{-n}=\dfrac{\sinh \pi}{\pi}\dfrac{(1-in)}{(1+(-n)^2)}\cos (-n\pi)=\dfrac{\sinh
+\pi}{\pi}\dfrac{(1-in)}{(1+n^2)}\cos n\pi={c^*_n}\) as required. 
+&lt;p&gt;&lt;/p&gt;
+This includes the constant term \(c_0=\dfrac{\sinh \pi}{\pi}.\)
+Hence the required Fourier series is
+\[ f(t)=\frac{\sinh \pi}{\pi}\sum_{n=-\infty}^\infty (-1)^n\frac{(1+\text{ i}n)}{(1+n^2)} e^{\text{ i}nt}\qquad \text{ since}\quad \cos n\pi=(-1)^n \]</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200920164640+AAjur4</stamp>
+        <version>stack2.maths.ed.ac.uk+200920183131+gQCwn7</version>
+        <hidden>0</hidden>
+        <timecreated>1600620400</timecreated>
+        <timemodified>1600626691</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="40692">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>ta1:sinh(pi)/pi*(-1)^n*(1 + i*n)*e^(i*n*t)/(1 + n^2);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote/>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="99168">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>40</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="86482">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="127914">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+          </stackqtests>
+          <stackdeployedseeds>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

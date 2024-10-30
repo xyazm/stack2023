@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 30672 -->
+  <question type="stack">
+    <name>
+				<text>8.1.1.2 Key point 1</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<div class="HELM_keypoint">
+    <h4>Key point<br></h4>
+    <p></p>
+    <p>The unique solution to the equations:</p>
+    <p>\(\qquad ax+by=e\)</p>
+    <p>\(\qquad cx+dy=f\)</p>
+    <p>is given by:</p>
+    <p>\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\)</p>
+    <p>in which</p>
+    <p>\(\qquad\Delta=\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|,\ \&nbsp;\Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \ \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)</p>
+    <p>If \(\Delta=0\) this method of solution cannot be used.</p><br>
+    <p></p>
+</div>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210528140343+jnB8EB</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210528140343+3awzMA</text></tag>
+    </tags>
+    
+</question>
+</quiz>

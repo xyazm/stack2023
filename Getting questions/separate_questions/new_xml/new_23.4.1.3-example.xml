@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62130 -->
+  <question type="stack">
+    <name>
+				<text>23.4.1.3 Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p></p>
+Suppose we consider the square wave<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-4-1-square-wave2.svg" alt="square-pulse" width="416" height="128" class="img-responsive atto_image_button_text-bottom"><br></p>
+Here \(f(t)\) has finite discontinuities at \(-\pi\), \(0\) and \(\pi\). The Fourier series of \(f(t)\) is 
+\[ \dfrac{1}{2} + \dfrac{2}{\pi} \left( \sin t + \dfrac{1}{3} \sin 3t + \dfrac{1}{5} \sin 5t + \dots \right) .\]
+At \(t = \dfrac{\pi}{2}\), for example, where \(f(t)\) is continuous the square wave converges to \( f \left( \dfrac{\pi}{2}\right) = 1\). On the other hand at \(t = \pi\) the Fourier series clearly has the value \( \dfrac{1}{2}\) (since all the sine terms are zero here). This value \( \dfrac{1}{2} \) agrees with the average of the two limiting values of \(f(t)\) at \(t = \dfrac{\pi}{2} : \dfrac{1}{2} (1+0) = \dfrac{1}{2} \). If we actually put \(t = \dfrac{\pi}{2}\) in the Fourier series we obtain
+\[ \dfrac{1}{2} + \dfrac{2}{\pi} \left( \sin \left( \dfrac{\pi}{2} \right) + \dfrac{1}{3} \sin \left( \dfrac{3\pi}{2} \right) +  \dfrac{1}{5} \sin \left( \dfrac{5\pi}{2} \right) + \dots \right) \]
+\[ = \dfrac{1}{2} + \dfrac{2}{\pi} \left( 1 - \dfrac{1}{3} + \dfrac{1}{5} - \dfrac{1}{7} + \dots \right) \]
+Since the series converges, as we have seen, to \(f \left( \dfrac{\pi}{2} \right) = 1\), we obtain the interesting result
+\[ \dfrac{1}{2} + \dfrac{2}{\pi} \left( 1 - \dfrac{1}{3} + \dfrac{1}{5} - \dfrac{1}{7} + \dots \right) = 1 \]
+or
+\[ 1 - \dfrac{1}{3} + \dfrac{1}{5} - \dfrac{1}{7} + \dots = \dfrac{\pi}{4} \]]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200904202442+Rk3pCE</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518104241+LCPlQW</text></tag>
+    </tags>
+    
+</question>
+</quiz>

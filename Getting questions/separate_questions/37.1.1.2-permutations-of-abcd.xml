@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27306">
+        <parent>0</parent>
+        <name>37.1.1.2 Permutations of ABCD</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt; Write out the possible permutations of the letters \(A, B, C\) and \(D\). &lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+The possible permutations are 
+\[\begin{matrix}ABCD&amp;	ABDC&amp;	ADBC&amp;	ADCB	&amp;ACBD&amp;	ACDB\\
+BADC&amp;	BACD&amp;	BCDA&amp;	BCAD&amp;	BDAC&amp;	BDCA\\
+CABD&amp;	CADB&amp;	CDBA&amp;	CDAB&amp;	CBAD&amp;	CBDA\\
+DABC&amp;	DACB&amp;	DCAB&amp;	DCBA&amp;	DBAC&amp;	DBCA
+\end{matrix}\]
+There are \(4!=24\) permutations of the four letters \(A, B, C\) and \(D\).</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200714140853+zepFID</stamp>
+        <version>stack2.maths.ed.ac.uk+200715155720+dfA5Y4</version>
+        <hidden>0</hidden>
+        <timecreated>1594735733</timecreated>
+        <timemodified>1594828640</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

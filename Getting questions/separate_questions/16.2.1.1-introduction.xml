@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24373">
+        <parent>0</parent>
+        <name>16.2.1.1 Introduction</name>
+        <questiontext>&lt;h4&gt;Infinite series&lt;/h4&gt;&lt;p&gt;Many of the series considered in the previous Section were examples of &lt;b&gt;finite series&lt;/b&gt; in that they all involved the summation of a finite number of terms. When the number of terms in the series increases without bound we refer to the sum as an &lt;b&gt;infinite series&lt;/b&gt;. Of particular concern with infinite series is whether they are convergent or divergent. For example, the infinite series \[ 1 + 1 + 1 + 1 + \dots\] is clearly divergent because the sum of the first \(n\) terms increases without bound as more and more terms are taken. It is less clear as to whether the harmonic and alternating harmonic series: \[ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \dots \qquad \qquad 1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots \] converge or diverge. Indeed you may be surprised to find that the first is divergent and the second is convergent. What we shall do in this Section is to consider some simple convergence tests for infinite series. Although we all have an intuitive idea as to the meaning of convergence of an infinite series we must be more precise in our approach. We need a definition for convergence which we can apply rigorously.&lt;/p&gt;
+
+&lt;p&gt;First, using an obvious extension of the notation we have used for a finite sum of terms, we denote the infinite series: \[ a_1 + a_2 + a_3 + \dots + a_p + \dots \quad\mathrm{by \: the \: expression } \; \sum_{p=1}^{\infty} a_p\] where \(a_p\) is an expression for the \(p^{th}\) term in the series. So, as examples:&lt;/p&gt;&lt;p&gt;\[1+2+3+\dots = \sum_{p=1}^{\infty} p \quad \mathrm{since\: the \:} p^{th} \: \mathrm{ term \: is } \: a_p \equiv p \]&lt;/p&gt;&lt;p&gt;\[1^2+2^2+3^2+\dots = \sum_{p=1}^{\infty} p^2 \quad \mathrm{since \: the \:} p^{th} \: \mathrm{ term \: is } \: a_p \equiv p^2 \]&lt;/p&gt;
+
+&lt;p&gt;\[1-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+\dots = \sum_{p=1}^{\infty} \dfrac{(-1)^{p+1}}{p} \quad \mathrm{here \: } a_p \equiv \dfrac{(-1)^{p+1}}{p} \]&lt;br&gt;&lt;/p&gt;&lt;p&gt;Consider the infinite series:&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\[ a_1+a_2+\dots +a_p+\dots =\sum_{p=1}^{\infty} a_p\]&lt;/p&gt;
+
+&lt;p&gt;We consider the &lt;b&gt;sequence of partial sums&lt;/b&gt;, \(S_1, S_2, \dots \) of this series where \[ \begin{aligned} S_1 &amp;amp; = a_1 \\ S_2 &amp;amp; = a_1 + a_2 \\ \vdots &amp;amp; \\ S_n &amp;amp; = a_1 + a_2 + \dots + a_n \end{aligned}\]&lt;/p&gt;
+
+&lt;p&gt;That is, \(S_n\) is the sum of the first \(n\) terms of the infinite series. If the limit of the sequence \(S_1, S_2, \dots , S_n, \dots\) can be found; that is &lt;/p&gt;&lt;p&gt;\[ \lim_{n \to \infty} S_n = S \quad \mathrm{(say)}\] then we define the sum of the infinite series to be \(S\): \[ S = \sum_{p=1}^{\infty} a_p\] and we say "the series converges to \(S\)". Another way of stating this is to say that \[\sum_{p=1}^{\infty} a_p =\lim_{n \to \infty} \sum_{p=1}^{\infty} a_p\]&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;An infinite series \(\sum_{p=1}^{\infty} a_p\) is convergent if the sequence of partial sums \[S_1, S_2, S_3,\dots,S_k,\dots \qquad \mathrm{in \: which} \quad S_k = \sum_{k=1}^{\infty} \: a_k \:\mathrm{is \: convergent.} \]&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+201012132250+zjvY1H</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609161638+HDYkXf</version>
+        <hidden>0</hidden>
+        <timecreated>1602508970</timecreated>
+        <timemodified>1623255398</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

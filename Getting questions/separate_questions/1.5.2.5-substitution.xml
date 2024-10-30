@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="35636">
+        <parent>0</parent>
+        <name>1.5.2.5 Substitution</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;If \(y = \sqrt{\dfrac{x}{z}}\), find \(y \text{ when } x = {@dispdp(a1,3)@} \text{ and } z = {@dispdp(a2,3)@}:\)&lt;/p&gt;
+&lt;p&gt;(give your answer as a decimal to three decimal places, note that trailing zeroes are required i.e 2.3 must be written as 2.300)&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;\(y =\) [[input:ans1]] [[validation:ans1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;br&gt;
+&lt;p&gt;In this example we have \(x = {@dispdp(a1,3)@} \text{ and } y = {@dispdp(a2,3)@}\). Substituting these values into the formula and then using a calculator we find:&lt;/p&gt;
+&lt;p&gt;\[y = \sqrt{\dfrac{x}{z}} = \sqrt{\dfrac{{@a1@}}{{@a2@}}} = {@ev(eqs, x=a1,z=a2)@} = {@ta@}_{\text{ 3.d.p}} \]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210809130926+YrjB1B</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220113103419+Ebl5fz</version>
+        <hidden>0</hidden>
+        <timecreated>1628514566</timecreated>
+        <timemodified>1642070059</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="24816">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>eqs: sqrt(x/z);
+a1: rand([11.2,13.6,15.8]);
+a2: rand([14.2,15.6,16.2]);
+ta:dispdp(float(ev(eqs, x=a1,z=a2)),3);</questionvariables>
+            <specificfeedback>[[feedback:prt1]]</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(y=\sqrt{\dfrac{{@a1@}}{{@a2@}}} = {@ta@}\) 3.d.p</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="57660">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta</tans>
+              <boxsize>6</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>sqrt,/</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>mindp:3</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="49333">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="75633">
+                  <nodename>1</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>0.011</testoptions>
+                  <quiet>1</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>2</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="75775">
+                  <nodename>2</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>3</testoptions>
+                  <quiet>1</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-3-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-3-F</falseanswernote>
+                  <falsefeedback>Your final answer is almost correct, you may have made a mistake when rounding to three decimal places.</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="56416">
+              <testcase>1</testcase>
+              <timemodified>1630078484</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128334">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs, x=a1,z=a2)),2)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109839">
+                  <prtname>prt1</prtname>
+                  <expectedscore>$@NULL@$</expectedscore>
+                  <expectedpenalty>$@NULL@$</expectedpenalty>
+                  <expectedanswernote>NULL</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="56552">
+              <testcase>2</testcase>
+              <timemodified>1628699484</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="123189">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="105195">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-3-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="59009">
+              <testcase>3</testcase>
+              <timemodified>1630080775</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128359">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs+0.1, x=a1,z=a2)),3)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109864">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="59018">
+              <testcase>4</testcase>
+              <timemodified>1630081007</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128360">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs+0.01, x=a1,z=a2)),3)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109865">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-3-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="242527">
+              <seed>2083412336</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242528">
+              <seed>1913237114</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242530">
+              <seed>410858090</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242532">
+              <seed>1492207349</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242533">
+              <seed>1634917600</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242534">
+              <seed>761589406</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="242535">
+              <seed>490277940</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26793">
+        <parent>0</parent>
+        <name>22.2.1.5 Powers of Matrices</name>
+        <questiontext>&lt;p&gt;We now use the relation &lt;span class="math inline"&gt;\(\ \  A=PDP^{-1}\)&lt;/span&gt;&amp;nbsp;&amp;nbsp;to obtain a formula for powers of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; in terms of the easily calculated powers of the diagonal matrix &lt;span class="math inline"&gt;\(D\)&lt;/span&gt;:&lt;/p&gt;
+\begin{align*}
+A^ = A \cdot A &amp;amp; = (PDP^{-1})(PDP^{-1}) \\
+&amp;amp; = PD(P^{-1}P)DP^{-1} \\
+&amp;amp; = PDIDP^{-1} \\
+&amp;amp; = PD^2P^{-1}
+\end{align*}
+
+&lt;p&gt;Similarly,&lt;/p&gt;
+\begin{align*}
+A^3 = A^2 \cdot A &amp;amp; (PD^2P^{-1})(PDP^{-1}) \\
+&amp;amp; = PD^2(P^{-1}P)DP^{-1} \\
+&amp;amp; = PD^3P^{-1}
+\end{align*}
+&lt;p&gt;The general result is given in the following Key Point:&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;For a matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; with distinct eigenvalues &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\dots ,\lambda_n\)&lt;/span&gt; and associated eigenvectors &lt;span class="math inline"&gt;\(\underline{x}_1, \underline{x}_2,\dots ,\underline{x}_n\)&lt;/span&gt;, if&lt;/p&gt;
+\[P=[\underline{x}_1 : \underline{x}_2 : \ \cdots\  : \underline{x}_n]\]
+&lt;/p&gt;then \(D=P^{-1}AP\) is a diagonal matrix such that
+\[ D=\left[\begin{matrix}\lambda_1&amp;amp;&amp;amp;&amp;amp;&amp;amp;\\
+&amp;amp;\lambda_2&amp;amp;&amp;amp;&amp;amp;\\
+&amp;amp;&amp;amp;\ddots &amp;amp;&amp;amp;\\
+&amp;amp;&amp;amp;&amp;amp;\lambda_n\end{matrix}\right]\qquad\text{and}\qquad A^k=PD^kP^{-1}\]&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(A=\left[\begin{array}{cc}2&amp;amp;3\\ 3&amp;amp;2\end{array}\right]\),&lt;/span&gt; find &lt;span class="math inline"&gt;\(A^{23}\)&lt;/span&gt;. (Use the results of the previous Example.)&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We know from the previous Example that if \(P=\left[\begin{array}{rr}1&amp;amp;1\\-1&amp;amp;1\end{array}\right]\) then \(  P^{-1}AP=\left[\begin{array}{rr}-1&amp;amp;0\\ 0&amp;amp;5\end{array}\right]= D\) 
+where \(P^{-1}=\dfrac{1}{2}\left[\begin{array}{rr}\hfill 1&amp;amp;\hfill -1\\ \hfill 1&amp;amp;\hfill
+1\end{array}\right]\).&lt;/p&gt;
+&lt;p&gt;Therefore,&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;\(A=PDP^{-1}\) &amp;emsp; and &amp;emsp; \(A^{23}=PD^{23}P^{-1}\) &amp;emsp; using the general result in the Key Point, i.e.,&lt;/p&gt;
+\[A^{23}= \dfrac{1}{2}
+\left[\begin{array}{rr}\hfill 1&amp;amp;\hfill 1\\ \hfill -1&amp;amp;\hfill 1\end{array}\right]
+\left[\begin{array}{rr}\hfill -1&amp;amp;\hfill 0\\ \hfill 0&amp;amp;\hfill 5^{23}\end{array}\right]
+\left[\begin{array}{rr}\hfill 1&amp;amp;\hfill -1\\ \hfill 1&amp;amp;\hfill 1\end{array}\right]\]
+&lt;p&gt;which is easily evaluated, especially compared to calculating the product \(A^{23}\) directly!&amp;nbsp;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617153922+1eeNC1</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210708135309+bVAALC</version>
+        <hidden>0</hidden>
+        <timecreated>1592408362</timecreated>
+        <timemodified>1625752389</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

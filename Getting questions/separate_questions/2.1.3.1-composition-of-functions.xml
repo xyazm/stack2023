@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25158">
+        <parent>0</parent>
+        <name>2.1.3.1 Composition of Functions</name>
+        <questiontext>&lt;h3&gt;&lt;span style="color: inherit; font-family: inherit;"&gt;Composition of Functions&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Consider the two functions \(g(x)=x^2\), and \(h(x)=3x+5\). The Block diagrams below show the rules for these functions.&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img width="288" height="152" class="img-responsive atto_image_button_text-bottom" alt="composite functions" src="@@PLUGINFILE@@/2-1-fig-4.svg"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;span&gt;&lt;strong&gt;Block diagrams of two functions \(g\) and \(h\)&lt;/strong&gt;&lt;/span&gt; &lt;/p&gt;
+&lt;p&gt;Suppose we place these Block diagrams together in series as shown below, so that the output from function \(g\) is used as the input to function \(h\).&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img width="468" height="70" class="img-responsive atto_image_button_text-bottom" alt="composite functions 2" src="@@PLUGINFILE@@/2-1-fig-5.svg"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;span&gt;&lt;strong&gt;The composition of the two functions to give \(h(g(x))\)&lt;/strong&gt;&lt;/span&gt; &lt;/p&gt;
+&lt;p&gt;Study the figure above carefully and deduce that when the input to \(g\) is \(x\) the output from the two functions in series is \(3x^2+5\). Since the output from \(g\) is used as input to \(h\) we write&lt;/p&gt;
+&lt;p style="text-align:center;"&gt; \(h(g(x)) = h(x^2) = 3x^2+5\). &lt;/p&gt;
+&lt;p&gt;The form \(h(g(x))\) is known as the &lt;span&gt;&lt;strong&gt;composition&lt;/strong&gt;&lt;/span&gt; of the functions \(g\) and \(h\).&lt;/p&gt;
+
+&lt;p&gt;Suppose we interchange the two functions so that \(h\) is applied first as shown below.&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;img width="487" height="67" class="img-responsive atto_image_button_text-bottom" alt="composite functions 3" src="@@PLUGINFILE@@/2-1-fig-6.svg"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p style="text-align:center;"&gt;&lt;span&gt;&lt;strong&gt;The composition of the two functions to give \(g(h(x))\)&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Study the figure above and note that when the input to \(h\) is \(x\) the final output is \((3x+5)^2\). We write &lt;/p&gt;
+&lt;p style="text-align:center;"&gt; \(g(h(x)) = (3x+5)^2\)&lt;/p&gt;
+&lt;p&gt;Note that the function \(h(g(x))\) is different from \(g(h(x))\).&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Given two functions \(g(t)=3t+2\) and \(h(t)=t+3\) obtain an expression for the composition \(g(h(t))\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We have \(g(h(t))= g(t+3)\). Now the rule for \(g\) is &#8216;triple the input and add \(2\)&#8217;, and so we can write \(g(t+3) = 3(t+3) +2= 3t+11\) so, \(g(h(t))= 3t+11\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619130521+dGB6dr</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210831134128+r928ZV</version>
+        <hidden>1</hidden>
+        <timecreated>1592571921</timecreated>
+        <timemodified>1630417288</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

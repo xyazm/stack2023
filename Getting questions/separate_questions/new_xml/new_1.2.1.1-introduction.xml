@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26061 -->
+  <question type="stack">
+    <name>
+				<text>1.2.1.1 Introduction</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span style="color: inherit; font-family: inherit;">Index notation</span><br></h3><p>The number \(4\times 4\times 4\) is written, for short, as \(4^3\) and read '4 raised to the power 3' or '4 cubed'.&nbsp; Note that the number of times '4' occurs in the product is written as a superscript. In this context we call the superscript 3 an&nbsp;<strong>index</strong> or <strong>power</strong>. Similarly we could write</p>
+<ul>
+<li><p>\( 5\times 5&nbsp; = 5^2\), read '5 to the power 2' or '5 squared', and</p></li>
+<li><p>\(7\times 7\times 7\times 7 \times 7 = 7^5,\)</p></li>
+<li><p>\(a\times a \times a = a^3, \) and</p></li>
+<li><p>\(m\times m \times m \times m = m^4.\)</p></li></ul>
+
+
+
+<p>More generally, in the expression \(x^y\), \(x\) is called the <strong>base</strong> and \(y\) is called the index or power.&nbsp; The plural of index is <strong>indices</strong>. The process of raising to a power is also known as <strong>exponentiation</strong> because yet another name for a power is an <strong>exponent</strong>. When dealing with numbers your calculator is able to evaluate expressions involving powers, probably using the \(x^y\) button.</p>
+<hr>
+<h4 class="HELM_example">Example <br></h4>
+<p>Use a calculator to evaluate \(3^{12}\).</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Using the \(x^y\) button on the calculator check that you obtain \(3^{12}=531441\).</p>
+
+<hr>
+<h4 class="HELM_example">Example <br></h4>
+<p>Identify the index and base in the following expressions. </p>
+<ol class="HELM_parts_inline">
+<li>\(8^{11}\)</li>
+<li>\((-2)^5\)</li>
+<li>\(p^{-q}\)</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+  <li>In the expression \(8^{11}\), 8 is the base and 11 is the index.</li>
+  <li>In the expression \((-2)^{5}\), \(-2\) is the base and 5 is the index.</li>
+  <li>In the expression \(p^{-q}\), \(p\) is the base and \(-q\) is the index.<p></p><p>The interpretation of a negative index will be given later.<br></p></li></ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200611083445+I2YBxC</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210719113531+Kbe1mx</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26701">
+        <parent>0</parent>
+        <name>10.1.2.1 Addition and subtraction of complex numbers</name>
+        <questiontext>&lt;h3&gt;Addition and subtraction of complex numbers&lt;/h3&gt;
+&lt;p&gt;Let &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(w\)&lt;/span&gt; be any two complex numbers &lt;span class="math inline"&gt; where \(z=a+i b\) and \(w=c+i d\)&lt;/span&gt; then 
+&lt;span class="math inline"&gt;\[z+w=(a+c)+i(b+d),\] \[z-w=(a-c)+i(b-d).\]&lt;/span&gt; For example if &lt;span class="math inline"&gt;\(z=2-3i\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(w=-4+2i\)&lt;/span&gt; then &lt;span class="math inline"&gt;
+\[z+w=\{2+(-4)\}+\{(-3)+2\}i =-2-i,\]
+\[z-w=\{2-(-4)\}+\{(-3)-2\}i =6-5i\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617105349+MpV42k</stamp>
+        <version>stack2.maths.ed.ac.uk+200723124027+fa5FCP</version>
+        <hidden>0</hidden>
+        <timecreated>1592391229</timecreated>
+        <timemodified>1595508027</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

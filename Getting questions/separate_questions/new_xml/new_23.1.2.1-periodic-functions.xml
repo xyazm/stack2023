@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62088 -->
+  <question type="stack">
+    <name>
+				<text>23.1.2.1 Periodic functions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Periodic functions</h4>
+A function \(f(t)\) is periodic if the function values repeat at regular intervals of the independent variable
+\(t\). The regular interval is referred to as the period. An example of such function is given in the Figure below.<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-1-fig-1-periodic-fnc.svg" alt="a general periodic function" width="516" height="139" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p></p>
+If \(P\) denotes the period we have 
+\[ f(t + P) = f(t) \]
+for any value of \(t\).
+<p></p>
+The most obvious examples of periodic functions are the trigonometric functions \( \sin t\) and \( \cos t\), both
+of which have period \(2\pi\) (using radian measure as we shall do throughout this Section) (see the Figure below). This follows since
+\[ \sin(t + 2\pi) = \sin t \]
+and
+\[ \cos(t + 2\pi) = \cos t \]<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-1-fig-2-sin-cos.svg" alt="sin and cos" width="540" height="174" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p></p>
+The <b>amplitude</b> of these sinusoidal functions is the maximum displacement from \(y = 0\) and is clearly \(1\). (Note that we use the term sinusoidal to include cosine as well as sine functions.)
+More generally we can consider a sinusoid
+\[ y = A \sin nt \]
+which has maximum value, or amplitude, \(A\) and where \(n\) is usually a positive integer.
+<p></p>
+For example
+\[ y = \sin 2t \]
+is a sinusoid of amplitude \(1\) and period \( \dfrac{2\pi}{2} = \pi \). This is shown in the Figure below.<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-1-fig-3-sin2t.svg" alt="sin2t" width="340" height="214" class="img-responsive atto_image_button_text-bottom"><br></p>
+The fact that the period is \(\pi\) follows because
+\[ \sin 2(t + \pi) = \sin(2t + 2\pi) = \sin 2t\]
+for any value of \(t\).
+<p></p>
+We see that \(y = \sin 2t\) has half the period of \( \sin t\), \(\pi\) as opposed to \(2\pi\) (see the Figure below).<p><br></p><p><img src="@@PLUGINFILE@@/23-1-fig-4-sint-sin2t-comp.svg" alt="sint-sin2t-comp" width="340" height="200" class="img-responsive atto_image_button_text-bottom"><br></p><p>&nbsp;
+This can
+alternatively be phrased by stating that \(\sin 2t\) oscillates twice as rapidly (or has twice the frequency)
+of \(\sin t\).</p>
+<p></p>
+In general, \(y = A\sin nt\) has amplitude \(A\), period \(\dfrac{2\pi}{n}\) and completes \(n\) oscillations when \(t\) changes by \(2\pi\). Formally, we define the <b>frequency</b> of a sinusoid as the reciprocal of the period:
+<p></p>
+\[ \text{frequency} = \dfrac{1}{\text{period}} \]
+and the <b>angular frequency</b>, often denoted the Greek Letter \(\omega\) (omega) as
+\[ \text{angular frequency} = 2 \pi \times \text{frequency} = \dfrac{2\pi}{\text{period}} .\]
+Thus \(y = A\sin nt\) has frequency \( \dfrac{n}{2\pi}\) and angular frequency \(n\).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200811200344+qK0pcR</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220517190847+PAivGo</text></tag>
+    </tags>
+    
+</question>
+</quiz>

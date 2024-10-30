@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27130 -->
+  <question type="stack">
+    <name>
+				<text>36.2.2.4 outliers:task2 with MCQ</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<br>
+<p>Manufacturing processes generally result in a certain amount of wasted material. For reasons of cost, companies need to keep such wastage to a minimum. The following (sorted) data were gathered over a 30-day period by a manufacturing company. The members given represent the percentage wastage of the amount of material used in the manufacturing process.</p>
+<br>
+<p>Daily Losses (\(\%\))</p>
+{@L1@}<br>{@L2@}<br>{@L3@}
+<br>
+<br>
+<ol class="HELM_parts"><li>Find the mean and compute the standard deviation of the percentage losses of the material over this period. Give each answer to exactly 3 decimal places.
+<br>
+<p>\(\bar{x} =\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p>\(s_{n-1} =\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p></li>
+
+<li>Assuming that the losses are roughly normally distributed, apply an appropriate criterion to decide whether any of the losses are smaller of larger than might be expected by chance. Select all values that are outliers, or none if all values are as expected.
+[[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+</li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>Using standardized scores with \(x_0\) as the potential outlier we need to calculate the quantity \(|\dfrac{x-\bar{x}}{s_{n-1}}|\) and then accept \(x_0\) as a member of the distribution if \(|\dfrac{x-\bar{x}}{s_{n-1}}|&lt;3.3\). We calculate:
+
+</p><table class="HELM_table">
+<thead>
+<tr>
+<th>\(x\)</th>
+<th>\(|\dfrac{x-\bar{x}}{s_{n-1}}|\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{@J[1]@}</td>
+<td>{@re[1]@}</td>
+</tr>
+<tr>
+<td>{@J[2]@}</td>
+<td>{@re[2]@}</td>
+</tr>
+<tr>
+<td>\(\dots\)</td>
+<td>\(\dots\)</td>
+</tr>
+<tr>
+<td>{@J[lenJ]@}</td>
+<td>{@re[lenJ]@}</td>
+</tr>
+</tbody>
+</table>
+
+The calculation shows that all values of \(|\dfrac{x-\bar{x}}{s_{n-1}}|&lt;3.3\) and so we conclude that the daily losses are within the range indicated by chance variation.<p></p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2020081700</text>
+		</stackversion>
+    <questionvariables>
+				<text>/*Generate the data*/
+L:random_binomial (50, 0.3, 25)
+/*Add more extreme values and sort list*/
+L:append(L,[rand_with_step(2,4,1),rand_with_step(1,4,1),rand_with_step(1,4,1),rand_with_step(23,27,1),rand_with_step(23,27,1)]);
+L:sort(L);
+
+/*Make the rows of the data table as sequences*/
+L1:sequenceify(makelist(L[i],i,1,10));
+L2:sequenceify(makelist(L[i],i,11,20));
+L3:sequenceify(makelist(L[i],i,21,30));
+
+/*Avoiding rounding errors, calculate mean and s.d.*/
+ta1_raw:float(mean(L));
+ta1:decimalplaces(ta1_raw,3);
+ta2_raw:float(std1(L));
+ta2:decimalplaces(ta2_raw,3);
+
+/*List of answers for MCQ*/
+J:listify(setify(L))
+lenJ:length(J)
+ta3:append(makelist([i,false,J[i]],i,1,lenJ),[[0,true,"none of the above"]]);
+
+/*List, where the student picked all non-outliers*/
+ta3_opposite:makelist(i,i,1,lenJ);
+
+/*List of x-x bar*/
+tas_raw: makelist(float(J[i]-ta1),i,1,lenJ);
+tas:makelist(decimalplaces(tas_raw[i],3),i,1,lenJ);
+/*List of x-x bar squared*/
+task_raw:makelist(tas_raw[i]^2,i,1,lenJ);
+task: makelist(decimalplaces(task_raw[i],3),i,1,lenJ);
+
+/*list of abs(x-x bar)/s.d.*/
+re: makelist(decimalplaces(abs(tas_raw[i]/ta2_raw),3),i,1,lenJ);</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text></text>
+		</specificfeedback>
+    <questionnote>
+				<text>Values: {@L@}
+Mean: {@ta1_raw@}-> {@ta1@}, \(s_{n-1}: {@ta2_raw@}->{@ta2@}\)
+Extreme values of \(|\dfrac{x-\bar{x}}{s_{n-1}}|\): {@re[1]@},{@re[lenJ]@}.</text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>numerical</type>
+      <tans>ta1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options>maxdp:3, mindp:3</options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>numerical</type>
+      <tans>ta2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options>maxdp:3, mindp:3</options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>checkbox</type>
+      <tans>ta3</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>NumAbsolute</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions>0.01</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.7500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans1</sans>
+        <tans>ans1</tans>
+        <testoptions>3</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+					<text>Your answer is correct, but you did not give it to 3 d.p.</text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>NumAbsolute</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions>0.01</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.7500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>NumDecPlaces</answertest>
+        <sans>ans2</sans>
+        <tans>ans2</tans>
+        <testoptions>3</testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+					<text>Your answer is correct, but you did not give it to 3 d.p.</text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>[0]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3_opposite</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+					<text>The question asks to give all points that are outliers, not all the points that are <b>not</b> outliers.</text>
+				</truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200915102505+BMwGsB</text></tag>
+      <tag><text>version:moodle2.maths.ed.ac.uk+201001094426+03iQuK</text></tag>
+    </tags>
+    <deployedseed>739926896</deployedseed>
+    <deployedseed>1998994426</deployedseed>
+    <deployedseed>1934841264</deployedseed>
+    <deployedseed>1183051610</deployedseed>
+    <deployedseed>2136610325</deployedseed>
+    <deployedseed>924267911</deployedseed>
+    <deployedseed>520166306</deployedseed>
+    <deployedseed>1774357585</deployedseed>
+    <deployedseed>738983757</deployedseed>
+    <deployedseed>231995538</deployedseed>
+    <deployedseed>634942800</deployedseed>
+    <deployedseed>825238229</deployedseed>
+    <deployedseed>536014325</deployedseed>
+    <deployedseed>1325398863</deployedseed>
+    <deployedseed>1122534550</deployedseed>
+    <deployedseed>2034933957</deployedseed>
+    <deployedseed>1664420679</deployedseed>
+    <deployedseed>178297348</deployedseed>
+    <deployedseed>1398721768</deployedseed>
+    <deployedseed>1823548014</deployedseed>
+    <deployedseed>1157218321</deployedseed>
+    <deployedseed>74643281</deployedseed>
+    
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>dispdp(ta1,3)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>dispdp(ta2,3)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>[0]</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>dispdp(ev(ta1+0.051,simp),3)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>dispdp(ev(ta2+0.051,simp),3)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3_opposite</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+</question>
+</quiz>

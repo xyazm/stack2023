@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26737">
+        <parent>0</parent>
+        <name>10.2.3.3 Key Point-Multiplication and division</name>
+        <questiontext>&lt;p&gt;We see that in calculating the quotient that the moduli &lt;span class="math inline"&gt;\(r\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(t\)&lt;/span&gt; &lt;span&gt;&lt;strong&gt;divide&lt;/strong&gt;&lt;/span&gt; whilst the arguments \(\text{arg}(z)=\theta\) and \(\text{arg}(w)=\phi\)&lt;span class="math inline"&gt;&lt;/span&gt; &lt;span&gt;&lt;strong&gt;subtract&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(z=r(\cos\theta +i\sin\theta )\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(w=t(\cos\phi
++i\sin\phi )\)&lt;/span&gt; then &lt;span class="math display"&gt;\[zw=rt(\cos (\theta +\phi)+i\sin (\theta + \phi ))\qquad 
+{z\over w}={r\over t}(\cos (\theta -\phi) +i\sin
+(\theta -\phi ))\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We conclude that addition and subtraction are most easily carried out in Cartesian form whereas multiplication and division are most easily carried out in polar form.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200629125022+OmNJC5</stamp>
+        <version>stack2.maths.ed.ac.uk+200727124312+UgHkLm</version>
+        <hidden>0</hidden>
+        <timecreated>1593435022</timecreated>
+        <timemodified>1595853792</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

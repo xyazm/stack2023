@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27332">
+        <parent>0</parent>
+        <name>38.1.2.4 Find k</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;A continuous random variable \(T\) has the following probability density function:&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;\[ f_T(t) = \left\{\begin{array}{ll} 0, &amp;amp; \text{if $t &amp;lt; 0$}, \\ {@a@}({@b@}-t/k), &amp;amp; \text{if $0 \leq t \leq k$}, \\&amp;nbsp;0, &amp;amp; \text{if $t &amp;gt; k$}. \end{array}\right. \]&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Find the following as whole numbers or as fractions:&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;The constant \(k\) = [[input:ans1]] [[validation:ans1]]&amp;nbsp;[[feedback:prt1]]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt; \(\text{E}(T)\) = [[input:ans2]] [[validation:ans2]]&amp;nbsp;[[feedback:prt2]]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt; \(\text{E}(T^2)\) = [[input:ans3]] [[validation:ans3]]&amp;nbsp;[[feedback:prt3]]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt; \(\text{V}(T)\) = [[input:ans4]] [[validation:ans4]]&amp;nbsp;[[feedback:prt4]]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;&amp;nbsp;We know that the following must be true for the pdf of our random variable \(T\):&lt;br&gt;\( \displaystyle{\int_{-\infty}^{\infty}} f_T(t) \; dt = 1.\)&lt;br&gt;Thus,&amp;nbsp;&lt;br&gt;\[\begin{align*}\displaystyle{\int_{-\infty}^{\infty} f_T(t) \; dt} &amp;amp; =
+        \displaystyle{\int_0^k {@a@}({@b@}-t/k) \; dt} \\ &amp;amp;= \left. {@a*b@}t \right|_0^k - \left.\dfrac{{@a@}t^2}{2k}\right|_0^k\\ &amp;amp; = {@a*b@}k - {@a/2@}k \\&amp;amp; = {@a*b - a/2@}k,\end{align*}\]&lt;br&gt;which implies that \(k=\displaystyle{{@1/(a*b-a/2)@}}.\)&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt;Using the value for \(k\), the expectation is calculated by: \[\begin{align*}\text{E}(T) &amp;amp; = \displaystyle{\int_{-\infty}^{\infty}} t f_T(t) \; dt\\ &amp;amp; = \int_0^{{@k@}}&amp;nbsp;{@a@}({@b@}t-{@1/k@}t^2) \; dt\\ &amp;amp;= {@a*b@} \left.\dfrac{t^2}{2}\right|_0^{{@k@}}
+        - \left.{@a/k@}\dfrac{t^3}{3}\right|_0^{{@k@}}\\&amp;amp; = {@(a*b*(k^2))/2@} - {@(a*(k^2))/3@}\\&amp;amp; = {@ta2@}.\end{align*}\]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt;Using the value for \(k\), \(\text{E}(T^2)\) is: \[\begin{align*} \text{E}(T^2) &amp;amp;= \displaystyle{\int_{-\infty}^{\infty}} t^2 \cdot f_T(t) \; dt\\ &amp;amp;= \int_0^{{@k@}}&amp;nbsp;{@a@}({@b@}t^2-{@1/k@}t^3) \; dt\\ &amp;amp;= \left.{@a*b@} \dfrac{t^3}{3}\right|_0^{{@k@}}
+        - \left.{@a/k@}\dfrac{t^4}{4}\right|_0^{{@k@}}\\ &amp;amp;= {@(a*b*(k^3))/3@} - {@(a*(k^3))/4@}\\ &amp;amp;= {@ta3@}.\end{align*}\]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;/p&gt;
+    &lt;li&gt;Using the above values, the variance \(\text{V}(T)\) is evaluated using the formula: \[\begin{align*}\text{V}(T) &amp;amp;= \text{E}(T^2) - \text{E}(T)^2\\ &amp;amp;= \displaystyle{{@ta3@}- {@ta2^2@}}\\ &amp;amp;= {@ta4@}.\end{align*}\]&lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200721105942+7dnH58</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211108124131+n6qQYm</version>
+        <hidden>0</hidden>
+        <timecreated>1595329182</timecreated>
+        <timemodified>1636375291</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18459">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>a:rand([2,3,4,5]);
+b:rand([1,2,3,4,5]);
+k:2/(a*(2*b-1));
+f(u, const):=a*(b-u/const);
+ta2: integrate(f(u,k)*u,u,0,k);
+ta3: integrate(f(u,k)*(u^2),u,0,k);
+ta4: ta3-ta2^2;</questionvariables>
+            <specificfeedback>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[f = {@a@}({@b@}-t/k), \quad k= {@k@}\]
+\[ \text{E}(T)={@ta2@}, \quad \text{E}(T^2)={@ta3@}, \quad \text{V}(T)={@ta4@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43594">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>k</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>integrate </forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="43595">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta2</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>integrate</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="43596">
+              <name>ans3</name>
+              <type>numerical</type>
+              <tans>ta3</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>integrate</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="43597">
+              <name>ans4</name>
+              <type>numerical</type>
+              <tans>ta4</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>integrate</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37854">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56443">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>k</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37855">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>carry2: integrate(f(u, ans1)*u, u, 0, ans1);</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="56444">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="118402">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>carry2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;I suspect that an error may have occurred due to using an incorrect value for \(k\).&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37856">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>carry3: integrate(f(u, ans1)*(u^2), u, 0, ans1);</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="56445">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta3</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="118403">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>carry3</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-2-T</trueanswernote>
+                  <truefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;I suspect that an error may have occurred due to using an incorrect value for \(k\).&lt;br&gt;&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37857">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>carry4: ans3-ans2^2</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="56446">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>ta4</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="118404">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>carry4</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-2-T</trueanswernote>
+                  <truefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;I suspect that an error has occurred in the calculations of the two expectations.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42586">
+              <testcase>1</testcase>
+              <timemodified>1597270320</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92880">
+                  <inputname>ans1</inputname>
+                  <value>k</value>
+                </stackqtestinput>
+                <stackqtestinput id="92881">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="92882">
+                  <inputname>ans3</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+                <stackqtestinput id="92883">
+                  <inputname>ans4</inputname>
+                  <value>ta4</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="80584">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80585">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80586">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="80587">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="179777">
+              <seed>796726066</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179779">
+              <seed>663049377</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179784">
+              <seed>1272025458</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="179786">
+              <seed>1186672514</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392262">
+              <seed>1193456010</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392266">
+              <seed>686006764</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392268">
+              <seed>489290245</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392271">
+              <seed>756424966</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392272">
+              <seed>2094094129</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392275">
+              <seed>999493679</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

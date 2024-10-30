@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27366 -->
+  <question type="stack">
+    <name>
+				<text>39.1.8.1 Probability Intervals - General Normal Distribution</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Probability Intervals - General Normal Distribution</h3>
+
+<p>We saw in a previous subsection that \(95\%\) of the area under the standard normal curve lay between \(z_1=-1.96\) and \(z_2=1.96\). Using the formula \(Z=\dfrac{X-\mu}{\sigma}\) in the re-arrangement \(X=\mu+Z\sigma\), we can see that \(95\%\) of the area under the general normal curve lies between \(x_1=\mu-1.96\sigma\) and \(x_2=\mu+1.96\sigma\). This is shown in the Figure below.</p><p></p><center><img src="@@PLUGINFILE@@/39-1-fig-14-normal95confinterval.svg" alt="The Normal distribution curve with 95% of the area shaded in between x-values, x1 = mu - 1.96 times sigma, and x2 = mu + 1.96 times sigma." width="244" height="107" class="img-responsive atto_image_button_text-bottom"></center>
+<hr>
+<h3 class="HELM_example">Example</h3>
+<p>Suppose that the internal diameters of mass-produced pipes are normally distributed with mean \(50\) mm and standard deviation \(2\) mm. What are the \(95\%\) probability limits on the internal diameter of a single pipe?</p> 
+<h3 class="HELM_solution">Solution</h3>
+<p>Here \(\mu=50\) and \(\sigma=2\) so that the \(95\%\) probability limits are</p>
+<p>\(\qquad 50\pm 1.96\times 2 = 50\pm 3.92\) mm,</p>
+<p>i.e. \(46.08\) mm and \(53.92\) mm.</p>
+<p>Hence the probability interval is \((46.08, 53.92)\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200730192337+scs4ik</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200804155700+aBMlrp</text></tag>
+    </tags>
+    
+</question>
+</quiz>

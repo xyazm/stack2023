@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25734 -->
+  <question type="stack">
+    <name>
+				<text>2.4.5.6 Odd and even functions (cont)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>Note that most functions are <span><strong>neither odd nor even</strong></span>; for example <span class="math inline">\(f(x)=x^3+x^2\)</span> is neither even nor odd.</p><p>The reader should confirm (with simple examples) that ‘odd’ and ‘even’ functions have the following properties:</p><p><span class="math display">\[\begin{aligned}
+\text{odd}\ +\ \text{odd} &amp;= \text{odd}\qquad \text{even}\ +\ \text{even} = \text{even}\qquad \text{odd}\ +\ \text{even} = \text{neither}\\
+\text{odd}\ \times\ \text{odd} &amp;= \text{even}\qquad \text{even}\ \times\ \text{even}\ =\ \text{even}\qquad \text{odd}\  \times\  \text{even}\ =\ \text{odd}\end{aligned}\]</span></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618184232+QAUEPY</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200802194245+t9erfh</text></tag>
+    </tags>
+    
+</question>
+</quiz>

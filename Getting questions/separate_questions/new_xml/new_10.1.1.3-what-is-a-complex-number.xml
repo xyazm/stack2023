@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26724 -->
+  <question type="stack">
+    <name>
+				<text>10.1.1.3 What is a Complex Number?</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p></p>
+<div class="HELM_keypoint">
+<h4>Key Point </h4>
+<p>The symbol <span class="math inline">\(i\)</span> is such that <span class="math display">\[i^2=-1.\] </span>Using the normal rules of algebra it follows that <span class="math display">\[i^3=i^2\times i=-i\qquad i^4=i^2\times i^2=(-1)\times (-1)=1\]</span> and so on.</p>
+</div>
+<p>Simple examples of complex numbers are <span class="math inline">\(\qquad z_1=3+2i \quad\qquad z_2=-3+(2.461)i\quad\qquad z_3=17i \quad\qquad z_4=3+0i
+= 3\)</span> 
+
+</p><p>Generally, if <span class="math inline">\(z=a+i b\)</span> then ‘\(a\)’ is called the <b>real part</b> of <span class="math inline">\(z\)</span>, or <span class="math inline"><span>Re(\(z\))</span></span> for short, and ‘ \(b\)’ is called the <b>imaginary part</b> of <span class="math inline">\(z\)</span> or Im(<span class="math inline">\(z)\)&nbsp;</span>for short. Notice how both the real and imaginary parts are real numbers. The fourth example indicates how the real numbers can be considered a subset of the complex numbers.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200625154955+ZBVshl</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210706164429+m6OekE</text></tag>
+    </tags>
+    
+</question>
+</quiz>

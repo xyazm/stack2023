@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="96169">
+        <parent>0</parent>
+        <name>23.7.2.1 Applying Fourier series to solve a differential equation</name>
+        <questiontext>&lt;h3&gt;Applying Fourier series to solve a differential equation&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;The following Task which is quite long will provide useful practice in applying Fourier series to a practical problem. Essentially you should follow Steps 1 to 3 above carefully.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;The problem is to find the steady state response \(y(t)\) of a spring/mass/damper system modelled by&lt;/p&gt;
+&lt;p&gt;\(\qquad m\dfrac{d^2y}{dt^2} + c\dfrac{dy}{dt}+k y = F(t) \qquad \qquad \qquad\) (4)&lt;/p&gt;
+&lt;p&gt;where \(F(t)\) is the &lt;strong&gt;periodic square wave&lt;/strong&gt; function shown in the diagram.&lt;br&gt;&lt;/p&gt;
+
+&lt;figure class="HELM_figure"&gt;
+  &lt;img src="@@PLUGINFILE@@/Figure9.svg" alt="Image of a periodic square wave of the function F(t). The maximum amplitude is F_0." width="536" height="149" class="img-responsive atto_image_button_text-bottom"&gt;
+&lt;/figure&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Obtain the Fourier series of \(F(t)\) noting that it is an odd function.&lt;/p&gt;
+&lt;p&gt;The calculation is similar to those you have performed earlier in this Workbook.&lt;/p&gt;
+&lt;p&gt;Since \(F(t)\) is an odd function and has period \(2t_0\) so that \(\, \omega = \dfrac{2\pi}{2t_0} = \dfrac{\pi}{t_0}\), it has Fourier coefficients:&lt;/p&gt;
+&lt;p&gt;\(\begin{align} b_n &amp;amp;= \frac{2}{t_0}\int_0^{t_o}F_0\sin\left(\frac{n\pi t}{t_0}\right)\,dt \qquad n=1,2,3,\dots \\ &amp;amp;= \left( \frac{2F_0}{t_0} \right) \left( \frac{t_0}{n\pi} \right) \left[ -\cos \frac{n\pi t}{t_0} \right]_0^{t_0}\\ &amp;amp;= \frac{2F_0}{n\pi}(1-\cos
+    n\pi) = \left\{\begin{matrix}\dfrac{4F_0}{n\pi}&amp;amp;n\ \text{ odd}\\ 0&amp;amp;n\ \text{ even} \end{matrix}\right. \end{align}\)&lt;/p&gt;
+
+&lt;p&gt;so \( \quad F(t) = \dfrac{4F_0}{\pi}\sum_{n=1}^{\infty}\dfrac{\sin n\omega t}{n} \qquad\)(where the sum is over odd \(n\) only).&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2(a):&lt;/strong&gt; Since each term in the Fourier series is a sine term you must now solve (4) to find the steady state response \(y_n\) to the \(n^{\text{ th}}\) harmonic input: \(\quad F_n(t) = b_n\sin n\omega t \qquad n=1,3,5,\dots\)&lt;/p&gt;
+&lt;p&gt;From the basic theory of linear differential equations this response has the form&lt;/p&gt;
+&lt;p&gt;\( \qquad y_n = A_n\cos n\omega t + B_n\sin n\omega t \qquad \qquad\) (5)&lt;/p&gt;
+&lt;p&gt;where \(A_n\) and \(B_n\) are coefficients to be determined by substituting (5) into (4) with \(F(t)=F_n(t).\) Do this to obtain simultaneous equations for \(A_n\) and \(B_n :\)
+
+&lt;/p&gt;
+&lt;p&gt;We have, differentiating (5),&lt;/p&gt;
+&lt;p&gt;\( \qquad y_n' = n\omega (-A_n\sin n\omega t+B_n\cos n\omega t)\)&lt;/p&gt;
+&lt;p&gt;\( \qquad y_n''=(n\omega )^2(-A_n\cos n\omega t-B_n\sin n\omega t) \)&lt;/p&gt;
+&lt;p&gt;from which, substituting into (4) and collecting terms in \(\cos n\omega t\) and \(\sin n\omega t,\) \[(-m(n\omega)^2A_n + cn\omega B_n+kA_n) \cos n\omega t + (-m(n\omega)^2B_n-cn\omega A_n + kB_n)\sin n\omega t = b_n\sin n\omega t \]&lt;/p&gt;
+&lt;p&gt;Then, by comparing coefficients of \( \cos n\omega t\) and \(\sin n\omega t\), we obtain the simultaneous equations:&lt;/p&gt;
+&lt;p&gt;\(\qquad (k-m(n\omega)^2)A_n + c(n\omega)B_n =0 \qquad \qquad \qquad \) (6)&lt;/p&gt;
+&lt;p&gt;\(\qquad -c(n\omega)A_n + (k-m(n\omega)^2)B_n =b_n \qquad \qquad \qquad \) (7)&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2(b):&lt;/strong&gt; Now solve (6) and (7) to obtain \(A_n\) and \(B_n:\)&lt;/p&gt;
+&lt;p&gt;\[A_n = -\frac{c\omega_nb_n}{(k-m\omega_n^2)^2 + \omega_n^2c^2} \qquad \qquad (8)\]&lt;/p&gt;
+&lt;p&gt;\[B_n = \frac{(k-m\omega_n^2)b_n}{(k-m\omega_n^2)^2 + \omega_n^2c^2}\qquad \qquad (9)\]&lt;/p&gt;
+&lt;p&gt;where we have written \(\omega_n\) for \(n\omega\) as the frequency of the \(n^{\text{ th}}\) harmonic.&lt;/p&gt;
+
+&lt;p&gt;It follows that the steady state response \(y_n\) to the \(n^{\text{ th}}\) harmonic of the Fourier series of the forcing function is given by (5). The amplitudes \(A_n\) and \(B_n\) are given by (8) and (9) respectively in terms of the systems parameters
+    \(k,c,m\), the frequency \(\omega_n\) of the harmonic and its amplitude \(b_n\). In practice it is more convenient to represent \(y_n\) in the so-called &lt;strong&gt;amplitude&lt;/strong&gt; form:&lt;/p&gt;
+&lt;p&gt;\(\qquad y_n = C_n\sin (\omega_nt +\phi_n) \qquad \qquad \qquad \) (10)&lt;/p&gt;
+&lt;p&gt;where, from (5) and (10),&lt;/p&gt;
+&lt;p&gt;\( \qquad A_n\cos\omega_nt + B_n\sin\omega_nt = C_n(\cos\phi_n\sin\omega_nt + \sin\phi_n\cos\omega_nt).\)&lt;/p&gt;
+&lt;p&gt;Hence&lt;/p&gt;
+&lt;p&gt;\(\qquad C_n\sin \phi_n = A_n \qquad C_n\cos \phi_n=B_n\)&lt;/p&gt;
+&lt;p&gt;so&lt;/p&gt;
+&lt;p&gt;\(\qquad \tan \phi_n = \dfrac{A_n}{B_n} = \dfrac{c\omega_n}{(m\omega_n^2-k)^2} \qquad \qquad \qquad \qquad\) (11)&lt;/p&gt;
+&lt;p&gt;\(\qquad C_n = \sqrt{A_n^2+B_n^2} = \dfrac{b_n}{\sqrt{(m\omega_n^2-k)^2 + \omega_n^2c^2}} \qquad \qquad \) (12)&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Finally, use the superposition principle, to state the complete steady state response of the system to the periodic square wave forcing function:&lt;/p&gt;
+&lt;p&gt;\( \qquad y(t) = \sum_{n=1}^{\infty}y_n(t) = \sum_{{n=1}\atop (n \text{ odd})} C_n(\sin\omega_nt + \phi_n) \quad\) where \(C_n\) and \(\phi_n\) are given by (11) and (12).&lt;/p&gt;
+&lt;p&gt;In practice, since \(\, b_n=\dfrac{4F_0}{n\pi}\) it follows that the amplitude \(C_n\) also decreases as \(\, \frac{1}{n}\). However, if one of the harmonic frequencies say \(\omega_n'\) is close to the natural frequency \(\, \sqrt{\frac{k}{m}}\) of the
+    undamped oscillator then that particular frequency harmonic will dominate in the steady state response. The particular value \(\omega_n'\) will, of course, depend on the values of the system parameters \(k\) and \(m.\)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220601180906+rFenQF</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220602124813+zvgde1</version>
+        <hidden>0</hidden>
+        <timecreated>1654106946</timecreated>
+        <timemodified>1654174093</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26706">
+        <parent>0</parent>
+        <name>10.1.2.13 Dividing one complex number by another</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example &lt;/h4&gt;
+&lt;p&gt;Find &lt;span class="math inline"&gt;\(\displaystyle{{{z\over w}}}\)&lt;/span&gt; if &lt;span class="math inline"&gt;\(z=2-3i\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(w=2+i\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;&lt;span class="math display"&gt;\[\begin{aligned}
+{z\over w}={2-3i\over {2+i}}
+&amp;amp;={(2-3i)\times (2-i)\over
+{(2+i)\times (2-i)}}\qquad \text{rationalising}\\&amp;amp;={4-3+i(-6-2)\over
+{4+1}}\qquad \text{multiplying out}\qquad\qquad\qquad\qquad\qquad\qquad\\
+&amp;amp;={1\over 5}-{8\over 5}i\qquad 
+\text{dividing through}\end{aligned}\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617122231+LqBKz9</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210701120213+o6cmpO</version>
+        <hidden>0</hidden>
+        <timecreated>1592396551</timecreated>
+        <timemodified>1625140933</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

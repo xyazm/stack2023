@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="22667">
+                <parent>0</parent>
+                <name>Multiplikation von zwei Matrizen</name>
+                <questiontext>Seien die Matrizen A und B gegeben durch: $$A:=\left(\begin{array}{rrrr}&lt;br /&gt;
+ -1 &amp; -2 &amp; -1 &amp; 3 \\&lt;br /&gt;
+ -2 &amp; 1 &amp; -1 &amp; -1&lt;br /&gt;
+ \end{array}\right)\text{ und } B:=\left(\begin{array}{rrr}&lt;br /&gt;
+ 2 &amp; -1 &amp; 4 \\&lt;br /&gt;
+ 6 &amp; -3 &amp; 1 \\&lt;br /&gt;
+ 1 &amp; 3 &amp; 6 \\&lt;br /&gt;
+ 0 &amp; 4 &amp; -1&lt;br /&gt;
+ \end{array}\right)$$&lt;br/&gt; Berechnen Sie das Matrixprodukt A*B=&lt;br/&gt;{#1}{#2}{#3}&lt;br/&gt;{#4}{#5}{#6}&lt;br/&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback/>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>6.0000000</defaultmark>
+                <penalty>0.1000000</penalty>
+                <qtype>multianswer</qtype>
+                <length>1</length>
+                <stamp>moodle.ruhr-uni-bochum.de+101201220346+eGJZp6</stamp>
+                <timecreated>1291241026</timecreated>
+                <timemodified>0</timemodified>
+                <createdby>135</createdby>
+                <modifiedby>$@NULL@$</modifiedby>
+                <plugin_qtype_multianswer_question>
+                  <answers>
+                  </answers>
+                  <multianswer id="2843">
+                    <question>22667</question>
+                    <sequence>22668,22669,22670,22671,22672,22673</sequence>
+                  </multianswer>
+                </plugin_qtype_multianswer_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            
+
+</quiz>

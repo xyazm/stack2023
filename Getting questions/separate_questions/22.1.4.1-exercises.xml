@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26789">
+        <parent>0</parent>
+        <name>22.1.4.1 Exercises</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Paper Exercise&lt;/p&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots \lambda_n\)&lt;/span&gt; are the eigenvalues of a matrix &lt;span class="math inline"&gt;\(A,\)&lt;/span&gt;, get a piece of paper and prove the following:&lt;br&gt;&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="math inline"&gt;\(A^T\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots
+\lambda_n\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is upper triangular, then its eigenvalues are exactly the main diagonal entries.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The inverse matrix &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\({{1\over
+\lambda_1}},\ {{1\over \lambda_2}},\ldots {{1\over
+\lambda_n}}\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The matrix &lt;span class="math inline"&gt;\(A-kI\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(Harder) The matrix &lt;span class="math inline"&gt;\(A^2\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1^2,\lambda_2^2,\ldots \lambda_n^2\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(Harder) The matrix &lt;span class="math inline"&gt;\(A^k\)&lt;/span&gt; (&lt;span class="math inline"&gt;\(k\)&lt;/span&gt; a non-negative integer) has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;N.B. Some of these results are useful in the numerical calculation of eigenvalues.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;b&gt;We give the solution on the next page. Please try to complete the problem before referencing the solution.&lt;/b&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630204939+2PGBEr</stamp>
+        <version>stack2.maths.ed.ac.uk+200902110246+rvp8UJ</version>
+        <hidden>0</hidden>
+        <timecreated>1593550179</timecreated>
+        <timemodified>1599044566</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

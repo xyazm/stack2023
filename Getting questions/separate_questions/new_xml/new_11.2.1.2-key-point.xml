@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24411 -->
+  <question type="stack">
+    <name>
+				<text>11.2.1.2 Key Point</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p>Particularly important is the rule for differentiating powers of functions:</p>
+<p></p>
+If 
+\[y = x^n \hspace{2cm} \text{then} \hspace{2cm} \dfrac{dy}{dx} = nx^{n-1} \]
+</div>
+
+For example, if \(y = x^3\) then \( \dfrac{dy}{dx} = 3x^2\).
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p> Use the table of derivatives to find \( \dfrac{dy}{dx} \) when \(y\) is given by </p>
+<ol class="HELM_parts_inline">
+<li>\(7x\)</li>
+<li>\(14 \)</li>
+<li>\(5x^2\)</li>
+<li>\(4x^7\)</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+  <li>We note that \(7x\) is of the form \(kx\) where \(k = 7\). Using the table we then have
+\( \dfrac{dy}{dx} = 7\).</li>
+  <li>Noting that \(14\) is a constant we see that \( \dfrac{dy}{dx} = 0\).</li>
+  <li>We see that \(5x^2\) is of the form \(kx^n\), with \(k = 5\) and \(n = 2\). The derivative, \(knx^{n-1}\), is then \(10x^1\), or more simply, \(10x\). So if \(y = 5x^2\), then \( \dfrac{dy}{dx}
+= 10x\).</li>
+<li>We see that \(4x^7\) is of the form \(kx^n\), with \(k = 4\) and \(n = 7\). Hence the derivative, \( \dfrac{dy}{dx}\), is given by \(28x^6\).</li></ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200724125507+OKORsl</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210901191815+25VRkI</text></tag>
+    </tags>
+    
+</question>
+</quiz>

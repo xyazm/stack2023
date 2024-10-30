@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25731">
+        <parent>0</parent>
+        <name>2.4.5.3 Task: Comment on symmetries *****</name>
+        <questiontext>&lt;p&gt;The following diagrams shows&amp;nbsp; graphs of several functions. They share a common property. Study the graphs and comment on any symmetry.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/block6-fig7-1.svg" alt="block6-fig7" width="541" height="135" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;There is rotational symmetry about the origin. That is, each curve, when rotated through \(180^{\circ}\), transforms into itself.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>essay</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618182728+JDUoUS</stamp>
+        <version>stack2.maths.ed.ac.uk+200618183904+3owLtc</version>
+        <hidden>0</hidden>
+        <timecreated>1592504848</timecreated>
+        <timemodified>1592505544</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_essay_question>
+          <essay id="267">
+            <responseformat>editor</responseformat>
+            <responserequired>1</responserequired>
+            <responsefieldlines>15</responsefieldlines>
+            <attachments>0</attachments>
+            <attachmentsrequired>0</attachmentsrequired>
+            <graderinfo/>
+            <graderinfoformat>1</graderinfoformat>
+            <responsetemplate/>
+            <responsetemplateformat>1</responsetemplateformat>
+            <filetypeslist/>
+          </essay>
+        </plugin_qtype_essay_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

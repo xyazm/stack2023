@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26279">
+        <parent>0</parent>
+        <name>7.4.5.2 (not in quiz): Gauss elimination method &#9472; inverse of 3 x 3 matrix</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Use the Gauss elimination method to find the inverse of the following matrices&lt;/p&gt;
+&lt;p&gt;\[\bf A = {@A@},\] \[\bf B = {@B@}.\]&lt;/p&gt;
+&lt;div&gt;(a) \(\bf A^{-1}=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div&gt;(b) \(\bf B^{-1}=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;FEEDBACK&lt;/b&gt;&lt;/p&gt;&lt;p&gt;We can find the inverse of matrix \(\bf A\) using the Gaussian elimination method.&lt;br&gt;&lt;/p&gt;&lt;p&gt;We do this by reducing the matrix \(\bf A\) to the identity matrix \(\bf I\).&amp;nbsp;There is no unique procedure for this but here is one example.&lt;/p&gt;&lt;p&gt;We first place \(\bf A\) and \(\bf I\) adjacent to each other.&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;{@A@} {@I@}.&lt;/p&gt;&lt;p&gt;We now proceed by changing the columns of \(\bf A\) left to right to reduce \(\bf A\) to the form {@upper@},&lt;/p&gt;&lt;p&gt;where \(n\) can be any number. This form is called upper triangular.&lt;br&gt;&lt;/p&gt;&lt;p&gt;First we swap row 1 and row 2.&lt;/p&gt;&lt;p&gt;\[{@A@} {@I@} R1 \leftrightarrow R2 \longrightarrow {@matrixa@} {@I2@}. \]&lt;/p&gt;&lt;p&gt;Now we subtract {@a[2,1]@} times row 1 from row 2 and {@a[3,1]@} times row 1 from row 3.&lt;/p&gt;&lt;p&gt;\[{@matrixa@} {@I2@} R2 - {@a[2,1]@} R1, R3 - {@a[3,1]@} R1 \longrightarrow&amp;nbsp;{@matrixb@} {@I3@}.\]&lt;br&gt;&lt;/p&gt;&lt;p&gt;Then we divide row 2 by {@b[2,2]@} and subtract {@b[3,2]@} times row 2 from row 3.&lt;/p&gt;&lt;p&gt;\[{@matrixb@} {@I3@} R2/{@b[2,2]@}, R3 - {@b[3,2]@} R2 \longrightarrow {@matrixc@} {@I4@}.\]&lt;br&gt;&lt;/p&gt;&lt;p&gt;Finally we divide row 3 by {@c[3,3]@}.&lt;/p&gt;\[{@matrixc@} {@I4@} R3/{@c[3,3]@} \longrightarrow {@matrixd@} {@I5@}.\]&lt;p&gt;&lt;/p&gt;&lt;p&gt;We would usually proceed by changing the columns of \(\bf A\) right to left to reduce \(\bf A\) to the form {@I@}. However, for this question we already obtained zeros above the main diagonal after we swapped row 1 and row 2.&lt;br&gt;&lt;/p&gt;&lt;p&gt;So we have,&lt;/p&gt;&lt;p&gt;\[\bf A^{-1} = {@I5@}.\]&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The method can be used to determine \(\bf B^{-1}\) similarly, which gives \( B^{-1} = {@ta2@}.\)&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200628224432+WTg583</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210910172037+XPJttD</version>
+        <hidden>0</hidden>
+        <timecreated>1593384272</timecreated>
+        <timemodified>1631294437</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17808">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>A:matrix([rand(9)+2,rand(9)+1,0],[1,0,0],[rand(9)+1,rand(9)+1,rand(9)+1]);
+ta1:invert(A);
+
+B:matrix([rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,0,rand_with_prohib(-1,1,[0])]);
+ta2:invert(B);
+
+
+/* Gaussian Elimination method*/
+/* Swap R1 and R2 */
+a[1,1]:A[2,1]; a[1,2]:A[2,2]; a[1,3]:A[2,3];
+a[2,1]:A[1,1]; a[2,2]:A[1,2]; a[2,3]:A[1,3]; 
+a[3,1]:A[3,1]; a[3,2]:A[3,2]; a[3,3]:A[3,3];
+matrixa: genmatrix(a,3,3);
+/* R2-a21*R1, R3-a31*R1*/
+b:copy(matrixa);
+S1: for nj:1 thru 3 do b[2,nj]:b[2,nj]-a[2,1]*b[1,nj];
+S2: for nj:1 thru 3 do b[3,nj]:b[3,nj]-a[3,1]*b[1,nj];
+matrixb: ev(b,simp);
+/* R2/b22, R3-b32*R2 */
+c:copy(matrixb)
+S3: for nj:1 thru 3 do c[2,nj]:c[2,nj]/b[2,2];
+S4: for nj:1 thru 3 do c[3,nj]:c[3,nj]-b[3,2]*c[2,nj];
+matrixc: ev(c,simp);
+/* R3/c33 */
+d:copy(matrixc)
+S5: for nj:1 thru 3 do d[3,nj]:d[3,nj]/c[3,3];
+matrixd: ev(d,simp);
+
+I:ident(3);
+/* Swap R1 and R2 */
+I2:matrix([0,1,0],[1,0,0],[0,0,1])
+/* R2-a21*R1, R3-a31*R1*/
+I3:copy(I2);
+T1: for nj:1 thru 3 do I3[2,nj]:I3[2,nj]-a[2,1]*I3[1,nj];
+T2: for nj:1 thru 3 do I3[3,nj]:I3[3,nj]-a[3,1]*I3[1,nj];
+I3:ev(I3,simp);
+/* R2/b22, R3-b32*R2 */
+I4:copy(I3)
+T3: for nj:1 thru 3 do I4[2,nj]:I4[2,nj]/b[2,2];
+T4: for nj:1 thru 3 do I4[3,nj]:I4[3,nj]-b[3,2]*I4[2,nj];
+I4:ev(I4,simp);
+/* R3/c33 */
+I5:copy(I4)
+T5: for nj:1 thru 3 do I5[3,nj]:I5[3,nj]/c[3,3];
+I5:ev(I5,simp);
+
+upper: matrix([1,n,n],[0,1,n],[0,0,n]);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[\bf A = {@A@}, B = {@B@}\] 
+\[A^{-1} = {@ta1@}, B^{-1} = {@ta2@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41866">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="41867">
+              <name>ans2</name>
+              <type>matrix</type>
+              <tans>ta2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36274">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>wronganswer1:ev(-A,simp);</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="54276">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="54277">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>wronganswer1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Please try again!&lt;br&gt;&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36275">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>wronganswer2:ev(-B,simp);</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="54278">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="54279">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>wronganswer2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Please try again!&lt;br&gt;&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41086">
+              <testcase>1</testcase>
+              <timemodified>1593384272</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89058">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="89059">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77236">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77237">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41087">
+              <testcase>2</testcase>
+              <timemodified>1593384272</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89060">
+                  <inputname>ans1</inputname>
+                  <value>ev(-A,simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="89061">
+                  <inputname>ans2</inputname>
+                  <value>ev(-B,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77238">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77239">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41088">
+              <testcase>3</testcase>
+              <timemodified>1593449608</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89062">
+                  <inputname>ans1</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="89063">
+                  <inputname>ans2</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77240">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77241">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="173749">
+              <seed>2064231801</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173750">
+              <seed>177426508</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173751">
+              <seed>1566321368</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173752">
+              <seed>1530852070</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173753">
+              <seed>1936890616</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173754">
+              <seed>1221466336</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173755">
+              <seed>761763446</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173756">
+              <seed>368480703</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173757">
+              <seed>678245693</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173758">
+              <seed>371043483</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

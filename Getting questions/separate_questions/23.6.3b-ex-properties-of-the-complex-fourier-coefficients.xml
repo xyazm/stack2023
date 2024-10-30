@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62200">
+        <parent>0</parent>
+        <name>23.6.3b Ex Properties of the complex Fourier coefficients</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the complex Fourier series of the saw-tooth wave shown in the Figure below&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-6-ex-saw-tooth.svg" alt="saw tooth function" width="491" height="177" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+We have
+\[ f(t) = \dfrac{At}{T} \hspace{1cm} 0 &amp;lt; t &amp;lt; T \hspace{1cm} f(t+T)=f(t) \]
+The period is \(T\) in this case so \(\omega_0=\dfrac{2\pi}{T}\).
+&lt;p&gt;&lt;/p&gt;
+Looking at the graph of \(f(t)\) we can say immediately
+&lt;p&gt;&lt;/p&gt;
+(a) the Fourier series will contain a constant term \(c_0\)
+&lt;p&gt;&lt;/p&gt;
+(b) if we imagine shifting the horizontal axis up to \(\dfrac{A}{2}\) the signal can be written
+\(f(t) = \dfrac{A}{2} + g(t)\), where \(g(t)\) is an odd function with complex Fourier coefficients that
+are purely imaginary.
+&lt;p&gt;&lt;/p&gt;
+Hence we expect the required complex Fourier series of \(f(t)\) to contain a constant term \( \dfrac{A}{2}\) and
+complex exponential terms with purely imaginary coefficients. We have, from the general theory, and using \(0 &amp;lt; t &amp;lt; T\) as the basic period for integrating,
+\[ c_n = \dfrac{1}{T} \int _0^T \dfrac{At}{T} e^{-i n \omega_0 t} dt = \dfrac{A}{T^2} \int_0^T t e^{-i n \omega_0 t} dt \]
+We can evaluate the integral using parts:
+\[
+\begin{align}
+ \int_0^T t e^{-i n \omega_0 t} dt &amp;amp;= \left[ \dfrac{ t e^{-i n \omega_0 t} }{(-in\omega_0)} \right]_0^T + \dfrac{1}{i n \omega_0} \int_0^T e^{-i n \omega_0 t} dt \\
+&amp;amp;= \dfrac{T e^{i n \omega_0 T}}{(-i n \omega_0)} - \dfrac{1}{(i n \omega_0)^2} \Big[ e^{-i n \omega_0 t} \Big]_0^T
+\end{align}
+\]
+But \( \omega_0 = \dfrac{2\pi}{T}\) so
+\[
+\begin{align}
+e^{-i n \omega_0 T} = e^{-i n 2 \pi} &amp;amp;= \cos 2n\pi - i\sin 2n\pi \\
+&amp;amp;= 1 - 0i = 1
+\end{align}
+\]
+Hence the integral becomes
+\[ \dfrac{T}{-in\omega_0} - \dfrac{1}{(in\omega_0)^2} \left( e^{-i n \omega_0 T}  - 1 \right) \]
+Hence 
+\[ c_n = \dfrac{A}{T^2} \left( \dfrac{T}{-in\omega_0} \right) = \dfrac{iA}{2\pi n} \hspace{1cm} n = \pm 1, \pm 2, \dots \]
+Note that
+\[ c_{-n} = \dfrac{iA}{2\pi(-n)} = \dfrac{-iA}{2\pi n} = c_n^* \]
+Also
+\[ c_0 = \dfrac{1}{T} \int _0^T \dfrac{At}{T}dt = \dfrac{A}{2}  \]
+as expected.
+&lt;p&gt;&lt;/p&gt;
+Hence the required complex Fourier series is
+\[ f(t) = \dfrac{A}{2} + \dfrac{iA}{2\pi} \sum _{{n=-\infty\atop n\neq 0}} ^ \infty \dfrac{e^{i n \omega_0 t}}{n} \]
+which could be written, showing only the constant and the first two harmonics, as
+\[ f(t) = \dfrac{A}{2\pi} \left\{ \dots - i \dfrac{e^{-i 2 \omega_0 t}}{2} - i e^{-i\omega_0 t} + \pi + i e^{i\omega_0 t} +  i \dfrac{e^{i 2 \omega_0 t}}{2} + \dots \right\} . \]
+&lt;hr&gt;
+
+The corresponding trigonometric Fourier series for the function can be readily obtained from this
+complex series by combining the terms in \( \pm n\), \(n = 1, 2, 3, \dots \)
+&lt;p&gt;&lt;/p&gt;
+For example this first harmonic
+\[
+\begin{eqnarray*}
+\dfrac{A}{2\pi}\left\{- i e^{-i \omega_0t}+ i e^{ i\omega_0t}\right\}
+&amp;amp;=&amp;amp;\dfrac{A}{2\pi}\left\{- i (\cos \omega_0t - i\sin \omega_0t)+ i (\cos\omega_0t +i \sin
+\omega_0t)\right\}\qquad\qquad\\
+\\
+&amp;amp;=&amp;amp;\dfrac{A}{2\pi}(-2\sin\omega_0t)=-\dfrac{A}{\pi}\sin\omega_0t
+\end{eqnarray*}
+\]
+Performing similar calculations on the other harmonics we obtain the trigonometric form of the
+Fourier series
+\[ f(t)=\frac{A}{2}-\frac{A}{\pi}\sum_{n=1}^\infty \frac{\sin n\omega_0t}{n}.\]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200920075300+ip0aTE</stamp>
+        <version>stack2.maths.ed.ac.uk+200920163740+OVRy8j</version>
+        <hidden>0</hidden>
+        <timecreated>1600588380</timecreated>
+        <timemodified>1600619860</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

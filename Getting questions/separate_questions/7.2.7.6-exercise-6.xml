@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26236">
+        <parent>0</parent>
+        <name>7.2.7.6 Exercise 6</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Let \(A = {@matrixa@}\) and \(B = {@matrixb@}.\) Compute the following matrices:&lt;/p&gt;
+&lt;br&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;&lt;div&gt;\((AB)^{T} = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;&lt;div&gt;\(B^{T}A^{T} = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;What do you notice about the results?&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the matrices \(A = {@AA@}\) and \(B = {@BB@}\) and are asked to compute the following:&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;
+\[\begin{aligned}
+(AB)^T &amp;amp;= \left({@AB@}\right)^T \\
+&amp;amp;= \left({@ABs@}\right)^T \\
+&amp;amp;= {@ta1@}
+\end{aligned}\]
+&lt;/li&gt;
+&lt;li&gt;
+\[\begin{aligned}
+B^TA^T &amp;amp;= {@BB@}^T {@AA@}^T \\
+&amp;amp;= {@BBT@} {@AAT@} \\
+&amp;amp;= {@BTAT@} \\
+&amp;amp;= {@BTATs@}
+\end{aligned}\]
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that we got the same answer for \((AB)^T\) and \(B^TA^T\). In fact, this is true in general.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200703185227+KifiCZ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702114743+EekGju</version>
+        <hidden>0</hidden>
+        <timecreated>1593802347</timecreated>
+        <timemodified>1625226463</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17785">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+matrixb: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixb,simp);
+
+ta1: ev(transpose(matrixa.matrixb),simp);
+ta2: ev(transpose(matrixb).transpose(matrixa),simp);
+
+/* what follows is only for general feedback */
+
+AA: ev(matrixa,simp);
+AAT: ev(transpose(matrixa),simp);
+BB: ev(matrixb,simp);
+BBT: ev(transpose(matrixb),simp);
+
+AB: zeromatrix (first(matrix_size(AA)), first(matrix_size(BBT)));
+SS: for a:1 thru first(matrix_size(AA)) do for b:1 thru first(matrix_size(BBT)) do AB[ev(a,simp),ev(b,simp)]:apply("+",zip_with("*",AA[ev(a,simp)],BBT[ev(b,simp)]));
+ABs: ev(AB,simp);
+
+BTAT: zeromatrix (first(matrix_size(BBT)), first(matrix_size(AA)));
+SS: for b:1 thru first(matrix_size(BBT)) do for a:1 thru first(matrix_size(AA)) do BTAT[ev(b,simp),ev(a,simp)]:apply("+",zip_with("*",BBT[ev(b,simp)],AA[ev(a,simp)]));
+BTATs: ev(BTAT,simp);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(A = {@AA@}, B={@BB@}, (AB)^{T} = {@ta1@}, B^{T}A^{T} = {@ta2@}\)</questionnote>
+            <questionsimplify>0</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41802">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>ta1</tans>
+              <boxsize>1</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>determinant</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="41803">
+              <name>ans2</name>
+              <type>matrix</type>
+              <tans>ta2</tans>
+              <boxsize>1</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36213">
+              <name>prt1</name>
+              <value>0.2000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54203">
+                  <nodename>0</nodename>
+                  <answertest>CasEqual</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36214">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54204">
+                  <nodename>0</nodename>
+                  <answertest>CasEqual</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41040">
+              <testcase>1</testcase>
+              <timemodified>1597075224</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88935">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="88936">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77119">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77120">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41041">
+              <testcase>2</testcase>
+              <timemodified>1597075320</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88937">
+                  <inputname>ans1</inputname>
+                  <value>ev(2*ta1,simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="88938">
+                  <inputname>ans2</inputname>
+                  <value>ev(2*ta1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77121">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77122">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41042">
+              <testcase>3</testcase>
+              <timemodified>1597075394</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88939">
+                  <inputname>ans1</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="88940">
+                  <inputname>ans2</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77123">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77124">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="173465">
+              <seed>1333204668</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173466">
+              <seed>1655111437</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173467">
+              <seed>1075659029</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173468">
+              <seed>691537217</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173469">
+              <seed>147583968</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173470">
+              <seed>1550441960</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173471">
+              <seed>2088256393</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173472">
+              <seed>940032131</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173473">
+              <seed>1874743048</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173474">
+              <seed>105974638</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173475">
+              <seed>560633518</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173476">
+              <seed>1311951236</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173477">
+              <seed>2024798351</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173478">
+              <seed>2103382398</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173479">
+              <seed>1382044390</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173480">
+              <seed>614624283</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173481">
+              <seed>1966106599</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173482">
+              <seed>1211628417</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173483">
+              <seed>239342529</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

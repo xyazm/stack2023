@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62118 -->
+  <question type="stack">
+    <name>
+				<text>23.3.1.2 Task_1a period & E,O, or N</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p><p>
+State the period of each of the following periodic functions and say whether it is
+even or odd or neither. Select 2 options from the list below. You will be penalised if you select more than 2.</p><p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-3-1-task1-a.svg" alt="period func" width="300" height="169" class="img-responsive atto_image_button_text-bottom"><br></p><p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[This functions is neither even nor odd and has a period \(2\pi\).]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200828074107+egZBGF</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518103514+gjJlca</text></tag>
+    </tags>
+    
+</question>
+</quiz>

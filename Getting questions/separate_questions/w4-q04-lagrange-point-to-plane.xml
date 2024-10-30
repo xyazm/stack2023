@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24989">
+        <parent>0</parent>
+        <name>W4 Q04 Lagrange - point to plane</name>
+        <questiontext>&lt;p&gt;Use Lagrange multipliers to find the distance from the point \( P=({@a@},{@b@},{@c@}) \) to the plane {@pl@} as follows.&lt;/p&gt;
+&lt;p&gt;Let \(f(x,y,z)\) be the square of the distance from \( (x,y,z) \) to \( P=({@a@},{@b@},{@c@}) \).&lt;/p&gt;
+&lt;p&gt;\( f(x,y,x) = \) [[input:ans1]] [[validation:ans1]]&lt;/p&gt;
+&lt;p&gt;Let \( g(x,y,z)=0 \) be the constraint that \((x,y,z)\) lies on {@pl@}.  We define the Lagrangian \[ L= f(x,y,z) + lg(x,y,z)\]&lt;/p&gt;
+&lt;p&gt;Calculate \( \frac{\partial L}{\partial x} = \) [[input:ans2]] [[validation:ans2]]&lt;/p&gt;
+&lt;p&gt;Calculate \( \frac{\partial L}{\partial l} = \) [[input:ans3]] [[validation:ans3]]&lt;/p&gt;
+&lt;p&gt;Solve the equations \( \frac{\partial L}{\partial x} = 0\),  \( \frac{\partial L}{\partial y} = 0\), \( \frac{\partial L}{\partial z} = 0\), \( \frac{\partial L}{\partial l} = 0\), and find the value of \(l\).&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;\( l= \) [[input:ans4]] [[validation:ans4]]&lt;/p&gt;
+&lt;p&gt;Hence, find the shortest distance from the point to the plane.&lt;/p&gt;
+&lt;p&gt;Shortest distance is  [[input:ans5]] [[validation:ans5]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>We define
+\[ L= f(x,y,z) + lg(x,y,z)\]
+In our case this gives us
+\[ L = {@taf@} - l({@tag@}).\]
+Now we calculate the derivatives as
+\[ \frac{\partial L}{\partial x} = {@Lx@}\]
+\[ \frac{\partial L}{\partial y} = {@Ly@}\]
+\[ \frac{\partial L}{\partial z} = {@Lz@}\]
+\[ \frac{\partial L}{\partial l} = {@Ll@}\]
+Now we need to equate to zero and solve this system of algebraic equations.
+\[ {@Lx@}=0,\quad {@Ly@}=0,\quad {@Lz@}=0,\quad {@Ll@}=0.\]
+In this case, we can solve for \(x\), \(y\) and \(z\) which give us solutions in terms of \(l\).
+\[ {@taxl@} \]
+\[ {@tayl@} \]
+\[ {@tazl@} \]
+When we use these values in \({@Ll@}=0\) we get 
+\[ {@L1@}=0.\]
+Although this looks complicated it is a linear equation in \(l\) which we can readily solve to give \({@tal@}\).
+So, this gives the actual values of \(x\), \(y\) and \(z\) as
+\[ {@tax@}\]
+\[ {@tay@}\]
+\[ {@taz@}\]
+Now, we need to evaluate \(f\) at this point to give us the square of the distance.
+\[ f(x,y,z) = {@fv@}\]
+So, the closest distance of \( P=({@a@},{@b@},{@c@}) \) to the plane {@pl@} is {@sqrt(fv)@}.</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>moodle2.maths.ed.ac.uk+190308114721+tXktmq</stamp>
+        <version>moodle2.maths.ed.ac.uk+210314100738+xaSzRr</version>
+        <hidden>1</hidden>
+        <timecreated>1552045641</timecreated>
+        <timemodified>1615716457</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17064">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>a:1;
+b:1+rand(2);
+c:-1;
+A:2;
+B:-1;
+C:2;
+r:3+rand(4);
+/* Distance to the point (a,b,c): */
+pt:matrix([a,b,c]);
+taf:(x-a)^2+(y-b)^2+(z-c)^2;
+/* To a plane */
+pl:A*x+B*y+C*z=r;
+tag:A*x+B*y+C*z-r;
+L:taf+l*tag;
+/* Derivatives */
+Lx:diff(L,x);
+Ly:diff(L,y);
+Lz:diff(L,z);
+Ll:diff(L,l);
+/* Start to solve these. Lx, Ly, Lz all have unique solutions! */
+taxl:first(solve(Lx=0,x));
+tayl:first(solve(Ly=0,y));
+tazl:first(solve(Lz=0,z));
+/* Evaluate the constraint: this is the hideous part! */
+L1:ev(Ll,[taxl,tayl,tazl]);
+tal:first(solve(L1,l));
+/* Sub back in l, to get x,y,z. */
+tax:ev(taxl,tal);
+tay:ev(tayl,tal);
+taz:ev(tazl,tal);
+fv:ev(taf,[tax,tay,taz])</questionvariables>
+            <specificfeedback>[[feedback:prt1]]</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>Distance from \( P=({@a@},{@b@},{@c@}) \) to the plane {@pl@} is {@sqrt(fv)@}.</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39466">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>taf</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39467">
+              <name>ans2</name>
+              <type>algebraic</type>
+              <tans>Lx</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>diff</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39468">
+              <name>ans3</name>
+              <type>algebraic</type>
+              <tans>Ll</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>diff</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39469">
+              <name>ans4</name>
+              <type>numerical</type>
+              <tans>rhs(tal)</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>2</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39470">
+              <name>ans5</name>
+              <type>numerical</type>
+              <tans>sqrt(fv)</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>2</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="34055">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="51429">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>taf</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.2000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;Your function \(f(x)\) is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your function \(f(x)\) is incorrect.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="51430">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>Lx</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>2</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;Your value of \(\frac{\partial L}{\partial x}\) is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>2</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your value of \(\frac{\partial L}{\partial x}\) is incorrect.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="51431">
+                  <nodename>2</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>Ll</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>3</truenextnode>
+                  <trueanswernote>prt1-3-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;Your value of \(\frac{\partial L}{\partial l}\) is correct.&lt;br&gt;&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>3</falsenextnode>
+                  <falseanswernote>prt1-3-F</falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your value of \(\frac{\partial L}{\partial l}\) is incorrect.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="51432">
+                  <nodename>3</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>rhs(tal)</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>4</truenextnode>
+                  <trueanswernote>prt1-4-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;Your value of \(l\) is correct!&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>4</falsenextnode>
+                  <falseanswernote>prt1-4-F</falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your value of \(l\) is incorrect!&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="51433">
+                  <nodename>4</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans5</sans>
+                  <tans>sqrt(fv)</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.2000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-5-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;Correct final distance, well done.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>5</falsenextnode>
+                  <falseanswernote>prt1-5-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="51434">
+                  <nodename>5</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans5</sans>
+                  <tans>fv</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-6-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;You have the square of the distance!&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-6-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="39435">
+              <testcase>1</testcase>
+              <timemodified>1552045641</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="84146">
+                  <inputname>ans1</inputname>
+                  <value>taf</value>
+                </stackqtestinput>
+                <stackqtestinput id="84147">
+                  <inputname>ans2</inputname>
+                  <value>Lx</value>
+                </stackqtestinput>
+                <stackqtestinput id="84148">
+                  <inputname>ans3</inputname>
+                  <value>Ll</value>
+                </stackqtestinput>
+                <stackqtestinput id="84149">
+                  <inputname>ans4</inputname>
+                  <value>ev(rhs(tal),simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="84150">
+                  <inputname>ans5</inputname>
+                  <value>sqrt(fv)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="72757">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-5-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="39436">
+              <testcase>2</testcase>
+              <timemodified>1552045641</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="84151">
+                  <inputname>ans1</inputname>
+                  <value>taf</value>
+                </stackqtestinput>
+                <stackqtestinput id="84152">
+                  <inputname>ans2</inputname>
+                  <value>Lx</value>
+                </stackqtestinput>
+                <stackqtestinput id="84153">
+                  <inputname>ans3</inputname>
+                  <value>Ll</value>
+                </stackqtestinput>
+                <stackqtestinput id="84154">
+                  <inputname>ans4</inputname>
+                  <value>ev(rhs(tal),simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="84155">
+                  <inputname>ans5</inputname>
+                  <value>fv</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="72758">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.8000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-6-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="167158">
+              <seed>1057140986</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="167159">
+              <seed>1939874711</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="167160">
+              <seed>346418144</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="167161">
+              <seed>1260033592</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="167162">
+              <seed>745204119</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="167163">
+              <seed>1398748464</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

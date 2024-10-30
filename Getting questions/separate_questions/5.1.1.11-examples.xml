@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="84107">
+        <parent>0</parent>
+        <name>5.1.1.11 Examples</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+
+&lt;p&gt;A local authority has flood control plans in which the emergency and rescue services are alerted when the river level rises to critical values. A linear model is used to estimate the variation of height with time. After a period of continuous heavy rain
+    the level one day was \(1.5 \, \textrm{m}\) at \(8\) a.m. and \(1.8 \, \textrm{m}\) at \(2\) p.m.&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;Use a linear model to write down an equation for estimating the level of the river at different times of the day:&lt;/li&gt;
+    &lt;li&gt;Suggest a suitable range of values of time for which the model could be used:&lt;/li&gt;
+    &lt;li&gt;What time does the model predict that the level of the river will reach \( 2 \, \textrm{m}\)?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;
+        &lt;p&gt;If the level of water is represented by \(L \, \textrm{m}\) and time by \(t\) hours after \(8\) a.m. then a linear model for the level as a function of time may be written&lt;/p&gt;
+        &lt;p&gt;\( \quad L = at + b\)&lt;/p&gt;
+        &lt;p&gt;where \(a\) and \(b\) are constants to be found from the other information in the problem. Specifically, it is stated that \(L = 1.5\) when \(t = 0\) and \(L = 1.8\) when \(t = 6.\) The first statement implies that&lt;/p&gt;
+        &lt;p&gt;\(\quad 1.5 = 0 + b \quad \textrm{or} \quad b = 1.5\)&lt;/p&gt;
+        &lt;p&gt;The second statement implies that&lt;/p&gt;
+        &lt;p&gt;\(\quad 1.8 = 6a + b\)&lt;/p&gt;
+        &lt;p&gt;or, after substituting for \(b,\)&lt;/p&gt;
+        &lt;p&gt;\(\quad 1.8 = 6a + 1.5 \quad \textrm{or} \quad 0.3 = 6a \quad \textrm{or} \quad a = 0.05\)&lt;/p&gt;
+        &lt;p&gt;So the equation for estimating the level of the river at different times is&lt;/p&gt;
+        &lt;p&gt;\(\quad L = 0.05t + 1.5\)&lt;/p&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+        &lt;p&gt;The model is valid between \(8\) a.m. and \(2\) p.m. and, subsequently, only as long as the river level rises steadily.&lt;/p&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+        &lt;p&gt;The model will predict a level of \(2 \, \textrm{m}\) at time \(t\) given by&lt;/p&gt;
+        &lt;p&gt;\( \quad 2 = 0.05t + 1.5 \quad \textrm{or} \quad t =\dfrac{0.5}{0.05}= 10\)&lt;/p&gt;
+        &lt;p&gt;i.e. \(10\) hours after \(8\) a.m. which is \(6\) p.m.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;During one winter, the roads in a rural area were completely free from snow when it started snowing at midnight. It snowed heavily all night and day. By \(10\) a.m. it was \(19 \, \textrm{cm}\) deep.&lt;/p&gt;
+&lt;p&gt;To save money the local authorities wait until the snow is \(30 \, \textrm{cm}\) deep before ploughing the snow away from the roads. Forecast when ploughing should start, stating any assumptions you have made.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;If the depth of snow is represented by \(D \, \textrm{cm}\) and time by \(t\) hours after midnight then a linear modelfor the depth as a function of time may be written:&lt;/p&gt;
+&lt;p&gt;\(\quad D = at + b\)&lt;/p&gt;
+&lt;p&gt;where \(a\) and \(b\) are constants to be found from the other information in the problem or from assumptions. As there was no snow at midnight&lt;/p&gt;
+&lt;p&gt;\(quad 0 = 0 + b \quad \textrm{or} \quad \(b = 0\)&lt;/p&gt;
+&lt;p&gt;It is stated that \(D = 19\) when \(t = 10\), i.e.&lt;/p&gt;
+&lt;p&gt;\(\quad 19 = 10a \quad \textrm{or} \quad a = 1.9\)&lt;/p&gt;
+&lt;p&gt;So the equation for estimating the depth of snow at different times is&lt;/p&gt;
+&lt;p&gt;\( \quad D = 1.9t\)&lt;/p&gt;
+&lt;p&gt;The model will predict a level of \(30 \, \textrm{cm}\) at a time \(t\) is given by&lt;/p&gt;
+&lt;p&gt;\( \quad 30 = 1.9t \quad \textrm{or} \quad t =\dfrac{30}{1.9}= 15.789\)&lt;/p&gt;
+&lt;p&gt;i.e. \(15.789\) hours after midnight which is a little after \(3.47\) p.m.&lt;/p&gt;
+&lt;p&gt;Assuming that the snow build up is steady e.g. no drifting or change in precipitation, this suggests that ploughing should start about \(3.45\) p.m.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220224115521+QdOgSK</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220224123334+ZDm1OM</version>
+        <hidden>0</hidden>
+        <timecreated>1645703721</timecreated>
+        <timemodified>1645706014</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

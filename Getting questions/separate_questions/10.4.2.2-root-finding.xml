@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26772">
+        <parent>0</parent>
+        <name>10.4.2.2 Root finding</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find all the values of \(8^{1/3}\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;h5&gt;Using polar form&lt;/h5&gt;
+&lt;p&gt;Solving &lt;span class="math inline"&gt;\({z=8^{1/3}}\)&lt;/span&gt; for &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; is equivalent to solving the cubic equation &lt;span class="math inline"&gt;\(z^3-8=0\)&lt;/span&gt;. We expect that there are three possible values of &lt;span class="math inline"&gt;\(z\)&lt;/span&gt;    satisfying this cubic equation. Thus, rearranging:
+    &lt;span class="math inline"&gt;\(z^3=8\)&lt;/span&gt;. Now write the right-hand side as a complex number in polar form:&amp;nbsp;&lt;span class="math inline"&gt;\[\qquad
+z^3=8(\cos 0+i\sin 0)\]&lt;/span&gt;(i.e. &lt;span class="math inline"&gt;\(r=|8|=8\)&lt;/span&gt; and arg(&lt;span class="math inline"&gt;8)=0). H&lt;/span&gt;owever, if we now generalise our expression for the argument by adding an arbitrary integer multiple of &lt;span class="math inline"&gt;\(2\pi\)&lt;/span&gt;,
+    we obtain the modified expression: \[z^3=8(\cos(2k\pi)+i\sin(2k\pi))\qquad k=0,\pm1,\pm2,\ldots\] Now take the cube root of both sides: &lt;span class="math display"&gt;\[\begin{aligned}
+z&amp;amp;=\root 3\of{8}(\cos (2k\pi )+i\sin (2k\pi ))^{1/3}\\
+&amp;amp;=\root 3\of{8}\left(\cos\left(2k\pi\over 3\right)+i\sin\left(2k\pi\over 3\right)\right), \end{aligned}\]&lt;/span&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;by applying De Moivre's theorem.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Now in this expression
+    &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; can take any integer value including zero. The normal procedure is to take three consecutive values of
+    &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; (say &lt;span class="math inline"&gt;\(k=0,1,2\)&lt;/span&gt;). Any other value of &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; chosen will lead to a root (a value of &lt;span class="math inline"&gt;\(z\)&lt;/span&gt;) which repeats one of
+    the three already determined.
+    &lt;span class="math display"&gt;\[\begin{aligned}
+\text{So if}\qquad k&amp;amp;=0\qquad z_0=2(\cos 0+i\sin 0)=2\\k&amp;amp;=1\qquad
+z_1=2\left(\cos {2\pi \over 3}+i\sin {2\pi\over 3}\right)=-1+i\sqrt{3}\\
+k&amp;amp;=2\qquad z_2=2\left(\cos {4\pi \over 3}+i\sin {4\pi\over
+3}\right)=-1-i\sqrt{3}\end{aligned}\]&lt;/span&gt; These are the three (complex) values of
+    &lt;span class="math inline"&gt;\(8^{1/3}\)&lt;/span&gt;. The reader should verify, by direct multiplication, that &lt;span class="math inline"&gt;\((-1+i\sqrt{3})^3=8\)&lt;/span&gt; and that &lt;span class="math inline"&gt;\((-1-i\sqrt{3})^3=8\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The reader may have noticed within this Example a subtle change in notation. When, for example, we write &lt;span class="math inline"&gt;\(8^{1/3}\)&lt;/span&gt; then we are expecting &lt;span&gt;&lt;strong&gt;three&lt;/strong&gt;&lt;/span&gt; possible values, as calculated above. However,
+    when we write &lt;span class="math inline"&gt;\(\root 3\of {8}\)&lt;/span&gt; then we are only expecting
+    &lt;span&gt;&lt;strong&gt;one&lt;/strong&gt;&lt;/span&gt; value: that delivered by your calculator.&lt;/p&gt;
+&lt;p&gt;Note the two complex roots are complex conjugates (since &lt;span class="math inline"&gt;\(z^3-8=0\)&lt;/span&gt; is a polynomial equation with real coefficients).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;Using exponential form&lt;/h5&gt;
+&lt;p&gt;Precisely the same calculation can be carried through using the exponential form of a complex number. We take this opportunity to repeat this previous calculation but working exclusively in exponential form.&lt;/p&gt;
+&lt;p&gt;Thus \[\begin{aligned} z^3 &amp;amp;=8 \\ &amp;amp;=8e^{i (0)}\qquad\text{(i.e. } r=|8|=8\quad \text{and}\quad \text{arg}(8)=0) \\ &amp;amp;=8e^{i (2k\pi )}\qquad k=0,\pm1,\pm2,\ldots\end{aligned}\] therefore taking cube roots \[\begin{aligned} z&amp;amp;=\root 3\of{8}\left[e^{i
+    (2k\pi )}\right]^{1/3} \\ &amp;amp;=\root 3\of{8}e^{i 2k\pi/3} \end{aligned}\]&lt;/p&gt;
+&lt;p&gt;using De Moivre's theorem.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Again \(k\) can take any integer value or zero. Any three consecutive values will give the roots. \[\begin{aligned} \text{So if}\qquad k&amp;amp;=0\qquad z_0=2e^{i 0}=2 \\ k&amp;amp;=1\qquad z_1=2e^{i 2\pi/3}=-1+i\sqrt{3}\\ k&amp;amp;=2\qquad z_2=2e^{i 4\pi/3}=-1-i\sqrt{3}\end{aligned}\]These
+    are the three (complex) values of &lt;span class="math inline"&gt;\(8^{1/3}\)&lt;/span&gt; obtained using the exponential form. Of course at the end of the calculation we have converted back to standard Cartesian form.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622120801+MF0geZ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702151536+1UOlPX</version>
+        <hidden>0</hidden>
+        <timecreated>1592827681</timecreated>
+        <timemodified>1625238936</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

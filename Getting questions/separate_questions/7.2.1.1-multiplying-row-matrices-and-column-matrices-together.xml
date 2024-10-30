@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26212">
+        <parent>0</parent>
+        <name>7.2.1.1 Multiplying row matrices and column matrices together</name>
+        <questiontext>&lt;h3&gt;Multiplying row matrices and column matrices together&lt;/h3&gt;
+&lt;p&gt;Let \(A\) be a \(1\times 2\) row matrix and \(B\) be a \(2\times 1\) column matrix: \[ A = \begin{bmatrix} a &amp;amp; b \end{bmatrix},\qquad B=\begin{bmatrix} c \\ d \end{bmatrix} \] The product of these two matrices is written \(AB\) and is the \(1\times 1\) matrix defined by: \[ AB = \begin{bmatrix} a &amp;amp; b \end{bmatrix}\cdot \begin{bmatrix} c \\ d \end{bmatrix} = \begin{bmatrix} ac + bd \end{bmatrix} \] Note that corresponding elements are multiplied together and the results are then added together. For example \[\begin{bmatrix} 2 &amp;amp; -3 \end{bmatrix} \cdot \begin{bmatrix} 6 \\ 5 \end{bmatrix} = \begin{bmatrix} 12-15 \end{bmatrix} = \begin{bmatrix} -3 \end{bmatrix} \] This matrix product is easily generalised to other row and column matrices. For example if \(C\) is a \(1\times 4\) row matrix and \(D\) is a \(4\times 1\) column matrix: \[ C = \begin{bmatrix} 2 &amp;amp; -4 &amp;amp; 3 &amp;amp; 2 \end{bmatrix} \qquad D = \begin{bmatrix} 3 \\ 3 \\ -2 \\ 5 \end{bmatrix} \] then we define the product of \(C\) with \(D\) as \[ CD = \begin{bmatrix} 2 &amp;amp; -4 &amp;amp; 3 &amp;amp; 2 \end{bmatrix}\cdot \begin{bmatrix} 3 \\ 3\\ -2\\ 5 \end{bmatrix} = \begin{bmatrix} 6-12-6+10 \end{bmatrix} = \begin{bmatrix} -2 \end{bmatrix} \] The only requirement is that the number of entries in the row matrix is the same as the number of entries in the column matrix.&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200618130519+uYdTdZ</stamp>
+        <version>stack2.maths.ed.ac.uk+200907144523+XuB7ST</version>
+        <hidden>0</hidden>
+        <timecreated>1592485519</timecreated>
+        <timemodified>1599489923</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

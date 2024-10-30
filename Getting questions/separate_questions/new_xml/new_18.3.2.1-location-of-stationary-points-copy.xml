@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 84680 -->
+  <question type="stack">
+    <name>
+				<text>18.3.2.1 Location of stationary points (copy)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Location of stationary points</span><br></h3>
+
+<p>As we said in the previous subsection, the tangent plane to the surface \(z=f(x,y)\) is horizontal at a stationary point. A condition which guarantees that the function \(f(x,y)\) will have a stationary point at a point \((x_0,y_0)\) is that, at that
+    point both \(f_x=0\) and \(f_y=0\) simultaneously.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220307124658+S62muB</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220307124658+8cqSZ8</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24533">
+        <parent>0</parent>
+        <name>13.4.1.5 Integration by parts</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find&lt;/p&gt;
+&lt;p&gt;\({\displaystyle\int {@exp4@} \, \mathrm{d}x} = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We apply integraton by parts:
+  \[ \int u \frac{dv}{dx} \, \mathrm{d}x = uv - \int \frac{du}{dx} v \, \mathrm{d}x, \]
+or alternatively:
+  \[\int f(x)g(x) \, \mathrm{d}x = f(x) \, \int g(x) \mathrm{d}x - \int \frac{df}{dx} \left\{\int g(x) \, \mathrm{d}x \right\} \, \mathrm{d}x. \]
+&lt;/p&gt;
+&lt;p&gt;We are given the integral \({\displaystyle\int {@exp4@} \, \mathrm{d}x}\).&lt;/p&gt;
+&lt;p&gt;We have \( f(x) = {@f4@}\) and \(g(x) = {@g4@}\).&lt;/p&gt;
+&lt;p&gt;Hence:
+  \[\begin{aligned} \int {@exp4@} \, \mathrm{d}x &amp;amp;=({@f4@}) \int {@g4@} \, \mathrm{d}x -\int \left({@df4@} \cdot \int {@g4@} \, \mathrm{d}x \right) \, \mathrm{d}x \\ &amp;amp;= {@f4* intg4@}- \int {@df4*intg4@} \, \mathrm{d}x \\ &amp;amp;= {@ta4@}. \end{aligned}\]
+&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>moodle2.maths.ed.ac.uk+210204163443+cUQUvl</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210625135715+RZihuq</version>
+        <hidden>0</hidden>
+        <timecreated>1612456483</timecreated>
+        <timemodified>1624629435</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16699">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>bb: rand(8)+2; 
+
+exp4: (x+bb)*sin(x);
+f4: x+bb;                         /* needed for worked solution */
+g4: sin(x);
+intg4: int(g4,x);
+df4: diff(f4,x);
+ta4: int(exp4, x) + c;
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\int {@exp4@} \, \mathrm{d}x = {@ta4@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38722">
+              <name>ans4</name>
+              <type>algebraic</type>
+              <tans>ta4</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33379">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50433">
+                  <nodename>0</nodename>
+                  <answertest>Int</answertest>
+                  <sans>ans4</sans>
+                  <tans>ta4</tans>
+                  <testoptions>x</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38550">
+              <testcase>1</testcase>
+              <timemodified>1612456483</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82409">
+                  <inputname>ans4</inputname>
+                  <value>ta4</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71238">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="48690">
+              <testcase>2</testcase>
+              <timemodified>1622731706</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="104802">
+                  <inputname>ans4</inputname>
+                  <value>2*ta4</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="90575">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="164605">
+              <seed>1651997333</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164606">
+              <seed>26321727</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164607">
+              <seed>1024763884</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164608">
+              <seed>75244493</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164609">
+              <seed>592131890</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164610">
+              <seed>1657208556</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164611">
+              <seed>1390433546</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164612">
+              <seed>982601167</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164613">
+              <seed>1394793454</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164614">
+              <seed>891334864</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164615">
+              <seed>1026384303</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

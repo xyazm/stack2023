@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="3163839">
+                <parent>0</parent>
+                <name>Passw&#246;rter Keller</name>
+                <questiontext>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Passwort f&#252;r den ersten Raum:&lt;/p&gt;&lt;p&gt;[[input:ans1]] [[validation:ans1]]&lt;/p&gt;&lt;p&gt;Passwort f&#252;r den zweiten Raum:&amp;nbsp;&lt;/p&gt;&lt;p&gt;[[input:ans2]] [[validation:ans2]]&lt;br&gt;&lt;/p&gt;&lt;p&gt;Passwort zum Notausgang:&amp;nbsp;&lt;/p&gt;&lt;p&gt;[[input:ans3]] [[validation:ans3]]&lt;br&gt;&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback/>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.1000000</penalty>
+                <qtype>stack</qtype>
+                <length>1</length>
+                <stamp>moodle.ruhr-uni-bochum.de+200916100250+mTMpg7</stamp>
+                <timecreated>1600250570</timecreated>
+                <timemodified>1609236030</timemodified>
+                <createdby>50832</createdby>
+                <modifiedby>50832</modifiedby>
+                <plugin_qtype_stack_question>
+                  <stackoptions id="69900">
+                    <stackversion>2019090200</stackversion>
+                    <questionvariables/>
+                    <specificfeedback>[[feedback:prt1]]&lt;br&gt;&lt;br&gt;[[feedback:prt2]]&lt;br&gt;&lt;br&gt;[[feedback:prt3]]&lt;br&gt;</specificfeedback>
+                    <specificfeedbackformat>1</specificfeedbackformat>
+                    <questionnote/>
+                    <questionsimplify>1</questionsimplify>
+                    <assumepositive>0</assumepositive>
+                    <assumereal>0</assumereal>
+                    <prtcorrect>Richtige Antwort, gut gemacht!</prtcorrect>
+                    <prtcorrectformat>1</prtcorrectformat>
+                    <prtpartiallycorrect>Ihre Antwort ist teilweise korrekt.</prtpartiallycorrect>
+                    <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+                    <prtincorrect>Falsche Antwort.</prtincorrect>
+                    <prtincorrectformat>1</prtincorrectformat>
+                    <decimals>.</decimals>
+                    <multiplicationsign>dot</multiplicationsign>
+                    <sqrtsign>1</sqrtsign>
+                    <complexno>i</complexno>
+                    <inversetrig>cos-1</inversetrig>
+                    <logicsymbol>lang</logicsymbol>
+                    <matrixparens>[</matrixparens>
+                    <variantsselectionseed/>
+                  </stackoptions>
+                  <stackinputs>
+                    <stackinput id="128926">
+                      <name>ans1</name>
+                      <type>algebraic</type>
+                      <tans>1/3</tans>
+                      <boxsize>15</boxsize>
+                      <strictsyntax>1</strictsyntax>
+                      <insertstars>0</insertstars>
+                      <syntaxhint/>
+                      <syntaxattribute>0</syntaxattribute>
+                      <forbidwords/>
+                      <allowwords/>
+                      <forbidfloat>0</forbidfloat>
+                      <requirelowestterms>0</requirelowestterms>
+                      <checkanswertype>0</checkanswertype>
+                      <mustverify>1</mustverify>
+                      <showvalidation>1</showvalidation>
+                      <options/>
+                    </stackinput>
+                    <stackinput id="128927">
+                      <name>ans2</name>
+                      <type>algebraic</type>
+                      <tans>1/3</tans>
+                      <boxsize>15</boxsize>
+                      <strictsyntax>1</strictsyntax>
+                      <insertstars>0</insertstars>
+                      <syntaxhint/>
+                      <syntaxattribute>0</syntaxattribute>
+                      <forbidwords/>
+                      <allowwords/>
+                      <forbidfloat>0</forbidfloat>
+                      <requirelowestterms>0</requirelowestterms>
+                      <checkanswertype>0</checkanswertype>
+                      <mustverify>1</mustverify>
+                      <showvalidation>1</showvalidation>
+                      <options/>
+                    </stackinput>
+                    <stackinput id="128928">
+                      <name>ans3</name>
+                      <type>algebraic</type>
+                      <tans>1/9</tans>
+                      <boxsize>15</boxsize>
+                      <strictsyntax>1</strictsyntax>
+                      <insertstars>0</insertstars>
+                      <syntaxhint/>
+                      <syntaxattribute>0</syntaxattribute>
+                      <forbidwords/>
+                      <allowwords/>
+                      <forbidfloat>0</forbidfloat>
+                      <requirelowestterms>0</requirelowestterms>
+                      <checkanswertype>0</checkanswertype>
+                      <mustverify>1</mustverify>
+                      <showvalidation>1</showvalidation>
+                      <options/>
+                    </stackinput>
+                  </stackinputs>
+                  <stackprts>
+                    <stackprt id="90203">
+                      <name>prt1</name>
+                      <value>1.0000000</value>
+                      <autosimplify>1</autosimplify>
+                      <feedbackstyle>1</feedbackstyle>
+                      <feedbackvariables/>
+                      <stackprtnodes>
+                        <stackprtnode id="218276">
+                          <nodename>0</nodename>
+                          <answertest>AlgEquiv</answertest>
+                          <sans>ans1</sans>
+                          <tans>1/3</tans>
+                          <testoptions/>
+                          <quiet>0</quiet>
+                          <truescoremode>=</truescoremode>
+                          <truescore>1.0000000</truescore>
+                          <truepenalty>$@NULL@$</truepenalty>
+                          <truenextnode>-1</truenextnode>
+                          <trueanswernote>prt1-1-T</trueanswernote>
+                          <truefeedback/>
+                          <truefeedbackformat>1</truefeedbackformat>
+                          <falsescoremode>=</falsescoremode>
+                          <falsescore>0.0000000</falsescore>
+                          <falsepenalty>$@NULL@$</falsepenalty>
+                          <falsenextnode>-1</falsenextnode>
+                          <falseanswernote>prt1-1-F</falseanswernote>
+                          <falsefeedback>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Ihr habt das Passwort f&#252;r Raum 1 nicht korrekt eingegeben.&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</falsefeedback>
+                          <falsefeedbackformat>1</falsefeedbackformat>
+                        </stackprtnode>
+                      </stackprtnodes>
+                    </stackprt>
+                    <stackprt id="90204">
+                      <name>prt2</name>
+                      <value>1.0000000</value>
+                      <autosimplify>1</autosimplify>
+                      <feedbackstyle>1</feedbackstyle>
+                      <feedbackvariables/>
+                      <stackprtnodes>
+                        <stackprtnode id="218277">
+                          <nodename>0</nodename>
+                          <answertest>AlgEquiv</answertest>
+                          <sans>ans2</sans>
+                          <tans>1/3</tans>
+                          <testoptions/>
+                          <quiet>0</quiet>
+                          <truescoremode>=</truescoremode>
+                          <truescore>1.0000000</truescore>
+                          <truepenalty>$@NULL@$</truepenalty>
+                          <truenextnode>-1</truenextnode>
+                          <trueanswernote>prt2-1-T</trueanswernote>
+                          <truefeedback/>
+                          <truefeedbackformat>1</truefeedbackformat>
+                          <falsescoremode>=</falsescoremode>
+                          <falsescore>0.0000000</falsescore>
+                          <falsepenalty>$@NULL@$</falsepenalty>
+                          <falsenextnode>1</falsenextnode>
+                          <falseanswernote>prt2-1-F</falseanswernote>
+                          <falsefeedback>&lt;p&gt;Ihr habt das Passwort f&#252;r Raum 2 nicht korrekt eingegeben.&amp;nbsp;&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                          <falsefeedbackformat>1</falsefeedbackformat>
+                        </stackprtnode>
+                        <stackprtnode id="218278">
+                          <nodename>1</nodename>
+                          <answertest>AlgEquiv</answertest>
+                          <sans>ans2</sans>
+                          <tans>1/2</tans>
+                          <testoptions/>
+                          <quiet>0</quiet>
+                          <truescoremode>+</truescoremode>
+                          <truescore>0.0000000</truescore>
+                          <truepenalty>$@NULL@$</truepenalty>
+                          <truenextnode>-1</truenextnode>
+                          <trueanswernote>prt2-2-T</trueanswernote>
+                          <truefeedback>&lt;p&gt;&lt;span style="font-size: 0.9375rem;"&gt;Schaut euch nochmal den Plan des Kellers an und vergleicht ihn mit dem Spiel. Im Spiel gab es zwei Pfade, die beide gleich wahrscheinlich waren. Hier gibt es &lt;/span&gt;&lt;b style="font-size: 0.9375rem;"&gt;drei Wege&lt;/b&gt;&lt;span style="font-size: 0.9375rem;"&gt;, die man gehen kann. Wenn alle wieder &lt;/span&gt;&lt;b style="font-size: 0.9375rem;"&gt;gleich wahrscheinlich&lt;/b&gt;&lt;span style="font-size: 0.9375rem;"&gt; sind, wie muss das Passwort dann lauten?&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</truefeedback>
+                          <truefeedbackformat>1</truefeedbackformat>
+                          <falsescoremode>-</falsescoremode>
+                          <falsescore>0.0000000</falsescore>
+                          <falsepenalty>$@NULL@$</falsepenalty>
+                          <falsenextnode>-1</falsenextnode>
+                          <falseanswernote>prt2-2-F</falseanswernote>
+                          <falsefeedback/>
+                          <falsefeedbackformat>1</falsefeedbackformat>
+                        </stackprtnode>
+                      </stackprtnodes>
+                    </stackprt>
+                    <stackprt id="90205">
+                      <name>prt3</name>
+                      <value>1.0000000</value>
+                      <autosimplify>1</autosimplify>
+                      <feedbackstyle>1</feedbackstyle>
+                      <feedbackvariables/>
+                      <stackprtnodes>
+                        <stackprtnode id="218279">
+                          <nodename>0</nodename>
+                          <answertest>AlgEquiv</answertest>
+                          <sans>ans3</sans>
+                          <tans>1/9</tans>
+                          <testoptions/>
+                          <quiet>0</quiet>
+                          <truescoremode>=</truescoremode>
+                          <truescore>1.0000000</truescore>
+                          <truepenalty>$@NULL@$</truepenalty>
+                          <truenextnode>-1</truenextnode>
+                          <trueanswernote>prt3-1-T</trueanswernote>
+                          <truefeedback/>
+                          <truefeedbackformat>1</truefeedbackformat>
+                          <falsescoremode>=</falsescoremode>
+                          <falsescore>0.0000000</falsescore>
+                          <falsepenalty>$@NULL@$</falsepenalty>
+                          <falsenextnode>-1</falsenextnode>
+                          <falseanswernote>prt3-1-F</falseanswernote>
+                          <falsefeedback>&lt;p&gt;&lt;/p&gt;&lt;p&gt;Ihr habt das Passwort f&#252;r den Notausgang nicht korrekt eingegeben.&lt;/p&gt;&lt;p&gt;Das Passwort f&#252;r den Notausgang erhaltet ihr, wenn ihr die beiden vorherigen Passw&#246;rter miteinander&amp;nbsp;&lt;b&gt;multipliziert&lt;/b&gt;.&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</falsefeedback>
+                          <falsefeedbackformat>1</falsefeedbackformat>
+                        </stackprtnode>
+                      </stackprtnodes>
+                    </stackprt>
+                  </stackprts>
+                  <stackqtests>
+                  </stackqtests>
+                  <stackdeployedseeds>
+                  </stackdeployedseeds>
+                </plugin_qtype_stack_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            
+
+</quiz>

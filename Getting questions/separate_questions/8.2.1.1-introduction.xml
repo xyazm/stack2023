@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26576">
+        <parent>0</parent>
+        <name>8.2.1.1 Introduction</name>
+        <questiontext>&lt;h4&gt;Solving a system of two equations using the inverse matrix&lt;/h4&gt;&lt;p&gt;If we have one linear equation 
+&lt;span class="math inline"&gt;\( ax=b\)&lt;/span&gt;
+in which the unknown is &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(a\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(b\)&lt;/span&gt; are constants and &lt;span class="math inline"&gt;\(a\neq 0\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(x=\dfrac{b}{a}= a^{-1}b\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;What happens if we have more than one equation and more than one unknown? In this worksheet we copy the algebraic solution &lt;span class="math inline"&gt;\(x=a^{-1}b\)&lt;/span&gt; used for a single equation to solve a system of linear equations. As we shall see, this will be a very natural way of solving the system if it is first written in matrix form.&lt;/p&gt;
+&lt;p&gt;Consider the system &lt;span class="math display"&gt;\[\begin{matrix}
+2x_1 &amp;amp; + &amp;amp; 3x_2&amp;amp;= &amp;amp; 5 \\
+x_1 &amp;amp; - &amp;amp; 2x_2&amp;amp;= &amp;amp; -1. \end{matrix} \]&lt;/span&gt; In matrix form this becomes &lt;span class="math display"&gt;\[\qquad \left[\begin{array}{rr}
+2&amp;amp;3\\ 1&amp;amp;-2\end{array}\right] \left[\begin{array}{c}x_1\\
+x_2\end{array}\right]=\left[\begin{array}{r}5\\ -1\end{array}\right]\ \
+\quad\text{which is of the form}\ \quad AX=B.\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; exists then the solution is &lt;span class="math display"&gt;\[\qquad X=A^{-1}B.\qquad\text{(compare the solution} \ x=a^{-1}b \ \text{above)}\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200616115638+mPAugS</stamp>
+        <version>stack2.maths.ed.ac.uk+200912105032+F9hvFc</version>
+        <hidden>0</hidden>
+        <timecreated>1592308598</timecreated>
+        <timemodified>1599907832</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

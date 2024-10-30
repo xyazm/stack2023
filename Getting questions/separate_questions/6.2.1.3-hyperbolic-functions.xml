@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26510">
+        <parent>0</parent>
+        <name>6.2.1.3 Hyperbolic functions</name>
+        <questiontext>&lt;h4&gt;The odd and even parts of the exponential function&lt;/h4&gt;&lt;p&gt;Using the approach outlined above we see that the even part of &lt;span class="math inline"&gt;\(e^x\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\dfrac{1}{2}(e^x+e^{-x})\)&lt;/span&gt; and the odd part of &lt;span class="math inline"&gt;\(e^x\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\dfrac{1}{2}(e^x-e^{-x})\)&lt;/span&gt; We give these new functions special names: &lt;span class="math inline"&gt;\(\cosh x\)&lt;/span&gt; (pronounced &#8216;cosh&#8217; &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;) and &lt;span class="math inline"&gt;\(\sinh x\)&lt;/span&gt; (pronounced &#8216;shine&#8217; &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;).&amp;nbsp;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point: Hyperbolic functions&lt;/h4&gt;
+&lt;p&gt;\[\cosh x \equiv \dfrac{1}{2}(e^x+e^{-x})\]&lt;/p&gt;&lt;p&gt;\[\sinh x \equiv \dfrac{1}{2}(e^x-e^{-x})\]&lt;br&gt;&lt;/p&gt;&lt;p&gt;
+&lt;/p&gt;&lt;/div&gt;&lt;br&gt;
+These two functions, when added and subtracted, give &lt;span class="math inline"&gt;\[\begin{align*} \cosh x+\sinh x &amp;amp;\equiv e^x, \\ \cosh x-\sinh
+x &amp;amp;\equiv e^{-x}.\end{align*}\]&amp;nbsp;&lt;/span&gt;The graphs of &lt;span class="math inline"&gt;\(\cosh x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\sinh x\)&lt;/span&gt; are shown in the below figure.&lt;p&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/6-2-fig-1-sinhcoshgraph.svg" alt="" width="380" height="257" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;span&gt;&lt;strong&gt;Figure&lt;/strong&gt;&lt;/span&gt;: &lt;span class="math inline"&gt;\(\sinh x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\cosh x\)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Note that &lt;span class="math inline"&gt;\(\cosh x&amp;gt;0\)&lt;/span&gt; for all values of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and that &lt;span class="math inline"&gt;\(\sinh x\)&lt;/span&gt; is zero only when &lt;span class="math inline"&gt;\(x=0\)&lt;/span&gt;.&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619072924+dcT83d</stamp>
+        <version>stack2.maths.ed.ac.uk+200911121731+9YF4VO</version>
+        <hidden>0</hidden>
+        <timecreated>1592551764</timecreated>
+        <timemodified>1599826651</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

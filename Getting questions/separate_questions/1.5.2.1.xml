@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="35623">
+        <parent>0</parent>
+        <name>1.5.2.1</name>
+        <questiontext>&lt;h3&gt;Rearranging a formula&lt;/h3&gt;
+
+&lt;p&gt;In the formula for the area of a circle, \(A=\pi r^2\), we say that \(A\) is the &lt;strong&gt;subject&lt;/strong&gt; of the formula. A variable is the subject of the formula if it appears by itself on one side of the formula, usually the left-hand side, and &lt;strong&gt;nowhere else in the formula&lt;/strong&gt;.
+    If we are asked to &lt;strong&gt;transpose&lt;/strong&gt; the formula for \(r\), or &lt;strong&gt;solve&lt;/strong&gt; for \(r\), then we have to make \(r\) the subject of the formula. When transposing a formula &lt;em&gt;whatever is done to one side is done to the other&lt;/em&gt;.
+    There are five rules that must be adhered to.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rearranging a formula:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;You may carry out the following operations:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;add the same quantity to both sides of the formula&lt;/li&gt;
+        &lt;li&gt;subtract the same quantity from both sides of the formula&lt;/li&gt;
+        &lt;li&gt;multiply both sides of the formula by the same quantity&lt;/li&gt;
+        &lt;li&gt;divide both sides of the formula by the same quantity&lt;/li&gt;
+        &lt;li&gt;take a &#8216;function&#8217; of both sides of the formula: for example, find the reciprocal of both sides (i.e. invert).&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Transpose the formula \(p=5t-17\) for \(t\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We must obtain \(t\) on its own on the left-hand side. We do this in stages by using one or more of the five rules in Key Point 22. For example, by adding 17 to both sides of \(p = 5t &#8722; 17\) we find &lt;/p&gt;
+&lt;p&gt;\(\begin{aligned}\qquad p + 17 &amp;amp;= 5t - 17 + 17\\ &amp;amp;=5t \end{aligned}\)
+&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Transpose the formula \(\sqrt{2q}=p\) for \(q\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;First we square both sides to remove the square root. Note that \(\sqrt(2q)^2 = 2q\). This gives &lt;/p&gt;
+&lt;p&gt;\(\begin{aligned}\qquad 2q &amp;amp;= p^2 \end{aligned}\)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Transpose \(x=\dfrac{1}{y}\) for \(y\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We must try to obtain an expression for y. Multiplying both sides by y has the effect of removing this fraction: Multiply both sides of \(x=\dfrac{1}{y} \text{ by } y\) to get &lt;/p&gt;
+&lt;p&gt;\(\begin{aligned}\qquad yx &amp;amp;= y \times \dfrac{1}{y}\\ yx &amp;amp;= 1\end{aligned}\)&lt;/p&gt;
+Divide both sides by \(x\) to leave \(y\) on its own, \(y = \dfrac{1}{x}\).
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Alternatively: simply invert both sides of the equation \(x = \dfrac{1}{y}\) to get \(\dfrac{1}{x} = y\)&lt;/p&gt;
+
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Make \(R\) the subject of the formula \(\dfrac{2}{R}=\dfrac{3}{x+y}\)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;In the given form \(R\) appears in a fraction. Inverting both sides gives &lt;/p&gt;
+&lt;p&gt;\(\begin{aligned}\qquad \dfrac{R}{2} &amp;amp;= \dfrac{x+y}{3} \end{aligned}\)&lt;/p&gt; Thus multiplying both sides by 2 gives
+&lt;p&gt;\(\begin{aligned}\qquad R &amp;amp;= \dfrac{2(x+y)}{3} \end{aligned}\)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Make \(R\) the subject of the formula \(\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}\)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Add the 2 terms on the right: \( \dfrac{1}{R_1} + \dfrac{1}{R_2} = \dfrac{R_2+R_1}{R_1 R_2} \)&lt;/p&gt;
+&lt;p&gt;Write down the complete formula: \( \dfrac{1}{R} = \dfrac{R_2+R_1}{R_1 R_2} \) &lt;/p&gt;
+&lt;p&gt;Now invert both sides: \( R = \dfrac{R_1 R_2}{R_2+R_1}\)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210804142106+SpsDia</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211213114313+Phkeui</version>
+        <hidden>0</hidden>
+        <timecreated>1628086866</timecreated>
+        <timemodified>1639395793</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

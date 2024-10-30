@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26268">
+        <parent>0</parent>
+        <name>7.4.3.1 The inverse of a 3x3 matrix - Gauss elimination method</name>
+        <questiontext>&lt;h3&gt;The inverse of a \(3\times 3\) matrix &amp;ndash; Gauss elimination method&lt;/h3&gt;
+&lt;p&gt;It is true, in general, that if the determinant of a matrix is zero then that matrix has no inverse. If the
+    determinant is non-zero then the matrix has a (unique) inverse. In this Section and the next we look at two ways of
+    finding the inverse of a &lt;span class="math inline"&gt;\(3\times
+        3\)&lt;/span&gt; matrix; larger matrices can be inverted by the same methods - the process is more tedious and takes
+    longer. The &lt;span class="math inline"&gt;\(2\times 2\)&lt;/span&gt; case could be handled similarly but as we have seen we
+    have a simple formula to use.&lt;/p&gt;
+&lt;p&gt;The method we now describe for finding the inverse of a matrix has many similarities to a technique used to obtain
+    solutions of simultaneous equations. This method involves operating on the rows of a matrix in order to reduce it to
+    a unit matrix.&lt;/p&gt;
+&lt;p&gt;The row operations we shall use are&lt;/p&gt;
+&lt;ol type="i"&gt;
+    &lt;li&gt;
+        &lt;p&gt;interchanging two rows&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;multiplying a row by a constant factor&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;adding a multiple of one row to another.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note that in (ii) and (iii) the multiple could be negative or fractional, or both.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;The Gauss elimination method is outlined in the following Key Point:&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;h5 style="text-align: center;"&gt;Matrix Inverse &amp;ndash; Gauss Elimination Method&lt;/h5&gt;
+    &lt;p&gt;We use the result, quoted without proof, that:&lt;/p&gt;
+    &lt;p style="text-align: center;"&gt;if a sequence of row operations applied to a square matrix \(A\) reduces&lt;/p&gt;
+    &lt;p style="text-align: center;"&gt;it to the identity matrix \(I\) of the same size then the same sequence of&lt;/p&gt;
+    &lt;p style="text-align: center;"&gt;operations applied to \(I\) reduces it to \(A^{-1}\).&lt;br&gt;&lt;/p&gt;
+    &lt;p&gt;Three points to note:&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;If it is impossible to reduce \(A\) to \(I\) then \(A^{-1}\) does not exist. This will become evident by the appearance of a row of zeros.&lt;/li&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;li style="text-align: left;"&gt;There is no unique procedure for reducing \(A\) to \(I\) and it is experience which leads to selection of the optimum route.&lt;/li&gt;
+        &lt;li style="text-align: left;"&gt;It is more efficient to do the two reductions, \(A\) to \(I\) and \(I\) to \(A^{-1}\), simultaneously.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Suppose we wish to find the inverse of the matrix&lt;/p&gt;
+\[A = \begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix}\]
+&lt;p&gt;We first place \(A\) and \(I\) adjacent to each other.&lt;/p&gt;
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+
+&lt;h5&gt;Phase 1&lt;/h5&gt;
+&lt;p&gt;We now proceed by changing the columns of \(A\) &lt;em&gt;left to right&lt;/em&gt; to reduce \(A\) to the form&lt;/p&gt;
+\[\begin{bmatrix} 1 &amp; * &amp; * \\ 0 &amp; 1 &amp; * \\ 0 &amp; 0 &amp; 1 \end{bmatrix},\]
+&lt;p&gt;where \(*\) can be any number. This form is called &lt;b&gt;upper triangular&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;First we subtract row 1 from row 2 and twice row 1 from row 3. &#8216;Row&#8217; refers to both matrices.&lt;/p&gt;
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow[R3 - 2R1]{R2 - R1} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+&lt;p&gt;Now we subtract row 2 from row 3.&lt;/p&gt;
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R3 - R2} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+
+&lt;h5&gt;Phase 2&lt;/h5&gt;
+&lt;p&gt;This consists of continuing the row operations to reduce the elements above the leading diagonal to zero.&lt;/p&gt;
+&lt;p&gt;We proceed &lt;em&gt;right to left&lt;/em&gt;. We subtract 3 times row 3 from row 1 (the elements in row 2 column 3 is already zero).&lt;/p&gt;
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R3} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+&lt;p&gt;Finally we subtract 3 times row 2 from row 1.&lt;/p&gt;
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R2} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+&lt;p&gt;Then we have&lt;/p&gt;
+\[A^{-1} = \begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}\]
+&lt;p&gt;(This can be verified by showing that \(AA^{-1} - I\) or \(A^{-1}A = I\).)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617110358+HyJCnX</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702153250+BVJYkQ</version>
+        <hidden>0</hidden>
+        <timecreated>1592391838</timecreated>
+        <timemodified>1625239970</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

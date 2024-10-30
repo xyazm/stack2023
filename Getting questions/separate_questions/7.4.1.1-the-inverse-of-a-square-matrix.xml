@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26264">
+        <parent>0</parent>
+        <name>7.4.1.1 The inverse of a square matrix</name>
+        <questiontext>&lt;h3&gt;The inverse of a square matrix&lt;/h3&gt;
+&lt;p&gt;We know that any non-zero number &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; has an inverse; for example &lt;span class="math inline"&gt;\(2\)&lt;/span&gt; has an inverse &lt;span class="math inline"&gt;\(\frac{1}{2}\)&lt;/span&gt; or &lt;span class="math inline"&gt;\(2^{-1}\)&lt;/span&gt;. The inverse of the number &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; is usually written &lt;span class="math inline"&gt;\(\frac{1}{k}\)&lt;/span&gt; or, more formally, by &lt;span class="math inline"&gt;\(k^{-1}\)&lt;/span&gt;. This numerical inverse has the property that&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span class="math inline"&gt;\( k\times k^{-1}=k^{-1}\times k=1\)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;We now show that an inverse of a matrix can, in certain circumstances, also be defined.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Given an &lt;span class="math inline"&gt;\(n\times n\)&lt;/span&gt; square matrix &lt;span class="math inline"&gt;\(A,\)&lt;/span&gt; then an &lt;span class="math inline"&gt;\(n\times n\)&lt;/span&gt; square matrix &lt;span class="math inline"&gt;\(B\)&lt;/span&gt; is said to be the &lt;b&gt;inverse matrix&lt;/b&gt; of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; if&lt;/p&gt;&lt;p&gt;&lt;span class="math inline"&gt;\(AB=BA=I\)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;where &lt;span class="math inline"&gt;\(I\)&lt;/span&gt; is, as usual, the identity matrix (or unit matrix) of the appropriate size.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span&gt;&lt;/span&gt;Show that the inverse matrix of &lt;span class="math inline"&gt;\(A=\left[\begin{array}{cc}-1&amp;amp;1\\ -2&amp;amp;0\end{array}\right]\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(B=\left[\begin{array}{cc}0&amp;amp;-\frac{1}{2}\\ 1&amp;amp;-\frac{1}{2}\end{array}\right]\)&lt;/span&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt; All we need to do is check that  &lt;span class="math inline"&gt; \(AB=BA=I\)&lt;/span&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span class="math inline"&gt;\(AB=\left[\begin{array}{cc}-1&amp;amp;1\\ -2&amp;amp;0\end{array}\right]\times\frac{1}{2}\left[\begin{array}{cc}0&amp;amp;-1\\ 2&amp;amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}-1&amp;amp;1\\ -2&amp;amp;0\end{array}\right]\times\left[\begin{array}{cc}0&amp;amp;-1\\ 2&amp;amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}2&amp;amp;0\\ 0&amp;amp;2\end{array}\right]=\left[\begin{array}{cc}1&amp;amp;0\\ 0&amp;amp;1\end{array}\right]  \)
+ &lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;We make three important remarks:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Non-square matrices do not have inverses.&lt;/li&gt;
+&lt;li&gt;The inverse of \(A\) is usually written \(A^{-1}\).&lt;/li&gt;
+&lt;li&gt;Not all square matrices have inverses.&lt;/li&gt;
+&lt;/ul&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200616135238+OCEBCp</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702144159+8YP4Cl</version>
+        <hidden>0</hidden>
+        <timecreated>1592315558</timecreated>
+        <timemodified>1625236919</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26225">
+        <parent>0</parent>
+        <name>7.2.6.1 The rules of matrix manipulation</name>
+        <questiontext>&lt;h3&gt;The rules of matrix manipulation&lt;/h3&gt;
+&lt;p&gt;It is worth noting that the process of multiplication can be continued to form products of more than two matrices.&lt;/p&gt;
+&lt;p&gt;Although two matrices may not commute (i.e. in general \(AB\neq BA\)) the &lt;b&gt;associative law&lt;/b&gt; always holds i.e. for matrices which &lt;b&gt;can&lt;/b&gt; be multiplied, \[A( BC)=( A B)C.\] The general principle is &lt;b&gt;keep the left to right order&lt;/b&gt;, but within that limitation any two adjacent matrices can be multiplied.&lt;/p&gt;
+&lt;p&gt;It is important to note that it is not always possible to multiply together any two given matrices.&lt;/p&gt;
+&lt;p&gt;For example if \(A=\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) and \(B=\begin{bmatrix}a &amp; b &amp; c\\ d &amp; e &amp; f\end{bmatrix}\) then \[AB=\begin{bmatrix} a+2d &amp; b+2e &amp; c+2f\\ 3a+4d &amp; 3b+4e &amp; 3c+4f\end{bmatrix}\]&lt;/p&gt;
+&lt;p&gt;However \(BA=\begin{bmatrix}a &amp; b &amp; c\\
+d &amp; e &amp; f\end{bmatrix}\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) is &lt;b&gt;not defined&lt;/b&gt; since each row of \(B\) has three elements whereas each column of \(A\) has two elements and we cannot multiply these elements in the manner described.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622105305+0NClp1</stamp>
+        <version>stack2.maths.ed.ac.uk+200813141811+C4wPUH</version>
+        <hidden>0</hidden>
+        <timecreated>1592823185</timecreated>
+        <timemodified>1597328291</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

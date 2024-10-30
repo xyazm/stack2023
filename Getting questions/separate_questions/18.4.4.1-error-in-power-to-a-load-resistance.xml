@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24699">
+        <parent>0</parent>
+        <name>18.4.4.1 Error in power to a load resistance</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;h3&gt;&lt;span&gt;Engineering example&lt;/span&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;h4&gt;&lt;span&gt;Error in power to a load resistance&lt;/span&gt;&lt;/h4&gt;
+
+&lt;p&gt;&lt;b&gt;Introduction&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The power required by an electrical circuit depends upon its components. However, the specification of the rating of the individual components is subject to some uncertainity. This Example concerns the calculation of the error in the power required by
+    a circuit shown in the Figure below given a formula for the power, the values of the individual components and the percentage errors in them.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Problem in words&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;The power delivered to the load resistance \(R_L\) for the circuit shown in the Figure below is given by \[P = \dfrac{25 R_L}{(R+R_L)^2}\]&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+  &lt;img src="@@PLUGINFILE@@/18-4-fig-11-circuit.svg" alt="18-4-fig-11-circuit.svg" width="300" height="156" class="img-responsive atto_image_button_text-bottom"&gt;
+  &lt;figcaption&gt;Circuit with a load resistance&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;If \(R=2000 \Omega\) and \(R_L = 1000 \Omega\) with a maximum possible error of \(5\)% in either, find \(P\) and estimate the maximum error in \(P\).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Mathematical statement of the problem&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;We can calculate \(P\) by substituting \(R=2000\) and \(R_L=1000\) into \(P=\dfrac{25 R_L}{(R+R_L)^2}\).&lt;/p&gt;
+&lt;p&gt;We need to calculate the absolute errors in \(R\) and \(R_L\) and use these in the approximation \(\delta P \approx \dfrac{P}{R} \delta R + \dfrac{P}{R_L} \delta R_L\) to calculate the error in \(P\).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Mathematical analysis&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;At \(R=2000\) and \(R_L=1000\)&lt;/p&gt;
+&lt;p&gt;\(P=\dfrac{25 \times 1000}{(1000+2000)^2} = \dfrac{25}{9000} = \dfrac{25}{9} \times 10^{-3} \approx 2.77 \times 10^{-3}\) watts.&lt;/p&gt;
+&lt;p&gt;A \(5\)% error in \(R\) gives \(|\delta R|_{\text{max}}= \dfrac{5}{100} \times 2000 = 100\) and \(|\delta R_{L}|_{\text{max}} = \dfrac{5}{100} \times 1000 = 50\)&lt;/p&gt;
+&lt;p&gt;\(|\delta P|_{\text{max}} \approx \dfrac{P}{R} |\delta R|_{\text{max}} + \dfrac{P}{R_L}|\delta R_L|_{\text{max}}\)&lt;/p&gt;
+&lt;p&gt;We need to calculate the values of the partial derivatives at \(R = 2000\) and \(R_L = 1000\).&lt;/p&gt;
+&lt;p&gt;\[P = \dfrac{25R_L}{(R+R_L)^2} = 25 R_L (R+R_L)^{-2}\]&lt;/p&gt;
+&lt;p&gt;\[\dfrac{P}{R} = -50 R_L (R+R_L)^{-3}\]&lt;/p&gt;
+&lt;p&gt;\[\dfrac{P}{R_L}= 25(R+R_L)^{-2} - 50 R_L(R+R_L)^{-3}\]&lt;/p&gt;
+&lt;p&gt;So \[\dfrac{P}{R}(2000,1000)=-50(1000)(3000)^{-3}=\dfrac{-50}{1000^2\times 27}=-\dfrac{50}{27} \times 10^{-6}\]&lt;/p&gt;
+&lt;p&gt;\[\begin{aligned} \frac{P}{R_L}(2000,1000) &amp;amp; =25(3000)^{-2}-50(1000)(3000)^{-3} \\ &amp;amp; =\left(\frac{25}{9} - \frac{50}{27}\right) \times 10^{-6} \\ &amp;amp; = \left(\frac{75-50}{27}\right) \times 10^{-6} \\ &amp;amp; = \frac{25}{27} \times 10^{-6} \end{aligned}\]&lt;/p&gt;
+&lt;p&gt;Substituting these values into \(|\delta P|_{\text{max}} \approx \dfrac{P}{R} |\delta R|_{\text{max}} + \dfrac{P}{R_L}|\delta R_L|_{\text{max}}\) we get: \[|\delta P|_{\text{max}} = \dfrac{50}{27} \times 10^{-6} \times 100 + \dfrac{25}{27} \times 10^{-6}
+    \times 50 = \left(\dfrac{5000}{27} + \dfrac{25 \times 50}{27}\right) \times 10^{-6} \approx 2.315 \times 10^{-4}\]&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Interpretation&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;At \(R=2000\) and \(R_L=1000\), \(P\) will be \(2.77 \times 10^{-3}\)W and, assuming \(5\)% errors in the values of the resistors, then the error in \(P \approx 2.315 \times 10^{-4}\)W. This represents about \(8.4\)% error. So the error in the power is
+    greater than that in the individual components.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210102225539+Ljiz0f</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614105132+JD5kyb</version>
+        <hidden>0</hidden>
+        <timecreated>1609628139</timecreated>
+        <timemodified>1623667892</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

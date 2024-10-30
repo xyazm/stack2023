@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26563">
+        <parent>0</parent>
+        <name>7.1.1.1 Applications of Matrices</name>
+        <questiontext>&lt;h3&gt;Applications of Matrices&lt;/h3&gt;
+&lt;p&gt;The solution of simultaneous linear equations is a task which frequently occurs in science and engineering.&amp;nbsp; In electrical engineering the analysis of circuits provides a ready example.&amp;nbsp;&lt;/p&gt;&lt;p&gt;However the simultaneous equations arise, we need to study two things:&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;how we can conveniently represent large systems of linear equations;&lt;/li&gt;
+&lt;li&gt;how we might find the solution of such equations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We shall discover that knowledge of the theory of matrices is an essential mathematical tool in this area.&lt;/p&gt;
+
+&lt;h4&gt;Representing simultaneous linear equations&lt;/h4&gt;
+&lt;p&gt;Suppose that we wish to solve the following three equations in three unknowns \(x_1,x_2\) and \(x_3\):&lt;/p&gt;
+\[\begin{alignedat}{4}
+3x_1 &amp;amp; {}+{} &amp;amp; 2x_2 &amp;amp; {}-{} &amp;amp; x_3 &amp;amp;= 3 \\
+x_1 &amp;amp; {}-{} &amp;amp; x_2 &amp;amp; {}+{} &amp;amp; x_3 &amp;amp;= 4 \\
+2x_1 &amp;amp; {}+{} &amp;amp; 3x_2 &amp;amp; {}+{} &amp;amp; 4x_3 &amp;amp;= 5
+\end{alignedat}\]
+&lt;p&gt;We can isolate three facets of this system: the &lt;b&gt;coefficients&lt;/b&gt; of \(x_1,x_2,x_3\); the&amp;nbsp;&lt;b&gt;unknowns&lt;/b&gt;&amp;nbsp;\(x_1,x_2,x_3\); and the &lt;b&gt;numbers&lt;/b&gt;&amp;nbsp;on the right-hand sides.&lt;/p&gt;&lt;p&gt;Notice that in the system&lt;/p&gt;
+\[\begin{alignedat}{4}
+3x &amp;amp; {}+{} &amp;amp; 2y &amp;amp; {}-{} &amp;amp; z &amp;amp;= 3 \\
+x &amp;amp; {}-{} &amp;amp; y &amp;amp; {}+{} &amp;amp; z &amp;amp;= 4 \\
+2x &amp;amp; {}+{} &amp;amp; 3y &amp;amp; {}+{} &amp;amp; 4z &amp;amp;= 5
+\end{alignedat}\]
+&lt;p&gt;the only difference from the first system is the names given to the unknowns.&amp;nbsp; It can be checked that the first system has the solution \(x_1=2,\ x_2=-1,\ x_3=1.\)&lt;/p&gt;&lt;p&gt;The second system therefore has the solution \(x=2, y=-1, z=1.\)&lt;/p&gt;&lt;p&gt;We can isolate the three facets of the first system by using&lt;b&gt;&amp;nbsp;arrays&lt;/b&gt;&amp;nbsp;of numbers and of unknowns:&lt;/p&gt;&lt;p&gt;\[\left[\begin{array}{rrr}3&amp;amp;2&amp;amp;-1\\1&amp;amp;-1&amp;amp;1\\2&amp;amp;3&amp;amp;4\end{array}\right]\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right]=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]&lt;/p&gt;&lt;p&gt;Even more conveniently, we can represent the arrays with letters (usually capital letters)&lt;/p&gt;&lt;p&gt;\[AX\ \ \ \ =\ \ \ \ B.\]&lt;/p&gt;&lt;p&gt;Here, to be explicit, we write&lt;/p&gt;&lt;p&gt;\[ A=\left[\begin{array}{rrr}3&amp;amp;2&amp;amp;-1\\ 1&amp;amp;-1&amp;amp;1\\2&amp;amp;3&amp;amp;4\end{array}\right],\qquad X=\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right],\qquad B=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]&amp;nbsp;&lt;/p&gt;&lt;p&gt;Here \(A\) is called the &lt;b&gt;matrix of coefficients&lt;/b&gt;, \(X\) is called the&amp;nbsp;&lt;b&gt;matrix of unknowns&lt;/b&gt;&amp;nbsp;and \(B\) is called the &lt;b&gt;matrix of constants&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;If we now append&amp;nbsp; to \(A\) the column of right-hand sides we obtain the&amp;nbsp;&lt;b&gt;augmented matrix&lt;/b&gt;&amp;nbsp;for the system:&lt;/p&gt;&lt;p&gt;\[ \left[\left.\begin{array}{rrr}3&amp;amp;2&amp;amp;-1\ \\ 1&amp;amp;-1&amp;amp;1\ \\ 2&amp;amp;3&amp;amp;4\ \end{array}\right|\right.\left.\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]&lt;/p&gt;&lt;p&gt;The order of the entries, or elements, is crucial.&amp;nbsp; For example, all the entries in the second row relate to the second equation, the entries in column 1 are the coefficients of the unknown \(x_1\), and those in the last column are the constants on the right-hand sides of the equations.&lt;/p&gt;&lt;p&gt;In particular, the entry in row 2 column 3 is the coefficient of \(x_3\) in equation 2.&lt;/p&gt;&lt;h4&gt;Representing networks&lt;/h4&gt;&lt;p style="text-align: left;"&gt;Shortest-distance problems are important in communications study.&amp;nbsp; The figure below illustrates schematically a system of four towns connected by a set of roads.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/workbook7bl11.svg" alt="7.1 A system of roads connecting towns" class="img-responsive atto_image_button_text-bottom" width="141" height="72"&gt;
+&lt;/figure&gt;
+&lt;p&gt;The system can be represented by the matrix&amp;nbsp;&lt;/p&gt;&lt;p&gt;\[ \ \ \ \ a\ \ \ \quad b\ \ \ \quad&amp;nbsp; c\ \ \quad d\]&lt;/p&gt;&lt;p&gt;\[\begin{array}{c}a\\ b\\ c\\ d\end{array}\left[\begin{array}{cccccccc}0&amp;amp;&amp;amp;1&amp;amp;&amp;amp;0&amp;amp;&amp;amp;0\\ 1&amp;amp;&amp;amp;0&amp;amp;&amp;amp;1&amp;amp;&amp;amp;1\\ 0&amp;amp;&amp;amp;1&amp;amp;&amp;amp;0&amp;amp;&amp;amp;1\\ 0&amp;amp;&amp;amp;1&amp;amp;&amp;amp;1&amp;amp;&amp;amp;0\end{array}\right].\]&lt;/p&gt;&lt;p&gt;The row refers to the town from which the road starts and the column refers to the town where the road ends.&lt;/p&gt;&lt;p&gt;An entry of 1 indicates that two towns are directly connected by a road (for example \(b\) and \(d\)) and an entry of zero indicates that there is no direct road (for example \(a\) and \(c\)). Of course, if there is a road from \(b\) to \(d\) (say) it is also a road from \(d\) to \(b\).&lt;/p&gt;&lt;p&gt;In this quiz we shall develop some basic ideas about matrices.&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619082805+LebEVw</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210701101208+wpv2y2</version>
+        <hidden>0</hidden>
+        <timecreated>1592555285</timecreated>
+        <timemodified>1625134328</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

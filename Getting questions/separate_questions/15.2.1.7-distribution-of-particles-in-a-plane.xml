@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24570">
+        <parent>0</parent>
+        <name>15.2.1.7 Distribution of particles in a plane</name>
+        <questiontext>&lt;h4&gt;Distribution of particles in a plane &lt;/h4&gt;
+&lt;p&gt;If the particles are distributed in a plane then the position of the centre of mass can be calculated in a similar way.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/15-2-fig-6-Particles.svg?time=1623340599524" alt="15-2-fig-6.svg" width="600" height="259" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;
+    &lt;figcaption&gt;These masses are distributed throughout the \(xy\) plane&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Now we must consider the moments of the individual masses taken about the \(x\)-axis &lt;strong&gt;and&lt;/strong&gt; about the \(y\)-axis. For example, in the Figure above, mass \(m_i\) has a moment \(m_iy_i\) about the \(x\)-axis and a moment \(m_ix_i\) about the
+    \(y\)-axis. Now we define the centre of mass at that point \((\bar{x},&#8198;\bar{y})\) such that the total mass, \(M&#8196;=&#8196;m_1&#8197;+&#8197;m_2&#8197;+&#8197;\dots + m_n\), placed at this point would have the same moment about each of the axes as the sum of the individual moments
+    of the particles about these axes.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;The &lt;strong&gt;centre of mass&lt;/strong&gt; of \(m_1,&#8197;m_2,&#8197;\dots, m_n\) located at \((x_1,y_1), (x_2,y_2), \dots, (x_n,y_n)\) has coordinates \((\bar{x},\bar{y})\) where \[ \bar{x}=\dfrac{\sum_{i=1}^n m_i x_i}{\sum_{i=1}^n m_i}, \quad \quad \bar{y}=\dfrac{\sum_{i=1}^n
+        m_i y_i}{\sum_{i=1}^n m_i}. \] &lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200817132656+QDmOqo</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610155709+CO3jlA</version>
+        <hidden>0</hidden>
+        <timecreated>1597670816</timecreated>
+        <timemodified>1623340629</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

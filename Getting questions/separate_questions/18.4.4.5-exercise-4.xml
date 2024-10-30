@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24703">
+        <parent>0</parent>
+        <name>18.4.4.5 Exercise 4</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;If \(\displaystyle{n=\frac{1}{2L}\sqrt{\frac{E}{d}}}\) and \(L, E\) and \(d\) can be measured correct to within \(1\)%, how accurate is the calculated value of \(n\)?
+&lt;/p&gt;
+&lt;p&gt;The maximum percentage error in \(n\) is [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]%.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the funtcion \(\displaystyle{n=\frac{1}{2L}\sqrt{\frac{E}{d}}}\) and \(L, E, d\) are subject to percentage relative errors of \({@error_L@} \%\).&lt;/p&gt;
+&lt;p&gt;First, find \(\dfrac{\partial n}{\partial L},\) \(\dfrac{\partial n}{\partial E}\) and \(\dfrac{\partial n}{\partial d}\)&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial n}{\partial L} = \displaystyle {@n_L@}\)&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial n}{\partial E} = \displaystyle {@n_E@}\)&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial n}{\partial d} = \displaystyle {@n_d@}\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Now we write down the expression of \( \delta n .\)&lt;/p&gt;
+&lt;p&gt;\[ \begin{align} \left|\delta n \right|_{\text{max}} &amp;amp; \simeq \left| \frac{\partial n}{\partial L} \right| \left| \delta L \right|+ \left| \frac{\partial n}{\partial E} \right| \left| \delta E \right| + \left| \frac{\partial n}{\partial d} \right| \left|
+    \delta d \right|&amp;nbsp;\\ &amp;amp; \simeq \left| {@n_L@} \right| \left| \delta L \right| + \left| {@n_E@} \right| \left| \delta E \right| + \left| {@n_d@} \right| \left| \delta d \right| \end{align}\]&lt;/p&gt;
+&lt;p&gt;Hence we write down an expression for the percentage relative error in \(f\):&lt;/p&gt;
+&lt;p&gt;\[ \begin{align} \dfrac{\delta n}{n} \times 100 &amp;amp; \simeq \left| {@n_L@} \times 2L \sqrt{\frac{d}{E}} \, \delta L \times 100 \right| + \left| {@n_E@} \times 2L \sqrt{\frac{d}{E}} \, \delta E \times 100 \right| +&amp;nbsp;\left| {@n_d@} \times 2L \sqrt{\frac{d}{E}}
+    \, \delta d \times 100 \right| \\ &amp;amp; \simeq \left| {@n1@} \delta L \times 100 \right| + \left| {@n2@} \delta E \times 100 \right| +&amp;nbsp;\left| {@n3@} \delta d \times 100 \right| \end{align}\]&lt;/p&gt;
+&lt;p&gt;The percentage relative errors of \(L,E, d\) are \({@error_L@} \%\) so:&lt;/p&gt;
+&lt;p&gt;\[ \frac{\delta L}{L} = {@error_L@}, \quad \frac{\delta E}{E} = {@error_E@}, \quad \frac{\delta d}{d} = {@error_d@} \]&lt;/p&gt;Substituting them into the previous relation
+we find:&lt;br&gt;\[\dfrac{\delta v}{v} \times 100 \simeq&amp;nbsp; {@error_L@} +\frac{{@error_E@}}{2} +&amp;nbsp;\frac{{@error_d@}}{2} ={@ta1@} \%\]&lt;br&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 0.9375rem;"&gt;&lt;strong&gt;Alterantive method:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Take logarithms of both sides \[\ln n = -\ln 2 - \ln L + \frac{1}{2} \ln E - \frac{1}{2} \ln d\]&lt;/p&gt;
+&lt;p&gt;So \(\displaystyle \frac{\delta n}{n} = -\frac{\delta L}{L}+ \frac{\delta E}{2E} - \frac{\delta d}{2d}\)&lt;/p&gt;
+&lt;p&gt;The maximum percentage error in \(n\) is therefore \[v=\left|\frac{\delta L}{L}\right|+\left|-\frac{\delta E}{2E}\right| + \left|-\frac{\delta d}{2d}\right|=&amp;nbsp;{@error_L@} +\frac{{@error_E@}}{2} +&amp;nbsp;\frac{{@error_d@}}{2} = {@ta1@} \% \]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210103001908+7hGixx</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614105801+gJWxuT</version>
+        <hidden>0</hidden>
+        <timecreated>1609633148</timecreated>
+        <timemodified>1623668281</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16803">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>n: 1/(2*L)*sqrt(E/d);
+n_inv: 1/n;
+
+n_L: diff(n,L);
+n_E: diff(n,E);
+n_d: diff(n,d);
+
+n1: n_inv*n_L;
+n2: n_inv*n_E;
+n3: n_inv*n_d;
+
+error_L: 1;
+error_E: 1;
+error_d: 1;
+
+ta1: (error_L)+(error_E/2)+(error_d/2);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>{@a@}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39083">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33681">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50843">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38776">
+              <testcase>1</testcase>
+              <timemodified>1615835118</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="83251">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71880">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38777">
+              <testcase>2</testcase>
+              <timemodified>1615835139</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="83252">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta1+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71881">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

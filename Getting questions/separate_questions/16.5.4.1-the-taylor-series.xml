@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24348">
+        <parent>0</parent>
+        <name>16.5.4.1 The Taylor series</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The Taylor series&lt;/span&gt;&lt;/h3&gt;&lt;br&gt;
+&lt;p&gt;The &lt;strong&gt;Taylor series&lt;/strong&gt; is a generalisation of the Maclaurin series being a power series developed in powers of &lt;span class="math inline"&gt;\((x-x_0)\)&lt;/span&gt; rather than in powers of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;If the function &lt;span class="math inline"&gt;\(f(x)\)&lt;/span&gt; can be differentiated as often as required at &lt;span class="math inline"&gt;\(x=x_0\)&lt;/span&gt; then: &lt;span class="math display"&gt;\[f(x)=f(x_0)+(x-x_0)f'(x_0)+\dfrac{(x-x_0)^2}{2!}f''(x_0)+\cdots\]&lt;/span&gt;        This is called the Taylor series of &lt;span class="math inline"&gt;\(f(x)\)&lt;/span&gt; about the point &lt;span class="math inline"&gt;\(x_0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The Maclaurin expansion is the Taylor expansion obtained if &lt;span class="math inline"&gt;\(x_0\)&lt;/span&gt; is chosen to be zero.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201130122624+Jcbtiu</stamp>
+        <version>moodle2.maths.ed.ac.uk+210302092922+n1VrwC</version>
+        <hidden>0</hidden>
+        <timecreated>1606739184</timecreated>
+        <timemodified>1614677362</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26045">
+        <parent>0</parent>
+        <name>4.5.3.4 Key point2</name>
+        <questiontext>&lt;h4&gt;Combining Wave Equations&lt;/h4&gt;&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;If&amp;nbsp; \(A\cos\theta+B\sin\theta= C\cos (\theta-\alpha)\)&amp;nbsp; then&amp;nbsp; \(C=\sqrt{A^2+B^2}\) and \( \tan\alpha=\dfrac{B}{A}.\) &lt;p&gt;&lt;/p&gt;&lt;p&gt; Note that the following cases arise for the location of \(\alpha\):&lt;/p&gt;&lt;p&gt;&amp;nbsp;\[ \quad 1.\quad&amp;nbsp; A&amp;gt;0,&amp;nbsp; B&amp;gt;0 : \text{ 1st&amp;nbsp; quadrant } \] \[ \quad 2.\quad&amp;nbsp; A&amp;lt;0,&amp;nbsp; B&amp;gt;0 :\text{ 2nd quadrant } \] \[ \quad 3.\quad A&amp;lt;0, B&amp;lt;0 : \text{ 3rd quadrant } \] &lt;span class="math inline"&gt;\[ \quad 4.\quad A&amp;gt;0, B&amp;lt;0 : \text{ 4th quadrant } \]&lt;br&gt;&lt;/span&gt;&lt;span class="math inline"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;br&gt;
+&lt;/p&gt;&lt;p&gt;In terms of waves, using Key Point above we have\[ \quad R_1\cos\omega t+R_2\sin\omega t= R\cos (\omega t-\alpha)\]&amp;nbsp; where \(R=\sqrt{R^2_1+R^2_2} \)&amp;nbsp; and \(&amp;nbsp; \tan \alpha=\dfrac{R_2}{R_1}\). &lt;br&gt;&lt;/p&gt;&lt;p&gt;The form \(R\cos (\omega t-\alpha)\) is said to be the&amp;nbsp; &lt;b&gt;amplitude/phase&lt;/b&gt; form of the wave.&lt;/p&gt;&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span&gt;Express in the form \(C\cos (\theta-\alpha)\) each of the following:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;ol class="HELM_parts"&gt;&lt;li&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;\(3\cos\theta+3\sin\theta\)&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;\(-3\cos\theta+3\sin\theta\) &lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;\(-3\cos\theta-3\sin\theta\) &lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;\(3\cos\theta-3\sin\theta\) &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;ol class="HELM_parts" &amp;gt;&lt;="" p=""&gt;&lt;li&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;\(\tan\alpha=\dfrac{B}{A}=\dfrac{3}{3}=1\) gives \(\alpha=45^\circ\) &amp;nbsp; (\(A\) and \(B\) are both positive so the first quadrant is the correct one.) Hence \( 3\cos\theta+3\sin\theta=\sqrt{18}\cos(\theta-45^\circ)= \sqrt{18}\cos\left(\theta-\dfrac{\pi}{4}\right)\)&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;The angle \(\alpha\) must be in the second quadrant as \(A=-3&amp;lt;0\), \(B=+3&amp;gt;0\). By calculator : \(\tan\alpha=-1\) gives \(\alpha=-45^\circ\) but this is in the 4th quadrant.  Remembering that \(\tan\alpha\) has period \(\pi\) or \(180^\circ\) we must therefore add \(180^\circ\) to the calculator value to obtain the correct \(\alpha\) value of \(135^\circ\). Hence \[ \quad \qquad -3\cos\theta+3\sin\theta=\sqrt{18}\cos(\theta-135^\circ)\] &lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;Here \(A=-3,\ B=-3\) so \(\alpha\) must be in the 3rd quadrant. \(\tan \alpha=\dfrac{-3}{-3}=1\) giving \(\alpha=45^\circ\) by calculator. Hence adding \(180^\circ\) to this tells us that \[ \quad -3\cos\theta-3\sin\theta=\sqrt{18}\cos(\theta-225^\circ)\] &lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;/p&gt;&lt;div&gt;Here \(A=3,\ B=-3\) so \(\alpha\) is in the 4th quadrant. \(\tan\alpha=-1\) gives us (correctly) \(\alpha=-45^\circ\) so \[ \quad \qquad 3\cos\theta-3\sin\theta=\sqrt{18}\cos(\theta+45^\circ).\] Note that in the amplitude/phase form the angle may be expressed in degrees or radians. &lt;/div&gt;&lt;/li&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200623143224+HCyeZb</stamp>
+        <version>moodle2.maths.ed.ac.uk+201010161503+ZHPYVK</version>
+        <hidden>0</hidden>
+        <timecreated>1592922744</timecreated>
+        <timemodified>1602346503</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

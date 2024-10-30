@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33681">
+        <parent>0</parent>
+        <name>19.2.5.5 Solving an Exact Equation Ex2</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Solve the equation \(\dfrac{\mathrm{d}}{\mathrm{d}x}({@f1@}) = {@f2@}\) given the condition \(y(0) = {@nn@}\).&lt;/p&gt;
+&lt;p&gt;\(y =\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the equation \(\dfrac{\mathrm{d}}{\mathrm{d}x}({@f1@}) = {@f2@}\) which is already in exact form.&lt;/p&gt;
+
+&lt;p&gt;Then, integrating both sides of the equation and rearranging, we obtain \[\begin{aligned} {@f1@} &amp;amp;= \int {@f2@} \ \mathrm{d}x, \\ \implies {@f1@} &amp;amp;= {@bb/2@}e^{2x} + C, \\ \implies y &amp;amp;= {@bb/(2*aa)@}e^x + \frac{C}{{@aa@}}e^{-x}. \end{aligned}\]&lt;/p&gt;
+
+&lt;p&gt;We are given the condition \(y(0) = {@nn@}\). Substituting \(x=0\) an \(y=n\) we obtain \({@nn@} = \displaystyle {@bb/(2*aa)@}+ \dfrac{C}{{@aa@}} \implies C = \displaystyle {@aa*nn - bb/2@}\).&lt;/p&gt;
+
+&lt;p&gt;Therefore \(y = \displaystyle {@ta1@}\).&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210615161133+DAh7Gh</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210615162125+Ittyjv</version>
+        <hidden>0</hidden>
+        <timecreated>1623773493</timecreated>
+        <timemodified>1623774085</timemodified>
+        <createdby>2662</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23399">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>aa: 2+rand(4);
+bb: 2 + rand(3);
+nn: 3 + rand(4);
+
+f1: aa*y*%e^x;
+f2: bb*%e^(2*x);
+
+cc: aa*nn - bb/2;
+
+ta1: bb/(2*aa)*%e^x + (cc/aa)*%e^(-x);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\dfrac{\mathrm{d}}{\mathrm{d}x}({@f1@}) = {@f2@}, y(0) = {@nn@}, y = {@ta1@} \)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54024">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>13</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46354">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71278">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54156">
+              <testcase>1</testcase>
+              <timemodified>1623773713</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117184">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100144">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54157">
+              <testcase>2</testcase>
+              <timemodified>1623773735</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117185">
+                  <inputname>ans1</inputname>
+                  <value>ev(2*ta1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100145">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="234857">
+              <seed>1106765231</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234858">
+              <seed>1770517051</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234859">
+              <seed>1241325383</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234860">
+              <seed>753422272</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234861">
+              <seed>1491457795</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234862">
+              <seed>1800544269</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234863">
+              <seed>501195981</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234864">
+              <seed>1212399969</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234865">
+              <seed>1515929925</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234866">
+              <seed>404500770</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

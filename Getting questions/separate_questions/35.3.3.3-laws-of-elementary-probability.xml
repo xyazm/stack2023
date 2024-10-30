@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27225">
+        <parent>0</parent>
+        <name>35.3.3.3 Laws of Elementary Probability</name>
+        <questiontext>&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p style="text-align: center;"&gt;&lt;b&gt;Laws of Elementary Probability&lt;/b&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;Let a sample space \(S\) consist of the \(n\) simple distinct events \(E_1, E_2\dots E_n\) and let \(A\) and \(B\) be events contained in \(S\).&lt;/p&gt;&lt;p style="text-align: left;"&gt;Then:&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;\(0\le \text{P} (A)\le 1\). \(\text{P} (A)=0\) is interpreted as meaning that the event \(A\) cannot occur and \(\text{P} (A)=1\) is interpreted as meaning that the event \(A\) is certain to occur.&lt;/li&gt;&lt;li&gt;\(\text{P} (A)+\text{P} (A')=1\) where the event \(A'\) is the complement of the event \(A\).&lt;br&gt;&lt;/li&gt;&lt;li&gt;\(\text{P} (E_1)+ \text{P} (E_2)+ \dots + \text{P} (E_n)=1\) where \(E_1, E_2, \dots E_n\) form the sample space.&lt;br&gt;&lt;/li&gt;&lt;li&gt;If \(A\) and \(B\) are &lt;i&gt;any&lt;/i&gt;&amp;nbsp;two events then \(\text{P} (A\cup B)=\text{P} (A)+\text{P} (B)- \text{P} (A\cap B)\).&lt;/li&gt;&lt;li&gt;If \(A\) and \(B\) are two &lt;i&gt;mutually exclusive&lt;/i&gt;&amp;nbsp;events then \(\text{P} (A\cup B)=\text{P} (A)+\text{P} (B)\).&lt;/li&gt;&lt;li&gt;If \(A\) and \(B\) are two &lt;i&gt;independent&lt;/i&gt;&amp;nbsp;events then \(\text{P} (A\cap B)=\text{P} (A)\times \text{P} (B)\).&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;A circuit has three independent switches \(A\), \(B\) and \(C\) wired in parallel as shown in the figure below.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/35.3.3%20Circuits%20in%20Parallel.svg" width="203" alt="" height="84" class="img-responsive atto_image_button_text-bottom"&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;b&gt;Switches wired in Parallel&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Current can only flow through the bank of switches if at least one of them is closed.&amp;nbsp; The probability that any given switch is closed is \(0.9\).&amp;nbsp; Calculate the probability that current can flow through the bank of switches.&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;Assume that \(A\) is the event {switch \(A\) is closed}. Similarly for switches \(B\) and \(C\). We require \(\text{P} (A\cup B\cup C)\), the probability that at least one switch is closed. Using set theory,&lt;/p&gt;&lt;p&gt;\[\begin{eqnarray*}\text{P} (A\cup B\cup C)&amp;amp;=&amp;amp;\text{P}(A)+\text{P} (B)+\text{P} (C)-[\text{P} (A\cap B)+\text{P} (B\cap C)+\text{P} (C\cap A)]+\text{P} (A\cap B\cap C)\end{eqnarray*}.\] Using the fact that the switches operate independently,&lt;/p&gt;&lt;p&gt;\[\text{P} (A\cup B\cup C)=0.9+0.9+0.9-[0.9\times 0.9 + 0.9\times 0.9+0.9\times0.9]+0.9\times 0.9\times 0.9=0.999.\]&lt;/p&gt;&lt;p&gt;Note that the result implies that the system is more likely to allow current to flow than any single switch in the system. This is why replication is built into systems requiring a high degree of reliability such as aircraft control systems.&lt;/p&gt;&lt;p&gt;Alternative solution:&lt;/p&gt;&lt;p&gt;\[\text{P}(A\cup B\cup C)=1-\text{P}(A'\cap B'\cap C')=1-0.1\times 0.1\times 0.1=0.999.\]&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701112849+QkDaym</stamp>
+        <version>stack2.maths.ed.ac.uk+200829122132+VeU0ZN</version>
+        <hidden>0</hidden>
+        <timecreated>1593602929</timecreated>
+        <timemodified>1598703692</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27320 -->
+  <question type="stack">
+    <name>
+				<text>37.1.4.1 Traffic example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>A traffic engineer is interested in the number of vehicles reaching a particular crossroads during periods of relatively low traffic flow. The engineer finds that the number of vehicles <span class="math inline">\(X\)</span> reaching the crossroads per minute is governed by the probability distribution: <span class="math inline">\(\qquad \begin{matrix}
+x\quad &amp;0&amp;1&amp;2&amp;3&amp;4\\
+\text{P}(X=x)&amp;0.37&amp;0.39&amp;0.19&amp;0.04&amp;0.01
+\end{matrix}\)</span></p>
+<ol class="HELM_parts">
+<li> Calculate the expected value, the variance and the standard deviation of the random variable \(X\).
+</li><li> Graph the probability distribution \(\text{P}(X=x)\) and the corresponding cumulative probability distribution \(\displaystyle{F(x)=\sum\limits_{x_i\le x}\text{P}(X=x_i)}\).
+</li></ol>
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+<li> <p>The expectation, variance and standard deviation and cumulative probability values are calculated as follows:
+<br> <span class="math inline">\(\qquad \begin{matrix}
+\quad x\quad&amp;\quad x^2\quad&amp;\quad \text{P}(X=x)\quad&amp;\quad F(x)\quad\\
+0&amp;0&amp;0.37&amp;0.37\\
+1&amp;1&amp;0.39&amp;0.76\\
+2&amp;4&amp;0.19&amp;0.95\\
+3&amp;9&amp;0.04&amp;0.99\\
+4&amp;16&amp;0.01&amp;1.00
+\end{matrix}\)</span> <span class="math display">\[\begin{aligned}
+ \qquad\text{E}(X)&amp;=\sum_{x=0}^4 x\text{P}(X=x)\\ &amp;=0\times
+0.37+1\times0.39+2\times0.19+3\times0.04+4\times 0.01\qquad\qquad\qquad\qquad\\
+&amp;=0.93\\
+\text{V}(X)&amp;=\text{E}(X^2)-[\text{E}(X)]^2\\
+&amp;=\sum_{x=0}^4 x^2\text{P}(X=x)-\left[\sum_{x=0}^4 x\text{P}(X=x)\right]^2\\
+&amp;=0\times 0.37+1\times0.39+4\times0.19+9\times0.04+16\times 0.01-(0.93)^2\qquad\qquad\qquad\\
+&amp;=0.8051\end{aligned}\]</span> The standard deviation is given by <span class="math inline">\(\  \sigma = \sqrt{\text{V}(X)}=0.8973\)</span></p>
+</li><li style="text-align: center;"><img src="@@PLUGINFILE@@/37-1-fig2-prob-and-cumulative-distribution.svg" alt="Cumulative and probability distribution function for the number of vehicles per minute reaching a crossroad" class="img-responsive atto_image_button_text-bottom" width="613" height="180"><br></li></ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200715143323+wkeUZh</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914234557+nkvuf2</text></tag>
+    </tags>
+    
+</question>
+</quiz>

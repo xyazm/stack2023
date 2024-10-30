@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26705">
+        <parent>0</parent>
+        <name>10.1.2.12 Dividing one complex number by another</name>
+        <questiontext>&lt;h3&gt;Dividing complex numbers &lt;/h3&gt;
+
+&lt;p&gt;Here we consider the operation of dividing one complex number &lt;span class="math inline"&gt;\(z=a+i b\)&lt;/span&gt; by another, &lt;span class="math inline"&gt;\(w=c+i d\)&lt;/span&gt;: &lt;span class="math inline"&gt;\[\qquad
+{z\over w}={a+i b\over {c+i d}}\]&lt;/span&gt; We wish to simplify the right-hand side into the standard form of a complex number : &lt;span class="math display"&gt;\[\text{(Real part)}\ +i\ \text{(Imaginary part)}\]&lt;/span&gt; or the equivalent: &lt;span class="math display"&gt;\[\text{(Real part)}\ +\ \text{(Imaginary part)}\ i\]&lt;/span&gt; To do this we multiply &#8216;top and bottom&#8217; by the complex conjugate of the bottom (the denominator), that is, by &lt;span class="math inline"&gt;\(c-i d\)&lt;/span&gt; (this is called &lt;span&gt;&lt;strong&gt;rationalising&lt;/strong&gt;&lt;/span&gt;): &lt;span class="math inline"&gt;\[\qquad
+{z\over w}={a+i b\over {c+i d}}={a+i b\over {c+i d}}\times {c-i d\over
+{c-i d}}\]&lt;/span&gt; and then carry out the multiplication, top and bottom: &lt;span class="math display"&gt;\[\begin{aligned}
+{z\over w}&amp;amp;={(ac+bd)+i(bc-ad)\over {c^2+d^2}}\\
+&amp;amp;=\left({ac+bd\over
+{c^2+d^2}}\right)+i\left({bc-ad\over
+{c^2+d^2}}\right)\qquad\end{aligned}\]&lt;/span&gt; which is now in the required form. The reason for rationalising is to get a real number in the denominator since a complex number divided by a real number is easy to evaluate.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617121904+8oX6rG</stamp>
+        <version>stack2.maths.ed.ac.uk+200914142546+TRaNhC</version>
+        <hidden>0</hidden>
+        <timecreated>1592396344</timecreated>
+        <timemodified>1600093546</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

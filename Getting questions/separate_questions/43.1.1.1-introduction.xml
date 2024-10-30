@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62148">
+        <parent>0</parent>
+        <name>43.1.1.1 Introduction</name>
+        <questiontext>&lt;h3&gt;Introduction&lt;/h3&gt;
+
+Problems in engineering often involve the exploration of the relationship(s) between two or more
+variables. The technique of regression analysis is very useful and well-used in this situation. This
+Section will look at the basics of regression analysis and should enable you to apply regression
+techniques to the study of relationships between variables. Just because a relationship exists between two variables does not necessarily imply that the relationship is causal. You might find, for example that there is a relationship between the hours a person spends watching TV and the incidence of lung cancer. 
+
+This does not necessarily imply that watching TV causes lung cancer.&amp;nbsp;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Assuming that a causal relationship does exist, we can measure the strength of the relationship
+by means of a correlation coefficient discussed in the next Section. As you might expect, tests of
+significance exist which allow us to interpret the meaning of a calculated correlation coefficient.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704065525+vjLBfn</stamp>
+        <version>stack2.maths.ed.ac.uk+200715053339+tq0bFT</version>
+        <hidden>0</hidden>
+        <timecreated>1593845725</timecreated>
+        <timemodified>1594791219</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

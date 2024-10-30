@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24305">
+        <parent>0</parent>
+        <name>5.3.2.3 Oscillating functions: modelling tides</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The peak levels of the graph correspond to times when the sine function has the value 1. The lowest points correspond to times when the sine function is \(-1\). At these times the arguments of the sine function (i.e. \(2.7t+8.5\)) are an odd number of
+    \(\pi/2\) starting at \(3\pi /2\) for the first low tide.&lt;/p&gt;
+
+&lt;p&gt;So far all of this may be deduced from the general form \(y = a\)sin\((bx)\) and from the modelling context. However there is an additional term in the function being considered here. This is a constant \(8.5\) within the sine function. When \(t = 0\)
+    the presence of this constant means that the intercept on the height axis is 3.2sin\((8.5)\) = 2.56, implying that the water level is 2.56 m above the mean value at the start of timing. The constant 8.5 has displaced the sine curve sideways. This
+    constant is known as the &lt;b&gt;phase&lt;/b&gt;of the function. Phase is measured in radians as it is an angle.&lt;/p&gt;
+
+&lt;p&gt;As remarked earlier, at \(t = 0\), this function has the value \(3.2\sin (8.5)\). Since \(\sin (8.5) = \sin(8.5 - 2\pi) \approx \sin (2.2168)\), we can replace the constant 8.5 by 2.2168 without altering the values on the graph. This means that the function&lt;/p&gt;
+&lt;p&gt;\(\qquad h = 3.2\sin (2.74t + 2.2168)\)&lt;/p&gt;
+&lt;p&gt;does just as well as the original function in representing the tidal variation in the harbour. We now rewrite this latest form of the function, representing the variation of water level in the harbour, so that time is measured in hours rather than in
+    six-hourly invervals. The effect of changing the units of time to hours from 6 hours is to decrease the coefficient of \(t\) in the sine function by a factor of 6, so that the new function is&lt;/p&gt;
+&lt;p&gt;\(\qquad h = 3.2 \sin (0.45t + 2.2168).\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;See the figure below&lt;/p&gt;
+&lt;p&gt;&lt;img src="@@PLUGINFILE@@/5-3-fig-3-height_vs_time_example.svg" alt="" width="407" height="151" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;We can use the latest form of the function to calculate the time of the first low tide assuming that \(t = 0\) corresponds to midnight.&lt;/p&gt;
+&lt;p&gt;At the first low tide, \(h = -3.2\)\(\quad\)and\(\quad \sin(0.45t + 2.2168) = -1,\)&lt;/p&gt;
+&lt;p&gt; Using the fact that \(\sin(\dfrac{3\pi}{2})=-1\), we have&lt;/p&gt;
+&lt;p&gt;\(\qquad 0.45t + 2.2168 = 3\pi /2\),\(\quad\)giving\(\quad\)\(t = 5.5458=5.55\)\(\quad\)to \(2\) d.p.&lt;/p&gt;
+&lt;p&gt;so the first low tide is at 5:30 a.m.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;There are various rules connected with sine and cosine functions that can be summarised at this point.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(1)&lt;/b&gt;\(\quad\)Placing a multiplier before \(\sin x\) or \(\cos x\) (e.g. \(2\sin x\)) changes the amplitude without changing the period.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(2)&lt;/b&gt;\(\quad\)Placing a multiplier before \(x\) in \(\sin x\) or \(\cos x\), (e.g. \(\sin 3x\)), changes the period or frequency without changing the amplitude.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(3)&lt;/b&gt;\(\quad\)As with any function, the addition of a constant (e.g. \(4+\sin x\)) raises or lowers the whole graph of the sine or cosine function. It alters the mean value without changing the amplitude.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(4)&lt;/b&gt;\(\quad\)Changing the sign within a cosine function has no effect, (e.g. \(\cos (-x)\) = \(\cos x\)).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(5)&lt;/b&gt;\(\quad\)Changing the sign within a sine function changes the sign of the function, (e.g. \(\sin (-x)\) = \(-\sin x\)).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;(6)&lt;/b&gt;\(\quad\)Placing a constant or altering the constant \(b\) in \(\sin (ax + b)\) or \(\cos (ax + b)\) changes the phase and shifts the sine or cosine function along the \(x\)-axis.&lt;/p&gt;&lt;br&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200821125154+BLEtxY</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220214123429+motGxh</version>
+        <hidden>0</hidden>
+        <timecreated>1598014314</timecreated>
+        <timemodified>1644842069</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

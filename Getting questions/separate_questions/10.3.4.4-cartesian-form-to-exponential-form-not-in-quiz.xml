@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26767">
+        <parent>0</parent>
+        <name>10.3.4.4 Cartesian form to exponential form (NOT IN QUIZ)</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find the exponential form of the complex number \(z = \displaystyle {@re@} + \displaystyle \left({@im@}\right)i\). Give the argument of \(z\) in terms of \(\pi\), i.e. not in decimal form.&lt;/p&gt;
+&lt;p&gt;\(z =\quad\)[[input:ans1]][[validation:ans1]][[feedback:prt1]]&lt;/p&gt;
+&lt;p&gt;Therefore, find the Cartesian form of \(z^{-1}\). Give your answers in decimal form, rounding to 3 decimal places if necessary:&lt;/p&gt;
+&lt;p&gt;\(z^{-1} =\quad\)[[input:ans2]][[validation:ans2]]\(\quad+\quad i\) [[input:ans3]][[validation:ans3]]&lt;/p&gt;
+[[feedback:prt2]]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt; We want to calculate \(z\) in the form \(re^{i\theta}\). We calculate \(\displaystyle{r = \sqrt{\left({@re@}\right)^2 + \left({@im@}\right)^2} = {@arr@}}\) and \(\displaystyle{ \theta = \tan^{-1}\left({@im@}/{@re@}\right) = {@th@} }\). Therefore \[z = {@arr@}e^{{@th@}i}.\] To calculate the inverse, \(z^{-1}\),
+    in Cartesian form we use laws of indices and then apply a Key Point from this workbook: \[z^{-1} = {@ta1@}^{-1} = {@arr@}^{-1}e^{-i({@th@})} = \dfrac{1}{{@arr@}}\left(\cos\left(-{@th@}\right) + i\sin\left(-{@th@}\right)\right) = {@ta2@} + {@ta3@}i.\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200621163226+lHXvaI</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702150252+zvMJgZ</version>
+        <hidden>0</hidden>
+        <timecreated>1592757146</timecreated>
+        <timemodified>1625238172</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18086">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>th: rand([%pi/3,%pi/4,-%pi/3,-%pi/4]);
+arr: 10 - rand(9);
+re: arr*cos(th);
+im: arr*sin(th);
+ta2: 0.001*round(1000*cos(-th)/arr);
+ta3: 0.001*round(1000*sin(-th)/arr);
+simp:false;
+ta1: arr*e^(%i*th);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[ z = {@re@} + ({@im@})i = {@ta1@}  \]
+\[ z^{-1} = {@ta2@} + ({@ta3@})i \]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;" data-darkreader-inline-color=""&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;" data-darkreader-inline-color=""&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;" data-darkreader-inline-color=""&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42631">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="42632">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>sin, cos,i,j</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="42633">
+              <name>ans3</name>
+              <type>numerical</type>
+              <tans>ta3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords>sin, cos,i,j</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36933">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="55262">
+                  <nodename>0</nodename>
+                  <answertest>EqualComAss</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36934">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="55263">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="55264">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta3</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41750">
+              <testcase>1</testcase>
+              <timemodified>1600940887</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90909">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="90910">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="90911">
+                  <inputname>ans3</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78728">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78729">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41751">
+              <testcase>2</testcase>
+              <timemodified>1600940901</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90912">
+                  <inputname>ans1</inputname>
+                  <value>e^(%i*arr)</value>
+                </stackqtestinput>
+                <stackqtestinput id="90913">
+                  <inputname>ans2</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+                <stackqtestinput id="90914">
+                  <inputname>ans3</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78730">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78731">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41752">
+              <testcase>3</testcase>
+              <timemodified>1600940955</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="90915">
+                  <inputname>ans1</inputname>
+                  <value> ev(re + im*i,simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="90916">
+                  <inputname>ans2</inputname>
+                  <value/>
+                </stackqtestinput>
+                <stackqtestinput id="90917">
+                  <inputname>ans3</inputname>
+                  <value/>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78732">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="78733">
+                  <prtname>prt2</prtname>
+                  <expectedscore>$@NULL@$</expectedscore>
+                  <expectedpenalty>$@NULL@$</expectedpenalty>
+                  <expectedanswernote>NULL</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="176255">
+              <seed>1275038487</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176256">
+              <seed>1388962618</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176257">
+              <seed>1789275827</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176258">
+              <seed>1633928755</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176259">
+              <seed>1071784778</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176260">
+              <seed>912650168</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176261">
+              <seed>53741644</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176262">
+              <seed>1126263257</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176263">
+              <seed>1908153218</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176264">
+              <seed>357102747</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176265">
+              <seed>1509718180</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176266">
+              <seed>480204947</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176267">
+              <seed>1187113143</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176268">
+              <seed>1768567754</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176269">
+              <seed>1137422233</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176270">
+              <seed>299996388</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176271">
+              <seed>467319976</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="176272">
+              <seed>374724772</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

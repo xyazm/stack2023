@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26592">
+        <parent>0</parent>
+        <name>8.3.1.1 Solving three equations in three unknowns</name>
+        <questiontext>&lt;h4&gt;Solving three equations in three unknowns&lt;/h4&gt;
+
+&lt;p&gt;Solving the system of linear equations
+&lt;/p&gt;&lt;p&gt;&lt;span class="math display"&gt;\[\begin{matrix}
+    a_{11} x + a_{12} y + a_{13} z = b_1 \\
+    a_{21} x + a_{22} y + a_{23} z = b_2 \\
+    a_{31} x + a_{32} y + a_{33} z = b_3 \\
+\end{matrix}\]&lt;/span&gt;&lt;/p&gt;
+is to find &lt;span class="math inline"&gt;\(x, y\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; such that all the equations are satisfied. In matrix form, this can be written as &lt;span class="math inline"&gt;\(AX = B\)&lt;/span&gt;. In other words,&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math display"&gt;&lt;span&gt;\[ \displaystyle{\left [ \begin{matrix}
+    a_{11} &amp;amp; a_{12} &amp;amp; a_{13} \\
+    a_{21} &amp;amp; a_{22} &amp;amp; a_{23} \\
+    a_{31} &amp;amp; a_{32} &amp;amp; a_{33} \\
+\end{matrix} \right ]
+\left [ \begin{matrix}
+    x \\
+    y \\
+    z \\
+\end{matrix} \right ] = 
+\left [\begin{matrix}
+    b_1 \\
+    b_2 \\
+    b_3 \\
+\end{matrix} \right ] . }\]&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note that not all systems have unique solutions. Some systems will have no solutions while others will have infinitely many. We begin here with the most simple cases and develop more general cases as we progress.&lt;/p&gt;
+
+&lt;h5&gt;The diagonal system&lt;/h5&gt;
+
+&lt;p&gt;The easiest set of three simultaneous linear equations to solve is of the following type: &lt;span class="math display"&gt;\[\begin{matrix}
+    3x_1 &amp;amp; = &amp;amp; 6 \\
+    2x_2 &amp;amp; = &amp;amp; 5 \\
+    4x_3 &amp;amp; = &amp;amp; 7 \\
+\end{matrix}\]&lt;/span&gt; which obviously has solution &lt;span class="math inline"&gt;\(\displaystyle{[x_1,x_2,x_3]^T=\left[2,\frac{5}{2},\frac{7}{4}\right]^T}\)&lt;/span&gt; or, equivalently, &lt;span class="math inline"&gt;\(\displaystyle{x_1=2,
+x_2=\frac{5}{2}, x_3=\frac{7}{4}}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In matrix form &lt;span class="math inline"&gt;\(AX=B\)&lt;/span&gt; the equations are &lt;span class="math display"&gt;\[\left[\begin{array}{ccc}3&amp;amp;0&amp;amp;0\\ 0&amp;amp;2&amp;amp;0\\ 0&amp;amp;0&amp;amp;4\end{array}\right]\left[\begin{array}{c}x_1\\
+x_2\\ x_3\end{array}\right]=\left[\begin{array}{c}6\\ 5\\ 7\end{array}\right]\]&lt;/span&gt; where the matrix of coefficients, &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;, is clearly diagonal.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200626105704+FOnsUG</stamp>
+        <version>stack2.maths.ed.ac.uk+200912110923+0LfjK5</version>
+        <hidden>0</hidden>
+        <timecreated>1593169024</timecreated>
+        <timemodified>1599908963</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

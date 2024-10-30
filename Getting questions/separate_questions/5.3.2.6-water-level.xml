@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26193">
+        <parent>0</parent>
+        <name>5.3.2.6 Water level</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Write down a function relating water level \(L\) (meters) in a harbour, to time \(t\) (hours), starting when the level is equal to the mean level of \({@m1@} \, \textrm{m}\), that has an amplitude of \({@a1@} \, \textrm{m}\) and has a period of twelvehours.&lt;/p&gt;
+&lt;p&gt;\(L= \) [[input:ans1]] [[validation:ans1]] [[feedback:ans1]]&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;In the general form \(y=a\sin(bt+c)+d\), the phase is \(c=0\), the period is equal to \(12\), therefore \(b=\dfrac{2\pi}{12}=\dfrac{\pi}{6}\), the amplitude is \(a={@a1@}\), and the mean value is \(d={@m1@}\). Hence&lt;/p&gt;
+&lt;p&gt;\(L=\displaystyle {@ta@} \qquad (t \geq 0).\)&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200821114127+FU6oTI</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220217133723+z005v1</version>
+        <hidden>0</hidden>
+        <timecreated>1598010087</timecreated>
+        <timemodified>1645105043</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17761">
+            <stackversion>2021120900</stackversion>
+            <questionvariables>m1: rand([2,3,4,5]);
+a1: rand([6,7,8]);
+T1: 12;
+b: 2*%pi/T1;
+ta:a1*sin(b*t)+m1
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[ L= {@ta@} \]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41709">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="117234">
+              <name>ans1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="169133">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>ans1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>ans1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="120438">
+              <testcase>1</testcase>
+              <timemodified>1645104812</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="284852">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="248735">
+                  <prtname>ans1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>ans1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="120439">
+              <testcase>2</testcase>
+              <timemodified>1645104840</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="284853">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta1+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="248736">
+                  <prtname>ans1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>ans1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="571442">
+              <seed>1045286110</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571443">
+              <seed>750233390</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571444">
+              <seed>512656639</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571445">
+              <seed>513733147</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571446">
+              <seed>1234427712</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571447">
+              <seed>544562816</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571448">
+              <seed>1496032883</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571449">
+              <seed>179383654</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571450">
+              <seed>1362306131</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571451">
+              <seed>729353952</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="571452">
+              <seed>199914419</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

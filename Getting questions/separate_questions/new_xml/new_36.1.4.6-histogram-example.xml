@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27271 -->
+  <question type="stack">
+    <name>
+				<text>36.1.4.6 Histogram Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<br>
+<h4 class="HELM_example">Example</h4>
+<p>From the frequency table (for instance, the one in the previous exercise), we can represent the data diagrammatically using a histogram. For example, from the following frequency table, we obtain the corresponding histogram shown below.</p><br><br><p style="text-align: center;"><img src="@@PLUGINFILE@@/36-1-fig-8-histogram_of_heights.svg" alt="" width="483" height="205" class="img-responsive atto_image_button_text-bottom"></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200729130410+kNBB4V</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211007171610+T7lzXu</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26755 -->
+  <question type="stack">
+    <name>
+				<text>10.1.9 Argand Diagram</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>Given that <span class="math inline">\(z=1+\i\)</span>, <span class="math inline">\(w=\i\)</span> , represent the three complex numbers <span class="math inline">\(z,w\)</span> and <span class="math inline">\(2z-3w-1\)</span> on an Argand diagram.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200630121547+2ZhA3U</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200630134538+UkgQ5K</text></tag>
+    </tags>
+    
+</question>
+</quiz>

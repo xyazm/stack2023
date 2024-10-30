@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27291 -->
+  <question type="stack">
+    <name>
+				<text>36.1.5.6 Cumulative frequency curve or ogive</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>In the case of larger samples the quantities can be approximated by using a <b>cumulative frequency curve</b> or <b>ogive</b>. The cumulative frequency distribution for the heights of the 30 students given earlier is shown below. Notice that here, the class intervals are defined in such a way that the frequencies accumulate (hence the term <i>cumulative frequency</i>) as the table is built up.</p>
+<table class="HELM_table" style="text-align: center; width: 90%;">
+<thead>
+<tr style="border-bottom: 1px solid #000;">
+<th>Height</th><th>Cumulative Frequency</th><th>Cumulative Relative Frequency</th></tr>
+</thead> 
+<tbody><tr><td> less than 150</td><td>0</td><td>0.000</td></tr>
+<tr><td>less than 155</td><td>2</td><td>0.067</td></tr>
+<tr><td>less than 160</td><td>2</td><td>0.067</td></tr>
+<tr><td>less than 165</td><td>7</td><td>0.200</td></tr>
+<tr><td>less than 170</td><td>15</td><td>0.467</td></tr>
+<tr><td>less than 175</td><td>19</td><td>0.633</td></tr>
+<tr><td>less than 180</td><td>26</td><td>0.867</td></tr>
+<tr><td>less than 185</td><td>30</td><td>1.000</td></tr>
+</tbody>
+</table>
+<br><p>To plot the ogive or cumulative frequency curve, we plot the heights on the horizontal axis and the cumulative frequencies or cumulative relative frequencies on the vertical axis. The corresponding ogive is shown in the figure below.</p><img src="@@PLUGINFILE@@/36-1-fig-5-ogive.svg" alt="" width="576" height="480" class="img-responsive atto_image_button_text-bottom">
+<p>The three statistics defined above can be read from the diagram as indicated. They are the values where the cumulative relative frequency is \(0.25, 0.50\) and \(0.75\). With \(n=30\), this corresponds to cumulative frequencies of \(7.5\), \(15.0\) and \(22.5\).</p>
+<p>For the data set giving the heights of the 30 students, the three statistics, as obtained using the ogive, are as follows.</p>
+<ol>
+<li><b>The Lower Quartile</b> is \(165.9\).</li>
+<li><b>The Median</b> is \(171.0\).</li>
+<li><b>The Upper Quartile</b> is \(177.5\).</li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200914145914+0lLsrV</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914145914+txJAcJ</text></tag>
+    </tags>
+    
+</question>
+</quiz>

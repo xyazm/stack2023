@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27312">
+        <parent>0</parent>
+        <name>37.1.1.8 Example: Car registrations</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;How many car registrations are there beginning with \(NP05\) followed by three letters? Note that, conventionally, \(I, O\) and \(Q\) may not be chosen..&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We have to choose 3 letters from 23 allowing repetition. Hence the number of registrations beginning with &lt;span class="math inline"&gt;\(NP05\)&lt;/span&gt; must be &lt;span class="math inline"&gt;\(23^3=12167\)&lt;/span&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200714150231+r7jSg5</stamp>
+        <version>stack2.maths.ed.ac.uk+200731143353+GpaQEq</version>
+        <hidden>0</hidden>
+        <timecreated>1594738951</timecreated>
+        <timemodified>1596206033</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

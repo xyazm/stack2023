@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24658">
+        <parent>0</parent>
+        <name>18.3.4.2 Identify and classify stationary points 1</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find the stationary points for the function&amp;nbsp;\(f(x,y) = {@expr@}\) .&lt;/p&gt;
+&lt;p&gt; For each stationary point classify it as either a local minimum, a local maximum or a saddle point.
+&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;
+        &lt;p&gt;\(\dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial y} = 0\) at \((x, y)\) = [[input:ans1]] [[validation:ans1]]&lt;/p&gt;
+        &lt;p&gt;This point is a: [[input:ans2]] [[validation:ans2]]&lt;/p&gt;
+        &lt;p&gt;[[feedback:prt1]]&lt;/p&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+        &lt;p&gt;\(\dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial y} = 0\) at \((x, y)\) = [[input:ans3]] [[validation:ans3]]&lt;/p&gt;
+        &lt;p&gt;This point is a: [[input:ans4]] [[validation:ans4]]&lt;/p&gt;
+        &lt;p&gt;[[feedback:prt2]]&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;[[feedback:prt3]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We are asked to find the stationary points of the function \( f(x,y) = {@expr@}.\)&lt;/p&gt;
+&lt;p&gt;First, find the partial derivatives of \(f(x,y):\)
+&lt;/p&gt;\(f_x={@f_x@} \\ f_y={@f_y@}\)
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Now we solve the equations \(f_x = 0\) and \(f_y= 0:\)
+
+&lt;/p&gt;
+&lt;p&gt;\(f_x = 0 \Rightarrow {@f_x@} = 0 \, \Rightarrow x= {@rhs(a[1])@} .\)&lt;/p&gt;
+&lt;p&gt;\(f_y = 0 \Rightarrow {@f_y@} = 0 \, \Rightarrow y= {@rhs(b[1])@} \text{ or } y= {@rhs(b[2])@}.\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Hence the stationary points are \( ({@rhs(a[1])@}, {@rhs(b[1])@}) \) and \( ({@rhs(a[1])@}, {@rhs(b[2])@}) .\)&lt;/p&gt;
+&lt;p&gt;Then we calculate \( f_{xx}, \, f_{yy}, \, f_{xy} \, \text{and} \, D:\)&lt;/p&gt;
+&lt;p&gt;\( f_{xx} = {@f_xx@} \)&lt;/p&gt;
+&lt;p&gt;\( f_{yy} = {@f_yy@} \)&lt;/p&gt;
+&lt;p&gt;\( f_{xy} = {@f_xy@} \)&lt;/p&gt;
+&lt;p&gt;\( D = f_{xx}f_{yy}- (f_{xy})^2 = {@D@} \)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Now complete the table below and determine the nature of the stationary points:&lt;/p&gt;
+
+&lt;table class="HELM_table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt; &lt;/th&gt;
+            &lt;th&gt;Point&lt;/th&gt;
+            &lt;th&gt;Point&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Derivatives&lt;/td&gt;
+            &lt;td&gt;({@rhs(a[1])@}, {@rhs(b[1])@})&lt;/td&gt;
+            &lt;td&gt;({@rhs(a[1])@}, {@rhs(b[2])@})&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{xx}\)&lt;/td&gt;
+            &lt;td&gt;{@f_xx@}&lt;/td&gt;
+            &lt;td&gt;{@f_xx@}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{yy}\)&lt;/td&gt;
+            &lt;td&gt;{@fyyval1@}&lt;/td&gt;
+            &lt;td&gt;{@fyyval2@}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(f_{xy}\)&lt;/td&gt;
+            &lt;td&gt;{@f_xy@}&lt;/td&gt;
+            &lt;td&gt;{@f_xy@}&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;em&gt;\(D\)&lt;/em&gt;&lt;/td&gt;
+            &lt;td&gt;\({@Dval1@}&amp;gt;0\)&lt;/td&gt;
+            &lt;td&gt;\({@Dval2@}&amp;lt;0\)&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Hence, \(({@rhs(a[1])@}, {@rhs(b[1])@})\) is a local minimum and \(({@rhs(a[1])@}, {@rhs(b[2])@})\) is a saddle point.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200822054059+9tpnME</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220309105324+I1sFiZ</version>
+        <hidden>0</hidden>
+        <timecreated>1598074859</timecreated>
+        <timemodified>1646823204</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>4</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16781">
+            <stackversion>2021120900</stackversion>
+            <questionvariables>/* This function has 1 local min and 1 saddle point and f_xy=0*/
+/* I start by defining f_x, f_y and use them to find f*/
+/* f_x= a*x, a&gt;0 so that 1 point is (0,0) and f_xx&gt;0 for local min*/
+/* f_y= b*y*(c-y) so that 2nd point is (0,c) */
+
+ordergreat(x,y);
+a1: rand([10,12,14,16,18]);
+b1: rand([3,6]);
+c1: rand(3)+1;
+C: rand(10)+2
+
+f_x: a1*x;
+f_y: b1*y*(c1-y);
+expr: int(f_x,x)+expand(int(f_y,y))+C;
+
+partialx: diff(expr, x);
+partialy: diff(expr, y);
+a:solve(partialx = 0, x);
+b:solve(partialy = 0, y);
+tacoords1:matrix([rhs(a[1]), rhs(b[1])]);
+ta1: [["local minimum", true], ["local maximum", false], ["saddle point", false]];
+tacoords2:matrix([rhs(a[1]), rhs(b[2])]);
+ta2: [["local minimum", false], ["local maximum", false], ["saddle point", true]];
+
+/* Calclulate second derivatives and D*/
+f_xx: diff(f_x,x);                              
+f_yy: expand(diff(f_y,y));
+f_xy: diff(f_y,x);
+D: f_xx*f_yy-(f_xy)^2;
+
+/* Evaluate second derivatives and D */
+fyyval1: ev( f_yy, y=rhs(b[1]));
+fyyval2: ev( f_yy, y=rhs(b[2]));
+Dval1: ev(D, x= rhs(a[1]), y=rhs(b[1]));
+Dval2: ev(D, x= rhs(a[1]), y=rhs(b[2]));</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(f= {@exp@} \) so {{@tacoords1@} is local min, {@tacoords2@}, D= {@Dval2@} is saddle point</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>1</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39026">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>tacoords1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39027">
+              <name>ans2</name>
+              <type>dropdown</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39028">
+              <name>ans3</name>
+              <type>matrix</type>
+              <tans>tacoords2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39029">
+              <name>ans4</name>
+              <type>dropdown</type>
+              <tans>ta2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33632">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>0</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50770">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>tacoords1</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>2</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50771">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>first(mcq_correct(ta1))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found the correct stationary point, but not its correct nature.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50772">
+                  <nodename>2</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>tacoords2</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>3</truenextnode>
+                  <trueanswernote>prt1-3-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-3-F</falseanswernote>
+                  <falsefeedback>This is not a stationary point.</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50773">
+                  <nodename>3</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>first(mcq_correct(ta2))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-4-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-4-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found the correct stationary point, but not its correct nature.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="33633">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50774">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>tacoords2</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>2</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50775">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>first(mcq_correct(ta2))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found the correct stationary point, but not its correct nature.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50776">
+                  <nodename>2</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>tacoords1</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>3</truenextnode>
+                  <trueanswernote>prt2-3-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-3-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;This is not a stationary point.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50777">
+                  <nodename>3</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>first(mcq_correct(ta1))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-4-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-4-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found the correct stationary point, but not its correct nature.&lt;br&gt;&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="44275">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="67468">
+                  <nodename>0</nodename>
+                  <answertest>Sets</answertest>
+                  <sans>{ans1, ans3}</sans>
+                  <tans>{tacoords1, tacoords2}</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found all the stationary points.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You missed some stationary points.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38734">
+              <testcase>1</testcase>
+              <timemodified>1623663420</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111016">
+                  <inputname>ans1</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111017">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_correct(ta1))</value>
+                </stackqtestinput>
+                <stackqtestinput id="111018">
+                  <inputname>ans3</inputname>
+                  <value>tacoords2</value>
+                </stackqtestinput>
+                <stackqtestinput id="111019">
+                  <inputname>ans4</inputname>
+                  <value>first(mcq_correct(ta2))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95382">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95383">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95384">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38735">
+              <testcase>2</testcase>
+              <timemodified>1623663445</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111020">
+                  <inputname>ans1</inputname>
+                  <value>tacoords2</value>
+                </stackqtestinput>
+                <stackqtestinput id="111021">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_correct(ta2))</value>
+                </stackqtestinput>
+                <stackqtestinput id="111022">
+                  <inputname>ans3</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111023">
+                  <inputname>ans4</inputname>
+                  <value>first(mcq_correct(ta1))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95385">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-4-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95386">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-4-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95387">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38736">
+              <testcase>3</testcase>
+              <timemodified>1623663492</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111024">
+                  <inputname>ans1</inputname>
+                  <value>ev(tacoords1+matrix([1,1]), simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="111025">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_incorrect(ta1))</value>
+                </stackqtestinput>
+                <stackqtestinput id="111026">
+                  <inputname>ans3</inputname>
+                  <value>ev(tacoords2+matrix([1,1]), simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="111027">
+                  <inputname>ans4</inputname>
+                  <value>first(mcq_incorrect(ta2))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95388">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-3-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95389">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-3-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95390">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="51428">
+              <testcase>4</testcase>
+              <timemodified>1623663524</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111028">
+                  <inputname>ans1</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111029">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_correct(ta1))</value>
+                </stackqtestinput>
+                <stackqtestinput id="111030">
+                  <inputname>ans3</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111031">
+                  <inputname>ans4</inputname>
+                  <value>first(mcq_correct(ta1))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95391">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95392">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-4-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95393">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="165083">
+              <seed>899729165</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165084">
+              <seed>346404099</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165085">
+              <seed>1868130882</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165086">
+              <seed>1209685640</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165087">
+              <seed>541600852</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165088">
+              <seed>1865591069</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165089">
+              <seed>1451883567</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165090">
+              <seed>1048449835</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165091">
+              <seed>595238662</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165092">
+              <seed>1239773293</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165093">
+              <seed>711613818</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165094">
+              <seed>737743358</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165095">
+              <seed>1788037649</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165096">
+              <seed>1114723344</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165097">
+              <seed>76033807</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

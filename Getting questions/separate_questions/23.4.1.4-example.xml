@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62131">
+        <parent>0</parent>
+        <name>23.4.1.4 Example</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;&lt;/p&gt;
+Another interesting result can be discovered by considering the function 
+\[ f(t) =
+\begin{cases}
+0 \hspace{1cm} - \pi &amp;lt; t &amp;lt; 0 \\
+t^2 \hspace{1cm} 0 &amp;lt; t &amp;lt; \pi
+\end{cases}
+\]
+\[ f(t + 2\pi ) = f(t) \] 
+shown in the Figure below&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-4-1-task1-.svg" alt="piece-wise function" width="297" height="149" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+This has Fourier series
+\[
+\begin{align}
+\dfrac{\pi^2}{6} &amp;amp;- 2 \left( \cos t - \dfrac{ \cos 2t}{4} +  \dfrac{ \cos 3t}{9} - \dots \right) \\
+&amp;amp;+ \left\{ \left( \pi -\dfrac{4}{\pi} \right) \sin t - \dfrac{\pi}{2} \sin 2t + \left( \dfrac{\pi}{3} - \dfrac{4}{9\pi} \right) \sin 3t - \dfrac{\pi}{4} \sin 4t + \dots  \right\}
+\end{align}
+\]
+If we now set \(t = \pi\), all of the sine terms become zero, and we are left with 
+\[ 
+\begin{align}
+\dfrac{\pi^2}{6} - &amp;amp;2 \left( \cos \pi - \dfrac{ \cos 2\pi}{4} +  \dfrac{ \cos 3\pi}{9} - \dots \right)  \\
+&amp;amp;= \dfrac{\pi^2}{6} - 2 \left( -1 - \dfrac{1}{4} - \dfrac{1}{9} - \dfrac{1}{16} - \dots \right) = \dfrac{\pi^2}{6} + 2 \left( 1 + \dfrac{1}{4} + \dfrac{1}{9} + \dfrac{1}{16} + \dots \right)
+\end{align}
+\]
+At \(t = \pi\) the Fourier series will converge to
+\[ \dfrac{1}{2} (\pi^2 + 0) = \dfrac{\pi^2}{2} \]
+(the average of the left and right hand limits).
+&lt;p&gt;&lt;/p&gt;
+So
+\[  \dfrac{\pi^2}{6} + 2 \left( 1 + \dfrac{1}{4} + \dfrac{1}{9} + \dfrac{1}{16} + \dots \right) = \dfrac{\pi^2}{2} \]
+\[ \therefore 1 + \dfrac{1}{4} + \dfrac{1}{9} + \dfrac{1}{16}+ \dots = \dfrac{1}{2} \left( \dfrac{\pi^2}{2} - \dfrac{\pi^2}{6} \right) = \dfrac{\pi^2}{6} \]
+&lt;hr&gt;
+Note also that if we substitute \(t = 0\) in the Fourier series (which converges to \(f(0) = 0\)) we obtain another infinite series but with alternating signs: 
+\[ \dfrac{\pi^2}{6}  - 2 \left( 1 - \dfrac{1}{4} + \dfrac{1}{9} - \dfrac{1}{16} + \dots \right) = 0\]
+or
+\[ 1 - \dfrac{1}{4} + \dfrac{1}{9} - \dfrac{1}{16} + \dots = \dfrac{\pi^2}{12} \]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200904203851+I7IlCn</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518104250+GiWN9D</version>
+        <hidden>0</hidden>
+        <timecreated>1599251931</timecreated>
+        <timemodified>1652870570</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

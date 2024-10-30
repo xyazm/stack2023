@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 84665 -->
+  <question type="stack">
+    <name>
+				<text>18.2.1.2 First partial derivatives - y derivative</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p></p>
+<p><strong>The \(y\) partial derivative</strong></p>
+<p>For functions of two variables \(f(x,y)\) the \(x\) and \(y\) variables are on the same footing, so what we have done for the \(x\)-variable we can do for the \(y\)-variable. We can thus imagine keeping the \(x\)-variable fixed and determining the rate
+    of change of \(f\) as \(y\) changes. This rate of change is denoted by \(\dfrac{\partial f}{\partial y}\).</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p><strong>The Partial Derivative of \(f\) with respect to \(y\)</strong></p>
+    <p> For a function of two variables \(z=f(x,y)\) the partial derivative of \(f\) with respect to \(y\) is denoted by \(\dfrac{\partial f}{\partial y}\) and is obtained by differentiating \(f(x,y)\) with respect to \(y\) in the usual way but treating the
+        \(x\)-variable as if it were a constant.</p>
+    <p>Alternative notations for \(\dfrac{\partial f}{\partial y}\) are \(f_y(x,y)\) or \(f_y\) or \(\dfrac{\partial z}{\partial y}\).
+    </p>
+</div>
+<p><br></p>
+<p>Returning to \(f(x,y)=x^3+2x^2y+y^2+2x+1\) once again, we therefore obtain:</p>
+\[\begin{aligned} \frac{\partial f}{\partial y} &amp;= 0+2x^2 \cdot 1+2y+0+0 \\ &amp;= 2x^2+2y \end{aligned}\]
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<ol class="HELM_parts_inline">
+    <p>Find \(\dfrac{\partial f}{\partial y}\) for</p>
+    <li> \(f(x,y)=x^3+x+y^2+y\), </li>
+    <li> \(f(x,y)=x^2y+xy^3\).</li>
+</ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+    <li>\(\dfrac{\partial f}{\partial y}=0+0+2y+1=2y+1\)</li>
+    <li>\(\dfrac{\partial f}{\partial y}=x^2\cdot 1+x\cdot 3y^2=x^2+3xy^2\)</li>
+</ol>
+<hr>
+
+<p>We can calculate the partial derivative of \(f\) with respect to \(x\) and the value of \(\dfrac{\partial f}{\partial x}\) at a specific point e.g. \(x=1, y=-2\).</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>[Remember \(f_x\) means \(\dfrac{\partial f}{\partial x}\) and \(f_y\) means \(\dfrac{\partial f}{\partial y}\).]
+</p>
+<p>Find \(f_x(1,-2)\) and \(f_y(-3,2)\) for \(f(x,y)=x^2+y^3+2xy\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p>\(f_x(x,y)=2x+2y\), so \(f_x(1,-2)=2-4=-2\);</p>
+<p>\(f_y(x,y)=3y^2+2x,\) so \(f_y(-3,2)=12-6=6\).</p>
+
+<p><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220304105156+Fjtzmz</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220304113901+dgpP9W</text></tag>
+    </tags>
+    
+</question>
+</quiz>

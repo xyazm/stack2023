@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24622">
+        <parent>0</parent>
+        <name>14.3.2.4 Find volume of line around y-axis</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;The curve \(y={@f@}\) for \({@low@}&amp;lt;x&amp;lt;{@upp@}\) is rotated about the \(y\)-axis. Find the volume of the solid formed.&lt;/p&gt;
+&lt;p&gt;\(\quad V =\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Using the latest Key Point, the required integral is \[\int_{@ta2dn@}^{@ta2up@} {@ta2int@} \,\mathrm{d}y,\] since \(c={@ta2dn@}\) and \(d={@ta2up@}\).Since&amp;nbsp;&lt;span style="font-size: 0.9375rem;"&gt;at \(x={@low@}\) we have \(y={@ta2dn@}\) and&amp;nbsp;at \(x={@upp@}\) we have \(y={@ta2ip@}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We have \(y={@f@}\), so \(x^2={@x_sq@}\) and the volume becomes \[\begin{align} \int_{@ta2dn@}^{@ta2up@} {@pi*x_sq@} \,\mathrm{d}y &amp;amp;= \pi \left[ {@integrate(x_sq,y)@} \right]_{@ta2dn@}^{@ta2up@} \\ &amp;amp;=\pi \left[ {@subst(y=ta2up,integrate(x_sq,y))@}-{@subst(y=ta2dn,integrate(x_sq,y))@}
+    \right] \\ &amp;amp;= {@ta3@} \end{align}\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201202120524+KwtSBS</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210607115207+IuL2jw</version>
+        <hidden>0</hidden>
+        <timecreated>1606910724</timecreated>
+        <timemodified>1623066727</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16755">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>const: rand(6)+2;
+x_sq: (1-y/const)^2;
+f: const-const*x;
+low: 0;
+upp: const;
+
+ta2up: const-const*low;
+ta2dn: const-const*upp;
+ta2int: pi*x^2;
+
+ta3: simplify(integrate(pi*x_sq,y,ta2dn,ta2up));</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(y=\) {@f@}; \({@low@}\le x\le {@upp@}, V={@ta3@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt; Your answer is partially correct.&lt;/span&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38936">
+              <name>ans3</name>
+              <type>algebraic</type>
+              <tans>ta3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33550">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50676">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta3</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38683">
+              <testcase>1</testcase>
+              <timemodified>1606910724</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82980">
+                  <inputname>ans3</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71646">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38684">
+              <testcase>2</testcase>
+              <timemodified>1606910724</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82981">
+                  <inputname>ans3</inputname>
+                  <value>ta3+1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71647">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="164896">
+              <seed>255718321</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164897">
+              <seed>702519725</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164898">
+              <seed>910604770</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164899">
+              <seed>1420317106</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164900">
+              <seed>9253098</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

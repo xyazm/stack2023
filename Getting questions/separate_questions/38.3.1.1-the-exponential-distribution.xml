@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27167">
+        <parent>0</parent>
+        <name>38.3.1.1 The exponential distribution</name>
+        <questiontext>&lt;h3&gt;The exponential distribution&lt;br&gt;&lt;/h3&gt;&lt;p&gt;The exponential distribution is defined by\[&amp;nbsp; f(t)=\lambda e^{-\lambda t}\qquad t\ge 0\qquad \lambda \text{ a constant} \]or sometimes by\[ f(t)=\frac{1}{\mu} e^{- t/\mu}\qquad t\ge 0\qquad \mu \text{ a constant} \]The&amp;nbsp; advantage of this latter representation is that it may be shown that the mean of the distribution is&amp;nbsp; \(\mu\).&lt;/p&gt;&lt;p&gt;
+
+
+&lt;/p&gt;&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span&gt;The lifetime \(T\) (years) of an electronic component is a continuous random variable with a probability density function given by \[ f(t)=e^{-t}\qquad t\ge 0 \qquad (\text{i.e. } \lambda=1 \text{ or } \mu=1)\] Find the lifetime \(L\) which a typical component is \(60\%\) certain to exceed.&amp;nbsp; If five components are sold to a manufacturer, find the probability that at least one of them will have a lifetime less than \(L\) years.&lt;/span&gt;&lt;span class="math inline"&gt;&lt;/span&gt;&lt;span class="math inline"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;&lt;p&gt;We require&amp;nbsp; \(\text{P}(T&amp;gt;L)=0.6\).&amp;nbsp; We know that this probability is given by the relationship \[ \text{P}(T&amp;gt;L)=\int_L^{\infty} e^{-t}\,dt=\left[\phantom{\dfrac{1}{1}}\!\!\!-e^{-t}\right]_L^{\infty}=e^{-L}\] Solving \(e^{-L}=0.6\)&amp;nbsp; for the least value of \(L\) we obtain \(L=0.51\) &amp;nbsp; years.&lt;/p&gt;&lt;p&gt;Assuming that the lifetime of each component is independent we have \[\text{P} (\text{at least one component has a lifetime less than&amp;nbsp; 0.51 years})\] \[ =1-\text{P} (\text{no component has a lifetime less than&amp;nbsp; 0.51 years})\] \[ =1-0.6^5 =0.92\]&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200710140833+uHG93N</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211013180457+qG6DJu</version>
+        <hidden>0</hidden>
+        <timecreated>1594390113</timecreated>
+        <timemodified>1634148297</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

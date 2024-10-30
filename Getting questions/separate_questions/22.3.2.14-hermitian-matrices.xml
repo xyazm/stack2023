@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26291">
+        <parent>0</parent>
+        <name>22.3.2.14 Hermitian matrices</name>
+        <questiontext>&lt;h4&gt;Hermitian matrices&lt;/h4&gt;
+&lt;p&gt;In some applications, of which quantum mechanics is one, matrices with &lt;strong&gt;complex&lt;/strong&gt; elements arise.&lt;/p&gt;
+&lt;p&gt;If \(A\) is such a matrix then the matrix \(\overline{A}^T\) is the &lt;strong&gt;conjugate transpose&lt;/strong&gt; of \(A\), i.e. the complex conjugate of each element of \(A\) is taken as well as \(A\) being transposed. Thus if
+\[ A=\left[\begin{array}{cc}2+\mathrm{i}&amp;amp;2\\ 3\mathrm{i}&amp;amp;5-2\mathrm{i}\end{array}\right]\]
+then
+\[ \overline{A}^T=\left[\begin{array}{cc}2-\mathrm{i}&amp;amp;-3\mathrm{i}\\ 2&amp;amp;5+2\mathrm{i}\end{array}\right].\]
+An &lt;strong&gt;Hermitian&lt;/strong&gt; matrix is one satisfying
+\[ \overline{A}^T=A.\]
+The matrix \(A\) above is clearly non-Hermitian. Indeed the most obvious feature of an Hermitian matrix is that its diagonal elements &lt;strong&gt;must&lt;/strong&gt; be real. (Can you see why?) Thus
+\[ A=\left[\begin{array}{cc}6&amp;amp;4+\mathrm{i}\\ 4-\mathrm{i}&amp;amp;-2\end{array}\right]\]
+is Hermitian.&lt;/p&gt;
+&lt;p&gt;A \(3\times 3\) example of an Hermitian matrix is
+\[ A=\left[\begin{array}{ccc}1&amp;amp;\mathrm{i}&amp;amp;5-2\mathrm{i}\\ -\mathrm{i}&amp;amp;3&amp;amp;0\\ 5+2\mathrm{i}&amp;amp;0&amp;amp;2\end{array}\right].\]
+An Hermitian matrix is in fact a generalization of a symmetric matrix. The key property of an Hermitian matrix is the same as that of a real symmetric matrix &#8211; i.e. the eigenvalues are always &lt;strong&gt;real&lt;/strong&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200624103226+EvDjTx</stamp>
+        <version>stack2.maths.ed.ac.uk+200713171603+2t2zUb</version>
+        <hidden>0</hidden>
+        <timecreated>1592994746</timecreated>
+        <timemodified>1594660563</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

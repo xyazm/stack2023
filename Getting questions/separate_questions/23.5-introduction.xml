@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62135">
+        <parent>0</parent>
+        <name>23.5 Introduction</name>
+        <questiontext>&lt;h4&gt;Introduction&lt;/h4&gt;
+In this Section we address the following problem:
+&lt;p&gt;&lt;/p&gt;
+&lt;i&gt;Can we find a Fourier series expansion of a function defined over a finite interval?&lt;/i&gt;
+&lt;p&gt;&lt;/p&gt;
+Of course we recognise that such a function could not be periodic (as periodicity demands an infinite
+interval). The answer to this question is yes but we must first convert the given non-periodic function
+into a periodic function. There are many ways of doing this. We shall concentrate on the most useful
+extension to produce a so-called &lt;b&gt;half-range Fourier series&lt;/b&gt;.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200905145214+wNZCHy</stamp>
+        <version>stack2.maths.ed.ac.uk+200912213655+84nUhH</version>
+        <hidden>0</hidden>
+        <timecreated>1599317534</timecreated>
+        <timemodified>1599946615</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

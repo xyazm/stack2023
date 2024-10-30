@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62091 -->
+  <question type="stack">
+    <name>
+				<text>23.1.2.4 Harmonics</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Harmonics</h4>
+In representing a non-sinusoidal function of period \(2\pi\) by a Fourier series we shall see shortly that
+only certain sinusoids will be required:
+<p></p>
+(a) \( A_1 \cos t \) (and \( B_1 \sin t \) )
+<p></p>
+These also have period \(2\pi\) and together are referred to as the <b>first harmonic</b> (or <b>fundamental harmonic</b>).
+<p></p>
+(b) \( A_2 \cos 2t \) (and \( B_2 \sin 2t \) )
+<p></p>
+These have half the period, and double the frequency, of the first harmonic and are referred to as the <b>second harmonic</b>.
+<p></p>
+(c) \( A_3 \cos 3t \) (and \( B_3 \sin 3t \) )
+<p></p>
+These have period \( \dfrac{2\pi}{3}\) and constitute the <b>third harmonic</b>.
+<p></p><p></p>
+In general the Fourier series of a function of period \(2\pi\) will require harmonics of the type
+\[ A_n \cos nt \hspace{1cm} ( \text{and}&nbsp;\hspace{0.3cm} &nbsp;B_n \sin nt)\]
+ where \( n = 1, 2, 3 \dots \).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200812183643+Hk6V7I</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220517190914+E3FZgg</text></tag>
+    </tags>
+    
+</question>
+</quiz>

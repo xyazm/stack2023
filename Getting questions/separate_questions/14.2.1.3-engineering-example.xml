@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24601">
+        <parent>0</parent>
+        <name>14.2.1.3 Engineering example</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Engineering Example&lt;/h4&gt;&lt;br&gt;&lt;br&gt;
+&lt;h5&gt;Sonic boom&lt;/h5&gt;&lt;br&gt;
+&lt;h6&gt;Introduction&lt;/h6&gt;
+
+&lt;p&gt;Impulsive signals are described by their peak amplitudes and their duration. Another quantity of interest is the total energy of the impulse. The effect of a blast wave from an explosion on structures, for example, is related to its total energy. This
+    Example looks at the calculation of the energy on a sonic boom. Sonic booms are caused when an aircraft travels faster than the speed of sound in air. An idealized sonic-boom pressure waveform is shown in the figure below where the instantaneous sound
+    pressure \(p(t)\) is plotted versus time \(t\). This wave type is often called an N-wave because it resembles the shape of the letter N. The energy in a sound wave is proportional to the square of the sound pressure.&lt;/p&gt;
+&lt;img src="@@PLUGINFILE@@/14-2-fig-6-Sonic.svg" alt=" An idealized sonic-boom pressure waveform (an N-wave)." width="389" height="125" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;h6&gt;Problem in words&lt;/h6&gt;
+
+    &lt;p&gt;Calculate the energy in an ideal N-wave sonic boom in terms of its peak pressure, its duration and the density and sound speed in air.&lt;/p&gt;&lt;br&gt;
+
+    &lt;h6&gt;Mathematical statement of problem&lt;/h6&gt;
+
+    &lt;p&gt;Represent the positive peak pressure by \(P_0\) and the duration by \(T\). The total acoustic energy \(E\) carried across unit area normal to the sonic-boom wave front during time \(T\) is defined by \[E ~=~ &amp;lt;\! p(t)^2\!&amp;gt; T /\rho c\qquad \text{(1)}\]
+        where \(\rho\) is the air density, \(c\) the speed of sound and the time average of \([p(t)]^2\) is \[ &amp;lt;\!p(t)^2\!&amp;gt; ~=~ \frac{1}{T}\int_0^T p(t)^2\,\mathrm{d}t\qquad \text{(2)}\]&lt;/p&gt;
+
+    &lt;ol class="HELM_parts"&gt;
+        &lt;li&gt;Find an appropriate expression for \(p(t)\).&lt;/li&gt;
+        &lt;li&gt;Hence show that \(E\) can be expressed in terms of \(P_0,\ T,\ \rho\) and \(c\) as \(\displaystyle E ~=~\frac{TP_0^2}{3\rho c}\).&lt;/li&gt;
+    &lt;/ol&gt;&lt;br&gt;
+
+    &lt;h6&gt;Mathematical analysis&lt;/h6&gt;&lt;br&gt;
+
+    &lt;ol class="HELM_parts"&gt;
+        &lt;li&gt;
+            &lt;p&gt;The interval of integration needed to compute (2) is \([0, T].\) Therefore it is necessary to find an expression for \(p(t)\) only in this interval. The figure above shows that, in this interval, the dependence of the sound pressure \(p\)
+                on the variable \(t\) is linear, i.e. \(p(t) = a t + b.\)&lt;/p&gt;
+            &lt;p&gt;From the figure above also \(p(0) = P_0\) and \(p(T) = - P_0\). The constants \(a\) and \(b\) are determined from these conditions.&lt;/p&gt;
+            &lt;p&gt;At \(t = 0,\ a \times 0 + b = P_0\) implies that \(b = P_0\).&lt;/p&gt;
+            &lt;p&gt;At \(t = T,\ a \times T + b = - P_0\) implies that \(a = -2P_0/T.\)&lt;/p&gt;
+            &lt;p&gt;Consequently, the sound pressure in the interval \([0, T]\) may be written \(\displaystyle p(t) = \frac{-2P_0}{T}\ t + P_0.\)&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li&gt;This expression for \(p(t)\) may be used to compute the integral (2) \[\begin{aligned} \frac{1}{T}\int_0^T p(t)^2 \,\mathrm{d}t&amp;amp;~=\frac{1}{T}\int_0^T\ \left(\frac{-2P_0}{T}\ t+P_0\right)^2 \,\mathrm{d}t =\frac{1}{T}\ \int_0^T\ \left(\frac{4P_0^2}{T^2}\ t^2-\frac{4P_0^2}{T}\
+            t+P_0^2\right) \,\mathrm{d}t\\ \\ &amp;amp;~=\frac{1}{T}\left[\frac{4P_0^2}{3T^2}\ t^3-\frac{2P_0^2}{T}\ t^2+P_0^2 t\right]_0^T\\ \\ &amp;amp;~=\frac{P_0^2}{T}\left(\frac{4}{3T^2}\ T^3-\frac{2}{T}\ T^2+T\right)-0=P_0^2/3.\end{aligned}\] Hence, from Equation
+            (1), the total acoustic energy \(E\) carried across unit area normal to the sonic-boom wave front during time \(T\) is \(E = \dfrac{TP_0^2}{3\rho c}.\)&lt;/li&gt;
+    &lt;/ol&gt;&lt;br&gt;
+
+    &lt;h6&gt;Interpretation&lt;/h6&gt;
+
+    &lt;p&gt;The energy in an N-wave is given by a third of the sound intensity corresponding to the peak pressure multiplied by the duration.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201128115441+ppwXFc</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210607154153+i5YBkg</version>
+        <hidden>0</hidden>
+        <timecreated>1606564481</timecreated>
+        <timemodified>1623080513</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

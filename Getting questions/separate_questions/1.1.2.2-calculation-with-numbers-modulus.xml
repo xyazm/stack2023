@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="37727">
+        <parent>0</parent>
+        <name>1.1.2.2 Calculation with Numbers - modulus</name>
+        <questiontext>&lt;h5&gt;&lt;span style="color: inherit; font-family: inherit;"&gt;The modulus notation (\(| |\))&lt;/span&gt;&lt;br&gt;&lt;/h5&gt;
+&lt;p&gt;The  &lt;strong&gt;modulus&lt;/strong&gt; of a number is the size of that number regardless of its sign. For example \(|4|\) is equal to 4, and \(|-3|\) is equal to 3. The modulus of a number is thus never negative.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210901101253+e88irE</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210901113147+oyLQXh</version>
+        <hidden>0</hidden>
+        <timecreated>1630491173</timecreated>
+        <timemodified>1630495907</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

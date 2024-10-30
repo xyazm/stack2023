@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62108">
+        <parent>0</parent>
+        <name>23.2.5.1 Fourier series for functions of general period</name>
+        <questiontext>&lt;h4&gt;Fourier series for functions of general period&lt;/h4&gt;
+This is a straightforward extension of the period \(2\pi\) case that we have already discussed.
+Using \(x\) (instead of \(t\)) temporarily as the variable. We have seen that a \(2\pi\) periodic function \(f(x)\)
+has a Fourier series
+\[ f(x) = \dfrac{a_0}{2} + \sum _{n = 1}^\infty ( a_n \cos nx + b_n \sin nx) \] 
+with
+\[ a_n = \dfrac{1}{\pi} \displaystyle{ \int _{-\pi} ^\pi } f(x) \cos nx \hspace{0.15cm} dt \hspace{2cm} n = 0, 1, 2, \dots\]
+\[ b_n = \dfrac{1}{\pi} \displaystyle{ \int _{-\pi} ^\pi } f(x) \sin nx \hspace{0.15cm} dt \hspace{2cm} n = 1, 2, \dots\]
+Suppose we now change the variable to \(t\) where \(x = \dfrac{2\pi}{T}t\).
+&lt;p&gt;&lt;/p&gt;
+Thus \( x = \pi \) corresponds to \( t = T/2 \) and \( x = - \pi \) corresponds  to \( t = -T/2\).
+&lt;p&gt;&lt;/p&gt;
+Hence regarded as a function of \(t\), we have a function with period \(T\).
+&lt;p&gt;&lt;/p&gt;
+Making the substitution \(x = \dfrac{2\pi}{T}t\), and hence \(dx = \dfrac{2\pi}{T} dt\), in the expressions for \(a_n\) and \(b_n\) we obtain
+\[
+\begin{align}
+a_n &amp;amp;= \dfrac{2}{T} \int _{-\frac{T}{2}} ^{\frac{T}{2}} f(t) \cos \left( \dfrac{2n\pi t}{T} \right) dt \hspace{2cm} n = 0, 1, 2, \dots \\
+b_n &amp;amp;= \dfrac{2}{T} \int _{-\frac{T}{2}} ^{\frac{T}{2}} f(t) \sin \left( \dfrac{2n\pi t}{T} \right) dt \hspace{2cm} n = 1, 2, \dots
+\end{align}
+\]
+These integrals give the Fourier coefficients for a function of period \(T\) whose Fourier series is
+\[ f(t) = \dfrac{a_0}{2} + \sum _{n = 1} ^\infty \left\{ a_n\cos \left( \dfrac{2n\pi t}{T}\right) + b_n \sin\left( \dfrac{2n\pi t}{T}\right) \right\} \]
+Various other notations are commonly used in this case e.g. it is sometimes convenient to write
+the period \(T = 2l\). (This is particularly useful when Fourier series arise in the solution of partial
+differential equations.) Another alternative is to use the angular frequency \(\omega\) and put \(T = 2\pi/\omega\).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200816154045+muFYAs</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518094650+GgoUfy</version>
+        <hidden>0</hidden>
+        <timecreated>1597592445</timecreated>
+        <timemodified>1652867210</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

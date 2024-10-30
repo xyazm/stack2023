@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27143">
+        <parent>0</parent>
+        <name>37.2.3.5  Probability that a machine develops a fault (NOT IN QUIZ)</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;&lt;p&gt;The probability that a machine develops a fault within the first 3 years of use is {@p@}. If {@n@} machines are selected at random, calculate the probability that {@n-2@} or more will &lt;b&gt;not&lt;/b&gt; develop any faults within the first 3 years of use.&lt;/p&gt;&lt;p&gt;[[input:ans1]] [[validation:ans1]]&amp;nbsp;[[feedback:prt1]]&lt;/p&gt;&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; round your answer up to \(4\) decimal places, if required.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;b&gt;SOLUTION:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Let &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; be a random variable &#8216;number of machines that will not develop any faults within the first 3 years of use&#8217; then it is clear that &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; follows a binomial distribution with &lt;span class="math inline"&gt;\(n={@n@}\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(p={@1-p@}\)&lt;/span&gt;.&lt;/p&gt;&lt;p&gt;&lt;span class="math display"&gt;\[\begin{aligned}&amp;nbsp;\text{P} (X \geq {@n-2@}) &amp;amp; = \text{P} [(X={@n-2@})\cup (X={@n-1@})\cup (X={@n@})] \\ &amp;amp;=&amp;nbsp; \  ^{{@n@}}\!C_{@n-2@}({@1-p@})^{@n-2@}({@p@})^2 +\  ^{{@n@}}\!C_{@n-1@}({@1-p@})^{@n-1@}({@p@}) +\  ^{{@n@}}\!C_{{@n@}}({@1-p@})^{{@n@}} \\ &amp;amp;= {@ta@}\end{aligned}\]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200725123858+51avkx</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211015101745+oxF7nh</version>
+        <hidden>0</hidden>
+        <timecreated>1595680738</timecreated>
+        <timemodified>1634293065</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18362">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>n: 36 + rand(5);
+p: 0.002 + 0.001*rand(5);
+ta: decimalplaces(0.5*n*(n-1)*((1-p)^(n-2))*(p^2) + n*((1-p)^(n-1))*p + (1-p)^n,4);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\text{P} (X \geq {@n-2@}) = {@ta@} \)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43255">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta</tans>
+              <boxsize>6</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:4, mindp:4</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37515">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56102">
+                  <nodename>0</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>0.0002</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42383">
+              <testcase>1</testcase>
+              <timemodified>1595680738</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92188">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="79892">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="42384">
+              <testcase>2</testcase>
+              <timemodified>1597180298</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92189">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ev(ta+1.034,simp),4)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="79893">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="178769">
+              <seed>764237321</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178770">
+              <seed>1944010320</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178771">
+              <seed>1841422752</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178772">
+              <seed>1653504969</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178773">
+              <seed>1376629497</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178774">
+              <seed>1425993691</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178775">
+              <seed>959389822</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178776">
+              <seed>1250447826</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178777">
+              <seed>1246740454</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178778">
+              <seed>95334597</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

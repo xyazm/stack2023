@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="84666">
+        <parent>0</parent>
+        <name>18.2.1.4 First partial derivatives - functions of several var</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Functions of several variables&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As we have seen, a function of two variables \(f(x,y)\) has two partial derivatives, \(\dfrac{\partial f}{\partial x}\) and \(\dfrac{\partial f}{\partial y}\). In an exactly analogous way a function of three variables \(f(x,y,u)\) has three partial derivatives
+    \(\dfrac{\partial f}{\partial x}\), \(\dfrac{\partial f}{\partial y}\) and \(\dfrac{\partial f}{\partial u}\), and so on for functions of more than three variables. Each partial derivative is obtained in the same way as stated in the following Key
+    Point:
+&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;&lt;strong&gt;The Partial Derivatives of \(f(x,y,u,v,w,\dots)\)&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;For a function of several variables \(z=f(x, y, u, v, w, \dots)\) the partial derivative of \(f\) with respect to \(v\) (say) is denoted by \(\dfrac{\partial f}{\partial v}\) and is obtained by differentiating \(f(x, y, u, v, w, \dots)\) with respect
+        to \(v\) in the usual way but treating all the other variables as if they were constants.&lt;/p&gt;
+    &lt;p&gt;Alternative notations for \(\dfrac{\partial f}{\partial v}\) when \(z = f(x, y, u, v, w, \dots )\) are \(f_v(x, y, u, v, w \dots )\) and \(f_v\) and \(\dfrac{\partial z}{\partial v}\).&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find \(\dfrac{\partial f}{\partial x}\) and \(\dfrac{\partial f}{\partial u}\) for \(f(x, y, u, v) = x^2+xy^2+y^2u^3-7uv^4\)&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;\(\dfrac{\partial f}{\partial x}=2x+y^2+0+0=2x+y^2\),&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial f}{\partial u}=0+0+y^2\cdot 3u^2-7v^4=3y^2u^2-7v^4\)&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;The pressure, \(P\), for one mole of an ideal gas is related to its absolute temperature, \(T\), and specific volume, \(v\), by the equation \(Pv=RT\) where \(R\) is the gas constant. Obtain simple expressions for&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt; the coefficient of thermal expansion, \(\alpha\), defined by: \(\alpha = \dfrac{1}{v}\left(\dfrac{\partial v}{\partial T}\right)_P\)&lt;/li&gt;&lt;br&gt;
+    &lt;li&gt; the isothermal compressibility, \(\kappa_T\), defined by: \(\kappa_T=-\dfrac{1}{v}\left(\dfrac{\partial v}{\partial P}\right)_T\)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;
+    \(v=\dfrac{RT}{P}\quad\Rightarrow\quad \left(\dfrac{\partial v}{\partial T}\right)_P=\dfrac{R}{P}\)
+&lt;/p&gt;
+&lt;p&gt;so \(\alpha=\dfrac{1}{v}\left(\dfrac{\partial v}{\partial T}\right)_P=\dfrac{R}{Pv}=\dfrac{1}{T}\)
+&lt;/p&gt;&lt;br&gt;
+&lt;p&gt;
+    \(v=\dfrac{RT}{P}\quad\Rightarrow\quad \left(\dfrac{\partial v}{\partial P}\right)_T=-\dfrac{RT}{P^2}\)
+&lt;/p&gt;
+&lt;p&gt;so \(\kappa_T=-\dfrac{1}{v}\left(\dfrac{\partial v}{\partial P}\right)_T=\dfrac{RT}{vP^2}=\dfrac{1}{P}\)
+&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220304105218+wgCWAA</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220304113954+5cRbEt</version>
+        <hidden>0</hidden>
+        <timecreated>1646391138</timecreated>
+        <timemodified>1646393994</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

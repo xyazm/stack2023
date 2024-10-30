@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27360">
+        <parent>0</parent>
+        <name>39.1.4.1 Calculating Other Probabilites</name>
+        <questiontext>&lt;h3&gt;Calculating Other Probabilities&lt;/h3&gt;
+
+&lt;p&gt;In this Section, we see how to calculate probabilities represented by areas other than those of the type shown in the previous Section.&lt;/p&gt;
+
+&lt;h4&gt;Case 1&lt;/h4&gt;
+&lt;p&gt;The below Figure illustrates what we do if both \(Z\) values are positive. By using the properties of the standard normal distribution we can organise matters so that any required area is always of &#8216;standard form&#8217;.&lt;/p&gt; 
+
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/39-1-fig-4-case1.svg" alt="The shaded area between two positive z-values is shown as equal to the area between 0 and the larger z-value, minus the area between 0 and the smaller z-value." width="586" height="230" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt; 
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the probability that \(Z\) takes values between \(1\) and \(2\).&lt;/p&gt; 
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Using the Standard Normal Table:&lt;/p&gt;
+&lt;p&gt;\(\text{P}(0 &amp;lt; Z &amp;lt; z_2)\) i.e. \(\text{P}(0 &amp;lt; Z &amp;lt; 2) = 0.4772\)&lt;/p&gt;
+&lt;p&gt;\(\text{P}(0 &amp;lt; Z &amp;lt; z_1)\) i.e. \(\text{P}(0 &amp;lt; Z &amp;lt; 1) = 0.3413\)&lt;/p&gt;
+&lt;p&gt;Hence \(\text{P}(1 &amp;lt; Z &amp;lt; 2) = 0.4772 &#8722; 0.3413 = 0.1359\)&lt;/p&gt;
+&lt;p&gt;Remember that with a continuous distribution, \(\text{P}(Z = 1)\) is meaningless (will have zero probability) so that \(\text{P}(1 &#8804; Z &#8804; 2)\) is interpreted as \(\text{P}(1 &amp;lt; Z &amp;lt; 2)\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4&gt;Case 2&lt;/h4&gt;
+&lt;p&gt;The following diagram illustrates the procedure to be followed when finding probabilities of the form \(\text{P}(Z&amp;gt;z_1)\).&lt;/p&gt;
+
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/39-1-fig-5-case2.svg" alt="This time the shaded area is the difference between the total area of the right-hand half, 0.5, and an area between 0 and z1 which can be read off from the Standard Normal Table." width="616" height="197" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt; &lt;p&gt;
+
+&lt;/p&gt;&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;What is the probability that \(Z&amp;gt;2\)?&lt;/p&gt; 
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;\(\text{P}(0 &amp;lt; Z &amp;lt; 2) = 0.4772\) (from the Table). Hence the probability is \(0.5 &#8722; 0.4772\) \(= 0.0228\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4&gt;Case 3&lt;/h4&gt;
+&lt;p&gt;Here we consider the procedure to be followed when calculating probabilities of the form \(\text{P}(Z&amp;lt;z_1)\). Here the shaded area is the sum of the left-hand half of the total area and a &#8216;standard&#8217; area.&lt;/p&gt;&lt;p&gt;
+
+&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/39-1-fig-6-case3.svg" alt="The shaded area is 0.5 plus the area between 0 and the positive z1." width="607" height="168" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;What is the probability that \(Z&amp;lt;2\)?&lt;/p&gt; 
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;\(\text{P}(Z &amp;lt; 2) = 0.5 + 0.4772 = 0.9772.\)&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4&gt;Case 4&lt;/h4&gt;
+&lt;p&gt;Here we consider what needs to be done when calculating probabilities of the form&lt;br&gt; \(\text{P}(-z_1&amp;lt;Z&amp;lt;0)\) where \(z_1\) is positive. This time we make use of the symmetry in the standard normal distribution curve.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/39-1-fig-7-case4.svg" alt="By symmetry, the shaded area between 0 and the positive z1 is equal to the shaded area between 0 and -z1." width="536" height="224" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt; 
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;What is the probability that \(-2&amp;lt;Z&amp;lt;0\)?&lt;/p&gt; 
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The area is equal to that corresponding to \(\text{P}(0 &amp;lt; Z &amp;lt; 2) = 0.4772.\)&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4&gt;Case 5&lt;/h4&gt;
+
+&lt;p&gt;Finally we consider probabilities of the form \(\text{P}(-z_1&amp;lt;Z&amp;lt;z_2)\). Here we use the sum property and the symmetry property.&lt;/p&gt; 
+
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/39-1-fig-8-case5.svg" alt="The area between a negative-valued z2 and a positive-valued z1 is equal to the area between 0 and z1 plus the area between 0 and -z2." width="595" height="229" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt; 
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;What is the probability that \(-1&amp;lt;Z&amp;lt;2\)?&lt;/p&gt; 
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;\(\text{P}(&#8722;1 &amp;lt; Z &amp;lt; 0) = \text{P}(0 &amp;lt; Z &amp;lt; 1) = 0.3413\)&lt;/p&gt;
+&lt;p&gt;\(\text{P}(0 &amp;lt; Z &amp;lt; 2) = 0.4772\)&lt;/p&gt;
+&lt;p&gt;Hence the required probability \(\text{P}(&#8722;1 &amp;lt; Z &amp;lt; 2)\) is \(0.8185.\)&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;Other cases can be handed by a combination of the ideas already used.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200728143637+QezFMX</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211014105755+8mdp8Q</version>
+        <hidden>0</hidden>
+        <timecreated>1595946997</timecreated>
+        <timemodified>1634209075</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

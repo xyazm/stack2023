@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33782">
+        <parent>0</parent>
+        <name>19.3.6.4 Exercise 6</name>
+        <questiontext>&lt;h4 class="HELM_exercise"&gt;Exercise&lt;/h4&gt;
+&lt;p&gt;Find a particular integral for the equation&lt;/p&gt;
+\[{@deq@}.\]
+&lt;p&gt;\(y_\text{p}(x) = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are asked to find a particular integral for the second order, constant coefficients, inhomogeneous differential equation&lt;/p&gt;
+\[{@deq@}.\]
+&lt;p&gt;Since the right-hand side is a linear term, we try a particular integral of the for \(y_\text{p}(x) = {@pitest@}\). We first find the derivatives:&lt;/p&gt;
+\[\begin{aligned}
+\frac{\mathrm{d}y_\text{p}}{\mathrm{d}x} &amp;amp;= {@dpitest@}, \\
+\frac{\mathrm{d}^2y_\text{p}}{\mathrm{d}x^2} &amp;amp;= {@ddpitest@}.
+\end{aligned}\]
+&lt;p&gt;Substituting these into the original equation gives&lt;/p&gt;
+\[{@pieq@}.\]
+&lt;p&gt;Equating the constant terms and the coefficients of \(x\) gives the simultaneous equations&lt;/p&gt;
+\[\begin{cases}
+{@lhs(pieq1)@} &amp;amp;= {@rhs(pieq1)@} \\
+{@lhs(pieq2)@} &amp;amp;= {@rhs(pieq2)@}
+\end{cases}\]
+&lt;p&gt;These give the values \(a = {@aval@}\) and \(b = {@bval@}\). Hence, a particular integral for the differential equation is&lt;/p&gt;
+\[y_\text{p}(x) = {@pi1@}.\]</generalfeedback>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210622104636+mrGi3v</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210622105209+F5GaMB</version>
+        <hidden>0</hidden>
+        <timecreated>1624358796</timecreated>
+        <timemodified>1624359129</timemodified>
+        <createdby>2661</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23472">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>/* Coefficient randomisation */
+aa: rand_with_prohib(-3, 3, [0]);
+bb: rand_with_prohib(-3, 3, [0]);
+
+/* Equation */
+f: aa + bb * x;
+deq: 'diff(y, x, 2) + aa * 'diff(y, x) + bb * y = f;
+
+/* Needed for solution */
+pitest: a + b * x;
+dpitest: diff(pitest, x);
+ddpitest: diff(dpitest, x);
+pieq: ddpitest + aa * dpitest + bb * pitest = f;
+pieq1: aa * b + bb * a = aa;
+pieq2: bb *  b = bb;
+pieqsol: linsolve([pieq1, pieq2], [a, b]);
+aval: rhs(pieqsol[1]);
+bval: rhs(pieqsol[2]);
+pi1: x;
+
+ta1: x;</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\({@deq@}, \quad y_\text{p}(x) = {@ta1@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54260">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46509">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71548">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54313">
+              <testcase>1</testcase>
+              <timemodified>1624358848</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117855">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100529">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54314">
+              <testcase>2</testcase>
+              <timemodified>1624358860</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117856">
+                  <inputname>ans1</inputname>
+                  <value>ta1+1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100530">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="235258">
+              <seed>1886719139</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235259">
+              <seed>245365869</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235260">
+              <seed>1263391949</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235261">
+              <seed>1667040104</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235262">
+              <seed>1206144133</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575651">
+              <seed>383421869</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575652">
+              <seed>1656692094</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575653">
+              <seed>810023668</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575654">
+              <seed>1489485195</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575655">
+              <seed>452386653</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575656">
+              <seed>782542690</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575657">
+              <seed>862203898</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575658">
+              <seed>665708911</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575659">
+              <seed>497249398</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="575660">
+              <seed>1106790187</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

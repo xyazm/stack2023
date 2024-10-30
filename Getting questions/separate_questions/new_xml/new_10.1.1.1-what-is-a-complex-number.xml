@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26698 -->
+  <question type="stack">
+    <name>
+				<text>10.1.1.1 What is a Complex Number?</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3> What is a Complex Number?</h3>
+
+<p>We assume that you are familiar with the properties of the real numbers; examples are:</p>
+<p> <span class="math inline">\[1,\ -2,\ {3\over
+{10}},\ 2.634,\ -3.111,\ \pi ,\ e ,\ \sqrt{2}.\]</span>
+</p>
+<p>We all know how to add, subtract and multiply such numbers. We can also divide by any number which is non-zero. We are aware that the numbers can be positive or negative or zero and also aware of their geometrical interpretation as being represented by
+    points on a ‘real’ axis known as a number line as in the figure below.</p>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/10-1-fig2-axis.svg" alt="" role="presentation" class="img-responsive atto_image_button_text-bottom" width="560" height="34"></figure>
+<p>The real axis is a line with a direction (usually chosen to be from left to right) indicated by an arrow. We shall refer to this as the <span class="math inline">\(x\)</span>-axis. On this axis, we select a point, arbitrarily, and refer to this as the
+    O. The origin, where zero is located, distinguishes positive numbers from negative numbers: the numbers to the right of the origin are the positive numbers and the numbers to the left of the origin are the negative numbers. Thus we can ‘locate’ the
+    numbers in our example.</p>
+
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/fig1.svg" alt="" role="presentation" class="atto_image_button_text-bottom" width="560" height="45"></figure>
+
+<p>We can formalise the algebra of real numbers into a set of rules which they obey.</p>
+
+<p>So if <span class="math inline">\(x_1,x_2\)</span> and <span class="math inline">\(x_3\)</span> are any three real numbers then we know that, in particular:</p>
+
+<p> <span class="math inline"> \[x_1+x_2=x_2+x_1\qquad
+x_1+(x_2+x_3)=(x_1+x_2)+x_3\] </span>
+</p>
+
+<p><span class="math inline">\[1\times x_1=x_1\qquad 0\times
+x_1=0\]</span>
+</p>
+
+<p><span class="math inline">\[x_1\times x_2=x_2\times
+x_1\qquad x_1\times (x_2+x_3)=x_1\times x_2+x_1\times x_3\]</span> </p>
+
+<p>Also, in multiplication we are familiar with the elementary rules: <span class="math inline">\(\qquad\text{(positive)}\times\text{(positive)}=\text{positive}\qquad\qquad\ \;
+\text{(positive)}\times\text{(negative)}=\text{negative}\)</span> <span class="math inline">\(\qquad\text{(negative)}\times\text{(positive)}=\text{negative}\qquad\qquad
+\text{(negative)}\times\text{(negative)}=\text{positive}\)</span>
+</p>
+
+<p>It follows that if <span class="math inline">\(x\)</span> represents <span><em>any</em></span> real number then <span class="math inline">\[\qquad x^2\ge 0\] </span> in words, <span><strong>the square of a real number is always non-negative</strong></span>.</p>
+
+<p>Here we will consider a kind of number (a generalisation of a real number) whose square is not necessarily positive (and not necessarily real either). However, it is important to get to know how to handle complex numbers before using them in calculations.
+    This will not be difficult as the new set of rules is, in fact, precisely the same set of rules obeyed by the ‘real’ numbers. These new numbers are called complex numbers.
+
+</p>
+<p>A <span><strong>complex number</strong></span> is an ordered pair of real numbers, usually denoted by <span class="math inline">\(z\)</span> or <span class="math inline">\(w\)</span> etc. So if <span class="math inline">\(a,b\)</span> are real numbers
+    then we designate a complex number through: <span class="math inline">\[\qquad z=a+i b\]</span> where <span class="math inline">\(i\)</span> is a symbol obeying the rule<span class="math inline">\[\qquad i^2=-1.\]</span> For simplicity we shall assume
+    we can write <span class="math inline">\[\qquad i=\sqrt{-1}.\]</span>Often, particularly in electrical engineering applications, the symbol <span class="math inline">\(\text{j}\)</span> is used instead of <span class="math inline">\(i.\)</span> Also
+    note that, conventially, examples of actual complex numbers such as <span class="math inline">\(2+3i\)</span> are written like this and not <span class="math inline">\(2+i 3\)</span>.</p>
+
+<p> Consider for a moment \(\sqrt{-4}\). Clearly this can't be a real number since we would like \((\sqrt{-4})^2=-4\), and the square of any real number is non-negative. Using the rule that \(\sqrt{-1}=i\) we can follow familiar algebraic rules and write
+    <span class="math inline">\[\sqrt{-4}=\sqrt{(4)(-1)}=\sqrt{4}\sqrt{-1}=2i,\]</span> a complex number.<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200616103958+gCWeYO</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210706164007+lmBE4o</text></tag>
+    </tags>
+    
+</question>
+</quiz>

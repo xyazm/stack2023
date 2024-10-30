@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26060">
+        <parent>0</parent>
+        <name>1.2.1.4 BODMAS</name>
+        <questiontext>&lt;p wiid="N1150"&gt;Recall that when several operations are involved we can make use of the BODMAS rule for
+deciding the order in which operations must be carried out. The BODMAS rule makes no mention of
+exponentiation. Exponentiation should be carried out immediately after any brackets have been dealt
+with and before multiplication and division. Consider the following examples.&lt;/p&gt;
+
+&lt;hr wiid="C1151"&gt;
+&lt;h4 class="HELM_example" wiid="C1152"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p wiid="C1153"&gt; Evaluate \(7\times 3^2\).&lt;/p&gt;
+&lt;h4 class="HELM_solution" wiid="C1154"&gt;Solution&lt;/h4&gt;
+&lt;p wiid="C1155"&gt;There are two operations involved here, exponentiation and multiplication. The
+exponentiation should be carried out before the multiplication. So \(7\times 3^2 = 7\times 9 = 63
+\).&lt;/p&gt;
+
+
+&lt;hr wiid="C1156"&gt;
+
+&lt;h4 class="HELM_example" wiid="C1157"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p wiid="C1158"&gt;Write out fully &lt;/p&gt;
+&lt;ol class="HELM_parts_inline" wiid="C1159"&gt;
+&lt;li wiid="C1160"&gt;\(3m^4\)&lt;/li&gt;
+&lt;li wiid="C1161"&gt;\((3m)^4\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution" wiid="C1162"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts" wiid="C1163"&gt;
+  &lt;li wiid="C1164"&gt;&lt;p wiid="C1165"&gt;In the expression \(3m^4\) the exponentiation is carried
+out before the multiplication by 3. So
+ \(   3m^4\) means \(3\times(m\times m\times
+m\times m)\)
+that is \( 3\times m \times m \times m
+\times m
+\)&lt;/p&gt;&lt;/li&gt;
+  &lt;li wiid="C1166"&gt;&lt;p wiid="C1167"&gt;Here the bracketed expression is raised to the power 4 and so
+should be multiplied by itself four times:
+ \(   (3m)^4 = (3m)\times (3m)\times  (3m)\times (3m)
+\)&lt;/p&gt;
+&lt;p wiid="C1168"&gt;Because of the associativity of multiplication we can write
+this as \(   3\times 3\times 3\times 3 \times m\times m \times m
+\times m \) or simply \(81m^4\).&lt;/p&gt;
+&lt;p wiid="C1169"&gt;Note the important distinction between \((3m)^4\) and \(3m^4\).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr wiid="C1170"&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200611062810+w7IT35</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210719114311+xZfD0l</version>
+        <hidden>0</hidden>
+        <timecreated>1591856890</timecreated>
+        <timemodified>1626694991</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2705</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

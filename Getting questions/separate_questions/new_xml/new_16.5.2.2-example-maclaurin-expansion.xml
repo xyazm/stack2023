@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24341 -->
+  <question type="stack">
+    <name>
+				<text>16.5.2.2 Example Maclaurin expansion</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4 class="HELM_example">Example</h4>
+<p>Find the Maclaurin expansion of <span class="math inline">\(\cos x\)</span>.</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Here \(f(x)=\cos x\) and, differentiating a number of times: \[f(x)=\cos x,\qquad f'(x)=-\sin x,\qquad f''(x)=-\cos x,\qquad f'''(x)=\sin x\quad \text{etc.}\] Evaluating each of these at \(x=0\): \[ f(0)=1,\quad f'(0)=0,\quad f''(0)=-1,\quad f'''(0)=0\
+    \text{etc.}\] Substituting into \(f(x)=f(0)+xf'(0)+\dfrac{x^2}{2!}f''(0)+\dfrac{x^3}{3!}f'''(0)+\cdots\), gives : \[\cos x=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\cdots\] Confirm (by finding the radius of convergence) that this series
+    is convergent for <strong>all </strong>values of \(x\). The geometrical approximation to \(\cos x\) by the first few terms of its Maclaurin series are shown in the figure below. </p>
+
+<figure class="HELM_figure">
+  <img src="@@PLUGINFILE@@/16-5-fig-2-taylor2.svg" alt="Linear, quadratic and cubic approximations to cos x" width="625" height="130" class="img-responsive atto_image_button_text-bottom">
+  <figcaption>Linear, quadratic and cubic approximations to \(\cos x\).</figcaption>
+</figure>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+201117183853+zEEoFe</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210610111112+dico5s</text></tag>
+    </tags>
+    
+</question>
+</quiz>

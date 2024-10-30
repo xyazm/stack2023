@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27219 -->
+  <question type="stack">
+    <name>
+				<text>35.3.1.5 Circuits using probability</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p><p>The diagram shows a simplified circuit in which two independent components \(a\) and \(b\) are connected in parallel.</p><p></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/figure1.svg" alt="" width="172" height="73" class="img-responsive atto_image_button_text-bottom"></p><p></p><p>The circuit functions if either or both of the components are operational. It is known that if \(A\) is the event 'component \(a\) is operating' and \(B\) is the event 'component \(b\) is operating' then \(\text{P}(A)=0.{@pa@}\), \(\text{P}(B)=0.{@pb@}\) and \(\text{P}(A\cap B)=0.{@pab@}\).&nbsp; Find the probability that the circuit is functioning.</p><p>[[input:ans1]] [[validation:ans1]]</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>The probability that the circuit is functioning is \(\text{P}(A\cup B)\). In words: either \(a\) or \(b\) or</p><p>both must be functioning if the circuit is to function. Using the keypoint:</p><p>\[\begin{eqnarray*}\text{P}(A\cup B)&amp;=&amp;\text{P}(A)+\text{P}(B)-\text{P}(A\cap B)\\ &amp;=&amp;0.{@pa@}+0.{@pb@}-0.{@pab@}=0.{@exp@} \end{eqnarray*}\]</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2021072200</text>
+		</stackversion>
+    <questionvariables>
+				<text>fpprintprec:2;
+aa: 3+rand(6)
+pa:100-aa
+bb: 3+rand(6)
+pb: 100-bb
+cc: max(aa,bb)+1;
+pab:100-cc;
+exp: (100-aa)+(100-bb)-(100-cc);
+ta:decimalplaces(float(exp/100),2);</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text><![CDATA[[[feedback:prt1]]]]></text>
+		</specificfeedback>
+    <questionnote>
+				<text>\(P(A)={@pa@},P(B) = {@pb@},P(A\cap B) = {@pab@} \, so \, P(functioning) = {@ta@}\)</text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>numerical</type>
+      <tans>ta</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>0</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200630150849+WYiRH4</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211012103803+KlpqUt</text></tag>
+    </tags>
+    <deployedseed>2111194657</deployedseed>
+    <deployedseed>1644718854</deployedseed>
+    <deployedseed>551611572</deployedseed>
+    <deployedseed>1661507850</deployedseed>
+    <deployedseed>1775243492</deployedseed>
+    <deployedseed>675121247</deployedseed>
+    <deployedseed>146583135</deployedseed>
+    <deployedseed>811353195</deployedseed>
+    <deployedseed>356026191</deployedseed>
+    <deployedseed>1237676604</deployedseed>
+    <deployedseed>1614157574</deployedseed>
+    <deployedseed>1930141441</deployedseed>
+    <deployedseed>1580837085</deployedseed>
+    <deployedseed>1748275541</deployedseed>
+    <deployedseed>1609002078</deployedseed>
+    <deployedseed>546761858</deployedseed>
+    <deployedseed>1513986787</deployedseed>
+    <deployedseed>112086790</deployedseed>
+    
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+</question>
+</quiz>

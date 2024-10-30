@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27232 -->
+  <question type="stack">
+    <name>
+				<text>35.4.3.1 Special cases</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Special cases </h3>
+<p> In the case where we consider \(A\) to be an event in a sample space \(S\) (the sample space is partitioned by \(A\) and \(A'\)) we can state simplified versions of the theorem of Total Probability and Bayes theorem as shown below. </p>
+<h4> The theorem of total probability: special case </h4>
+<p> This special case enables us to find the probability that an event \(B\) occurs taking into account the fact that another event \(A\) may or may not have occurred. The theorem becomes\[\mathbb{P}(B) = \mathbb{P}(B|A)\times\mathbb{P}(A) + \mathbb{P}(B|A')\times\mathbb{P}(A')\]The result is easily seen by considering the general result already derived or it may be derived directly
+as follows. Consider the figure below.</p><p style="text-align: center;"><strong><img src="@@PLUGINFILE@@/3-5-4-intersection.svg" alt="" role="presentation"><br></strong></p>
+<p style="text-align: center;"><strong>Figure:</strong> Intersections and complements.</p>
+<p> It is easy to see that the event \(B\) consists of the union of the (disjoint) events \(A\cap B\) and \(B\cap A'\) so that we may write \(B\) as the union of these disjoint events. We have\[B = (A\cap B)\cup (B\cap A').\]Since the events \(A\cap B\) and \(B\cap A'\) are disjoint, they must be independent and so\[\mathbb{P}(B) = \mathbb{P}(A\cap B) + \mathbb{P}(B\cap A').\]Using the conditional probability results we already have we may write\[\begin{aligned}\mathbb{P}(B) &amp;= \mathbb{P}(A\cap B)+\mathbb{P}(B\cap A')\\ &amp;= \mathbb{P}(B\cap A)+\mathbb{P}(B\cap A')\\
+&amp;= \mathbb{P}(B|A)\times\mathbb{P}(A)+\mathbb{P}(B|A')\times\mathbb{P}(A').\end{aligned}\]The result we have derived is\[\mathbb{P}(B) = \mathbb{P}(B|A)\times\mathbb{P}(A)+\mathbb{P}(B|A')\times\mathbb{P}(A').\] </p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200706151451+X7sMCM</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914233519+9jMLNJ</text></tag>
+    </tags>
+    
+</question>
+</quiz>

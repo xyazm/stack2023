@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27358 -->
+  <question type="stack">
+    <name>
+				<text>39.1.2.1 The Standard Normal Distribution</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>The Standard Normal Distribution</h3>
+
+<p>At this stage we shall, for simplicity, consider what is known as a standard normal distribution which is obtained by choosing particularly simple values for \(\mu\) and \(\sigma\).</p>
+
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p>The <b>standard normal distribution</b> has a mean of <b>zero</b> and a variance of <b>one</b></p>
+</div>
+
+<p>In the Figure below, we show the graph of the standard normal distribution which has probability density function \(y=\dfrac{1}{\sqrt{2\pi}}\ e^{-x^2/2}\).</p> 
+
+<p></p><center><img src="@@PLUGINFILE@@/39-1-fig-2-standardnormaldist.svg" alt="The Standard Normal Distribution Curve" width="332" height="87" class="img-responsive atto_image_button_text-bottom"><br></center><p></p> 
+<p></p><center><b>Figure</b>: The standard normal distribution curve</center><p></p> 
+
+<p>The result which makes the standard normal distribution so important is as follows:</p> 
+
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p>If the behaviour of a continuous random variable X is described by the distribution \(N(\mu, \sigma^2)\), then the behaviour of the random variable \(Z = \dfrac{X-\mu}{\sigma}\) is described by the standard normal distribution \(N(0, 1)\).</p>
+<p>We call \(Z\) the standardised normal variable and we write \(Z ∼ N(0, 1)\)</p>
+</div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>If the random variable \(X\) is described by the distribution \(N(45,0.000625)\), then what is the transformation required to obtain the standardised normal variable?</p> <p>
+</p><h4 class="HELM_solution">Solution</h4>
+<p> Here, \(\mu = 45\) and \(\sigma^2 = 0.000625\), so that \(\sigma = 0.025\). Hence \(Z = \dfrac{X-45}{0.025}\) is the required transformation.</p>
+<hr>
+
+<h4 class="HELM_example">Example</h4>
+<p>When the random variable \(X\sim N(45,0.000625)\) takes values between \(44.95\) and \(45.05\), between which values does the random variable \(Z\) lie?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>When \(X = 45.05, Z = \dfrac{45.05 − 45}{0.025} = 2\)</p>
+<p>When \(X = 44.95, Z = \dfrac{44.95 − 45}{0.025} = -2\)</p>
+<p>Hence \(Z\) lies between \(−2\) and \(2\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200728095455+7dzGXu</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200904105433+BK5qP5</text></tag>
+    </tags>
+    
+</question>
+</quiz>

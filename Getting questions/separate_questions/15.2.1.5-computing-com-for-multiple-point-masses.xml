@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24568">
+        <parent>0</parent>
+        <name>15.2.1.5 Computing COM for multiple point masses</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Obtain an equation for the location of the centre of mass of two objects of masses \(m_1\) and \(m_2\): &lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;located at distances \(x_1\) and \(x_2\) respectively, as shown part (a) of the Figure below.&lt;/li&gt;
+    &lt;li&gt;positioned on opposite sides of the origin as shown in part (b) of the Figure below.&lt;/li&gt;&lt;/ol&gt;
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/15-2-fig-5-CoM.svg" alt="15-2-fig-5.svg" width="600" height="140" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/figure&gt;
+    &lt;p&gt;Referring to part (a) of the above Figure, we first write down an expression for the sum of the individual moments: The total mass is \(m_1&#8197;+&#8197;m_2\) and the moment of the total mass is \((m_1&#8197;+&#8197;m_2)&#8197;\times&#8197;\bar{x}\)&lt;/p&gt;
+    &lt;p&gt; The moment of the total mass is equal to the sum of the moments of the individual masses. The equation satisfied by \(\bar{x}\) is &lt;/p&gt;
+    &lt;p&gt; \((m_1+m_2)\bar{x} = m_1x_1+m_2x_2\), so \(\bar{x}=\dfrac{m_1x_1+m_2x_2}{m_1+m_2}\)&lt;/p&gt;
+    &lt;p&gt; However, this is precisely what would have been obtained if, when working out the moment of a mass, we use its &lt;strong&gt; coordinate &lt;/strong&gt; (which takes account of sign) rather than using its &lt;strong&gt;distance&lt;/strong&gt; from the origin. &lt;/p&gt;
+    &lt;p&gt;For the second case, as depicted in part (b) of the figure, the mass &lt;span class="math inline"&gt;\(m_1\)&lt;/span&gt; positioned on the left-hand side has a turning effect &lt;span&gt;&lt;strong&gt;opposite&lt;/strong&gt;&lt;/span&gt; to that of the mass &lt;span class="math inline"&gt;\(m_2\)&lt;/span&gt;        positioned on the right-hand side. To take account of this difference we use a minus sign when determining the moment of &lt;span class="math inline"&gt;\(m_1\)&lt;/span&gt; about the origin. This gives a total moment &lt;/p&gt;
+    &lt;p&gt;&lt;span class="math inline"&gt;\(\qquad -(m_1x_1)+(m_2x_2)\)&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;leading to
+    &lt;/p&gt;
+    &lt;p&gt;&lt;span class="math inline"&gt;\(\qquad (-m_1x_1+m_2x_2)=(m_1+m_2)\bar{x}\qquad\)&lt;/span&gt;so &lt;span class="math inline"&gt;\(\qquad\bar{x}=\dfrac{-m_1x_1+m_2x_2}{m_1+m_2}\)&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt; However, this is precisely what would have been obtained if, when working out the moment of a mass, we use its &lt;span&gt;&lt;strong&gt;coordinate&lt;/strong&gt;&lt;/span&gt; (which takes account of sign) rather than using its &lt;span&gt;&lt;strong&gt;distance&lt;/strong&gt;&lt;/span&gt; from
+        the origin.
+    &lt;/p&gt;
+    &lt;hr&gt;
+    &lt;p&gt; The above formulae can be generalised very easily to deal with the general situation of \(n\) masses, \(m_1, m_2, \dots, m_n\) located at &lt;strong&gt;coordinate positions &lt;/strong&gt; \(x_1,x_2,\dots,x_n\) and is given in the Key Point below.&lt;/p&gt;
+    &lt;div class="HELM_keypoint"&gt;
+        &lt;h4&gt;Key Point&lt;/h4&gt;
+        &lt;p&gt;The &lt;strong&gt;centre of mass&lt;/strong&gt; of individual masses \(m_1, m_2, \dots, m_n\) located at positions \(x_1,x_2,\dots,x_n\) is \[\bar{x}=\dfrac{\sum_{i=1}^n m_i x_i}{\sum_{i=1}^n m_i}\]&lt;/p&gt;
+    &lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200817104619+9E9xZv</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610154726+H9ren7</version>
+        <hidden>0</hidden>
+        <timecreated>1597661179</timecreated>
+        <timemodified>1623340046</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="37864">
+        <parent>0</parent>
+        <name>1.4.1.1 Cancelling Common Factors</name>
+        <questiontext>&lt;h3&gt;&lt;span style="color: inherit; font-family: inherit;"&gt;Cancelling Common Factors&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;Consider the fraction \(\displaystyle{10\over 35}\). To simplify it we can factorise the numerator and the denominator and then cancel any common factors. Common factors are those factors which occur in both the numerator and the denominator. Thus&lt;/p&gt;
+&lt;p&gt;\(\qquad\displaystyle {10\over 35} = {\not{5}\times 2\over 7\times \not{5}} = {2\over 7}\)&lt;/p&gt;
+&lt;p&gt;Note that the common factor 5 has been cancelled. It is important to remember that only &lt;em&gt;common factors&lt;/em&gt; can be cancelled. The fractions \(\displaystyle{10\over 35}\) and \(\displaystyle{2\over 7}\) have identical values - they are equivalent fractions - but \(\displaystyle{2\over 7}\) is in a simpler form than \(\displaystyle{10\over 35}\).&lt;/p&gt;
+&lt;p&gt;We apply the same process when simplifying algebraic fractions.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Leave the expression in its most simplified form&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(\displaystyle{yx\over 2x}\)&lt;/li&gt;
+&lt;li&gt;\(\displaystyle{x\over xy}\)&lt;/li&gt;
+&lt;li&gt;\(\displaystyle{x\over x+y}\)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;\(\dfrac{y}{2}\)&lt;/li&gt;
+&lt;p&gt;In the expression \(\dfrac{yx}{2x}\) \(x\) is a factor common to both numerator and denominator. This common factor can be cancelled to give&lt;/p&gt;
+&lt;p&gt;\(\dfrac{y\not{x}}{2\not{x}} = \dfrac{y}{2}\)&lt;/p&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;\(\dfrac{1}{y}\)
+&lt;p&gt;Note that \(\dfrac{x}{xy}\) can be written as \(\dfrac{1x}{xy}\). The common factor of x can be cancelled to give&lt;/p&gt;
+&lt;p&gt;\(\dfrac{1\not{x}}{\not{x}y} = \dfrac{1}{y}\)&lt;/p&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;\(\dfrac{x}{x+y}\)
+&lt;p&gt;In the expression \(\dfrac{x}{x+y}\) notice that an \(x\) appears in both numerator and denominator.&lt;/p&gt;
+&lt;p&gt;However \(x\) is not a common factor. Recall that factors of an expression are multiplied together whereas in the denominator \(x\) is added to \(y\). This expression cannot be simplified.
+&lt;/p&gt;&lt;/li&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210909160553+eIiaNk</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210913161441+PN0s2w</version>
+        <hidden>0</hidden>
+        <timecreated>1631203553</timecreated>
+        <timemodified>1631549681</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>2762</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

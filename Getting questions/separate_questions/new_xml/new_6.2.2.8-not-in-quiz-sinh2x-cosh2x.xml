@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26516 -->
+  <question type="stack">
+    <name>
+				<text>6.2.2.8 (not in quiz) sinh(2x), cosh(2x)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise&nbsp;</p>
+<p>Which of the following identities are correct?</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>Note the following.</p>
+<p>\( \sinh(2x) = \sinh (x+x) \), so using the formula for \( \sinh(x+y) \) with \( y = x \) we obtain \( \sinh(2x) = 2 \sinh x \cosh x \).</p>
+<p>\( \cosh(2x) = \cosh (x+x) \), so using the formula for \( \cosh(x+y) \) with \( y = x \) we obtain \( \cosh(2x) = \cosh^2 x + \sinh^ 2 x \).</p>
+<p>Recall that \( \cosh^2 x - \sinh^2 x = 1 \) (previous key point) which implies \( \sinh^2 x = \cosh^2 x - 1 \), so combining with the formula for \(\cosh^2 x\) just obtained above we get
+\[ \cosh(2x) = \cosh^2 x + \sinh^ 2 x = \cosh^2 x + ( \cosh^2 x - 1) = 2 \cosh^2 x - 1.\]</p>
+<p>Also, \( \cosh^2 x - \sinh^2 x = 1 \) (previous key point) implies \( \cosh^2 x = 1 + \sinh^2 x\), so combining with the formula for \(\cosh^2 x\) just obtained above we get
+\[ \cosh(2x) = \cosh^2 x + \sinh^ 2 x = (1+ \sinh^2 x) + \sinh^2 x = 1 + 2 \sinh^2 x.\]</p>
+<p>To see that each of the other identities is incorrect, specify a particular value for \(x\) for which the identity is wrong. Also note that they are inconsistent with the correct identities that are proved above. </p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200619183432+n6S16x</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200716112642+fLbqft</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26293">
+        <parent>0</parent>
+        <name>22.3.2.2 Pick symmetric matrices</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;A matrix is called &lt;strong&gt;symmetric&lt;/strong&gt; if is it symmetric across the main diagonal. In other words, transposing these matrices, i.e. interchanging their rows and columns, does not change them:
+\[A^T=A.\]&lt;/p&gt;
+&lt;p&gt;Select exactly the symmetric matrices:&lt;/p&gt;
+&lt;p&gt;[[input:ans_sym_list]] [[validation:ans_sym_list]]&amp;nbsp;[[feedback:prt_sym_list]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;Let \(A = {@a1@}\). Then \(A^T = {@a1@} = A\), therefore \(A\) is symmetric.&lt;/p&gt;
+
+&lt;p&gt; Let \(A = {@a2@}\). Then \(A^T = {@transpose(a2)@} \neq A\), therefore \(A\) is not symmetric. &lt;/p&gt;
+
+&lt;p&gt;Let \(A = {@a3@}\). Then \(A^T = {@transpose(a3)@} = A\), therefore \(A\) is symmetric. &lt;/p&gt;
+
+&lt;p&gt; Let \(A = {@a4@}\). Then \(A^T = {@transpose(a4)@} \neq A\), therefore \(A\) is not symmetric. &lt;/p&gt;
+
+&lt;p&gt;Let \(A = {@a5@}\). Then \(A^T = {@transpose(a5)@} = A\), therefore \(A\) is symmetric. &lt;/p&gt;
+
+&lt;p&gt; Let \(A = {@a6@}\). Then \(A^T = {@transpose(a6)@} \neq A\), therefore \(A\) is not symmetric. &lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200625131845+JQSF9t</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210708144534+FxO5ZD</version>
+        <hidden>0</hidden>
+        <timecreated>1593091125</timecreated>
+        <timemodified>1625755534</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17812">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>maxn : 9;
+a1 : matrixmap(lambda([ex],rand_with_step(-maxn,maxn,1)), zeromatrix(2,2));
+a1[2,1] : a1[1,2];  /* symmetric now */
+a2 : matrixmap(lambda([ex],rand_with_step(-maxn,maxn,1)), zeromatrix(2,2));
+a2[2,1] : rand_with_prohib(-maxn,maxn,[a2[1,2]]); /* make sure it's not symmetric */
+a3 : matrixmap(lambda([ex],rand_with_step(-maxn,maxn,1)), zeromatrix(3,3));
+a3[2,1] : a3[1,2]; a3[3,1] : a3[1,3]; a3[3,2] : a3[2,3];  /* symmetric now */
+a4 : matrixmap(lambda([ex],rand_with_step(-maxn,maxn,1)), zeromatrix(3,3));
+a4[3,2] : rand_with_prohib(-maxn,maxn,[a4[2,3]]); /* make sure it's not symmetric */
+v : rand_with_step(-maxn,maxn,1);
+/* a5 : genmatrix(lambda([i,j],v), 3, 3); */
+a5: zeromatrix(2,2);
+a6 : matrixmap(lambda([ex],rand_with_step(-maxn,maxn,1)), zeromatrix(2,2));
+a6[1,1] : a6[2,2]; a6[1,2] = rand_with_prohib(-maxn,maxn,[a6[2,1]]) /* make sure it's wrong symmetric */
+
+ta : random_permutation([ [a1,true], [a2,false], [a3,true], [a4,false], [a5,true], [a6,false] ]);
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\({@ta@}, {@ta[1][1]@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41875">
+              <name>ans_sym_list</name>
+              <type>checkbox</type>
+              <tans>ta</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36283">
+              <name>prt_sym_list</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54299">
+                  <nodename>0</nodename>
+                  <answertest>Sets</answertest>
+                  <sans>setify(ans_sym_list)</sans>
+                  <tans>setify(mcq_correct(ta))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41102">
+              <testcase>1</testcase>
+              <timemodified>1593095878</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89095">
+                  <inputname>ans_sym_list</inputname>
+                  <value>mcq_correct(ta)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77273">
+                  <prtname>prt_sym_list</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41103">
+              <testcase>2</testcase>
+              <timemodified>1593096373</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89096">
+                  <inputname>ans_sym_list</inputname>
+                  <value>[matrix([0,0],[0,0])]</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77274">
+                  <prtname>prt_sym_list</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="173801">
+              <seed>1433076699</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173802">
+              <seed>1058758573</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173803">
+              <seed>901623094</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173804">
+              <seed>1671088752</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173805">
+              <seed>1484152529</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173806">
+              <seed>526454197</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173807">
+              <seed>494657264</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173808">
+              <seed>426499238</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173809">
+              <seed>759140100</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173810">
+              <seed>1011563060</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

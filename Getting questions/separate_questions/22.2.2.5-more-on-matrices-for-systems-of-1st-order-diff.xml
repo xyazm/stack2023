@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26801">
+        <parent>0</parent>
+        <name>22.2.2.5 More on matrices for systems of 1st order diff</name>
+        <questiontext>&lt;p&gt;The essential difference between the two pairs of differential equations just considered is that the first pair were really separate equations whereas the second pair were coupled:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The first equation involving only the unknown &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;, the second involving only &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;. In matrix terms this corresponded to a &lt;span&gt;&lt;strong&gt;diagonal&lt;/strong&gt;&lt;/span&gt; matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; in the system &lt;span class="math inline"&gt;\(\dot {\underline{x}}=A \underline{x}\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The pair were coupled in that &lt;span&gt;&lt;strong&gt;both&lt;/strong&gt;&lt;/span&gt; equations involved &lt;span&gt;&lt;strong&gt;both &lt;/strong&gt;&lt;/span&gt; &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;. This corresponded to the &lt;span&gt;&lt;strong&gt;non-diagonal&lt;/strong&gt;&lt;/span&gt; matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; in the system &lt;span class="math inline"&gt;\(\dot{\underline{x}}=A \underline{x}.\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Clearly the second system here is more difficult to deal with than the first and this is where we can use our knowledge of diagonalization.&lt;/p&gt;
+&lt;p&gt;Consider a system of differential equations written in matrix form: &lt;span class="math inline"&gt;\(\dot{\underline{x}}=A \underline{x}\)&lt;/span&gt; where 
+&lt;br&gt;\(\qquad \underline{x}=\left[\begin{array}{c}x(t)\\
+y(t)\end{array}\right]\qquad \text{ and}\qquad \dot{\underline{x}}=\left[\begin{array}{c}\dot x (t)\\
+\dot y (t)\end{array}\right]\)
+We now introduce a new column vector of unknowns &lt;span class="math inline"&gt;\(Y=\left[\begin{array}{c}r(t)\\
+s(t)\end{array}\right]\)&lt;/span&gt; through the relation &lt;span class="math inline"&gt;\( \underline{x}=P\underline{y}\)&lt;/span&gt; where &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; is the modal matrix of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. Then, since &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; is a matrix of constants: 
+&lt;br&gt;\(\qquad\dot{\underline{x}}= P\dot{\underline{y}}\qquad
+\text{ so}\quad \dot{\underline{x}}=A\underline{x}\quad \text{ becomes}\quad P\dot{\underline{y}}=A(P \underline{y})\)&lt;br&gt;
+Then multiplying by \( P^{-1}\) on the left, &lt;br&gt;
+\(\qquad \dot{\underline{y}}= (P^{-1}AP) \underline{y}\)&lt;/span&gt; &lt;br&gt;
+But, because of the properties of the modal matrix, we know that &lt;span class="math inline"&gt;\(P^{-1}AP\)&lt;/span&gt; is a &lt;span&gt;&lt;strong&gt;diagonal matrix&lt;/strong&gt;&lt;/span&gt;. Thus if &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2\)&lt;/span&gt; are &lt;span&gt;&lt;strong&gt;distinct&lt;/strong&gt;&lt;/span&gt; eigenvalues of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; then: 
+&lt;br&gt;\(\qquad P^{-1}AP=\left[\begin{array}{cc}\lambda_1&amp;amp;0\\
+0&amp;amp;\lambda_2\end{array}\right]\)&lt;br&gt;
+Hence &lt;span class="math inline"&gt;\(\dot{\underline{y}}=(P^{-1}AP) \underline{y}\)&lt;/span&gt; becomes 
+&lt;br&gt;\(\qquad \left[\begin{array}{c}\dot r\\
+\dot s\end{array}\right]=\left[\begin{array}{cc}\lambda_1&amp;amp;0\\
+0&amp;amp;\lambda_2\end{array}\right]\left[\begin{array}{c}r\\
+s\end{array}\right].\)
+&lt;br&gt;That is, when written out we have 
+&lt;br&gt;\(\qquad \dot r = \lambda_1 r\)
+\(\qquad \dot s = \lambda_1 s\)
+&lt;br&gt;These equations are &lt;span&gt;&lt;strong&gt;decoupled&lt;/strong&gt;&lt;/span&gt;. The first equation only involves the unknown function &lt;span class="math inline"&gt;\(r(t)\)&lt;/span&gt; and has solution &lt;span class="math inline"&gt;\(r(t)=Ce^{\lambda_1t}\)&lt;/span&gt;. The second equation only involves the unknown function &lt;span class="math inline"&gt;\(s(t)\)&lt;/span&gt; and has solution &lt;span class="math inline"&gt;\(s(t)=Ke^{\lambda_2t}\)&lt;/span&gt;. &lt;span class="math inline"&gt;\([C,K\)&lt;/span&gt; are arbitrary constants.]&lt;/p&gt;
+&lt;p&gt;Once &lt;span class="math inline"&gt;\(r,s\)&lt;/span&gt; are known the original unknowns &lt;span class="math inline"&gt;\(x,y\)&lt;/span&gt; can be found from the relation &lt;span class="math inline"&gt;\(\underline{x} =P \underline{y}\)&lt;/span&gt;. Note that the theory outlined above is more widely applicable as specified in the next Key Point:&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;For any system of differential equations of the form \(\dot{\underline{x}} =A \underline{x},\) where &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is an &lt;span class="math inline"&gt;\(n\times n\)&lt;/span&gt; matrix with distinct eigenvalues &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\dots ,\lambda_n\)&lt;/span&gt;, and &lt;span class="math inline"&gt;\(t\)&lt;/span&gt; is the independent variable, the solution is &lt;span class="math display"&gt;\[\underline{x}=P \underline{y},\]&lt;/span&gt; where &lt;span class="math inline"&gt;\(P\)&lt;/span&gt; is the modal matrix of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; and &lt;span class="math display"&gt;\[Y=[C_1 e^{\lambda_1t},\ C_2 e^{\lambda_2t},\dots ,C_n e^{\lambda_nt}]^T.\]&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the solution of the coupled differential equations
+&lt;br&gt;\(\qquad\dot x =4x+2y\)
+\(\qquad \dot y =-x+y\)
+&lt;br&gt;with initial conditions \(\qquad x(0)=1\qquad y(0)=0\) 
+Here \(\dot x\equiv \dfrac{dx}{dt}\) and \(\dot y\equiv \dfrac{dy}{dt}\).&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+
+&lt;p&gt;Here &lt;span class="math inline"&gt;\(\quad A=\left[\begin{array}{cc}\hfill 4&amp;amp;\hfill 2\\
+\hfill -1&amp;amp;\hfill 1\end{array}\right].\)&lt;/span&gt; It is easily checked that &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; has distinct eigenvalues &lt;span class="math inline"&gt;\(\lambda_1=3\) and \(\lambda_2=2\)&lt;/span&gt; and corresponding eigenvectors &lt;span class="math inline"&gt;\(\underline{x_1}=\left[\begin{array}{c}\hfill -2\\
+\hfill 1\end{array}\right],\ \underline{x_2}=\left[\begin{array}{c}\hfill 1\\
+\hfill -1\end{array}\right]\)&lt;/span&gt;. 
+Therefore, taking &lt;span class="math inline"&gt;\(\quad P=\left[\begin{array}{cc}\hfill -2&amp;amp;\hfill 1\\
+\hfill 1&amp;amp;\hfill -1\end{array}\right]\qquad\text{ then}\qquad
+P^{-1}AP=\left[\begin{array}{cc}3&amp;amp;0\\ 0&amp;amp;2\end{array}\right]\)&lt;/span&gt; and using the previous Key Point, 
+&lt;br&gt;\(\quad r(t)=Ce^{3t}\qquad s(t)=Ke^{2t},\) so&lt;br&gt;
+&lt;span class="math display"&gt;\[\begin{aligned}
+\left[\begin{array}{c}x\\
+y\end{array}\right]\equiv \underline{x}=P\underline{y}=\left[\begin{array}{cc}\hfill -2&amp;amp;\hfill 1\\
+\hfill 1&amp;amp;\hfill -1\end{array}\right]\left[\begin{array}{c}r\\
+s\end{array}\right]
+&amp;amp;=&amp;amp;\left[\begin{array}{cc}\hfill -2&amp;amp;\hfill 1\\
+\hfill 1&amp;amp;\hfill -1\end{array}\right]\left[\begin{array}{c}Ce^{3t}\\
+Ke^{2t}\end{array}\right]\\
+&amp;amp;=&amp;amp;\left[\begin{array}{cc}-2Ce^{3t}+Ke^{2t}\\
+Ce^{3t}-Ke^{2t}\end{array}\right].\end{aligned}\]&lt;/span&gt; Therefore &lt;span class="math inline"&gt;\(x=-2Ce^{3t}+Ke^{2t}\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y=Ce^{3t}-Ke^{2t}.\)&lt;/span&gt; 
+We can now impose the initial conditions &lt;span class="math inline"&gt;\(x(0)=1\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y(0)=0\)&lt;/span&gt; to give &lt;span class="math display"&gt;\[\begin{aligned}
+1&amp;amp;=-2C+K\\
+0&amp;amp;=C-K.\end{aligned}\]&lt;/span&gt; Thus &lt;span class="math inline"&gt;\(C=K=-1\)&lt;/span&gt; and the solution to the original system of differential equations is &lt;span class="math display"&gt;\[\begin{aligned}
+x(t)&amp;amp;=2e^{3t}-e^{2t}\\
+y(t)&amp;amp;=-e^{3t}+e^{2t}\end{aligned}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;The approach we have demonstrated in the previous Example can be extended to&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Systems of first order differential equations with &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; unknowns&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Systems of second order differential equations (described in the next subsection).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The only restriction, as we have said, is that the matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; in the system &lt;span class="math inline"&gt;\(\dot{\underline{x}}=A \underline{x}\)&lt;/span&gt; has distinct eigenvalues.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200618150149+WZB8bN</stamp>
+        <version>stack2.maths.ed.ac.uk+200827144402+w9Y5dv</version>
+        <hidden>0</hidden>
+        <timecreated>1592492509</timecreated>
+        <timemodified>1598539442</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

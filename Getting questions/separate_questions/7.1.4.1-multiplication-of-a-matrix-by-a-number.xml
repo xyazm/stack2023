@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26569">
+        <parent>0</parent>
+        <name>7.1.4.1 Multiplication of a matrix by a number</name>
+        <questiontext>&lt;h3&gt;Multiplication of a matrix by a number&lt;/h3&gt;
+&lt;p&gt;There is also a natural way of defining the product of a matrix with a number. Using the matrix \(A\) above, we note that&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;p&gt;\[ A+A=\left[\begin{array}{cc}1&amp;amp;2\\3&amp;amp;4\end{array}\right]+\left[\begin{array}{cc}1&amp;amp;2\\3&amp;amp;4\end{array}\right]=\left[\begin{array}{cc}2&amp;amp;4\\6&amp;amp;8\end{array}\right].\]&lt;/p&gt;&lt;p&gt;What we see is that \(2A\) (which is the shorthand notation for \(A+A\)) is obtained by multiplying &lt;span&gt;&lt;i&gt;every&lt;/i&gt;&lt;/span&gt;&amp;nbsp;element of \(A\) by \(2\).&lt;/p&gt;&lt;p&gt;In general if \(A\) is an \(m\times n\) matrix with typical element \(a_{ij}\) then the product of a number \(k\) with \(A\) is written \(kA\) and has the corresponding elements \(ka_{ij}\).&lt;/p&gt;&lt;p&gt;Hence, again using the matrix \(A\) above,&amp;nbsp;&lt;/p&gt;&lt;p&gt;\[7A=7\left[\begin{array}{cc}1&amp;amp;2\\3&amp;amp;4\end{array}\right]=\left[\begin{array}{rr}7&amp;amp;14\\ 21&amp;amp;28\end{array}\right].\]&lt;/p&gt;&lt;p&gt;Similarly:&lt;/p&gt;&lt;p&gt;\[ -3A=\left[\begin{array}{rr}-3&amp;amp;-6\\ -9&amp;amp;-12\end{array}\right].\]&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619140243+P2gokX</stamp>
+        <version>stack2.maths.ed.ac.uk+200714085329+WIgLVY</version>
+        <hidden>0</hidden>
+        <timecreated>1592575363</timecreated>
+        <timemodified>1594716809</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

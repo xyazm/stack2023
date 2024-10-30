@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="36058">
+        <parent>0</parent>
+        <name>1.5.2.19 Transposition and Substitution with Units</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise &lt;br&gt;&lt;/p&gt;
+&lt;p&gt; In the design of orifice plate flowmeters, the volumetric flowrate, \(Q\) \((\textrm{m}^{2}\textrm{s}^{-1})\), is given by \[Q = CO\sqrt{\dfrac{2g\Delta h}{1 - O^{2}/P^{2}}}\] where \(C\) is a dimensionless discharge coefficient, \(\Delta h \textrm{ (m)}\)
+    is the head difference across the orifice plate and \(O\) \((\textrm{m}^{2})\) is the area of the orifice and \(P\) \((\textrm{m}^{2})\) is the area of the pipe.
+&lt;/p&gt;
+&lt;br&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;Rearrange the equation to solve for the area of the orifice, \(O\), in terms of the other variables \(O =\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/li&gt;
+    &lt;li&gt;&lt;p&gt;A volumetric flowrate of {@aq*10^6@} \(\textrm{cm}^{3}\textrm{s}^{-1}\) passes through a {@diam*100@} \(\textrm{cm}\) inside diameter pipe. Assuming a discharge coefficient of {@float(ac)@}, calculate the required orifice diameter, so that the head difference across the orifice plate is {@ah*1000@} \(\textrm{mm}\).&lt;/p&gt;
+      &lt;p&gt;(Give your answer as a decimal to three decimal places, note that trailing zeroes are required i.e. \(2.3\) must be written as \(2.300\).)&lt;/p&gt;
+      &lt;p&gt;Orifice diameter = [[input:ans2]] [[validation:ans2]]&lt;/p&gt; [[feedback:prt2]]&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;We have the equation \[Q = CO\sqrt{\dfrac{2g\Delta h}{1-O^{2}/P^{2}}}\] First divide by \(CO\) \[\implies \dfrac{Q}{CO} = \sqrt{\dfrac{2g\Delta h}{1-O^{2}/P^{2}}}\] Square both sides \[\implies \dfrac{Q^{2}}{C^{2}O^{2}} = \dfrac{2g\Delta h}{1-O^{2}/P^{2}}\] Multiply through by \((1-O^{2}/P^{2})\), expand out the brackets and simplify \[\implies \dfrac{Q^{2}}{C^{2}O^{2}}(1-O^{2}/P^{2}) = 2g\Delta h \implies \dfrac{Q^{2}}{C^{2}O^{2}}-\dfrac{Q^{2}}{C^{2}O^{2}}(\dfrac{O^{2}}{P^{2}}) = 2g\Delta h \implies \dfrac{Q^{2}}{C^{2}O^{2}}-\dfrac{Q^{2}}{C^{2}P^{2}} = 2g\Delta h\] Multiply through by \(C^2P^2\) \[\implies \dfrac{Q^{2}P^{2}}{O^2}-Q^2 = 2g\Delta hC^{2}P^{2}\] Add \(Q^2\) to both sides \[\implies \dfrac{Q^{2}P^{2}}{O^2} = Q^2+2g\Delta hC^{2}P^{2}\] Multiply by \(O^2\) \[\implies Q^{2}P^{2} = O^2(Q^2+2g\Delta hC^{2}P^{2})\] Divide by \((Q^2+2g\Delta hC^{2}P^{2})\) \[\implies O^2 = \dfrac{Q^{2}P^{2}}{Q^2+2g\Delta hC^{2}P^{2}}\] We then take the square root of both sides of the equation \[\implies \sqrt{O^2} = \sqrt{\dfrac{Q^{2}P^{2}}{Q^2+2g\Delta hC^{2}P^{2}}}\] Since Q, O and A take positive values this can be simplified to transpose the equation in terms of \(O\) \[\implies O = \dfrac{QP}{\sqrt{Q^2+2g\Delta hC^{2}P^{2}}}\]&lt;/li&gt;
+
+&lt;li&gt;We first need to convert these input values so to SI units.
+&lt;br&gt;
+&lt;p&gt;\(Q = {@aq*10^6@} \textrm{ cm}^{3}\textrm{s}^{-1} = {@dispsf(float(aq),1)@} \textrm{ m}^{3}\textrm{s}^{-1}\)&lt;/p&gt;
+&lt;p&gt;diameter of pipe \(= {@diam*100@} \textrm{ cm} = {@float(diam)@} \textrm{ m} \implies P = \pi \dfrac{{@float(diam)@}^2}{4} = {@dispsf(float(ap),4)@}...\textrm{ m}\)&lt;/p&gt;
+&lt;p&gt;\(C = {@float(ac)@}\)&lt;/p&gt;
+&lt;p&gt;\(\Delta h =  {@ah*1000@} \textrm{ mm} =  {@float(ah)@} \textrm{ m}\)&lt;/p&gt;
+&lt;p&gt;\(g = 9.81 \textrm{ m}\textrm{s}^{-2}\)&lt;/p&gt;
+&lt;br&gt;
+We can now substitute these values into our equation for \(O\) \[O = \dfrac{QP}{\sqrt{Q^2+2g\Delta hC^{2}P^{2}}} = \dfrac{{@dispsf(float(aq),1)@}\cdot {@dispsf(float(ap),4)@}...}{\sqrt{{@dispsf(float(aq),1)@}^2+2\cdot 9.81\cdot {@float(ah)@}\cdot {@float(ac)@}^{2}\cdot ({@dispsf(float(ap),4)@}...)^{2}}} = {@ta2w@}\]
+To finally get the orifice diameter from this value we transpose the formula for the area of a circle \(\text{area} = \pi \cdot (\dfrac{diameter}{2})^2\) to get \[\text{orifice diameter} = 2 \sqrt{\dfrac{O}{\pi}} = 2 \sqrt{\dfrac{{@ta2w@}}{\pi}} = {@ta2@}\]
+&lt;/li&gt;&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210819105537+22eIjW</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220914120558+tuYf5l</version>
+        <hidden>0</hidden>
+        <timecreated>1629370537</timecreated>
+        <timemodified>1663157158</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="25076">
+            <stackversion>2022082900</stackversion>
+            <questionvariables>stack_unit_si_declare(true);
+eqn: C*O*((2*g*h)/(1-(O^2/P^2)))
+
+ta1: (Q*P)/sqrt(Q^2+2*g*h*C^2*P^2)
+
+aq: rand([1/10000,1/5000])
+diam: rand([1/10,1/5])
+ap: %pi*((diam/2)^2)
+ah: rand([1/5,2/5])
+ac: rand([6/10,8/10])
+
+eqnd: sqrt((4/%pi)*((Q*P)/sqrt(Q^2+2*g*h*C^2*P^2)))
+ta2: stackunits(dispsf(float(ev(eqnd,Q=aq,P=ap,g=981/1000,h=ah,C=ac)),3), m)
+ta2w: stackunits(dispsf(float(ev(ta1,Q=aq,P=ap,g=981/1000,h=ah,C=ac)),3), m^2)</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\( Q ={@aq*10^6@} \textrm{cm}^{3}\textrm{s}^{-1}, \, C =  {@float(ac)@} \) so \( O = {@ta2@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="58456">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>20</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="58457">
+              <name>ans2</name>
+              <type>units</type>
+              <tans>ta2</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="50119">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="76660">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="50120">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="76661">
+                  <nodename>0</nodename>
+                  <answertest>Units</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions>[2,-1]</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="76733">
+                  <nodename>1</nodename>
+                  <answertest>Units</answertest>
+                  <sans>ans2</sans>
+                  <tans>stackunits(dispsf(float(ev(sqrt((4/%pi)*(ans1)),Q=aq,P=ap,g=981/1000,h=ah,C=ac)),3), m)</tans>
+                  <testoptions>[2,-1]</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>1</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback>You have correctly substituted the inputs into your equation for part (a) however because your part (a) is wrong this is also not the correct answer.</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="57063">
+              <testcase>1</testcase>
+              <timemodified>1629488661</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="124403">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="124404">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="106284">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="106285">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="57064">
+              <testcase>2</testcase>
+              <timemodified>1663156957</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="362373">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="362374">
+                  <inputname>ans2</inputname>
+                  <value>stackunits(dispsf(float(ev(eqnd*100,Q=aq,P=ap,g=981/1000,h=ah,C=ac)),3), cm)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="316482">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="316483">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="59034">
+              <testcase>3</testcase>
+              <timemodified>1630089106</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128392">
+                  <inputname>ans1</inputname>
+                  <value>2</value>
+                </stackqtestinput>
+                <stackqtestinput id="128393">
+                  <inputname>ans2</inputname>
+                  <value>dispsf(sqrt((4/%pi)*(2)),3)*m</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109897">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="109898">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="777927">
+              <seed>11819744</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777928">
+              <seed>78265521</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777929">
+              <seed>949671228</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777930">
+              <seed>78442244</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777931">
+              <seed>1698539413</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777932">
+              <seed>1889586457</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777933">
+              <seed>1545749093</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777934">
+              <seed>10719976</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="777935">
+              <seed>402899688</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

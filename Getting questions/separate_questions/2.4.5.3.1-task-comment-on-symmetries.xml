@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25740">
+        <parent>0</parent>
+        <name>2.4.5.3.1 Task: Comment on symmetries</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;&lt;p&gt;The following diagrams shows graphs of several functions. They share a common property. Study the graphs and comment on any symmetry.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/block6-fig7-1.svg" alt="block6-fig7" width="541" height="135" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;i&gt;Answer: There is rotational symmetry about the origin. That is, each curve, when rotated through \(180^{\circ}\), transforms into itself.&lt;/i&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200710223148+zLqcIG</stamp>
+        <version>stack2.maths.ed.ac.uk+200710223842+ksCDm8</version>
+        <hidden>0</hidden>
+        <timecreated>1594420308</timecreated>
+        <timemodified>1594420722</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

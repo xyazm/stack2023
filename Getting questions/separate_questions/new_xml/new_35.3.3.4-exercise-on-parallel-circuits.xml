@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27226 -->
+  <question type="stack">
+    <name>
+				<text>35.3.3.4 Exercise on Parallel circuits</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p></p><p>A circuit has four independent switches \(A, B, C\) and \(D\) wired in parallel as shown below.</p><p></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/35.3.3%20Exercise.svg" class="img-responsive atto_image_button_text-bottom" alt="" width="191" height="84"></p><p style="text-align: center;"><b>Switches in Parallel</b></p><p></p><p>Current can only flow through the bank of switches if at least one is closed.&nbsp; The probabilities that \(A, B, C\) and \(D\)&nbsp; are closed are \(\displaystyle{{@aa@}, {@bb@}, {@cc@}}\) and \(\displaystyle{{@dd@}}\) respectively. Calculate the probability that current can flow through the bank of switches.</p><p>[[input:ans1]] [[validation:ans1]]</p><p>Hint: First consider the opposite case that the current does not
+flow.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>Denoting the switches by \(A, B, C\)&nbsp; and \(D\) we have:</p><p>\[\begin{eqnarray*}\text{P}(A\cup B\cup C\cup D)&amp;=&amp;\text{P} (A)+\text{P}(B)+\text{P} (C)+\text{P} (D)-\text{P} (A\cap B)- \text{P} (B\cap C)\\&amp;-&amp; \text{P} (C\cap D- \text{P} (D\cap A)- \text{P} (A\cap C)-\text{P} (B\cap D)\\&amp;+&amp;\text{P} (A\cap B\cap C)+ \text{P} (B\cap C\cap D)+\text{P} (C\cap D\cap A)+\text{P} (D\cap A\cap B)\\&amp;-&amp; \text{P} (A\cap B\cap C\cap D)\end{eqnarray*}\]</p><p>Using the fact that the switches operate independently and substituting gives:</p><p>\[ \text{P} (A\cup B\cup C\cup D)=3-3.35+1.65-0.3024=0.9976\]</p><p>Hence, the probability that current can flow through the bank of switches is \(\displaystyle {@ta@}\).</p><p>Alternative solution:</p><p>Consider the opposite case where the current does <i>not</i> flow through, then all of the switches
+need to be open. If \(A\), \(B\), \(C\) and \(D\) represent the event that the respective switch is closed, then the
+event \(A’ \cap B’ \cap C’ \cap D’\) represents all four switches being closed. As each switch is
+independent, we have:
+\[
+P(A’\cap B’\cap C’\cap D’) = P(A’)P(B’)P(C’)P(D’)
+= {@naa@}\times{@nbb@}\times{@ncc@}\times{@ndd@}= \frac{3}{1250}. \]
+Therefore the probability that the current flows is</p><p>\begin{eqnarray*}\text{P}(A\cup B\cup C\cup D)&amp;=&amp;1-\text{P}(A'\cap B'\cap C'\cap D')\\&amp;=&amp;1-&nbsp;\frac{3}{1250}=0.9976.\end{eqnarray*}</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2021072200</text>
+		</stackversion>
+    <questionvariables>
+				<text>listprobs:[9/10,8/10,7/10,6/10]
+aa:rand(listprobs)
+naa:1-aa
+lista:delete(aa,listprobs)
+bb:rand(lista)
+nbb:1-bb
+listb:delete(bb,lista)
+cc:rand(listb)
+ncc:1-cc
+dd:delete(cc,listb)[1]
+ndd:1-dd
+ta: aa+bb+cc+dd-(aa*bb+aa*cc+aa*dd+bb*cc+bb*dd+cc*dd)+(aa*bb*cc+aa*bb*dd+aa*cc*dd+bb*cc*dd)-aa*bb*cc*dd</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text><![CDATA[[[feedback:prt1]]]]></text>
+		</specificfeedback>
+    <questionnote>
+				<text>probabilities that \(A, B, C, D\)  are closed are \(\displaystyle{{@aa@}, {@bb@}, {@cc@}, {@dd@}}\) so \( P(flow) = {@ta@}\)</text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200701114041+mTXmi3</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211012115423+QgleuS</text></tag>
+    </tags>
+    <deployedseed>977737006</deployedseed>
+    <deployedseed>1359679858</deployedseed>
+    <deployedseed>177755910</deployedseed>
+    <deployedseed>1914776989</deployedseed>
+    
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+</question>
+</quiz>

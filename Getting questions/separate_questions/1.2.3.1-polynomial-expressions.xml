@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26070">
+        <parent>0</parent>
+        <name>1.2.3.1 Polynomial expressions</name>
+        <questiontext>&lt;h3&gt;Polynomial expressions
+&lt;/h3&gt;
+&lt;p&gt;An important group of mathematical expressions which use indices are known as &lt;b&gt;polynomials&lt;/b&gt;.&lt;/p&gt;
+
+&lt;p&gt;Examples of polynomials are&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt; \(4x^3+2x^2+3x-7\),&lt;/li&gt;
+    &lt;li&gt;\( x^2+x \), &lt;/li&gt;
+    &lt;li&gt;\( 17-2t+7t^4 \), &lt;/li&gt;
+    &lt;li&gt;\( z-z^3 \). &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Notice that they are all constructed using non-negative whole number powers of the variable. Recall that \(x^0=1\) and so the number \(-7\) appearing in the first expression can be thought of as \(-7x^0\). Similarly the \(17\) appearing in the third expression
+    can be read as \(17t^0\).&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;
+    &lt;p&gt;A polynomial expression takes the form&lt;/p&gt;
+    &lt;p&gt;\( a_0 + a_1x + a_2x^2 + a_3x^3 +\ldots + a_nx^n\)&lt;/p&gt;
+    &lt;p&gt;where \( a_0 ,a_1, a_2, a_3, \ldots a_n\) are all constants called the &lt;b&gt;coefficients&lt;/b&gt; of the polynomial. The number \(a_0\) is also called the &lt;b&gt;constant term&lt;/b&gt;. The highest power in a polynomial is called the &lt;b&gt;degree&lt;/b&gt; of the polynomial.&lt;/p&gt;
+    &lt;p&gt;Polynomials with low degrees have special names and subscript notation is often not needed:
+    &lt;/p&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th style="min-width:12em"&gt;Polynomial&lt;/th&gt;
+                &lt;th style="min-width:5em"&gt;Degree&lt;/th&gt;
+                &lt;th style="min-width:7em"&gt;Name&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align:center"&gt;\[ ax^3+bx^2+cx+d \]&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;3&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;cubic&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align:center"&gt;\[ ax^2+bx+c \]&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;2&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;quadratic&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align:center"&gt;\[ ax+b \]&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;1&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;linear&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td style="text-align:center"&gt;\[ a\]&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;0&lt;/td&gt;
+                &lt;td style="text-align:center"&gt;constant&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200613111836+X5YBFs</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211208164912+4U5iMc</version>
+        <hidden>0</hidden>
+        <timecreated>1592047116</timecreated>
+        <timemodified>1638982152</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

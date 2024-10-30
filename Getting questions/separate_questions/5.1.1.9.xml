@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24294">
+        <parent>0</parent>
+        <name>5.1.1.9</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;h5&gt;Other contexts for linear models&lt;/h5&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Linear functions may arise in other contexts. In each of these situations, the slope and intercept values will have some modelling significance. Indeed the behaviour and hence the suitability of a linear function, of the form \(y = ax + b\), when modelling
+    any given situation will be determined by the values of &lt;em&gt;a&lt;/em&gt; and &lt;em&gt;b&lt;/em&gt;.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;During \(20\) minutes of rain, a cylindrical rain barrel that is initially empty is filled to a depth of \(1.5 \, \textrm{cm}.\)&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;Choose variables to represent the level of water in the barrel and time. Sketch a graph representing the level of water in the barrel if the intensity of rainfall remains constant over the \(20\) minute period.&lt;/li&gt;
+    &lt;li&gt;Write down a linear function that represents the level of water in the vessel together with its range of validity&lt;/li&gt;
+    &lt;li&gt; State any assumptions that you have made:&lt;/li&gt;
+    &lt;li&gt; Write down the amended form of your answer to (b), if the vessel contains \(2 \, \textrm{cm}\) of water initially.
+    &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;In this answer \(h \, \textrm{cm}\) is used for the level of water measured from the bottom of the barrel and t minutes for time.&amp;nbsp;&lt;img src="@@PLUGINFILE@@/Block7_Fig7.svg" alt="A cylinder barrel filled with water up height h and graph of the water height as a function of time." width="505" height="169" class="img-responsive atto_image_button_text-bottom"&gt;&lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;The intensity of rainfall is stated to be constant, so the rate at which the barrel fills may be taken as constant.&lt;/p&gt;
+      &lt;p&gt;The gradient of an appropriate linear function relating level of water (\(h \, \textrm{cm}\)) measured from the bottom of the vessel and time (\(t\), minutes) measured would be \( \frac{1.5}{20} = 0.075\) and an appropriate linear function would be \(h = 0.075t + c.\)&lt;/p&gt;
+        &lt;p&gt;Since the barrel is empty to start with, \(h = 0\) when \(t = 0,\) implying that \(c = 0.\) So the appropriate linear function and its range of validity are expressed by \( h = 0.075t, \quad (0 \leq t \leq 20).\)&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;It is assumed that the barrel has a uniformly cylindrical cross section, that no water is removed during the rainfall and there are no holes or leaks up to \(1.5 \, \textrm{cm}\) depth.
+&lt;/li&gt;
+    &lt;li&gt;\( h = 0.075t+2, \quad (0 \leq t \leq 20).\)&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200724081021+HbegUG</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220324190345+1QWDGq</version>
+        <hidden>0</hidden>
+        <timecreated>1595578221</timecreated>
+        <timemodified>1648148625</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33761">
+        <parent>0</parent>
+        <name>19.3.2.7 Repeated Roots</name>
+        <questiontext>&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;If the auxiliary equation has two equal roots, &lt;span class="math inline"&gt;\(k\)&lt;/span&gt;, the &lt;span&gt;&lt;strong&gt;complementary function&lt;/strong&gt;&lt;/span&gt; is: &lt;span class="math display"&gt;\[y_\text{cf}=(A+Bx)\text{e}^{kx}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;The auxiliary equation of &lt;span class="math inline"&gt;\(ay''+by'+cy=0\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(ak^2+bk+c=0.\)&lt;/span&gt; Suppose this equation has equal roots &lt;span class="math inline"&gt;\(k=k_1\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(k=k_1\)&lt;/span&gt;.
+    Verify that &lt;span class="math inline"&gt;\(y=x\text{e}^{k_1x}\)&lt;/span&gt; is a solution of the differential equation.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We have: &lt;span class="math inline"&gt;\[ y=x\text{e}^{k_1x}\qquad\quad y'=\text{e}^{k_1x}(1+k_1x)\qquad\quad
+y''=\text{e}^{k_1x}(k_1^2x+2k_1)\]&lt;/span&gt; Substitution into the left-hand side of the differential equation yields: &lt;span class="math inline"&gt;\[ 
+\text{e}^{k_1x}\{a(k^2_1x+2k_1)+b(1+k_1x)+cx\}=\text{e}^{k_1x}\{(ak_1^2+bk_1+c)x+2ak_1+b\}\]&lt;/span&gt; But &lt;span class="math inline"&gt;\(ak_1^2+bk_1+c=0\)&lt;/span&gt; since &lt;span class="math inline"&gt;\(k_1\)&lt;/span&gt; satisfies the auxiliary equation. Also, &lt;span class="math inline"&gt;\[ k_1={-b\pm\sqrt{b^2-4ac}\over 2a}\]&lt;/span&gt;    but since the roots are equal, then &lt;span class="math inline"&gt;\(b^2-4ac=0\)&lt;/span&gt; hence &lt;span class="math inline"&gt;\(k_1=-b/2a\)&lt;/span&gt;. So &lt;span class="math inline"&gt;\(2ak_1+b=0\)&lt;/span&gt;. Hence &lt;span class="math inline"&gt;\[\text{e}^{k_1x}\{(ak_1^2+bk_1+c)x+2ak_1+b\}=\text{e}^{k_1x}\{(0)x+0\}=0\]&lt;/span&gt;&amp;nbsp;We conclude that &lt;span class="math inline"&gt;\(y=x\text{e}^{k_1x}\)&lt;/span&gt; is a solution of &lt;span class="math inline"&gt;\(ay''+by'+cy=0\)&lt;/span&gt; when the roots of the auxiliary equation are equal. This illustrates the previous Key Point.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Obtain the general solution of the equation: &lt;span class="math inline"&gt;\[ {d^2y\over dx^2}+8{dy\over dx}+16y=0.\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;As before, a trial solution of the form &lt;span class="math inline"&gt;\(y=\text{e}^{kx}\)&lt;/span&gt; yields an auxiliary equation &lt;span class="math inline"&gt;\(k^2+8k+16=0\)&lt;/span&gt;. This equation factorizes so that &lt;span class="math inline"&gt;\((k+4)(k+4)=0\)&lt;/span&gt;    and we obtain equal roots, that is, &lt;span class="math inline"&gt;\(k=-4\)&lt;/span&gt; (twice). If we proceed as before, writing &lt;span class="math inline"&gt;\(y_1(x)=\text{e}^{-4x}\)&lt;/span&gt; &lt;span class="math inline"&gt;\(y_2(x)=\text{e}^{-4x},\)&lt;/span&gt; it is clear
+    that the two solutions are not independent. We need to find a second independent solution. Using the result summarised in the previous Key Point, we conclude that the second independent solution is &lt;span class="math inline"&gt;\(y_2=x\text{e}^{-4x}\)&lt;/span&gt;. The
+    general solution is then: &lt;span class="math inline"&gt;\[ y(x)=(A+Bx)\text{e}^{-4x}\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210621092200+4yM3W1</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220315161816+vmDgZz</version>
+        <hidden>0</hidden>
+        <timecreated>1624267320</timecreated>
+        <timemodified>1647361096</timemodified>
+        <createdby>2662</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

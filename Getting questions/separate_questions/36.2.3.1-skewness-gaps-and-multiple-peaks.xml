@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27111">
+        <parent>0</parent>
+        <name>36.2.3.1 Skewness, gaps and multiple peaks</name>
+        <questiontext>&lt;h4&gt;Skewness, gaps and multiple peaks&lt;/h4&gt;
+&lt;br&gt;
+&lt;p&gt;When exploring a data set, four properties worth looking for are outliers, skewness, gaps and multiple
+peaks. Outliers have been dealt with in some detail above so the comments below briefly address skewness, gaps and multiple peaks.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Skewness&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;If a skewed distribution is represented purely by two numbers, say the mean and standard deviation,
+then the representation will be inadequate. Remember that the term &#8216;skewness&#8217; refers to the location
+of the &#8216;tail&#8217; of a distribution.&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/36.2.3%20Skewness.svg" alt="In the picture two distributions characterised by right skew and left skew respectively" class="img-responsive atto_image_button_text-bottom" width="345" height="69"&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;
+
+As an example, the data set below gives the current required to burn out a component under test.&lt;br&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(9.5\) &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(11.9\)&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(20.0\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(33.4\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(40.1\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(50.0\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(12.7\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(21.0\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(33.6\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;th style="text-align: right;" scope="col"&gt;&lt;span style="font-weight: normal;"&gt;\(40.6\) &amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;br&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: right;"&gt;\(50.0\) &amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(15.5\) &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(26.4\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(35.4\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(41.1\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(50.0\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(17.7\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(37.9\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(41.3\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(50.0\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: right;"&gt;\(41.9\) &amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(50.4\)&amp;nbsp; &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(43.0\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(43.3\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(43.6\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(43.7\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(43.8\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(44.7\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(44.9\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(45.0\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: right;"&gt;\(45.1\)&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(45.2\) &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(45.3\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(45.5\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(46.1\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(46.5\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(46.6\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(47.1\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.0\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.2\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: right;"&gt;\(48.5\)&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.4\) &amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.6\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.7\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.8\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(48.9\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(49.4\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(49.5\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(49.6\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;td style="text-align: right;"&gt;\(49.8\) &amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;The data were obtained by measuring the current in mA applied to an electronic component under
+conditions of destructive testing give the following values for the mean, standard deviation, median
+and IQR:&lt;/p&gt;
+&lt;p&gt;\(\bar{x}\)=\(40.72\) &amp;nbsp; \(s_{n-1}\)=\(11.49\) &amp;nbsp; median=\(45.05\) &amp;nbsp; and &amp;nbsp;&amp;nbsp; IQR=\(8.5\)&amp;nbsp; .&lt;/p&gt;
+
+&lt;p&gt;The values of \(\bar{x}\) and \(s_{n-1}\) indicate that a lower average current with a greater spread will result in the destruction of the component than that indicated by the median and IQR. Clearly, further
+investigations are necessary to resolve this situation.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Gaps and multiple peaks&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Distributions with gaps and multiple peaks can be very difficult to summarise easily. The stem-and-
+leaf and box-and-whisker plots shown below summarise some 1972 data concerning adult literacy.
+The leaves are single digit and the range of achievement reached in the field of literacy ranges from
+2% to 100%.&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/36.2.3%201%20stem%20and%20leaf.svg" alt="On the left in vertical the box-and-whisker diagram and on the right the stem-and-leaf diagram of some 1972 data concerning adult literacy" role="presentation" class="img-responsive atto_image_button_text-bottom" width="431" height="187"&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;The virtual lack of data between \(50\) and \(60\) indicates a gap and suggests that we are in fact dealing
+with two separate distributions which have the following properties:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(2%-50%\) literacy having &lt;b&gt;right&lt;/b&gt; skew,&lt;/li&gt;
+&lt;li&gt;\(60%-100%\) literacy having &lt;b&gt;left&lt;/b&gt; skew,&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Notice that the term skewness refers to the &lt;b&gt;tail&lt;/b&gt; of a distribution.&lt;/p&gt;
+&lt;p&gt;The usual summary statistics that you might be tempted to calculate are:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&amp;nbsp; \(\bar{x}\)=\(54\) &amp;nbsp;&amp;nbsp; and &amp;nbsp;&amp;nbsp; \(s_{n-1}\)=\(34\) &amp;nbsp;&amp;nbsp; or &amp;nbsp;&amp;nbsp; median=\(60\) &amp;nbsp;&amp;nbsp; mid-spread=\(65\)&lt;/p&gt;
+
+&lt;p&gt;In this case, neither set of statistics is of much use since neither set indicates the gap or the skewness.
+Without visual representation, a single-peaked distribution tends to be assumed, this is, of course,
+opposite to the truth in this case.&lt;/p&gt;&lt;br&gt;
+&lt;p&gt;The stem-and-leaf plot is more informative than the box-and-whisker plot since it shows the gap.
+In practice, we would work with the two constituent distributions and attempt to relate the results in
+a practical way.&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;b&gt;Final comments on data representations&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You should not rely on summary statistics such as the mean and standard deviation or median
+and mid-spread alone to represent a data set. Remember that if a distribution has outliers,
+gaps, skewness or multiple peaks, then the shape is probably more important than location and
+spread.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The shape of a distribution is better shown visually than numerically. Remember that a stem-
+and-leaf diagram retains the data and arranges the data in rank order and that a box-and-
+whisker plot emphasises the detail contained in the tails of a distribution.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200726192629+QmyHCf</stamp>
+        <version>stack2.maths.ed.ac.uk+200826134304+cQxXyU</version>
+        <hidden>0</hidden>
+        <timecreated>1595791589</timecreated>
+        <timemodified>1598449384</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

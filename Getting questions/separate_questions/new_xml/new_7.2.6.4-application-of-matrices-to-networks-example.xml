@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26229 -->
+  <question type="stack">
+    <name>
+				<text>7.2.6.4 Application of matrices to networks Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Application of matrices to networks</h4>
+<p>A network is a collection of points (nodes) some of which are connected together by lines (paths).
+The information contained in a network can be conveniently stored in the form of a matrix.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Petrol is delivered to terminals \(T_1\) and \(T_2\). They distribute the fuel to \(3\) storage
+depots \((S_1, S_2, S_3).\) The network diagram below shows what fraction of the fuel
+goes from each terminal to the three storage depots. In turn the \(3\) depots supply
+fuel to \(4\) petrol stations \((P_1, P_2, P_3, P_4)\) as shown in the figure below:</p>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/7-2-fig-2-petrol-network.svg" alt="A network with 3 rows of vertices. Top row: T_1 and T_2. Middle row: S_1, S_2 and S_3. Bottom row: P_1, P_2, P_3 and P_4. In each row, each vertex has directed edges going to vertices in the next row. Each edge is weighted with a number, representing a fraction of fuel; therefore, for each vertex, the weights on the edges which start at that vertex sum to 1. Here are the edges: T_1 to S_1 has weight 0.4; T_1 to S_2 has weight 0.4; T_1 to S_3 has weight 0.2; T_2 to S_1 has weight 0.5; T_2 to S_2 has weight 0.2; T_2 to S_3 has weight 0.3; S_1 to P_1 has weight 0.6; S_1 to P_2 has weight 0.2; S_1 to P_3 has weight 0.2; S_2 to P_1 has weight 0.2; S_2 to P_2 has weight 0.5; S_2 to P_3 has weight 0.2; S_2 to P_4 has weight 0.1; S_3 to P_3 has weight 0.4; S_3 to P_4 has weight 0.6. This completes the description." width="279" height="169" role="presentation" class="img-responsive atto_image_button_middle">
+</figure>
+
+<p>Show how this situation may be described using matrices.</p>
+<h4 class="HELM_solution">Solution</h4><p></p><p>Denote the amount of fuel, in litres, flowing from \(T_1\) by \(t_1\) and from \(T_2\) by \(t_2\) and the quantity being received at \(S_i\) by \(s_i\) for \(i=1,2,3\). This situation is described in the following diagram:</p>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/7-2-fig-21-petrol-network-step-1.svg" alt="A network with 2 rows of vertices. First row: T_1 and T_2. Second row: S_1, S_2 and S_3. Each vertex in first row has directed edges going to vertices in second row. Each edge is weighted with a number, representing a fraction of fuel; therefore, for each vertex, the weights on the edges which start at that vertex sum to 1. Here are the edges: T_1 to S_1 has weight 0.4; T_1 to S_2 has weight 0.4; T_1 to S_3 has weight 0.2; T_2 to S_1 has weight 0.5; T_2 to S_2 has weight 0.2; T_2 to S_3 has weight 0.3. This completes the description." width="224" height="89" role="presentation" class="img-responsive atto_image_button_text-bottom">
+</figure>
+<p>From this diagram we see that \[\begin{matrix} s_1&amp;=&amp;0.4t_1+0.5t_2\\ s_2&amp;=&amp;0.4t_1+0.2t_2\\ s_3&amp;=&amp;0.2t_1+0.3t_2\\ \end{matrix}\] or, in matrix form: \[ \begin{bmatrix} s_1\\ s_2\\ s_3\end{bmatrix}=\begin{bmatrix} 0.4&amp;0.5\\ 0.4&amp;0.2\\ 0.2&amp;0.3\end{bmatrix} \begin{bmatrix} t_1\\ t_2\\ \end{bmatrix} \] In turn the 3 depots supply fuel to 4 petrol stations as shown in the next diagram:</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/7-2-fig-22-petrol-network-step-2.svg" alt="A network with 2 rows of vertices. First row: S_1, S_2 and S_3. Second row: P_1, P_2, P_3 and P_4. Each vertex in first row has directed edges going to vertices in second row. Each edge is weighted with a number, representing a fraction of fuel; therefore, for each vertex, the weights on the edges which start at that vertex sum to 1. Here are the edges: S_1 to P_1 has weight 0.6; S_1 to P_2 has weight 0.2; S_1 to P_3 has weight 0.2; S_2 to P_1 has weight 0.2; S_2 to P_2 has weight 0.5; S_2 to P_3 has weight 0.2; S_2 to P_4 has weight 0.1; S_3 to P_3 has weight 0.4; S_3 to P_4 has weight 0.6. This completes the description." width="279" height="100" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p><p>If the petrol stations receive \(p_1, p_2, p_3, p_4\) litres respectively then from the diagram we have: \[\begin{matrix} p_1&amp;=&amp;0.6s_1+0.2s_2\\ p_2&amp;=&amp;0.2s_1+0.5s_2\\ p_3&amp;=&amp;0.2s_1+0.2s_2+0.4s_3\\ p_4&amp;=&amp;0.1s_2+0.6s_3\\ \end{matrix}\] or, in matrix form: \[\begin{bmatrix} p_1\\ p_2\\ p_3\\ p_4\end{bmatrix}=\begin{bmatrix} 0.6&amp;0.2&amp;0\\ 0.2&amp;0.5&amp;0\\ 0.2&amp;0.2&amp;0.4\\ 0&amp;0.1&amp;0.6\end{bmatrix} \begin{bmatrix} s_1\\ s_2\\ s_3 \end{bmatrix}\]</p><p></p><p>Combining the equations by substituting the expressions for \(s_1,s_2,s_3\) in the equations for \(p_1,p_2,p_3,p_4\) we get: \begin{align*} p_1&amp;= 0.6s_1+0.2s_2\\ &amp;= 0.6(0.4t_1+0.5t_2)+0.2(0.4t_1+0.2t_1)\\ &amp;= 0.32t_1+0.34t_2 \end{align*} with similar results for \(p_2, p_3\) and \(p_4\). This is equivalent to combining the two networks.</p><p>The results can be obtained more easily by multiplying the matrices:</p>
+<p>\begin{align*} \begin{bmatrix} p_1\\ p_2\\ p_3\\ p_4 \end{bmatrix} &amp; = \begin{bmatrix} 0.6 &amp; 0.2 &amp; 0 \\ 0.2 &amp; 0.5 &amp; 0 \\ 0.2 &amp; 0.2 &amp; 0.4 \\ 0 &amp; 0.1 &amp; 0.6 \end{bmatrix} \begin{bmatrix} s_1 \\ s_2 \\ s_3 \end{bmatrix} \\ &amp; = \begin{bmatrix} 0.6 &amp; 0.2 &amp; 0 \\ 0.2 &amp; 0.5 &amp; 0 \\ 0.2 &amp; 0.2 &amp; 0.4 \\ 0 &amp; 0.1 &amp; 0.6 \end{bmatrix} \begin{bmatrix} 0.4 &amp; 0.5 \\ 0.4 &amp; 0.2 \\ 0.2 &amp; 0.3 \end{bmatrix} \begin{bmatrix} t_1 \\ t_2 \\ \end{bmatrix} \\ &amp; = \begin{bmatrix} 0.32 &amp; 0.34 \\ 0.28 &amp; 0.20 \\ 0.24 &amp; 0.26 \\ 0.16 &amp; 0.20 \end{bmatrix} \begin{bmatrix} t_1 \\ t_2 \\ \end{bmatrix} = \begin{bmatrix} 0.32 t_1 + 0.34 t_2 \\ 0.28 t_1 + 0.20 t_2 \\ 0.24 t_1 + 0.26 t_2 \\ 0.16 t_1 + 0.20 t_2 \end{bmatrix} \end{align*}</p><br><p></p><p></p><p></p>
+<p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200626074435+YW2SFB</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210701151145+DbxvH8</text></tag>
+    </tags>
+    
+</question>
+</quiz>

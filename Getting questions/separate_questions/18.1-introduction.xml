@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24661">
+        <parent>0</parent>
+        <name>18.1 Introduction</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Functions of Several Variables&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;A function of a single variable \(y=f(x)\) is interpreted graphically as a planar curve. In this Section we generalise the concept to functions of more than one variable. We shall see that a function of two variables \(z=f(x,y)\) can be interpreted as a surface. Functions of two or more variables often arise in engineering and in science and it is important to be able to deal with such functions with confidence and skill. We see in this Section how to sketch simple surfaces. In later Sections we shall examine how to determine the rate of change of \(f(x,y)\) with respect to \(x\) and \(y\) and also how to obtain the optimum values of functions of several variables.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200814083616+7gM8ZQ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+201215125327+m8fGla</version>
+        <hidden>0</hidden>
+        <timecreated>1597394176</timecreated>
+        <timemodified>1608036807</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

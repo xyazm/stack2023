@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24680 -->
+  <question type="stack">
+    <name>
+				<text>19.1.2.2 Solution of a Differential Equation</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+Which of the following differential equations is satisfied by \(y=A\cosh
+2x+B\sinh 2x\) where \(A\) and \(B\) are arbitrary constants.]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>We are given\(y=A\cosh 2x+B\sinh 2x\) where \(A\) and \(B\) are arbitrary constants.</p>
+<p>Differentiating once we obtain \[{dy\over dx}=2A\sinh 2x +2B\cosh 2x.\]Differentiating a second time we obtain \[{d^2y\over {dx^2}}=4A\cosh 2x +4B\sinh 2x.\] Hence \[ {d^2y\over {dx^2}}=4y\]</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:moodle2.maths.ed.ac.uk+210305175536+Ht8VdO</text></tag>
+      <tag><text>version:moodle2.maths.ed.ac.uk+210318142131+IcXlKr</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26527">
+        <parent>0</parent>
+        <name>6.2.2.6 (not in quiz) Compute sinh(x+y) knowing sinhx, sinhy</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&amp;nbsp;&lt;/p&gt;
+&lt;p&gt; Let \( \sinh x = {@xx@} \), and \( \sinh y = {@yy@} \), calculate \(\sinh(x+y)\).&lt;/p&gt;
+&lt;p&gt;Note: Write down a formula for \( \sinh(x+y) \) in terms of \( \sinh x, \sinh y \), and only sub in numbers and use a calculator at the final step. Round up your answer and enter 4 decimal places. If the answer has less than 4 decimal places, then enter zero(s) at the end.&lt;/p&gt;
+&lt;p&gt; \( \sinh(x+y) = \) [[input:ans1]] [[validation:ans1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;Using the fundamental identity \( \cosh^2x - \sinh^2x = 1\), we get \(\cosh^2 x = 1 + \sinh^2 x\). Similarly, \(\cosh^2 y = 1 + \sinh^2 y\).&lt;/p&gt;
+&lt;p&gt;Next, take the (positive) square root to obtain \( \cosh x\), noting that \( \cosh x &amp;gt; 0 \) for all value of \(x\). Similar for \( \cosh y \).&lt;/p&gt;
+&lt;p&gt;Then use the formula \( \sinh(x+y) = \sinh x \cosh y + \cosh x \sinh y \), we obtain
+\[\begin{align*} \sinh(x+y) &amp;amp; = \sinh x \cosh y + \cosh x \sinh y \\
+&amp;amp; = \sinh x \cdot \sqrt{1 + \sinh^2 y} + \sqrt{1 + \sinh^2 x} \cdot \sinh y \\
+&amp;amp; = ({@xx@}) \cdot \sqrt{1 + ({@yy@})^2} + \sqrt{1 +({@xx@})^2} \cdot ({@yy@}) \\
+&amp;amp; = {@ta@} \text{ after rounding up.} \end{align*}\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200625214557+DAyGvK</stamp>
+        <version>stack2.maths.ed.ac.uk+200716111730+fgHuCL</version>
+        <hidden>0</hidden>
+        <timecreated>1593121557</timecreated>
+        <timemodified>1594898250</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17948">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>aa: -(rand(9)+1)/10;
+bb: (rand(9)+11)/10;
+xx: decimalplaces(float(sinh(aa)),4);
+yy: decimalplaces(float(sinh(bb)),4);
+uu: sqrt(1+xx*xx);
+vv: sqrt(1+yy*yy);
+sinhsum: xx*vv+uu*yy;
+ta: decimalplaces(float(sinhsum),4);
+</questionvariables>
+            <specificfeedback>[[feedback:prt1]]</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\( \sinh x = {@xx@} \), and \( \sinh y = {@yy@} \)
+\[\cosh(x+y) = {@ta@} \]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42284">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>sinh,cosh,tanh,coth,sech,cosech,[[BASIC-ALGEBRA]]</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36677">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54808">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>4</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41370">
+              <testcase>1</testcase>
+              <timemodified>1593188981</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89850">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77993">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41371">
+              <testcase>2</testcase>
+              <timemodified>1593189017</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89851">
+                  <inputname>ans1</inputname>
+                  <value>0.75</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77994">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41372">
+              <testcase>3</testcase>
+              <timemodified>1594124849</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89852">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta+0.005,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77995">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="174959">
+              <seed>91144347</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174960">
+              <seed>1061835517</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174961">
+              <seed>1910134799</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174962">
+              <seed>2068373406</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174963">
+              <seed>1143371224</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174964">
+              <seed>2053469723</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174965">
+              <seed>1434403637</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174966">
+              <seed>651001782</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174967">
+              <seed>798957904</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="174968">
+              <seed>772423529</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

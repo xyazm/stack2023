@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26324">
+        <parent>0</parent>
+        <name>2.3.1.1a One-to-many rules</name>
+        <questiontext>&lt;h3&gt;One-to-many rules, many-to-one and one-to-one functions &lt;/h3&gt;
+&lt;h4&gt;One-to-many rules&lt;/h4&gt;
+&lt;p&gt;Recall that a rule for a function must produce a single output for a given input. Not all rules satisfy this criterion. For example, the rule &#8216;take the square root of the input&#8217; cannot be a rule for a function because for a given input there are two outputs; an input of \(4\) produces outputs of \(2\) and &lt;span class="math inline"&gt;\(-2\)&lt;/span&gt;. The figure below shows two ways in which we can picture this situation, the first being a block diagram, and the second using two sets representing input and output values and the relationship between them.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/block4-fig1-1.svg" alt="Graphical representation of a how a function transforms the input to the output" class="img-responsive atto_image_button_text-bottom" width="601" height="159"&gt;
+&lt;figcaption&gt;This rule cannot be a function - it is a one-to-many rule&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Such a rule is described as a &lt;span&gt;&lt;strong&gt;one-to-many rule&lt;/strong&gt;&lt;/span&gt;. This means that one input produces more than one output. This is obvious from inspecting the sets in the figure above.&lt;/p&gt;
+&lt;p&gt;The graph of the rule &#8216;take &lt;span class="math inline"&gt;\(\pm\sqrt{x}\)&lt;/span&gt;&#8217; can be drawn by constructing a table of values:&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;table  class="HELM_table"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;\(x\)&lt;/th&gt;
+&lt;th&gt;0&lt;/th&gt;
+&lt;th&gt;1&lt;/th&gt;
+&lt;th&gt;2&lt;/th&gt;
+&lt;th&gt;3&lt;/th&gt;
+&lt;th&gt;4&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+
+&lt;td&gt;\(y=\pm\sqrt{x}\)&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;\(\pm 1\) &lt;/td&gt;
+&lt;td&gt;\(\pm \sqrt{2}\)&lt;/td&gt;
+&lt;td&gt;\(\pm\sqrt{3}\)&lt;/td&gt;
+&lt;td&gt;\(\pm 2\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p style="text-align: center;"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The graph is shown in the figure to the left below. For each value of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; there are two corresponding values of &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;. Plotting a graph of a one-to-many rule will result in a curve through which a vertical line can be drawn which cuts the curve more than once as you can see. The vertical line cuts the curve more than once because there is more than one &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; value for each &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; value.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/block4-fig2-1.svg" alt="a) A one-to-many 'function'; b) A one-to-one function" class="img-responsive atto_image_button_text-bottom" width="493" height="167"&gt;
+&lt;/figure&gt;
+&lt;p&gt;By describing a rule more carefully it is possible to make sure a single output results from a single input, thereby defining a valid rule for a function. For example, the rule &#8216;take the &lt;span&gt;&lt;strong&gt;positive&lt;/strong&gt;&lt;/span&gt; square root of the input&#8217; is a valid function rule because a given input produces a single output. The graph of this function is displayed to the right in the figure above.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Try for yourself&lt;/i&gt;:&amp;nbsp;Explain why a one-to-many rule cannot be a function.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200616142816+gGW2kJ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210628122947+c1dtlm</version>
+        <hidden>0</hidden>
+        <timecreated>1592317696</timecreated>
+        <timemodified>1624883387</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

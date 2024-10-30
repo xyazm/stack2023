@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62128">
+        <parent>0</parent>
+        <name>23.4.1.1 Convergence of a Fourier series</name>
+        <questiontext>&lt;h4&gt;Convergence of a Fourier series&lt;/h4&gt;
+We have now shown how to obtain a Fourier series for periodic functions. We have suggested that
+we would expect to be able to approximate such functions by using a few terms of the Fourier series.
+The detailed question of the &lt;b&gt;convergence&lt;/b&gt; or otherwise of Fourier series has not been discussed.
+The reason for this is that the great majority of functions likely to be encountered in practice have
+Fourier series that do indeed converge and can therefore be safely used as approximations.
+&lt;p&gt;&lt;/p&gt;
+The precise conditions that have to be fulfilled for a Fourier series to converge are known as Dirichlet
+conditions after the French mathematician who investigated the matter. The three conditions are
+listed in the following Key Point.
+&lt;p&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;The Dirichlet conditions for the convergence of a Fourier series of a periodic function \(f(t)\) are:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+1. \(f(t)\) must have only a finite number of finite discontinuities, within one period
+&lt;p&gt;&lt;/p&gt;
+2. \(f(t)\) must have a finite number of maxima and minima over one period
+&lt;p&gt;&lt;/p&gt;
+3. the integral \( \displaystyle{ \int _{-\frac{T}{2}}^{\frac{T}{2}} } \lvert f(t) \rvert dt \) must be finite
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200904194715+Dvu0bu</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518104223+WNHb30</version>
+        <hidden>0</hidden>
+        <timecreated>1599248835</timecreated>
+        <timemodified>1652870543</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

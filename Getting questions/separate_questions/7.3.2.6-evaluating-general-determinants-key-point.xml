@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26261">
+        <parent>0</parent>
+        <name>7.3.2.6 Evaluating general determinants Key Point</name>
+        <questiontext>&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;h5&gt;Evaluating General Determinants&lt;/h5&gt;
+&lt;p&gt;If \(A\) is an \(n\times n\) square matrix then: \(\displaystyle{\operatorname{det}(A) = \sum_{j=1}^{n}a_{ij}A_{ij}}\).&lt;/p&gt;
+In words: The determinant of a square matrix is obtained by multiplying each element
+of row \(i\) by its corresponding cofactor and then adding these products together.&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200812103024+1EoaeB</stamp>
+        <version>stack2.maths.ed.ac.uk+200908085713+P66OfQ</version>
+        <hidden>0</hidden>
+        <timecreated>1597228224</timecreated>
+        <timemodified>1599555433</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

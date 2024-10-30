@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27124">
+        <parent>0</parent>
+        <name>36.2.2.1 Outliers</name>
+        <questiontext>&lt;h4&gt;Outliers&lt;/h4&gt;&lt;br&gt;
+&lt;p&gt;Outliers are values which are well outside the range covered by the vast bulk of a data set - a precise definition is impossible although some simple criteria do exist which may be used to detect outliers and accept or reject outliers. The large dots in box-and-whiskers diagrams illustrate the concept of outliers. Outliers can be extremely important since they may be (for example) erroneous data or they may point the way to further investigations of a data set.&lt;/p&gt;
+&lt;p&gt;For example, one statistic used to measure the state of the industrial development of a nation is the number of miles of railway track built per square mile of land. The box-and-whisker plot below summarises this variable for a total of 26 nations in the year 1972 according to one author.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/36.2.2.1%20Outliers.svg" alt="This box-and-whisker plot summarises the number of miles of railway track built per square mile of land for a total of 26 nations in the year 1972" class="img-responsive atto_image_button_text-bottom" width="479" height="55"&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;The figure for Cuba literally means that the whole island is covered by tracks which are placed about \(3\)m apart! Clearly, there is an error in the data. In fact, the \(1972\) Statistical Abstract of Latin America gives the figure for Cuba as \(71.75\) miles of railway per square mile of land. Note that the figure is
+still an outlier but is much more believable.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200915102211+cSJyEf</stamp>
+        <version>stack2.maths.ed.ac.uk+200915102211+hbqx6E</version>
+        <hidden>0</hidden>
+        <timecreated>1600165331</timecreated>
+        <timemodified>1600165331</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

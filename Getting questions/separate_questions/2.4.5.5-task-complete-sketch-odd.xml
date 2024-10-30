@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25733">
+        <parent>0</parent>
+        <name>2.4.5.5 Task: Complete sketch (odd) *****</name>
+        <questiontext>&lt;p&gt;Extend the graph below in order to produce a graph of an odd function.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/block6-fig5-1.svg" alt="block6-fig5" width="188" height="101" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;img src="@@PLUGINFILE@@/block6-fig5%28new%29-1.svg" alt="block6-fig5(new)" width="188" height="101" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>essay</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618184041+MRONRt</stamp>
+        <version>stack2.maths.ed.ac.uk+200618192007+NlR8qu</version>
+        <hidden>0</hidden>
+        <timecreated>1592505641</timecreated>
+        <timemodified>1592508007</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_essay_question>
+          <essay id="268">
+            <responseformat>editor</responseformat>
+            <responserequired>1</responserequired>
+            <responsefieldlines>15</responsefieldlines>
+            <attachments>0</attachments>
+            <attachmentsrequired>0</attachmentsrequired>
+            <graderinfo/>
+            <graderinfoformat>1</graderinfoformat>
+            <responsetemplate/>
+            <responsetemplateformat>1</responsetemplateformat>
+            <filetypeslist/>
+          </essay>
+        </plugin_qtype_essay_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

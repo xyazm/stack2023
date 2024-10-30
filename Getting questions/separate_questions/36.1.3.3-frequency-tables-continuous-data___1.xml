@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27281">
+        <parent>0</parent>
+        <name>36.1.3.3 Frequency tables/ Continuous data</name>
+        <questiontext>&lt;h4&gt;Continuous data&lt;/h4&gt;
+&lt;p&gt;When we have continuous data it does not make sense to count how many times each value occurs. This is because, at least if we measured to a great enough precision, no two observations would be exactly the same. Therefore we need to form the observations into groups, called &lt;b&gt;classes&lt;/b&gt;. We do this by dividing the range of possible values of the variable into a set of non-overlapping intervals called &lt;b&gt;class intervals&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;The following data are the heights (to the nearest tenth of a centimetre) of 30 students studying statistics.&lt;/p&gt;
+&lt;table style="width:50%"&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;150.2&lt;/td&gt; &lt;td&gt;167.2&lt;/td&gt; &lt;td&gt;176.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;160.1&lt;/td&gt; &lt;td&gt;151.8&lt;/td&gt; &lt;td&gt;166.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;162.3&lt;/td&gt; &lt;td&gt;167.4&lt;/td&gt; &lt;td&gt;178.3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;181.2&lt;/td&gt; &lt;td&gt;175.7&lt;/td&gt; &lt;td&gt;161.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;179.3&lt;/td&gt; &lt;td&gt;168.9&lt;/td&gt; &lt;td&gt;164.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;165.0&lt;/td&gt; &lt;td&gt;177.1&lt;/td&gt; &lt;td&gt;183.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;172.1&lt;/td&gt; &lt;td&gt;180.2&lt;/td&gt; &lt;td&gt;168.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;173.8&lt;/td&gt; &lt;td&gt;164.3&lt;/td&gt; &lt;td&gt;176.8&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;184.2&lt;/td&gt; &lt;td&gt;170.9&lt;/td&gt; &lt;td&gt;172.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;168.5&lt;/td&gt; &lt;td&gt;169.8&lt;/td&gt; &lt;td&gt;176.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Notice first of all that all of the numbers lie in the range 150 cm. - 185 cm. This suggests that we try to organize the data into classes as shown below. This first attempt has deliberately taken &lt;i&gt;easy&lt;/i&gt; class intervals which give a reasonable number of classes and span the numerical range covered by the data.&lt;/p&gt;
+&lt;table class="HELM_table" style="width:35%"&gt;
+&lt;thead&gt;
+&lt;tr style="border-bottom: 1px solid #000;"&gt;
+&lt;th&gt;Class&lt;/th&gt;
+&lt;th&gt;Class Interval&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;	
+&lt;td&gt;\(1\)&lt;/td&gt; &lt;td&gt;\(150 - 155\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(2\)&lt;/td&gt; &lt;td&gt;\(155 - 160\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(3\)&lt;/td&gt; &lt;td&gt;\(160 - 165\)&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;
+&lt;td&gt;\(4\)&lt;/td&gt; &lt;td&gt;\(165 - 170\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(5\)&lt;/td&gt; &lt;td&gt;\(170 - 175\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(6\)&lt;/td&gt; &lt;td&gt;\(175 - 180\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(7\)&lt;/td&gt; &lt;td&gt;\(180 - 185\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The number of classes which we use will depend on the number of observations and the purpose of the frequency table.&lt;/p&gt;
+&lt;p&gt;Our definition of the classes above is ambiguous. For example, to which class should the number 165 be allocated? Should it be in the class interval 160-165 or in the class interval 165-170?&lt;/p&gt;
+&lt;p&gt;Rather than adopt an arbitrary convention such as always placing boundary values in the higher (or lower) class we usually define the class boundaries in such a way that such difficulties do not occur. Therefore, we define the classes in a way which resolves this ambiguity. For example, we can define the second class as \(155 \leq x &amp;lt; 160\), where \(x\) is the value of the observation. Alternatively, we can simply write the class interval as \([155,160)\) where the square bracket indicates that the boundary value is included and the round bracket indicates that it is not. Our classes are now as follows.&lt;/p&gt;
+&lt;table class="HELM_table" style="width:35%"&gt;
+&lt;thead&gt;
+&lt;tr style="border-bottom: 1px solid #000;"&gt;
+&lt;th&gt;Class&lt;/th&gt;
+&lt;th&gt;Class Interval&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\(1\)&lt;/td&gt; &lt;td&gt;\([150,\ 155)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(2\)&lt;/td&gt; &lt;td&gt;\([155,\ 160)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(3\)&lt;/td&gt; &lt;td&gt;\([160,\ 165)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(4\)&lt;/td&gt; &lt;td&gt;\([165,\ 170)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(5\)&lt;/td&gt; &lt;td&gt;\([170,\ 175)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(6\)&lt;/td&gt; &lt;td&gt;\([175,\ 180)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\(7\)&lt;/td&gt; &lt;td&gt;\([180,\ 185)\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Notice that the need to consider observations which lie on a class boundary only arises because, in reality, we only record values to a limited number of decimal places. Another method which is sometimes suggested is to define the class boundaries to one more decimal place than the observations.&lt;/p&gt;
+&lt;p&gt;When working by hand, the data can be organised into a frequency table using a &lt;i&gt;tally count&lt;/i&gt;. To do a tally count, as you work through the data set, you make a mark, called a &lt;i&gt;tally mark&lt;/i&gt;, next to the class to which an observation belongs and lightly mark or cross off the observation. When you have finished, the total number of tally marks should be equal to the number of observations.&lt;/p&gt;
+&lt;p&gt;This process gives the tally marks and the corresponding frequencies as shown below.&lt;/p&gt;
+&lt;table class="HELM_table" style="width:70%"&gt;
+&lt;thead&gt;
+&lt;tr style="border-bottom: 1px solid #000;"&gt;
+&lt;th&gt;Class Interval (cm)&lt;/th&gt;
+&lt;th&gt;Tally&lt;/th&gt;
+&lt;th&gt;Frequency&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;\([150,\ 155)\)&lt;/td&gt; &lt;td&gt;| |&lt;/td&gt; &lt;td&gt;\(2\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([155,\ 160)\)&lt;/td&gt; &lt;td&gt;&lt;br&gt;&lt;/td&gt; &lt;td&gt;\(0\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([160,\ 165)\)&lt;/td&gt; &lt;td&gt;| | | | |&lt;/td&gt; &lt;td&gt;\(5\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([165,\ 170)\)&lt;/td&gt; &lt;td&gt;| | | | |&amp;nbsp; &amp;nbsp; | | |&lt;/td&gt; &lt;td&gt;\(8\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([170,\ 175)\)&lt;/td&gt; &lt;td&gt;| | | |&lt;/td&gt; &lt;td&gt;\(4\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([175,\ 180)\)&lt;/td&gt; &lt;td&gt;| | | | |&amp;nbsp; &amp;nbsp;&amp;nbsp;| |&lt;/td&gt; &lt;td&gt;\(7\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;\([180,\ 185)\)&lt;/td&gt; &lt;td&gt;| | | |&lt;/td&gt; &lt;td&gt;\(4\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;It is now easier to see some of the information contained in the original data set. For example, we now know that there are no observations in the class interval \([155, 160)\) and that the class interval \([165, 170)\) contains the most entries.&lt;/p&gt;
+&lt;p&gt;Understanding the information contained in the original table is now rather easier but, as we shall see, diagrams make the situation easier to visualise.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200914145459+CMtnOZ</stamp>
+        <version>stack2.maths.ed.ac.uk+200914145459+uABY4v</version>
+        <hidden>0</hidden>
+        <timecreated>1600095299</timecreated>
+        <timemodified>1600095299</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26735">
+        <parent>0</parent>
+        <name>10.2.2.3 Example-Polar form</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the polar coordinate form of&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+    &lt;li&gt;&lt;span class="math inline"&gt;\(z=3+4i\)&lt;/span&gt; &lt;/li&gt;
+    &lt;li&gt; &lt;span class="math inline"&gt;\(z=-3-i\)&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;
+        &lt;p&gt; Here &lt;span class="math inline"&gt;\(r=|z|=\sqrt{3^2+4^2}=\sqrt{25}=5\qquad \theta=\text{arg}(z)=\tan^{-1}({4\over 3})=0.93 \mathrm{rad}\)&lt;/span&gt; so that&lt;span class="math inline"&gt;\(z=5(\cos 0.93 \mathrm{rad}+i\sin 0.93 \mathrm{rad}).\)&lt;/span&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;Here &lt;span class="math inline"&gt;\(r=|z|=\sqrt{(-3)^2+(-1)^2}=\sqrt{10}\approx 3.16\qquad
+\theta=\text{arg}(z)=\tan^{-1}{(-1)\over {(-3)}}\)&lt;/span&gt; It is natural to assume that &lt;span class="math inline"&gt;\(\tan^{-1}\dfrac{(-1)}{(-3)}=\tan^{-1}\left(\dfrac{1}{3}\right)\)&lt;/span&gt;. &lt;/p&gt;
+
+        &lt;p&gt;Using this value on your calculator (unless it is very sophisticated) you will obtain a value of about &lt;span class="math inline"&gt;\(18.43^{\circ}\), which is approximately \(0.321\ \mathrm{radians}\),&lt;/span&gt;&amp;nbsp;for &lt;span class="math inline"&gt;\({\tan^{-1}({1\over 3})}\)&lt;/span&gt;.
+            This is incorrect since if we use the Argand diagram to plot &lt;span class="math inline"&gt;\(z=-3-i\)&lt;/span&gt; we get:&amp;nbsp;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;p&gt;&lt;/p&gt;
+
+    &lt;br&gt;
+    &lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/10-2-fig4-example-polarform.svg" alt="" role="presentation" class="img-responsive atto_image_button_middle" width="383" height="150"&gt;&amp;nbsp;&lt;/figure&gt;
+    &lt;br&gt;&lt;/ol&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;p&gt;The angle &lt;span class="math inline"&gt;\(\theta\)&lt;/span&gt; is clearly &lt;span class="math inline"&gt;\(-180^{\circ}+18.43^{\circ}=-161.57^{\circ}=-2.82 \mathrm{rad}\)&lt;/span&gt;. This example warns us to take care when determining arg&lt;span class="math inline"&gt;\((z)\)&lt;/span&gt;        purely using algebra. You will always find it helpful to construct the Argand diagram to locate the particular quadrant into which your complex number is pointing. &lt;span&gt;&lt;strong&gt;Your calculator cannot do this for you&lt;/strong&gt;&lt;/span&gt;. Finally,
+        in this example, &lt;span class="math inline"&gt;\(z=3.16\ (\cos -2.82 \mathrm{rad}+i \sin -2.82 \mathrm{rad})\)&lt;/span&gt;.&lt;/p&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200629123208+vuOk45</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210701151237+qzPzhH</version>
+        <hidden>0</hidden>
+        <timecreated>1593433928</timecreated>
+        <timemodified>1625152357</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

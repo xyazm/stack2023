@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27182">
+        <parent>0</parent>
+        <name>35.1.4.1 Complement, empty set exercise (exercise 1)</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Given a set \(A\), its complement \(A'\) and a universal set \(S\), which of the following expressions are true?&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p dir="ltr" style="text-align: left;"&gt;The complement set \(A'\) consists of all elements in the universal set that are not in set \(A\), so \(A \cup A' = S\) and \(A \cap A' = \emptyset\). Also, the subset sequence \(\emptyset \subset A \subset S\) means means that a union between any pair equates to the larger set, \(A \cup \emptyset = A\), and an intersection equates to the smaller set, \(A \cap S = A\).&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200702122328+M25Q9g</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211004105034+XQV7nz</version>
+        <hidden>0</hidden>
+        <timecreated>1593692608</timecreated>
+        <timemodified>1633344634</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="10204">
+              <answertext>&lt;p&gt;\(A \cup A' = S\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10205">
+              <answertext>&lt;p&gt;\(A \cap A' = \emptyset\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10206">
+              <answertext>&lt;p&gt;\(A \cap A' = S\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10207">
+              <answertext>&lt;p&gt;\(A \cup \emptyset = A \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10208">
+              <answertext>&lt;p&gt;\(A \cup \emptyset = \emptyset\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10209">
+              <answertext>&lt;p&gt;\(A \cap \emptyset = A\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>-0.0500000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10210">
+              <answertext>&lt;p&gt;\(A \cap \emptyset = \emptyset\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10211">
+              <answertext>&lt;p&gt;\(A \cup S = S \)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.2000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="1768">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>none</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>1</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

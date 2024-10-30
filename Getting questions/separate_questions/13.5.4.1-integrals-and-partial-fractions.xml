@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24546">
+        <parent>0</parent>
+        <name>13.5.4.1 Integrals and partial fractions</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Integration using partial fractions&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;Sometimes expressions which at first sight look impossible to integrate using the techniques already met may in fact be integrated by first expressing them as simpler partial fractions, and then using the techniques described earlier in this Section.
+    Consider the following Example.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Express \(\dfrac{23-x}{(x - 5)(x + 4)}\) as the sum of its partial fractions.&lt;/p&gt;
+&lt;p&gt;Hence find \({\displaystyle\int \dfrac{23-x}{(x - 5)(x + 4)}\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;First produce the partial fractions. Write the fraction in the form \(\dfrac{A}{x - 5} + \dfrac{B}{x + 4}\) and find \(A\), \(B\) to obtain \(A = 2\) and \(B = -3\)&lt;/p&gt;
+&lt;p&gt;Now integrate each term separately:&lt;/p&gt;
+&lt;p&gt;\({\displaystyle\int \dfrac{23-x}{(x - 5)(x + 4)}\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;p&gt;\(= {\displaystyle\int \dfrac{A}{x - 5}\ \mathrm{d}x} + {\displaystyle\int \dfrac{B}{x + 4}\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;p&gt;\(= {\displaystyle\int \dfrac{2}{x - 5}\ \mathrm{d}x} - {\displaystyle\int \dfrac{3}{x + 4}\ \mathrm{d}x}\)&lt;/p&gt;
+&lt;p&gt;\(= 2\ln|x - 5| - 3\ln|x + 4|\)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200805171246+BMdfEr</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210607084054+TR0wu3</version>
+        <hidden>0</hidden>
+        <timecreated>1596647566</timecreated>
+        <timemodified>1623055254</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

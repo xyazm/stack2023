@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24361">
+        <parent>0</parent>
+        <name>16.1.2.5 Sequences may be neither geometric nor arithmetic</name>
+        <questiontext>&lt;p&gt;The examples of arithmetic and geometric sequences are particularly nice and relatively easy to work with. It is important to note that a general sequence will not fall into either category. One easily defined example is the harmonic sequence&amp;nbsp;&lt;/p&gt;&lt;p&gt;\[1,\frac12,\frac13,\frac14\,\dots,\]&lt;/p&gt;&lt;p&gt;whose \(n\)th term is \(\dfrac{1}{n}\), is neither arithmetic nor geometric.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+201005164345+VwbulE</stamp>
+        <version>stack-back1.maths.ed.ac.uk+201116183734+pDr7Y9</version>
+        <hidden>0</hidden>
+        <timecreated>1601916225</timecreated>
+        <timemodified>1605551854</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62204 -->
+  <question type="stack">
+    <name>
+				<text>23.6.4c Parseval’s theorem example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p></p>
+The triangular signal shown below has trigonometric Fourier series
+\[ f(t)=\frac{\pi}{2}-\frac{4}{\pi} \sum_{{n=1\atop(\text{ odd}\ n)}}^\infty \frac{\cos
+nt}{n^2}.\]<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-6-4-triangle.svg" alt="triangle function" width="495" height="176" class="img-responsive atto_image_button_text-bottom"><br></p>
+Use Parseval's theorem to show that $\ds\sum_{{n=1\atop (n\ \text{ odd})}}^\infty\frac{1}{n^4}=\frac{\pi^4}{96}.$]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200920192621+6Y27dc</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200920192621+2jCYQm</text></tag>
+    </tags>
+    
+</question>
+</quiz>

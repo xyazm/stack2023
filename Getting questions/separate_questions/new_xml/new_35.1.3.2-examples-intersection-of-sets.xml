@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27180 -->
+  <question type="stack">
+    <name>
+				<text>35.1.3.2 Examples intersection of sets</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Given \(A = \{3,4,5,6\}\), \(B = \{3,5,9,10,15\}\) and \(C = \{4,6,10\}\) state</p>
+<ol class="HELM_parts_inline">
+<li>\(A \cap B\)</li>
+<li>\(B \cap C\)</li>
+</ol>
+and draw a Venn diagram representing these intersections.<p>
+</p><h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+<li>The elements common to both \(A\) and \(B\) are \(3\) and \(5\).  Hence \(A \cap B = \{3,5\}\).</li>
+<li>The only element common to \(B\) and \(C\) is \(10\).  Hence \(B \cap C = \{10\}\).</li>
+</ol>
+<img src="@@PLUGINFILE@@/35-1-fig-4-intersection_example.svg" alt="Venn diagram representing intersections" width="189" height="115" class="img-responsive atto_image_button_text-bottom"><br><p></p>
+<p>The intersection of three or more sets is possible.</p>
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Given \(A = \{0,1,2,3\}\), \(B = \{1,2,3,4,5\}\) and \(C = \{2,3,4,7,9\}\) state </p>
+<ol class="HELM_parts_inline">
+<li>\(A \cap B\)</li>
+<li>\((A \cap B) \cap C\)</li>
+<li>\(B \cap C\)</li>
+<li>\(A \cap (B \cap C)\)
+</li></ol>
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+<li>The elements common to \(A\) and \(B\) are \(1, 2\) and \(3\) so \(A \cap B = \{1,2,3\}\).</li>
+<li>We need to consider the sets \((A \cap B)\) and \(C\). \(A \cap B\) is given
+in (a). The elements common to \((A \cap B)\) and \(C\) are \(2\) and \(3\). Hence \((A \cap B) \cap C = \{2,3\}\).</li>
+<li>The elements common to \(B\) and \(C\) are \(2, 3\) and \(4\) so \(B \cap C = \{2,3,4\}\).</li>
+<li>We look at the sets \(A\) and \((B \cap C)\). The common elements are \(2\) and \(3\).  Hence \(A \cap (B \cap C) = \{2,3\}\). <p></p><p>Note from (b) and (d) that \((A \cap B) \cap C = A \cap (B \cap C)\).</p></li></ol>
+<p>The example illustrates a general rule. For any sets \(A\), \(B\) and \(C\) it is true that
+\[(A \cap B) \cap C = A \cap (B \cap C).\]
+The position of the brackets is thus unimportant. They are usually omitted and we write \(A \cap B \cap C\).</p>
+<p>Suppose that sets \(A\) and \(B\) have no elements in common.  Then their intersection contains no elements and we say that \(A\) and \(B\) are <b>disjoint</b> sets. We express this as
+\[A \cap B = \emptyset.\]
+Recall that \(\emptyset\) is the empty set. Disjoint sets are represented by separate area regions in the Venn diagram.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200701004057+vwzVq6</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200727224106+grd0rD</text></tag>
+    </tags>
+    
+</question>
+</quiz>

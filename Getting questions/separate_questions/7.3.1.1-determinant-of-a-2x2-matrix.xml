@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26242">
+        <parent>0</parent>
+        <name>7.3.1.1 Determinant of a 2x2 matrix</name>
+        <questiontext>&lt;h4&gt;Determinant of a \(2\times2\) matrix&lt;/h4&gt;
+&lt;p&gt;The &lt;b&gt;determinant&lt;/b&gt; of the matrix \(A=\begin{bmatrix} a &amp;amp; b \\ c &amp;amp; d \end{bmatrix}\) is denoted by \(\begin{vmatrix} a &amp;amp; b \\ c &amp;amp; d \end{vmatrix}\) (note the change from square brackets to vertical lines) and is defined to be the number \(ad-bc\). That is: \[\begin{vmatrix} a &amp;amp; b \\ c &amp;amp; d \end{vmatrix} = ad-bc.\] &lt;/p&gt;
+
+&lt;p&gt;We can use the notation \(\det(A)\) or \(\lvert A \rvert\) to denote the determinant of \(A\). A common symbol used to represent the determinant of a given matrix is \(\Delta.\)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200709133222+dM0uBI</stamp>
+        <version>stack2.maths.ed.ac.uk+200908091949+i9p9DD</version>
+        <hidden>0</hidden>
+        <timecreated>1594301542</timecreated>
+        <timemodified>1599556789</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

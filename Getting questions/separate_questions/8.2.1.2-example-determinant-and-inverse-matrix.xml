@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26577">
+        <parent>0</parent>
+        <name>8.2.1.2 Example determinant and inverse matrix</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Given the matrix &lt;span class="math display"&gt;\[A=\left[\begin{array}{rr}2&amp;amp;3\\ 1&amp;amp;-2\end{array}\right]\]&lt;/span&gt; find its determinant. What does this tell you about &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt;?&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;&lt;span class="math display"&gt;\[|A|=2\times (-2)-1\times 3=-7.\]&lt;/span&gt; Since &lt;span class="math inline"&gt;\(|A|\neq 0\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; exists. Therefore, we can now find &lt;span class="math inline"&gt;\(A^{-1}\):&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class="math display"&gt;\[A^{-1}=\dfrac{1}{(-7)}\left[\begin{array}{rr}-2&amp;amp;-3\\
+-1&amp;amp;2\end{array}\right]=\dfrac{1}{7}\left[\begin{array}{rr}2&amp;amp;3\\ 1&amp;amp;-2\end{array}\right]\]&lt;/span&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617110906+eftQob</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630130902+aCDDeZ</version>
+        <hidden>0</hidden>
+        <timecreated>1592392146</timecreated>
+        <timemodified>1625058542</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

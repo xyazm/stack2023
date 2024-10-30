@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33745">
+        <parent>0</parent>
+        <name>19.3.2.3 Finding the complementary function</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the auxiliary equation of the differential equation: &lt;span class="math inline"&gt;\[
+a{\mathrm{d}^2y\over \mathrm{d}x^2}+b{\mathrm{d}y\over \mathrm{d}x}+cy=0\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+
+&lt;p&gt;We try a solution of the form &lt;span class="math inline"&gt;\(y=\text{e}^{kx}\)&lt;/span&gt; so that &lt;span class="math inline"&gt;\[
+{{\mathrm{d}y\over \mathrm{d}x}=k\text{e}^{kx}}
+\qquad\text{and}\qquad 
+{{\mathrm{d}^2y\over \mathrm{d}x^2}=k^2\text{e}^{kx}}.\]&lt;/span&gt; Substitution into the given differential equation yields: &lt;span class="math inline"&gt;\[ ak^2\text{e}^{kx}+bk\text{e}^{kx}+c\text{e}^{kx}=0\qquad\text{that is}\qquad (ak^2+bk+c)\text{e}^{kx}=0\]&lt;/span&gt; Since
+    this equation is to be satisfied for all values of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;, then &lt;span class="math inline"&gt;\[ ak^2+bk+c=0\]&lt;/span&gt; is the required auxiliary equation.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;The &lt;span&gt;&lt;strong&gt;auxiliary equation&lt;/strong&gt;&lt;/span&gt; of &lt;span class="math inline"&gt;\[{a{\mathrm{d}^2y\over \mathrm{d}x^2}+b{\mathrm{d}y\over \mathrm{d}x}+cy=0
+\qquad\text{is}\qquad
+ak^2+bk+c=0}\]&lt;/span&gt; where &lt;span class="math inline"&gt;\(y=e^{kx}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210618143315+XHMlyd</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210618143703+3Bs67K</version>
+        <hidden>0</hidden>
+        <timecreated>1624026795</timecreated>
+        <timemodified>1624027023</timemodified>
+        <createdby>2662</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

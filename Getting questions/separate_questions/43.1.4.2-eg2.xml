@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62158">
+        <parent>0</parent>
+        <name>43.1.4.2 Eg2</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Test to determine whether a simple linear model is appropriate for the data previously given in the drum and cable. The data is printed again here.&lt;/p&gt;
+
+&lt;table border="1"&gt;&lt;caption&gt;&amp;nbsp;&lt;/caption&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Weight of drum and cable \( (x) \) kg&lt;/th&gt;&lt;th scope="col"&gt;Measured length of cable \( (y) \) m&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(30\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(70\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(40\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(90\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(40\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(100\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(50\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(120\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(50\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(130\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(50\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(150\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(60\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(160\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(70\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(190\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(70\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(200\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(80\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(200\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(80\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(220\)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;\(80\)&lt;/td&gt;&lt;td style="text-align: center;"&gt;\(230\)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We know that 
+\[ SS_T =SS_R + SS_E, \]
+where \( SS_T =  \sum y^2 - \dfrac{\left( \sum y \right) ^2}{n} \) is the total sum of squares (of \(y\)) so that (from the spreadsheet given previously) we have:
+\[ SS_R = 31500 - 1200 = 30300. \]
+Hence 
+\[ F_{test} = \dfrac{SS_R}{SS_E/(n-2)} = \dfrac{30300}{1200/(12-2)} = 252.5. \]
+&lt;/p&gt;&lt;p&gt;From the \(F\) table, the critical value is \(f_{0.05,1,10} = 241.9,\)&amp;nbsp;&lt;/p&gt;&lt;p&gt;Hence, since&amp;nbsp; \(F_{test} &amp;gt; f_{0.05,1,10}\), we reject the null hypothesis and conclude that \( \beta \neq 0\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704143950+6qmmFV</stamp>
+        <version>stack2.maths.ed.ac.uk+200715054034+JtWK5x</version>
+        <hidden>0</hidden>
+        <timecreated>1593873590</timecreated>
+        <timemodified>1594791634</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

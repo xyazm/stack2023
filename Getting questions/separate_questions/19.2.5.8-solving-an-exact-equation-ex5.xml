@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33692">
+        <parent>0</parent>
+        <name>19.2.5.8 Solving an Exact Equation Ex5</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;
+        &lt;p&gt;Is the equation \(x^{{@aa@}}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@(aa+1)*x^(aa-1)@}y = {@bb@}x^3\) exact? [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;
+    &lt;/li&gt;
+
+    &lt;li&gt;
+        &lt;p&gt;Multiply \(x^{{@aa@}}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@(aa+1)*x^(aa-1)@}y&amp;nbsp; = {@bb@}x^3\) by \(x\) and show that the resulting equation is exact and obtain its solution.&lt;/p&gt;
+
+        &lt;p&gt;Exact form: \(\dfrac{\mathrm{d}}{\mathrm{d}x} \bigg(\) [[input:ans2]] [[validation:ans2]]&amp;nbsp; \(\bigg) = {@bb@}x^4\).&amp;nbsp;[[feedback:prt2]]&lt;/p&gt;
+
+        &lt;p&gt;\(y =\) [[input:ans3]] [[validation:ans3]] \( + \dfrac{C}{x^4}\). [[feedback:prt3]] &lt;/p&gt;
+
+    &lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;
+    &lt;p&gt;We are given the equation \(x^{{@aa@}}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@(aa+1)*x^(aa-1)@}y&amp;nbsp; = {@bb@}x^3\). It cannot be written in the form \[ f(x) \dfrac{\mathrm{d}y}{\mathrm{d}x} + y f^{\prime}(x) = g(x).\] Therefore it is not exact.&lt;/p&gt; 
+	&lt;/li&gt;
+  
+  &lt;li&gt;
+    &lt;p&gt;Multiplying the equation by \(x\) yields the equation \(x^{{@aa+1@}}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@aa+1@}x^{{@aa@}}y = {@bb@}x^4.\)&lt;/p&gt;
+    &lt;p&gt;The equation is of an exact form since it can be written as \[ f(x) \dfrac{\mathrm{d}y}{\mathrm{d}x} + y f^{\prime}(x) = g(x)\] with \[f(x) = x^{{@aa+1@}} \quad \text{and} \quad g(x)={@bb@}x^4.\] Hence the exact form becomes \[\dfrac{\mathrm{d}}{\mathrm{d}x}(yf(x))
+    = g(x), \quad \text{i.e} \quad \dfrac{\mathrm{d}}{\mathrm{d}x}(yx^{{@aa+1@}}) = {@bb@}x^4.\]&lt;/p&gt;
+    
+    &lt;p&gt;Integrating both sides gives \[ yx^{{@aa+1@}} = \int {@bb@}x^4 \ \mathrm{d}x\] which implies  \[yx^{{@aa+1@}} = \dfrac{{@bb@}}{5}x^5 + C.\] Rearranging to find \(y\) we get \[y = {@(bb/5)*x^(5-aa-1)@} + \dfrac{C}{x^{{@aa+1@}}}.\]&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210616114333+tJ0Hox</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210616120132+MzgHaP</version>
+        <hidden>0</hidden>
+        <timecreated>1623843813</timecreated>
+        <timemodified>1623844892</timemodified>
+        <createdby>2662</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23409">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>opts: [["Yes",false],["No", true]];
+ta1: "No";
+
+aa: 2+rand(2);
+bb:2+rand(5);
+
+ta2: y*x^(aa+1);
+ta3: (bb/5)*x^(5-aa-1);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote> \(x^{{@aa+1@}}\dfrac{\mathrm{d}y}{\mathrm{d}x} + {@aa+1@}x^{{@aa@}}y = {@bb@}x^4, y = {@ta3@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54041">
+              <name>ans1</name>
+              <type>dropdown</type>
+              <tans>opts</tans>
+              <boxsize>1</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="54042">
+              <name>ans2</name>
+              <type>algebraic</type>
+              <tans>ta2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="54043">
+              <name>ans3</name>
+              <type>algebraic</type>
+              <tans>ta3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46370">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71294">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="46371">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71295">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta2</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="46372">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71296">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta3</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54166">
+              <testcase>1</testcase>
+              <timemodified>1623844145</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117206">
+                  <inputname>ans1</inputname>
+                  <value>first(mcq_correct(opts))</value>
+                </stackqtestinput>
+                <stackqtestinput id="117207">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="117208">
+                  <inputname>ans3</inputname>
+                  <value>ta3</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100166">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="100167">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="100168">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54167">
+              <testcase>2</testcase>
+              <timemodified>1623844285</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117215">
+                  <inputname>ans1</inputname>
+                  <value>"Yes"</value>
+                </stackqtestinput>
+                <stackqtestinput id="117216">
+                  <inputname>ans2</inputname>
+                  <value>ev(2*ta2,simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="117217">
+                  <inputname>ans3</inputname>
+                  <value>ev(2*ta3,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100175">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="100176">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="100177">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="234902">
+              <seed>1120893740</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234903">
+              <seed>1200539485</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234904">
+              <seed>2137595740</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234905">
+              <seed>1511181185</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234906">
+              <seed>1965998421</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234907">
+              <seed>1135901494</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234908">
+              <seed>1513231001</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234909">
+              <seed>1273347158</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="234910">
+              <seed>1338569865</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

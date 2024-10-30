@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24678 -->
+  <question type="stack">
+    <name>
+				<text>19.1.1.2 Newton's Law of Cooling</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+ <p> Which of the following mathematical equations is equivalent to Newton's Law of Cooling?&nbsp;First, find an expression for the rate of cooling, and an expression for&nbsp;<span style="font-size: 0.9375rem;">the difference between the liquid's temperature and that of the&nbsp;</span>
+    <span style="font-size: 0.9375rem;">environment.&nbsp;</span><span style="font-size: 0.9375rem;">Note that \(k\) is a positive constant.</span></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>You should obtain <span class="math inline">\({\mathrm{d}\theta\over \mathrm{d}t}\propto (\theta-\theta_\text{s})\)</span> or, equivalently: <span class="math inline">\({\mathrm{d}\theta\over \mathrm{d}t}=-k(\theta-\theta_\text{s})\)</span>.&nbsp;&nbsp;<span class="math inline">\(k\)</span> is a positive constant of proportion and the negative sign is present because (<span class="math inline">\(\theta-\theta_\text{s}\)</span>) is positive, whereas <span class="math inline">\({\mathrm{d}\theta\over \mathrm{d}t}\)</span> must be negative, since <span class="math inline">\(\theta\)</span> decreases with time. The units of <span class="math inline">\(k\)</span> are s<span class="math inline">\(^{-1}\)</span>. The accompanying condition is <span class="math inline">\(\theta=\theta_0\)</span> at <span class="math inline">\(t=0\)</span> which simply states the temperature of the liquid when the cooling begins.</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:moodle2.maths.ed.ac.uk+210305172209+GQIMUC</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210614102816+d5Nnf5</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27255 -->
+  <question type="stack">
+    <name>
+				<text>36.1.5.6 Cumulative frequency curve or ogive</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>In the case of larger samples the quantities can be approximated by using a <b>cumulative frequency curve</b> or <b>ogive</b>. The cumulative frequency distribution for the heights of the 30 students given earlier is shown below. Notice that here, the class intervals are defined in such a way that the frequencies accumulate (hence the term <i>cumulative frequency</i>) as the table is built up.</p>
+<table class="HELM_table" style="text-align: center; width: 90%;">
+<thead>
+<tr style="border-bottom: 1px solid #000;">
+<th>Height</th><th>Cumulative Frequency</th><th>Cumulative Relative Frequency (to 3 d.p.)</th></tr>
+</thead> 
+<tbody><tr><td>less than 145&nbsp;</td><td>&nbsp;0</td><td>&nbsp;0.000</td></tr><tr><td>&nbsp;less than 150</td><td>4</td><td>0.133</td></tr>
+<tr><td>less than 155</td><td>7</td><td>0.233</td></tr>
+<tr><td>less than 160</td><td>8</td><td>0.267</td></tr>
+<tr><td>less than 165</td><td>15</td><td>0.500</td></tr>
+<tr><td>less than 170</td><td>17</td><td>0.567</td></tr>
+<tr><td>less than 175</td><td>20</td><td>0.667</td></tr>
+<tr><td>less than 180</td><td>26</td><td>0.867</td></tr>
+<tr><td>less than 185</td><td>27</td><td>0.900</td></tr><tr><td>less than 190&nbsp;</td><td>&nbsp;30</td><td>&nbsp;1.000</td></tr>
+</tbody>
+</table>
+<br><p>To plot the ogive or cumulative frequency curve, we plot the heights on the horizontal axis and the cumulative frequencies or cumulative relative frequencies on the vertical axis. The corresponding ogive is shown in the figure below.</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/ECDF_Heights_HELM.png" alt="Empirical CDF of heights (HELM)" width="600" height="445" class="img-responsive atto_image_button_text-bottom" style="font-size: 0.9375rem;"><br></p><p>The three statistics defined above can be read from the diagram as indicated. They are the values where the cumulative relative frequency is \(0.25, 0.50\) and \(0.75\). With \(n=30\), this corresponds to cumulative frequencies of \(7.5\), \(15.0\) and \(22.5\).</p>
+<p>For the data set giving the heights of the 30 students, the three statistics, as obtained using the ogive, are as follows.</p>
+<ol>
+<li><b>The Lower Quartile</b> is \(155.3\).</li>
+<li><b>The Median</b> is \(165.15\).</li>
+<li><b>The Upper Quartile</b> is \(177.8\).</li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200710191647+G0pPt2</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211007180311+xOwEpr</text></tag>
+    </tags>
+    
+</question>
+</quiz>

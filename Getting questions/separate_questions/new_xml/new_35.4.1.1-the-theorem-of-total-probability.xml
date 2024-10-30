@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27230 -->
+  <question type="stack">
+    <name>
+				<text>35.4.1.1 The theorem of total probability</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3> 1.1 The theorem of Total Probability and Bayes' theorem </h3>
+<p> To establish these results we start with the definition of a partition of a sample space. </p>
+<h4> A partition of a sample space </h4>
+<p> The collection of events \(A_1,A_2,\dots,A_n\) is said to <strong>partition</strong> a sample space \(S\) if </p>
+<ol type="a">
+<li> \(A_1\cup A_2 \cup\cdots\cup A_n = S\); </li>
+<li> \(A_i\cap A_j = \varnothing\) for all \(i, j\) with \(i\neq j\); </li>
+<li> \(A_i\neq\varnothing\) for all \(i\). </li>
+</ol>
+<p> In essence, a partition is a collection of non-empty, non-overlapping subsets of a sample space whose union is the sample space itself. The definition is illustrated by the figure below. </p>
+<p style="text-align: center;"><strong><img src="@@PLUGINFILE@@/3-5-4-partition1.svg" alt="" role="presentation"><br></strong></p><p style="text-align: center;"><strong>Figure:</strong> Partition of a set.</p>
+<p> If \(B\) is any event within \(S\) then we can express \(B\) as the union of subsets:\[B = (B \cap A_1) \cup (B \cap A_2) \cup\cdots\cup(B \cap A_n)\]The definition is illustrated in the figure below in which an event B in S is represented by the shaded region.</p><p style="text-align: center;"><strong><img src="@@PLUGINFILE@@/3-5-4-partition2.svg" alt="" role="presentation"><br></strong></p>
+<p style="text-align: center;"><strong>Figure:</strong> A subset in a set partition.</p>
+<p> The bracketed events \((B\cap A_1),(B\cap A_2),\dots,(B\cap A_n)\) are mutually exclusive (if one occurs then none of the others can occur) and so, using the addition law of probability for mutually exclusive events:\[\mathbb{P}(B) = \mathbb{P}(B\cap A_1) + \mathbb{P}(B\cap A_2) +\cdots+ \mathbb{P}(B\cap A_n)\]Each of the probabilities on the right-hand side may be expressed in terms of conditional probabilities:\[\mathbb{P}(B\cap A_i) = \mathbb{P}(B|A_i)\mathbb{P}(A_i)\quad\text{for all }i.\]Using these in the expression for \(\mathbb{P}(B)\), above, gives:\[\begin{aligned}\mathbb{P}(B) &amp;= \mathbb{P}(B|A_1)\mathbb{P}(A_1) + \mathbb{P}(B|A_2)\mathbb{P}(A_2) +\cdots+ \mathbb{P}(B|A_n)\mathbb{P}(A_n)\\ &amp;= \sum_{i=1}^n\mathbb{P}(B|A_i)\mathbb{P}(A_i).\end{aligned}\]This is the <strong>theorem of Total Probability</strong>. A related theorem with many applications in statistics can be deduced from this, known as <strong>Bayes’ theorem</strong>.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200706143515+n9M9Dh</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200904105134+kHmdEY</text></tag>
+    </tags>
+    
+</question>
+</quiz>

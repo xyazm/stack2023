@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27364 -->
+  <question type="stack">
+    <name>
+				<text>39.1.7.1 Probability Intervals - Standard Normal Distribution</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Probability Intervals - Standard Normal Distribution</h4>
+
+<p>We use probability models to make predictions in situations where there is not sufficient data available to make a definite statement. Any statement based on these models carries with it a <strong>risk</strong> of being proved incorrect by events. Notice that the normal probability curve extends to infinity in both directions. <strong>Theoretically</strong> any value of the normal random variable is possible, although, of course, values far from the mean position (zero) are very unlikely.</p>
+
+<p>Consider the diagram in the Figure below:</p> 
+<p></p><center><img src="@@PLUGINFILE@@/39-1-fig-13-standard95confinterval.svg" alt="The Normal distribution curve with 95% of the area shaded in, between z-values z1 = -1.96 and z2 = 1.96." width="227" height="108" class="img-responsive atto_image_button_text-bottom"><br></center><p></p> 
+
+<p>The shaded area is \(95\%\) of the total area. If we look at the entry in the Standard Normal Table (at the end of the quiz) corresponding to \(Z=1.96\) we see the value \(4750\). This means that the probability of \(Z\) taking a value between \(0\) and \(1.96\) is \(0.475\). By symmetry, the probability that \(Z\) takes a value between \(-1.96\) and \(0\) is also \(0.475\). Combining these results we see that </p>
+<p>\(\qquad \text{P}(-1.96&lt;Z&lt;1.96)=0.95\ \ \text{or}\ \ 95\%\)</p>
+<p>We say that the \(95\%\) probability interval for \(Z\) (about its mean of \(0\)) is \((-1.96, 1.96)\). It follows that there is a \(5\%\) chance that \(Z\) lies outside this interval.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200730114453+bAHX5r</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200801010253+J0EwmU</text></tag>
+    </tags>
+    
+</question>
+</quiz>

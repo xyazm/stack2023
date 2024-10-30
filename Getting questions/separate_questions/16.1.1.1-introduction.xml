@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24352">
+        <parent>0</parent>
+        <name>16.1.1.1 Introduction</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Introduction&lt;/span&gt;&lt;/h3&gt;&lt;br&gt;
+
+&lt;p&gt;An infinite&amp;nbsp;&lt;strong&gt;sequence&lt;/strong&gt; is any succession of numbers. For example the sequence \[ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ \ldots\] which is known as the Fibonacci sequence, is formed by adding two consecutive terms together to obtain the next term.
+    The numbers in this sequence continually increase without bound and we say this sequence &lt;strong&gt;diverges&lt;/strong&gt;. An example of a &lt;strong&gt;convergent&lt;/strong&gt; sequence is the &lt;strong&gt;harmonic sequence&lt;/strong&gt; \[1,\ \dfrac{1}{2},\ \dfrac{1}{3},\
+    \dfrac{1}{4},\ \ldots\] Here we see the magnitude of these numbers continually decrease and it is obvious that the sequence converges to the number zero. The related &lt;strong&gt;alternating harmonic sequence&lt;/strong&gt; \[1,\ -\dfrac{1}{2},\ \dfrac{1}{3},\
+    -\dfrac{1}{4},\ \ldots\] is also convergent to the number zero. Whether or not a sequence is convergent is often easy to deduce by graphing the individual terms. The diagrams below show how the individual terms of the harmonic and alternating harmonic
+    series behave as the number of terms increase.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/16-1-fig-1a-Harmonic.svg?time=1623248446265" alt="Graph of the individual terms of the harmonic sequence, showing how these behave as the number of terms increases." width="514" height="116" class="img-responsive atto_image_button_text-bottom"&gt;
+&lt;/figure&gt;
+
+
+&lt;figure class="HELM_figure"&gt;
+  &lt;img src="@@PLUGINFILE@@/16-1-fig-1b-AltHarmonic.svg" alt="Graph of the individual terms of the alternating harmonic sequence, showing how these behave as the number of terms increases." width="504" height="141" class="img-responsive atto_image_button_text-bottom"&gt;
+&lt;/figure&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+201002134755+Y1Bvoy</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610131958+UMr9tC</version>
+        <hidden>0</hidden>
+        <timecreated>1601646475</timecreated>
+        <timemodified>1623331198</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

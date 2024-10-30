@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 32189 -->
+  <question type="stack">
+    <name>
+				<text>18.3.3.3 The nature of a stationary point</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>For most functions the procedures described above enable us to distinguish between the various types of stationary point. However, note the following example, in which these procedures fail.</p>
+<p>Given\(f(x,y)=x^4+y^4+2x^2y^2.\) \(\dfrac{\partial f}{\partial x}=4x^3+4xy^2,\dfrac{\partial f}{\partial y}=4y^3+4x^2y,\) \(\dfrac{\partial^2f}{\partial x^2}=12x^2+4y^2,\dfrac{\partial^2f}{\partial y^2}=12y^2+4x^2, \dfrac{\partial^2f}{\partial x\partial
+    y}=8xy\)</p>
+<p><strong>Location</strong>:</p>
+<p>The stationary points are located where \(\dfrac{\partial f}{\partial x}=\dfrac{\partial f}{\partial y}=0,\) that is, where<br> \(4x^3+4xy^2=0\) and \(4y^3+4x^2y=0\). A simple factorisation implies \(4x(x^2+y^2)=0\) and \(4y(y^2+x^2)=0\). The only solution
+    which satisfies both equations is \(x=y=0\) and therefore the only stationary point is \((0,0)\).</p>
+<p><strong>Nature</strong>:</p>
+<p>Unfortunately, all the second partial derivatives are zero at \((0,0)\) and therefore \(D=0\), so the test, as described in the Key Point fails to give us the necessary information.</p>
+<p>However, in this example it is easy to see that the stationary point is in fact a local minimum. This could be confirmed by using a computer generated graph of the surface near the point \((0,0)\). Alternatively, we observe \(x^4+y^4+2x^2y^2\equiv (x^2+y^2)^2\)
+    so \(f(x,y)\ge 0\), the only point where \(f(x,y)=0\) being the stationary point. This is therefore a local (and global) minimum.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210611134440+AwYKN0</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210611134440+qiVs0X</text></tag>
+    </tags>
+    
+</question>
+</quiz>

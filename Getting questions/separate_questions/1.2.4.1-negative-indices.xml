@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26074">
+        <parent>0</parent>
+        <name>1.2.4.1 Negative indices</name>
+        <questiontext>&lt;h3&gt;Negative indices
+&lt;/h3&gt;
+&lt;p&gt;Sometimes a number is raised to a negative power. This is interpreted as follows:&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Negative Powers&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;\(a^{-m} = \dfrac{1}{a^m}, \qquad a^m = \dfrac{1}{a^{-m}}\)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Thus a negative index can be used to indicate a reciprocal.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Write each of the following expressions using a positive index and simplify if possible.&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(2^{-3}\)&lt;/li&gt;
+&lt;li&gt;\(\dfrac{1}{4^{-3}}\)&lt;/li&gt;
+&lt;li&gt;\(x^{-1}\)&lt;/li&gt;
+ &lt;li&gt;\(x^{-2}\)&lt;/li&gt;
+&lt;li&gt;\(10^{-1}\)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt; \(2^{-3} = \dfrac{1}{2^3} = \dfrac{1}{8}\)&lt;/li&gt;
+ &lt;li&gt; \(\dfrac{1}{4^{-3}} = 4^3 = 64\)&lt;/li&gt;
+ &lt;li&gt;\(x^{-1}= \dfrac{1}{x^1}=\dfrac{1}{x}\)&lt;/li&gt;
+ &lt;li&gt;\(x^{-2}= \dfrac{1}{x^2}\)&lt;/li&gt;
+  &lt;li&gt;\(10^{-1}=\dfrac{1}{10^1}= \dfrac{1}{10} \) or \( 0.1\)&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200618084447+3h2y7J</stamp>
+        <version>stack2.maths.ed.ac.uk+200619101701+caSfMn</version>
+        <hidden>0</hidden>
+        <timecreated>1592469887</timecreated>
+        <timemodified>1592561821</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

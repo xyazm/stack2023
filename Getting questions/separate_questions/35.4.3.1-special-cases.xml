@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27232">
+        <parent>0</parent>
+        <name>35.4.3.1 Special cases</name>
+        <questiontext>&lt;h3&gt;Special cases &lt;/h3&gt;
+&lt;p&gt; In the case where we consider \(A\) to be an event in a sample space \(S\) (the sample space is partitioned by \(A\) and \(A'\)) we can state simplified versions of the theorem of Total Probability and Bayes theorem as shown below. &lt;/p&gt;
+&lt;h4&gt; The theorem of total probability: special case &lt;/h4&gt;
+&lt;p&gt; This special case enables us to find the probability that an event \(B\) occurs taking into account the fact that another event \(A\) may or may not have occurred. The theorem becomes\[\mathbb{P}(B) = \mathbb{P}(B|A)\times\mathbb{P}(A) + \mathbb{P}(B|A')\times\mathbb{P}(A')\]The result is easily seen by considering the general result already derived or it may be derived directly
+as follows. Consider the figure below.&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;strong&gt;&lt;img src="@@PLUGINFILE@@/3-5-4-intersection.svg" alt="" role="presentation"&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Intersections and complements.&lt;/p&gt;
+&lt;p&gt; It is easy to see that the event \(B\) consists of the union of the (disjoint) events \(A\cap B\) and \(B\cap A'\) so that we may write \(B\) as the union of these disjoint events. We have\[B = (A\cap B)\cup (B\cap A').\]Since the events \(A\cap B\) and \(B\cap A'\) are disjoint, they must be independent and so\[\mathbb{P}(B) = \mathbb{P}(A\cap B) + \mathbb{P}(B\cap A').\]Using the conditional probability results we already have we may write\[\begin{aligned}\mathbb{P}(B) &amp;amp;= \mathbb{P}(A\cap B)+\mathbb{P}(B\cap A')\\ &amp;amp;= \mathbb{P}(B\cap A)+\mathbb{P}(B\cap A')\\
+&amp;amp;= \mathbb{P}(B|A)\times\mathbb{P}(A)+\mathbb{P}(B|A')\times\mathbb{P}(A').\end{aligned}\]The result we have derived is\[\mathbb{P}(B) = \mathbb{P}(B|A)\times\mathbb{P}(A)+\mathbb{P}(B|A')\times\mathbb{P}(A').\] &lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200706151451+X7sMCM</stamp>
+        <version>stack2.maths.ed.ac.uk+200914233519+9jMLNJ</version>
+        <hidden>0</hidden>
+        <timecreated>1594048491</timecreated>
+        <timemodified>1600126519</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

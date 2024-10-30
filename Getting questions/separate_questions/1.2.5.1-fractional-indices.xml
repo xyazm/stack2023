@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26078">
+        <parent>0</parent>
+        <name>1.2.5.1 Fractional indices</name>
+        <questiontext>&lt;h3&gt;Fractional indices
+&lt;/h3&gt;
+&lt;p&gt;So far we have used indices that are whole numbers. We now consider fractional powers. Consider the expression \((16^{1\over 2})^2\). Using the third law of indices, \((a^m)^n=a^{mn}\), we can write&lt;/p&gt;
+&lt;p&gt; \( (16^{1\over 2})^2 = 16^{{1\over 2}\times 2} = 16^1 =16\).&lt;/p&gt;
+&lt;p&gt;So \(16^{1\over 2}\) is a number which when squared equals 16, that is 4 or \(-4\). In other words \(16^{1\over 2}\) is a square root of 16. There are always two square roots of a non-zero positive number, and we write \(\  16^{1\over 2} = \pm 4\).&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;In general, \(a^{\frac{1}{2}}\) is a square root of \(a\) where \(a&amp;gt;0\)  &lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt; Similarly&lt;/p&gt;
+&lt;p&gt; \( (8^{1\over 3})^3 = 8^{{1\over 3}\times 3} = 8^1 = 8\) &lt;/p&gt;
+&lt;p&gt;so that \(8^{1\over 3}\) is a number which when cubed equals \(8\). Thus \(8^{1\over 3}\) is the cube root of \(8\), that is \(\sqrt[3]{8}\), namely \(2\). Each number has only one cube root, and so &lt;/p&gt;
+&lt;p&gt;\( 8^{1\over 3} = 2\). &lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;In general, \(a^{\frac{1}{3}}\) is the cube root of \(a\) &lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;More generally we have&lt;/p&gt; 
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;The \(n\)th root of \(a\) is denoted by \(a^{\frac{1}{n}}\).&lt;/p&gt;
+&lt;p&gt;
+When \(a&amp;lt;0\) the \(n\)th root only exists if \(n\) is odd.&lt;/p&gt;
+&lt;p&gt;
+If \(a&amp;gt;0\) the positive \(n\)th root is denoted by \(\sqrt[n]{a}\)&lt;/p&gt;
+&lt;p&gt;
+If \(a&amp;lt;0\) the negative \(n\)th root is \(-\sqrt[n]{|a|}\)&lt;/p&gt;
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;Your calculator will be able to evaluate fractional powers, and roots of numbers. Check that you can obtain the results of the following Examples on your calculator, but be aware that calculators normally give only one root when there may be others.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Evaluate.&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(144^{1/2}\)&lt;/li&gt;
+&lt;li&gt;\(125^{1/3}\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;\(144^{1/2}\) is a square root of 144, that is \(\pm 12.\)&lt;/li&gt;
+&lt;li&gt;Noting that \(5^3=125\), we see that \(125^{1/3}=\sqrt[3]{125}=5.\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Evaluate.&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(32^{1/5}\)&lt;/li&gt;
+&lt;li&gt;\(32^{2/5}\)&lt;/li&gt;
+&lt;li&gt;\(8^{2/3}\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;\(32^{1\over 5}\) is the 5th root of 32, that is \(\sqrt[5]{32}\). Now \(2^5=32\) and so \(\sqrt[5]{32}=2\).&lt;/li&gt;
+&lt;li&gt;Using the third law of indices we can write \(32^{2/5}=32^{2\times {1\over 5}} = (32^{1\over 5})^2\). Thus \(  32^{2/5}=((32)^{1/5})^2=2^2=4\).&lt;/li&gt;
+&lt;li&gt;Note that \(8^{1/3}=2\). Then \(  8^{2\over 3} = 8^{2\times {1\over 3}} = (8^{1/3})^2 = 2^2=4\). &lt;/li&gt;
+&lt;p&gt;Note the following alternatives: \(  8^{2/3} = (8^{1/3})^2 = (8^2)^{1/3}\).&lt;/p&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619101736+aH3gEn</stamp>
+        <version>stack2.maths.ed.ac.uk+200619105510+ZeGCJk</version>
+        <hidden>0</hidden>
+        <timecreated>1592561856</timecreated>
+        <timemodified>1592564110</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

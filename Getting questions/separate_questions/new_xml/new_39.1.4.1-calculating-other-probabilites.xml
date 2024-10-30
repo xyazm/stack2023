@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27360 -->
+  <question type="stack">
+    <name>
+				<text>39.1.4.1 Calculating Other Probabilites</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Calculating Other Probabilities</h3>
+
+<p>In this Section, we see how to calculate probabilities represented by areas other than those of the type shown in the previous Section.</p>
+
+<h4>Case 1</h4>
+<p>The below Figure illustrates what we do if both \(Z\) values are positive. By using the properties of the standard normal distribution we can organise matters so that any required area is always of ‘standard form’.</p> 
+
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/39-1-fig-4-case1.svg" alt="The shaded area between two positive z-values is shown as equal to the area between 0 and the larger z-value, minus the area between 0 and the smaller z-value." width="586" height="230" class="img-responsive atto_image_button_text-bottom"><br></p><p></p> 
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find the probability that \(Z\) takes values between \(1\) and \(2\).</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>Using the Standard Normal Table:</p>
+<p>\(\text{P}(0 &lt; Z &lt; z_2)\) i.e. \(\text{P}(0 &lt; Z &lt; 2) = 0.4772\)</p>
+<p>\(\text{P}(0 &lt; Z &lt; z_1)\) i.e. \(\text{P}(0 &lt; Z &lt; 1) = 0.3413\)</p>
+<p>Hence \(\text{P}(1 &lt; Z &lt; 2) = 0.4772 − 0.3413 = 0.1359\)</p>
+<p>Remember that with a continuous distribution, \(\text{P}(Z = 1)\) is meaningless (will have zero probability) so that \(\text{P}(1 ≤ Z ≤ 2)\) is interpreted as \(\text{P}(1 &lt; Z &lt; 2)\).</p>
+<hr>
+
+<h4>Case 2</h4>
+<p>The following diagram illustrates the procedure to be followed when finding probabilities of the form \(\text{P}(Z&gt;z_1)\).</p>
+
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/39-1-fig-5-case2.svg" alt="This time the shaded area is the difference between the total area of the right-hand half, 0.5, and an area between 0 and z1 which can be read off from the Standard Normal Table." width="616" height="197" class="img-responsive atto_image_button_text-bottom"><br></p><p></p> <p>
+
+</p><hr>
+<h4 class="HELM_example">Example</h4>
+<p>What is the probability that \(Z&gt;2\)?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>\(\text{P}(0 &lt; Z &lt; 2) = 0.4772\) (from the Table). Hence the probability is \(0.5 − 0.4772\) \(= 0.0228\).</p>
+<hr>
+
+<h4>Case 3</h4>
+<p>Here we consider the procedure to be followed when calculating probabilities of the form \(\text{P}(Z&lt;z_1)\). Here the shaded area is the sum of the left-hand half of the total area and a ‘standard’ area.</p><p>
+
+</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/39-1-fig-6-case3.svg" alt="The shaded area is 0.5 plus the area between 0 and the positive z1." width="607" height="168" class="img-responsive atto_image_button_text-bottom"><br></p><p></p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>What is the probability that \(Z&lt;2\)?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>\(\text{P}(Z &lt; 2) = 0.5 + 0.4772 = 0.9772.\)</p>
+<hr>
+
+<h4>Case 4</h4>
+<p>Here we consider what needs to be done when calculating probabilities of the form<br> \(\text{P}(-z_1&lt;Z&lt;0)\) where \(z_1\) is positive. This time we make use of the symmetry in the standard normal distribution curve.</p>
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/39-1-fig-7-case4.svg" alt="By symmetry, the shaded area between 0 and the positive z1 is equal to the shaded area between 0 and -z1." width="536" height="224" class="img-responsive atto_image_button_text-bottom"><br></p><p></p> 
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>What is the probability that \(-2&lt;Z&lt;0\)?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>The area is equal to that corresponding to \(\text{P}(0 &lt; Z &lt; 2) = 0.4772.\)</p>
+<hr>
+
+<h4>Case 5</h4>
+
+<p>Finally we consider probabilities of the form \(\text{P}(-z_1&lt;Z&lt;z_2)\). Here we use the sum property and the symmetry property.</p> 
+
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/39-1-fig-8-case5.svg" alt="The area between a negative-valued z2 and a positive-valued z1 is equal to the area between 0 and z1 plus the area between 0 and -z2." width="595" height="229" class="img-responsive atto_image_button_text-bottom"><br></p><p></p> 
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>What is the probability that \(-1&lt;Z&lt;2\)?</p> 
+<h4 class="HELM_solution">Solution</h4>
+<p>\(\text{P}(−1 &lt; Z &lt; 0) = \text{P}(0 &lt; Z &lt; 1) = 0.3413\)</p>
+<p>\(\text{P}(0 &lt; Z &lt; 2) = 0.4772\)</p>
+<p>Hence the required probability \(\text{P}(−1 &lt; Z &lt; 2)\) is \(0.8185.\)</p>
+<hr>
+
+<p>Other cases can be handed by a combination of the ideas already used.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200728143637+QezFMX</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211014105755+8mdp8Q</text></tag>
+    </tags>
+    
+</question>
+</quiz>

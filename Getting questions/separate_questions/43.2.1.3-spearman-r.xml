@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62178">
+        <parent>0</parent>
+        <name>43.2.1.3 Spearman R</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;As a result of two tests given to 10 students studying laboratory safety, the students were placed in the following class order.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="height: 437px;" border="1" width="330"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;&lt;b&gt;Student&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;&lt;b&gt;Test 1&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;&lt;b&gt;Test 2&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;A&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A1@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B1@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;B&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A2@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;C&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A3@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B3@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;D&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A4@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B4@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;E&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A5@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B5@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;F&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A6@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B6@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;G&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A7@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B7@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;H&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A8@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B8@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;I&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A9@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B9@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 91.3333px; text-align: center;"&gt;J&lt;/td&gt;
+&lt;td style="width: 135.333px; text-align: center;"&gt;\({@A10@}\)&lt;/td&gt;
+&lt;td style="width: 80.6667px; text-align: center;"&gt;\({@B10@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Use Spearman's \(R\) to discuss the consistency of their performances, giving your answers to 3 decimal places. What is the conclusion?&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Can you think of a meaningful comment regarding the two tests as a means of assessing laboratory safety?&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Take the hypotheses to be&lt;/p&gt;
+\[ H_0 : R = 0 \hspace{2cm} H_1 : R \neq 0. \]
+&lt;p&gt;&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;p&gt; \(R\) = [[input:ans1]] [[validation:ans1]][[feedback:prt1]]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt; \(R_{test}\) = [[input:ans2]][[validation:ans2]][[feedback:prt2]]&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; The critical value for a two-sided \(t\)-test at the \(5\%\) level read off from tables is [[input:ans3]], therefore we [[input:ans4]] the null hypothesis at the \(5\%\) level.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;[[validation:ans3]][[feedback:prt3]]&lt;/p&gt;
+&lt;p&gt;[[validation:ans4]][[feedback:prt4]]&lt;/p&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Setting up a spreadsheet to do the calculations gives:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="height: 286px;" border="1" width="550"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;&lt;b&gt;Test 1&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;&lt;b&gt;Test 2&lt;/b&gt;&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\(D\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\(D^2\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A1@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B1@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D1@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D1^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A2@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B2@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D2@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D2^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A3@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B3@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D3@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D3^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A4@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B4@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D4@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D4^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A5@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B5@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D5@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D5^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A6@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B6@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D6@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D6^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A7@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B7@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D7@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D7^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A8@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B8@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D8@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D8^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A9@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B9@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D9@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D9^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;\({@A10@}\)&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\({@B10@}\)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\({@D10@}\)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\({@D10^2@}\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;\( \sum D^2 = {@sumd2@} \)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 122px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="width: 122px;"&gt;\( R = {@R@} \)&lt;/td&gt;
+&lt;td style="width: 134px;"&gt;\( R_{test} = {@Rtest@} \)&lt;/td&gt;
+&lt;td style="width: 143.333px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Substituting in the formula we developed for \(R\) gives the result&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;\[ r =1 - \dfrac{6 \sum D^2}{n(n^2 - 1)} = 1 - \dfrac{6 \times {@sumd2@}}{ {@n@}({@n^2@} - 1) } = {@ta1@}\]&lt;/p&gt;
+&lt;p&gt;and then&lt;/p&gt;
+&lt;p&gt;\[R_{test} = \dfrac{R\sqrt{n-2}}{\sqrt{1 - R^2}} = {@ta2@}\]&lt;/p&gt;
+&lt;p&gt;Hence, since the critical value for a two-sided \(t\)-test at the \(5\%\) level read off from tables is \(2.306\) we see that since \( {@ta2@} &amp;lt; 2.306 \) we &lt;strong&gt;cannot&lt;/strong&gt; reject the null hypothesis that there is no correlation between the results. This implies that the performances of the students on the tests may not be related and we should question at least one of the tests as a means of assessing laboratory safety. One could, of course, question the usefulness of both tests!&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200711120957+9NOWFq</stamp>
+        <version>stack2.maths.ed.ac.uk+200712055327+1Bla36</version>
+        <hidden>0</hidden>
+        <timecreated>1594469397</timecreated>
+        <timemodified>1594533206</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="40684">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>n:10;
+A1:2;
+A2:4
+A3:3;
+A4:5;
+A5:1;
+A6:6;
+A7:8;
+A8:7;
+A9:9;
+A10:10;
+
+B1:rand([3,4]);
+B2:rand([5,6]);
+B3:rand([7,8]);
+B4:rand([9,10]);
+B5:rand([10,11]);
+B6:rand([2,4]);
+B7:rand([6,7]);
+B8:rand([8,10]);
+B9:rand([4,5]);
+B10:rand([1]);
+
+D1:A1 - B1;
+D2:A2 - B2;
+D3:A3 - B3;
+D4:A4 - B4;
+D5:A5 - B5;
+D6:A6 - B6;
+D7:A7 - B7;
+D8:A8 - B8;
+D9:A9 - B9;
+D10:A10 - B10;
+
+sumd2:D1^2 + D2^2 + D3^2 + D4^2 + D5^2 + D6^2 + D7^2 + D8^2 + D9^2 + D10^2;
+
+R:decimalplaces( 1 - (6*sumd2)/(n*(n^2 - 1)) ,6);
+Rtest:decimalplaces( R*sqrt(n-2)/sqrt(1-R^2),6);
+ta1:decimalplaces(R,3);
+ta2:decimalplaces(Rtest,3);
+Ta2:decimalplaces( ta1*sqrt(n-2)/sqrt(1-ta1^2),3);
+ta3:[[1.860,false],[2.228, false],[2.306,true]];
+ta4:[["can",false],["cannot", true]];
+
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>{@ta1@}, {@ta2@}, {@Ta2@}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="99137">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta1</tans>
+              <boxsize>4</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>mindp:3, maxdp:3</options>
+            </stackinput>
+            <stackinput id="99138">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta2</tans>
+              <boxsize>4</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>mindp:3, maxdp:3</options>
+            </stackinput>
+            <stackinput id="99139">
+              <name>ans3</name>
+              <type>dropdown</type>
+              <tans>ta3</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99140">
+              <name>ans4</name>
+              <type>dropdown</type>
+              <tans>ta4</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="86451">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="127879">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="86452">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="127880">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>abs(ans2)</sans>
+                  <tans>abs(ta2)</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="127881">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>abs(ans2)</sans>
+                  <tans>abs(Ta2)</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="86453">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="127882">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>[ans3]</sans>
+                  <tans>mcq_correct(ta3)</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="86454">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="127883">
+                  <nodename>0</nodename>
+                  <answertest>String</answertest>
+                  <sans>[ans4]</sans>
+                  <tans>mcq_correct(ta4)</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="91860">
+              <testcase>1</testcase>
+              <timemodified>1594472646</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="212472">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="212473">
+                  <inputname>ans2</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="212474">
+                  <inputname>ans3</inputname>
+                  <value>2.306</value>
+                </stackqtestinput>
+                <stackqtestinput id="212475">
+                  <inputname>ans4</inputname>
+                  <value>"cannot"</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="183309">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183310">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183311">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183312">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="91861">
+              <testcase>2</testcase>
+              <timemodified>1594473331</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="212476">
+                  <inputname>ans1</inputname>
+                  <value>ta1+1</value>
+                </stackqtestinput>
+                <stackqtestinput id="212477">
+                  <inputname>ans2</inputname>
+                  <value>ta2+1</value>
+                </stackqtestinput>
+                <stackqtestinput id="212478">
+                  <inputname>ans3</inputname>
+                  <value>2.228</value>
+                </stackqtestinput>
+                <stackqtestinput id="212479">
+                  <inputname>ans4</inputname>
+                  <value>"can"</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="183313">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183314">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183315">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183316">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="91862">
+              <testcase>3</testcase>
+              <timemodified>1594473350</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="212480">
+                  <inputname>ans1</inputname>
+                  <value>ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="212481">
+                  <inputname>ans2</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="212482">
+                  <inputname>ans3</inputname>
+                  <value>1.86</value>
+                </stackqtestinput>
+                <stackqtestinput id="212483">
+                  <inputname>ans4</inputname>
+                  <value>"can"</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="183317">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183318">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183319">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183320">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="91863">
+              <testcase>4</testcase>
+              <timemodified>1594473797</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="212484">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+                <stackqtestinput id="212485">
+                  <inputname>ans2</inputname>
+                  <value>Ta2</value>
+                </stackqtestinput>
+                <stackqtestinput id="212486">
+                  <inputname>ans3</inputname>
+                  <value>2.306</value>
+                </stackqtestinput>
+                <stackqtestinput id="212487">
+                  <inputname>ans4</inputname>
+                  <value>"cannot"</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="183321">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183322">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183323">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="183324">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="423302">
+              <seed>1704048355</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="423303">
+              <seed>1157023282</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="423304">
+              <seed>443985908</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="423305">
+              <seed>1027036256</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="423306">
+              <seed>1580066887</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="3122424">
+                <parent>0</parent>
+                <name>Magisches Quadrat 4</name>
+                <questiontext>&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/MQ4.png" alt="" width="344" height="305" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Welche Zahl steht in dem markierten K&#228;stchen?&lt;/p&gt;&lt;p&gt;[[input:ans1]] [[validation:ans1]]&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback/>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.1000000</penalty>
+                <qtype>stack</qtype>
+                <length>1</length>
+                <stamp>moodle.ruhr-uni-bochum.de+200908073818+cf893c</stamp>
+                <timecreated>1599550698</timecreated>
+                <timemodified>1603182321</timemodified>
+                <createdby>50832</createdby>
+                <modifiedby>50832</modifiedby>
+                <plugin_qtype_stack_question>
+                  <stackoptions id="69859">
+                    <stackversion>2019090200</stackversion>
+                    <questionvariables/>
+                    <specificfeedback>[[feedback:prt1]]</specificfeedback>
+                    <specificfeedbackformat>1</specificfeedbackformat>
+                    <questionnote/>
+                    <questionsimplify>1</questionsimplify>
+                    <assumepositive>0</assumepositive>
+                    <assumereal>0</assumereal>
+                    <prtcorrect>Richtige Antwort, gut gemacht!</prtcorrect>
+                    <prtcorrectformat>1</prtcorrectformat>
+                    <prtpartiallycorrect>Deine Antwort ist teilweise korrekt.</prtpartiallycorrect>
+                    <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+                    <prtincorrect>Falsche Antwort, starte einen neuen Versuch!</prtincorrect>
+                    <prtincorrectformat>1</prtincorrectformat>
+                    <decimals>.</decimals>
+                    <multiplicationsign>dot</multiplicationsign>
+                    <sqrtsign>1</sqrtsign>
+                    <complexno>i</complexno>
+                    <inversetrig>cos-1</inversetrig>
+                    <logicsymbol>lang</logicsymbol>
+                    <matrixparens>[</matrixparens>
+                    <variantsselectionseed/>
+                  </stackoptions>
+                  <stackinputs>
+                    <stackinput id="128828">
+                      <name>ans1</name>
+                      <type>algebraic</type>
+                      <tans>1</tans>
+                      <boxsize>15</boxsize>
+                      <strictsyntax>1</strictsyntax>
+                      <insertstars>0</insertstars>
+                      <syntaxhint/>
+                      <syntaxattribute>0</syntaxattribute>
+                      <forbidwords/>
+                      <allowwords/>
+                      <forbidfloat>0</forbidfloat>
+                      <requirelowestterms>0</requirelowestterms>
+                      <checkanswertype>0</checkanswertype>
+                      <mustverify>1</mustverify>
+                      <showvalidation>1</showvalidation>
+                      <options/>
+                    </stackinput>
+                  </stackinputs>
+                  <stackprts>
+                    <stackprt id="90124">
+                      <name>prt1</name>
+                      <value>1.0000000</value>
+                      <autosimplify>1</autosimplify>
+                      <feedbackstyle>1</feedbackstyle>
+                      <feedbackvariables/>
+                      <stackprtnodes>
+                        <stackprtnode id="218150">
+                          <nodename>0</nodename>
+                          <answertest>AlgEquiv</answertest>
+                          <sans>ans1</sans>
+                          <tans>1</tans>
+                          <testoptions/>
+                          <quiet>0</quiet>
+                          <truescoremode>=</truescoremode>
+                          <truescore>1.0000000</truescore>
+                          <truepenalty>$@NULL@$</truepenalty>
+                          <truenextnode>-1</truenextnode>
+                          <trueanswernote>prt1-1-T</trueanswernote>
+                          <truefeedback/>
+                          <truefeedbackformat>1</truefeedbackformat>
+                          <falsescoremode>=</falsescoremode>
+                          <falsescore>0.0000000</falsescore>
+                          <falsepenalty>$@NULL@$</falsepenalty>
+                          <falsenextnode>-1</falsenextnode>
+                          <falseanswernote>prt1-1-F</falseanswernote>
+                          <falsefeedback/>
+                          <falsefeedbackformat>1</falsefeedbackformat>
+                        </stackprtnode>
+                      </stackprtnodes>
+                    </stackprt>
+                  </stackprts>
+                  <stackqtests>
+                  </stackqtests>
+                  <stackdeployedseeds>
+                  </stackdeployedseeds>
+                </plugin_qtype_stack_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            
+
+</quiz>

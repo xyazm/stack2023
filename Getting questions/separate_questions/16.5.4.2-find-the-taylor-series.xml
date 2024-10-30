@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24350">
+        <parent>0</parent>
+        <name>16.5.4.2 Find the Taylor series</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;What is the Taylor series of &lt;span class="math inline"&gt;\(\dfrac{1}{1-x}\)&lt;/span&gt; about &lt;span class="math inline"&gt;\(x=2\)&lt;/span&gt;. (That is, find a power series in powers of &lt;span class="math inline"&gt;\((x-2)\)&lt;/span&gt;.)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;First, obtain the first three derivatives and the &lt;span class="math inline"&gt;\(n^{\text{th}}\)&lt;/span&gt; derivative of &lt;span class="math inline"&gt;\(f(x)=\dfrac{1}{1-x}\)&lt;/span&gt;: &lt;span class="math display"&gt;\[f'(x)=\dfrac{1}{(1-x)^2},\qquad f''(x)=\dfrac{2}{(1-x)^3},\qquad f'''(x)=\dfrac{6}{(1-x)^4},\qquad
+\cdots \quad f^{(n)}(x)=\dfrac{n!}{(1-x)^{n+1}}\]&lt;/span&gt; Now evaluate these derivatives at &lt;span class="math inline"&gt;\(x_0=2\)&lt;/span&gt;: &lt;span class="math display"&gt;\[f'(2)=1,\qquad f''(2)=-2,\qquad f'''(2)=6,\qquad f^{(n)}(2)=(-1)^{n+1}n!\]&lt;/span&gt; Hence, write down the Taylor expansion of &lt;span class="math inline"&gt;\(f(x)=\dfrac{1}{1-x}\)&lt;/span&gt; about &lt;span class="math inline"&gt;\(x=2\)&lt;/span&gt;: &lt;span class="math display"&gt;\[\dfrac{1}{1-x}=-1+(x-2)-(x-2)^2+(x-2)^3+\cdots + (-1)^{n+1}(x-2)^n+\cdots\]&lt;/span&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201130143033+QKjqe2</stamp>
+        <version>moodle2.maths.ed.ac.uk+210302092821+pUIntL</version>
+        <hidden>0</hidden>
+        <timecreated>1606746633</timecreated>
+        <timemodified>1614677301</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="9735">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;\(-1+(x-2)-(x-2)^2+(x-2)^3+\cdots + (-1)^{n+1}(x-2)^n+\cdots\)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>1.0000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="9736">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;\(1+(x-2)+(x-2)^2+(x-2)^3+\cdots + (x-2)^n+\cdots\)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="9737">
+              <answertext>&lt;p dir="ltr" style="text-align: left;"&gt;\(1-(x-2)+(x-2)^2-(x-2)^3+\cdots + (-1)^{n}(x-2)^n+\cdots\)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback/>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="1724">
+            <layout>0</layout>
+            <single>1</single>
+            <shuffleanswers>1</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>abc</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>0</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

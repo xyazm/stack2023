@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27200">
+        <parent>0</parent>
+        <name>35.2.1.6 Events</name>
+        <questiontext>&lt;h4&gt; Events &lt;/h4&gt;
+&lt;p&gt; As we have already noted a collection of some or all of the outcomes of an experiment is called an &lt;strong&gt;event&lt;/strong&gt;. So an event is a &lt;strong&gt;subset&lt;/strong&gt; of the sample space. For example, if we throw a 6-sided die then the sample space is \(\{1, 2, 3, 4, 5, 6\}\) and two possible events are &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; a score of 3 or more, represented by the set: \(\{3, 4, 5, 6\}\) &lt;/li&gt;
+&lt;li&gt; a score which is even, represented by the set: \(\{2, 4, 6\}\). &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt; Example &lt;/h4&gt;
+&lt;p&gt; Two coins are thrown. List the ordered outcomes for the event when just one Tail
+is obtained. &lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt; Solution &lt;/h4&gt;
+&lt;p&gt; \(\{HT, TH\}\). Note that here the &lt;strong&gt;order does matter&lt;/strong&gt;, i.e. \(TH\) is distinct from \(HT\). &lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630123105+XDZJcK</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211008153554+QuRBjo</version>
+        <hidden>0</hidden>
+        <timecreated>1593520265</timecreated>
+        <timemodified>1633707354</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

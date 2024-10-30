@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27178">
+        <parent>0</parent>
+        <name>35.1.2.1 Venn diagrams</name>
+        <questiontext>&lt;h3&gt;Venn diagrams
+&lt;/h3&gt;&lt;p&gt;Sets are often represented pictorially by Venn diagrams as in the following figure.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/35-1-fig-1-Venndiagram.svg" alt="Venn diagram figure" width="233" height="143" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;
+
+&lt;/p&gt;&lt;p&gt;Here \(A,B,C,D\) represent sets. The sets \(A,B\) have no items in common so are drawn as non-intersecting regions whilst the sets \(C,D\) have some items in common so are drawn overlapping. In a Venn diagram, the universal set is always represented by a rectangle and sets of interest by area region within this rectangle.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Represent the sets \(A = \{0,1\}\) and \(B = \{0,1,2,3,4\}\) using a Venn diagram.&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The elements 0 and 1 are in set \(A\), represented by the small circle in the figure below. The large circle represents set \(B\) and so contains the elements \(0,1,2,3\) and \(4\). A suitable universal set in this case is the set of all integers. The universal set is shown by the rectangle. Note that \(A \subseteq B\).  This is shown in the Venn diagram by \(A\) being completely inside 
+\(B\).&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/35-1-fig-2-Venn_diagram.svg" alt="" width="235" height="143" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Figure: The set \(A\) is contained completely within \(B\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701000355+qkmIGY</stamp>
+        <version>stack2.maths.ed.ac.uk+200803115652+VrSO5b</version>
+        <hidden>0</hidden>
+        <timecreated>1593561835</timecreated>
+        <timemodified>1596455812</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

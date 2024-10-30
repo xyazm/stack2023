@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26603">
+        <parent>0</parent>
+        <name>8.3.3.3 Engineering Example: Velocity of a rocket</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Engineering Example: Velocity of a rocket&lt;/h4&gt;
+
+&lt;p&gt;The upward velocity of a rocket, measured at 3 different times, is shown in the following table &lt;span class="math display"&gt;\[\begin{array}{|c|c|}\hline
+\text{Time}, t &amp;amp; \text{Velocity}, v \\
+\text{(seconds)}&amp;amp; \text{(metres/second)} \\ \hline 
+5&amp;amp;106.8\\ \hline
+8&amp;amp;177.2\\ \hline 
+12&amp;amp;279.2\\ \hline 
+\end{array}\]&lt;/span&gt; The velocity over the time interval &lt;span class="math inline"&gt;\(5\leq t\leq 12\)&lt;/span&gt; is approximated by a quadratic expression as &lt;span class="math display"&gt;\[v(t)=a_1t^2+a_2t+a_3\]&lt;/span&gt; Find the values of &lt;span class="math inline"&gt;\(a_1, a_2\)&lt;/span&gt;    and &lt;span class="math inline"&gt;\(a_3\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+
+&lt;p&gt;Substituting the values from the table into the quadratic equation for &lt;span class="math inline"&gt;\(v(t)\)&lt;/span&gt; gives: &lt;span class="math display"&gt;\[\begin{array}{l}
+106.8 &amp;amp; = &amp;amp; 25a_1 &amp;amp; + &amp;amp; 5a_2 &amp;amp; + &amp;amp; a_3 \\
+177.2 &amp;amp; = &amp;amp; 64a_1 &amp;amp; + &amp;amp; 8a_2 &amp;amp; + &amp;amp; a_3 \\
+279.2 &amp;amp; = &amp;amp; 144a_1 &amp;amp; + &amp;amp; 12a_2 &amp;amp; + &amp;amp; a_3 \\
+\end{array}
+\qquad \text{or} \qquad 
+\left[\begin{matrix}
+25&amp;amp;5&amp;amp;1\\
+64&amp;amp;8&amp;amp;1\\
+144&amp;amp;12&amp;amp;1
+\end{matrix}\right]
+\left[\begin{matrix}
+a_1\\a_2\\a_3
+\end{matrix}\right]=
+\left[\begin{matrix}
+106.8\\
+177.2\\
+279.2
+\end{matrix}\right]\]&lt;/span&gt; Applying one of the methods you&#8217;ve learned gives the solution as &lt;span class="math display"&gt;\[a_1=0.2905\qquad a_2=19.6905\qquad a_3=1.0857 \quad \text{to } 4 \text{ d.p}.\]&lt;/span&gt; As the original values were all &lt;span&gt;&lt;strong&gt;experimental observations&lt;/strong&gt;&lt;/span&gt;    then the values of the unknowns are all &lt;span&gt;&lt;strong&gt;approximations&lt;/strong&gt;&lt;/span&gt;. The relation &lt;span class="math inline"&gt;\(v(t)=0.2905t^2+19.6905t+1.0857\)&lt;/span&gt; can now be used to predict the approximate position of the rocket for any time within
+    the interval &lt;span class="math inline"&gt;\(5\leq t \leq 12\)&lt;/span&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701085756+BwuZKS</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630142659+7KcAh4</version>
+        <hidden>0</hidden>
+        <timecreated>1593593876</timecreated>
+        <timemodified>1625063219</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

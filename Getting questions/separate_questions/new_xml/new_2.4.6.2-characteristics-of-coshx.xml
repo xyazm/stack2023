@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25736 -->
+  <question type="stack">
+    <name>
+				<text>2.4.6.2 Characteristics of cosh(x)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>The diagram below represents a heavy cable hanging under gravity from two points at the same height. Such a curve (shown as a dashed line), known as a <i>catenary</i>, is described by a mathematical function known as a hyperbolic cosine, \(f(x)=\cosh x\).</p>
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/block6-fig6-1.svg" alt="block6-fig6" width="267" height="168" class="img-responsive atto_image_button_text-bottom"></p><p style="text-align: center;"><b>Figure</b>: A catenary&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p><br></p>
+<ol class="HELM_parts">
+<li><p>Comment upon any symmetry: the function is [[1]].</p></li>
+<li><p>Is this function one-to-one or many-to-one?: [[2]]</p></li>
+<li><p>Is this a continuous or discontinuous function?: [[3]]</p></li>
+<li><p>State \(\lim_{x\rightarrow 0} \cosh x\): [[4]]</p></li>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618191324+dPrqUI</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200820172101+0HLzZM</text></tag>
+    </tags>
+    
+</question>
+</quiz>

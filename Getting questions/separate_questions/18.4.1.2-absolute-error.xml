@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24693">
+        <parent>0</parent>
+        <name>18.4.1.2 Absolute error</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Estimate the absolute error for \[f(x, y) = {@f@}\] at a general point \(({@x@}, {@y@})\).&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;First, find \(f_x\) and \(f_y\), to obtain an expression for the absolute error.&lt;/p&gt;
+&lt;p&gt;\(\delta f \simeq\) [[input:ans3]] [[validation:ans3]] \(\delta x\) + [[input:ans4]] [[validation:ans4]] \(\delta y\)&lt;/p&gt;
+&lt;p&gt;[[feedback:prt3]]&lt;/p&gt;
+&lt;p&gt;[[feedback:prt4]]&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Now obtain the estimated value of the absolute error with \((x_0,y_0)=({@x_coord@},{@y_coord@})\) and \(\delta x = {@delta_x@}\) and \(\delta y = {@delta_y@}\):&lt;/p&gt;
+&lt;p&gt;\(\delta f \simeq\) [[input:ans5]] [[validation:ans5]] Keep 2 s.f. in your answer.&lt;/p&gt;
+&lt;p&gt;[[feedback:prt5]] &lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;You should compare the estimate with the exact value of the error. I.e., how similar are \(f(x_0,y_0)-f(x_0+\delta x,y_0+\delta y)\) and the absolute error estimate found here.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p dir="ltr" style="text-align: left;"&gt;&lt;/p&gt;
+&lt;p&gt;We are given the function \[f(x, y) = {@f@}\] and we are asked to estimate the absolute erroe at a general point \(({@x@}, {@y@})\).&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;First, find \(f_x\) and \(f_y\), to obtain an expression for the absolute error.&lt;/p&gt;
+&lt;p&gt;\( f_x = {@f_x@} \\ f_y = {@f_y@} \)&lt;/p&gt;
+&lt;p&gt;Hence, \(\delta f \simeq ({@f_x@}) \, \delta x +({@f_y@}) \, \delta y.\)&lt;/p&gt;
+&lt;p&gt;Now obtain the estimated value of the absolute error with \((x_0,y_0)=({@x_coord@},{@y_coord@}),\) \(\delta x = {@delta_x@}\) and \(\delta y = {@delta_y@}\):&lt;/p&gt;
+&lt;p&gt;\(\delta f \simeq ({@f_x@}) \, \delta x +({@f_y@}) \, \delta y = ({@f_x_eval@})({@delta_x@}) + ({@f_y_eval@})({@delta_y@}) = {@dispsf(delta_f,2)@} .\)&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;The actual error is calculated from:&lt;/p&gt;
+&lt;p&gt;\[\begin{align} \delta f &amp;amp;= f( x_0 + \delta x, \, y_0+ \delta y) - f(x_0, y_0)&amp;nbsp; = f ({@x_coord+delta_x@}, \, {@y_coord+delta_y@}) - f ({@x_coord@},{@y_coord@}) \\&amp;amp;= {@f1@} - ({@fp@}) = {@f1-fp@} \end{align}\]&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201209032910+3xll64</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614110927+y0eeKt</version>
+        <hidden>0</hidden>
+        <timecreated>1607484550</timecreated>
+        <timemodified>1623668967</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16797">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>a: rand(3)+1;
+b: rand(3)+1;
+c: rand(3)+1;
+x_coord: rand([-3,-2,-1,1,2,3]);
+y_coord: rand([-3,-2,-1,1,2,3]);
+
+f: a*x^2*y^2 + b*x + c*y;
+delta_x: rand([0.05,0.06,0.07,0.08,0.09]);
+delta_y: rand([0.025, 0.035, 0.045, 0.055,0.065, 0.075, 0.085]);
+f_x: diff(f, x);
+f_y: diff(f,y);
+f_x_eval: ev( f_x, x:x_coord, y:y_coord);  /* evaluate f_x at point */
+f_y_eval: ev( f_y, x:x_coord, y:y_coord);  /*evaluate f_y at point */
+delta_f: (f_x_eval*delta_x)+(f_y_eval*delta_y);
+delta_f: significantfigures(delta_f,2);
+
+/* For worked soution*/
+f1: ev( f, x:x_coord+delta_x, y:y_coord+delta_y);
+fp: ev( f, x:x_coord, y:y_coord);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[ f(x,y) = {@f@} \quad \delta x = {@delta_x@} \quad \delta y = {@delta_y@}\]
+\[\delta f = ({@f_x@}) \delta x + ({@f_y@}) \delta y = {@dispsf(delta_f,2)@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt; Your answer is partially correct.&lt;/span&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39062">
+              <name>ans3</name>
+              <type>algebraic</type>
+              <tans>f_x</tans>
+              <boxsize>8</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords>x,y</allowwords>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39063">
+              <name>ans4</name>
+              <type>algebraic</type>
+              <tans>f_y</tans>
+              <boxsize>8</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords>x,y</allowwords>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39064">
+              <name>ans5</name>
+              <type>units</type>
+              <tans>delta_f</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33660">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50822">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans3</sans>
+                  <tans>f_x</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="33661">
+              <name>prt4</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50823">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans4</sans>
+                  <tans>f_y</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt4-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt4-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="33662">
+              <name>prt5</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50824">
+                  <nodename>0</nodename>
+                  <answertest>NumSigFigs</answertest>
+                  <sans>ans5</sans>
+                  <tans>delta_f</tans>
+                  <testoptions>2</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt5-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt5-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="51429">
+              <testcase>1</testcase>
+              <timemodified>1623668898</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111044">
+                  <inputname>ans3</inputname>
+                  <value>f_x</value>
+                </stackqtestinput>
+                <stackqtestinput id="111045">
+                  <inputname>ans4</inputname>
+                  <value>f_y</value>
+                </stackqtestinput>
+                <stackqtestinput id="111046">
+                  <inputname>ans5</inputname>
+                  <value>dispsf(delta_f,2);</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95406">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95407">
+                  <prtname>prt4</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95408">
+                  <prtname>prt5</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt5-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="51430">
+              <testcase>2</testcase>
+              <timemodified>1623668668</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111041">
+                  <inputname>ans3</inputname>
+                  <value>f_x+1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111042">
+                  <inputname>ans4</inputname>
+                  <value>f_y+1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111043">
+                  <inputname>ans5</inputname>
+                  <value>significantfigures(ev(delta_f+1,simp),2)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95403">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95404">
+                  <prtname>prt4</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt4-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="95405">
+                  <prtname>prt5</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt5-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="165259">
+              <seed>1162219696</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165260">
+              <seed>1735017733</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165261">
+              <seed>1828050004</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165262">
+              <seed>995990659</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165263">
+              <seed>222486001</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165264">
+              <seed>1060633962</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165265">
+              <seed>1687545815</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165266">
+              <seed>263784460</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165267">
+              <seed>954003089</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165268">
+              <seed>1110088394</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165269">
+              <seed>1567002279</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165270">
+              <seed>911254677</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165271">
+              <seed>549886023</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="30671">
+        <parent>0</parent>
+        <name>8.1.1.1 Solving two equations in two unknowns</name>
+        <questiontext>&lt;h4&gt;Solving two equations in two unknowns&lt;/h4&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;If we have one linear equation&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad ax=b\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;in which the unknown is &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(a\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(b\)&lt;/span&gt; are constants then there are just three possibilities:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;span class="math inline"&gt;\(a\neq 0\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(x=\dfrac{b}{a}= a^{-1}b\)&lt;/span&gt;. In this case the equation &lt;span class="math inline"&gt;\(ax=b\)&lt;/span&gt; has a &lt;span&gt;&lt;strong&gt;unique solution&lt;/strong&gt;&lt;/span&gt; for &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;span class="math inline"&gt;\(a=0\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(b=0\)&lt;/span&gt; then the equation &lt;span class="math inline"&gt;\(ax=b\)&lt;/span&gt; becomes &lt;span class="math inline"&gt;\(0=0\)&lt;/span&gt; and any value of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;            will do. In this case the equation &lt;span class="math inline"&gt;\(ax=b\)&lt;/span&gt; has &lt;span&gt;&lt;strong&gt;infinitely many solutions&lt;/strong&gt;&lt;/span&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;&lt;span class="math inline"&gt;\(a=0\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(b\neq 0\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(ax=b\)&lt;/span&gt; becomes &lt;span class="math inline"&gt;\(0=b\)&lt;/span&gt; which is a contradiction. In this case the equation
+            &lt;span class="math inline"&gt;\(ax=b\)&lt;/span&gt; has &lt;span&gt;&lt;strong&gt;no solution&lt;/strong&gt;&lt;/span&gt; for &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;.&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What happens if we have more than one equation and more than one unknown? We shall find that the solutions to such systems can be characterised in a manner similar to that occurring for a single equation; that is, a system may have a unique solution,
+    an infinity of solutions or no solution at all.&lt;/p&gt;
+&lt;p&gt;In this Section we examine a method, known as Cramer&#8217;s rule and employing determinants, for solving systems of linear equations.&lt;/p&gt;
+&lt;p&gt;Consider the equations&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;(1) \(\qquad ax+by=e\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;(2) \(\qquad cx+dy=f\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class="math inline"&gt;\(a,b,c,d,e,f\)&lt;/span&gt; are given numbers. The variables &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; are unknowns we wish to find. The pairs of values of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;    and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; which &lt;span&gt;&lt;strong&gt;simultaneously&lt;/strong&gt;&lt;/span&gt; satisfy both equations are called solutions. Simple algebra will eliminate the variable &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; between these equations. We
+    multiply equation (1) by &lt;span class="math inline"&gt;\(d\)&lt;/span&gt;, equation (2) by &lt;span class="math inline"&gt;\(b\)&lt;/span&gt; and subtract:&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad \text{first,}\quad  (1)\times d\qquad\qquad\qquad ad x+bd y=ed\qquad\qquad\qquad
+\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad \text{then},\quad  (2)\times b\qquad\qquad\qquad bc x+bd y=bf\qquad\qquad\qquad \)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;(we multiplied in this way to make the coefficients of &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; equal.)&lt;/p&gt;
+&lt;p&gt;Now subtract to obtain&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;(3) \(\qquad (ad-bc)x=ed-bf\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class="HELM_exercise"&gt;Task: &lt;span style="font-weight: normal;"&gt;Starting with equations (1) and (2) above, eliminate \(x\).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt; Eliminating \(x\) using a similar method to the one above for eliminating \(y\), we obtain&lt;/p&gt;
+&lt;p&gt;(4) \(\qquad&amp;nbsp; (ad-bc)y=af-ec\)&lt;/p&gt;
+
+&lt;p&gt;Dividing equations (3) and (4) by &lt;span class="math inline"&gt;\(ad-bc\)&lt;/span&gt; we obtain the solutions&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;(5) \(\qquad x=\dfrac{ed-bf}{ad-bc}\ ,\ \ \ y=\dfrac{af-ec}{ad-bc}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There is of course one proviso: if &lt;span class="math inline"&gt;\(ad-bc=0\)&lt;/span&gt; then neither &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; nor &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; has a defined value.&lt;/p&gt;
+&lt;p&gt;If we choose to express these solutions in terms of determinants we have the formulation for the solution of simultaneous equations known as &lt;span&gt;&lt;strong&gt;Cramer&#8217;s rule&lt;/strong&gt;&lt;/span&gt;.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;If we define &lt;span class="math inline"&gt;\(\Delta\)&lt;/span&gt; as the determinant &lt;span class="math inline"&gt;\(\left|\begin{array}{cc}a&amp;amp;b\\ c&amp;amp;d\end{array}\right|\)&lt;/span&gt; and provided &lt;span class="math inline"&gt;\(\Delta\neq 0\)&lt;/span&gt; then the &lt;span&gt;&lt;strong&gt;unique&lt;/strong&gt;&lt;/span&gt;    solution of the equations&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad ax+by=e\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad cx+dy=f\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;is by (5) given by&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\quad\text{where}\quad
+\Delta_x=\left|\begin{array}{cc}e&amp;amp;b\\ f&amp;amp;d\end{array}\right|,\ \
+\Delta_y=\left|\begin{array}{cc}a&amp;amp;e\\ c&amp;amp;f\end{array}\right|.\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now &lt;span class="math inline"&gt;\(\Delta\)&lt;/span&gt; is the determinant of coefficients on the left-hand sides of the equations. In the expression &lt;span class="math inline"&gt;\(\Delta_x\)&lt;/span&gt; the coefficients of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; (i.e.
+    &lt;span class="math inline"&gt;\(\left(\begin{array}{c}a\\
+c\end{array}\right)\)&lt;/span&gt; which is column 1 of &lt;span class="math inline"&gt;\(\Delta\)&lt;/span&gt;) are replaced by the terms on the right-hand sides of the equations (i.e. by &lt;span class="math inline"&gt;\(\left(\begin{array}{c}e\\
+f\end{array}\right)\)&lt;/span&gt;). Similarly in &lt;span class="math inline"&gt;\(\Delta_y\)&lt;/span&gt; the coefficients of &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; (column 2 of &lt;span class="math inline"&gt;\(\Delta\)&lt;/span&gt;) are replaced by the terms on the right-hand
+    sides of the equations.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210528140123+lTa730</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210629173644+DuIORC</version>
+        <hidden>0</hidden>
+        <timecreated>1622210483</timecreated>
+        <timemodified>1624988204</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

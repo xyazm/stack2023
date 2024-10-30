@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27260 -->
+  <question type="stack">
+    <name>
+				<text>36.1.5.12 Further comments</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h5>Further comments</h5>
+<p>The sample mean and sample standard deviation are often useful to provide a concise summary of an observed frequency distribution. This is particularly the case when the frequency distribution is <i>symmetric</i> and <i>unimodal</i>. A <i>unimodal</i> frequency distribution is one where the histogram, at least approximately, has a shape with a single peak. If the frequencies decrease in the same way on each side of the peak, we say that the distribution is <i>symmetric</i>. The regions on either side of the distribution where the frequencies die out are called the left and right <i>tails</i> of the distribution. In a symmetric distribution, the left and right tails are like mirror images of each other.</p>
+<p>Symmetric unimodal distributions are common but there are exceptions. The distributions of some variables tend to be asymmetric, with one tail longer than the other. For example lifetime distributions, that is the distributions of the times to failure for pieces of equipment, tend to be asymmetric, with the frequencies decreasing more slowly to the right of the mode. This is called <i>positive skew</i>, which means that the longer tail is on the right. In such cases it may be more useful to use the median and lower and upper quartiles to describe the distribution.</p>
+<p>The following figure shows a histogram of a distribution with a positive skew.</p>
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/36-1-fig-6-positive_skew.svg" alt="" width="672" height="480" class="img-responsive atto_image_button_text-bottom"><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200710193142+kfWr81</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914234026+oX6gDd</text></tag>
+    </tags>
+    
+</question>
+</quiz>

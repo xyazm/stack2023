@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26730 -->
+  <question type="stack">
+    <name>
+				<text>10.1.3.2 Solutions to polynomial equations</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<div class="HELM_keypoint">
+<h4>Key Point </h4>
+<p>Complex roots to polynomial equations having <b> real </b> coefficients always occur in <b> complex conjugate pairs </b> .</p>
+</div>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200625194700+vZZuWS</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210706165915+7c3cyE</text></tag>
+    </tags>
+    
+</question>
+</quiz>

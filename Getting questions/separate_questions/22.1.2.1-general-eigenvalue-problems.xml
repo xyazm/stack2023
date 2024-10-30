@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26780">
+        <parent>0</parent>
+        <name>22.1.2.1 General eigenvalue problems</name>
+        <questiontext>&lt;h3&gt;General eigenvalue problems&lt;/h3&gt;&lt;p&gt;Consider a given square matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. If &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; is a column vector and &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; is a scalar (a number) then the relation&lt;/p&gt;
+\[A\underline{x}=\lambda \underline{x} \tag{1}\]
+&lt;p&gt;is called an &lt;span&gt;&lt;strong&gt;eigenvalue problem&lt;/strong&gt;&lt;/span&gt;. Our purpose is to carry out an analysis of this equation in a manner similar to the example above. However, we will attempt a more general approach which will apply to &lt;span&gt;&lt;strong&gt;all&lt;/strong&gt;&lt;/span&gt; problems of this kind.&lt;/p&gt;
+&lt;p&gt;Firstly, we can spot an obvious solution (for &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt;) to these equations. The solution &lt;span class="math inline"&gt;\(\underline{x}=\underline{0}\)&lt;/span&gt; is a possibility (for then both sides are zero). We will not be interested in these &lt;span&gt;&lt;strong&gt;trivial solutions&lt;/strong&gt;&lt;/span&gt; of the eigenvalue problem. Our main interest will be in the occurrence of &lt;span&gt;&lt;strong&gt;non-trivial solutions&lt;/strong&gt;&lt;/span&gt; for &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt;. These may exist for special values of &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt;, called the &lt;span&gt;&lt;strong&gt;eigenvalues&lt;/strong&gt;&lt;/span&gt; of the matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. We proceed as in the previous example:&lt;/p&gt;
+&lt;p&gt;Take all unknowns to one side:&lt;/p&gt;
+\[(A-\lambda I)\underline{x}=\underline{0} \tag{2}\]
+&lt;p&gt;where &lt;span class="math inline"&gt;\(I\)&lt;/span&gt; is a unit matrix with the same dimensions as &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;. (Note that &lt;span class="math inline"&gt;\(A\underline{x}-\lambda \underline{x}=\underline{0}\)&lt;/span&gt; does &lt;strong&gt;not&lt;/strong&gt; simplify to &lt;span class="math inline"&gt;\((A-\lambda)\underline{x}=\underline{0}\)&lt;/span&gt; as you &lt;strong&gt;cannot&lt;/strong&gt; subtract a scalar &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; from a matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;). This equation \((2)\) is a &lt;strong&gt;homogeneous&lt;/strong&gt; system of equations. In the notation of the earlier discussion &lt;span class="math inline"&gt;\(C\equiv A-\lambda I\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\underline{k}\equiv \underline{0}\)&lt;/span&gt;. For such a system we know that non-trivial solutions will only exist if the determinant of the coefficient matrix is zero:&lt;/p&gt;
+\[\det(A-\lambda I)=0 \tag{3}\]
+&lt;p&gt;Equation \((3)\) is called the &lt;strong&gt;characteristic equation&lt;/strong&gt; of the eigenvalue problem. We see that the characteristic equation only involves one unknown &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt;. The characteristic equation is generally a polynomial in &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt;, with degree being the same as the order of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; (so if &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(2\times 2\)&lt;/span&gt; the characteristic equation is a quadratic, if &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is a &lt;span class="math inline"&gt;\(3\times 3\)&lt;/span&gt; it is a cubic equation, and so on). For each value of &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; that is obtained the corresponding vector &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; is obtained by solving the original equations \((1)
+\). These &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; are called &lt;strong&gt;eigenvectors&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;N.B. We shall see that eigenvectors are only unique up to a multiplicative factor: i.e. if &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; satisfies &lt;span class="math inline"&gt;\(A\underline{x}=\lambda \underline{x}\)&lt;/span&gt; then so does &lt;span class="math inline"&gt;\(k\underline{x}\)&lt;/span&gt; when &lt;span class="math inline"&gt;\(k\)&lt;/span&gt; is any constant.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200623171533+tdmfGB</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210708095209+WNuvC9</version>
+        <hidden>0</hidden>
+        <timecreated>1592932533</timecreated>
+        <timemodified>1625737929</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33763">
+        <parent>0</parent>
+        <name>19.3.5.2 Engineering example</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;h4&gt;An LC circuit with sinusoidal input&lt;/h4&gt;
+&lt;p&gt;The differential equation governing the flow of current in a series LC circuit when subject to an applied voltage \(v(t) = V_0 \sin \omega t\) is&lt;/p&gt;
+\[L\frac{\mathrm{d}^2i}{\mathrm{d}t^2} + \frac{1}{C} i = \omega V_0 \cos \omega t.\]
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/19.3%20Circuit.svg" alt="A series LC circuit" width="300" height="227" class="img-responsive atto_image_button_text-bottom"&gt;&lt;/figure&gt;
+&lt;p&gt;Obtain its general solution.&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The homogeneous equation is&lt;/p&gt;
+\[L\frac{\mathrm{d}^2i_\text{cf}}{\mathrm{d}t^2} + \frac{1}{C} i_\text{cf} = 0.\]
+&lt;p&gt;Letting \(i_\text{cf} = e^{kt}\), we find that the auxiliary equation is&lt;/p&gt;
+\[Lk^2 + \frac{1}{C} = 0,\]
+&lt;p&gt;so that \(k = \pm i / \sqrt{LC}\). Therefore, the complementary function is:&lt;/p&gt;
+\[i_\text{cf} = A \cos \frac{t}{\sqrt{LC}} + B \sin \frac{t}{\sqrt{LC}},\]
+&lt;p&gt;where \(A\) and \(B\) are arbitrary constants.&lt;/p&gt;
+&lt;p&gt;To find a particular integral try \(i_\text{p} = E \cos \omega t + F \sin \omega t\), where \(E\) and \(F\) are constants. We find:&lt;/p&gt;
+\[\begin{aligned}
+\frac{\mathrm{d}i_\text{p}}{\mathrm{d}t} &amp;amp;= -\omega E \sin \omega t + \omega F \cos \omega t\\
+\frac{\mathrm{d}^2i_\text{p}}{\mathrm{d}t^2} &amp;amp;= -\omega^2 E \cos \omega t - \omega^2 F \sin \omega t
+\end{aligned}\]
+&lt;p&gt;Substitution into the inhomogeneous equation yields:&lt;/p&gt;
+\[L(-\omega^2 E \cos \omega t - \omega^2 F \sin \omega t) + \frac{1}{C}(E \cos \omega t + F \sin \omega t) = \omega V_0 \cos \omega t\]
+&lt;p&gt;Equating coefficients of \(\sin \omega t\) gives: &#8195; \(-\omega^2 LF + (F/C) = 0\)&lt;/p&gt;
+&lt;p&gt;Equating coefficients of \(\cos \omega t\) gives: &#8195; \(-\omega^2 LE + (E/C) = \omega V_0\)&lt;/p&gt;
+&lt;p&gt;Therefore, \(F = 0\) and \(E = CV_0 \omega / (1 - \omega^2 L C)\). Hence, the particular integral is&lt;/p&gt;
+\[i_\text{p} = \frac{CV_0 \omega}{1 - \omega^2 LC} \cos \omega t.\]
+&lt;p&gt;Finally, the general solution is:&lt;/p&gt;
+\[i = i_\text{cf} + i_\text{p} = A \cos \frac{t}{\sqrt{LC}} + B \sin \frac{t}{\sqrt{LC}} + \frac{CV_0 \omega}{1 - \omega^2 LC} \cos \omega t\]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210621094104+c5Mvw0</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210621094822+meWl5z</version>
+        <hidden>0</hidden>
+        <timecreated>1624268464</timecreated>
+        <timemodified>1624268902</timemodified>
+        <createdby>2661</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

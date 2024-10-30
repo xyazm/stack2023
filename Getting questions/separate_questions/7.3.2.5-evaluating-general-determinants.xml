@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26248">
+        <parent>0</parent>
+        <name>7.3.2.5 Evaluating general determinants</name>
+        <questiontext>&lt;h4&gt; Evaluating general determinants&lt;/h4&gt;
+&lt;p&gt;Cofactors are important as it can be shown that the value of the determinant \(\Delta\) of a \(3\times 3\) matrix \(A\) can be found from the formula \(\Delta=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}.\)&lt;/p&gt;
+
+&lt;p&gt;In words, "the determinant of a \(3\times 3\) matrix is obtained by multiplying each element of the first row by its corresponding cofactor and then adding the three together". (In fact this rule can be extended to apply to &lt;b&gt;any&lt;/b&gt; row or &lt;b&gt;any&lt;/b&gt; column and to &lt;b&gt;any&lt;/b&gt; order square matrix.)&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;h5&gt;Evaluating General Determinants&lt;/h5&gt;
+&lt;p&gt;If \(A\) is an \(n\times n\) square matrix then: \(\displaystyle{\operatorname{det}(A) = \sum_{j=1}^{n}a_{ij}A_{ij}}\).&lt;/p&gt;
+In words: The determinant of a square matrix is obtained by multiplying each element
+of row \(i\) by its corresponding cofactor and then adding these products together.&lt;p&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;In the case of \(\Delta=\begin{vmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{vmatrix}\) we have \(a_{11}=4, a_{12}=1, a_{13}=1,\) and \begin{align*} A_{11} &amp; = + \begin{vmatrix} 2 &amp; 3 \\ 1 &amp; 2 \end{vmatrix} = 4 - 3 = 1, \\ A_{12} &amp; = - \begin{vmatrix} 1 &amp; 3 \\ 3 &amp; 2 \end{vmatrix} = - ( 2 - 9 ) = 7, \\ A_{13} &amp; = + \begin{vmatrix} 1 &amp; 2 \\ 3 &amp; 1 \end{vmatrix} = 1 - 6 = - 5.\end{align*}&lt;/p&gt; 
+
+&lt;p&gt;Hence, \(\Delta=4\times 1 + 1\times 7 + 1\times -5 = 6\).&lt;/p&gt;
+
+&lt;p&gt;Alternatively, choosing to expand along the second row:
+\begin{align*}\Delta &amp; = a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} \\ &amp; = 1 \left( - \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 2 \end{vmatrix} \right) + 2 \left( \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 2 \end{vmatrix} \right) + 3 \left( - \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} \right) \\ &amp; = 6\end{align*}
+as before.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200725152051+BdhG8R</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702140448+qSQYWl</version>
+        <hidden>0</hidden>
+        <timecreated>1595690451</timecreated>
+        <timemodified>1625234688</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

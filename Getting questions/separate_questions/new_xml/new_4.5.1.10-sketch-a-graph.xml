@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26038 -->
+  <question type="stack">
+    <name>
+				<text>4.5.1.10  Sketch a graph</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>Using your knowledge of the cosine function and the results of the&nbsp; previous&nbsp; Task sketch the graph of \(x\) against \(t\) where \[ \quad x=R\cos \omega t&nbsp;&nbsp; \text{ for } t=0 \text{ to } t=\dfrac{4\pi}{\omega}\]<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p><br></p><p><img src="@@PLUGINFILE@@/4-5Task1.svg" alt="Task 1" class="atto_image_button_text-bottom" width="354" height="169"></p><p><br></p><p><br></p><p>This graph shows part of a cosine <b>wave</b>, specifically two <b>periods</b> of oscillation.&nbsp; The shape of the graph suggests that the term wave is indeed an appropriate description.</p><br><p></p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200622134013+RnsPq9</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715111336+gAJFqj</text></tag>
+    </tags>
+    
+</question>
+</quiz>

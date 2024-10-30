@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26235">
+        <parent>0</parent>
+        <name>7.2.7.2 Exercise 2</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Let \(A = {@A@}\) and \(B = {@B@}\).&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;Is it true that \(AB=BA\)? [[input:ans1]][[validation:ans1]][[feedback:prt1]]
+&lt;/li&gt;&lt;li&gt; GIven that \(AB = \begin{bmatrix}\cos{z} &amp;amp; \sin{z} \\ -\sin{z} &amp;amp; \cos{z}\end{bmatrix}\), what is \(z\) in terms of \(x\) and \(y\)? [[input:ans2]][[validation:ans2]][[feedback:prt2]]&lt;p&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the matrices
+    \(A = {@A@}\)
+    and
+    \(B = {@B@}\).&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;
+        &lt;p&gt;First, we are asked whether \(AB = BA\), that is, whether \(A\) and \(B\) commute. In order to answer this question, we must find what \(AB\) and \(BA\) are.&lt;/p&gt;
+        \[\begin{aligned}
+        AB &amp;amp;= {@ABsteps@} \\
+        &amp;amp;= {@AB@}
+        \end{aligned}\]
+        \[\begin{aligned}
+        BA &amp;amp;= {@BAsteps@} \\
+        &amp;amp;= {@BA@}
+        \end{aligned}\]
+        &lt;p&gt;Checking each entry at a time, we see that \(AB\) is in fact equal to \(BA\).&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;p&gt;We already computed the value of \(AB\) in part (a). However, it was not fully simplified.&lt;/p&gt;
+        &lt;p&gt;Recall the trigonometric identities for the sum of angles:&lt;/p&gt;
+        \[\begin{aligned}
+        \sin(x + y) &amp;amp;= \sin x \cos y + \sin y \cos x \\
+        \cos(x + y) &amp;amp;= \cos x \cos y - \sin x \sin y
+        \end{aligned}\]
+        &lt;p&gt;Using these, we can rewrite our expression for \(AB\) as&lt;/p&gt;
+        \[{@ABfinal@}\]
+        &lt;p&gt;Therefore, the value of \(z\) we are asked for is \(x + y\).&lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200703183844+KE6FPi</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702113232+jNcCxj</version>
+        <hidden>0</hidden>
+        <timecreated>1593801524</timecreated>
+        <timemodified>1625225552</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17784">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>A: matrix([cos(x), sin(x)], [-sin(x), cos(x)]);
+B: ev(A, x=y);
+ta : x + y;
+
+/* Needed for solution */
+AT: transpose(A);
+BT: transpose(B);
+ABsteps: zeromatrix(matrix_size(A)[1], matrix_size(B)[2]);
+BAsteps: zeromatrix(matrix_size(B)[1], matrix_size(A)[2]);
+
+simp: false;
+for a: 1 thru matrix_size(ABsteps)[1] do
+    for b: 1 thru matrix_size(ABsteps)[2] do
+        ABsteps[ev(a,simp), ev(b,simp)]: apply("+", zip_with("*", A[ev(a,simp)], BT[ev(b,simp)]));
+AB: ev(ABsteps, simp);
+
+for a: 1 thru matrix_size(BAsteps)[1] do
+    for b: 1 thru matrix_size(BAsteps)[2] do
+        BAsteps[ev(a,simp), ev(b,simp)]: apply("+", zip_with("*", B[ev(a,simp)], AT[ev(b,simp)]));
+BA: ev(BAsteps, simp);
+
+simp: true;
+ABfinal: trigreduce(A.B);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\theta+\phi\)</questionnote>
+            <questionsimplify>0</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41800">
+              <name>ans1</name>
+              <type>dropdown</type>
+              <tans>[[true,true,Yes],[false,false,No]]</tans>
+              <boxsize>4</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="41801">
+              <name>ans2</name>
+              <type>algebraic</type>
+              <tans>x+y</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>acos, asin</forbidwords>
+              <allowwords>theta, phi</allowwords>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36211">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54201">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>true</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="36212">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54202">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41039">
+              <testcase>1</testcase>
+              <timemodified>1599492363</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88933">
+                  <inputname>ans1</inputname>
+                  <value>true</value>
+                </stackqtestinput>
+                <stackqtestinput id="88934">
+                  <inputname>ans2</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77117">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="77118">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="54384">
+              <testcase>2</testcase>
+              <timemodified>1625225536</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="118239">
+                  <inputname>ans1</inputname>
+                  <value>first(mcq_incorrect([[true,true,Yes],[false,false,No]]))</value>
+                </stackqtestinput>
+                <stackqtestinput id="118240">
+                  <inputname>ans2</inputname>
+                  <value>x-y</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100799">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="100800">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25057">
+        <parent>0</parent>
+        <name>Improper integrals</name>
+        <questiontext>&lt;h4 style="text-align: left;"&gt;Improper integrals&lt;/h4&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;So far most of the integrals we have looked at have been of continuous functions \(f(x)\) defined on a closed and bounded interval \([a,b]\). The definite integral is then \[\int_a^b f(x) \mathrm{d}x = F(b)-F(a)\] where \(F(x)\) is any function with \(F'(x)=f(x)\).&lt;br&gt;&lt;br&gt;An
+    &lt;em&gt;improper integral&lt;/em&gt; is where either the function is unbounded, e.g. \(\displaystyle{ \int_0^1 \dfrac1x \mathrm{d}x}\) or the domain of integration is unbounded, e.g.&amp;nbsp;\(\displaystyle{ \int_1^\infty \dfrac1x \mathrm{d}x}\).&lt;/p&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;In either case the usual approach will not make sense, make sure you see why,&lt;/p&gt;
+&lt;h5 style="text-align: left;"&gt;Solving improper integrals&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Identify where the integrand is unbounded or where the limit(s) of integration is unbounded. &lt;br&gt;&lt;br&gt;Note that there may be several points such as in&amp;nbsp;\(\displaystyle{ \int_1^\infty \dfrac{2x}{(x^2-4)} \mathrm{d}x}\), in this
+    example the integrand is unbounded with a vertical asymptote at \(2\), and one of the limits of integration is infinity. Note that the though the integrand has another asymptote at \(-2\) this is not a problem as it falls outside the limits of integration.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Step 2:&lt;/strong&gt;    Split the integral into a sum of several pieces so that each piece has at most one improper point.&lt;br&gt;&lt;br&gt;Using our example we could have&lt;/p&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;\[\int_1^\infty \dfrac{2x}{(x^2-4)} \mathrm{d}x = \int_1^2 \dfrac{2x}{(x^2-4)} \mathrm{d}x + \int_2^3 \dfrac{2x}{(x^2-4)} \mathrm{d}x+\int_3^\infty \dfrac{1}{(x^2-4)} \mathrm{d}x.\]&lt;/p&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;The choice of \(3\) here was arbitrary, any value greater than \(2\) would be appropriate.&lt;/p&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;&lt;strong&gt;Step 3:&lt;/strong&gt;&amp;nbsp;Consider each improper integral (with a single unbounded point) separately. There are two types.&lt;br&gt;&lt;br&gt;If the integrand is unbounded, such as in \(\displaystyle{\int_1^2 \dfrac{2x}{(x^2-4)} \mathrm{d}x}\), we integrate over
+    a smaller region and take a limit, i.e.&lt;/p&gt;
+&lt;p dir="ltr" style="text-align: left;"&gt;\[\displaystyle{\int_1^2 \dfrac{2x}{(x^2-4)} \mathrm{d}x}= \lim_{t \rightarrow 2-}&amp;nbsp;\displaystyle{\int_1^t \dfrac{2x}{(x^2-4)} \mathrm{d}x}&lt;br&gt;.\]&lt;br&gt;In this example we are the taking the limit as \(t\) approaches \(2\) from below. On this region
+    the integral is well defined so we have&lt;br&gt;\[\lim_{t \rightarrow 2-}&amp;nbsp;\displaystyle{\int_1^t \dfrac{2x}{(x^2-4)} \mathrm{d}x} =&amp;nbsp;\lim_{t \rightarrow 2-} \left( \ln|t^2-4|-\ln|-4|\right)\]&lt;br&gt;which diverges, in this example.&lt;br&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p dir="ltr"&gt;If the domain of integration is unbounded, such as in \(\displaystyle{\int_3^\infty \dfrac{2x}{(x^2-4)} \mathrm{d}x}\), we integrate over a smaller region and take a limit, i.e.&lt;/p&gt;
+&lt;p dir="ltr"&gt;\[\displaystyle{\int_3^\infty \dfrac{2x}{(x^2-4)} \mathrm{d}x}= \lim_{t \rightarrow \infty}&amp;nbsp;\displaystyle{\int_3^t \dfrac{2x}{(x^2-4)} \mathrm{d}x}&lt;br&gt;.\]&lt;br&gt;On this region the integral is well defined so we have&lt;br&gt;\[\lim_{t \rightarrow \infty}&amp;nbsp;\displaystyle{\int_3^t
+    \dfrac{2x}{(x^2-4)} \mathrm{d}x} =&amp;nbsp;\lim_{t \rightarrow 2-} \left( \ln|t^2-4|-\ln|9-4|\right)\]&lt;br&gt;which diverges again, in this example.&lt;/p&gt;&lt;strong&gt;Step 4: &lt;/strong&gt;If any of the of the integrals with one unbounded point diverge then we say the
+original integral&amp;nbsp; diverges. Otherwise the integral converges only if all of the integrals with one unbounded point converges.&lt;br&gt;&lt;br&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;br&gt;For example, the integral \( \displaystyle{ \int_1^\infty \frac{1}{x^2} \mathrm{d}x\) is improper as the upper limit is infinity. This is the only unbounded point as \(0\) is not within the region of integration. To determine if this integral converges
+we consider the limit&lt;br&gt;&lt;br&gt;\[ \lim_{t \rightarrow \infty} \int_1^t \frac{1}{x^2} \mathrm{d}x = \lim_{t \rightarrow \infty} \left(\frac{1}{-t}-&amp;nbsp;\frac{1}{-1}\right)=0+\frac11=1.\]&lt;br&gt;Since this converges we say the integral converges, and the value of the integral
+is \(1\), in this case.&lt;br&gt;
+&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210211005728+92ccZB</stamp>
+        <version>moodle2.maths.ed.ac.uk+210216120624+u5DBw3</version>
+        <hidden>1</hidden>
+        <timecreated>1613005048</timecreated>
+        <timemodified>1613477184</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24674 -->
+  <question type="stack">
+    <name>
+				<text>19.1.2.5 Family of Solutions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p></p>
+<h4>Unique solutions</h4><br>Consider the simple differential equation <span class="math inline">\[ {dy\over dx}=2x.\]</span>
+<p></p>
+<p>On integrating, we obtain the general solution <span class="math inline">\[
+y=x^2+C\]</span> where <span class="math inline">\(C\)</span> is an arbitrary constant. As <span class="math inline">\(C\)</span> varies we get different solutions, each of which belongs to the family of solutions. The figure below shows some examples.</p>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/19-1-fig-2-familygraphs.svg" alt="plot of family of solutions" width="426" height="330" class="img-responsive atto_image_button_text-bottom"></figure>
+<p>It can be shown that no two members of this family of graphs ever meet and that through each point in the <span class="math inline">\(x\)</span>-<span class="math inline">\(y\)</span> plane passes one, and only one, of these graphs. Hence if we specify
+    the boundary condition <span class="math inline">\(y=2\)</span> when <span class="math inline">\(x=0\)</span>, written <span class="math inline">\(y(0)=2\)</span>, then using <span class="math inline">\(y=x^2+c\)</span>: <span class="math inline">\[ 2=0+C\quad \text{so that}\quad C=2\]</span>    and <span class="math inline">\(y=x^2+2\)</span> is the unique solution.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+201215162024+QRjnCg</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210614121653+1YyZWh</text></tag>
+    </tags>
+    
+</question>
+</quiz>

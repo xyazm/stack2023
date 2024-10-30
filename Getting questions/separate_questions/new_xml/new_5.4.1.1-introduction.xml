@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62084 -->
+  <question type="stack">
+    <name>
+				<text>5.4.1.1 Introduction</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p><h4>Introduction</h4>Many aspects of physics and engineering involve inverse square law dependence. For example gravitational forces and electrostatic forces vary with the inverse square of distance from the mass or charge. The following short case study illustrates this and concerns the dependence of sound intensity on distance from a source.<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200810092426+hxHo6s</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200810092439+1WfDma</text></tag>
+    </tags>
+    
+</question>
+</quiz>

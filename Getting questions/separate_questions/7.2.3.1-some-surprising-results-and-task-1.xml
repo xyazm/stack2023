@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26231">
+        <parent>0</parent>
+        <name>7.2.3.1 Some surprising results, and Task 1</name>
+        <questiontext>&lt;h3&gt;Some surprising results&lt;/h3&gt;
+&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;We have already seen how to calculate a product \(AB\) where, for example,
+\[ A = {@matrixa@}, \qquad B = {@matrixb@} \] In this case the product is \[AB = {@ev(matrixa.matrixb,simp)@}\] In this exercise you will determine the product \(BA,\) i.e., with the matrices in the reverse order.&lt;/p&gt;
+
+&lt;p&gt;Form the products of:&lt;/p&gt;
+&lt;p&gt;row 1 of \(B\) and column 1 of \(A\)&lt;/p&gt;
+&lt;p&gt;row 1 of \(B\) and column 2 of \(A\)&lt;/p&gt;
+&lt;p&gt;row 2 of \(B\) and column 1 of \(A\)&lt;/p&gt;
+&lt;p&gt;row 2 of \(B\) and column 2 of \(A\)&lt;/p&gt;
+&lt;p&gt;Now enter the matrix \(BA\):&lt;/p&gt;
+&lt;div&gt;[[input:ans1]][[validation:ans1]][[feedback:prt1]]&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the matrices \(A = {@matrixa@}\) and \(B = {@matrixb@}\) and are asked to compute the product \(BA\). This is given by:&lt;/p&gt;
+\[BA = {@CC@} = {@DD@}\]
+&lt;p&gt;Note how our result for \(BA\) is not equal to \(AB\).&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200701142217+ny8xFW</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702093259+k8F9pt</version>
+        <hidden>0</hidden>
+        <timecreated>1593613337</timecreated>
+        <timemodified>1625218379</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17780">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+matrixb: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixb,simp);
+correctanswer: ev(matrixb . matrixa,simp);
+
+/* these need to be renamed! */
+AA: matrixb;
+BBT: transpose(matrixa);
+CC: zeromatrix (first(matrix_size(AA)), first(matrix_size(BBT)));
+SS: for a:1 thru first(matrix_size(AA)) do for b:1 thru first(matrix_size(BBT)) do CC[ev(a,simp),ev(b,simp)]:apply("+",zip_with("*",AA[ev(a,simp)],BBT[ev(b,simp)]));
+DD: ev(CC,simp);
+
+ta1: correctanswer</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(A = {@matrixa@}, B = {@matrixb@}, BA ={@correctanswer@}\)</questionnote>
+            <questionsimplify>0</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41794">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>ta1</tans>
+              <boxsize>1</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>determinant</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36205">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54195">
+                  <nodename>0</nodename>
+                  <answertest>CasEqual</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41029">
+              <testcase>1</testcase>
+              <timemodified>1593613337</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88918">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77102">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>$@NULL@$</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41030">
+              <testcase>2</testcase>
+              <timemodified>1593613520</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88919">
+                  <inputname>ans1</inputname>
+                  <value>ev(transpose(matrixa.matrixb),simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="77103">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="173392">
+              <seed>95628754</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173393">
+              <seed>1775091312</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173394">
+              <seed>245330457</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173395">
+              <seed>1965837673</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173396">
+              <seed>1389803148</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173397">
+              <seed>1829180109</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173398">
+              <seed>1372851919</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173399">
+              <seed>1931232441</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173400">
+              <seed>1277226495</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173401">
+              <seed>721254620</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173402">
+              <seed>839270455</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173403">
+              <seed>655998488</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173404">
+              <seed>1129965067</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173405">
+              <seed>1480151935</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173406">
+              <seed>1603726730</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173407">
+              <seed>1577850419</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173408">
+              <seed>1646849911</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173409">
+              <seed>357615259</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173410">
+              <seed>717019481</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="173411">
+              <seed>606166384</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

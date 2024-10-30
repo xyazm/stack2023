@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25722 -->
+  <question type="stack">
+    <name>
+				<text>2.4.2.3 Linear continuity</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Study the graphs of the following functions defined for all \(x \in \mathbb{R}\) and fill in the blanks:</p><p>\(y=3x-2\) is [[1]] and</p><p>\(y=-7x+1\) is [[1]].<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618162057+upCVEH</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200819143541+8fjSsv</text></tag>
+    </tags>
+    
+</question>
+</quiz>

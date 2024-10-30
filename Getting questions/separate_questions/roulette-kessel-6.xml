@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="3207711">
+                <parent>0</parent>
+                <name>Roulette Kessel 6</name>
+                <questiontext>&lt;p&gt;Ist die Wahrscheinlichkeit f&#252;r einen Gewinn, wenn man auf eine Kombination von 3 Zahlen setzt, gr&#246;&#223;er oder kleiner als 20%?&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback/>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>multichoice</qtype>
+                <length>1</length>
+                <stamp>moodle.ruhr-uni-bochum.de+201005082258+xCdJ6J</stamp>
+                <timecreated>1601886178</timecreated>
+                <timemodified>1601886178</timemodified>
+                <createdby>50832</createdby>
+                <modifiedby>50832</modifiedby>
+                <plugin_qtype_multichoice_question>
+                  <answers>
+                    <answer id="4137335">
+                      <answertext>&lt;p&gt;Die Wahrscheinlichkeit zu gewinnen ist gr&#246;&#223;er als 20%&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback/>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="4137336">
+                      <answertext>&lt;p&gt;Die Wahrscheinlichkeit zu gewinnen ist kleiner als 20%&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>1.0000000</fraction>
+                      <feedback/>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                    <answer id="4137337">
+                      <answertext>&lt;p&gt;Die Wahrscheinlichkeit zu gewinnen ist genau 20%&lt;/p&gt;</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback/>
+                      <feedbackformat>1</feedbackformat>
+                    </answer>
+                  </answers>
+                  <multichoice id="426198">
+                    <layout>0</layout>
+                    <single>1</single>
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>Die Antwort ist richtig.</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>Die Antwort ist teilweise richtig.</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>Die Antwort ist falsch.</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <answernumbering>none</answernumbering>
+                    <shownumcorrect>1</shownumcorrect>
+                    <showstandardinstruction>1</showstandardinstruction>
+                  </multichoice>
+                </plugin_qtype_multichoice_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            
+
+</quiz>

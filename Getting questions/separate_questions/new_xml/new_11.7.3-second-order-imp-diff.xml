@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24476 -->
+  <question type="stack">
+    <name>
+				<text>11.7.3 Second order imp diff</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Second order implicit differentiation</h4>
+We sometimes need to obtain the second derivative \( \dfrac{d^2y}{dx^2}\) for a function defined implicitly.
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Obtain \( \dfrac{dy}{dx} \) and \( \dfrac{d^2y}{dx^2}\) at the point \( (4, 2)\) on the curve defined by the equation 
+\[ x^2 - xy - y^2 - 2y = 0\]</p>
+<h4 class="HELM_solution">Solution</h4>
+Firstly we obtain \( \dfrac{dy}{dx} \) by differentiating the equation implicitly and then evaluate it at \( (4, 2)\).
+<p></p>
+We have
+\[ 2x -x\dfrac{dy}{dx} - y -2y\dfrac{dy}{dx} -2\dfrac{dy}{dx} = 0 \hspace{4cm} (1)\]
+from which
+\[ \dfrac{dy}{dx} = \dfrac{2x - y}{x + 2y + 2} \hspace{5cm} (2) \]
+so at \( (4,2)\),
+\[ \dfrac{dy}{dx} = \dfrac{6}{10} = \dfrac{3}{5}. \]
+to obtain the second derivative  \( \dfrac{d^2y}{dx^2}\) it is easier to use \( (1) \) than \( (2) \) becuase the latter is a quotient. We simplify \( (1)\) first:
+\[ 2x - y - (x + 2y + 2)\dfrac{dy}{dx} = 0. \hspace{5cm} (3)\]
+We will have to use the product rule to differentiate the third term here.
+<p></p>
+Hence differentiating \( (3) \) with respect to \(x\):
+\[ 2 - \dfrac{dy}{dx} - (x + 2y + 2) \dfrac{d^2y}{dx^2} - (1 + 2\dfrac{dy}{dx})\dfrac{dy}{dx} = 0\]
+or
+\[ 2 - 2\dfrac{dy}{dx} - 2\left( \dfrac{dy}{dx} \right)^2 - (x + 2y + 2)  \dfrac{d^2y}{dx^2} = 0. \hspace{4cm} (4)\]
+Note carefully that the third term here, \( \left( \dfrac{dy}{dx} \right)^2\), is the square of the first derivative. It should not be confused with the second derivative denoted by \( \dfrac{d^2y}{dx^2}\).
+<p></p>
+Finally, at \( (4,2)\), where \(\dfrac{dy}{dx} = \dfrac{3}{5}\) we obtain from \( (4) \):
+\[ 2 - 2\left(\dfrac{3}{5}\right) - 2\left(\dfrac{9}{25}\right) - (4+4+2)\dfrac{d^2y}{dx^2} = 0\]
+from which
+\[ \dfrac{d^2y}{dx^2} = \dfrac{1}{125}\]
+at \( (4,2)\).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200809124503+miX9mt</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210602105941+vKOvGd</text></tag>
+    </tags>
+    
+</question>
+</quiz>

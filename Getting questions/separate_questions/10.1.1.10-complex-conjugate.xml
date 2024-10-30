@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26699">
+        <parent>0</parent>
+        <name>10.1.1.10 Complex Conjugate</name>
+        <questiontext>&lt;p&gt;If &lt;span class="math inline"&gt;\(z=a+i b\)&lt;/span&gt; is any complex number then the complex conjugate of &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; is denoted by &lt;span class="math inline"&gt;\(z^*\)&lt;/span&gt; and is defined by &lt;span class="math inline"&gt;\[z^*=a-i b.\]&lt;/span&gt;(Sometimes the notation &lt;span class="math inline"&gt;\(\bar z\)&lt;/span&gt; is used instead of &lt;span class="math inline"&gt;\(z^*\)&lt;/span&gt; to denote the conjugate). &lt;/p&gt;
+
+&lt;p&gt;For example if &lt;span class="math inline"&gt;\(z=2-3i\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(z^*=2+3i\)&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;p&gt; If &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; is entirely real then &lt;span class="math inline"&gt;\(z^*=z\)&lt;/span&gt; whereas if &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; is entirely imaginary then &lt;span class="math inline"&gt;\(z^*=-z\)&lt;/span&gt;. E.g. if &lt;span class="math inline"&gt;\(z=17i\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(z^*=-17i\)&lt;/span&gt;.
+&lt;/p&gt;
+
+&lt;p&gt; In fact the following relationships are easily obtained: &lt;span class="math inline"&gt;\[\qquad \text{Re}(z)={z+z^*\over 2}\qquad \text{and}\qquad \text{Im}(z)={i(z^*-z)\over {2}}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Complex numbers are added, subtracted, multiplied and divided in much the same way as these operations are carried out for real numbers.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200617091748+O4uBUR</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210706164639+iCAtzD</version>
+        <hidden>0</hidden>
+        <timecreated>1592385468</timecreated>
+        <timemodified>1625589999</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

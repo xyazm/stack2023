@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62091">
+        <parent>0</parent>
+        <name>23.1.2.4 Harmonics</name>
+        <questiontext>&lt;h4&gt;Harmonics&lt;/h4&gt;
+In representing a non-sinusoidal function of period \(2\pi\) by a Fourier series we shall see shortly that
+only certain sinusoids will be required:
+&lt;p&gt;&lt;/p&gt;
+(a) \( A_1 \cos t \) (and \( B_1 \sin t \) )
+&lt;p&gt;&lt;/p&gt;
+These also have period \(2\pi\) and together are referred to as the &lt;b&gt;first harmonic&lt;/b&gt; (or &lt;b&gt;fundamental harmonic&lt;/b&gt;).
+&lt;p&gt;&lt;/p&gt;
+(b) \( A_2 \cos 2t \) (and \( B_2 \sin 2t \) )
+&lt;p&gt;&lt;/p&gt;
+These have half the period, and double the frequency, of the first harmonic and are referred to as the &lt;b&gt;second harmonic&lt;/b&gt;.
+&lt;p&gt;&lt;/p&gt;
+(c) \( A_3 \cos 3t \) (and \( B_3 \sin 3t \) )
+&lt;p&gt;&lt;/p&gt;
+These have period \( \dfrac{2\pi}{3}\) and constitute the &lt;b&gt;third harmonic&lt;/b&gt;.
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+In general the Fourier series of a function of period \(2\pi\) will require harmonics of the type
+\[ A_n \cos nt \hspace{1cm} ( \text{and}&amp;nbsp;\hspace{0.3cm} &amp;nbsp;B_n \sin nt)\]
+ where \( n = 1, 2, 3 \dots \).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200812183643+Hk6V7I</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220517190914+E3FZgg</version>
+        <hidden>0</hidden>
+        <timecreated>1597257403</timecreated>
+        <timemodified>1652814554</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

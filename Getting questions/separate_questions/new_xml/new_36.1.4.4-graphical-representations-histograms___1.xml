@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27284 -->
+  <question type="stack">
+    <name>
+				<text>36.1.4.4 Graphical representations/ Histograms</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Histograms</h4>
+<p>We use a <b>histogram</b> to represent the <i>frequency distribution</i> of a sample of continuous data. In a histogram, like a bar chart, we draw an element of the diagram to represent each frequency, in this case the frequency for each class.  However, because a continuous variable is measured on a continuous scale, we do not have gaps like the gaps between the bars in a bar chart. Instead we draw <i>columns</i>, or <i>blocks</i>. The base of a column is the class interval on the \(x\)-axis.</p>
+<p>Strictly speaking, the <i>areas</i> of the blocks forming the histogram represent the frequencies since this gives the histogram the necessary flexibility to deal with frequency tables whose class intervals are not of equal width. However, when the class intervals are of equal width, the heights of the columns are proportional to the frequencies.</p>
+<p>Sometimes the approximate shape of the distribution of data is indicated by a <b>frequency
+polygon</b> which is formed by joining the mid-points of the tops of the blocks forming the histogram with straight lines.
+</p><p>A histogram, with a frequency polygon, is shown in the figure below.</p><p><img src="@@PLUGINFILE@@/36-1-fig-3-histogram.svg" alt="" width="672" height="480" class="img-responsive atto_image_button_text-bottom"><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200914145602+T8mnsA</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914145602+4pF2Bf</text></tag>
+    </tags>
+    
+</question>
+</quiz>

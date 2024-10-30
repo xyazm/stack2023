@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="38396">
+        <parent>0</parent>
+        <name>1.4.1.7 Cancelling Common Factors</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Show that the algebraic fraction \(\dfrac{3}{x+1}\) and \(\dfrac{3(x+4)}{x^2+5x+4}\) are equivalent.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The denominator \(x^2+5x+4\) can be factorised as \((x+4)(x+1)\) so that&lt;/p&gt;
+&lt;p&gt;\(\qquad \dfrac{3(x+4)}{x^2+5x+4} = \dfrac{3(x+4)}{(x+4)(x+1)}\)&lt;/p&gt;
+&lt;p&gt;Note that \((x + 4)\) is a factor common to both the numerator and the denominator and can be cancelled to leave \(\dfrac{3}{x+1}\). Thus \(\dfrac{3}{x+1}\) and \(\dfrac{3(x+4)}{x^2+5x+4}\) are equivalent fractions&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210914131021+8N34XI</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220117172415+Jt0lB9</version>
+        <hidden>0</hidden>
+        <timecreated>1631625021</timecreated>
+        <timemodified>1642440255</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

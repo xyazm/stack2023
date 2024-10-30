@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24576 -->
+  <question type="stack">
+    <name>
+				<text>15.2.2.6b The formula which doesn't exist</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3 style="text-align: left;">Formulae for the centre of mass</h3>
+<p>Now we consider the case of a lamina bounded above by some function \(f(x)\), bounded below by \(g(x)\) and bounded left and right by the lines \(x=a\) and \(x=b\) respectively (here we assume \(f(x) \geq g(x)\) for all \(x \in [a,b]\). Although this
+    case is quite restrictive it does allow the process we have used before to be used to obtain a formula for each of \(\bar{x}\) and \(\bar{y}\).</p>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/Area%20of%20lamina%20bounded%20as%20in%20text.png" alt="Lamina as described in text" width="649" height="300" class="img-responsive atto_image_button_text-bottom"></figure>
+<h5>Finding \(\bar{x}\)</h5>
+<p>As before, we find the moment of inertia about the \(y\)-axis in two ways. Assuming again that the lamina has an area \(A\) and mass per unit area of \(\rho\) we have the moment of inertia is \(A\rho \bar{x}\).<br><br>We slice the lamina in thin vertical
+    slices of width \(\delta x\). We can approximate the area of the slices by the area of the rectangle of width \(\delta x\) and height \(f(x)-g(x)\). The moment of inertia of this rectangle is \( x(f(x)-g(x)) \delta x\). By adding all of these and
+    letting \(\delta x \to 0\) we obtain the integral giving the moment of inertia of lamina so that</p>
+<p>\[ \int_a^b x\rho (f(x)-g(x)) \mathrm{d}x = A\rho \bar{x}.\]&nbsp;</p>
+<p>We can simplify this to obtain&nbsp;</p>
+<p>\[ \bar{x}= \frac{1}{A} \int_a^b x (f(x)-g(x)) \mathrm{d}x.\]&nbsp;</p>
+<p>Note that we can calculate \(A=\int_a^b f(x)-g(x) \mathrm{d}x\) to find&nbsp;<br><br>\[ \bar{x}= \frac{\int_a^b x (f(x)-g(x)) \mathrm{d}x}{\int_a^b f(x)-g(x) \mathrm{d}x}.\]</p>
+<p></p>
+<h5>Finding \(\bar{y}\)</h5>We can use the same vertical slices to find the moment of inertia about the \(x\)-axis, and thus find \(\bar{y}\). We found the area of one of our rectangles to be&nbsp; \((f(x)-g(x)) \delta x\) but the \(y\)-coordinate of the
+centre of the rectangle is the average of \(f(x)\) and \(g(x)\), namely \(\frac{1}{2}(f(x)+g(x))\) so that the moment of inertia about the \(x\)-axis is
+<p></p>
+<p>\[ \frac{1}{2}(f(x)+g(x))(f(x)-g(x)) \delta x=\frac12 (f(x)^2-g(x)^2) \delta x.\]<br></p>
+<p><br>By adding all of these and letting \(\delta x \to 0\) we obtain the integral giving the moment of inertia of lamina so that</p>
+<p>\[ \int_a^b \frac12 (f(x)^2-g(x)^2)&nbsp; \mathrm{d}x = A\rho \bar{y}.\]&nbsp;</p>
+<p>We can simplify this to obtain&nbsp;</p>
+<p>\[ \bar{y}= \frac{1}{2A} \int_a^b f(x)^2-g(x)^2 \mathrm{d}x.\]&nbsp;</p>
+<p>Note that we can calculate \(A=\int_a^b f(x)-g(x) \mathrm{d}x\) to find&nbsp;<br><br>\[ \bar{y}= \frac{\int_a^b f(x)^2-g(x)^2 \mathrm{d}x}{2\int_a^b f(x)-g(x) \mathrm{d}x}.\]</p>
+<p><br></p>
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p>Given functions \(f(x),\, g(x)\) such that \(g(x)\leq f(x)\) on the interval \([a,b]\) the centre of mass of the lamina bounded by \(x=a\), \(x=b\), \(y=f(x)\) and \(y=g(x)\) is<br>\[ (\bar{x},\bar{y}) = \left( \frac{\int_a^b x (f(x)-g(x)) \mathrm{d}x}{\int_a^b
+        f(x)-g(x) \mathrm{d}x},\frac{\int_a^b f(x)^2-g(x)^2 \mathrm{d}x}{2\int_a^b f(x)-g(x) \mathrm{d}x}\right).\]<br><br>In the special case that \(g(x)=0\) is the \(x\)-axis we have&nbsp;</p>
+    <p>\[ (\bar{x},\bar{y}) = \left( \frac{\int_a^b x f(x) \mathrm{d}x}{\int_a^b f(x) \mathrm{d}x},\frac{\int_a^b f(x)^2 \mathrm{d}x}{2\int_a^b f(x) \mathrm{d}x}\right).\]<br><br>Remember that the integral in the denominator is related to the area of the
+        lamina and may be possible to calculate without the integral.<br></p>
+</div><br>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:moodle2.maths.ed.ac.uk+210215215100+sodbty</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210609160020+gA5xX3</text></tag>
+    </tags>
+    
+</question>
+</quiz>

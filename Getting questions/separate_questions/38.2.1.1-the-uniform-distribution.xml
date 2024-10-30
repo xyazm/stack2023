@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27344">
+        <parent>0</parent>
+        <name>38.2.1.1 The uniform distribution</name>
+        <questiontext>&lt;h4&gt;The uniform distribution&lt;/h4&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The Uniform or Rectangular distribution has random variable \(X\)&amp;nbsp; restricted to a finite interval \([a,b]\)&amp;nbsp; and has&amp;nbsp; \(f(x)\) constant over the interval.&amp;nbsp; An illustration is shown in the figure below: &lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/38.2-fig1-constant_function.svg" alt="" width="385" height="197" role="presentation" class="img-responsive atto_image_button_middle"&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;The function \(f(x)\)&amp;nbsp; is defined by: \[ f(x)=\left\{\begin{matrix} \dfrac{1}{b-a},&amp;amp; a\le x\le b\\\\ 0&amp;amp; \text{otherwise} \end{matrix}\right.\]&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;b&gt;Mean and variance of a uniform distribution&lt;/b&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;Using the definitions of expectation and variance leads to the following calculations.&amp;nbsp;&amp;nbsp; As you might expect, for a uniform distribution, the calculations are not difficult.&amp;nbsp; Using the basic definition of expectation we may write:&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;\begin{eqnarray*} \text{E}(X)&amp;amp;=&amp;amp;\int_{-\infty}^{\infty} x \cdot f(x)\;dx=\int_a^b x\dfrac{1}{b-a}\;dx =\dfrac{1}{2(b-a)}\left[\phantom{\dfrac{1}{1}}\!\!\! x^2\right]_a^b\qquad\qquad\qquad\qquad\qquad\qquad\\ &amp;amp;=&amp;amp;\dfrac{b^2-a^2}{2(b-a)}\\ &amp;amp;=&amp;amp;\dfrac{b+a}{2} \end{eqnarray*}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Using the formula for the variance, we may write:&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;\begin{eqnarray*} \text{V}(X)&amp;amp;=&amp;amp; \text{E}(X^2)-[\text{E}(X)]^2\\ &amp;amp;=&amp;amp;\int_a^bx^2 \cdot \dfrac{1}{b-a}\;dx-\left(\dfrac{b+a}{2}\right)^2= \dfrac{1}{3(b-a)}\left[\phantom{\dfrac{1}{1}}\!\!\!x^3\right]_a^b-\left(\dfrac{b+a}{2}\right)^2\qquad\qquad\qquad\qquad\\\ &amp;amp;=&amp;amp;\dfrac{b^3-a^3}{3(b-a)}-\left(\dfrac{b+a}{2}\right)^2\\ &amp;amp;=&amp;amp;\dfrac{b^2+ab+a^2}{3}-\dfrac{b^2+2ab+a^2}{4}\\ &amp;amp;=&amp;amp;\dfrac{(b-a)^2}{12} \end{eqnarray*}&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/p&gt;
+
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;br&gt;&lt;/h4&gt;The &lt;b&gt;Uniform&lt;/b&gt; random variable \(X\) whose density function \(f(x)\)&amp;nbsp; is defined by \[ f(x)=\left\{\begin{matrix} \dfrac{1}{b-a},&amp;amp; a\le x\le b\\\\ 0&amp;amp; \text{otherwise} \end{matrix}\right.\] has expectation and variance given by the formulae \[ \text{E}(X)=\dfrac{b+a}{2}\qquad\text{and}\qquad \text{V}(X)=\dfrac{(b-a)^2}{12}\]&lt;span class="math inline"&gt;&lt;br&gt;&lt;/span&gt;&lt;span class="math inline"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;p&gt;
+
+&lt;/p&gt;&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;span&gt;The current (in mA) measured in a piece of copper wire is known to follow a uniform distribution over the interval \([0,25]\).&amp;nbsp; Write down the formula for the probability density function \(f(x)\)&amp;nbsp; of the random variable \(X\) representing the current.&amp;nbsp; Calculate the mean and variance of the distribution and find the cumulative distribution function&amp;nbsp; \(F(x)\).&lt;/span&gt;&lt;span class="math inline"&gt;&lt;/span&gt;&lt;span class="math inline"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;&lt;p&gt;Over the interval \([0,25]\)&amp;nbsp; the probability density function \(f(x)\)&amp;nbsp; is given by the formula \[ f(x)=\left\{\begin{matrix} \dfrac{1}{25-0}=0.04,&amp;amp; 0\le x\le 25\\\\ 0&amp;amp; \text{otherwise} \end{matrix}\right.\] Using the formulae developed for the mean and variance gives \[ \text{E}(X)=\dfrac{25+0}{2}=12.5\ \text{mA}\qquad\text{and}\qquad \text{V}(X)=\dfrac{(25-0)^2}{12}=52.08\ \text{mA}^2\] The cumulative distribution function is obtained by integrating the probability density function as shown below. \[ F(x)=\int_{-\infty}^xf(t)\,dt\] Hence, choosing the three distinct regions \(x&amp;lt;0\), \(0\le x\le 25\) and \(x&amp;gt; 25\) in turn gives: \[ F(x)=\left\{\begin{matrix}0,&amp;amp; x&amp;lt;0\\ \dfrac{x}{25}&amp;amp; 0\le x\le 25\\ 1&amp;amp; x&amp;gt; 25 \end{matrix}\right.\]&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200708161238+bzAOPG</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211013135624+t2OAEI</version>
+        <hidden>0</hidden>
+        <timecreated>1594224758</timecreated>
+        <timemodified>1634133384</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

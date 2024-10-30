@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="84679">
+        <parent>0</parent>
+        <name>18.3.1.1 The stationary points of a function of two variables (copy)</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The stationary points of a function of two variables&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;The Figure below shows a computer generated picture of the surface defined by the function \(z=x^3+y^3-3x-3y,\) where both \(x\) and \(y\) take values in the interval \([-1.8,1.8]\).
+
+&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/18.3%20Surface.svg" alt="The plot of the surface z = x^3 + y^3 - 3x - 3y in (x, y, z) coordinates" width="513" height="393" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;There are four features of particular interest on the surface. At point \(A\) there is a &lt;strong&gt;local maximum&lt;/strong&gt;, at \(B\) there is a &lt;strong&gt;local minimum&lt;/strong&gt;, and at \(C\) and \(D\) there are what are known as &lt;strong&gt;saddle points&lt;/strong&gt;.
+    At \(A\) the surface is at its greatest height in the immediate neighbourhood. If we move on the surface from \(A\) we immediately loose height no matter in which direction we travel. At \(B\) the surface is at its least height in the neighbourhood.
+    If we move on the surface from \(B\) we immediately gain height, no matter in which direction we travel. The features at \(C\) and \(D\) are quite different. In some directions as we move away from these points along the surface we lose height whilst
+    in others we gain height. The similarity in shape to a horse&#8217;s saddle is evident. At each point \(P\) of a &lt;em&gt;smooth&lt;/em&gt; surface one can draw a unique plane which touches the surface there. This plane is called the &lt;strong&gt;tangent plane&lt;/strong&gt;    at \(P\). (The tangent plane is a natural generalisation of the tangent line which can be drawn at each point of a smooth curve.) In the Figure above, at each of the points \(A,B,C,D\) the tangent plane to the surface is horizontal at the point of
+    interest. Such points are thus known as &lt;strong&gt;stationary points&lt;/strong&gt; of the function. In the next subsections we show how to locate stationary points and how to determine their nature using partial differentiation of the function \(f(x,y)\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220307124647+IjpQ8H</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220307124647+Wv0AwO</version>
+        <hidden>0</hidden>
+        <timecreated>1646657207</timecreated>
+        <timemodified>1646657207</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26227">
+        <parent>0</parent>
+        <name>7.2.6.3 Algebra of matrices</name>
+        <questiontext>&lt;p&gt;We now list some properties of matrix multiplication and compare them with corresponding
+properties for multiplication of numbers.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+\(
+\begin{array}{ccc}
+\textbf{Matrix algebra} &amp;&amp; \textbf{Number algebra} \\
+A(B+C) = AB+AC &amp;&amp; a(b+c)=ab+ac \\
+AB\neq BA\text{ in general} &amp;&amp; ab=ba \\
+A(BC)=(AB)C &amp;&amp; a(bc)=(ab)c \\
+AI = IA = A &amp;&amp; 1\cdot a=a\cdot1=a \\
+A\underline{0} = \underline{0}A=\underline{0} &amp;&amp; 0\cdot a=a\cdot0=0 \\
+AB\text{ may not be defined} &amp;&amp; ab\text{ is always defined} \\
+AB=\underline{0}\text{ does not imply }A=\underline{0}\text{ or }B=\underline{0} &amp;&amp; ab=0\text{ implies }a=0\text{ or }b=0
+\end{array}
+\)
+&lt;/div&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200623115038+3mshDz</stamp>
+        <version>stack2.maths.ed.ac.uk+200813145928+VExbtJ</version>
+        <hidden>0</hidden>
+        <timecreated>1592913038</timecreated>
+        <timemodified>1597330768</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

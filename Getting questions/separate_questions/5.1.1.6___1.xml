@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24292">
+        <parent>0</parent>
+        <name>5.1.1.6</name>
+        <questiontext>&lt;p&gt;So, in the context of modelling motion under gravity, the &lt;strong&gt;initial velocity&lt;/strong&gt; determines the vertical displacement of the line, its &lt;strong&gt;intercept&lt;/strong&gt; on the \(v\)-axis, and the &lt;strong&gt;acceleration&lt;/strong&gt; determines the &lt;strong&gt;slope&lt;/strong&gt;. Again, given the modelling context, both of these influence the range of validity of the model since they alter the time taken for the rock to reach the ground and this fixes the upper limit on time.&lt;/p&gt; &lt;p&gt;Like velocity, acceleration has direction as well as magnitude. As long as position is being measured downwards, and only gravity is considered to act, falling objects do not provide any examples of negative accelerations - but rocket motion does. Where downwards accelerations are represented as positive, an upwards acceleration will be negative. So a model of the motion of a rocket accelerating away from the Earth could include a constant negative acceleration. Horizontal acceleration, say of a road vehicle, in the same direction as position as being measured, is represented as positive. Deceleration, for example when this vehicle is being braked, implies that velocity is decreasing with time, and is represented as negative. In mathematical modelling, it is usual to refer to &lt;em&gt;acceleration&lt;/em&gt;, whether it represents positive acceleration or deceleration. Suppose that we are describing the motion of a rocket taking off vertically during its initial booster stage of 10 s. We might model the acceleration as a constant \(-20\ \text{m/s}^{-2}\). The negative sign arises because downwards is being taken as the positive direction but the acceleration is upwards. Since the rocket is starting from rest, an appropriate function is &lt;/p&gt;&lt;p&gt;\(\qquad v = -20t \) \((0\le t\le 10)\) &lt;/p&gt;&lt;p&gt;This should describe the variation of its velocity with time until the end of the initial booster stage of its flight. Figure 4 shows the corresponding graph of velocity against time. Note the way in which the graph slopes downwards to the right. This function describes an increasingly &lt;em&gt;negative&lt;/em&gt; velocity as time passes, consistent with an increasing &lt;em&gt;upwards&lt;/em&gt; velocity. The corresponding graph for a positive acceleration of the same magnitude would slope upwards towards the right.&lt;/p&gt;
+&lt;p&gt;&lt;img width="248" height="153" class="img-responsive atto_image_button_text-bottom" alt="velocity time graph y= -20t" src="@@PLUGINFILE@@/5.1%20linear%20functions%20figure%202.svg"&gt;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Figure &lt;/strong&gt;: Variation of velocity of rocket during the initial booster stage.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200724080330+vK9NZr</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220215174056+AxSOBZ</version>
+        <hidden>0</hidden>
+        <timecreated>1595577810</timecreated>
+        <timemodified>1644946856</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

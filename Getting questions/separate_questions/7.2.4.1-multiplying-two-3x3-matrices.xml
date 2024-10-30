@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26221">
+        <parent>0</parent>
+        <name>7.2.4.1 Multiplying two 3x3 matrices</name>
+        <questiontext>&lt;h3&gt;Multiplying two \(3\times3\) matrices&lt;/h3&gt;
+&lt;p&gt;The definition of the product \(C=AB\) where \(A\) and \(B\) are two \(3\times 3\) matrices is as follows \[ C =\begin{bmatrix} a &amp;amp; b &amp;amp; c \\ d &amp;amp; e &amp;amp; f \\
+g &amp;amp; h &amp;amp; i \end{bmatrix} \begin{bmatrix} r &amp;amp; s &amp;amp; t \\ u &amp;amp; v &amp;amp; w \\
+x &amp;amp; y &amp;amp; z \end{bmatrix} = \begin{bmatrix} ar + bu + cx &amp;amp; as + bv + cy &amp;amp; at + bw + cz \\
+dr + eu + fx &amp;amp; ds + ev + fy &amp;amp; dt + ew + fz \\ gr + hu + ix &amp;amp; gs + hv + iy &amp;amp; gt + hw + iz \end{bmatrix} \]&lt;/p&gt;
+&lt;p&gt;This looks a rather daunting amount of algebra but in fact the construction of the matrix on the right-hand side is straightforward if we follow the simple rule that the element in the \(i^{\rm th}\) row and \(j^{\rm th}\) column of \(C\) is obtained by multiplying the \(i^{\rm th}\) row of \(A\) with the \(j^{\rm th}\) column of \(B\).&lt;/p&gt;
+&lt;p&gt;For example, to obtain the element in row 2, column 3 of \(C\) we take row 2 of \(A\): \(\begin{bmatrix} d &amp;amp; e &amp;amp; f \end{bmatrix}\) and multiply it with column 3 of \(B\) in the usual way to produce \(\begin{bmatrix}dt + ew + fz\end{bmatrix}\).&lt;/p&gt;
+&lt;p&gt;By repeating this process we obtain every element of \(C\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622092444+W1cwMG</stamp>
+        <version>stack2.maths.ed.ac.uk+200907142012+sFhaNo</version>
+        <hidden>0</hidden>
+        <timecreated>1592817884</timecreated>
+        <timemodified>1599488411</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

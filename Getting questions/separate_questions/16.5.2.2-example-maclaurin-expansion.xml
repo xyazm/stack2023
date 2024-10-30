@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24341">
+        <parent>0</parent>
+        <name>16.5.2.2 Example Maclaurin expansion</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the Maclaurin expansion of &lt;span class="math inline"&gt;\(\cos x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Here \(f(x)=\cos x\) and, differentiating a number of times: \[f(x)=\cos x,\qquad f'(x)=-\sin x,\qquad f''(x)=-\cos x,\qquad f'''(x)=\sin x\quad \text{etc.}\] Evaluating each of these at \(x=0\): \[ f(0)=1,\quad f'(0)=0,\quad f''(0)=-1,\quad f'''(0)=0\
+    \text{etc.}\] Substituting into \(f(x)=f(0)+xf'(0)+\dfrac{x^2}{2!}f''(0)+\dfrac{x^3}{3!}f'''(0)+\cdots\), gives : \[\cos x=1-\dfrac{x^2}{2!}+\dfrac{x^4}{4!}-\dfrac{x^6}{6!}+\cdots\] Confirm (by finding the radius of convergence) that this series
+    is convergent for &lt;strong&gt;all &lt;/strong&gt;values of \(x\). The geometrical approximation to \(\cos x\) by the first few terms of its Maclaurin series are shown in the figure below. &lt;/p&gt;
+
+&lt;figure class="HELM_figure"&gt;
+  &lt;img src="@@PLUGINFILE@@/16-5-fig-2-taylor2.svg" alt="Linear, quadratic and cubic approximations to cos x" width="625" height="130" class="img-responsive atto_image_button_text-bottom"&gt;
+  &lt;figcaption&gt;Linear, quadratic and cubic approximations to \(\cos x\).&lt;/figcaption&gt;
+&lt;/figure&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201117183853+zEEoFe</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610111112+dico5s</version>
+        <hidden>0</hidden>
+        <timecreated>1605638333</timecreated>
+        <timemodified>1623323472</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

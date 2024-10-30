@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62088">
+        <parent>0</parent>
+        <name>23.1.2.1 Periodic functions</name>
+        <questiontext>&lt;h4&gt;Periodic functions&lt;/h4&gt;
+A function \(f(t)\) is periodic if the function values repeat at regular intervals of the independent variable
+\(t\). The regular interval is referred to as the period. An example of such function is given in the Figure below.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-1-fig-1-periodic-fnc.svg" alt="a general periodic function" width="516" height="139" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+If \(P\) denotes the period we have 
+\[ f(t + P) = f(t) \]
+for any value of \(t\).
+&lt;p&gt;&lt;/p&gt;
+The most obvious examples of periodic functions are the trigonometric functions \( \sin t\) and \( \cos t\), both
+of which have period \(2\pi\) (using radian measure as we shall do throughout this Section) (see the Figure below). This follows since
+\[ \sin(t + 2\pi) = \sin t \]
+and
+\[ \cos(t + 2\pi) = \cos t \]&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-1-fig-2-sin-cos.svg" alt="sin and cos" width="540" height="174" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+The &lt;b&gt;amplitude&lt;/b&gt; of these sinusoidal functions is the maximum displacement from \(y = 0\) and is clearly \(1\). (Note that we use the term sinusoidal to include cosine as well as sine functions.)
+More generally we can consider a sinusoid
+\[ y = A \sin nt \]
+which has maximum value, or amplitude, \(A\) and where \(n\) is usually a positive integer.
+&lt;p&gt;&lt;/p&gt;
+For example
+\[ y = \sin 2t \]
+is a sinusoid of amplitude \(1\) and period \( \dfrac{2\pi}{2} = \pi \). This is shown in the Figure below.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-1-fig-3-sin2t.svg" alt="sin2t" width="340" height="214" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+The fact that the period is \(\pi\) follows because
+\[ \sin 2(t + \pi) = \sin(2t + 2\pi) = \sin 2t\]
+for any value of \(t\).
+&lt;p&gt;&lt;/p&gt;
+We see that \(y = \sin 2t\) has half the period of \( \sin t\), \(\pi\) as opposed to \(2\pi\) (see the Figure below).&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/23-1-fig-4-sint-sin2t-comp.svg" alt="sint-sin2t-comp" width="340" height="200" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;
+This can
+alternatively be phrased by stating that \(\sin 2t\) oscillates twice as rapidly (or has twice the frequency)
+of \(\sin t\).&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+In general, \(y = A\sin nt\) has amplitude \(A\), period \(\dfrac{2\pi}{n}\) and completes \(n\) oscillations when \(t\) changes by \(2\pi\). Formally, we define the &lt;b&gt;frequency&lt;/b&gt; of a sinusoid as the reciprocal of the period:
+&lt;p&gt;&lt;/p&gt;
+\[ \text{frequency} = \dfrac{1}{\text{period}} \]
+and the &lt;b&gt;angular frequency&lt;/b&gt;, often denoted the Greek Letter \(\omega\) (omega) as
+\[ \text{angular frequency} = 2 \pi \times \text{frequency} = \dfrac{2\pi}{\text{period}} .\]
+Thus \(y = A\sin nt\) has frequency \( \dfrac{n}{2\pi}\) and angular frequency \(n\).</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200811200344+qK0pcR</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220517190847+PAivGo</version>
+        <hidden>0</hidden>
+        <timecreated>1597176224</timecreated>
+        <timemodified>1652814527</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

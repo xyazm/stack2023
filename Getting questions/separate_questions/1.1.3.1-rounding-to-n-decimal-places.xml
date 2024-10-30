@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="37732">
+        <parent>0</parent>
+        <name>1.1.3.1 Rounding to n Decimal Places</name>
+        <questiontext>&lt;h3&gt;&lt;span style="color: inherit; font-family: inherit;"&gt;Rounding to n Decimal Places&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+&lt;p&gt;In general, a calculator or computer is unable to store every decimal place of a real number. Real numbers are . To round a number to \(n\) decimal places we look at the \((n+1)^{th}\) digit in the decimal expansion of the number.&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt; If the \((n+1)^{th}\) digit is 0, 1, 2, 3 or 4 then we : that is, we simply chop to \(n\) places. (In other words we neglect the \((n+1)^{th}\) digit and any digits to its right.)&lt;/li&gt;
+    &lt;li&gt; If the \((n+1)^{th}\) digit is 5, 6, 7, 8 or 9 then we : we add \(1\) to the \(n^{th}\) decimal place and then chop to \(n\) places.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example&lt;/p&gt;
+&lt;p&gt;\(\qquad\qquad\qquad\begin{aligned} \dfrac{1}{3} &amp;amp;= 0.3333 &amp;amp; \qquad &amp;amp; \mbox{rounded to 4 decimal places} \\ \pi &amp;amp;= 3.14159 &amp;amp; \qquad &amp;amp; \mbox{rounded to 5 decimal places}\\ \dfrac{8}{3} &amp;amp;= 2.667 &amp;amp; \qquad &amp;amp; \mbox{rounded
+    to 3 decimal places}\\ 2136 &amp;amp;= 2000.000 &amp;amp; \qquad &amp;amp; \mbox{rounded to 3 decimal places}\\ 36.8 &amp;amp;= 37 &amp;amp; \qquad &amp;amp; \mbox{rounded to 1 decimal place}\\ 6.2399 &amp;amp;= 6.240 &amp;amp; \qquad &amp;amp; \mbox{rounded to 3 decimal places} \end{aligned}\)&lt;/p&gt;
+&lt;p&gt;Sometimes the phrase &#8216;decimal places&#8217; is abbreviated to &#8216;d.p.&#8217; or &#8216;dec.pl.&#8217;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Write down each of these numbers rounded to 4 decimal places: &lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+    &lt;li&gt;\(0.12345\)&lt;/li&gt;
+    &lt;li&gt;\(-0.44444\)&lt;/li&gt;
+    &lt;li&gt;\(0.5555555\)&lt;/li&gt;
+    &lt;li&gt;\(0.000127351\)&lt;/li&gt;
+    &lt;li&gt;\(0.000005\)&lt;/li&gt;
+    &lt;li&gt;\(123.456789\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;\(0.12345\) rounded to 4 decimal place becomes \(0.1235.\)&lt;/li&gt;
+    &lt;li&gt;\(-0.44444\) rounded to 4 decimal place becomes \(-0.4444.\)&lt;/li&gt;
+    &lt;li&gt;\(0.5555555\) rounded to 4 decimal place becomes \(0.5556.\)&lt;/li&gt;
+    &lt;li&gt;\(0.000127351\) rounded to 4 decimal place becomes \(0.0001.\)&lt;/li&gt;
+    &lt;li&gt;\(0.000005\) rounded to 4 decimal place becomes \(0.0000.\)&lt;/li&gt;
+    &lt;li&gt;\(123.456789\) rounded to 4 decimal place becomes \(123.4568.\)&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210901124748+yyodew</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211110120721+V876cR</version>
+        <hidden>0</hidden>
+        <timecreated>1630500468</timecreated>
+        <timemodified>1636546041</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

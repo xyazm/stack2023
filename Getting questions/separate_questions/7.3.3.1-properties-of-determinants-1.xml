@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26250">
+        <parent>0</parent>
+        <name>7.3.3.1 Properties of determinants 1</name>
+        <questiontext>&lt;h3&gt;Properties of determinants&lt;/h3&gt;
+&lt;p&gt;Often, especially with determinants of large order, we can simplify the evaluation rules. Let's discuss some useful
+    properties of determinants in general.&lt;/p&gt;
+
+&lt;ol type="1"&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;If two rows (or two columns) of a determinant are interchanged then the value of the determinant is
+        multiplied by \(-1\).&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;For example, \(\begin{vmatrix}4&amp;amp;3\\ 1&amp;amp;2\end{vmatrix}=8-3=5\), but (interchanging columns) \(\begin{vmatrix}3&amp;amp;4\\2&amp;amp;1\end{vmatrix}=3-8=-5\) and (interchanging rows) \(\begin{vmatrix}1&amp;amp;2\\ 4&amp;amp;3\end{vmatrix}=3-8=-5\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;The determinant of a matrix \(A\) and the determinant of its transpose \(A^T\) are equal.&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;\[ \begin{vmatrix} 1 &amp;amp; 2 \\ 3 &amp;amp; 4 \end{vmatrix} = 4 - 6 = -2 = \begin{vmatrix} 1 &amp;amp; 3 \\ 2 &amp;amp; 4 \end{vmatrix} \]&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;If two rows (or two columns) of a matrix \(A\) are equal, then it has zero determinant.&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;For example, the following determinant has two identical rows:&lt;/p&gt;
+    &lt;p&gt;
+        \[\begin{aligned}
+        \begin{vmatrix} 1 &amp;amp; 2 &amp;amp; 3 \\ 1 &amp;amp; 2 &amp;amp; 3 \\ 4 &amp;amp; 5 &amp;amp; 6 \end{vmatrix} 
+        &amp;amp;= 1 \times \begin{vmatrix} 2 &amp;amp; 3 \\ 5 &amp;amp; 6 \end{vmatrix} + 2 \times \left(- \begin{vmatrix} 1 &amp;amp; 3 \\ 4 &amp;amp; 6 \end{vmatrix} \right) + 3 \times \begin{vmatrix} 1 &amp;amp; 2 \\ 4 &amp;amp; 5 \end{vmatrix} \\
+        &amp;amp; = -3 + 2 \times 6 + 3 \times (-3) = 0. 
+        \end{aligned}\]
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;If the elements of one row (or one column) of a determinant are multiplied by \(k\), then the resulting determinant is \(k\) times the given determinant.&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;\[\begin{vmatrix} 1 &amp;amp; 2 &amp;amp; 3 \\ 4 &amp;amp; 8 &amp;amp; 6 \\ 7 &amp;amp; 8 &amp;amp;&amp;nbsp; 9 \end{vmatrix} = 2 \begin{vmatrix}
+    1 &amp;amp; 2 &amp;amp; 3 \\ 2 &amp;amp; 4 &amp;amp; 3 \\ 7 &amp;amp; 8 &amp;amp; 9 \end{vmatrix}.\]&lt;/p&gt;
+    &lt;p&gt;Note that if one row (or column) of a determinant is a multiple of another row (or column) then the value of the determinant is zero. (This follows from properties 3 and 4.)&lt;/p&gt;
+    &lt;p&gt;For example:&lt;/p&gt;
+    &lt;p&gt;\[\begin{aligned}
+        \begin{vmatrix} 2 &amp;amp; 4 &amp;amp; -1 \\ 4 &amp;amp; 2 &amp;amp; 1 \\ -4 &amp;amp; -8 &amp;amp; 2 \end{vmatrix} &amp;amp; = 2
+    \times \begin{vmatrix} 2 &amp;amp; 1 \\ -8 &amp;amp; 2 \end{vmatrix} +4 \times \left( -\begin{vmatrix} 4 &amp;amp; 1 \\ -4 &amp;amp;
+    2 \end{vmatrix} \right) - 1 \times \begin{vmatrix} 4 &amp;amp; 2 \\ -4 &amp;amp; -8 \end{vmatrix} \\ &amp;amp; =
+    2(12)+4(-12)-(-24)=0.
+        \end{aligned}\]&lt;/p&gt;
+    &lt;p&gt;This is predictable as the 3rd row is \(-2\) times the first row.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;If we add (or subtract) a multiple of one row (or column) to another, the value of the determinant is unchanged.&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;Given \(\begin{vmatrix}1&amp;amp;2\\ 4&amp;amp;5\end{vmatrix}\), adding (2 \(\times\) row 1) to (row 2) gives&lt;/p&gt;
+    &lt;p&gt;
+        \[\begin{vmatrix} 1 &amp;amp; 2 \\ 4 + 2 \times 1 &amp;amp; 5 + 2 \times 2 \end{vmatrix} = \begin{vmatrix} 1 &amp;amp; 2 \\ 6
+    &amp;amp; 9 \end{vmatrix} = 9 - 12 = -3 = \begin{vmatrix} 1 &amp;amp; 2 \\ 4 &amp;amp; 5 \end{vmatrix} \]
+    &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;p&gt;&lt;b&gt;The determinant of a lower triangular matrix, an upper triangular matrix
+        or a diagonal matrix is the product of the elements on the leading
+        diagonal.&lt;/b&gt;&lt;/p&gt;
+    &lt;p&gt;As an example, it is easily confirmed that each of the following determinants has the same value \(1 \times 4 \times 6 = 24\).&lt;/p&gt;
+    &lt;p&gt;\[
+        \begin{vmatrix} 1 &amp;amp; 2 &amp;amp; 3 \\ 0 &amp;amp; 4 &amp;amp; 5 \\ 0 &amp;amp; 0 &amp;amp; 6 \end{vmatrix},\qquad 
+        \begin{vmatrix} 1 &amp;amp; 0 &amp;amp; 0 \\ 2 &amp;amp; 4 &amp;amp; 0 \\ 3 &amp;amp; 5 &amp;amp; 6 \end{vmatrix},\qquad
+        \begin{vmatrix} 1 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 4 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 6 \end{vmatrix},\qquad
+        \begin{vmatrix} 4 &amp;amp; 2 &amp;amp; 3 \\ 0 &amp;amp; 1 &amp;amp; 5 \\ 0 &amp;amp; 0 &amp;amp; 6 \end{vmatrix}
+    \]&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200811165925+mDvTiK</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210702143459+V3qMpz</version>
+        <hidden>0</hidden>
+        <timecreated>1597165165</timecreated>
+        <timemodified>1625236499</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

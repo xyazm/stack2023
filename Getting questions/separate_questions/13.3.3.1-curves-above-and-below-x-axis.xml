@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24522">
+        <parent>0</parent>
+        <name>13.3.3.1 Curves above and below x-axis</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The area bounded by a curve, not entirely above the x-axis&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;The following figure shows a graph of \(y=-x^2+1\).&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/13.3.3.1%20Area%20below%20axis.svg" alt="Area between x-axis and y = -x^2 + 1 between 1 and 2" width="371" height="181" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;The shaded area is bounded by the \(x\)-axis and the curve, but lies entirely below the \(x\)-axis.&amp;lt;/p&amp;gt;&lt;/p&gt;
+&lt;p&gt; Let us evaluate the integral \({\displaystyle\int_1^2( -x^2+1)\ \mathrm{d}x}\).&lt;/p&gt;
+
+&lt;p&gt;\[\begin{aligned} {\displaystyle\int_1^2( -x^2+1)\ \mathrm{d}x} = \left[ -\dfrac{x^3}{3}+x\right]_1^2 &amp;amp;= \left(-\dfrac{2^3}{3} + 2 \right) - \left(-\dfrac{1^3}{3} + 1 \right), \\ &amp;amp;= -\dfrac{7}{3} + 1, \\ &amp;amp;= -\dfrac{4}{3}.&amp;nbsp; \end{aligned}\]&lt;/p&gt;
+
+&lt;p&gt;The evaluation of the area yields a negative quantity. There is, of course, no such thing as a negative area. The area is actually \(\dfrac{4}{3}\), and the negative sign is an indication that the area lies below the \(x\)-axis. (However, in applications
+    of integration such as work/energy or distance travelled in a given direction negative values can be meaningful.)&lt;/p&gt;
+
+&lt;p&gt; If an area contains parts both above and below the horizontal axis, care must be taken when calculating this area. It is necessary to determine which parts of the graph lie above the horizontal axis and which lie below. Separate integrals need to be calculated
+    for each &#8216;piece&#8217; of the graph. This idea is illustrated in the next Example.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the total area enclosed by the curve \(y=x^3-5x^2+4x\) and the \(x\)-axis between \(x=0\) and \(x=3\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We need to determine which parts of the graph lie above and which lie below the \(x\)-axis. To do this it is helpful to consider where the graph cuts the \(x\)-axis. So we consider the function \(x^3-5x^2+4x\) and look for its zeros&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+\[x^3-5x^2+4x = x(x^2-5x+4) = x(x-1)(x-4)\]&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;So the graph cuts the \(x\)-axis when \(x=0\), \(x=1\) and \(x=4\). Also, when \(x\) is large and positive, \(y\) is large and positive since the term involving \(x^3\) dominates. When \(x\) is large and negative, \(y\) is large and negative for the same
+    reason. With this information we can sketch a graph showing the required area:&lt;/p&gt;
+
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/13.3.3.1%20area%20above%20and%20below.svg" alt="the area between the x-axis and the function y = x^3 -5x^2+1 between zero and four" width="407" height="175" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;From the graph we see that the required area lies partly above the \(x\)-axis (when \(0\le x\le 1\)) and partly below (when \(1\le x\le 3\)). So we evaluate the integral in two parts:&lt;/p&gt;
+
+&lt;p&gt;Firstly:&lt;/p&gt;
+\[{\displaystyle\int_0^1( x^3-5x^2+4x )\ \mathrm{d}x} =&amp;nbsp; \left[\dfrac{x^4}{4} - \dfrac{5x^3}{3} + \dfrac{4x^2}{2}\right]_0^1 = \left(\dfrac{1}{4} - \dfrac{5}{3} + 2\right) - \left(0\right) = \dfrac{7}{12}\]&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This is the part of the required area which lies above the \(x\)-axis.&lt;/p&gt;
+&lt;p&gt;Secondly:&lt;/p&gt;
+
+\[\begin{aligned} {\displaystyle\int_1^3( x^3-5x^2+4x )\ \mathrm{d}x} &amp;amp;= \left[\dfrac{x^4}{4} - \dfrac{5x^3}{3} + \dfrac{4x^2}{2}\right]_1^3, \\ &amp;amp;= \left(\dfrac{81}{4} - \dfrac{135}{3} + 18\right) - \left(\dfrac{1}{4} - \dfrac{5}{3} + 2\right), \\ &amp;amp;= -\dfrac{22}{3}. \end{aligned}\]&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This represents the part of the required area which lies below the \(x\)-axis.&lt;/p&gt;
+&lt;p&gt;The actual area is \(\dfrac{22}{3}\).&lt;/p&gt;
+
+&lt;p&gt;Combining the results of the two separate calculations we can find the total area bounded by the curve:&lt;/p&gt;
+
+&lt;p&gt; area = \(\dfrac{7}{12} + \dfrac{22}{3} = \dfrac{95}{12}\)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200731093233+N9MqFO</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210713110953+XYjuya</version>
+        <hidden>0</hidden>
+        <timecreated>1596187953</timecreated>
+        <timemodified>1626174593</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

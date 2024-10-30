@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62160 -->
+  <question type="stack">
+    <name>
+				<text>43.1.5.2 Regression Curves - Quadratic</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Regression Curves - the Quadratic Case</h3>
+
+We are looking for a functional relation of the form
+\[ y = \alpha + \beta x+ \gamma x^2 , \] 
+and so, using the method of least squares, we require the values of \(a\), \(b\) and \(c\_ which minimize the
+expression
+\[ f(a,b,c) = \sum_{r=1}^n \left( y_r - a - bx_r  - cx_r^2 \right)^2 . \]
+Note here that the regression described by the form
+\[ y = \alpha  + \beta x  + \gamma x^2 \]
+is actually a linear regression since the expression is linear in \(\alpha\), \(\beta\) and \(\gamma\). 
+
+Omitting the subscripts and using partial differentiation gives 
+\[ \dfrac{\partial f}{\partial a} = -2 \sum \left( y - a - bx -cx^2 \right)\]
+\[ \dfrac{\partial f}{\partial b} = -2 \sum x \left( y - a - bx -cx^2 \right)\]
+\[ \dfrac{\partial f}{\partial c} = -2 \sum x^2 \left( y - a - bx -cx^2 \right)\]
+
+At a minimum we require
+\[ \dfrac{\partial f}{\partial a} = \dfrac{\partial f}{\partial b}  = \dfrac{\partial f}{\partial c}= 0, \]
+which results in the three linear equations
+\[ \sum y - na -b\sum x - c\sum x^2 = 0\]
+\[ \sum xy - a\sum x -b \sum x^2 - c \sum x^3 = 0\]
+\[ \sum x^2 y - a\sum x^2  - b \sum x^3 - c\sum x^4 = 0\]
+which can be solved to give the values of \(a\), \(b\) and \(c\).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200704150837+tkGKwL</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715054213+vG3SuH</text></tag>
+    </tags>
+    
+</question>
+</quiz>

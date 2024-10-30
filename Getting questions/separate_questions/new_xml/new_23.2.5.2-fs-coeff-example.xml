@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62109 -->
+  <question type="stack">
+    <name>
+				<text>23.2.5.2 FS coeff example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Write down the form of the Fourier series and expressions for the coefficients if</p>
+<ol class="HELM_parts_inline">
+    <li>\(T = 2l\)</li>
+    <li>\(T = \dfrac{2\pi}{\omega}\)</li>
+</ol>
+
+<p></p>
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+  <li>
+    <p>\( f(t) = \dfrac{a_0}{2} + \sum _{n = 1} ^\infty \left\{ a_n\cos \left( \dfrac{n\pi t}{l}\right) + b_n \sin\left( \dfrac{n\pi t}{l}\right) \right\} \)</p>
+    <p>with</p>
+    <p>\( a_n = \dfrac{1}{l} \displaystyle{ \int _{-l} ^l } f(t) \cos \left( \dfrac{n\pi t}{l} \right) \hspace{0.15cm} dt \)</p>
+    <p>and similarly for \(b_n\).</p>
+  </li>
+  
+  <li>
+    <p>\( f(t) = \dfrac{a_0}{2} + \sum _{n = 1} ^\infty \left\{ a_n\cos \left( n\omega t \right) + b_n \sin\left( n\omega t \right) \right\} \)</p>
+    <p>with</p>
+    <p>\( a_n = \dfrac{\omega}{\pi} \displaystyle{ \int _{-\frac{\pi}{\omega}} ^{\frac{\pi}{\omega}} } f(t) \cos \left( n\omega t \right) \hspace{0.15cm} dt \)</p>
+    <p>and similarly for \(b_n\).</p>
+  </li>
+</ol>
+
+<hr>
+<p>You should note that, as usual, any convenient integration range of length \(T\) (or \(2l\) or \( \dfrac{2\pi}{\omega}\) ) can be used in evaluating \(a_n\) and \(b_n\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200819191833+OIbM8n</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518095159+CJ1tiJ</text></tag>
+    </tags>
+    
+</question>
+</quiz>

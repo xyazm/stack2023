@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62200 -->
+  <question type="stack">
+    <name>
+				<text>23.6.3b Ex Properties of the complex Fourier coefficients</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find the complex Fourier series of the saw-tooth wave shown in the Figure below</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-6-ex-saw-tooth.svg" alt="saw tooth function" width="491" height="177" class="img-responsive atto_image_button_text-bottom"><br></p>
+<h4 class="HELM_solution">Solution</h4>
+We have
+\[ f(t) = \dfrac{At}{T} \hspace{1cm} 0 &lt; t &lt; T \hspace{1cm} f(t+T)=f(t) \]
+The period is \(T\) in this case so \(\omega_0=\dfrac{2\pi}{T}\).
+<p></p>
+Looking at the graph of \(f(t)\) we can say immediately
+<p></p>
+(a) the Fourier series will contain a constant term \(c_0\)
+<p></p>
+(b) if we imagine shifting the horizontal axis up to \(\dfrac{A}{2}\) the signal can be written
+\(f(t) = \dfrac{A}{2} + g(t)\), where \(g(t)\) is an odd function with complex Fourier coefficients that
+are purely imaginary.
+<p></p>
+Hence we expect the required complex Fourier series of \(f(t)\) to contain a constant term \( \dfrac{A}{2}\) and
+complex exponential terms with purely imaginary coefficients. We have, from the general theory, and using \(0 &lt; t &lt; T\) as the basic period for integrating,
+\[ c_n = \dfrac{1}{T} \int _0^T \dfrac{At}{T} e^{-i n \omega_0 t} dt = \dfrac{A}{T^2} \int_0^T t e^{-i n \omega_0 t} dt \]
+We can evaluate the integral using parts:
+\[
+\begin{align}
+ \int_0^T t e^{-i n \omega_0 t} dt &amp;= \left[ \dfrac{ t e^{-i n \omega_0 t} }{(-in\omega_0)} \right]_0^T + \dfrac{1}{i n \omega_0} \int_0^T e^{-i n \omega_0 t} dt \\
+&amp;= \dfrac{T e^{i n \omega_0 T}}{(-i n \omega_0)} - \dfrac{1}{(i n \omega_0)^2} \Big[ e^{-i n \omega_0 t} \Big]_0^T
+\end{align}
+\]
+But \( \omega_0 = \dfrac{2\pi}{T}\) so
+\[
+\begin{align}
+e^{-i n \omega_0 T} = e^{-i n 2 \pi} &amp;= \cos 2n\pi - i\sin 2n\pi \\
+&amp;= 1 - 0i = 1
+\end{align}
+\]
+Hence the integral becomes
+\[ \dfrac{T}{-in\omega_0} - \dfrac{1}{(in\omega_0)^2} \left( e^{-i n \omega_0 T}  - 1 \right) \]
+Hence 
+\[ c_n = \dfrac{A}{T^2} \left( \dfrac{T}{-in\omega_0} \right) = \dfrac{iA}{2\pi n} \hspace{1cm} n = \pm 1, \pm 2, \dots \]
+Note that
+\[ c_{-n} = \dfrac{iA}{2\pi(-n)} = \dfrac{-iA}{2\pi n} = c_n^* \]
+Also
+\[ c_0 = \dfrac{1}{T} \int _0^T \dfrac{At}{T}dt = \dfrac{A}{2}  \]
+as expected.
+<p></p>
+Hence the required complex Fourier series is
+\[ f(t) = \dfrac{A}{2} + \dfrac{iA}{2\pi} \sum _{{n=-\infty\atop n\neq 0}} ^ \infty \dfrac{e^{i n \omega_0 t}}{n} \]
+which could be written, showing only the constant and the first two harmonics, as
+\[ f(t) = \dfrac{A}{2\pi} \left\{ \dots - i \dfrac{e^{-i 2 \omega_0 t}}{2} - i e^{-i\omega_0 t} + \pi + i e^{i\omega_0 t} +  i \dfrac{e^{i 2 \omega_0 t}}{2} + \dots \right\} . \]
+<hr>
+
+The corresponding trigonometric Fourier series for the function can be readily obtained from this
+complex series by combining the terms in \( \pm n\), \(n = 1, 2, 3, \dots \)
+<p></p>
+For example this first harmonic
+\[
+\begin{eqnarray*}
+\dfrac{A}{2\pi}\left\{- i e^{-i \omega_0t}+ i e^{ i\omega_0t}\right\}
+&amp;=&amp;\dfrac{A}{2\pi}\left\{- i (\cos \omega_0t - i\sin \omega_0t)+ i (\cos\omega_0t +i \sin
+\omega_0t)\right\}\qquad\qquad\\
+\\
+&amp;=&amp;\dfrac{A}{2\pi}(-2\sin\omega_0t)=-\dfrac{A}{\pi}\sin\omega_0t
+\end{eqnarray*}
+\]
+Performing similar calculations on the other harmonics we obtain the trigonometric form of the
+Fourier series
+\[ f(t)=\frac{A}{2}-\frac{A}{\pi}\sum_{n=1}^\infty \frac{\sin n\omega_0t}{n}.\]]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200920075300+ip0aTE</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200920163740+OVRy8j</text></tag>
+    </tags>
+    
+</question>
+</quiz>

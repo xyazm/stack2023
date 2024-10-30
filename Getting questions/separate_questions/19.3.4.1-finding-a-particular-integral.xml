@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33750">
+        <parent>0</parent>
+        <name>19.3.4.1 Finding a particular integral</name>
+        <questiontext>&lt;h4&gt;Finding a particular integral&lt;/h4&gt;
+&lt;p&gt;In the previous subsection we explained what is meant by a particular integral. Now we look at a
+    simple method to find a particular integral. In fact our method is rather crude. It involves trial and
+    error and educated guesswork. We try solutions which are of the same general form as the \(f(x)\) on
+    the right-hand side.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find a particular integral of the equation&lt;/p&gt;
+\[\frac{\mathrm{d}^2y}{\mathrm{d}x^2} - \frac{\mathrm{d}y}{\mathrm{d}x} - 6y = e^{2x}.\]
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;We shall attempt to find a solution of the inhomogeneous problem by trying a function of the same
+    form as that on the right-hand side of the ODE. In particular, let us try \(y(x) = Ae^{2x}\),
+    where A is a constant that we shall now determine. If \(y(x) = Ae^{2x}\) then
+    &lt;/p&gt;
+\[\frac{\mathrm{d}y}{\mathrm{d}x} = 2Ae^{2x} \qquad \text{and} \qquad
+\frac{\mathrm{d}^2y}{\mathrm{d}x^2} = 4Ae^{2x}.\]
+&lt;p&gt;Subsitution in the ODE gives:&lt;/p&gt;
+\[4Ae^{2x} - 2Ae^{2x} - 6Ae^{2x} = e^{2x},\]
+&lt;p&gt;that is,&lt;/p&gt;
+\[-4Ae^{2x} = e^{2x}.\]
+&lt;p&gt;To ensure that \(y\) is a solution, we require \(-4A = 1\), that is, \(\displaystyle A = -\frac{1}{4}\).&lt;/p&gt;
+&lt;p&gt;Therefore, the particular integral is \(\displaystyle y_\text{p} = -\frac{1}{4}e^{2x}\).&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;In the previous example we chose a trial solution \(Ae^{2x}\) of the same form as the ODE's right-hand
+    side. The following table provides a summary of the trial solutions which should be tried for various forms
+    of the right-hand side.
+&lt;/p&gt;
+&lt;table class="HELM_table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;\(f(x)\)&lt;/th&gt;
+            &lt;th&gt;Trial solution&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;constant term: \(c\)&lt;/td&gt;
+            &lt;td&gt;constant term: \(k\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;linear: \(ax + b\)&lt;/td&gt;
+            &lt;td&gt;linear: \(Ax + B\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;polynomial in \(x\) of degree \(r\): \(ax^r + \cdots + bx + c\)&lt;/td&gt;
+            &lt;td&gt;polynomial in \(x\) of degree \(r\): \(Ax^r + \cdots + Bx + C\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(a \cos kx\)&lt;/td&gt;
+            &lt;td&gt;\(A \cos kx + B \sin kx\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(a \sin kx\)&lt;/td&gt;
+            &lt;td&gt;\(A \cos kx + B \sin kx\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(ae^{kx}\)&lt;/td&gt;
+            &lt;td&gt;\(Ae^{kx}\)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;\(ae^{-kx}\)&lt;/td&gt;
+            &lt;td&gt;\(Ae^{-kx}\)&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210618164321+WDpMez</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210618170205+1yqrU9</version>
+        <hidden>0</hidden>
+        <timecreated>1624034601</timecreated>
+        <timemodified>1624035725</timemodified>
+        <createdby>2661</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

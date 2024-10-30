@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62185">
+        <parent>0</parent>
+        <name>3.4.1.3 Introduction no solution</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Equations with no solution&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;On occasions we may encounter a pair of simultaneous equations which have no solution. Consider the following example.&lt;/p&gt; 
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Show that the following pair of simultaneous equations have no solution.&lt;/p&gt;
+&lt;p&gt;\(10x - 2y = -3\) &amp;nbsp; (9)&lt;/p&gt; 
+&lt;p&gt;\(-5x + y = 1\) &amp;nbsp; (10)&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Leaving equation (9) unaltered and multiplying equation (10) by 2 we find&lt;/p&gt;
+
+&lt;p&gt;\(10x - 2y = -3\)&lt;/p&gt;
+&lt;p&gt;\(-10x + 2y = 2\)&lt;/p&gt;
+
+&lt;p&gt;Adding these equations to eliminate \(x\) we find that \(y\) is eliminated as well:&lt;/p&gt;
+
+&lt;p&gt;\(10x - 2y = -3\)&lt;/p&gt;
+&lt;p&gt;\(-10x + 2y = 2\) &amp;nbsp; Add&lt;/p&gt;
+&lt;p&gt;\(0x + 0y = -1\)&lt;/p&gt;
+
+&lt;p&gt;The last line '\(0=-1\)' is clearly nonsense.&lt;/p&gt;
+
+&lt;p&gt;We say that Equations (9) and (10) are &lt;strong&gt;inconsistent&lt;/strong&gt; and they have &lt;strong&gt;no solution&lt;/strong&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200714045058+c5pVDN</stamp>
+        <version>stack2.maths.ed.ac.uk+200714045147+LI9y1U</version>
+        <hidden>0</hidden>
+        <timecreated>1594702258</timecreated>
+        <timemodified>1594702307</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

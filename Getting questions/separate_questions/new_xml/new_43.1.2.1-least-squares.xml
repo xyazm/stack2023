@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62149 -->
+  <question type="stack">
+    <name>
+				<text>43.1.2.1 Least squares</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>The method of least squares -  an elementary view</h3>
+
+
+We assume that an experiment has been performed which has resulted in n pairs of values, say
+\( (x_1, y_1)\),  \( (x_2, y_2)\), \( \dots \) ,  \( (x_n, y_n)\) and that these results have been checked for approximate linearity on the scatter diagram given below.
+
+<p><br></p><p><img src="@@PLUGINFILE@@/43-1-fig-4-least-squares.svg" alt="" width="457" height="253" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p>
+
+The vertical distances of each point from the line \( y = a + bx\) are easily calculated as
+\[ y_1 - a - bx_1, \hspace{0.4cm} y_2 - a - bx_2,  \hspace{0.4cm} y_3 - a - bx_3, \hspace{0.4cm} \dots&nbsp;\hspace{0.4cm} ,   \hspace{0.4cm} y_n - a - bx_n \]
+
+These distances are squared to guarantee that they are positive and calculus is used to minimise the sum of the squared distances. Effectively we are minimising the sum of a two-variable expression and need to use partial differentiation. If you wish to follow this up and look in more detail at the technique, any good book (engineering or mathematics) containing sections on multi-variable calculus should suffice. We will not look at the details of the calculations here but simply note that the process results in two equations in the two unknowns \(m\) and \(c\) being formed. These equations are:
+\[ \sum xy - a \sum x - b \sum x^2 = 0, \]
+and
+\[ \sum y - na - b\sum x = 0. \]
+The second of these equations immediately gives a useful result. Rearranging the equation we
+get
+\[ \dfrac{\sum y}{n} - a - b \dfrac{\sum x}{n} = 0, \]
+or, put more simply, 
+\[ \bar{y} = a + b\bar{x}, \]
+where \( ( \bar{x} , \bar{y} )\) is the mean of the array of data points \( (x_1, y_1)\),  \( (x_2, y_2)\), \( \dots \) ,  \( (x_n, y_n).\)
+
+This shows that the mean of the array always lies on the regression line. Since the mean is easily calculated, the result forms a useful check for a plotted regression line. Ensure that any regression line you draw passes through the mean of the array of data points.
+
+Eliminating \(a\) from the equations gives a formula for the gradient \(b\) of the regression line, this is:
+\[ b = \dfrac{ \dfrac{ \sum xy}{n} - \dfrac{ \sum x}{n}\dfrac{ \sum y}{n}  }{ \dfrac{\sum x^2}{n} - \left( \dfrac{\sum x}{n} \right)^2 }, \]
+often written as 
+\[ b = \dfrac{S_{xy}}{S_x^2}. \]
+
+The quantity \(S^2_x\) is, of course, the variance of the \(x\)-values. The quantity \(S_{xy}\) is known as the <b>covariance</b> (of \(x\) and \(y\)) and will appear again later when we measure the degree of linear association between two variables.
+
+Knowing the value of \(b\) enables us to obtain the value of \(a\) from the equation \(\bar{y} = a + b\bar{x}. \)]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200704071119+k08czS</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715053440+qxyTUA</text></tag>
+    </tags>
+    
+</question>
+</quiz>

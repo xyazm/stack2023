@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 30673 -->
+  <question type="stack">
+    <name>
+				<text>8.1.1.4 Exercise: Cramer's rule for solving simultaneous equations</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise 1 (paper exercise)<br></p>
+<p>Use Cramer’s rule to determine any and all solutions to the equations</p>
+<p><span class="math display">\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+\qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+4x-6y&amp;=&amp;10\end{array}\]</span></p>
+<p><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210528140458+l1zjhO</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210528140458+owHefH</text></tag>
+    </tags>
+    
+</question>
+</quiz>

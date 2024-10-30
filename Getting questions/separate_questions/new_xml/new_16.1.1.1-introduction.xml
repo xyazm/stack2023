@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24352 -->
+  <question type="stack">
+    <name>
+				<text>16.1.1.1 Introduction</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Introduction</span></h3><br>
+
+<p>An infinite&nbsp;<strong>sequence</strong> is any succession of numbers. For example the sequence \[ 1,\ 1,\ 2,\ 3,\ 5,\ 8,\ \ldots\] which is known as the Fibonacci sequence, is formed by adding two consecutive terms together to obtain the next term.
+    The numbers in this sequence continually increase without bound and we say this sequence <strong>diverges</strong>. An example of a <strong>convergent</strong> sequence is the <strong>harmonic sequence</strong> \[1,\ \dfrac{1}{2},\ \dfrac{1}{3},\
+    \dfrac{1}{4},\ \ldots\] Here we see the magnitude of these numbers continually decrease and it is obvious that the sequence converges to the number zero. The related <strong>alternating harmonic sequence</strong> \[1,\ -\dfrac{1}{2},\ \dfrac{1}{3},\
+    -\dfrac{1}{4},\ \ldots\] is also convergent to the number zero. Whether or not a sequence is convergent is often easy to deduce by graphing the individual terms. The diagrams below show how the individual terms of the harmonic and alternating harmonic
+    series behave as the number of terms increase.</p>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/16-1-fig-1a-Harmonic.svg?time=1623248446265" alt="Graph of the individual terms of the harmonic sequence, showing how these behave as the number of terms increases." width="514" height="116" class="img-responsive atto_image_button_text-bottom">
+</figure>
+
+
+<figure class="HELM_figure">
+  <img src="@@PLUGINFILE@@/16-1-fig-1b-AltHarmonic.svg" alt="Graph of the individual terms of the alternating harmonic sequence, showing how these behave as the number of terms increases." width="504" height="141" class="img-responsive atto_image_button_text-bottom">
+</figure>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+201002134755+Y1Bvoy</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210610131958+UMr9tC</text></tag>
+    </tags>
+    
+</question>
+</quiz>

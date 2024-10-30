@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="30676">
+        <parent>0</parent>
+        <name>8.1.2.1 Solving three equations in three unknowns</name>
+        <questiontext>&lt;h4&gt;Solving three equations in three unknowns&lt;/h4&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Cramer&#8217;s rule can be extended to larger systems of simultaneous equations but the calculational effort increases rapidly as the size of the system increases. We quote Cramer&#8217;s rule for a system of three equations.&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;br&gt;&lt;/h4&gt;
+    &lt;p&gt;The unique solution to the system of equations:&lt;/p&gt;
+    &lt;p&gt;\(\begin{eqnarray*}a_{11}x_1+a_{12}x_2+a_{13}x_3&amp;amp;=&amp;amp;b_1\\ a_{21}x_1+a_{22}x_2+a_{23}x_3&amp;amp;=&amp;amp;b_2\\ a_{31}x_1+a_{32}x_2+a_{33}x_3&amp;amp;=&amp;amp;b_3\end{eqnarray*}\)&lt;/p&gt;
+    &lt;p&gt;is&lt;/p&gt;
+    &lt;p&gt;\(x_1=\dfrac{\Delta_{x_1}}{\Delta},\ \ x_2=\dfrac{\Delta_{x_2}}{\Delta},\ \ x_3=\dfrac{\Delta_{x_3}}{\Delta}\)&amp;nbsp;&lt;/p&gt;
+    &lt;p&gt;in which&lt;/p&gt;
+    &lt;p&gt;\(\Delta=\left|\begin{array}{ccc}a_{11}&amp;amp;a_{12}&amp;amp;a_{13}\\ a_{21}&amp;amp;a_{22}&amp;amp;a_{23}\\ a_{31}&amp;amp;a_{32}&amp;amp;a_{33}\end{array}\right|\)&amp;nbsp;&lt;/p&gt;
+    &lt;p&gt;and&amp;nbsp;&lt;/p&gt;
+    &lt;p&gt;\(\Delta_{x_1}=\left|\begin{array}{ccc}b_1&amp;amp;a_{12}&amp;amp;a_{13}\\ b_2&amp;amp;a_{22}&amp;amp;a_{23}\\ b_3&amp;amp;a_{32}&amp;amp;a_{33}\end{array}\right|\qquad \Delta_{x_2}=\left|\begin{array}{ccc}a_{11}&amp;amp;b_1&amp;amp;a_{13}\\ a_{21}&amp;amp;b_2&amp;amp;a_{23}\\ a_{31}&amp;amp;b_3&amp;amp;a_{33}\end{array}\right|\qquad
+        \Delta_{x_3}=\left|\begin{array}{ccc}a_{11}&amp;amp;a_{12}&amp;amp;b_1\\ a_{21}&amp;amp;a_{22}&amp;amp;b_2\\ a_{31}&amp;amp;a_{32}&amp;amp;b_3\end{array}\right|\)&lt;/p&gt;
+    &lt;p&gt;If \(\Delta=0\) this method of&amp;nbsp; solution cannot be used.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Notice that the structure of the fractions is similar to that for the two-equation case. For example, the determinant forming the numerator of &lt;span class="math inline"&gt;\(x_1\)&lt;/span&gt; is obtained from the determinant of coefficients, &lt;span class="math inline"&gt;\(\Delta\)&lt;/span&gt;,
+    by replacing the first column by the right-hand sides of the equations.&lt;/p&gt;
+&lt;p&gt;Notice too the increase in calculation: in the two-equation case we had to evaluate three &lt;span class="math inline"&gt;\(2\times 2\)&lt;/span&gt; determinants, whereas in the three-equation case we have to evaluate four &lt;span class="math inline"&gt;\(3\times 3\)&lt;/span&gt;    determinants. Hence Cramer&#8217;s rule is not really practicable for larger systems.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210528140835+Pgbg7B</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210629174104+G8DYml</version>
+        <hidden>0</hidden>
+        <timecreated>1622210915</timecreated>
+        <timemodified>1624988464</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

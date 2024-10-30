@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62109">
+        <parent>0</parent>
+        <name>23.2.5.2 FS coeff example</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Write down the form of the Fourier series and expressions for the coefficients if&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+    &lt;li&gt;\(T = 2l\)&lt;/li&gt;
+    &lt;li&gt;\(T = \dfrac{2\pi}{\omega}\)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;
+    &lt;p&gt;\( f(t) = \dfrac{a_0}{2} + \sum _{n = 1} ^\infty \left\{ a_n\cos \left( \dfrac{n\pi t}{l}\right) + b_n \sin\left( \dfrac{n\pi t}{l}\right) \right\} \)&lt;/p&gt;
+    &lt;p&gt;with&lt;/p&gt;
+    &lt;p&gt;\( a_n = \dfrac{1}{l} \displaystyle{ \int _{-l} ^l } f(t) \cos \left( \dfrac{n\pi t}{l} \right) \hspace{0.15cm} dt \)&lt;/p&gt;
+    &lt;p&gt;and similarly for \(b_n\).&lt;/p&gt;
+  &lt;/li&gt;
+  
+  &lt;li&gt;
+    &lt;p&gt;\( f(t) = \dfrac{a_0}{2} + \sum _{n = 1} ^\infty \left\{ a_n\cos \left( n\omega t \right) + b_n \sin\left( n\omega t \right) \right\} \)&lt;/p&gt;
+    &lt;p&gt;with&lt;/p&gt;
+    &lt;p&gt;\( a_n = \dfrac{\omega}{\pi} \displaystyle{ \int _{-\frac{\pi}{\omega}} ^{\frac{\pi}{\omega}} } f(t) \cos \left( n\omega t \right) \hspace{0.15cm} dt \)&lt;/p&gt;
+    &lt;p&gt;and similarly for \(b_n\).&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr&gt;
+&lt;p&gt;You should note that, as usual, any convenient integration range of length \(T\) (or \(2l\) or \( \dfrac{2\pi}{\omega}\) ) can be used in evaluating \(a_n\) and \(b_n\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200819191833+OIbM8n</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518095159+CJ1tiJ</version>
+        <hidden>0</hidden>
+        <timecreated>1597864713</timecreated>
+        <timemodified>1652867519</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

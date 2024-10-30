@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62135 -->
+  <question type="stack">
+    <name>
+				<text>23.5 Introduction</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Introduction</h4>
+In this Section we address the following problem:
+<p></p>
+<i>Can we find a Fourier series expansion of a function defined over a finite interval?</i>
+<p></p>
+Of course we recognise that such a function could not be periodic (as periodicity demands an infinite
+interval). The answer to this question is yes but we must first convert the given non-periodic function
+into a periodic function. There are many ways of doing this. We shall concentrate on the most useful
+extension to produce a so-called <b>half-range Fourier series</b>.]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200905145214+wNZCHy</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200912213655+84nUhH</text></tag>
+    </tags>
+    
+</question>
+</quiz>

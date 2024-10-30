@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="3163764">
+                <parent>0</parent>
+                <name>Keller Drop Down</name>
+                <questiontext>&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/Keller%20ohne%20Notausgang.png" alt="" width="400" height="308" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Um zum Notausgang zu gelangen musst du zuerst in [[2]] gehen und dann in [[13]] gehen.&lt;/p&gt;</questiontext>
+                <questiontextformat>1</questiontextformat>
+                <generalfeedback/>
+                <generalfeedbackformat>1</generalfeedbackformat>
+                <defaultmark>1.0000000</defaultmark>
+                <penalty>0.3333333</penalty>
+                <qtype>gapselect</qtype>
+                <length>1</length>
+                <stamp>moodle.ruhr-uni-bochum.de+200916092913+ePtZ18</stamp>
+                <timecreated>1600248553</timecreated>
+                <timemodified>1602142384</timemodified>
+                <createdby>50832</createdby>
+                <modifiedby>50832</modifiedby>
+                <plugin_qtype_gapselect_question>
+                  <answers>
+                    <answer id="4075420">
+                      <answertext>das Lager f&#252;r W&#252;rfel</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4075421">
+                      <answertext>das Lager f&#252;r Spielkarten</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4075422">
+                      <answertext>den W&#228;scheraum</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4075423">
+                      <answertext>die Garderobe f&#252;r Abendkleider</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4075424">
+                      <answertext>die Werkstatt</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4075425">
+                      <answertext>den Strafraum f&#252;r Schummler</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085049">
+                      <answertext>die Gelddruckerei und Coinherstellung</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>1</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085050">
+                      <answertext>das Lager f&#252;r W&#252;rfel</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085051">
+                      <answertext>das Lager f&#252;r Spielkarten</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085052">
+                      <answertext>den W&#228;scheraum</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085053">
+                      <answertext>die Garderobe f&#252;r Abendkleider</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085054">
+                      <answertext>die Werkstatt</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085055">
+                      <answertext>den Strafraum f&#252;r Schummler</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                    <answer id="4085056">
+                      <answertext>die Gelddruckerei und Coinherstellung</answertext>
+                      <answerformat>1</answerformat>
+                      <fraction>0.0000000</fraction>
+                      <feedback>2</feedback>
+                      <feedbackformat>0</feedbackformat>
+                    </answer>
+                  </answers>
+                  <gapselect id="11074">
+                    <shuffleanswers>1</shuffleanswers>
+                    <correctfeedback>Die Antwort ist richtig.</correctfeedback>
+                    <correctfeedbackformat>1</correctfeedbackformat>
+                    <partiallycorrectfeedback>Die Antwort ist teilweise richtig.</partiallycorrectfeedback>
+                    <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+                    <incorrectfeedback>Die Antwort ist falsch.</incorrectfeedback>
+                    <incorrectfeedbackformat>1</incorrectfeedbackformat>
+                    <shownumcorrect>1</shownumcorrect>
+                  </gapselect>
+                </plugin_qtype_gapselect_question>
+                <plugin_qbank_comment_question>
+                  <comments>
+                  </comments>
+                </plugin_qbank_comment_question>
+                <plugin_qbank_customfields_question>
+                  <customfields>
+                  </customfields>
+                </plugin_qbank_customfields_question>
+                <question_hints>
+                </question_hints>
+                <tags>
+                </tags>
+              </question>
+            
+
+</quiz>

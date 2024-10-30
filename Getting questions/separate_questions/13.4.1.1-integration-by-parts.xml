@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24529">
+        <parent>0</parent>
+        <name>13.4.1.1 Integration by parts</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Indefinite integration&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;The technique known as &lt;strong&gt;integration by parts&lt;/strong&gt; is used to integrate a product of two functions, such as in these two examples:
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt; \({\displaystyle\int e^{2x}\sin 3x \, \mathrm{d}x}\)&lt;/li&gt;
+    &lt;li&gt; \({\displaystyle\int_0^1 x^3 e^{-2x} \, \mathrm{d}x}\)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note that in the first example, the integrand is the product of the functions \(e^{2x}\) and \(\sin 3x\), and in the second example the integrand is the product of the functions \(x^3\) and \(e^{-2x}\). Note also that we can change the order of the terms
+    in the product if we wish and write
+&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;\({\displaystyle\int (\sin 3x) e^{2x} \, \mathrm{d}x}\)&lt;/li&gt;
+    &lt;li&gt;\({\displaystyle\int_0^1 e^{-2x}x^3 \, \mathrm{d}x}\)&lt;/li&gt;
+&lt;/ul&gt;
+What you must never do is integrate each term in the product separately and then multiply - the integral of a product is not the product of the separate integrals. However, it is often possible to find integrals involving products using the method of
+integration by parts - you can think of this as a &lt;em&gt;product rule&lt;/em&gt; for integrals.
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The integration by parts formula states:&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;&lt;strong&gt;Integration by Parts for Indefinite Integrals&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;given functions \(f(x)\) and \(g(x)\):&lt;/p&gt;
+
+    \({\displaystyle\int f \cdot g \, \mathrm{d}x}\) = \(f\) \(\cdot\) \({\displaystyle\int g \, \mathrm{d}x}\) - \({\displaystyle\int \left(\dfrac{df}{dx} \displaystyle\int g \, \mathrm{d}x \right) \, \mathrm{d}x}\)
+
+    &lt;p&gt;Alternatively, given functions \(u\) and \(v\):&lt;/p&gt;
+    \({\displaystyle \int u\dfrac{d v}{d x} \, \mathrm{d}x = u.v-\displaystyle \int v\dfrac{d u}{d x} \, \mathrm{d}x}\)
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Study the formula carefully and note the following observations. Firstly, to apply the formula we must be able to differentiate the function \(f\) to find \(\dfrac{d f}{d x}\), and we must be able to integrate the function, \(g\).&lt;/p&gt;
+&lt;p&gt;Secondly the formula replaces one integral, the one on the left, with a different integral, that on the far right. The intention is that the latter, whilst it may look more complicated in the formula above, is simpler to evaluate. Consider the following
+    Example:&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find the integral of the product of \(x\) with \(\sin x\); that is, find \({\displaystyle \int x\sin x \, \mathrm{d}x}\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Compare the required integral with the formula for integration by parts: we choose \(f = x\) and \(g = \sin x\)&lt;/p&gt;
+
+&lt;p&gt;It follows that \(\dfrac{df}{dx} = 1\) and \({\displaystyle\int g \, \mathrm{d}x = \displaystyle\int \sin x \, \mathrm{d}x} = -\cos x\)&lt;/p&gt;
+&lt;p&gt;(When integrating \(g\) there is no need to worry about a constant of integration. When you become confident with the method, you may like to think about why this is the case.)&lt;/p&gt;
+&lt;p&gt;Applying the formula we obtain&lt;/p&gt;
+\begin{eqnarray*} \int x\sin x \, \mathrm{d} x &amp;amp;=&amp;amp; f\cdot \int g \, \mathrm{d} x -\int \left( {d f\over d x}\cdot\int g \, \mathrm{d} x \right)\,d x \\ &amp;amp;=&amp;amp; x(-\cos x) - \int 1(-\cos x) \, \mathrm{d} x\\ &amp;amp;=&amp;amp; -x\cos x + \int \cos
+x \, \mathrm{d} x\\ &amp;amp;=&amp;amp; -x\cos x + \sin x +c \end{eqnarray*}</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200803123715+E9GrDv</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210604110049+kzMGZQ</version>
+        <hidden>0</hidden>
+        <timecreated>1596458235</timecreated>
+        <timemodified>1622804449</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

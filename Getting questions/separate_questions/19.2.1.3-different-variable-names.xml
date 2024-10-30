@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25965">
+        <parent>0</parent>
+        <name>19.2.1.3 Different variable names</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;&lt;h4&gt;Different variable names&lt;/h4&gt;&lt;br&gt;The variables involved in differential equations need not be &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;. Any symbols for variables may be used. Other first order differential equations are \[\dfrac{\mathrm{d}z}{\mathrm{d}t}=te^z,\quad
+    \dfrac{\mathrm{d}\theta}{\mathrm{d}t} =- \theta \quad \text{and} \quad \dfrac{\mathrm{d}v}{\mathrm{d}r}=v\left({\dfrac{1}{r^2}}\right). \] Given a differential equation in the form \[\dfrac{\mathrm{d}y}{\mathrm{d}x}=f(x)g(y),\] we can divide through by &lt;span class="math inline"&gt;\(g(y)\)&lt;/span&gt; to obtain \[\dfrac{1}{g(y)}\dfrac{\mathrm{d}y}{\mathrm{d}x}=f(x).
+    \] If we now integrate both sides of this equation with respect to &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; we obtain \[ \int \dfrac{1}{g(y)}\dfrac{\mathrm{d}y}{\mathrm{d}x}\, \mathrm{d}x=f(x) \,\mathrm{d}x \] that is \[ \int \dfrac{1}{g(y)} \, \mathrm{d}y = f(x)\, \mathrm{d}x. \] We have &lt;strong&gt;seperated the variables&lt;/strong&gt;    because the left-hand side contains only the variable &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;, and the right-hand side contains only the variable &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;. We can now try to integrate each side separately. If we can actually
+    perform the required integrations we will obtain a relationship between &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;. Examples of this process are given in the next subsection.&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Method of Separation of Variables:&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;The solution of the equation &lt;span class="math display"&gt;\[ {\mathrm{d}y\over \mathrm{d}x}=f(x)g(y)
+\]&lt;/span&gt; may be found from separating the variables and integrating: &lt;span class="math display"&gt;\[
+\int {1\over g(y)}\,\mathrm{d}y=\int f(x)\,\mathrm{d}x
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210308125417+iqPesE</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614115441+ms9nEb</version>
+        <hidden>0</hidden>
+        <timecreated>1615208057</timecreated>
+        <timemodified>1623671681</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

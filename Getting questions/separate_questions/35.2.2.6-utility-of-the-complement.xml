@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27209">
+        <parent>0</parent>
+        <name>35.2.2.6 Utility of the complement</name>
+        <questiontext>&lt;p&gt;The use of the event \(A'\) can sometimes simplify the calculation of the probability \(\text{P}(A)\). For example, suppose that two 6-faced dice are thrown and we require the probability of the event\[A\text{: that we obtain a total score of at least four.}\]There are many combinations that produce a total score of at least four; however there are only \(3\) combinations that produce a total score of two or three which is the complementary event to the one of interest. The event \(A'=\{(1,1),(1,2),(2,1)\}\) (where we use an obvious notation of stating the total score on the first die followed by the score on the second die) is the complement of \(A\).&lt;/p&gt;
+&lt;p&gt; Now \(\text{P}(A')=\frac{3}{36}\) since there are \(6\times 6\) possible combinations in throwing two dice. Thus \[\qquad \text{P}(A)=1-\text{P}(A')=1-\frac{3}{36}=\frac{33}{36}=\frac{11}{12}.\]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701171243+CrDPsH</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211020103744+WkAurE</version>
+        <hidden>0</hidden>
+        <timecreated>1593623563</timecreated>
+        <timemodified>1634726264</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

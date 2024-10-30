@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26270 -->
+  <question type="stack">
+    <name>
+				<text>7.4.2.2 The inverse of a 2 x 2 matrix</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>Which of the following matrices has an inverse?</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618112651+ZppJM6</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200618114501+bCIwnO</text></tag>
+    </tags>
+    
+</question>
+</quiz>

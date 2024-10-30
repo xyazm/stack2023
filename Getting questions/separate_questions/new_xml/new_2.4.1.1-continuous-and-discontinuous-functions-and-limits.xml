@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 25717 -->
+  <question type="stack">
+    <name>
+				<text>2.4.1.1 Continuous and discontinuous functions and limits</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Continuous and discontinuous functions and limits </h3>
+<p>Look at the graph shown in Figure a. The curve can be traced out from left to right without moving the pen from the paper. The function represented by this curve is said to be <b>continuous</b> at every point. If we try to trace out the curve in Figure b, the presence of a jump in the graph (at <span class="math inline">\(x=x_1\)</span>) means that the pen must be lifted from the paper and moved in order to trace the graph. Such a function is said to be <b>discontinuous</b> at the point where the jump occurs. The jumps are known as <span><strong>discontinuities</strong>.</span></p>
+<p style="text-align: center;"><img src="@@PLUGINFILE@@/block6-fig1-1.svg" alt="a) A continuous function; b) A discontinuous function" class="img-responsive atto_image_button_text-bottom" width="424" height="137"><br></p>
+<p style="text-align: center;"><span><strong>Figure</strong></span>: (a) A continuous function  (b) A discontinuous function</p><p><br></p><p><i>Try for yourself</i>:&nbsp;Explain the distinction between a continuous and a discontinuous function. Draw a graph showing an example of each type of function.</p><p></p><i>Try for yourself</i>: Sketch a graph of a function which has two discontinuities.<p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200618152806+Higpd5</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200911110337+TeFvmE</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26790">
+        <parent>0</parent>
+        <name>22.1.4.2 Solutions</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots \lambda_n\)&lt;/span&gt; are the eigenvalues of a matrix &lt;span class="math inline"&gt;\(A,\)&lt;/span&gt;, get a piece of paper and prove the following:&lt;br&gt;&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;p&gt;&lt;span class="math inline"&gt;\(A^T\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1,\lambda_2,\ldots
+\lambda_n\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is upper triangular, then its eigenvalues are exactly the main diagonal entries.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The inverse matrix &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\({{1\over
+\lambda_1}},\ {{1\over \lambda_2}},\ldots {{1\over
+\lambda_n}}\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The matrix &lt;span class="math inline"&gt;\(A-kI\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(Harder) The matrix &lt;span class="math inline"&gt;\(A^2\)&lt;/span&gt; has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1^2,\lambda_2^2,\ldots \lambda_n^2\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;(Harder) The matrix &lt;span class="math inline"&gt;\(A^k\)&lt;/span&gt; (&lt;span class="math inline"&gt;\(k\)&lt;/span&gt; a non-negative integer) has eigenvalues &lt;span class="math inline"&gt;\(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;N.B. Some of these results are useful in the numerical calculation of eigenvalues.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;b&gt;We give the solution below. Please try to complete the problem before referencing the solution.&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;&lt;p&gt;Using the property that for any square matrix &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;, &lt;br&gt;\[\text{det}(A) = \text{det}(A^T),\]&lt;br&gt;we see that if&amp;nbsp;&lt;br&gt;&lt;span class="math inline"&gt;\[ \text{ det}(A-\lambda I)=0\] &lt;br&gt;then &lt;br&gt;\[ \text{ det}(A-\lambda I)^T=0.\]&lt;/span&gt;&amp;nbsp;&lt;br&gt;This immediately tells us that &lt;span class="math inline"&gt;\(\text{ det}(A^T-\lambda I)=0\)&lt;/span&gt; which shows that &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; is also an eigenvalue of &lt;span class="math inline"&gt;\(A^T\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Here simply write down a typical upper triangular matrix &lt;span class="math inline"&gt;\(U\)&lt;/span&gt; which has terms on the leading diagonal &lt;span class="math inline"&gt;\(u_{11}, u_{22},\dots , u_{nn}\)&lt;/span&gt; and above it. Then construct &lt;span class="math inline"&gt;\((U-\lambda I)\)&lt;/span&gt;. Finally imagine how you would then obtain &lt;span class="math inline"&gt;\(\text{ det}(U-\lambda I)=0\)&lt;/span&gt;. &lt;br&gt;&lt;br&gt;You should see that the determinant is obtained by multiplying together those terms on the leading diagonal. Here the characteristic equation is: &lt;br&gt;&lt;span class="math inline"&gt;\[(u_{11}-\lambda)(u_{22}-\lambda)\dots (u_{nn}-\lambda)=0.\]&lt;/span&gt;&amp;nbsp;&lt;br&gt;This polynomial has the obvious roots &lt;br&gt;&lt;span class="math inline"&gt;\[\lambda_1=u_{11},\ \lambda_2=u_{22},\ \dots ,
+\lambda_n=u_{nn}.\]&lt;/span&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Here we begin with the usual eigenvalue problem &lt;span class="math inline"&gt;\(A\underline{x}=\lambda \underline{x}\)&lt;/span&gt;. &lt;br&gt;If &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; has an inverse &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; we can multiply both sides by &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; on the left to give &lt;br&gt;&lt;span class="math inline"&gt;\[A^{-1}(A\underline{x})=A^{-1}\lambda \underline{x}\]&lt;br&gt;&amp;nbsp;which gives &lt;br&gt;\[\underline{x}=\lambda A^{-1}\underline{x}\]&lt;/span&gt;&lt;br&gt;or, dividing through by the scalar &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; we get &lt;br&gt;&lt;span class="math inline"&gt;\[ A^{-1}\underline{x}=\frac{1}{\lambda}\underline{x}\]&lt;/span&gt;&amp;nbsp;&lt;br&gt;which shows that if &lt;span class="math inline"&gt;\(\lambda\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; are respectively eigenvalue and eigenvector of &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; then &lt;span class="math inline"&gt;\(\lambda^{-1}\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\underline{x}\)&lt;/span&gt; are respectively eigenvalue and eigenvector of &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt;. &lt;br&gt;&lt;br&gt;As an example consider &lt;span class="math inline"&gt;\(A=\left[\begin{array}{cc}2&amp;amp;3\\ 3&amp;amp;2\end{array}\right]\)&lt;/span&gt;. This matrix has eigenvalues &lt;br&gt;\[\lambda_1=-1,\quad \lambda_2=5\]&lt;br&gt;with corresponding eigenvectors &lt;br&gt;\[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{and} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\]&lt;br&gt;&lt;br&gt;The reader should verify (by direct multiplication) that &lt;span class="math inline"&gt;\(A^{-1}=-\dfrac{1}{5}\left[\begin{array}{cc}\hfill 2&amp;amp;\hfill -3\\ \hfill
+-3&amp;amp;\hfill 2\end{array}\right]\)&lt;/span&gt; has eigenvalues &lt;br&gt;\[\lambda_1=-1\quad \text{and} \quad \lambda_2=\frac{1}{5} \]&lt;br&gt;with respective eigenvectors &lt;br&gt;&lt;span class="math inline"&gt;&lt;/span&gt;\[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{and} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Proved in similar way to the proof outlined in (c).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Proved in similar way to the proof outlined in (c).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Proved in similar way to the proof outlined in (c).&lt;/p&gt;&lt;/li&gt;
+
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630205259+r7bSnU</stamp>
+        <version>stack2.maths.ed.ac.uk+200902110202+K5JQne</version>
+        <hidden>0</hidden>
+        <timecreated>1593550379</timecreated>
+        <timemodified>1599044522</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

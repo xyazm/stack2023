@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62136">
+        <parent>0</parent>
+        <name>23.5.1.1 Half-range Fourier series</name>
+        <questiontext>&lt;h4&gt;Half-range Fourier series&lt;/h4&gt;
+So far we have shown how to represent given periodic functions by Fourier series. We now consider a
+slight variation on this theme (which will be useful in the study of Partial Differential Equations).
+&lt;p&gt;&lt;/p&gt;
+Suppose that instead of specifying a periodic function we begin with a function \(f(t)\) defined only
+over a limited range of values of \(t\), say \(0 &amp;lt; t &amp;lt; \pi\). Suppose further that we wish to represent this
+function, over \(0 &amp;lt; t &amp;lt; \pi\), by a Fourier series. (This situation may seem a little artificial at this point,
+but this is precisely the situation that will arise in solving differential equations.)
+&lt;p&gt;&lt;/p&gt;
+To be specific, suppose we define \(f(t) = t^2 \), \( 0 &amp;lt; t &amp;lt; \pi\) as shown in the Figure below.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-5-1-t-squared.svg" alt="t-squared" width="135" height="103" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+We shall consider the interval \(0 &amp;lt; t &amp;lt; \pi\) to be half a period of a \(2\pi\) periodic function. We must
+therefore define \(f(t)\) for \(-\pi &amp;lt; t &amp;lt; 0\) to complete the specification.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200905145942+fQMWz6</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518104928+ftHUP3</version>
+        <hidden>0</hidden>
+        <timecreated>1599317982</timecreated>
+        <timemodified>1652870968</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24343">
+        <parent>0</parent>
+        <name>16.5.2.4 Product of functions</name>
+        <questiontext>&lt;p&gt;Also at \(x=1\) the series is convergent (alternating harmonic series) and at \(x=-1\) the series is divergent. Hence this Maclaurin expansion is only valid if \(1&amp;lt; x \leq 1\). The geometrical closeness of polynomial terms with function
+\(\ln (1+x)\) for \(-1&amp;lt;x\le 1\) is displayed in the figure below.
+&lt;/p&gt;
+&lt;p style="text-align: center; "&gt;
+&lt;img src="@@PLUGINFILE@@/16-5-fig-2-taylor3.svg" alt="Graph of In(1+x) and its Maclaurin expansion" width="633" height="142" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p style="text-align: center; "&gt;&lt;span&gt;&lt;strong&gt;Linear, quadratic and cubic approximations to &lt;span class="math inline"&gt;\(\ln (1+x)\)&lt;/span&gt;&lt;/strong&gt;
+  
+&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note that when &lt;span class="math inline"&gt;\(x=1\)&lt;/span&gt; &lt;span class="math inline"&gt;\(\ln 2=1-\dfrac{1}{2}+\dfrac{1}{3}-\dfrac{1}{4}\cdots\)&lt;/span&gt; so the alternating harmonic series converges to &lt;span class="math inline"&gt;\(\ln 2\simeq 0.693\)&lt;/span&gt;. &lt;/p&gt;
+&lt;p&gt;The Maclaurin expansion of a product of two functions: &lt;span class="math inline"&gt;\(f(x)g(x)\)&lt;/span&gt; is obtained by multiplying together the Maclaurin expansions of &lt;span class="math inline"&gt;\(f(x)\)&lt;/span&gt; and of &lt;span class="math inline"&gt;\(g(x)\)&lt;/span&gt;    and collecting like terms together. The product series will have a radius of convergence equal to the &lt;span&gt; &lt;strong&gt;smaller&lt;/strong&gt;&lt;/span&gt; of the two separate radii of convergence.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201125125124+tNZnN4</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610114809+B2D5xs</version>
+        <hidden>0</hidden>
+        <timecreated>1606308684</timecreated>
+        <timemodified>1623325689</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

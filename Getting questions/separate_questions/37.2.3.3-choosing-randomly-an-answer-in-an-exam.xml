@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27141">
+        <parent>0</parent>
+        <name>37.2.3.3 Choosing randomly an answer in an exam</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;&lt;p&gt;An examination consists of {@n_questions@} multi-choice questions, in each of which a candidate has to deduce which one of {@n_choices@} suggested answers is correct. A completely unprepared student guesses each answer completely randomly. What is the probability that this student gets {@n_correct_ans@} or more questions correct?&lt;/p&gt;&lt;p&gt;[[input:ans1]] [[validation:ans1]]&amp;nbsp;[[feedback:prt1]]&lt;/p&gt;&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; round your answer to 5 decimal places. Include additional zero(s) if your answer is exact with a lower number of decimal places.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;b&gt;SOLUTION:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Let &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; be a random variable &#8216;number of answers guessed correctly&#8217; then for each question (i.e. trial) the probability of a &#8216;success&#8217; = &lt;span class="math inline"&gt;\(\dfrac{1}{{@n_choices@}}\)&lt;/span&gt;. It is clear that &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; follows a binomial distribution with &lt;span class="math inline"&gt;\(n={@n_questions@}\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(p={@1/n_choices@}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class="math inline"&gt;\(\text{P}\)&lt;/span&gt; (randomly choosing correct answer) &lt;span class="math inline"&gt;\(=\dfrac{1}{{@n_choices@}}\qquad n={@n_questions@}\)&lt;/span&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span class="math display"&gt;\[\begin{aligned}
+\text{P} ({@n_correct_ans@}\ \text{or more correct})&amp;amp;=\text{P} [(X={@n_correct_ans@})\cup (X={@n_correct_ans+1@})\cup (X={@n_correct_ans+2@})]\\
+&amp;amp;=\  ^{{@n_questions@}}\!C_{@n_correct_ans@}\left(\dfrac{1}{{@n_choices@}}\right)^{@n_correct_ans@}\left(\dfrac{@n_choices-1@}{@n_choices@}\right)^2+\  ^{{@n_questions@}}\!C_{@n_correct_ans+1@}\left(\dfrac{1}{{@n_choices@}}\right)^{@n_correct_ans+1@}\left(\dfrac{{@n_choices-1@}}{{@n_choices@}}\right)+\  ^{{@n_questions@}}\!C_{{@n_questions@}}\left(\dfrac{1}{{@n_choices@}}\right)^{{@n_questions@}} \\ &amp;amp; ={@dispdp(ta,5)@}\end{aligned}\]&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200723115437+36BgTA</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211015100829+oEUGUP</version>
+        <hidden>0</hidden>
+        <timecreated>1595505277</timecreated>
+        <timemodified>1634292509</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18360">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>n_questions: 8 + rand(4);
+n_choices: 4 + rand(2);
+n_correct_ans: n_questions - 2;
+
+Pans: sum(pdf_binomial(x, n_questions, 1/n_choices),x,n_correct_ans,n_questions);
+ta: decimalplaces(float(Pans),5);
+
+/*ta: decimalplaces(0.5*n_questions*(n_questions-1)*((1/n_choices)^n_correct_ans)*((1 - 1/n_choices)^2) + n_questions*((1/n_choices)^(n_correct_ans+1))*(1 - 1/n_choices) + (1/n_choices)^n_questions,5)*/</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>Questions: {@n_questions@}, choices: {@n_choices@}, ncorrect: {@n_correct_ans@},  \( \text{P} (X\geq{@n_correct_ans@}) = {@dispdp(ta,5)@} \)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43251">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>dispdp(ta,5)</tans>
+              <boxsize>8</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>to 5 d.p.</syntaxhint>
+              <syntaxattribute>1</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:5, mindp:5</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37511">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56098">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>5</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42379">
+              <testcase>1</testcase>
+              <timemodified>1633962142</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="196011">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(ta,5)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="168425">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="42380">
+              <testcase>2</testcase>
+              <timemodified>1633962131</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="196010">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(1,5)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="168424">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="178749">
+              <seed>146845940</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178750">
+              <seed>323602630</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178751">
+              <seed>632959552</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178752">
+              <seed>104395557</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178753">
+              <seed>1385388782</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178754">
+              <seed>1480621635</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178755">
+              <seed>2077986296</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="392200">
+              <seed>84486149</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27204">
+        <parent>0</parent>
+        <name>35.2.2.1 Definitions of Probability</name>
+        <questiontext>&lt;h3&gt;Definitions of Probability &lt;/h3&gt;
+&lt;h4&gt; Relative frequency applied to probability &lt;/h4&gt;
+&lt;p&gt; Consider the experiment of throwing a single coin many times. &lt;/p&gt;
+&lt;p&gt; Suppose we throw a coin 10 times and obtain six Heads and four Tails; does this suggest that the coin is biased? Clearly not! What about the case when we obtain 9 Heads and 1 Tail? We conducted an experiment in which a coin was thrown 100 times and the result recorded each
+time as 1 if a Head appeared face up and 0 if a Tail appeared. In the figure below we have plotted the
+average score \(r/n\), where \(r\) is the number of Heads and \(n\) is the total number of throws, against \(n\) for \(n=10,20,\dots,100\). The quantity \(r/n\) is called the &lt;strong&gt;relative frequency&lt;/strong&gt; of Heads.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;img src="@@PLUGINFILE@@/3-5-2-relativefrequency.svg" alt="" role="presentation"&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Figure:&lt;/strong&gt; Plot of the relative frequency, \(r/n\).&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt; As \(n\) increases the relative frequency settles down near the value \(1/2\). This is an experimental estimate of the probability of throwing a Head with this particular coin. Note that when \(n = 50\) this estimate was \(0.49\) and when \(n = 100\) this estimate was \(0.51\). When we repeated the whole experiment again, the value of \(r/n\) when \(n = 100\) was 0.46. Hence the use of the word &lt;strong&gt;estimate&lt;/strong&gt;. Normally, as the number of trials is increased the estimate tends to settle down but this is not certain to occur. Theoretically, the probability of obtaining a Head when a fair coin is thrown is \(1/2\). Experimentally, we &lt;strong&gt;expect&lt;/strong&gt; the relative frequency to approach \(1/2\)
+as \(n\) increases. &lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200701084053+lX6D1d</stamp>
+        <version>stack2.maths.ed.ac.uk+200820135259+7I7PK8</version>
+        <hidden>0</hidden>
+        <timecreated>1593592853</timecreated>
+        <timemodified>1597931579</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

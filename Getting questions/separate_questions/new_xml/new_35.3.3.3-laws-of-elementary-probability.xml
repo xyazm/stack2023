@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27225 -->
+  <question type="stack">
+    <name>
+				<text>35.3.3.3 Laws of Elementary Probability</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p style="text-align: center;"><b>Laws of Elementary Probability</b></p><p style="text-align: center;"></p><p style="text-align: left;">Let a sample space \(S\) consist of the \(n\) simple distinct events \(E_1, E_2\dots E_n\) and let \(A\) and \(B\) be events contained in \(S\).</p><p style="text-align: left;">Then:</p><p style="text-align: left;"></p><ol><li>\(0\le \text{P} (A)\le 1\). \(\text{P} (A)=0\) is interpreted as meaning that the event \(A\) cannot occur and \(\text{P} (A)=1\) is interpreted as meaning that the event \(A\) is certain to occur.</li><li>\(\text{P} (A)+\text{P} (A')=1\) where the event \(A'\) is the complement of the event \(A\).<br></li><li>\(\text{P} (E_1)+ \text{P} (E_2)+ \dots + \text{P} (E_n)=1\) where \(E_1, E_2, \dots E_n\) form the sample space.<br></li><li>If \(A\) and \(B\) are <i>any</i>&nbsp;two events then \(\text{P} (A\cup B)=\text{P} (A)+\text{P} (B)- \text{P} (A\cap B)\).</li><li>If \(A\) and \(B\) are two <i>mutually exclusive</i>&nbsp;events then \(\text{P} (A\cup B)=\text{P} (A)+\text{P} (B)\).</li><li>If \(A\) and \(B\) are two <i>independent</i>&nbsp;events then \(\text{P} (A\cap B)=\text{P} (A)\times \text{P} (B)\).</li></ol><p></p><p></p>
+</div>
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p></p><p>A circuit has three independent switches \(A\), \(B\) and \(C\) wired in parallel as shown in the figure below.</p><p></p><p></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/35.3.3%20Circuits%20in%20Parallel.svg" width="203" alt="" height="84" class="img-responsive atto_image_button_text-bottom"></p><p style="text-align: center;"><b>Switches wired in Parallel</b></p><p>Current can only flow through the bank of switches if at least one of them is closed.&nbsp; The probability that any given switch is closed is \(0.9\).&nbsp; Calculate the probability that current can flow through the bank of switches.</p><p></p><p></p>
+<h4 class="HELM_solution">Solution</h4>
+<p></p><p>Assume that \(A\) is the event {switch \(A\) is closed}. Similarly for switches \(B\) and \(C\). We require \(\text{P} (A\cup B\cup C)\), the probability that at least one switch is closed. Using set theory,</p><p>\[\begin{eqnarray*}\text{P} (A\cup B\cup C)&amp;=&amp;\text{P}(A)+\text{P} (B)+\text{P} (C)-[\text{P} (A\cap B)+\text{P} (B\cap C)+\text{P} (C\cap A)]+\text{P} (A\cap B\cap C)\end{eqnarray*}.\] Using the fact that the switches operate independently,</p><p>\[\text{P} (A\cup B\cup C)=0.9+0.9+0.9-[0.9\times 0.9 + 0.9\times 0.9+0.9\times0.9]+0.9\times 0.9\times 0.9=0.999.\]</p><p>Note that the result implies that the system is more likely to allow current to flow than any single switch in the system. This is why replication is built into systems requiring a high degree of reliability such as aircraft control systems.</p><p>Alternative solution:</p><p>\[\text{P}(A\cup B\cup C)=1-\text{P}(A'\cap B'\cap C')=1-0.1\times 0.1\times 0.1=0.999.\]</p><p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200701112849+QkDaym</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200829122132+VeU0ZN</text></tag>
+    </tags>
+    
+</question>
+</quiz>

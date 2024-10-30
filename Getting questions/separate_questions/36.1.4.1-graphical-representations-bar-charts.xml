@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27249">
+        <parent>0</parent>
+        <name>36.1.4.1 Graphical representations/ Bar charts</name>
+        <questiontext>&lt;h3&gt;Graphical representations&lt;/h3&gt;
+&lt;h4&gt;Bar charts&lt;/h4&gt;
+&lt;p&gt;Bar charts can be used to represent the frequencies for categorical or discrete data. In a bar chart, we draw a bar for each value of the variable. The length of the bar is proportional to the frequency for that value. Bars can be drawn vertically or horizontally.&lt;/p&gt;
+&lt;p&gt;Absenteeism can be a problem for some engineering firms. The following discrete data represent the number of days off taken by 50 employees of a small engineering company.&lt;/p&gt;
+&lt;table style="width:70%"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;8&lt;/td&gt; &lt;td&gt;3&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;6&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;6&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;td&gt;11&lt;/td&gt;&lt;td&gt;6&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt; &lt;td&gt;8&lt;/td&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;7&lt;/td&gt; &lt;td&gt;7&lt;/td&gt; &lt;td&gt;6&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;3&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;3&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;In order to construct a bar chart we can proceed as follows. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Construct a frequency table for the data.&lt;/li&gt;
+&lt;li&gt;Draw a diagram with the range (0 - 13) on one axis and the number of days corresponding to each value (number of days off) on the other. The length of each bar is proportional to the frequency (that is  proportional to the number of staff taking that number of days off). &lt;/li&gt;
+&lt;/ol&gt;
+The results appear as follows:&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/36-1-fig-1-bar_chart.svg" alt="" width="600" height="257" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200706220153+yVTDTZ</stamp>
+        <version>stack2.maths.ed.ac.uk+200914233942+6Z8QhT</version>
+        <hidden>0</hidden>
+        <timecreated>1594072913</timecreated>
+        <timemodified>1600126782</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

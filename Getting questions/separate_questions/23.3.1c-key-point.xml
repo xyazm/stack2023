@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62123">
+        <parent>0</parent>
+        <name>23.3.1c key point</name>
+        <questiontext>These results are summarized in the following Key Point.
+&lt;p&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;Products of functions&lt;/p&gt;
+\[
+\begin{align}
+\text{(even) } \times \text{(even)} &amp;amp;= \text{(even)} \\
+\text{(even) } \times \text{(odd)} &amp;amp;= \text{(odd)} \\
+\text{(odd) } \times \text{(odd)} &amp;amp;= \text{(even)} 
+\end{align}
+\]
+&lt;p&gt;Sums of functions&lt;/p&gt;
+\[
+\begin{align}
+\text{(even) } + \text{(even)} &amp;amp;= \text{(even)} \\
+\text{(even) } + \text{(odd)} &amp;amp;= \text{(neither)} \\
+\text{(odd) } + \text{(odd)} &amp;amp;= \text{(odd)} 
+\end{align}
+\]
+&lt;/div&gt;
+Useful properties of even and of odd functions in connection with integrals can be readily deduced if
+we recall that a definite integral has the significance of giving us the value of an area as shown in the Figure below.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-3-1-integral-area.svg" alt="area under a curve" width="201" height="124" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;br&gt;&lt;/p&gt;
+\( \displaystyle{ \int_a^b } f(t) dt\) gives us the &lt;b&gt;net&lt;/b&gt; value of the shaded area, that above the \(t\)-axis being positive, that below being negative.
+&lt;p&gt;&lt;/p&gt;
+For the case of a symmetrical interval \( (-a, a)\) for an odd function \(g(t)\) we have 
+\[ \displaystyle{\int_{-a} ^a } g(t) dt = 0\]
+and for an even function \(h(t)\) we have
+\[ \displaystyle{\int_{-a} ^a } h(t) dt = 2 \displaystyle{\int_{0} ^a } h(t) dt \]
+This can be seen in the Figure below.&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/23-3-1-even-odd-integrals.svg" alt="even-odd-integrals" width="440" height="153" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200901163055+38E9KY</stamp>
+        <version>stack2.maths.ed.ac.uk+200901164719+TXwOhh</version>
+        <hidden>0</hidden>
+        <timecreated>1598977855</timecreated>
+        <timemodified>1598978839</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24544 -->
+  <question type="stack">
+    <name>
+				<text>13.5.3.1 Integrals and logarithms</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Integrals giving rise to logarithms</span></h3>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \({\displaystyle\int \dfrac{3x^2+1}{x^3+x+2}\ \mathrm{d}x}\)</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Let us consider what happens when we make the substitution \(z=x^3+x+2\). Note that \(\dfrac{\mathrm{d}z}{\mathrm{d}x} = 3x^2+1\) so that we can write \(\mathrm{d}z = (3x^2+1)\mathrm{d}x\)</p>
+<p>Then \({\displaystyle\int \dfrac{3x^2+1}{x^3+x+2}\ \mathrm{d}x} = {\displaystyle\int \dfrac{1}{z}\ \mathrm{d}z} = \ln |z| + c = \ln |x^3+x+2| + c\)</p>
+<p>Note that in the last Example, the numerator of the integrand \((3x^2+1)\) is the derivative of the denominator \((x^3+x+2)\). The result is the logarithm of the denominator. This is a special case of the following rule:</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p>\({\displaystyle\int \dfrac{f'(x)}{f(x)}\ \mathrm{d}x} = \ln |f(x)| +c\)</p>
+    <p>Note that it is the modulus of \(f(x)\) in the answer.</p>
+</div>
+
+<br>
+<p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200805141021+M3Ntbz</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210628144119+VZdUxM</text></tag>
+    </tags>
+    
+</question>
+</quiz>

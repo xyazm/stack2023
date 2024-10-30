@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27317">
+        <parent>0</parent>
+        <name>37.1.2.3 Example turbo generator</name>
+        <questiontext>&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Turbo Generators plc manufacture seven large turbines for a customer. Three of these turbines do not meet the customer&#8217;s specification. Quality control inspectors choose two turbines at random. Let the discrete random variable &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; be defined to be the number of turbines inspected which meet the customer&#8217;s specification.&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt;Find the probabilities that &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; takes the values &lt;span class="math inline"&gt;\(0, 1\)&lt;/span&gt; or &lt;span class="math inline"&gt;\(2\)&lt;/span&gt;
+&lt;/li&gt;&lt;li&gt; Find and graph the cumulative distribution function.
+&lt;/li&gt;&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt; &lt;p&gt;The possible values of &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; are clearly &lt;span class="math inline"&gt;\(0, 1\)&lt;/span&gt; or &lt;span class="math inline"&gt;\(2\)&lt;/span&gt; and may occur as follows: &lt;span class="math inline"&gt;\(\qquad\begin{matrix}
+\text{Sample Space}\qquad\qquad&amp;amp;\text{Value of}\ X\\
+\text{Turbine faulty, Turbine faulty}\hfill&amp;amp;0\\
+\text{Turbine faulty, Turbine good}\hfill&amp;amp;1\\
+\text{Turbine good, Turbine faulty}\hfill&amp;amp;1\\
+\text{Turbine good, Turbine good}\hfill&amp;amp;2
+\end{matrix}\)&lt;/span&gt; &lt;span class="math inline"&gt;\(\phantom{(a)\ }\)&lt;/span&gt;
+&lt;br&gt;We can easily calculate the probability that &lt;span class="math inline"&gt;\(X\)&lt;/span&gt; takes the values &lt;span class="math inline"&gt;\(0,1\)&lt;/span&gt; or &lt;span class="math inline"&gt;\(2\)&lt;/span&gt; as follows: 
+&lt;br&gt;\(\text{P}(X=0)=\dfrac{3}{7}\times\dfrac{2}{6}=\dfrac{1}{7}\)
+&lt;br&gt;\(\text{P}(X=1)=\dfrac{4}{7}\times\dfrac{3}{6}+\dfrac{3}{7}\times\dfrac{4}{6}=\dfrac{4}{7}\)
+&lt;br&gt;\(\text{P}(X=2)=\dfrac{4}{7}\times\dfrac{3}{6}=\dfrac{2}{7}\)
+&lt;br&gt;The values of &lt;span class="math inline"&gt;\(\displaystyle{F(x)=\sum_{x_i\le x}\text{P}(X=x_i)}\)&lt;/span&gt; are clearly &lt;span class="math inline"&gt;\(F(0)=\dfrac{1}{7}\qquad F(1)=\frac{5}{7}\qquad\text{and}\qquad
+F(2)=\dfrac{7}{7}=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;&lt;li&gt; The graph of the step function \(F(x)\) is shown: &lt;img src="@@PLUGINFILE@@/37-1-fig1-stepfunction.svg" alt="Graph of cumulative distribution function with F(0) = 1/7, F(1) = 5/7, F(2) = 1" class="img-responsive atto_image_button_text-bottom" width="437" height="219"&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200715135354+DiRw1z</stamp>
+        <version>stack2.maths.ed.ac.uk+200813111752+jO3eEd</version>
+        <hidden>0</hidden>
+        <timecreated>1594821234</timecreated>
+        <timemodified>1597317472</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

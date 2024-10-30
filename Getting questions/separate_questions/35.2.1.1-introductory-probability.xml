@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27195">
+        <parent>0</parent>
+        <name>35.2.1.1 Introductory Probability</name>
+        <questiontext>&lt;h3&gt;Introductory Probability&lt;/h3&gt;
+&lt;p&gt;Probability as an informal idea is something you will have been familiar with for a long time. In conversation with friends, you must have used sentences such as 
+&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt; &#8216;It might start raining soon&#8217; &lt;/li&gt;
+&lt;li&gt; &#8216;I might be lucky and pass all my examinations&#8217; &lt;/li&gt;
+&lt;li&gt; &#8216;It is very unlikely that my team will not win the Premiership this year&#8217; &lt;/li&gt;
+&lt;li&gt; &#8216;Getting a good degree will improve my chances of getting a good job&#8217; &lt;/li&gt;
+&lt;/ul&gt;
+Essentially, when you are talking about whether some event is likely to happen, you are using the concept of probability. In reality, we need to agree on some terminology so that misunderstanding may be avoided. To start with there are four terms &lt;span class="math inline"&gt;\(-\)&lt;/span&gt; experiment, outcome, event and sample space &lt;span class="math inline"&gt;\(-\)&lt;/span&gt; that need formal definition. There will, of course, be others as you progress through this quiz.&lt;p&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Experiment:&lt;/strong&gt;&lt;/span&gt; - an activity with an observable result, or set of results, for example&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;&lt;p&gt;tossing a coin, the result being a Head or a Tail&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;testing a component, the result being a defective or non-defective component&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;maximum speed testing of standard production cars;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;testing to destruction armour plating intended for use on tanks.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Some of the experiments outlined above have a very limited set of results (tossing a coin) while others (destruction testing) may give a widely variable set of results. Also it is worth noting that destruction testing is not appropriate for all products. Companies manufacturing trucks or explosives, for example, could not possibly test to destruction on a large scale - they would have little or nothing left to market!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Outcome&lt;/strong&gt;&lt;/span&gt; - an outcome is simply an observable result of an experiment, for example&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt;&lt;p&gt;tossing a coin, the possible outcomes are Heads or Tails&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;testing a component, the outcome being a defective or non-defective component&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;maximum speed testing of standard production cars, the outcomes being a set of numbers representing the maximum speeds of a set of vehicles&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;testing to destruction armour plating intended for use on tanks, the outcomes might be (for example) the numbers of direct hits sustained before destruction.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Event&lt;/strong&gt;&lt;/span&gt; - this is just an outcome or set of outcomes to an experiment of interest to the experimenter.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;span&gt;&lt;strong&gt;Sample Space&lt;/strong&gt;&lt;/span&gt; - a sample space is the set of all possible outcomes of an experiment.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, if we throw a 6-sided die then the sample space is &lt;span class="math inline"&gt;\(\{1,2,3,4, 5,6\}\)&lt;/span&gt; and two possible events are&lt;/p&gt;
+&lt;ol type="a"&gt;
+&lt;li&gt; a score of 3 or more, represented by the set: \(\{3,4,5,6\}\)&lt;/li&gt;
+&lt;li&gt; a score which is even, represented by the set: \(\{2,4,6\}\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Everyday examples include games of chance.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200629164245+iDpda9</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211008153525+ZnYLxx</version>
+        <hidden>0</hidden>
+        <timecreated>1593448965</timecreated>
+        <timemodified>1633707325</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26731 -->
+  <question type="stack">
+    <name>
+				<text>10.2.1.1 The Argand Diagram</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>The Argand Diagram </h3>
+<p>We know that a complex number is represented by <span class="math inline">\(z=x+i y\)</span> in which <span class="math inline">\(x,y\)</span> are real numbers and <span class="math inline">\(i^2={-1}\)</span>. We learned how to combine complex numbers
+    together using the usual operations of addition, subtraction, multiplication and division. In this section we examine a useful geometrical description of complex numbers.</p>
+<p> Since a complex number is specified by two real numbers <span class="math inline">\(x,y\)</span> it is natural to represent a complex number by a vector in a plane. We take the usual <span class="math inline">\(Oxy\)</span> plane in which the ‘horizontal’
+    axis is the <span class="math inline">\(x\)</span>-axis and the ‘vertical’ axis is the <span class="math inline">\(y\)</span>-axis.&nbsp;</p>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/10-2-fig1-arganddiagrameg.svg" alt="" width="284" height="172" role="presentation" class="img-responsive atto_image_button_middle"><br></figure>
+<p>Thus the complex number <span class="math inline">\(z=2+3i\)</span> would be represented by a line starting from the origin and ending at the point with coordinates <span class="math inline">\((2,3)\)</span> and <span class="math inline">\(w=-1+i\)</span>    is represented by the line starting from the origin and ending at the point with coordinates <span class="math inline">\((-1,1)\)</span>. When the <span class="math inline">\(Oxy\)</span> plane is used in this way it is called an <strong>Argand Diagram.</strong>    With this interpretation the modulus of <span class="math inline">\(z\)</span>, that is <span class="math inline">\(|z|\)</span> is the length of the line which represents <span class="math inline">\(z\)</span>.</p>
+<p> Note: An alternative interpretation is to consider the complex number <span class="math inline">\(a+i b\)</span> to be represented by the point <span class="math inline">\((a,b)\)</span> rather than the line from <span class="math inline">\(0\)</span>    to <span class="math inline">\((a,b)\)</span>.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200629103113+BjYHQA</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210701144759+Ei4gao</text></tag>
+    </tags>
+    
+</question>
+</quiz>

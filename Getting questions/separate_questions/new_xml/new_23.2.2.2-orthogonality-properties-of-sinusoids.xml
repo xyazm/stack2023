@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 94775 -->
+  <question type="stack">
+    <name>
+				<text>23.2.2.2 Orthogonality properties of sinusoids</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4></h4><p></p>
+<b>Orthogonality properties of sinusoids</b>
+<p></p>
+As stated earlier, a periodic function \(f(t)\) with period \(2\pi\) has a Fourier series representation
+\[ 
+\begin{align}
+f(t) &amp;= \dfrac{a_0}{2} + a_1 \cos t + a_2 cos 2t + \dots + b_1 \sin t + b_2 \sin 2t + \dots , \\
+&amp;= \dfrac{a_0}{2} + \sum _{n=1}^\infty \left( a_n \cos nt + b_n \sin nt \right) 
+\end{align}
+ \]
+To determine the Fourier coefficients \(a_n\), \(b_n\) and the constant term \( \dfrac{a0}{2} \)
+use has to be made of certain integrals involving sinusoids, the integrals being over a range \( \alpha \), 
+ \( \alpha+2\pi\), where \(\alpha\) is any number. (We will normally choose \( \alpha = -\pi\).)]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+220518092314+MCgkL3</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518092459+WOLALQ</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62193">
+        <parent>0</parent>
+        <name>23.6.1 Complex exponential form of a Fourier series</name>
+        <questiontext>&lt;h4&gt;Complex exponential form of a Fourier series&lt;/h4&gt;
+
+So far we have discussed the &lt;b&gt;trigonometric&lt;/b&gt; form of a Fourier series i.e. we have represented functions
+of period \(T\) in the terms of sinusoids, and possibly a constant term, using
+\[ f(t) = \dfrac{a_0}{2} + \sum _{n=1}^\infty \left\{ a_n \cos \left( \dfrac{2n\pi t}{T} \right) + b_n \sin \left( \dfrac{2n\pi t}{T} \right) \right\} \]
+If we use the angular frequency \( \omega = \dfrac{2\pi}{T}\) we obtain the more concise form
+\[ f(t) = \dfrac{a_0}{2} + \sum _{n=1}^\infty \left( a_n \cos  n\omega_0 t + b_n \sin n\omega_0 t \right) \]
+We have seen that the Fourier coefficients are calculated using the following integrals:
+\[ a_n = \dfrac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) \cos n\omega_0 t \hspace{0.1cm} dt \hspace{1cm} n = 0, 1, 2, \dots \]
+\[ b_n = \dfrac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}} f(t) \sin n\omega_0 t \hspace{0.1cm} dt \hspace{1cm} n = 1, 2, \dots \]
+An alternative, more concise form, of a Fourier series is available using &lt;b&gt;complex quantities&lt;/b&gt;. This
+form is quite widely used by engineers, for example in Circuit Theory and Control Theory, and leads
+naturally into the Fourier Transform.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200913073036+yQNC4S</stamp>
+        <version>stack2.maths.ed.ac.uk+200913073537+gw4aD2</version>
+        <hidden>0</hidden>
+        <timecreated>1599982236</timecreated>
+        <timemodified>1599982537</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

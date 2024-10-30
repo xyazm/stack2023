@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24657">
+        <parent>0</parent>
+        <name>18.3.4.4 Identify and classify stationary points 3</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;\(f(x,y) = {@exp@}\), identify the stationary point for this function.&lt;/p&gt;
+&lt;p&gt; Classify the stationary point as either a local minimum, a local maximum or a saddle point.
+&lt;/p&gt;
+
+&lt;p&gt;\(\dfrac{\partial f}{\partial x} = \dfrac{\partial f}{\partial y} = 0\) at \((x, y)\) = [[input:ans1]] [[validation:ans1]]&lt;/p&gt;
+&lt;p&gt;This point is a: [[input:ans2]] [[validation:ans2]]&lt;/p&gt;
+&lt;p&gt;[[feedback:prt2]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We are asked to find the stationary points of the function \( f(x,y) = {@exp@}.\)&lt;/p&gt;
+&lt;p&gt;First, find the partial derivatives of \(f(x,y):\)&lt;/p&gt;\(f_x={@partialx@} \\ f_y={@partialy@}\)
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Now we solve the equations \(f_x = 0\) and \(f_y= 0:\)&lt;/p&gt;
+&lt;p&gt;\(f_x = 0 \Rightarrow {@partialx@} = 0 \, \Rightarrow x= {@rhs(a[1])@} .\)&lt;/p&gt;
+&lt;p&gt;\(f_y = 0 \Rightarrow {@partialy@} = 0 \, \Rightarrow y= {@rhs(b[1])@} .\)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;These equations have solution \( x=y= 0,\) hence the stationary point is \( (0, 0) .\)&lt;/p&gt;
+&lt;p&gt;Then we calculate \( f_{xx}, \, f_{yy}, \, f_{xy} \, \text{ and } \, D:\)&lt;/p&gt;
+&lt;p&gt;\( f_{xx} = {@f_xx@} \)&lt;/p&gt;
+&lt;p&gt;\( f_{yy} = {@f_yy@} \)&lt;/p&gt;
+&lt;p&gt;\( f_{xy} = {@f_xy@} \)&lt;/p&gt;
+&lt;p&gt;\( D = f_{xx}f_{yy}- (f_{xy})^2 = {@D@} \)&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We have \(D&amp;lt;0 \) and \(f_{xx} &amp;lt;0\) so the stationary point is a saddle point.&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200821142213+ivLYeA</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614153647+SpwzGd</version>
+        <hidden>0</hidden>
+        <timecreated>1598019733</timecreated>
+        <timemodified>1623685007</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16780">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>/* This function has 1 saddle point */
+
+ordergreat(C,x,y)
+a1: rand([3,4,5]);     /*only these values for D&gt;0*/
+C: rand([4,9,16, 25]);
+
+exp: -x^2-a1*x*y-y^2+C;
+
+partialx: diff(exp, x);
+partialy: diff(exp, y);
+a:solve(partialx = 0, x);
+b:solve(partialy = 0, y);
+tacoords1:matrix([0, 0]);
+ta1: [["local minimum", false], ["local maximum", false], ["saddle point", true]];
+
+/* Calclulate second derivatives and D*/
+f_xx: diff(partialx,x);                              
+f_yy: expand(diff(partialy,y));
+f_xy: diff(partialy,x);
+D: f_xx*f_yy-(f_xy)^2;
+
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(f= {@exp@} \) so {{@tacoords1@} is local max, D={@D@}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>1</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39024">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>tacoords1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="39025">
+              <name>ans2</name>
+              <type>dropdown</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33631">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50768">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>tacoords1</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="50769">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>first(mcq_correct(ta1))</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-2-F</falseanswernote>
+                  <falsefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You found the correct stationary point, but not its correct nature.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38732">
+              <testcase>1</testcase>
+              <timemodified>1623684677</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111123">
+                  <inputname>ans1</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111124">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_correct(ta1))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95467">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38733">
+              <testcase>2</testcase>
+              <timemodified>1623684706</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111125">
+                  <inputname>ans1</inputname>
+                  <value>ev(matrix([1, 1]),simp)</value>
+                </stackqtestinput>
+                <stackqtestinput id="111126">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_incorrect(ta1))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95468">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="51442">
+              <testcase>3</testcase>
+              <timemodified>1623684720</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="111127">
+                  <inputname>ans1</inputname>
+                  <value>tacoords1</value>
+                </stackqtestinput>
+                <stackqtestinput id="111128">
+                  <inputname>ans2</inputname>
+                  <value>first(mcq_incorrect(ta1))</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="95469">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.5000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="165074">
+              <seed>1509773588</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165075">
+              <seed>101462348</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165076">
+              <seed>2026433507</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165077">
+              <seed>1750915320</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165078">
+              <seed>849092285</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165079">
+              <seed>1453276725</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165080">
+              <seed>1114380885</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165081">
+              <seed>1096900366</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165082">
+              <seed>1262349960</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+          <question_hint id="403">
+            <hint>(Hint: you need to simplify sin(t^3 + 1))</hint>
+            <hintformat>1</hintformat>
+            <shownumcorrect>$@NULL@$</shownumcorrect>
+            <clearwrong>$@NULL@$</clearwrong>
+            <options>$@NULL@$</options>
+          </question_hint>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

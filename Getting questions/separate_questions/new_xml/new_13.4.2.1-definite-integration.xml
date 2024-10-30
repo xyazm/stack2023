@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24531 -->
+  <question type="stack">
+    <name>
+				<text>13.4.2.1 Definite integration</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Definite integration</span><br></h3>
+
+<p>When dealing with definite integrals the relevant formula is as follows:</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p><strong>Integration by Parts for Definite Integrals</strong></p>
+    <p>For definite integrals, given functions \(f(x)\) and \(g(x)\): \[{\displaystyle\int_a^b f \cdot g \, \mathrm{d}x} = \left[f \cdot {\displaystyle\int g \, \mathrm{d}x}\right]_a^b - {\displaystyle\int_a^b \left(\dfrac{\mathrm{d}f}{\mathrm{d}x} \displaystyle\int
+        g \, \mathrm{d}x \right) \, \mathrm{d}x}\]
+    </p>
+    <p>Alternatively, given functions \(u\) and \(v\): \[{\displaystyle \int_a^b u\dfrac{\mathrm{d} v}{\mathrm{d} x} \,\mathrm{d}x = \left[u \cdot v\right]_a^b-\displaystyle \int_a^b v\dfrac{\mathrm{d} u}{\mathrm{d} x} \, \mathrm{d}x}\]
+    </p>
+</div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \({\displaystyle\int_0^2 x e^x \, \mathrm{d}x}\)</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>We let \(f = x\) and \(g = e^x\).</p>
+<p>Then \(\dfrac{\mathrm{d}f}{\mathrm{d}x} = 1\) and \({\displaystyle\int g \, \mathrm{d}x} = e^x\).</p>
+<p>Using integration by parts we obtain: \[\begin{aligned}\int_0^2 x e^x \, \mathrm{d}x &amp;= \left[x e^x\right]_0^2 - \int_0^2 1 \cdot e^x \, \mathrm{d}x \\ &amp;= 2 e^2 - \left[e^x\right]_0^2 \\ &amp;= 2 e^2 - [e^2 - 1] = e^2 +1 \end{aligned}\]
+</p>
+<p>(or \(8.389\) to 3 d.p.)<br></p>
+
+<p></p>
+<p>Sometimes it is necessary to apply the formula more than once as the next Example shows.</p>
+
+<h4 class="HELM_example">Example</h4>
+<p>Find \({\displaystyle\int_0^2 x^2 e^x \, \mathrm{d}x}\)</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>We let \(f = x^2\) and \(g = e^x\).</p>
+<p>Then \(\dfrac{\mathrm{d}f}{\mathrm{d}x} = 2x\) and \({\displaystyle\int g \, \mathrm{d}x} = e^x\).</p>
+<p>Using integration by parts we obtain: \[\begin{aligned}\int_0^2 x^2 e^x \, \mathrm{d}x &amp;= \left[x^2 e^x\right]_0^2 - \int_0^2 2x e^x \, \mathrm{d}x \\ &amp;= 4e^2 - 2\int_0^2 x e^x \, \mathrm{d}x \end{aligned}\]
+</p>
+<p>The remaining integral must be integrated by parts also but we have just done this in the example above. So \[ \int_0^2 x^2 e^x \, \mathrm{d}x = 4e^2- 2[e^2+1] = 2e^2-2 \]</p>
+<p>(or \(12.778\) to 3 d.p.)</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200804090358+8XgR0E</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210625135339+eDFpHF</text></tag>
+    </tags>
+    
+</question>
+</quiz>

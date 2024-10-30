@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26064">
+        <parent>0</parent>
+        <name>1.2.2.1 Laws of indices</name>
+        <questiontext>&lt;h3&gt;Laws of indices
+&lt;/h3&gt;&lt;p&gt;
+There is a set of rules which enable us to manipulate expressions involving indices. These
+rules are known as the &lt;b&gt;laws of indices&lt;/b&gt;, and they occur so commonly that it is worthwhile to memorise them.
+&lt;/p&gt;
+
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;br&gt;&lt;/h4&gt;&lt;table&gt;
+&lt;caption style="caption-side: top"&gt;Laws of Indices&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope="row"&gt;First law&lt;br&gt;&lt;/th&gt;
+&lt;td&gt;\(a^m \times a^n = a^{m+n}\)&lt;/td&gt;
+&lt;td&gt;add indices when multiplying numbers with the same base&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th scope="row"&gt;Second law&lt;br&gt;&lt;/th&gt;
+&lt;td&gt;\(\dfrac{a^m}{a^n} = a^{m-n}\)&lt;/td&gt;
+&lt;td&gt;subtract indices when dividing numbers with the same base&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;th scope="row"&gt;Third law&lt;br&gt;&lt;/th&gt;
+&lt;td&gt;\((a^m)^n = a^{mn}\)&lt;/td&gt;
+&lt;td&gt;multiply indices together when raising a number to a power&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Simplify&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(a^5\times a^4\)&lt;/li&gt;
+&lt;li&gt;\(2x^5(x^3)\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;In each case we are required to multiply expressions involving indices. The bases are the same and we  use the first law of indices.&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;The indices must be added, thus \(a^5\times a^4 = a^{5+4}=a^9\).&lt;/li&gt;
+  &lt;li&gt;Because of the associativity of multiplication we can write \(2x^5(x^3) = 2(x^5x^3) = 2x^{5+3}=2x^8\).&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The first law of indices (above) extends in an obvious way when more terms are involved, as in the following example.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Simplify&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(b^5\times b^4\times b^7\)&lt;/li&gt;
+&lt;li&gt;\(y^4y^2y^3\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;The indices are added. Thus \(b^5\times b^4\times b^7=b^{5+4+7}= b^{16}\).&lt;/li&gt;
+  &lt;li&gt;All quantities  have the same base.  To multiply the quantities together, the indices are added: \(y^9\).&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h4 class="HELM_example"&gt;Example &lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;Simplify&lt;/p&gt;
+&lt;ol class="HELM_parts_inline"&gt;
+&lt;li&gt;\(\dfrac{8^4}{8^2}\)&lt;/li&gt;
+&lt;li&gt;\(x^{18} \div x^7\)&lt;/li&gt;
+&lt;li&gt;\(\dfrac{5^9}{5^7}\)&lt;/li&gt;
+&lt;li&gt;\(\dfrac{y^5}{y^2}\)&lt;/li&gt;
+&lt;li&gt;\((8^2)^3\)&lt;/li&gt;
+&lt;li&gt;\((z^3)^4\)&lt;/li&gt;
+&lt;li&gt;\((x^2)^5\)&lt;/li&gt;
+&lt;li&gt;\((e^x)^y\)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;In each case we are required to divide expressions involving indices. The bases are the same and we  use the second law of indices (above).&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;The indices must be subtracted,  thus \(\dfrac{8^4}{8^2} = 8^{4-2}=8^2=64\).&lt;/li&gt;
+  &lt;li&gt;Again the indices are subtracted, and so \(x^{18}\div x^7 = x^{18-7} = x^{11}\).&lt;/li&gt;
+  &lt;li&gt;The bases are the same, and the division is carried out by subtracting  the indices: \(5^{9-7} = 5^2=25\).&lt;/li&gt;
+  &lt;li&gt;\(y^{5-2} = y^3\).&lt;/li&gt;
+ &lt;li&gt;We use the third law of indices, \((8^2)^3= 8^{2\times 3} = 8^6\).&lt;/li&gt;
+ &lt;li&gt;Again, we use the third law of indices, \((z^3)^4= z^{3\times 4} = z^{12}\).&lt;/li&gt;
+ &lt;li&gt;\(x^{2\times 5} = x^{10}\).&lt;/li&gt;
+ &lt;li&gt;\(e^{x\times y} = e^{xy}\).&lt;/li&gt;
+
+&lt;/ol&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200613074037+fQVJuB</stamp>
+        <version>stack2.maths.ed.ac.uk+200619101629+fMBdQi</version>
+        <hidden>0</hidden>
+        <timecreated>1592034037</timecreated>
+        <timemodified>1592561789</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27334 -->
+  <question type="stack">
+    <name>
+				<text>38.1.1.4 Basic Continuous Probability</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Let \(X\) be a random variable and consider its pdf in the figure below.</p><p style="text-align: center;"><img src="@@PLUGINFILE@@/38.1%20figure%208.svg" alt="Graph of a function where: the line y=0 everywhere except for two line segments - one from (-2,0) to (0,1/2), and the second one from (0,1/2) to (2,0)." width="378" height="159" role="presentation" class="img-responsive atto_image_button_text-bottom"></p><p>Calculate the probability that \(X\) takes on a value between \(\displaystyle{@-1/a@}\) and \(\displaystyle{@1/a@}\).</p><p>\(P\left(\displaystyle{{@-1/a@}} \leq X \leq \displaystyle{{@1/a@}}\right)\) = [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]<br></p><ol class="HELM_parts_inline"><p></p><br><p></p>
+</ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<h4 class="HELM_solution">Solution</h4><p>First, we write down the pdf:&nbsp;<span style="font-size: 0.9375rem;">\[f(x) = \left\{\begin{array}{ll}0, &amp; \text{if $x \leq -2$}, \\ \dfrac{1}{2} + \dfrac{x}{4}, &amp; \text{if $-2 \leq x \leq 0$},\\ \dfrac{1}{2} - \dfrac{x}{4}, &amp; \text{if $0 \leq x \leq 2$},\\ 0, &amp; \text{if $x \geq 2$}.\end{array}\right.\]</span></p><p><span style="font-size: 0.9375rem;">Then, we see that&nbsp;\(\text{P}({{@-1/a@}} \leq X \leq {{@1/a@}})=\int_{{{@-1/a@}}}^{{{@1/a@}}} f(x) \; dx.\) Since \(f(x)\) is an even function, we have that</span><br></p><p>\[\begin{align*} \text{P}({{@-1/a@}} \leq X \leq {{@1/a@}})&amp;=2\int_{0}^{{@1/a@}} f(x) \; dx\\ &amp; = 2 \int_{0}^{{{@1/a@}}} \dfrac{1}{2} - \dfrac{x}{4} \; dx\\ &amp; = 2\left(\left.\dfrac{x}{2}\right|_{0}^{{{@1/a@}}} - \left.\dfrac{x^2}{8}\right|_{0}^{{{@1/a@}}}\right) \\&amp;= 2\left({{@1/(2*a)@}}-{{@1/(8*a^2)@}}\right)\\ &amp; = {{@ta1@}}. \end{align*}\]</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2021072200</text>
+		</stackversion>
+    <questionvariables>
+				<text>a:rand([1,2,3,4,5]);
+f1(x):=1/2 + 1/4*x;
+f2(x):=1/2 - 1/4*x;
+s1: integrate(f1(x),x,-1/a,0);
+s2: integrate(f2(x),x,0,1/a);
+ta1:s1+s2;</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text></text>
+		</specificfeedback>
+    <questionnote>
+				<text>\({@a@}\) ; \(P({@-1/a@} \leq X \leq {@1/a@})={@ta1@}\) </text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>1</syntaxattribute>
+      <forbidwords>integrate </forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200722142736+PNgqGJ</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211013104052+O9LtDG</text></tag>
+    </tags>
+    <deployedseed>1386179153</deployedseed>
+    <deployedseed>466731054</deployedseed>
+    <deployedseed>1228292998</deployedseed>
+    <deployedseed>686704642</deployedseed>
+    <deployedseed>1837884783</deployedseed>
+    
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+</question>
+</quiz>

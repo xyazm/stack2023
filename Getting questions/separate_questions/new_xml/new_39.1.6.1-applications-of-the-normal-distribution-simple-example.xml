@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27362 -->
+  <question type="stack">
+    <name>
+				<text>39.1.6.1 Applications of the Normal Distribution - Simple Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Applications of the Normal Distribution</h3>
+
+<p>We have, in the previous subsection, noted that the probability density function of a normal distribution \(X\) is
+\[y=\dfrac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x-\mu )^2}{2\sigma^2}}\]
+This curve is always ‘ bell-shaped’ with the centre of the bell located at the value of \(\mu\). The height of the bell is controlled by the value of \(\sigma\). See the Figure below.</p> <p></p><center><img src="@@PLUGINFILE@@/39-1-fig-10-normaldist3.svg" alt="The Probability Density Function of the Normal Distribution" width="332" height="75" class="img-responsive atto_image_button_text-bottom"><br></center><p></p>
+<p></p><center><strong>Figure: </strong>the Probability Density Function of the Normal Distribution</center><p></p> 
+<p>We now show, by example, how probabilities relating to a general normal distribution \(X\) are determined. We will see that being able to calculate the probabilities of a standard normal distribution \(Z\) is crucial in this respect.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Given that the variate \(X\) follows the normal distribution \(X\sim N(151,15^2)\), calculate:</p>
+<ol class="HELM_parts_inline">
+<li>\(\text{P}(120\le X\le 155)\)</li>
+<li> \(\text{P}(X\ge 185)\)</li>
+</ol>
+<h4 class="HELM_solution">Solution</h4>
+<p>The transformation used in this problem is \(Z=\dfrac{X-\mu}{\sigma}=\dfrac{X-151}{15}\)</p><p>
+</p><ol class="HELM_parts">
+<li><center><p>\(\text{P}(120\le X\le 155)=\text{P}\left(\dfrac{120-151}{15}\le Z\le \dfrac{155-151}{15}\right)\)</p>
+<p>\(\phantom{\text{P555}}=\text{P}(-2.07\le Z\le 0.27)\)</p>
+<p>\(\phantom{\text{P}(120\le)}=0.4808+0.1064=0.5872\)</p></center></li>
+<li><center><p>\(\text{P}(X\ge 185)=\text{P}\left(Z\ge \dfrac{185-151}{15}\right)\)</p>
+<p>\(\phantom{\text{P55}}=\text{P}( Z\ge 2.27)\)</p>
+<p>\(\phantom{\text{P}(X\ge 1855)}=0.5-0.4884=0.0116\)</p></center></li>
+</ol>
+<p>&nbsp;</p><hr>
+
+<p>We note that, as for any continuous random variable, we can only calculate the probability that</p>
+<p>\(\quad\bullet\quad\) \(X\) lies between two given values;</p>
+<p>\(\quad\bullet\quad\) \(X\) is greater than a given value; </p>
+<p>\(\quad\bullet\quad\) \(X\) is less that a given value,</p>
+<p>rather than for individual values.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200730100007+u7Fer4</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200801015337+lnJjvW</text></tag>
+    </tags>
+    
+</question>
+</quiz>

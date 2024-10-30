@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24675">
+        <parent>0</parent>
+        <name>19.1.2.6 Example of family of solutions</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Solve the differential equation &lt;span class="math inline"&gt;\(\displaystyle \frac{\mathrm{d}^2y}{\mathrm{d}x^2}=6x\)&lt;/span&gt; subject to the conditions:&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;&lt;span class="math inline"&gt;\(y(0)=2\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y(1)=3\)&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt; &lt;span class="math inline"&gt;\(y(0)=2\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y(1)=5\)&lt;/span&gt; &lt;/li&gt;
+    &lt;li&gt;&lt;span class="math inline"&gt;\(y(0)=2\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\dfrac{dy}{dx}=1\)&lt;/span&gt; at &lt;span class="math inline"&gt;\(x=0\)&lt;/span&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;ol class="HELM_parts"&gt;
+    &lt;li&gt;Integrating the differential equation once produces &lt;span class="math inline"&gt;\[ {dy\over dx}=3x^2+A.\]&lt;/span&gt; The general solution is found by integrating a second time to give &lt;span class="math inline"&gt;\(y=x^3+A\,x+B\)&lt;/span&gt;, where &lt;span class="math inline"&gt;\(A\)&lt;/span&gt;        and &lt;span class="math inline"&gt;\(B\)&lt;/span&gt; are arbitrary constants. Imposing the conditions &lt;span class="math inline"&gt;\(y(0)=2\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(y(1)=3\)&lt;/span&gt;: at &lt;span class="math inline"&gt;\(x=0\)&lt;/span&gt; we have
+        &lt;span class="math inline"&gt;\(y=2=0+0+B=B\)&lt;/span&gt; so that &lt;span class="math inline"&gt;\(B=2\)&lt;/span&gt;, and at &lt;span class="math inline"&gt;\(x=1\)&lt;/span&gt; we have &lt;span class="math inline"&gt;\(y=3=1+A+B=1+A+2\)&lt;/span&gt;. Therefore &lt;span class="math inline"&gt;\(A=0\)&lt;/span&gt;        and the solution is &lt;span class="math inline"&gt;\[ y=x^3+2.\]&lt;/span&gt;.&lt;/li&gt;
+    &lt;li&gt; Here the second condition is &lt;span class="math inline"&gt;\(y(1)=5\)&lt;/span&gt; so at &lt;span class="math inline"&gt;\(x=1\)&lt;/span&gt; &lt;span class="math inline"&gt;\[ y=5=1+A+2\qquad \text{so that}\quad A=2\]&lt;/span&gt; and the solution in this case is
+        &lt;span class="math inline"&gt;\[ y=x^3+2x+2.\]&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Here the second condition is &lt;span class="math inline"&gt;\[ {dy\over dx}=1\ \text{at}\ x=0\ \quad \text{i.e.}\quad \ y'(0)=1\]&lt;/span&gt; then since &lt;span class="math inline"&gt;\(\dfrac{dy}{dx}=3x^2+A\)&lt;/span&gt;, putting &lt;span class="math inline"&gt;\(x=0\)&lt;/span&gt;        we get: &lt;span class="math inline"&gt;\[ {dy\over dx}=1=0+A\]&lt;/span&gt; so that &lt;span class="math inline"&gt;\(A=1\)&lt;/span&gt; and the solution in this case is &lt;span class="math inline"&gt;\[y=x^3+x+2\]&lt;/span&gt;.
+    &lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201215162956+z8Henf</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614121841+JETFPS</version>
+        <hidden>0</hidden>
+        <timecreated>1608049796</timecreated>
+        <timemodified>1623673121</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

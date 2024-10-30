@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62201 -->
+  <question type="stack">
+    <name>
+				<text>23.6.4 Complex FS Task 3</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+Find the complex Fourier series of the periodic function:
+\[ f(t)=e^t \qquad -\pi &lt; t &lt; \pi \hspace{1cm} f(t+2\pi)=f(t)\]<p><br></p><p></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-6-4%20e%5Et.svg" alt="e^t" width="547" height="176" class="img-responsive atto_image_button_text-bottom">&nbsp;</p><p>\(f(t) = \displaystyle{\sum_{n=-\infty}^\infty}\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p><p></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[We have, since \(T=2\pi\), so \(\omega_0=1\)
+\[ 
+\begin{align}
+c_n &amp; =\frac{1}{2\pi}\int_{-\pi}^\pi e^te^{-i nt} dt \\
+&amp;= \frac{1}{2\pi}\int_{-\pi}^\pi e^{(1- in)t}dt=\frac{1}{2\pi}\left[\frac{e^{(1- in)t}}{(1- in)}\right]_{-\pi}^\pi \\
+&amp;=\frac{1}{2\pi}\frac{1}{(1- in)}\left(e^{(1-in)\pi}-e^{-(1- in)\pi}\right)
+\end{align}
+\]
+Now simplify this as far as possible and write out the Fourier series:
+\[ e^{(1- in)\pi}=e^\pi\ e^{- in\pi}=e^\pi (\cos
+n\pi- i\sin n\pi)=e^\pi\cos n\pi \]
+\[ e^{-(1-in)\pi}=e^{-\pi}e^{ in\pi}=e^{-\pi}\cos n\pi \]
+Hence  \( c_n=\dfrac{1}{2\pi}\dfrac{1}{(1- in)}(e^\pi-e^{-\pi})\cos
+n\pi=\dfrac{\sinh\pi}{\pi}\dfrac{(1+ in)}{(1+n^2)}\cos n\pi\).
+<p></p>
+Note that the coefficients \(c_n\) \(n=\pm 1,\pm 2,\ldots\) have both real and
+imaginary parts in this case as the function being expanded is neither even nor odd.
+<p></p>
+Also \( c_{-n}=\dfrac{\sinh \pi}{\pi}\dfrac{(1-in)}{(1+(-n)^2)}\cos (-n\pi)=\dfrac{\sinh
+\pi}{\pi}\dfrac{(1-in)}{(1+n^2)}\cos n\pi={c^*_n}\) as required. 
+<p></p>
+This includes the constant term \(c_0=\dfrac{\sinh \pi}{\pi}.\)
+Hence the required Fourier series is
+\[ f(t)=\frac{\sinh \pi}{\pi}\sum_{n=-\infty}^\infty (-1)^n\frac{(1+\text{ i}n)}{(1+n^2)} e^{\text{ i}nt}\qquad \text{ since}\quad \cos n\pi=(-1)^n \]]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+				<text>2020070100</text>
+		</stackversion>
+    <questionvariables>
+				<text>ta1:sinh(pi)/pi*(-1)^n*(1 + i*n)*e^(i*n*t)/(1 + n^2);</text>
+		</questionvariables>
+    <specificfeedback format="html">
+				<text></text>
+		</specificfeedback>
+    <questionnote>
+				<text></text>
+		</questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+		</prtcorrect>
+    <prtpartiallycorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+		</prtpartiallycorrect>
+    <prtincorrect format="html">
+				<text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+		</prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>40</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+				<text></text>
+			</feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+					<text></text>
+				</truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+					<text></text>
+				</falsefeedback>
+      </node>
+    </prt>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200920164640+AAjur4</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200920183131+gQCwn7</text></tag>
+    </tags>
+    
+</question>
+</quiz>

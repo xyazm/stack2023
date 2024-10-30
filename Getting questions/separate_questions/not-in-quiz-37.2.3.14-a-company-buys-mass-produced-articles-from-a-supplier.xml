@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27151">
+        <parent>0</parent>
+        <name>(not in quiz) 37.2.3.14 A company buys mass-produced articles from a supplier</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;&lt;p&gt;A company buys mass-produced articles from a supplier. Each article has a probability \(p\) of being defective, independently of other articles. If the articles are manufactured correctly then \(p={@p_def_no_cheap@}.\) However, a cheaper method of manufacture can be used and this results in \(p={@p_def_cheap@}.\)&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+
+&lt;li&gt;&lt;p&gt;Find the probability of observing exactly {@n_def_in_batch@} defectives in a sample of twenty articles given that \(p={@p_def_no_cheap@}\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Find the probability of observing exactly {@n_def_in_batch@} defectives in a sample of twenty articles given that \(p={@p_def_cheap@}\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The articles are made in large batches. Unfortunately, batches made by both methods are stored together and are indistinguishable until tested, although all of the articles in any one batch will be made by the same method. Suppose that a batch delivered to the company has a probability of {@p_batch_no_cheap@} of being made by the correct method. Find the conditional probability that such a batch is correctly manufactured given that, in a sample of twenty articles from the batch, there are exactly {@n_def_in_batch@} defectives. [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]&lt;/p&gt;&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: please round your answers up to 5 decimal places&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Let \(Y\) be the number of defective articles found in a sample of twenty articles. Let \(D\) denote the event that the batch is not correctly manufactured (using the cheaper method of manufacture) and let \(\bar{D}\) denote the event ``not \( D\)'' (the batch is correctly manufactured)&lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+  &lt;li&gt;\(\text{P} (Y={@n_def_in_batch@}) = \left( \begin{array}{c} 20 \\&amp;nbsp;{@n_def_in_batch@} \end{array} \right) \times {@p_def_no_cheap@}^{{@n_def_in_batch@}} \times {@1 - p_def_no_cheap@}^{{@20 - n_def_in_batch@}} = {@decimalplaces(ta_1,5)@}\)&lt;/li&gt;
+  &lt;li&gt;\(\text{P} (Y={@n_def_in_batch@}) = \left( \begin{array}{c} 20 \\&amp;nbsp;{@n_def_in_batch@} \end{array} \right) \times {@p_def_cheap@}^{{@n_def_in_batch@}} \times {@1 - p_def_cheap@}^{{@20 - n_def_in_batch@}} = {@decimalplaces(ta_2,5)@}\)&lt;/li&gt;
+  &lt;li&gt;\(\begin{aligned}
+\text{P}(\bar{D} \mid Y={@n_def_in_batch@}) &amp;amp; = \dfrac{ \text{P}(\bar{D})\times  \text{P}(Y={@n_def_in_batch@} \mid \bar{D})}{ \text{P}(\bar{D})\times \text{P}(Y={@n_def_in_batch@} \mid \bar{D}) +  \text{P}(D)\times \text{P}(Y={@n_def_in_batch@} \mid D)}&amp;nbsp;&amp;nbsp;\\ &amp;amp; = \dfrac{ {@p_batch_no_cheap@} \times \left( \begin{array}{c} 20 \\ {@n_def_in_batch@} \end{array} \right) \times {@p_def_no_cheap@}^{{@n_def_in_batch@}} \times {@1 - p_def_no_cheap@}^{{@20 - n_def_in_batch@}}}{ {@p_batch_no_cheap@} \times \left( \begin{array}{c} 20 \\ {@n_def_in_batch@} \end{array} \right) \times {@p_def_no_cheap@}^{{@n_def_in_batch@}} \times {@1 - p_def_no_cheap@}^{{@20 - n_def_in_batch@}} + {@1 - p_batch_no_cheap@} \times \left( \begin{array}{c} 20 \\ {@n_def_in_batch@} \end{array} \right) \times {@p_def_cheap@}^{{@n_def_in_batch@}} \times {@1 - p_def_cheap@}^{{@20 - n_def_in_batch@}}} \\&amp;nbsp; &amp;amp; =&amp;nbsp; \dfrac{{@decimalplaces(numerator,5)@}}{{@decimalplaces(denomin_1,5)@} + {@decimalplaces(denomin_2,5)@}} = {@ta_3@}.\end{aligned}\)&lt;/li&gt;&lt;/ol&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200806133905+sTw58B</stamp>
+        <version>stack2.maths.ed.ac.uk+200826140022+agM8ta</version>
+        <hidden>0</hidden>
+        <timecreated>1596721145</timecreated>
+        <timemodified>1598450422</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="18370">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>p_def_no_cheap: 0.03 + 0.01*rand(4);
+p_def_cheap: 0.1 +0.1*rand(2);
+p_batch_no_cheap: 0.6 + 0.1*rand(3);
+n_def_in_batch: 2 + rand(3);
+
+ta_1: (factorial(20)/(factorial(n_def_in_batch)*factorial(20-n_def_in_batch)))*(p_def_no_cheap^n_def_in_batch)*((1 - p_def_no_cheap)^(20 - n_def_in_batch))
+ta_1: decimalplaces(ta_1,5);
+
+ta_2: (factorial(20)/(factorial(n_def_in_batch)*factorial(20-n_def_in_batch)))*(p_def_cheap^n_def_in_batch)*((1 - p_def_cheap)^(20 - n_def_in_batch));
+ta_2: decimalplaces(ta_2,5);
+
+numerator: p_batch_no_cheap*ta_1;
+denomin_1: numerator;
+denomin_2: (1-p_batch_no_cheap)*ta_2;
+ta_3: decimalplaces(numerator/(denomin_1 + denomin_2),5);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>a) \(\text{P} (Y={@n_def_in_batch@}) = {@ta_1@} \), b) \(\text{P} (Y={@n_def_in_batch@}) = {@ta_2@} \), c) \(\text{P}(\bar{D} \mid Y={@n_def_in_batch@}) = {@ta_3@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="43282">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta_1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:5</options>
+            </stackinput>
+            <stackinput id="43283">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta_2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:5</options>
+            </stackinput>
+            <stackinput id="43284">
+              <name>ans3</name>
+              <type>numerical</type>
+              <tans>ta_3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>maxdp:5</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="37542">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56129">
+                  <nodename>0</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta_1</tans>
+                  <testoptions>0.00002</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37543">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56130">
+                  <nodename>0</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans2</sans>
+                  <tans>ta_2</tans>
+                  <testoptions>0.00002</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="37544">
+              <name>prt3</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="56131">
+                  <nodename>0</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans3</sans>
+                  <tans>ta_3</tans>
+                  <testoptions>0.00002</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt3-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt3-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="42399">
+              <testcase>1</testcase>
+              <timemodified>1597181838</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92241">
+                  <inputname>ans1</inputname>
+                  <value>ta_1</value>
+                </stackqtestinput>
+                <stackqtestinput id="92242">
+                  <inputname>ans2</inputname>
+                  <value>ta_2</value>
+                </stackqtestinput>
+                <stackqtestinput id="92243">
+                  <inputname>ans3</inputname>
+                  <value>ta_3</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="79945">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="79946">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="79947">
+                  <prtname>prt3</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="42400">
+              <testcase>2</testcase>
+              <timemodified>1597181864</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="92244">
+                  <inputname>ans1</inputname>
+                  <value>2</value>
+                </stackqtestinput>
+                <stackqtestinput id="92245">
+                  <inputname>ans2</inputname>
+                  <value>10</value>
+                </stackqtestinput>
+                <stackqtestinput id="92246">
+                  <inputname>ans3</inputname>
+                  <value>2</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="79948">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="79949">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="79950">
+                  <prtname>prt3</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt3-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="178841">
+              <seed>1781545857</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178842">
+              <seed>1611569518</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178843">
+              <seed>1215158590</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178844">
+              <seed>1578227124</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178845">
+              <seed>1063864433</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178846">
+              <seed>648036158</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178847">
+              <seed>1802794397</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178848">
+              <seed>1911099282</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178849">
+              <seed>983987323</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="178850">
+              <seed>855675211</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

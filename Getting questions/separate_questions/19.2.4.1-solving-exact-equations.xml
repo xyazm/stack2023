@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25968">
+        <parent>0</parent>
+        <name>19.2.4.1 Solving exact equations</name>
+        <questiontext>&lt;h4&gt;Solving exact equations&lt;/h4&gt;
+&lt;p&gt;As we have seen, the differential equation
+\( \dfrac{\mathrm{d}}{\mathrm{d}x}(yx)=3x^2\) has solution \(y=x^2+C/x \). In the solution, \(x^2\) is called the &lt;strong&gt;definite part&lt;/strong&gt; and
+\(C/x\) is called the &lt;strong&gt; indefinite part&lt;/strong&gt; (containing the arbitrary constant of integration). If we take the definite part of this solution, i.e. \(y_\text{d}=x^2\), then 
+\[ \dfrac{\mathrm{d}}{\mathrm{d}x}(y_\text{d}\cdot x)=\dfrac{\mathrm{d}}{\mathrm{d}x}(x^2\cdot x)=\dfrac{\mathrm{d}}{\mathrm{d}x}(x^3)=3x^2.\]
+  Hence \(y_\text{d}=x^2\) is &lt;em&gt;a&lt;/em&gt; solution of the differential equation.&lt;/p&gt;
+&lt;p&gt;
+Now if we take the indefinite part of the solution i.e. \(y_\text{i}=C/x\)  then 
+\[ \dfrac{\mathrm{d}}{\mathrm{d}x}(y_\text{i}\cdot x)=\dfrac{\mathrm{d}}{\mathrm{d}x}\left({C\over x}\cdot x\right)=\dfrac{\mathrm{d}}{ \mathrm{d}x}(C)=0.\]
+It is always the case that the general solution of an exact equation is in two parts: a definite part \(y_\text{d}(x)\)which is &lt;em&gt;a&lt;/em&gt; solution of the differential equation and an indefinite part \(y_\text{i}(x)\) which satisfies a simpler version of the differential equation in which the right-hand side is zero.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210308142548+CmWlz1</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614120044+VAvgxo</version>
+        <hidden>0</hidden>
+        <timecreated>1615213548</timecreated>
+        <timemodified>1623672044</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26563 -->
+  <question type="stack">
+    <name>
+				<text>7.1.1.1 Applications of Matrices</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Applications of Matrices</h3>
+<p>The solution of simultaneous linear equations is a task which frequently occurs in science and engineering.&nbsp; In electrical engineering the analysis of circuits provides a ready example.&nbsp;</p><p>However the simultaneous equations arise, we need to study two things:</p>
+<ol type="a">
+<li>how we can conveniently represent large systems of linear equations;</li>
+<li>how we might find the solution of such equations.</li>
+</ol>
+<p>We shall discover that knowledge of the theory of matrices is an essential mathematical tool in this area.</p>
+
+<h4>Representing simultaneous linear equations</h4>
+<p>Suppose that we wish to solve the following three equations in three unknowns \(x_1,x_2\) and \(x_3\):</p>
+\[\begin{alignedat}{4}
+3x_1 &amp; {}+{} &amp; 2x_2 &amp; {}-{} &amp; x_3 &amp;= 3 \\
+x_1 &amp; {}-{} &amp; x_2 &amp; {}+{} &amp; x_3 &amp;= 4 \\
+2x_1 &amp; {}+{} &amp; 3x_2 &amp; {}+{} &amp; 4x_3 &amp;= 5
+\end{alignedat}\]
+<p>We can isolate three facets of this system: the <b>coefficients</b> of \(x_1,x_2,x_3\); the&nbsp;<b>unknowns</b>&nbsp;\(x_1,x_2,x_3\); and the <b>numbers</b>&nbsp;on the right-hand sides.</p><p>Notice that in the system</p>
+\[\begin{alignedat}{4}
+3x &amp; {}+{} &amp; 2y &amp; {}-{} &amp; z &amp;= 3 \\
+x &amp; {}-{} &amp; y &amp; {}+{} &amp; z &amp;= 4 \\
+2x &amp; {}+{} &amp; 3y &amp; {}+{} &amp; 4z &amp;= 5
+\end{alignedat}\]
+<p>the only difference from the first system is the names given to the unknowns.&nbsp; It can be checked that the first system has the solution \(x_1=2,\ x_2=-1,\ x_3=1.\)</p><p>The second system therefore has the solution \(x=2, y=-1, z=1.\)</p><p>We can isolate the three facets of the first system by using<b>&nbsp;arrays</b>&nbsp;of numbers and of unknowns:</p><p>\[\left[\begin{array}{rrr}3&amp;2&amp;-1\\1&amp;-1&amp;1\\2&amp;3&amp;4\end{array}\right]\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right]=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]</p><p>Even more conveniently, we can represent the arrays with letters (usually capital letters)</p><p>\[AX\ \ \ \ =\ \ \ \ B.\]</p><p>Here, to be explicit, we write</p><p>\[ A=\left[\begin{array}{rrr}3&amp;2&amp;-1\\ 1&amp;-1&amp;1\\2&amp;3&amp;4\end{array}\right],\qquad X=\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right],\qquad B=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]&nbsp;</p><p>Here \(A\) is called the <b>matrix of coefficients</b>, \(X\) is called the&nbsp;<b>matrix of unknowns</b>&nbsp;and \(B\) is called the <b>matrix of constants</b>.</p><p>If we now append&nbsp; to \(A\) the column of right-hand sides we obtain the&nbsp;<b>augmented matrix</b>&nbsp;for the system:</p><p>\[ \left[\left.\begin{array}{rrr}3&amp;2&amp;-1\ \\ 1&amp;-1&amp;1\ \\ 2&amp;3&amp;4\ \end{array}\right|\right.\left.\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]</p><p>The order of the entries, or elements, is crucial.&nbsp; For example, all the entries in the second row relate to the second equation, the entries in column 1 are the coefficients of the unknown \(x_1\), and those in the last column are the constants on the right-hand sides of the equations.</p><p>In particular, the entry in row 2 column 3 is the coefficient of \(x_3\) in equation 2.</p><h4>Representing networks</h4><p style="text-align: left;">Shortest-distance problems are important in communications study.&nbsp; The figure below illustrates schematically a system of four towns connected by a set of roads.</p>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/workbook7bl11.svg" alt="7.1 A system of roads connecting towns" class="img-responsive atto_image_button_text-bottom" width="141" height="72">
+</figure>
+<p>The system can be represented by the matrix&nbsp;</p><p>\[ \ \ \ \ a\ \ \ \quad b\ \ \ \quad&nbsp; c\ \ \quad d\]</p><p>\[\begin{array}{c}a\\ b\\ c\\ d\end{array}\left[\begin{array}{cccccccc}0&amp;&amp;1&amp;&amp;0&amp;&amp;0\\ 1&amp;&amp;0&amp;&amp;1&amp;&amp;1\\ 0&amp;&amp;1&amp;&amp;0&amp;&amp;1\\ 0&amp;&amp;1&amp;&amp;1&amp;&amp;0\end{array}\right].\]</p><p>The row refers to the town from which the road starts and the column refers to the town where the road ends.</p><p>An entry of 1 indicates that two towns are directly connected by a road (for example \(b\) and \(d\)) and an entry of zero indicates that there is no direct road (for example \(a\) and \(c\)). Of course, if there is a road from \(b\) to \(d\) (say) it is also a road from \(d\) to \(b\).</p><p>In this quiz we shall develop some basic ideas about matrices.<br></p><p><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200619082805+LebEVw</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210701101208+wpv2y2</text></tag>
+    </tags>
+    
+</question>
+</quiz>

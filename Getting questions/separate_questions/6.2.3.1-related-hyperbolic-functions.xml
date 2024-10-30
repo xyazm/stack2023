@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26514">
+        <parent>0</parent>
+        <name>6.2.3.1 Related hyperbolic functions</name>
+        <questiontext>&lt;h3&gt;Related Hyperbolic Functions&lt;/h3&gt;&lt;p&gt;Given the trigonometric functions &lt;span class="math inline"&gt;\(\cos x,\sin x\)&lt;/span&gt; related functions can be defined; &lt;span class="math inline"&gt;\(\tan x, \sec x, \rm cosec\) \(x\)&lt;/span&gt; through the relations: &lt;span class="math inline"&gt;\(\tan x \equiv\dfrac{\sin x}{\cos x}\qquad \sec x\equiv\dfrac{1}{\cos x}\qquad{\rm cosec}\ x\equiv\dfrac{1}{\sin
+x}\qquad\cot x\equiv\dfrac{\cos x}{\sin x}\).&lt;/span&gt;&lt;/p&gt;&lt;p&gt;In an analogous way, given &lt;span class="math inline"&gt;\(\cosh x\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\sinh x\)&lt;/span&gt; we can introduce hyperbolic functions.&amp;nbsp;These functions are defined in the following Key Point.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point: Further hyperbolic functions&lt;/h4&gt;
+&lt;p style="text-align: center;"&gt;\(\tanh x \equiv \dfrac{\sinh x}{\cosh x}\)&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;\(\rm sech\) \(x \equiv \dfrac{1}{\cosh x}\)&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;\(\rm cosech\) \(x \equiv \dfrac{1}{\sinh x}\)&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;\(\coth x \equiv \dfrac{\cosh x}{\sinh x}\)&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619164927+b6bwJj</stamp>
+        <version>stack2.maths.ed.ac.uk+200716113110+Ih7ioS</version>
+        <hidden>0</hidden>
+        <timecreated>1592585367</timecreated>
+        <timemodified>1594899070</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

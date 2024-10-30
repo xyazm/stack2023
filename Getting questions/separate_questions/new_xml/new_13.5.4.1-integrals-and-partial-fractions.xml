@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24546 -->
+  <question type="stack">
+    <name>
+				<text>13.5.4.1 Integrals and partial fractions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Integration using partial fractions</span><br></h3>
+
+<p>Sometimes expressions which at first sight look impossible to integrate using the techniques already met may in fact be integrated by first expressing them as simpler partial fractions, and then using the techniques described earlier in this Section.
+    Consider the following Example.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Express \(\dfrac{23-x}{(x - 5)(x + 4)}\) as the sum of its partial fractions.</p>
+<p>Hence find \({\displaystyle\int \dfrac{23-x}{(x - 5)(x + 4)}\ \mathrm{d}x}\)</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>First produce the partial fractions. Write the fraction in the form \(\dfrac{A}{x - 5} + \dfrac{B}{x + 4}\) and find \(A\), \(B\) to obtain \(A = 2\) and \(B = -3\)</p>
+<p>Now integrate each term separately:</p>
+<p>\({\displaystyle\int \dfrac{23-x}{(x - 5)(x + 4)}\ \mathrm{d}x}\)</p>
+<p>\(= {\displaystyle\int \dfrac{A}{x - 5}\ \mathrm{d}x} + {\displaystyle\int \dfrac{B}{x + 4}\ \mathrm{d}x}\)</p>
+<p>\(= {\displaystyle\int \dfrac{2}{x - 5}\ \mathrm{d}x} - {\displaystyle\int \dfrac{3}{x + 4}\ \mathrm{d}x}\)</p>
+<p>\(= 2\ln|x - 5| - 3\ln|x + 4|\)</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200805171246+BMdfEr</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210607084054+TR0wu3</text></tag>
+    </tags>
+    
+</question>
+</quiz>

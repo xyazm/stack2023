@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26724">
+        <parent>0</parent>
+        <name>10.1.1.3 What is a Complex Number?</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point &lt;/h4&gt;
+&lt;p&gt;The symbol &lt;span class="math inline"&gt;\(i\)&lt;/span&gt; is such that &lt;span class="math display"&gt;\[i^2=-1.\] &lt;/span&gt;Using the normal rules of algebra it follows that &lt;span class="math display"&gt;\[i^3=i^2\times i=-i\qquad i^4=i^2\times i^2=(-1)\times (-1)=1\]&lt;/span&gt; and so on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Simple examples of complex numbers are &lt;span class="math inline"&gt;\(\qquad z_1=3+2i \quad\qquad z_2=-3+(2.461)i\quad\qquad z_3=17i \quad\qquad z_4=3+0i
+= 3\)&lt;/span&gt; 
+
+&lt;/p&gt;&lt;p&gt;Generally, if &lt;span class="math inline"&gt;\(z=a+i b\)&lt;/span&gt; then &#8216;\(a\)&#8217; is called the &lt;b&gt;real part&lt;/b&gt; of &lt;span class="math inline"&gt;\(z\)&lt;/span&gt;, or &lt;span class="math inline"&gt;&lt;span&gt;Re(\(z\))&lt;/span&gt;&lt;/span&gt; for short, and &#8216; \(b\)&#8217; is called the &lt;b&gt;imaginary part&lt;/b&gt; of &lt;span class="math inline"&gt;\(z\)&lt;/span&gt; or Im(&lt;span class="math inline"&gt;\(z)\)&amp;nbsp;&lt;/span&gt;for short. Notice how both the real and imaginary parts are real numbers. The fourth example indicates how the real numbers can be considered a subset of the complex numbers.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200625154955+ZBVshl</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210706164429+m6OekE</version>
+        <hidden>0</hidden>
+        <timecreated>1593100195</timecreated>
+        <timemodified>1625589869</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

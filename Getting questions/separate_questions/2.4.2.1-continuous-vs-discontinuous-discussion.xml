@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25720">
+        <parent>0</parent>
+        <name>2.4.2.1 Continuous vs discontinuous discussion *****</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+
+&lt;p&gt;Explain the distinction between a continuous and a discontinuous function. Draw a graph showing an example of each type of function.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>essay</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618160306+dmCCVO</stamp>
+        <version>stack2.maths.ed.ac.uk+200622151923+7QQs6v</version>
+        <hidden>0</hidden>
+        <timecreated>1592496186</timecreated>
+        <timemodified>1592839163</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_essay_question>
+          <essay id="262">
+            <responseformat>editor</responseformat>
+            <responserequired>1</responserequired>
+            <responsefieldlines>15</responsefieldlines>
+            <attachments>0</attachments>
+            <attachmentsrequired>0</attachmentsrequired>
+            <graderinfo/>
+            <graderinfoformat>1</graderinfoformat>
+            <responsetemplate/>
+            <responsetemplateformat>1</responsetemplateformat>
+            <filetypeslist/>
+          </essay>
+        </plugin_qtype_essay_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

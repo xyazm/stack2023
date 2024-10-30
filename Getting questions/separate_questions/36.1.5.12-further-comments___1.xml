@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27288">
+        <parent>0</parent>
+        <name>36.1.5.12 Further comments</name>
+        <questiontext>&lt;h5&gt;Further comments&lt;/h5&gt;
+&lt;p&gt;The sample mean and sample standard deviation are often useful to provide a concise summary of an observed frequency distribution. This is particularly the case when the frequency distribution is &lt;i&gt;symmetric&lt;/i&gt; and &lt;i&gt;unimodal&lt;/i&gt;. A &lt;i&gt;unimodal&lt;/i&gt; frequency distribution is one where the histogram, at least approximately, has a shape with a single peak. If the frequencies decrease in the same way on each side of the peak, we say that the distribution is &lt;i&gt;symmetric&lt;/i&gt;. The regions on either side of the distribution where the frequencies die out are called the left and right &lt;i&gt;tails&lt;/i&gt; of the distribution. In a symmetric distribution, the left and right tails are like mirror images of each other.&lt;/p&gt;
+&lt;p&gt;Symmetric unimodal distributions are common but there are exceptions. The distributions of some variables tend to be asymmetric, with one tail longer than the other. For example lifetime distributions, that is the distributions of the times to failure for pieces of equipment, tend to be asymmetric, with the frequencies decreasing more slowly to the right of the mode. This is called &lt;i&gt;positive skew&lt;/i&gt;, which means that the longer tail is on the right. In such cases it may be more useful to use the median and lower and upper quartiles to describe the distribution.&lt;/p&gt;
+&lt;p&gt;The following figure shows a histogram of a distribution with a positive skew.&lt;/p&gt;
+&lt;p&gt;&lt;img src="@@PLUGINFILE@@/36-1-fig-6-positive_skew.svg" alt="" width="672" height="480" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200914145802+ChkzKH</stamp>
+        <version>stack2.maths.ed.ac.uk+200914145802+rCjlcn</version>
+        <hidden>0</hidden>
+        <timecreated>1600095482</timecreated>
+        <timemodified>1600095482</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

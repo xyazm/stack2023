@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24702">
+        <parent>0</parent>
+        <name>18.4.4.4 Exercise 3</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;If \(\displaystyle{v=\sqrt{\frac{@a*x@}{@b*y@}}}\) find the maximum percentage error in \(v\) due to errors of \({@error_x@} \%\) in \(x\) and \({@error_y@} \% \) in \(y\).&lt;/p&gt;
+&lt;p&gt;The maximum percentage error in \(v\) is [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]%.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the funtcion \(\displaystyle{v=\sqrt{\frac{@a*x@}{@b*y@}}}\) and \(x, y\) are subject to percentage relative errors of \({@error_x@} \%\) and \({@error_y@} \%\) respectively.&lt;/p&gt;
+&lt;p&gt;First, find \(\dfrac{\partial v}{\partial x}\) and \(\dfrac{\partial x}{\partial y}.\)&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial v}{\partial x} = \displaystyle{ {@v_x@}}\)&lt;/p&gt;
+&lt;p&gt;\(\dfrac{\partial v}{\partial y} = \displaystyle{ {@v_y@}}\)&lt;/p&gt;
+&lt;p&gt;Now we write down the expression of \( \delta v .\)&lt;/p&gt;
+&lt;p&gt;\[ \left|\delta v \right|_{\text{max}} \simeq \left| \frac{\partial v}{\partial x} \right| \left| \delta x \right|+ \left| \frac{\partial v}{\partial y} \right| \left| \delta y \right| \simeq \left| {@v_x@} \right| \left| \delta x \right| + \left| {@v_y@} \right| \left| \delta y \right| \]&lt;/p&gt;
+&lt;p&gt;Hence we write down an expression for the percentage relative error in \(f\):&lt;/p&gt;
+&lt;p&gt;\[ \begin{align} \dfrac{\delta v}{v} \times 100 &amp;amp; \simeq \left| {@v_x@} \times \sqrt{\frac{@b*y@}{@a*x@}} \, \delta x \times 100 \right| + \left| {@v_y@} \times \sqrt{\frac{@b*y@}{@a*x@}} \, \delta y \times 100 \right| \\ &amp;amp; \simeq \left| {@v1@}
+    \delta x \times 100 \right| + \left| {@v2@} \delta y \times 100 \right| \end{align}\]&lt;/p&gt;
+&lt;p&gt;The percentage relative errors of \(x,y \) are \({@error_x@} \%\) and \({@error_y@} \%\) respectivelly so:&lt;/p&gt;
+&lt;p&gt;\( \displaystyle \frac{\delta x}{x} = {@error_x@} \) and&lt;/p&gt;
+&lt;p&gt;\( \displaystyle \frac{\delta y}{y} = {@error_y@} \)&lt;/p&gt;Substituting them into the previous relation we find:&lt;br&gt;\[\dfrac{\delta v}{v} \times 100 \simeq \left| {@v1@} \delta x \times 100 \right| + \left| {@v2@} \delta y \times 100 \right| = \frac{{@error_x@}}{2}
++\frac{{@error_y@}}{2} ={@ta1@} \%\]&lt;br&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 0.9375rem;"&gt;&lt;strong&gt;Alterantive method:&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 0.9375rem;"&gt;If we first take logarithms of both sides \[\ln v = \frac{1}{2}\ln {@a@} + \frac{1}{2} \ln x - \frac{1}{2} \ln {@b@} - \frac{1}{2} \ln y\]&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;We can then apply the total derivative (implicitly) to obtain&lt;br&gt;&lt;br&gt;\[\frac1v \mathrm{d}v= \frac{1}{2x}\mathrm{d}x-\frac{1}{2y}\mathrm{d}y\]&lt;br&gt;&lt;br&gt;So \(\dfrac{\delta v}{v} \approx \dfrac{\delta x}{2x}- \dfrac{\delta y}{2y}\)&lt;/p&gt;
+&lt;p&gt;The maximum percentage error in \(v\) is therefore \[v=\left|\frac{\delta x}{2x}\right|+\left|-\frac{\delta y}{2y}\right|= \frac{{@error_x@}}{2} +\frac{{@error_y@}}{2} = {@ta1@} \% \]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210103000931+qp1dSF</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614105629+CbDEHd</version>
+        <hidden>0</hidden>
+        <timecreated>1609632571</timecreated>
+        <timemodified>1623668189</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16802">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>a: rand([3,5,7]);
+b: rand([1,2,4]);
+v: sqrt(a*x/(b*y));
+v_inv: 1/v;
+
+v_x: diff(v,x);
+v_y: diff(v,y);
+v1: v_inv*v_x;
+v2: v_inv*v_y;
+error_x: rand([1,2,3]);
+error_y: rand_with_prohib(1,3,[error_x]);
+ta1: float((error_x/2)+(error_y/2));</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\( v = \sqrt{\frac{@a*x@}{@b*y@}}, \,  \delta x = {@error_x@} \%, \, \delta y = {@error_y@} \%\) max error = {@ta1@} %</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="39082">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33680">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50842">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38774">
+              <testcase>1</testcase>
+              <timemodified>1615835063</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="83249">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71878">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38775">
+              <testcase>2</testcase>
+              <timemodified>1615835081</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="83250">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta1+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71879">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="165322">
+              <seed>998779459</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165323">
+              <seed>1727139862</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165324">
+              <seed>1240948074</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165325">
+              <seed>1460913519</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165326">
+              <seed>440245290</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165327">
+              <seed>469507666</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165328">
+              <seed>1144525957</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165329">
+              <seed>64977668</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165330">
+              <seed>307050314</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165331">
+              <seed>1039216</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165332">
+              <seed>1171478081</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165333">
+              <seed>1520381704</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="165334">
+              <seed>131759714</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

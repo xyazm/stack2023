@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26217">
+        <parent>0</parent>
+        <name>7.2.3.4 Introducing the zero matrix</name>
+        <questiontext>&lt;h3&gt; The zero matrix &lt;/h3&gt;
+&lt;p&gt;We call \(B=\begin{bmatrix}0 &amp;amp; 0 \\ 0 &amp;amp; 0 \end{bmatrix}\) the \(2 \times 2\) &lt;b&gt;zero matrix&lt;/b&gt; written \(\underline{0}\) so that \(A \cdot \underline{0} = \underline{0} \cdot A = \underline{0}\) for any matrix \(A.\)&lt;/p&gt;
+&lt;p&gt;Now in the multiplication of numbers, the equation \(ab = 0\) implies that either \(a\) is zero or \(b\) is zero or both are zero. The following task shows that this is not necessarily true for matrices.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619135016+j6ptbS</stamp>
+        <version>stack2.maths.ed.ac.uk+200907155125+xnO8uB</version>
+        <hidden>0</hidden>
+        <timecreated>1592574616</timecreated>
+        <timemodified>1599493885</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

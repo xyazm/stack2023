@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27361 -->
+  <question type="stack">
+    <name>
+				<text>39.1.5.1 The Cumulative Distribution Function</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>The Cumulative Distribution Function</h3>
+
+<p>We know that the normal probability density function \(f(x)\) is given by the formula 
+\[\qquad f(x)=\dfrac{1}{\sigma\sqrt{2\pi}}e^{-(x-\mu)^2/2\sigma^2}\]
+and so the cumulative distribution function \(F(x)\) is given by the formula
+\[\qquad F(x)= \dfrac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^xe^{-(u-\mu)^2/2\sigma^2}d u\] 
+In the case of the cumulative distribution for the standard normal curve, we use the special notation \(\Phi (z)\) and, substituting \(0\) and \(1\) for \(\mu\) and \(\sigma^2\), we obtain 
+\[\qquad \Phi(z)=\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^ze^{-u^2/2}d u\] 
+The shape of the curve is essentially ‘\(S\)’ -shaped as shown in the Figure below. Note that the curve runs from \(-\infty\) to \(+\infty\) . As you can see, the curve approaches the value \(1\) asymptotically.
+
+</p><p><br></p><p><br></p><p><img src="@@PLUGINFILE@@/39-1-fig-9-cumulativedistfunc.svg" alt="The Normal Cumulative Distribution Function " width="3496" height="1060" class="img-responsive atto_image_button_text-bottom"><br></p><p></p><center><strong>Figure: </strong>the Normal Cumulative Distribution Function (CDF)</center><p></p>
+
+<p>Comparing the integrals 
+\[\qquad F(x)=\dfrac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^xe^{-(u-\mu)^2/2\sigma^2}d u\qquad\text{and}\qquad \Phi(z)=\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^ze^{-v^2/2}d v\]
+shows that 
+\[\qquad v=\dfrac{u-\mu}{\sigma}\qquad \text{and so}\qquad d v =\dfrac{d u}{\sigma}\]</p> and \(F(x)\) may be written as 
+\[\qquad F(x)=\dfrac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{(x-\mu)/\sigma}e^{-v^2/2} \sigma d v\] \[\qquad \phantom{FFFFFFF(x)}=\dfrac{1}{\sqrt{2\pi}}\int_{-\infty}^{(x-\mu)/\sigma}e^{-v^2/2}d v=\Phi \left(\dfrac{x-\mu}{\sigma}\right)\] 
+We already know, from the basic definition of a cumulative distribution function, that 
+\[\qquad \text{P}(a&lt;X&lt;b)=F(b)-F(a)\]
+so that we may write the probability statement above in terms of \(\Phi (z)\) as
+\[\qquad \text{P}(a&lt;X&lt;b)=F(b)-F(a)=\Phi \left(\dfrac{b-\mu}{\sigma}\right)- \Phi \left(\dfrac{a-\mu}{\sigma}\right).\]<p></p>
+
+<p>The value of \(\Phi(z)\) is measured from \(z=-\infty\) to any ordinate \(z=z_1\) and represents the probability \(\text{P}(Z&lt;z_1)\).</p> 
+<p>The values of \(\Phi(z)\) start as shown below: \[\qquad \begin{array}{c|cccccccccc} z  &amp; 0.00 &amp; 0.01 &amp; 0.02 &amp; 0.03 &amp; 0.04 &amp; 0.05 &amp; 0.06 &amp; 0.07 &amp; 0.08 &amp; 0.09\\ \hline 0.0 &amp; .5000 &amp;5040 &amp;5080 &amp;5120 &amp;5160 &amp;5199 &amp;5239 &amp;5279 &amp;5319 &amp;5359\\ 0.1 &amp; .5398 &amp;5438 &amp;5478 &amp;5517 &amp;5577 &amp;5596 &amp;5636 &amp;5675 &amp;5714 &amp;5753\\ 0.2 &amp; .5793 &amp;5832 &amp;5871 &amp;5909 &amp;5948 &amp;5987 &amp;6026 &amp;6064 &amp;6103 &amp;6141 \end{array}\] 
+
+You should compare the values given here with the values given for the standard normal probability integral (the Table at the end of the quiz). Simply adding \(0.5\) to the values in the latter table gives the values of \(\Phi(z)\). You should also note that the diagrams shown at the top of each set of tabulated values tells you whether you are looking at the values of \(\Phi(z)\) or the values of the normal probability integral.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200728150654+2u0b7Q</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211014113536+P6rnz1</text></tag>
+    </tags>
+    
+</question>
+</quiz>

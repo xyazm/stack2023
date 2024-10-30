@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="84678">
+        <parent>0</parent>
+        <name>18.3 Introduction (copy)</name>
+        <questiontext>&lt;p&gt;The calculation of the optimum value of a function of two variables is a common requirement in many areas of engineering, for example in thermodynamics. Unlike the case of a function of one variable we have to use more complicated criteria to distinguish
+    between the various types of stationary point.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+220307124632+OLddEI</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220307124632+7yi4kd</version>
+        <hidden>0</hidden>
+        <timecreated>1646657192</timecreated>
+        <timemodified>1646657192</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26051">
+        <parent>0</parent>
+        <name>4.5.4.10 Exercise 10 Sum of currents</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Express the sum of&amp;nbsp; two a.c. currents&lt;/p&gt;
+\[ i_1={@na5a*sin(omega*t+na5s1)@} \quad \text{and} \quad
+i_2={@na5b*cos(omega*t + na5s2)@},\]
+&lt;p&gt; in the form \(\displaystyle{A\cos\left(\omega t +&amp;nbsp;\alpha\right)} \).&lt;/p&gt;
+&lt;p&gt;\( i_1+i_2= \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;
+&lt;p&gt;Please write "pi" for the value \( \pi\) and "omega" for the parameter \( \omega\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are given the two a.c. currents&lt;/p&gt;
+\[ i_1={@na5a*sin(omega*t+na5s1)@} \quad \text{and} \quad i_2={@na5b*cos(omega*t + na5s2)@}.\]
+&lt;p&gt;Since \( \sin x=\cos\left(x-\dfrac{\pi}{2}\right)\) we have:&lt;/p&gt;
+&lt;p&gt;\( \sin\left(\omega t+{@na5s1@}\right)=\cos\left(\omega t+{@na5s1@}-\dfrac{\pi}{2}\right)= \cos \left(\omega t {@na5s2@}\right). \)&lt;/p&gt;
+&lt;p&gt;Therefore \( i_1+i_2={@na5a*cos(omega*t+na5s1-%pi/2)@} + {@na5b*cos(omega*t + na5s2)@}={@ta5f@}\)&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200713115100+E18c1y</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210909154303+nvVo5W</version>
+        <hidden>0</hidden>
+        <timecreated>1594641060</timecreated>
+        <timemodified>1631202183</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17665">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>na5a: rand(4)+1;
+na5b: rand(5)+2;
+na5s1: pi/(rand(7)+3);
+na5s2:  na5s1-(pi/2);
+ta5c: na5a+ na5b;
+ta5f: ta5c*cos(omega*t+na5s2);
+alt: ta5c*cos(w*t+na5s2);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[ i_1 = {@na5a*sin(omega*t+na5s1)@}, \quad i_2={@na5b*cos(omega*t + na5s2)@}\]
+\[ i_1+i_2={@ta5f@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="41346">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta5f</tans>
+              <boxsize>15</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="35814">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="53690">
+                  <nodename>0</nodename>
+                  <answertest>EqualComAss</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta5f</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="53691">
+                  <nodename>1</nodename>
+                  <answertest>EqualComAss</answertest>
+                  <sans>ans1</sans>
+                  <tans>alt</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback>&lt;p dir="ltr" style="text-align: left;"&gt;You used \(w\) instead of omega \(\omega\).&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="40786">
+              <testcase>1</testcase>
+              <timemodified>1594641106</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88068">
+                  <inputname>ans1</inputname>
+                  <value>ta5f</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="76336">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="40787">
+              <testcase>2</testcase>
+              <timemodified>1602586856</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88069">
+                  <inputname>ans1</inputname>
+                  <value>ta5c</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="76337">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="40788">
+              <testcase>3</testcase>
+              <timemodified>1602586872</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="88070">
+                  <inputname>ans1</inputname>
+                  <value>alt</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="76338">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="172502">
+              <seed>1608248677</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172503">
+              <seed>184656781</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172504">
+              <seed>1585657161</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172505">
+              <seed>1827677550</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172506">
+              <seed>578797871</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172507">
+              <seed>1041118217</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172508">
+              <seed>1980818103</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172509">
+              <seed>456150571</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172510">
+              <seed>1376022210</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="172511">
+              <seed>1774847877</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

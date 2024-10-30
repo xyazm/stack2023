@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26587">
+        <parent>0</parent>
+        <name>8.2.3.3 3x3 linear equations with no unique solution</name>
+        <questiontext>&lt;h5&gt;Equations with no unique solution&lt;/h5&gt;
+&lt;p&gt;If &lt;span class="math inline"&gt;\(|A|=0\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(A^{-1}\)&lt;/span&gt; does not exist and therefore it is easy to see that the system of equations has no unique solution. But it is not obvious whether this is because the equations are inconsistent and have no solution or whether they are consistent and have infinitely many solutions.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+
+&lt;p&gt;Consider the systems &lt;span class="math display"&gt;\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;amp;=&amp;amp;4\\
+2x_1+3x_2-2x_3&amp;amp;=&amp;amp;3\\
+3x_1+2x_2-x_3&amp;amp;=&amp;amp;7\end{array}
+\qquad\ \ \ \text{(b)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;amp;=&amp;amp;4\\
+2x_1+3x_2-2x_3&amp;amp;=&amp;amp;3\\ x_1-11x_2+9x_3&amp;amp;=&amp;amp;13\end{array}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+
+&lt;li&gt;In system (a) add the first equation to the second. What does this tell you about the system?&lt;/li&gt;
+&lt;p&gt;The sum is &lt;span class="math inline"&gt;\(3x_1+2x_2-x_3=7\)&lt;/span&gt;, which is identical to the third equation. Thus, essentially, there are only two equations &lt;span class="math display"&gt;\[\begin{matrix}
+    x_1 &amp;amp; - &amp;amp; x_2 &amp;amp; + &amp;amp; x_3 &amp;amp; = &amp;amp; 4 \\
+    3x_1 &amp;amp; + &amp;amp; 2x_2 &amp;amp; - &amp;amp; x_3 &amp;amp; = &amp;amp; 7 \\
+\end{matrix}\]&lt;/span&gt; Now adding these two gives &lt;span class="math inline"&gt;\(4x_1+x_2=11\)&lt;/span&gt; or, equivalently, &lt;span class="math inline"&gt;\(x_2=11-4x_1\)&lt;/span&gt;. Therefore, &lt;span class="math display"&gt;\[x_3=4-x_1+x_2=4-x_1+11-4x_1=15-5x_1\]&lt;/span&gt; Hence if we give &lt;span class="math inline"&gt;\(x_1\)&lt;/span&gt; a value, &lt;span class="math inline"&gt;\(t\)&lt;/span&gt; say, then &lt;span class="math inline"&gt;\(x_2=11-4t\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(x_3=15-5t\)&lt;/span&gt;. Thus there is an infinite number of solutions (one for each value of &lt;span class="math inline"&gt;\(t\)&lt;/span&gt;).&lt;/p&gt;
+
+&lt;li&gt;In system (b) take the combination \( 5 \) times the first equation minus \(2\) times the second equation. What does this tell you about the system?&lt;/li&gt;
+&lt;p&gt;The combination is &lt;span class="math inline"&gt;\(x_1-11x_2+9x_3=14\)&lt;/span&gt;, which conflicts with the third equation. There is thus no solution.&lt;/p&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;p&gt;In practice, systems containing three or more linear equations are best solved by Gauss Elimination.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200624142921+nKTsab</stamp>
+        <version>stack2.maths.ed.ac.uk+200629103153+eyRkGz</version>
+        <hidden>0</hidden>
+        <timecreated>1593008961</timecreated>
+        <timemodified>1593426713</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

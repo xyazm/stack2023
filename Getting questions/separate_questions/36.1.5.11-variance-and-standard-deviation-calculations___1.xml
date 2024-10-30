@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27287">
+        <parent>0</parent>
+        <name>36.1.5.11 Variance and standard deviation calculations</name>
+        <questiontext>&lt;h5&gt;Calculations&lt;/h5&gt;
+&lt;p&gt;To calculate either the sample variance or the sample standard deviation, we need 
+\(\sum(x_{i}-\bar{x})^{2}\). We can calculate this by subtracting the sample mean, \(\bar{x}\), from each observation and squaring the result then summing these. However we have the following result:
+\[\begin{align*}
+\sum_{i=1}^{n}(x_{i}-\bar{x})^{2} =\sum_{i=1}^n (x_i^2-2x_i\bar x+\bar x^2) &amp;amp;= \sum_{i=1}^{n} x_{i}^{2} - 2 \bar{x} \sum_{i=1}^{n} x_{i} + n \bar{x}^{2} \\
+                                                           &amp;amp; =  \sum_{i=1}^{n} x_{i}^{2} - 2 n \bar{x}^{2} + n \bar{x}^{2} \\
+                                                           &amp;amp; =  \sum_{i=1}^{n} x_{i}^{2} -  n \bar{x}^{2}. 
+\end{align*}\]&lt;/p&gt;
+&lt;p&gt;It might be more convenient to use the form
+\[ \sum_{i=1}^{n} x_{i}^{2} -  n \bar{x}^{2},  \]
+or
+\[  \sum_{i=1}^{n} x_{i}^{2} - \frac{1}{ n} \left[ \sum_{i=1}^{n} x_{i} \right]^{2},\]
+both of which are equal to \( \sum(x_{i}-\bar{x})^{2}\).&lt;/p&gt;
+&lt;p&gt;For discrete data, where each value \( x_{(j)}\) of the variable has a frequency \(f_{j}\) in the sample, we can replace \( \sum x_{i}\) with \( \sum f_{j}  x_{(j)}\) and replace \( \sum x_{i}^{2}\) with \(\sum f_{j} x_{(j)}^{2}\).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Consider the data recording the numbers of vehicles passing a point on a road in each of 100 intervals of length one minute, which are summarised in the frequency table below.&lt;/p&gt;
+&lt;table class="HELM_table" style="text-align: center; width: 80%;"&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Numbers of &lt;br&gt; Vehicles &lt;br&gt; \(x\)&lt;/th&gt;
+&lt;th&gt;Frequency&lt;br&gt;\(f\)&lt;/th&gt;
+&lt;th&gt;\(fx\)&lt;/th&gt;
+&lt;th&gt;\(fx^2\)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;12&lt;/td&gt; &lt;td&gt;36&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt; &lt;td&gt;3&lt;/td&gt; &lt;td&gt;12&lt;/td&gt; &lt;td&gt;48&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt; &lt;td&gt;5&lt;/td&gt; &lt;td&gt;25&lt;/td&gt; &lt;td&gt;125&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt; &lt;td&gt;8&lt;/td&gt; &lt;td&gt;48&lt;/td&gt; &lt;td&gt;288&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt; &lt;td&gt;10&lt;/td&gt; &lt;td&gt;70&lt;/td&gt; &lt;td&gt;490&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt; &lt;td&gt;19&lt;/td&gt; &lt;td&gt;152&lt;/td&gt; &lt;td&gt;1216&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt; &lt;td&gt;12&lt;/td&gt; &lt;td&gt;108&lt;/td&gt; &lt;td&gt;972&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10&lt;/td&gt; &lt;td&gt;13&lt;/td&gt; &lt;td&gt;130&lt;/td&gt; &lt;td&gt;1300&lt;/td&gt;  
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11&lt;/td&gt; &lt;td&gt;7&lt;/td&gt; &lt;td&gt;77&lt;/td&gt; &lt;td&gt;847&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12&lt;/td&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;48&lt;/td&gt; &lt;td&gt;576&lt;/td&gt;  
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13&lt;/td&gt; &lt;td&gt;11&lt;/td&gt; &lt;td&gt;143&lt;/td&gt; &lt;td&gt;1859&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;15&lt;/td&gt; &lt;td&gt;225&lt;/td&gt;  
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16&lt;/td&gt; &lt;td&gt;2&lt;/td&gt; &lt;td&gt;32&lt;/td&gt; &lt;td&gt;512&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;0&lt;/td&gt; &lt;td&gt;0.00&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr style="border-bottom: 1px solid #000;"&gt;
+&lt;td&gt;18&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;td&gt;18&lt;/td&gt; &lt;td&gt;324&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt; &lt;td&gt;100&lt;/td&gt; &lt;td&gt;890&lt;/td&gt; &lt;td&gt;8818&lt;/td&gt; 
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;Therefore the sample mean is
+\[ \bar{x} = \dfrac{890}{100} = 8.9. \]&lt;/p&gt;
+&lt;p&gt;Recall that \[\sum(x_{i}-\bar{x})^{2} = \sum_{i=1}^{n} x_{i}^{2} -  n \bar{x}^{2} = \sum_{i=1}^{n} x_{i}^{2} - \frac{1}{ n} \left[ \sum_{i=1}^{n} x_{i} \right]^{2}.\] And since we are working with discrete data, where each value \( x_{(j)}\) of the variable has a frequency \(f_{j}\) in the sample, we can replace \( \sum x_{i}\) with \( \sum f_{j}  x_{(j)}\) and replace \( \sum x_{i}^{2}\) with \(\sum f_{j} x_{(j)}^{2}\). Therefore, we obtain
+&lt;/p&gt;
+\[ \sum (x_i-\bar{x})^{2} = 8818 - 100 \times 8.9^{2} = 897.0 \]
+or
+\[ \sum (x_i-\bar{x})^{2} = 8818 - \dfrac{1}{100} \times 890^{2} = 897.0. \]&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;So the sample variance is
+\[ s^{2} = \dfrac{897}{99} = 9.0606 \]
+and the sample standard deviation is
+\[ s = \sqrt{9.0606} = 3.010. \]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200914145739+pO2fKD</stamp>
+        <version>stack2.maths.ed.ac.uk+200914145739+RIVrvC</version>
+        <hidden>0</hidden>
+        <timecreated>1600095459</timecreated>
+        <timemodified>1600095459</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

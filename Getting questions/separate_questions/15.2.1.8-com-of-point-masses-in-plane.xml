@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24571">
+        <parent>0</parent>
+        <name>15.2.1.8 COM of point masses in plane</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Masses of \({@m1@} \, \mathrm{kg}, {@m2@} \, \mathrm{kg}\) and \({@m3@} \, \mathrm{kg}\) are located at the points \(({@x1@},{@y1@}), ({@x2@},{@y2@})\) and \(({@x3@},{@y3@})\) respectively. Find the coordinates of their centre of mass.&lt;/p&gt;&lt;p&gt;&lt;/p&gt; &lt;b&gt;Give your answer to 2 decimal places.&lt;/b&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;\(\bar{x}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;&lt;p&gt;\(\bar{y}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;\[\bar{x}=\dfrac{\sum_{i=1}^3 m_i x_i}{\sum_{i=1}^3m_i}=\dfrac{{@m1@}\times({@x1@}) + {@m2@}\times({@x2@}) + {@m3@}\times({@x3@})}{{@m1@}+{@m2@}+{@m3@}} \approx {@xbar@}\]&lt;/p&gt;
+&lt;p&gt;\[\bar{y}=\dfrac{\sum_{i=1}^3 m_i y_i}{\sum_{i=1}^3m_i}=\dfrac{{@m1@}\times({@y1@}) + {@m2@}\times({@y2@}) + {@m3@}\times({@y3@})}{{@m1@}+{@m2@}+{@m3@}} \approx {@ybar@}\]&lt;/p&gt;
+&lt;p&gt;Hence the centre of mass is located at the point \(({@xbar@},{@ybar@})\). &lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200817134010+qr7YEu</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609153227+8PXiLC</version>
+        <hidden>0</hidden>
+        <timecreated>1597671610</timecreated>
+        <timemodified>1623252747</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16721">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>m1 : 1+rand(4);
+m2 : rand_with_prohib(1,5,[m1]);
+m3 : rand_with_prohib(1,10,[m1,m3]);
+tm : m1 + m2 + m3;
+x1 : rand_with_prohib(-5,5,[0]);
+x2 : rand_with_prohib(-5,5,[0,x1]);
+x3 : rand_with_prohib(-5,5,[0,x1,x2]);
+y1 : rand_with_prohib(-5,5,[0,x1]);
+y2 : rand_with_prohib(-5,5,[0]);
+y3 : rand_with_prohib(-5,5,[0]);
+xbar : decimalplaces((m1*x1 + m2*x2 + m3*x3)/tm,2);
+xbar: dispdp(xbar,2);
+ybar : decimalplaces((m1*y1 + m2*y2 + m3*y3)/tm,2);
+ybar: dispdp(ybar,2);
+</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>masses: {@m1@},{@m2@},{@m3@} points: ({@x1@},{@y1@}), ({@x2@},{@y2@}), ({@x3@},{@y3@}) so \( \bar{x} = {@xbar@}, \,  \bar{y} = {@ybar@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38782">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>xbar</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="38783">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ybar</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33437">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50505">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>xbar</tans>
+                  <testoptions>2</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+            <stackprt id="33438">
+              <name>prt2</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50506">
+                  <nodename>0</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans2</sans>
+                  <tans>ybar</tans>
+                  <testoptions>2</testoptions>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt2-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt2-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38585">
+              <testcase>1</testcase>
+              <timemodified>1599474093</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82501">
+                  <inputname>ans1</inputname>
+                  <value>xbar</value>
+                </stackqtestinput>
+                <stackqtestinput id="82502">
+                  <inputname>ans2</inputname>
+                  <value>ybar</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71326">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="71327">
+                  <prtname>prt2</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38586">
+              <testcase>2</testcase>
+              <timemodified>1599474247</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82503">
+                  <inputname>ans1</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+                <stackqtestinput id="82504">
+                  <inputname>ans2</inputname>
+                  <value>0</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71328">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+                <stackqtestexpected id="71329">
+                  <prtname>prt2</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt2-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="164690">
+              <seed>298324655</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164691">
+              <seed>1637229811</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164692">
+              <seed>1441139073</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164693">
+              <seed>1508697620</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164694">
+              <seed>1912249621</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164695">
+              <seed>1236317958</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164696">
+              <seed>167042207</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164697">
+              <seed>1062846135</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164698">
+              <seed>1951459480</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164699">
+              <seed>662511115</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164700">
+              <seed>1294799699</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164701">
+              <seed>891096285</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164702">
+              <seed>1751249389</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164703">
+              <seed>1894575885</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164704">
+              <seed>1828379290</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

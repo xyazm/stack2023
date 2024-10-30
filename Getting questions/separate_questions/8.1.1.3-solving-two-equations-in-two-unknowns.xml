@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="30678">
+        <parent>0</parent>
+        <name>8.1.1.3 Solving two equations in two unknowns</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Use Cramer's rule to find the solution of the system:&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p&gt;  \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] &lt;br&gt; \(x=\) [[input:ans1]]&amp;nbsp;[[validation:ans1]]&amp;nbsp;&lt;br&gt;\(y=\) [[input:ans2]]&amp;nbsp;[[validation:ans2]]&lt;br&gt;[[feedback:Result]]&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;Cramer's rule states that \(x = \frac{\Delta_{x}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{x}\) is the determinant of the matrix with the x column replaced by the numbers on the right hand side of
+the equations and similarly \(y = \frac{\Delta_{y}}{\Delta}\). &lt;br&gt;
+&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Therefore for the system, &lt;br&gt; \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \]&amp;nbsp;&amp;nbsp;&lt;br&gt; \[\Delta = \det{@Amat@}={@D@},\]&lt;br&gt; \[\Delta_{x} = \det{@Amatx@}={@Dx@},\] and&lt;br&gt; \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]&lt;/p&gt;
+&lt;p&gt;where the notation \(\det A = |A|\) is the determinant of a matrix \(A\).&amp;nbsp;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt; Hence, \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] and&lt;br&gt; &lt;/p&gt;
+&lt;p&gt;\[y=\frac{@Dy@}{@D@} = {@Dy/D@}.\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210528141442+0DT0bE</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630112007+YosqRE</version>
+        <hidden>0</hidden>
+        <timecreated>1622211282</timecreated>
+        <timemodified>1625052007</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="21065">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>pos:rand(2)+1;
+vdet:rand(6)+2;
+Au:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+Au[pos,pos]:vdet;
+Bu:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+Amat:ev(transpose(Au).Bu);
+bmat:matrix([rand(5)+1],[rand(5)+1]);
+ xy:matrix([x],[y]);
+
+eqns[1]:ev(Amat.xy)[1,1];
+eqns[2]:ev(Amat.xy)[2,1];
+truesolm:ev(invert(Amat) . bmat);
+correctanswer:[truesolm[1,1],truesolm[2,1]];
+
+D:determinant(Amat);
+Amatx:copymatrix(Amat);
+Amatx[1,1]:ev(bmat[1,1]);
+Amatx[2,1]:ev(bmat[2,1]);
+Dx:determinant(Amatx);
+Amaty:copymatrix(Amat);
+Amaty[1,2]:ev(bmat[1,1]);
+Amaty[2,2]:ev(bmat[2,1]);
+Dy:determinant(Amaty);</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[ {@eqns[1]@}\ =\ {@bmat[1,1]@}\] 
+\[{@eqns[2]@}\ =\ {@bmat[2,1]@}\]
+gives x,y = {@correctanswer@}</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;p&gt;&lt;span class="correct"&gt;Correct answer, well done.&lt;/span&gt;&lt;/p&gt;</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;p&gt;&lt;span class="partially"&gt;Your answer is partially correct.&lt;/span&gt;&lt;/p&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;p&gt;&lt;span class="incorrect"&gt;Incorrect answer.&lt;/span&gt;&lt;/p&gt;</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="48650">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>correctanswer[1]</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="48651">
+              <name>ans2</name>
+              <type>algebraic</type>
+              <tans>correctanswer[2]</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="42184">
+              <name>Result</name>
+              <value>2.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="63620">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>correctanswer[1]</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>1</truenextnode>
+                  <trueanswernote>Result-0-T </trueanswernote>
+                  <truefeedback>&lt;p&gt;Your x-value is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>1</falsenextnode>
+                  <falseanswernote>Result-0-F </falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your x-value is incorrect.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="63621">
+                  <nodename>1</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans2</sans>
+                  <tans>correctanswer[2]</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.5000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>Result-1-T </trueanswernote>
+                  <truefeedback>&lt;p&gt;Your y-value is correct.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>+</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>Result-1-F </falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your y-value is incorrect.&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="48665">
+              <testcase>1</testcase>
+              <timemodified>1622211282</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="104690">
+                  <inputname>ans1</inputname>
+                  <value>correctanswer[1]</value>
+                </stackqtestinput>
+                <stackqtestinput id="104691">
+                  <inputname>ans2</inputname>
+                  <value>correctanswer[2]</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="90514">
+                  <prtname>Result</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>Result-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="48666">
+              <testcase>2</testcase>
+              <timemodified>1625047915</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="118115">
+                  <inputname>ans1</inputname>
+                  <value>correctanswer[1]-10</value>
+                </stackqtestinput>
+                <stackqtestinput id="118116">
+                  <inputname>ans2</inputname>
+                  <value>correctanswer[2]-10</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100741">
+                  <prtname>Result</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>Result-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="208790">
+              <seed>658506017</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208791">
+              <seed>1174886397</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208792">
+              <seed>1974833147</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208793">
+              <seed>937479468</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208794">
+              <seed>514296711</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208795">
+              <seed>1147402</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208796">
+              <seed>1901494326</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208797">
+              <seed>1729491826</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208798">
+              <seed>481817568</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="208799">
+              <seed>1173835051</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

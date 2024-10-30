@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62104 -->
+  <question type="stack">
+    <name>
+				<text>23.2.3.2 Calculation of Fourier coefficients - part 2</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[We summarise these results in the following Key Point:
+<p></p>
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p></p>
+A function \(f(t)\) with period \(2\pi\) has a Fourier series
+<p></p>
+\[ f(t) =  \dfrac{a_0}{2} + \sum_{n=1}^\infty (a_n \cos nt + b_n \sin nt) \]
+The Fourier coefficients are
+<p></p>
+\[ 
+\begin{align}
+a_n &amp;= \dfrac{1}{\pi} \displaystyle{ \int _{-\pi}^\pi } f(t) \cos nt \hspace{0.15cm} dt \hspace{1cm} n = 0, 1, 2, \dots \\
+b_n &amp;= \dfrac{1}{\pi} \displaystyle{ \int _{-\pi}^\pi } f(t) \sin nt \hspace{0.15cm} dt \hspace{1cm} n = 1, 2, \dots
+\end{align}
+\]
+In the integrals any convenient integration range extending over an interval of \(2\pi\) may be used.
+</div>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200816085121+pxDGA4</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518093821+4ph06s</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62136 -->
+  <question type="stack">
+    <name>
+				<text>23.5.1.1 Half-range Fourier series</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Half-range Fourier series</h4>
+So far we have shown how to represent given periodic functions by Fourier series. We now consider a
+slight variation on this theme (which will be useful in the study of Partial Differential Equations).
+<p></p>
+Suppose that instead of specifying a periodic function we begin with a function \(f(t)\) defined only
+over a limited range of values of \(t\), say \(0 &lt; t &lt; \pi\). Suppose further that we wish to represent this
+function, over \(0 &lt; t &lt; \pi\), by a Fourier series. (This situation may seem a little artificial at this point,
+but this is precisely the situation that will arise in solving differential equations.)
+<p></p>
+To be specific, suppose we define \(f(t) = t^2 \), \( 0 &lt; t &lt; \pi\) as shown in the Figure below.<p><br></p><p style="text-align: center;"><img src="@@PLUGINFILE@@/23-5-1-t-squared.svg" alt="t-squared" width="135" height="103" class="img-responsive atto_image_button_text-bottom"><br></p>
+We shall consider the interval \(0 &lt; t &lt; \pi\) to be half a period of a \(2\pi\) periodic function. We must
+therefore define \(f(t)\) for \(-\pi &lt; t &lt; 0\) to complete the specification.]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200905145942+fQMWz6</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220518104928+ftHUP3</text></tag>
+    </tags>
+    
+</question>
+</quiz>

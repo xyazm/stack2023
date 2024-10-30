@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62161 -->
+  <question type="stack">
+    <name>
+				<text>43.1.5.3 Regression Curves - Exponential</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Regression Curves - the Exponential Case</h3>
+
+We use the same technique to look for a functional relation of the form
+\[ y = \alpha e^{\beta x}. \] 
+As before, using the method of least squares, we require the values of \(a\) and \(b\) which minimize the
+expression
+\[ f(a,b) = \sum_{r=1}^n \left( y_r - a e ^{bx_r} \right)^2 . \]
+Again omitting the subscripts and using partial differentiation gives
+\[ \dfrac{\partial f}{\partial a} = -2 \sum e^{bx} \left( y - a e ^{bx} \right)\]
+\[ \dfrac{\partial f}{\partial b} = -2 \sum axe^{bx} \left( y - a e ^{bx} \right).\]
+
+At a minimum we require
+\[ \dfrac{\partial f}{\partial a} = \dfrac{\partial f}{\partial b} = 0, \]
+which results in the two linear equations
+\[ \sum y e^{bx} - a\sum e^{2bx} = 0\]
+\[ \sum xy e^{bx} - a\sum xe^{2bx} = 0\]
+which can be solved by iterative methods to give the values of \(a\) and \(b\).
+
+Note that it is possible to combine (for example) linear and exponential regression to obtain a
+regression equation of the form
+\[ y = \left( \alpha + \beta x \right) e^{\gamma x} .\]
+The method of least squares may then be used to find estimates \(a\), \(b\), \(c\) of \(\alpha\), \(\beta\), \(\gamma\).]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200704153050+Zujb0A</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715054241+hEtKi5</text></tag>
+    </tags>
+    
+</question>
+</quiz>

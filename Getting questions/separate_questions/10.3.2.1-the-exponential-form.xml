@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26768">
+        <parent>0</parent>
+        <name>10.3.2.1 The exponential form</name>
+        <questiontext>&lt;h3&gt;The exponential form&lt;/h3&gt;
+&lt;p&gt;Since &lt;span class="math inline"&gt;\(z=r(\cos\theta +i\sin\theta )\)&lt;/span&gt; and since &lt;span class="math inline"&gt;\(e^{i\theta}=\cos\theta
++i\sin\theta\)&lt;/span&gt; we therefore obtain another way in which to denote a complex number: &lt;span class="math inline"&gt;\(z=re^{i\theta}\)&lt;/span&gt;, called the &lt;strong&gt;exponential form&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;&lt;span style="font-family: inherit;"&gt;Key Point&lt;/span&gt;&lt;br&gt;&lt;/h4&gt;
+&lt;p&gt;The exponential form of a complex number is \[z = re^{i\theta}\quad\text{in which}\quad r=|z|\quad\text{and}\quad\theta=\text{arg}(z)\] so \[z=re^{i\theta}=r(\cos\theta + i\sin\theta)\]&lt;/p&gt;
+&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200624155744+FuMDEo</stamp>
+        <version>stack2.maths.ed.ac.uk+200714091117+DBHywC</version>
+        <hidden>0</hidden>
+        <timecreated>1593014264</timecreated>
+        <timemodified>1594717877</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24282">
+        <parent>0</parent>
+        <name>Welcome constrained function</name>
+        <questiontext>&lt;h3&gt;Where to find the theory&lt;/h3&gt;&lt;br&gt;See section 9.7.4 of Engineering Mathematics, or 8.7.4 of Mathematics for the Natural Sciences text for the necessary theory needed to complete these exercises.&lt;br&gt;&lt;br&gt;Each question asks you to optimised (find the extreme points) of a given functions given some constrains. In solving this we construct an auxiliary function often called the Lagrangian. If we want to optimised \(f(x,y)=0\) subject the the constrain \( g(x,y)\) then we introduce the function&lt;br&gt;\[ f(x,y)-lg(x,y)\]&lt;br&gt;involving a new variable \(l\). The solution to the problem is given by the solutions to system of equations coming from the (three) first order partial derivatives of the new function. Please see the book for more details before attempting these exercises.&lt;br&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210314224349+Ew9TLe</stamp>
+        <version>moodle2.maths.ed.ac.uk+210314224349+dLOMBk</version>
+        <hidden>0</hidden>
+        <timecreated>1615761829</timecreated>
+        <timemodified>1615761829</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

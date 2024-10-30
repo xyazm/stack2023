@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24528">
+        <parent>0</parent>
+        <name>13.4 Introduction</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;Integration by parts&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;Integration by Parts is a technique for integrating products of functions. In this Section you will learn to recognise when it is appropriate to use the technique and have the opportunity to practise using it for finding both definite and indefinite integrals.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200803123638+a1T5KW</stamp>
+        <version>stack2.maths.ed.ac.uk+200803130711+0fkEzO</version>
+        <hidden>0</hidden>
+        <timecreated>1596458198</timecreated>
+        <timemodified>1596460031</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

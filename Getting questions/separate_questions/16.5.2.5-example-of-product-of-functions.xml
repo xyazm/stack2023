@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24344">
+        <parent>0</parent>
+        <name>16.5.2.5 Example of product of functions</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p dir="ltr"&gt;Find the Maclaurin expansion of \(e^x\ln(1+x)\).&lt;/p&gt;
+&lt;p dir="ltr"&gt;Here, instead of finding the derivatives of \(f(x)=e^x\ln(1+x)\),&amp;nbsp;&lt;span style="font-size: 0.9375rem;"&gt;we can more simply multiply together the&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 0.9375rem;"&gt;Maclaurin expansions for \(e^x\) and \(\ln (1+x)\) which&amp;nbsp; we already know:&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr"&gt;&lt;span style="font-size: 0.9375rem;"&gt;\[e^x=1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots\qquad \text{all}\ x\]&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr"&gt;and&lt;/p&gt;
+&lt;p dir="ltr"&gt;\[ \ln(1+x)=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}+\cdots\qquad -1&amp;lt;x\leq 1.\]&lt;/p&gt;
+&lt;p dir="ltr"&gt;The resulting power series will only be convergent&lt;span style="font-size: 0.9375rem;"&gt;&amp;nbsp;if&amp;nbsp;\(-1&amp;lt;x \leq&amp;nbsp;1\)&amp;nbsp;&lt;/span&gt;&lt;span style="font-size: 0.9375rem;"&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr"&gt;Multiplying:&lt;/p&gt;
+&lt;p dir="ltr"&gt;\[\begin{aligned}e^x\ln(1+x)&amp;amp;=\left(1+x+\dfrac{x^2}{2!}+\dfrac{x^3}{3!}+\cdots\right)\left(x-\dfrac{x^2}{2}+\dfrac{x^3}{3}+\cdots\right)\qquad\qquad\qquad\qquad\\&amp;amp;=x-\dfrac{x^2}{2}+\dfrac{x^3}{3}-\dfrac{x^4}{4}+\cdots\\&amp;amp;\quad +\ x^2-\dfrac{x^3}{2}+\dfrac{x^4}{3}+\cdots\\&amp;amp;\qquad
+    \quad\&amp;nbsp; +\ \dfrac{x^3}{2}-\dfrac{x^4}{4}\cdots\\&amp;amp;\qquad \qquad\quad\quad&amp;nbsp; +\dfrac{x^4}{6}\cdots\\&amp;amp;=x+\dfrac{x^2}{2}+\dfrac{x^3}{3}+\dfrac{3x^5}{40}+\cdots\qquad -1&amp;lt;x\leq 1\end{aligned}\]&lt;/p&gt;
+&lt;p dir="ltr"&gt;(You must take care not to miss relevant terms when carrying through the&lt;/p&gt;
+&lt;p dir="ltr"&gt;multiplication.)&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+201125131526+ijtlx2</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210610105815+0C5ZBF</version>
+        <hidden>0</hidden>
+        <timecreated>1606310126</timecreated>
+        <timemodified>1623322695</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

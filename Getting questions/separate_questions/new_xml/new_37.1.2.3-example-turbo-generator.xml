@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27317 -->
+  <question type="stack">
+    <name>
+				<text>37.1.2.3 Example turbo generator</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Turbo Generators plc manufacture seven large turbines for a customer. Three of these turbines do not meet the customer’s specification. Quality control inspectors choose two turbines at random. Let the discrete random variable <span class="math inline">\(X\)</span> be defined to be the number of turbines inspected which meet the customer’s specification.</p>
+<ol class="HELM_parts">
+<li>Find the probabilities that <span class="math inline">\(X\)</span> takes the values <span class="math inline">\(0, 1\)</span> or <span class="math inline">\(2\)</span>
+</li><li> Find and graph the cumulative distribution function.
+</li></ol>
+
+<h4 class="HELM_solution">Solution</h4>
+<ol class="HELM_parts">
+<li> <p>The possible values of <span class="math inline">\(X\)</span> are clearly <span class="math inline">\(0, 1\)</span> or <span class="math inline">\(2\)</span> and may occur as follows: <span class="math inline">\(\qquad\begin{matrix}
+\text{Sample Space}\qquad\qquad&amp;\text{Value of}\ X\\
+\text{Turbine faulty, Turbine faulty}\hfill&amp;0\\
+\text{Turbine faulty, Turbine good}\hfill&amp;1\\
+\text{Turbine good, Turbine faulty}\hfill&amp;1\\
+\text{Turbine good, Turbine good}\hfill&amp;2
+\end{matrix}\)</span> <span class="math inline">\(\phantom{(a)\ }\)</span>
+<br>We can easily calculate the probability that <span class="math inline">\(X\)</span> takes the values <span class="math inline">\(0,1\)</span> or <span class="math inline">\(2\)</span> as follows: 
+<br>\(\text{P}(X=0)=\dfrac{3}{7}\times\dfrac{2}{6}=\dfrac{1}{7}\)
+<br>\(\text{P}(X=1)=\dfrac{4}{7}\times\dfrac{3}{6}+\dfrac{3}{7}\times\dfrac{4}{6}=\dfrac{4}{7}\)
+<br>\(\text{P}(X=2)=\dfrac{4}{7}\times\dfrac{3}{6}=\dfrac{2}{7}\)
+<br>The values of <span class="math inline">\(\displaystyle{F(x)=\sum_{x_i\le x}\text{P}(X=x_i)}\)</span> are clearly <span class="math inline">\(F(0)=\dfrac{1}{7}\qquad F(1)=\frac{5}{7}\qquad\text{and}\qquad
+F(2)=\dfrac{7}{7}=1\)</span></p>
+</li><li> The graph of the step function \(F(x)\) is shown: <img src="@@PLUGINFILE@@/37-1-fig1-stepfunction.svg" alt="Graph of cumulative distribution function with F(0) = 1/7, F(1) = 5/7, F(2) = 1" class="img-responsive atto_image_button_text-bottom" width="437" height="219"><br></li></ol>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200715135354+DiRw1z</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200813111752+jO3eEd</text></tag>
+    </tags>
+    
+</question>
+</quiz>

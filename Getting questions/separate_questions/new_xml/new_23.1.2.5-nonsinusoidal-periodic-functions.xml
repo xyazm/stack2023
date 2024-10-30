@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62092 -->
+  <question type="stack">
+    <name>
+				<text>23.1.2.5 Nonsinusoidal periodic functions</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4>Nonsinusoidal periodic functions</h4>
+The following are examples of non-sinusoidal periodic functions (they are often called "waves").
+<p></p>
+<b>Square wave</b><p style="text-align: center;"><b><img src="@@PLUGINFILE@@/23-1-2-fig-5-square-wave.svg" alt="square wave" width="291" height="86" class="img-responsive atto_image_button_text-bottom"><br></b></p>
+
+Analytically we can describe this function as follows:<p>&nbsp;
+\[ 
+\begin{align} 
+f(t) = 
+    \begin{cases}
+   -1 &amp;-\pi &lt; t &lt; 0 \\
+   +1 &amp;0 &lt; t &lt; \pi
+   \end{cases}
+\end{align} 
+\text{(which gives the definition over one period)} \]</p>
+\[ f(t + 2\pi) = f(t) \hspace{1cm} \text{(which tells us that the function has period } 2\pi ) \]
+<p></p>
+<b>Saw-tooth waves</b><p style="text-align: center;"><b><img src="@@PLUGINFILE@@/23-1-2-fig-6-saw-tooth.svg" alt="saw tooth" width="280" height="111" class="img-responsive atto_image_button_text-bottom"><br></b></p>
+In this case we can describe the function as follows:
+\[ f(t) = 2t \hspace{1cm} 0 &lt; t &lt; 2 \hspace{1cm} f(t+2) = f(t) \]
+Here the period is \(2\), the frequency is \( \dfrac{1}{2}\) and the angular frequency is \(\dfrac{2\pi}{2}  = \pi\).
+<p></p>
+<b>Triangular waves</b><p style="text-align: center;"><b><img src="@@PLUGINFILE@@/23-1-2-fig-7-triangular-wave.svg" alt="triangular-wave" width="414" height="114" class="img-responsive atto_image_button_text-bottom"><br></b></p>
+Here we can conveniently define the function using \( -\pi &lt; t &lt; \pi\) as the "basic period":
+\[ 
+\begin{align} 
+f(t) = 
+    \begin{cases}
+   -t &amp;-\pi &lt; t &lt; 0 \\
+   t &amp;0 &lt; t &lt; \pi
+   \end{cases}
+\end{align} 
+\]
+or, more concisely,
+\[ f(t) = \lvert t \rvert \hspace{2cm}  -\pi &lt; t &lt; \pi \]
+together with the usual statement on periodicity
+\[ f(t + 2\pi) = f(t).\]]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200812184300+kMZxET</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220517190923+0AcYcT</text></tag>
+    </tags>
+    
+</question>
+</quiz>

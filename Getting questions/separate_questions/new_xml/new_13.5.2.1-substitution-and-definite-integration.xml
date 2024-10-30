@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24542 -->
+  <question type="stack">
+    <name>
+				<text>13.5.2.1 Substitution and definite integration</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Substitution and definite integration</span><br></h3>
+
+<p>If you are dealing with definite integrals (ones with limits of integration) you must be particularly careful when you substitute. Consider the following example.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find the definite integral \({\displaystyle\int_2^3 t\sin(t^2)\ \mathrm{d}t}\) by making the substitution \(u=t^2\).</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Note that if \(u=t^2\) then \(\dfrac{\mathrm{d}u}{\mathrm{d}t}=2t\) so that \(\mathrm{d}t = \dfrac{du}{2t}\).</p>
+<p>We find \({\displaystyle\int_{t=2}^{t=3}t\sin(t^2)\ \mathrm{d}t}\) = \({\displaystyle\int_{t=2}^{t=3}t\sin u \dfrac{\mathrm{d}u}{2t}} = \dfrac{1}{2}{\displaystyle\int_{t=2}^{t=3}\sin u\ \mathrm{d}u}\)</p>
+<p></p>
+<p>An important point to note is that the limits of integration are limits on the variable \(t\), not \(u\). To emphasise this they have been written explicitly as \(t=2\) and \(t=3\). When we integrate with respect to the variable \(u\), the limits must
+    be written in terms of \(u\). From the substitution \(u=t^2\), note that when \(t=2\) then \(u=4\) and when \(t=3\) then \(u=9\) so the integral becomes</p>
+<p></p>
+<p>\(\dfrac{1}{2}{\displaystyle\int_{u=4}^{u=9}\sin u\ \mathrm{d}u} = \dfrac{1}{2}\left[\phantom{\dfrac{1}{1}}\!\!\! -\cos u\right]_4^9= \dfrac{1}{2}\left(-\cos 9 +\cos 4\right) = 0.129\) to 3 d.p.</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200805084432+db4RqL</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210604140339+bIVSNf</text></tag>
+    </tags>
+    
+</question>
+</quiz>

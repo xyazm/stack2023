@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62190">
+        <parent>0</parent>
+        <name>3.4.1.8 Graphical solutions simultaneous</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The graphs of simultaneous linear equations&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;Each equation in a pair of simultaneous linear equations is, of course, a linear equation and plotting its graph will produce a straight line. The coordinates \((x,y)\) of the point of intersection of the two lines represent the solution of the simultaneous equations because this pair of values satisfies both equations &lt;strong&gt;simultaneously&lt;/strong&gt;. If the two lines do not intersect then the equations have no solution (this can only happen if they are distinct and parallel). If the two lines are identical, there are an infinite number of solutions (all points on the line) because the two lines are one on top of the other. Although not the most convenient (or accurate) approach it is possible to solve simultaneous equations using this graphical approach. Consider the following examples.&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Solve the simultaneous equations&lt;/p&gt; 
+&lt;p&gt;\(4x + y = 9\) &amp;nbsp;(13)&lt;/p&gt;
+&lt;p&gt;\(-x + y -1\) &amp;nbsp;(14)&lt;/p&gt; 
+&lt;p&gt;by plotting two straight line graphs.&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Equation (13) is rearranged into the standard form for the equation of a straight line: \(y=-4x+9\). By selecting two points on the line a graph can be drawn as shown in Figure 8. Similarly, Equation (14) can be rearranged as \(y=x-1\) and its graph drawn. This is also shown in Figure 8.&lt;/p&gt;
+&lt;p&gt;&lt;img src="@@PLUGINFILE@@/3.4.1.8_Sim_Graph.svg" alt="A graph of two linear simultaneous equations." width="271" height="177" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt;The coordinates of the point of intersection gives the required solution.&lt;/p&gt;
+
+&lt;p&gt;The coordinates of any point on line I satisfy \(4x+y=9\). The coordinates of any point on line II satisfy \(-x+y=-1\). At the point where the two lines intersect the \(x\) and \(y\) coordinates must satisfy both equations simultaneously and so the point of intersection represents the solution. We see from the graph that the point of intersection is \((2,1)\). The solution of the given equations is therefore \(x=2\), \(y=1\).&lt;/p&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Find any solutions of the simultaneous equations: \(10x-2y=4\), \(5x-y=-1\) by using a graphical method.&lt;/p&gt; 
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Re-writing the equations in standard form we find \(y=5x -2\), and \(y=5x+1\). 
+Graphs of these lines are shown below. Note that these distinct lines are parallel and so do not intersect. This means that the given simultaneous equations do not have a solution; they are inconsistent.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/3.4.1.8_Simultaneous_no_solution.svg" alt="A pair of parallel lines indicating two simultaneous equations with no solution." width="219" height="193" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;strong&gt;Figure 8:&lt;/strong&gt;The coordinates of the point of intersection gives the required solution.&lt;/p&gt;
+
+&lt;p&gt;The coordinates of any point on line I satisfy \(4x+y=9\). The coordinates of any point on line II satisfy \(-x+y=-1\). At the point where the two lines intersect the \(x\) and \(y\) coordinates must satisfy both equations simultaneously and so the point of intersection represents the solution. We see from the graph that the point of intersection is \((2,1)\). The solution of the given equations is therefore \(x=2\), \(y=1\).&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200716172329+5M1yxb</stamp>
+        <version>stack2.maths.ed.ac.uk+200716180115+cRpvBJ</version>
+        <hidden>0</hidden>
+        <timecreated>1594920209</timecreated>
+        <timemodified>1594922475</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

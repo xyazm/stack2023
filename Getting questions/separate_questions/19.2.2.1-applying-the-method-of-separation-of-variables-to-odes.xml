@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="25966">
+        <parent>0</parent>
+        <name>19.2.2.1 Applying the method of separation of variables to ODEs</name>
+        <questiontext>&lt;h4&gt;Applying the method of separation of variables to ODEs&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Use the method of separation of variables to solve the differential equation
+\[ \dfrac{\mathrm{d}y}{\mathrm{d}x}=\dfrac{3x^2}{y}.\]&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;The equation already has the form \[\dfrac{\mathrm{d}y}{\mathrm{d}x}=f(x)g(y)\] where\[f(x)=3x^2\quad \text{and} \quad g(y)=1/y.\] Dividing both sides by &lt;span class="math inline"&gt;\(g(y)\)&lt;/span&gt; we find \[y\dfrac{\mathrm{d}y}{\mathrm{d}x} = 3x^2. \] Integrating both sides with respect to &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; gives \[ \int y\dfrac{\mathrm{d}y}{\mathrm{d}x} \,\mathrm{d}x = 3x^2 \,\mathrm{d}x\] that is \[ \int y\ \mathrm{d}y = \int 3x^2 \, \mathrm{d}x.\] Note that the left-hand side is an integral involving just &lt;span class="math inline"&gt;\(y\)&lt;/span&gt;; the right-hand side is an integral involving just &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;. After integrating both sides with respect to the stated variables we find \[ \dfrac{1}{2} y^2 = x^3 + c \] where &lt;span class="math inline"&gt;\(c\)&lt;/span&gt; is a constant of integration. (You might think that there would be a constant on the left-hand side too. You are quite right but the two constants can be combined into a single constant and so we need only write one.) We now have a relationship between &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(x\)&lt;/span&gt; as required. Often it is sufficient to leave your answer in this form but you may also be required to obtain an explicit relation for &lt;span class="math inline"&gt;\(y\)&lt;/span&gt; in terms of &lt;span class="math inline"&gt;\(x\)&lt;/span&gt;. In this particular case \[y^2=2x^3+2c\]  so that \[y=\pm \sqrt{2x^3+2c} .\]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>moodle2.maths.ed.ac.uk+210308132625+6BkHSR</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210614115614+Uv05Ok</version>
+        <hidden>0</hidden>
+        <timecreated>1615209985</timecreated>
+        <timemodified>1623671774</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="30673">
+        <parent>0</parent>
+        <name>8.1.1.4 Exercise: Cramer's rule for solving simultaneous equations</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise 1 (paper exercise)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Use Cramer&#8217;s rule to determine any and all solutions to the equations&lt;/p&gt;
+&lt;p&gt;&lt;span class="math display"&gt;\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;amp;=&amp;amp;6\\ 4x-6y&amp;amp;=&amp;amp;12\end{array}
+\qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;amp;=&amp;amp;6\\
+4x-6y&amp;amp;=&amp;amp;10\end{array}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210528140458+l1zjhO</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210528140458+owHefH</version>
+        <hidden>0</hidden>
+        <timecreated>1622210698</timecreated>
+        <timemodified>1622210698</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

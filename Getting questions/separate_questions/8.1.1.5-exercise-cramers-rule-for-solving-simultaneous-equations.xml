@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="30674">
+        <parent>0</parent>
+        <name>8.1.1.5 Exercise: Cramer's rule for solving simultaneous equations</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise 1 (paper exercise)&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;
+&lt;p&gt;Use Cramer&#8217;s rule to determine any and all solutions to the equations&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math display"&gt;\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;amp;=&amp;amp;6\\ 4x-6y&amp;amp;=&amp;amp;12\end{array}
+\qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;amp;=&amp;amp;6\\
+4x-6y&amp;amp;=&amp;amp;10\end{array}\]&lt;/span&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p class="HELM_exercise"&gt;Solution&lt;/p&gt;
+&lt;p&gt;You should first have checked \(\begin{vmatrix}2 &amp;amp; -3\\ 4 &amp;amp; -6\end{vmatrix}\) since \[\begin{vmatrix}2 &amp;amp; -3\\ 4 &amp;amp; -6\end{vmatrix}=-12-(-12)=0.\]&lt;/p&gt;
+&lt;p&gt;Hence there is no unique solution in either case.&lt;/p&gt;
+&lt;p&gt;In system (a) the second equation is twice the first so there are infinitely many solutions. (Here we can give \(y\) &lt;i&gt;any&lt;/i&gt;&amp;nbsp;value we wish, \(t\) say; but then the \(x\) value is always \((6+3t)/2\). So for each value of \(t\) there are values
+    for \(x\) and \(y\) which simultaneously satisfy both equations. There is an infinite number of possible solutions.)&lt;/p&gt;
+&lt;p&gt;In (b) the equations are inconsistent (since the first is \(2x-3y=6\) and the second is \(2x-3y=5\) which is not possible). Hence there are no solutions.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210528140651+zlFNVM</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210528140651+ZOdX1X</version>
+        <hidden>0</hidden>
+        <timecreated>1622210811</timecreated>
+        <timemodified>1622210811</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

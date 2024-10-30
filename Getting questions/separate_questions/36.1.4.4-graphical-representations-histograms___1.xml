@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27284">
+        <parent>0</parent>
+        <name>36.1.4.4 Graphical representations/ Histograms</name>
+        <questiontext>&lt;h4&gt;Histograms&lt;/h4&gt;
+&lt;p&gt;We use a &lt;b&gt;histogram&lt;/b&gt; to represent the &lt;i&gt;frequency distribution&lt;/i&gt; of a sample of continuous data. In a histogram, like a bar chart, we draw an element of the diagram to represent each frequency, in this case the frequency for each class.  However, because a continuous variable is measured on a continuous scale, we do not have gaps like the gaps between the bars in a bar chart. Instead we draw &lt;i&gt;columns&lt;/i&gt;, or &lt;i&gt;blocks&lt;/i&gt;. The base of a column is the class interval on the \(x\)-axis.&lt;/p&gt;
+&lt;p&gt;Strictly speaking, the &lt;i&gt;areas&lt;/i&gt; of the blocks forming the histogram represent the frequencies since this gives the histogram the necessary flexibility to deal with frequency tables whose class intervals are not of equal width. However, when the class intervals are of equal width, the heights of the columns are proportional to the frequencies.&lt;/p&gt;
+&lt;p&gt;Sometimes the approximate shape of the distribution of data is indicated by a &lt;b&gt;frequency
+polygon&lt;/b&gt; which is formed by joining the mid-points of the tops of the blocks forming the histogram with straight lines.
+&lt;/p&gt;&lt;p&gt;A histogram, with a frequency polygon, is shown in the figure below.&lt;/p&gt;&lt;p&gt;&lt;img src="@@PLUGINFILE@@/36-1-fig-3-histogram.svg" alt="" width="672" height="480" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200914145602+T8mnsA</stamp>
+        <version>stack2.maths.ed.ac.uk+200914145602+4pF2Bf</version>
+        <hidden>0</hidden>
+        <timecreated>1600095362</timecreated>
+        <timemodified>1600095362</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

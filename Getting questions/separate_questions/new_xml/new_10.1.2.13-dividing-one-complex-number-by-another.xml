@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26706 -->
+  <question type="stack">
+    <name>
+				<text>10.1.2.13 Dividing one complex number by another</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h4 class="HELM_example">Example </h4>
+<p>Find <span class="math inline">\(\displaystyle{{{z\over w}}}\)</span> if <span class="math inline">\(z=2-3i\)</span> and <span class="math inline">\(w=2+i\)</span>.</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p><span class="math display">\[\begin{aligned}
+{z\over w}={2-3i\over {2+i}}
+&amp;={(2-3i)\times (2-i)\over
+{(2+i)\times (2-i)}}\qquad \text{rationalising}\\&amp;={4-3+i(-6-2)\over
+{4+1}}\qquad \text{multiplying out}\qquad\qquad\qquad\qquad\qquad\qquad\\
+&amp;={1\over 5}-{8\over 5}i\qquad 
+\text{dividing through}\end{aligned}\]</span></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200617122231+LqBKz9</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210701120213+o6cmpO</text></tag>
+    </tags>
+    
+</question>
+</quiz>

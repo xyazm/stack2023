@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27337 -->
+  <question type="stack">
+    <name>
+				<text>38.1.1.5 The Cumulative Distribution Function</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h5>The Cumulative Distribution Function</h5>
+<p>Analogous to the formula for the cumulative distribution function:</p><p>&nbsp; &nbsp; &nbsp; &nbsp; \(F(x) = \displaystyle{\sum_{x_i \leq x}} \text{P}(X = x_i) \)</p><p>used in the case of a discrete random variable \(X\) with associated probabilities \(\text{P}(X = x_i)\), we define
+a <span><strong>cumulative probability distribution function </strong><span style="">(cdf)</span></span>&nbsp;\(F(x)\) by means of the integral (being a form of a
+sum):&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; \(F(x) = \displaystyle{\int_{-\infty}^x} f(t) \; dt \)</p><p>The cdf represents the probability of observing a value less than or equal to \(x\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200729102143+pvAct5</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211013113534+fBGtCt</text></tag>
+    </tags>
+    
+</question>
+</quiz>

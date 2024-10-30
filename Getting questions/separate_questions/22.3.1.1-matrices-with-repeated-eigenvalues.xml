@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26282">
+        <parent>0</parent>
+        <name>22.3.1.1 Matrices with repeated eigenvalues</name>
+        <questiontext>&lt;h3&gt;&lt;span style="color: inherit; font-family: inherit;"&gt;Matrices with repeated eigenvalues&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;So far we have considered the diagonalization of matrices with distinct (i.e. non-repeated) eigenvalues. We have accomplished this by the use of a &lt;strong&gt;non-singular&lt;/strong&gt; modal matrix \(P\) (i.e. one where \(\det P\neq 0\) and hence the inverse \(P^{-1}\) exists). We now want to discuss briefly the case of a matrix \(A\) with at least one pair of &lt;strong&gt;repeated eigenvalues&lt;/strong&gt;. We shall see that for some such matrices diagonalization is possible but for others it is not.&lt;/p&gt;
+&lt;p&gt;The crucial question is whether we can form a non-singular modal matrix \(P\) with the eigenvectors of \(A\) as its columns.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Consider the matrix
+\[ A=\left[\begin{array}{rc}1&amp;amp;0\\ -4&amp;amp;1\end{array}\right]\]
+which has characteristic equation
+\[ \det (A-\lambda I)=(1-\lambda)(1-\lambda)=0.\]
+So the only eigenvalue is \(1\) which is repeated or, more formally, has &lt;strong&gt;multiplicity&lt;/strong&gt; 2.&lt;/p&gt;
+&lt;p&gt;To obtain eigenvectors of \(A\) corresponding to \(\lambda=1\) we proceed as usual and solve
+\[ AX=1X\]
+or
+\[ \left[\begin{array}{rc}1&amp;amp;0\\ -4&amp;amp;1\end{array}\right]\left[\begin{array}{c} x\\ y\end{array}\right]= \left[\begin{array}{c}x\\ y\end{array}\right]\]
+implying
+\[ x=x\qquad \text{and} \qquad -4x+y=y\]
+from which \(x=0\) and \(y\) is arbitrary.&lt;/p&gt;
+&lt;p&gt;Thus possible eigenvectors are \(\qquad \left[\begin{array}{r}0\\-1\end{array}\right],\quad \left[\begin{array}{c}0\\ 1\end{array}\right],\quad \left[\begin{array}{c}0\\ 2\end{array}\right],\quad \left[\begin{array}{c}0\\ 3\end{array}\right]\quad\dots\)&lt;/p&gt;
+&lt;p&gt;However, if we attempt to form a modal matrix \(P\) from any two of these eigenvectors, e.g. \(\left[\begin{array}{r}0\\-1\end{array}\right]\)  and \(\left[\begin{array}{c}0\\1\end{array}\right]\) then the resulting matrix \(P=\left[\begin{array}{rc}0&amp;amp;0\\ -1&amp;amp;1\end{array}\right]\) has &lt;strong&gt;zero&lt;/strong&gt; determinant.&lt;/p&gt;
+&lt;p&gt;Thus \(P^{-1}\) &lt;strong&gt;does not exist&lt;/strong&gt; and the similarity transformation \(P^{-1}AP\) that we have used previously to diagonalize a matrix is not possible here. The essential point, at a slightly deeper level, is that the columns of \(P\) in this case are &lt;strong&gt;not linearly independent&lt;/strong&gt; since
+\[ \left[\begin{array}{r}0\\ -1\end{array}\right]=(-1)\left[\begin{array}{c}0\\ 1\end{array}\right]\]
+i.e. one is a multiple of the other.&lt;/p&gt;
+&lt;p&gt;This situation is to be contrasted with that of a matrix with non-repeated eigenvalues. Earlier, for example, we showed that the matrix
+\[ A=\left[\begin{array}{cc}2&amp;amp;3\\ 3&amp;amp;2\end{array}\right]\]
+has the non-repeated eigenvalues \(\lambda_1=-1,\ \lambda_2=5\) with associated eigenvectors
+\[ X_1=\left[\begin{array}{r}1\\-1\end{array}\right]\qquad\qquad X_2=\left[\begin{array}{c}1\\ 1\end{array}\right].\]
+These two eigenvectors &lt;strong&gt;are linearly independent&lt;/strong&gt;,
+since \(\left[\begin{array}{r}1\\-1\end{array}\right]\neq k\ \left[\begin{array}{c}1\\1\end{array}\right]\) for any value of \(k\ne 0\).&lt;/p&gt;
+&lt;p&gt;Here the modal matrix
+\[ P=\left[\begin{array}{rc}1&amp;amp;1\\ -1&amp;amp;1\end{array}\right]\]
+has linearly independent columns: so that \(\det P\neq 0\) and \(P^{-1}\) exists.&lt;/p&gt;
+&lt;p&gt;The general result, illustrated by this example, is given in the following Key Point.&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;Eigenvectors corresponding to distinct eigenvalues are always linearly independent.
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;It follows from this that we can &lt;strong&gt;always&lt;/strong&gt; diagonalize an \(n\times n\) matrix with \(n\) &lt;strong&gt;distinct&lt;/strong&gt; eigenvalues since it will possess \(n\) linearly independent eigenvectors. We can then use these as the columns of \(P\), secure in the knowledge that these columns will be linearly independent and hence \(P^{-1}\) will exist. It follows, in considering the case of repeated eigenvalues, that the key problem is whether or not there are still \(n\) linearly independent eigenvectors for an \(n\times n\) matrix.&lt;/p&gt;
+&lt;p&gt;We shall now consider two \(3\times 3\) cases as illustrations.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200624072048+IcbFur</stamp>
+        <version>stack2.maths.ed.ac.uk+200914191913+RKHg1E</version>
+        <hidden>0</hidden>
+        <timecreated>1592983248</timecreated>
+        <timemodified>1600111153</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

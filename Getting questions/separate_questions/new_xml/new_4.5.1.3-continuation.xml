@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26037 -->
+  <question type="stack">
+    <name>
+				<text>4.5.1.3 Continuation</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>Using \(x = R \cos \omega t\) this 'to and fro' or 'vibrational' or 'oscillatory' motion between \(R\) and \(-R\)&nbsp; continues indefinitely.&nbsp; The technical name for this motion is&nbsp; <b>simple harmonic</b>.&nbsp; To a good approximation it is the motion exhibited (i) by the end of a pendulum pulled through a small angle and then released (ii) by the end of a hanging spring pulled down and then released. See the Figure below (in these cases damping of the pendulum or spring is ignored).</p>
+<figure class="HELM_figure">
+<img src="@@PLUGINFILE@@/4-5-fig40.svg" alt="Fig40" class="atto_image_button_text-bottom" width="333" height="169">
+</figure>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200622125228+Y5YiuS</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210630122238+LGmS9P</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="33779">
+        <parent>0</parent>
+        <name>4.3.3 Find integral given areas of regions</name>
+        <questiontext>&lt;p&gt;Regions \(A\) and \(B\) are bounded by the graph of \(f\) and the \(x\)-axis, as&amp;nbsp;shown below.&lt;/p&gt;
+
+&lt;p style="text-align: center;"&gt;&lt;/p&gt;&lt;div style="margin-left:4em;margin-right:auto;"&gt;[[jsxgraph width='250px' height='200px']]
+  JXG.Options.axis.ticks.majorHeight = 10;
+  JXG.Options.axis.ticks.insertTicks = false;
+  JXG.Options.axis.ticks.ticksDistance = 200;
+  JXG.Options.text.fontSize = 16; 
+  var board = JXG.JSXGraph.initBoard(divid, {boundingbox: {#BB#}, axis: true, showCopyright: false, showNavigation:false});
+  var f = board.jc.snippet('{#poly#}', true, 'x', true);
+  var ff = board.create('functiongraph', [f,{#ev(a-0.5)#},{#ev(c+0.5)#}],{strokeColor:'#003399',strokeWidth:2});
+  var i1 = board.create('integral', [{#[a,c]#}, ff], {fillColor:'#003399',fillOpacity:0.15});
+  i1.curveLeft.setAttribute({visible:false}); /* hide the gliders */
+  i1.curveRight.setAttribute({visible:false});
+  i1.label.setAttribute({visible:false});
+  var ptlabA = board.create('point',{#[a+1,1.2]#}, {name:'A',size:0,fixed:true, label: { offset: [0, 0],anchorX: 'middle', anchorY: 'middle' }});
+  var ptlabB = board.create('point',{#[c-0.5,1.2]#}, {name:'B',size:0,fixed:true, label: { offset: [0, 0],anchorX: 'middle', anchorY: 'middle' }});
+  var xaxis = board.create('axis', [[0,0],[1,0]]);
+  board.create('ticks', [xaxis, {#[a,b,c]#}], {strokeColor: '#003399', majorHeight:15, drawLabels: true, label: { offset: [0, -10],anchorX: 'middle', anchorY: 'top' }});
+[[/jsxgraph]]&lt;/div&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Region \(A\) has area {@A@} and region \(B\) has area {@B@}.&lt;br&gt;&lt;/p&gt;&lt;p&gt;Find the value of \(\displaystyle\int_{@a@}^{@c@}\left(f(x)+{@lin@}\right)\,dx\)&lt;/p&gt;&lt;p&gt;[[input:ans1]] [[validation:ans1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;First, we can break the integral up:&lt;/p&gt;&lt;p&gt;\[\begin{align*} \int_{@a@}^{@c@}\left(f(x)+{@lin@}\right)\,dx &amp;amp;= \int_{@a@}^{@c@}f(x)\,dx+&amp;nbsp;\int_{@a@}^{@c@}\left({@lin@}\right)\,dx&amp;nbsp;\end{align*}\]&lt;br&gt;&lt;/p&gt;&lt;p&gt;From the facts given in the question, we know \(\displaystyle\int_{@a@}^{@c@}f(x)\,dx={@A@}+{@B@}={@A+B@}\).&lt;/p&gt;&lt;p&gt;Next, we calculate the definite integral:&lt;/p&gt;&lt;p&gt;\[&amp;nbsp;\begin{align*}\int_{@a@}^{@c@}\left({@lin@}\right)\,dx&amp;nbsp;&amp;amp;= \left[{@integrate(lin,x)@}\right]_{@a@}^{@c@} \\ &amp;amp;= {@linIntegral@} \end{align*}\]&lt;/p&gt;&lt;p&gt;Thus&amp;nbsp;\(\displaystyle\int_{@a@}^{@c@}\left(f(x)+{@lin@}\right)\,dx={@A+B@}+{@linIntegral@}={@ta1@}\).&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210622102733+8l5fYo</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210622102733+iU9Y2g</version>
+        <hidden>0</hidden>
+        <timecreated>1624357653</timecreated>
+        <timemodified>1624357653</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="23469">
+            <stackversion>2018080600</stackversion>
+            <questionvariables>makeratio(a,b,c):=(r1:integrate((x-a)*(x-b)^2,x,a,b),r2:integrate((x-a)*(x-b)^2,x,b,c),[r1/r2,[a,b,c],r1,r2]);
+/* finding a,b,c which give nice ratios:
+allposs:create_list (makeratio(a,b,c), a, [-4,-3,-2,-1], b, a+2, 3, c, b+1,b+3);
+niceones:sublist(allposs,lambda([ex],is(ex[1]=16/11 or ex[1]=9/16)));
+niceabc:maplist(second,niceones);
+*/
+niceabc:[[-4,-2,-1],[-4,-1,1],[-4,0,2],[-4,2,5],[-3,-1,0],[-3,0,2],[-3,1,3],[-3,3,6],[-2,0,1],[-2,1,3],[-2,2,4],[-1,1,2],[-1,2,4],[-1,3,5]];
+[a,b,c]:rand(niceabc);
+poly:(x-a)*(x-b)^2;
+lin:2*x+rand_range(-2*a,10);
+areaRatio:makeratio(a,b,c)[1];
+Atrue:num(areaRatio);
+Btrue:denom(areaRatio);
+A:rand_range(Atrue-2,Atrue+2);
+B:rand_range(Btrue-2,Btrue+2);
+linIntegral:integrate(lin,x,a,c);
+ta1:A+B+linIntegral
+
+/*jsxgraph settings */
+BBx:[a-1,c+1];
+BBy:[ev(poly,[x=b])+1,ev(poly,[x=c])+1,-1];
+BBy:append(BBy,[-lmax(BBy)/6]);
+BB:[lmin(BBx),lmax(BBy),lmax(BBx),lmin(BBy)];</questionvariables>
+            <specificfeedback>[[feedback:prt1]]</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>{#[a,b,c]#} \(\displaystyle\int_{@a@}^{@c@}\left(f(x)+{@lin@}\right)\,dx={@A+B@}+{@linIntegral@}={@ta1@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="54255">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta1</tans>
+              <boxsize>7</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>5</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>1</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="46504">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="71543">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="54309">
+              <testcase>1</testcase>
+              <timemodified>1624357653</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="117847">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100521">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="235230">
+              <seed>292993750</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235231">
+              <seed>968908093</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235232">
+              <seed>1203839556</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235233">
+              <seed>501606466</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235234">
+              <seed>1841259575</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235235">
+              <seed>1359102862</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235236">
+              <seed>1296538940</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235237">
+              <seed>1508833108</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="235238">
+              <seed>1468629444</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+          <tag id="1" contextid="10325">
+            <name>jsxgraph</name>
+            <rawname>jsxgraph</rawname>
+          </tag>
+        </tags>
+      </question>
+      
+
+</quiz>

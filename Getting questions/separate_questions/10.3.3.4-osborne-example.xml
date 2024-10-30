@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26769">
+        <parent>0</parent>
+        <name>10.3.3.4 Osborne example</name>
+        <questiontext>&lt;h4&gt;Feedback applied to an amplifier&lt;/h4&gt;
+
+&lt;p&gt;Feedback is applied to an amplifier such that &lt;span class="math inline"&gt;\[\qquad A'=\dfrac{A}{1-\beta A}\]&lt;/span&gt;&amp;nbsp;where
+
+    &lt;span class="math inline"&gt;\(A', A\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\beta\)&lt;/span&gt; are complex quantities.
+
+    &lt;span class="math inline"&gt;\(A\)&lt;/span&gt; is the amplifier gain, &lt;span class="math inline"&gt;\(A'\)&lt;/span&gt; is the gain with feedback and
+
+    &lt;span class="math inline"&gt;\(\beta\)&lt;/span&gt; is the proportion of the output which has been fed back.&lt;/p&gt;
+
+&lt;figure class="HELM_figure"&gt;&lt;img src="@@PLUGINFILE@@/look%20svg.svg" alt="Diagram of amplifier with feedback" width="369" height="176" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;
+    &lt;figcaption&gt;An amplifier with feedback&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ol class="HELM_parts"&gt;
+
+    &lt;li&gt;If at 30 Hz, &lt;span class="math inline"&gt;\(A=-500\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\beta=0.005e^{8\pi i /9}\)&lt;/span&gt;, calculate &lt;span class="math inline"&gt;\(A'\)&lt;/span&gt; in exponential form.&lt;/li&gt;
+
+    &lt;li&gt;At a particular frequency it is desired to have &lt;span class="math inline"&gt;\(A'=300e^{5\pi i /9}\)&lt;/span&gt; where it is known that &lt;span class="math inline"&gt;\(A=400e^{11\pi i /18}\)&lt;/span&gt;. Find the value of &lt;span class="math inline"&gt;\(\beta\)&lt;/span&gt;        necessary to achieve this gain modification.&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Mathematical statement of the problem&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+
+    &lt;li&gt; Substitute
+
+        &lt;span class="math inline"&gt;\(A=-500\)&lt;/span&gt; and &lt;span class="math inline"&gt;\(\beta=0.005e^{8\pi i /9}\)&lt;/span&gt; into
+
+        &lt;span class="math inline"&gt;\(A'=\dfrac{A}{1-\beta A}\)&lt;/span&gt; in order to find &lt;span class="math inline"&gt;\(A'\)&lt;/span&gt;.&lt;/li&gt;
+
+    &lt;li&gt; We need to solve for &lt;span class="math inline"&gt;\(\beta\)&lt;/span&gt; when &lt;span class="math inline"&gt;\(A'=300e^{5\pi i /9}\)&lt;/span&gt; and
+
+        &lt;span class="math inline"&gt;\(A=400e^{11\pi i /18}\)&lt;/span&gt;.&lt;/li&gt;
+
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Mathematical analysis&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol class="HELM_parts"&gt;
+
+    &lt;li&gt;&lt;span class="math inline"&gt;We have \[A'=\dfrac{A}{1-\beta A}=\dfrac{-500}{1-0.005e^{8\pi i /9}\times (-500)}=\dfrac{-500}{1+2.5e^{8\pi i /9}}\]&lt;/span&gt;&amp;nbsp;Expressing the bottom line of this expression in Cartesian form this becomes:
+
+        &lt;span class="math inline"&gt;\[\qquad A'=\dfrac{-500}{1+2.5\cos\left(\dfrac{8\pi}{9}\right)+2.5i\sin\left(\dfrac{8\pi}{9}\right)}\approx \dfrac{-500}{-1.349+0.855i}\]&lt;/span&gt;&amp;nbsp;Expressing both the top and bottom lines in exponential form we get:
+
+        &lt;span class="math inline"&gt;\[\qquad A'\approx\dfrac{500e^{i\pi}}{1.597e^{i 2.576}}\approx 313e^{0.566i}\]&lt;/span&gt;&lt;/li&gt;
+
+    &lt;li&gt;&lt;span class="math inline"&gt;We have \[A'=\dfrac{A}{1-\beta A}\rightarrow A'(1-\beta A)=A\rightarrow
+
+-\beta AA'=A-A'\] and &lt;/span&gt;&lt;span class="math inline"&gt;\[\text{i.e.}\qquad \beta=\dfrac{A'-A}{AA'}\rightarrow\beta=\dfrac{1}{A}-\dfrac{1}{A'}\]&lt;/span&gt;&amp;nbsp;So
+
+        &lt;span class="math inline"&gt;\[\beta=\dfrac{1}{A}-\dfrac{1}{A'}=\dfrac{1}{400e^{11\pi i /18}}-\dfrac{1}{300e^{5\pi i /9}}\approx 0.0025e^{-11\pi i/18}-0.00333e^{-5\pi i /9}\]&lt;/span&gt;&amp;nbsp;Expressing both complex numbers in Cartesian form gives
+
+        &lt;span class="math inline"&gt;\[\beta = 0.0025\cos\left(-\dfrac{11\pi}{18}\right)+0.0025i\sin \left(-\dfrac{11\pi}{18}\right)\] \[\qquad-0.00333\cos \left(-\dfrac{5\pi}{9}\right)-0.00333i\sin \left(-\dfrac{5\pi}{9}\right)\] \[=-2.768\times 10^{-4}+9.3017\times 10^{-4}i=9.7048\times 10^{-4}e^{1.86i}\]&lt;/span&gt;&amp;nbsp;So
+        to 3 significant figures &lt;span class="math inline"&gt;\(\beta=9.70\times 10^{-4}e^{1.86i}\)&lt;/span&gt;&lt;/li&gt;
+
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200911145750+jfNT4r</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210913222308+kq7ZYV</version>
+        <hidden>0</hidden>
+        <timecreated>1599836270</timecreated>
+        <timemodified>1631571788</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+    
+
+</quiz>

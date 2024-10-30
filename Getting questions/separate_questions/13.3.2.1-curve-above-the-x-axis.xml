@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24521">
+        <parent>0</parent>
+        <name>13.3.2.1 Curve above the x-axis</name>
+        <questiontext>&lt;h3&gt;&lt;span&gt;The area bounded by a curve lying above the x-axis&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;
+
+&lt;p&gt;Consider the graph of the function \(y=f(x)\) shown in the figure below. Suppose we are interested in calculating the area underneath the graph and above the \(x\)-axis, between the points where \(x=a\) and \(x=b\). When such an area lies entirely above
+    the \(x\)-axis, as is clearly the case here, this area is given by the definite integral \({\displaystyle\int_a^b f(x)\ \mathrm{d}x}\).&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/13.3.2.1%20Area%20under%20curve.svg" alt="" width="295" height="123" role="presentation" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+    &lt;h4&gt;Key Point&lt;/h4&gt;
+    &lt;p&gt;The area under the curve \(y=f(x)\), between \(x=a\) and \(x=b\) is given by \({\displaystyle\int_a^b f(x)\ \mathrm{d}x}\) when the curve lies entirely above the \(x\) axis between \(a\) and \(b\) .&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt;Calculate the area bounded \(y=x^{-1}\) and the \(x\)-axis, between \(x=1\) and \(x=4\).&lt;/p&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt;Below is a graph of \(y=x^{-1}\). The area required is shaded; it lies entirely above the \(x\)-axis.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/13.3.2.2%20Example.svg" alt="Area under the curve y = 1/x between 1 and 4" width="345" height="115" class="img-responsive atto_image_button_text-bottom"&gt;&lt;br&gt;&lt;/p&gt;
+
+\({\displaystyle\int_1^4 \dfrac{1}{x}\ \mathrm{d}x}=\bigg[ln |x|\bigg]_1^4= \ln 4 - \ln 1 = \ln 4= 1.386\) (\(3\) d.p.)
+
+&lt;br&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200730115254+HYUm4n</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210628181952+nLdTBI</version>
+        <hidden>0</hidden>
+        <timecreated>1596109974</timecreated>
+        <timemodified>1624904392</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

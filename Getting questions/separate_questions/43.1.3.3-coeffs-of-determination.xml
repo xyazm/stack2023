@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62155">
+        <parent>0</parent>
+        <name>43.1.3.3 Coeffs of determination</name>
+        <questiontext>&lt;h3&gt;The coefficient of determination&lt;/h3&gt;
+
+Denoted by \(R^2\) , the Coefficient of Determination is defined by the formula
+\[ R^2 = 1 - \dfrac{SS_E}{SS_T}, \]
+where \( SS_E \) is the sum of the squares of the errors and \(SS_T\) is the sum of the squares of the totals
+given by \( \sum \left( y_i - \hat{y}_i \right) ^2 =&amp;nbsp;&amp;nbsp;\sum y_i^2 - n\bar{y}^2 \). The value of \(R^2\) is sometimes described as representing the amount of variability explained or accounted for by a regression model. For example, if after a particular calculation it was found that \(R^2 = 0.884\), we could say that the model accounts for about \(88%\) of the variability found in the data. However, deductions made on the basis of the value of
+\(R^2\) should be treated cautiously, the reasons for this are embedded in the following properties of the
+statistic. It can be shown that&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;\( 0 \leq R^2 \leq 1 \)&lt;/li&gt;&lt;li&gt;a large value of \(R^2\) does not necessarily imply that a model is a good fit;&lt;br&gt;&lt;/li&gt;&lt;li&gt;adding a regressor variable (simple regression becomes multiple regression) &lt;i&gt;always &lt;/i&gt;increases the value of \(R^2\). This is one reason why a large value of \(R^2\) does not necessarily imply a good model;&lt;/li&gt;&lt;li&gt;models giving large values of \(R^2\) can be poor predictors of new values if the fitted model does not apply at the appropriate \(x\)-value.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Finally, it is worth noting that to check the fit of a linear model properly, one should look at plots of residual values. In some cases, tests of goodness-of-fit are available although this topic is not covered here.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704130654+EjHP46</stamp>
+        <version>stack2.maths.ed.ac.uk+200715053925+JunhGi</version>
+        <hidden>0</hidden>
+        <timecreated>1593868014</timecreated>
+        <timemodified>1594791565</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

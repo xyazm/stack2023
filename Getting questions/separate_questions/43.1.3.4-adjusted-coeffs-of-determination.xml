@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62156">
+        <parent>0</parent>
+        <name>43.1.3.4 Adjusted Coeffs of determination</name>
+        <questiontext>&lt;h3&gt;The adjusted coefficient of determination&lt;/h3&gt;
+
+Denoted (often) by \(R^2_{adj}\), the Adjusted Coefficient of Determination is defined as
+\[ R^2_{adj} = 1 - \dfrac{SS_E/(n-p)}{SS_T/(n-1)}, \]
+where \(p\) is the number of variables in the regression equation. For the simple linear model, \(p = 2\) since we have two unknown parameters in the regression equation, the intercept \(c\) and the coefficient \(m\) of \(x\). It can be shown that:&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt; \(R^2_{adj}\) is a better indicator of the adequacy of predictive power than \(R^2\) since it takes into account the number of regressor variables used in the model;&lt;/li&gt;&lt;li&gt;  \(R^2_{adj}\) does not necessarily increase when a new regressor variable is added.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Both coefficients claim to measure the adequacy of the predictive power of a regression model and their values indicate the proportion of variability explained by the model. For example a value of
+\[ R^2 \text{   or   } R^2_{adj} = 0.9751 \]
+may be interpreted as indicating that a model explains \(97.51\%\) of the variability it describes. For
+example, the drum and cable example considered previously gives the results outlined below with
+\[ R^2 = 96.2 \text{   and   } R^2_{adj} = 0.958. \]&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+In general, \(R^2_{adj}\) is (perhaps) more useful than \(R^2\) for comparing alternative models. In the context of a simple linear model, \(R^2\) is easier to interpret. In the drum and cable example we would claim that the linear model explains some \(96.2\%\) of the variation it describes.&lt;table style="height: 388px;" border="1" width="469"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&lt;b&gt;Drum &amp;amp; Cable \( (x) \)&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&lt;b&gt;\( (x^2) \)&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&lt;b&gt;Cable Length \( (y)\)&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&lt;b&gt;\( y^2 \)&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&lt;b&gt;\( xy \)&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&lt;b&gt;Predicted Values&lt;/b&gt;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&lt;b&gt;Error Squares&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;30&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;900&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;70&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;4900&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;2100&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;70&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;40&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;1600&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;90&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;8100&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;3600&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;40&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;1600&amp;nbsp; &amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;10000&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;4000&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;50&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;2500&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;120&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;14400&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;6000&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;130&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;50&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;2500&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;130&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;16900&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;6500&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;130&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;50&amp;nbsp; &amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;2500&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;150&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;22500&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;7500&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;130&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;400.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;60&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;3600&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;160&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;25600&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;9600&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;160&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;70&amp;nbsp; &amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;4900&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;190&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;36100&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;1330&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;190&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;70&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;4900&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;200&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;40000&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;14000&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;190&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;80&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;6400&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;200&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;40000&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;16000&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;220&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;400.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;80&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;6400&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;220&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;48400&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;17600&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;220&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;0.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;80&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;6400&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;230&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;52900&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;18400&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;220&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;100.00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;Sum of \(x\)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;Sum of \(x^2\)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;Sum of \(y\)&amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;Sum of \(y^2\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;Sum of \(xy\)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(SS_E \)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;\(= 700\)&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;\(= 44200\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(= 1860\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(= 319800\)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(= 118600\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\( = 1200.00\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;\( b = 3\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;\( a = -20\)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(SS_E = \)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\( R^2 = \)&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(R^2_{adj} = \)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 59.3333px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(31500\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(0.962\)&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td style="text-align: center; width: 60.6667px;"&gt;\(0.958\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200704131331+pNcB6H</stamp>
+        <version>stack2.maths.ed.ac.uk+200715053951+X5UgQY</version>
+        <hidden>0</hidden>
+        <timecreated>1593868411</timecreated>
+        <timemodified>1594791591</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

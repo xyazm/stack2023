@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 62159 -->
+  <question type="stack">
+    <name>
+				<text>43.1.5.1 Regression Curves</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Regression Curves</h3>
+
+The Section should be regarded as introductory only. The reason for including non-linear regression is to demonstrate how the method of least squares can be extended to deal with cases where the relationship between variables is, for example, quadratic or exponential.<p><br></p><p>A regression curve is defined to be the curve passing through the expected value of \(Y\) for a set of
+given values of \(x\). The idea is illustrated by the following diagram.</p><p><br></p><p><img src="@@PLUGINFILE@@/43-Fig-6-non-linear-regression.svg" alt="" width="575" height="277" role="presentation" class="img-responsive atto_image_button_text-bottom"><br></p><p><br></p><p>We will look at the quadratic and exponential cases in a little detail..<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200704150519+dK1vGi</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200715054201+BMPLtq</text></tag>
+    </tags>
+    
+</question>
+</quiz>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26732 -->
+  <question type="stack">
+    <name>
+				<text>10.2.1.3 Argand Diagram</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p>If we have two complex numbers <span class="math inline">\(z=a+i b\)</span>, <span class="math inline">\(w=c+i d\)</span> then, as we already know <span class="math inline">\( z+w=(a+c)+i(b+d)\)</span> that is, the real parts add together and the imaginary
+    parts add together. But this is precisely what occurs with the addition of two <span><strong>vectors,</strong> which we will cover elsewhere but the process is quite natural<strong>.&nbsp;</strong></span></p>
+<p>If <span class="math inline">\(\underline{p}\)</span> and <span class="math inline">\(\underline{q}\)</span> are 2-dimensional vectors then: <span class="math inline">\[
+\underline{p}=a \underline{i}+b \underline{j}\qquad \underline{q}=c \underline{i}+d \underline{j}\]</span> where <span class="math inline">\(\underline{i}\)</span> and <span class="math inline">\(\underline{j}\)</span> are unit vectors in the <span class="math inline">\(x\)</span>-
+    and <span class="math inline">\(y\)</span>-directions respectively. So, using vector addition: <span class="math inline">\[\underline{p}+\underline{q}=(a+c) \underline{i}+(b+d) \underline{j}\]</span>&nbsp;</p>
+<figure class="HELM_figure"><img src="@@PLUGINFILE@@/10.2-fig2-complex_addition.svg" alt="" width="432" height="201" class="img-responsive atto_image_button_text-bottom">
+</figure>
+<p><br></p>
+<p>We conclude from this that addition (and hence subtraction) of complex numbers is essentially equivalent to addition (subtraction) of two-dimensional vectors.&nbsp;</p>
+<p>Because of this, complex numbers (when represented on an Argand diagram) are <strong>slidable</strong> — as long as you keep their length and direction the same, you can position them anywhere on an Argand diagram. We see that the Cartesian form of a
+    complex number: <span class="math inline">\(z=a+i b\)</span> is a particularly suitable form for addition (or subtraction) of complex numbers. However, when we come to consider multiplication and division of complex numbers, the Cartesian description
+    is not the most convenient form that is available to us. A much more convenient form is the polar form which we now introduce.<br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200629104837+EAZwaO</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210701150538+2uyvGH</text></tag>
+    </tags>
+    
+</question>
+</quiz>

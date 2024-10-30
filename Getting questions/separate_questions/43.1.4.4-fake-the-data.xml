@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62163">
+        <parent>0</parent>
+        <name>43.1.4.4 fake the data</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;A corrupt scientist is determined to to have everyone believe their theory that the relationship between the length of an octopus and the number of fish it eats in a \(24\) hour period is a simple linear model.&lt;/p&gt;&lt;p&gt;Unfortunately the data collected show that this is not the case.&lt;/p&gt; &lt;p&gt;Help the scientist manipulate the data in order to fool everyone that it does satisfy a linear model.&lt;/p&gt;
+
+&lt;table border="1"&gt;&lt;caption&gt;&amp;nbsp;&lt;/caption&gt;&lt;thead&gt;&lt;tr&gt;&lt;th scope="col"&gt;Length of octopus (cm)&lt;/th&gt;&lt;th scope="col"&gt;Number of fish eaten in a \(24\) hour period&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans1]] [[validation:ans1]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns1]] [[validation:bns1]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans2]] [[validation:ans2]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns2]] [[validation:bns2]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans3]] [[validation:ans3]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns3]] [[validation:bns3]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans4]] [[validation:ans4]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns4]] [[validation:bns4]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans5]] [[validation:ans5]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns5]] [[validation:bns5]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans6]] [[validation:ans6]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns6]] [[validation:bns6]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans7]] [[validation:ans7]]&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns7]] [[validation:bns7]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans8]] [[validation:ans8]]&lt;br&gt;&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns8]] [[validation:bns8]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans9]] [[validation:ans9]]&lt;br&gt;&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns9]] [[validation:bns9]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans10]] [[validation:ans10]]&lt;br&gt;&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns10]] [[validation:bns10]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans11]] [[validation:ans11]]&lt;br&gt;&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns11]] [[validation:bns11]]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="text-align: center;"&gt;[[input:ans12]] [[validation:ans12]]&lt;br&gt;&lt;/td&gt;&lt;td style="text-align: center;"&gt;[[input:bns12]] [[validation:bns12]]&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200714104525+VDBoTu</stamp>
+        <version>stack2.maths.ed.ac.uk+200715054111+t7DEvx</version>
+        <hidden>0</hidden>
+        <timecreated>1594723525</timecreated>
+        <timemodified>1594791671</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="40679">
+            <stackversion>2020070100</stackversion>
+            <questionvariables>rows: 12;
+criticalF: 241.9 /**from table for sig.05, df 1,10**/</questionvariables>
+            <specificfeedback>[[feedback:bns12]]&lt;br&gt;</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>no rand</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="99073">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>8</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99074">
+              <name>ans10</name>
+              <type>numerical</type>
+              <tans>ta10</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>20</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99075">
+              <name>ans11</name>
+              <type>numerical</type>
+              <tans>ta11</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>21</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99076">
+              <name>ans12</name>
+              <type>numerical</type>
+              <tans>ta12</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>35</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99077">
+              <name>ans2</name>
+              <type>numerical</type>
+              <tans>ta2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>9</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99078">
+              <name>ans3</name>
+              <type>numerical</type>
+              <tans>ta3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>11</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99079">
+              <name>ans4</name>
+              <type>numerical</type>
+              <tans>ta4</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>11</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99080">
+              <name>ans5</name>
+              <type>numerical</type>
+              <tans>ta5</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>13</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99081">
+              <name>ans6</name>
+              <type>numerical</type>
+              <tans>ta6</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>15</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99082">
+              <name>ans7</name>
+              <type>numerical</type>
+              <tans>ta7</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>15</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99083">
+              <name>ans8</name>
+              <type>numerical</type>
+              <tans>ta8</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>17</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99084">
+              <name>ans9</name>
+              <type>numerical</type>
+              <tans>ta9</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>20</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99085">
+              <name>bns1</name>
+              <type>numerical</type>
+              <tans>tb1</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>2</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99086">
+              <name>bns10</name>
+              <type>numerical</type>
+              <tans>tb10</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>4</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99087">
+              <name>bns11</name>
+              <type>numerical</type>
+              <tans>tb11</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>4</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99088">
+              <name>bns12</name>
+              <type>numerical</type>
+              <tans>tb12</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>6</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99089">
+              <name>bns2</name>
+              <type>numerical</type>
+              <tans>tb2</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>3</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99090">
+              <name>bns3</name>
+              <type>numerical</type>
+              <tans>tb3</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>2</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99091">
+              <name>bns4</name>
+              <type>numerical</type>
+              <tans>tb4</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>5</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99092">
+              <name>bns5</name>
+              <type>numerical</type>
+              <tans>tb5</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>3</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99093">
+              <name>bns6</name>
+              <type>numerical</type>
+              <tans>tb6</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>1</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99094">
+              <name>bns7</name>
+              <type>numerical</type>
+              <tans>tb7</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>3</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99095">
+              <name>bns8</name>
+              <type>numerical</type>
+              <tans>tb8</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>1</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+            <stackinput id="99096">
+              <name>bns9</name>
+              <type>numerical</type>
+              <tans>tb9</tans>
+              <boxsize>5</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint>2</syntaxhint>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords/>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>0</mustverify>
+              <showvalidation>0</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="86410">
+              <name>bns12</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables>/**calculate SSt**/
+sumysquared: bns1^2+bns2^2+bns3^2+bns4^2+bns5^2+bns6^2+bns7^2+bns8^2+bns9^2+bns10^2+bns11^2+bns12^2;
+sumy: bns1+bns2+bns3+bns4+bns5+bns6+bns7+bns8+bns9+bns10+bns11+bns12;
+meany: sumy/rows;
+SSt: sumysquared - rows*meany^2;
+
+/**calculate a and b in y=a+bx**/
+sumx: ans1+ans2+ans3+ans4+ans5+ans6+ans7+ans8+ans9+ans10+ans11+ans12;
+meanx: sumx/rows;
+sumxsquared: ans1^2+ans2^2+ans3^2+ans4^2+ans5^2+ans6^2+ans7^2+ans8^2+ans9^2+ans10^2+ans11^2+ans12^2;
+sumxy: ans1*bns1+ans2*bns2+ans3*bns3+ans4*bns4+ans5*bns5+ans6*bns6+ans7*bns7+ans8*bns8+ans9*bns9+ans10*bns10+ans11*bns11+ans12*bns12;
+b: ((sumxy/rows)-(sumx/rows)*(sumy/rows))/((sumxsquared/rows)-(sumx/rows)^2);
+a: meany-b*meanx;
+
+/**get predicted values**/
+prd1: a+b*ans1;
+prd2: a+b*ans2;
+prd3: a+b*ans3;
+prd4: a+b*ans4;
+prd5: a+b*ans5;
+prd6: a+b*ans6;
+prd7: a+b*ans7;
+prd8: a+b*ans8;
+prd9: a+b*ans9;
+prd10: a+b*ans10;
+prd11: a+b*ans11;
+prd12: a+b*ans12;
+
+/** get error squares**/
+SSe: (bns1-prd1)^2+(bns2-prd2)^2+(bns3-prd3)^2+(bns4-prd4)^2+(bns5-prd5)^2+(bns6-prd6)^2+(bns7-prd7)^2+(bns8-prd8)^2+(bns9-prd9)^2+(bns10-prd10)^2+(bns11-prd11)^2+(bns12-prd12)^2;
+
+/**finally the values we actually want**/
+SSr:  SSt - SSe;
+Ftest: decimalplaces(float(SSr/(SSe/(rows-2))),1);
+</feedbackvariables>
+              <stackprtnodes>
+                <stackprtnode id="127832">
+                  <nodename>0</nodename>
+                  <answertest>GT</answertest>
+                  <sans>Ftest</sans>
+                  <tans>criticalF</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>bns12-1-T</trueanswernote>
+                  <truefeedback>&lt;p&gt;The test statistic for the data you have faked is 
+&lt;/p&gt;
+&lt;p&gt;\(F_{test} = {@Ftest@}\) which, looking it up in a table, is above the critical value \(f_{0.05,1,10} = 241.9.\)&lt;/p&gt;
+&lt;p&gt;So well done, the simple linear model is appropriate, and you have helped the scientist contribute to fake news.&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>bns12-1-F</falseanswernote>
+                  <falsefeedback>&lt;p&gt;The test statistic for the data you have faked is 
+&lt;/p&gt;
+&lt;p&gt;\(F_{test} = {@Ftest@}\) which, looking it up in a table, is not above the critical value \(f_{0.05,1,10} = 241.9.\)&lt;/p&gt;
+&lt;p&gt;Therefore, the simple linear model is not appropriate for these data. Please try again&lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+          </stackqtests>
+          <stackdeployedseeds>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

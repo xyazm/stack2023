@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26580">
+        <parent>0</parent>
+        <name>8.2.1.5 Exercise 1 2x2 linear system inverse matrix method</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt; Solve the following linear system of equations using the inverse matrix method:
+&lt;span class="math display"&gt;\[\begin{matrix}
+{@a@} x_1 &amp;amp; + &amp;amp; {@b@} x_2 &amp;amp; = &amp;amp; {@y[1, 1]@} \\
+{@c@} x_1 &amp;amp; + &amp;amp; {@d@} x_2 &amp;amp; = &amp;amp; {@y[2, 1]@} \\
+\end{matrix}\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;div&gt; \(x =\) [[input:ans1]] [[validation:ans1]] &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We first check if \(A \) is invertible by, for instance, computing the determinant. Since \[ \det A = {@determinant(A)@} \neq 0, \] A is invertible. From the equation \(Ax = b\), since \(A \) is invertible, we can obtain the solution using \(x = A^{-1}Ax
+    = A^{-1}b\).&lt;/p&gt;
+&lt;p&gt;We compute \(A^{-1} = {@Ainv@}\).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;Finally we find \(x = A^{-1}b = {@Ainv@}\times {@y@}={@ta1@}\).&amp;nbsp;&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200622092944+8BBZWZ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630131834+iV8PTZ</version>
+        <hidden>0</hidden>
+        <timecreated>1592818184</timecreated>
+        <timemodified>1625059114</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="17981">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>y : matrix([rand(5)+1], [rand(5)+1]);
+a : rand(5) + 2;
+b : rand(5) + 2;
+c : rand(5) + 2;
+d : rand(5) + 2;
+A : matrix([a,b],[c, d]);
+Ainv : invert(A);
+ta1 : Ainv . y;
+</questionvariables>
+            <specificfeedback>&lt;p&gt;[[feedback:Result]]&lt;/p&gt;</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\[\begin{matrix} {@a@} x_1 &amp; + &amp; {@b@} x_2 &amp; = &amp; {@y[1, 1]@} \\ {@c@} x_1 &amp; + &amp; {@d@} x_2 &amp; = &amp; {@y[2, 1]@} \\ \end{matrix}, \quad x={@ta1@}\]</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;p&gt;&lt;span class="correct"&gt;Correct answer, well done.&lt;/span&gt;&lt;/p&gt;</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;p&gt;&lt;span class="partially"&gt;Your answer is partially correct.&lt;/span&gt;&lt;/p&gt;</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;p&gt;&lt;span class="incorrect"&gt;Incorrect answer.&lt;/span&gt;&lt;/p&gt;</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="42347">
+              <name>ans1</name>
+              <type>matrix</type>
+              <tans>ta1</tans>
+              <boxsize>10</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>determinant,invert</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>1</requirelowestterms>
+              <checkanswertype>1</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="36738">
+              <name>Result</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="54870">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta1</tans>
+                  <testoptions/>
+                  <quiet>1</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>0.0000000</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>Result-0-T </trueanswernote>
+                  <truefeedback>&lt;p&gt;Your answer is correct, well done!&lt;/p&gt;</truefeedback>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>Result-0-F </falseanswernote>
+                  <falsefeedback>&lt;p&gt;Your answer doesn't satisfy the linear system of equations. Indeed, at least one of the equations \[ {@a@} x_1 + {@b@} x_2 = {@a@} \cdot ({@ans1[1][1]@}) + {@b@} \cdot ({@ans1[2][1]@}) = {@y[1][1]@} \] or
+\[ {@c@} x_1 + {@d@} x_2 = {@c@} \cdot ({@ans1[1][1]@}) + {@d@} \cdot ({@ans1[2][1]@}) = {@y[2][1]@} \] is not satisfied. &lt;/p&gt;</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="41429">
+              <testcase>1</testcase>
+              <timemodified>1592818184</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="89976">
+                  <inputname>ans1</inputname>
+                  <value>ta1</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="78113">
+                  <prtname>Result</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>Result-0-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="41430">
+              <testcase>2</testcase>
+              <timemodified>1625059092</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="118128">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta1*2,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="100748">
+                  <prtname>Result</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>Result-0-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="175211">
+              <seed>1583119429</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175212">
+              <seed>515163712</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175213">
+              <seed>165882995</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175214">
+              <seed>49945630</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175215">
+              <seed>1411181967</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175216">
+              <seed>332387096</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175217">
+              <seed>1976379294</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175218">
+              <seed>1628336970</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175219">
+              <seed>655334240</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="175220">
+              <seed>1090183477</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

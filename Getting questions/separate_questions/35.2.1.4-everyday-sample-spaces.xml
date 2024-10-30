@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27198">
+        <parent>0</parent>
+        <name>35.2.1.4 Everyday sample spaces</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Example&lt;/h4&gt;
+&lt;p&gt; For the following list of experiments, list (if possible) a suitable sample space. If you cannot write out a suitable sample space, describe one in words. &lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt; Test a light switch &lt;/li&gt;
+&lt;li&gt; Count the daily traffic accidents in Loughborough involving cyclists &lt;/li&gt;
+&lt;li&gt; Measure the tensile strength of small gauge steel wire &lt;/li&gt;
+&lt;li&gt; Test the maximum current carrying capacity of household mains cabling &lt;/li&gt;
+&lt;li&gt; Test the number of on-off switchings that a new type of fluorescent tube will cope with before failure &lt;/li&gt;
+&lt;li&gt; Pressure test an underwater TV camera. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+&lt;p&gt; Sample spaces might be &lt;/p&gt;
+&lt;ol class="HELM_parts"&gt;
+&lt;li&gt; \(\{\)works, fails\(\}\) &lt;/li&gt;
+&lt;li&gt; \(\{0,1, 2, 3, \dots \}\), hopefully a small upper limit! &lt;/li&gt;
+&lt;li&gt;\(\{\) Positive continuous range \((0, \infty)\)\(\}\) or \(\{\)Suitable bounded continuous interval depending on the wire or measuring device\(\}\) &lt;/li&gt;
+&lt;li&gt; \(\{\) Positive continuous range \((0, \infty)\)\(\}\) or \(\{\)Suitable bounded&amp;nbsp;continuous range depending on the type of cable\(\}\) &lt;/li&gt;
+&lt;li&gt; \(\{0,1, 2, 3, \dots\}\), hopefully a high upper limit! &lt;/li&gt;
+&lt;li&gt; \(\{\) Positive continuous range \((0, \infty)\)\(\}\) or \(\{\)Suitable bounded continuous interval\(\}\) &lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200630100249+nDvyKJ</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211004145829+GDDqqC</version>
+        <hidden>0</hidden>
+        <timecreated>1593511369</timecreated>
+        <timemodified>1633359509</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

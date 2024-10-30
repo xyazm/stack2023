@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24539">
+        <parent>0</parent>
+        <name>13.5 Introduction</name>
+        <questiontext>&lt;p&gt;The first technique described here involves making a substitution to simplify an integral. We let a new variable equal a complicated part of the function we are trying to integrate. Choosing the correct substitution often requires experience. This skill develops with practice.&lt;/p&gt;
+&lt;p&gt; Often the technique of partial fractions can be used to write an algebraic fraction as the sum of simpler fractions. On occasions this means that we can then integrate a complicated algebraic fraction. We shall explore this approach in the second half of the section.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200804174119+YttkTl</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609103358+1NledH</version>
+        <hidden>0</hidden>
+        <timecreated>1596562879</timecreated>
+        <timemodified>1623234838</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

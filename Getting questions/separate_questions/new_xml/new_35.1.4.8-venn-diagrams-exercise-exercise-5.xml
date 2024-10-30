@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27190 -->
+  <question type="stack">
+    <name>
+				<text>35.1.4.8 Venn diagrams exercise (Exercise 5)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Let \(A\) and \(B\) be intersecting sets, i.e. are not disjoint. Consider the following Venn diagrams.</p>
+<p><img src="@@PLUGINFILE@@/35-1-exercise5-Venn_diagram.svg" alt="Venn_diagram" width="639" height="92" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p>The shaded area of diagram (a) represents [[1]]</p>
+<p>The shaded area of diagram (b) represents [[2]]</p>
+<p>The shaded area of diagram (c) represents [[3]]</p>
+<p>The shaded area of diagram (d) represents [[4]]</p>
+<p>The shaded area of diagram (e) represents [[5]]</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[Note the following equivalent definitions:<br>(c) \(A \cup B' = (A' \cap B)'\)<br>(d) \(A' \cup B' = (A \cap B)'\)<br>(e) \(A' \cap B' = (A \cup B)'\)<br>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200703194843+BQyAOF</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+211004111433+ytG2GT</text></tag>
+    </tags>
+    
+</question>
+</quiz>

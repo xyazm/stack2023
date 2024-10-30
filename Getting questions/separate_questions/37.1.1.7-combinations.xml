@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27311">
+        <parent>0</parent>
+        <name>37.1.1.7 Combinations</name>
+        <questiontext>&lt;p&gt;A &lt;span&gt;&lt;strong&gt;combination&lt;/strong&gt;&lt;/span&gt; of objects takes &lt;span&gt;&lt;strong&gt;no account of order&lt;/strong&gt;&lt;/span&gt; whereas a permutation does. The formula &lt;span class="math inline"&gt;\(^nP_r=\dfrac{n!}{(n-r)!}\)&lt;/span&gt; gives us the number of ordered sets of &lt;span class="math inline"&gt;\(r\)&lt;/span&gt; objects chosen from &lt;span class="math inline"&gt;\(n\)&lt;/span&gt;. Suppose the number of sets of &lt;span class="math inline"&gt;\(r\)&lt;/span&gt; objects (taken from &lt;span class="math inline"&gt;\(n\)&lt;/span&gt; objects) in which order is not taken into account is &lt;span class="math inline"&gt;\(C\)&lt;/span&gt;. It follows that
+&lt;br&gt;\(\qquad C\times r!=\dfrac{n!}{(n-r)!}\)&lt;br&gt;
+and so &lt;span class="math inline"&gt;\(C\)&lt;/span&gt; is given by the formula &lt;br&gt;\(\qquad C=\dfrac{n!}{r!(n-r)!}\)&lt;br&gt;
+We normally denote the right-hand side of this expression by &lt;span class="math inline"&gt;\(^nC_r\)&lt;/span&gt; so that 
+&lt;br&gt;&lt;span class="math inline"&gt;\(\qquad ^nC_r=\dfrac{n!}{r!(n-r)!}\)&lt;/span&gt;&lt;br&gt;A common alternative notation for &lt;span class="math inline"&gt;\(^nC_r\)&lt;/span&gt; is &lt;span class="math inline"&gt;\(\left(\begin{matrix}n\\r\end{matrix}\right)\)&lt;/span&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200714145836+jYte6l</stamp>
+        <version>stack2.maths.ed.ac.uk+200801074209+NiHOkg</version>
+        <hidden>0</hidden>
+        <timecreated>1594738716</timecreated>
+        <timemodified>1596267729</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62174">
+        <parent>0</parent>
+        <name>43.2.07 Spearman&#8217;s coefficient of correlation</name>
+        <questiontext>&lt;h3&gt;Spearman&#8217;s coefficient of correlation&lt;/h3&gt;
+&lt;p&gt;There are times when data cannot be expressed in terms of numbers directly. For example, an audio engineer might be asked to give an opinion on the quality of sound produced by three sets of speakers. The results will represent a judgement made by the engineer. The engineer could adopt a set of criteria including, for example, the clarity of the treble, the power of the base and the ability of the speakers to distinguish between instruments. Suppose the results are as follows:&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;table style="height: 182px;" border="1" width="341"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="width: 105px; text-align: center;"&gt;Test item&lt;/td&gt;
+&lt;td style="width: 106px; text-align: center;"&gt;Rating&lt;/td&gt;
+&lt;td style="width: 108px; text-align: center;"&gt;Rand Order&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 105px; text-align: center;"&gt;Speaker Pair B&lt;/td&gt;
+&lt;td style="width: 106px; text-align: center;"&gt;\(9/10\)&lt;/td&gt;
+&lt;td style="width: 108px; text-align: center;"&gt;
+&lt;p&gt;\(1\)&lt;/p&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 105px; text-align: center;"&gt;Speaker Pair A&lt;/td&gt;
+&lt;td style="width: 106px; text-align: center;"&gt;\(8/10\)&lt;/td&gt;
+&lt;td style="width: 108px; text-align: center;"&gt;\(2\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="width: 105px; text-align: center;"&gt;Speaker Pair C&lt;/td&gt;
+&lt;td style="width: 106px; text-align: center;"&gt;\(5/10\)&lt;/td&gt;
+&lt;td style="width: 108px; text-align: center;"&gt;\(3\)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that the results are not numeric in an arithmetic sense so you cannot do meaningful arithmetic using the results. In order to see this, just ask what a calculation based on the ranks such as \[ \dfrac{1 + 2^2}{3}\] would actually mean. The answer is, of course, nothing!&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;During your career as an engineer you may be asked to rank data in a similar way to that outlined above. You may be asked to assess the work of colleagues for promotion purposes or give an opinion on the visual appeal of alternative designs of manufactured objects such as mobile telephones, food containers or television sets.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Assigning numbers to data in order of size (often called ranking methods) can also be useful if one does not wish to make assumptions about the nature of the distributions underlying the data. (For example whenever at least one of the distributions describing the behaviour of the variables may not be normal.) In order to check the level of correlation between results obtained by ranking data we calculate Spearman's coefficient of correlation.&lt;/p&gt;
+
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;p&gt;&lt;b&gt; Spearman's Coefficient of Correlation, \(R\) &lt;/b&gt;&lt;/p&gt;
+\[ R = 1 - \dfrac{6 \sum D^2}{n (n^2 - 1)},\]
+where \(D = R_X - R_Y\) is the difference of the rank \(R_X\) of an item according to variable \(X\) and rank \(R_Y\) of the item according to variable \(Y\).
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+The formula indicates that the differences of each pair of ranked values are to be found, squared
+and summed. It is worth noting that even though it is not obvious, Spearman's coefficient is just
+Pearson's coefficient applied to ranks.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200708185835+d3EUYk</stamp>
+        <version>stack2.maths.ed.ac.uk+200708190705+EIRPFk</version>
+        <hidden>0</hidden>
+        <timecreated>1594234715</timecreated>
+        <timemodified>1594235225</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

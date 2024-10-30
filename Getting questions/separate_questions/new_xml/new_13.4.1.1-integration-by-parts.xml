@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24529 -->
+  <question type="stack">
+    <name>
+				<text>13.4.1.1 Integration by parts</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Indefinite integration</span><br></h3>
+
+<p>The technique known as <strong>integration by parts</strong> is used to integrate a product of two functions, such as in these two examples:
+</p>
+<ul>
+    <li> \({\displaystyle\int e^{2x}\sin 3x \, \mathrm{d}x}\)</li>
+    <li> \({\displaystyle\int_0^1 x^3 e^{-2x} \, \mathrm{d}x}\)</li>
+</ul>
+<p>Note that in the first example, the integrand is the product of the functions \(e^{2x}\) and \(\sin 3x\), and in the second example the integrand is the product of the functions \(x^3\) and \(e^{-2x}\). Note also that we can change the order of the terms
+    in the product if we wish and write
+</p>
+<ul>
+    <li>\({\displaystyle\int (\sin 3x) e^{2x} \, \mathrm{d}x}\)</li>
+    <li>\({\displaystyle\int_0^1 e^{-2x}x^3 \, \mathrm{d}x}\)</li>
+</ul>
+What you must never do is integrate each term in the product separately and then multiply - the integral of a product is not the product of the separate integrals. However, it is often possible to find integrals involving products using the method of
+integration by parts - you can think of this as a <em>product rule</em> for integrals.
+<p></p>
+<p>The integration by parts formula states:</p>
+
+<div class="HELM_keypoint">
+    <h4>Key Point</h4>
+    <p><strong>Integration by Parts for Indefinite Integrals</strong></p>
+    <p>given functions \(f(x)\) and \(g(x)\):</p>
+
+    \({\displaystyle\int f \cdot g \, \mathrm{d}x}\) = \(f\) \(\cdot\) \({\displaystyle\int g \, \mathrm{d}x}\) - \({\displaystyle\int \left(\dfrac{df}{dx} \displaystyle\int g \, \mathrm{d}x \right) \, \mathrm{d}x}\)
+
+    <p>Alternatively, given functions \(u\) and \(v\):</p>
+    \({\displaystyle \int u\dfrac{d v}{d x} \, \mathrm{d}x = u.v-\displaystyle \int v\dfrac{d u}{d x} \, \mathrm{d}x}\)
+</div>
+<p></p>
+<p>Study the formula carefully and note the following observations. Firstly, to apply the formula we must be able to differentiate the function \(f\) to find \(\dfrac{d f}{d x}\), and we must be able to integrate the function, \(g\).</p>
+<p>Secondly the formula replaces one integral, the one on the left, with a different integral, that on the far right. The intention is that the latter, whilst it may look more complicated in the formula above, is simpler to evaluate. Consider the following
+    Example:</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find the integral of the product of \(x\) with \(\sin x\); that is, find \({\displaystyle \int x\sin x \, \mathrm{d}x}\).</p>
+<h4 class="HELM_solution">Solution</h4>
+<p>Compare the required integral with the formula for integration by parts: we choose \(f = x\) and \(g = \sin x\)</p>
+
+<p>It follows that \(\dfrac{df}{dx} = 1\) and \({\displaystyle\int g \, \mathrm{d}x = \displaystyle\int \sin x \, \mathrm{d}x} = -\cos x\)</p>
+<p>(When integrating \(g\) there is no need to worry about a constant of integration. When you become confident with the method, you may like to think about why this is the case.)</p>
+<p>Applying the formula we obtain</p>
+\begin{eqnarray*} \int x\sin x \, \mathrm{d} x &amp;=&amp; f\cdot \int g \, \mathrm{d} x -\int \left( {d f\over d x}\cdot\int g \, \mathrm{d} x \right)\,d x \\ &amp;=&amp; x(-\cos x) - \int 1(-\cos x) \, \mathrm{d} x\\ &amp;=&amp; -x\cos x + \int \cos
+x \, \mathrm{d} x\\ &amp;=&amp; -x\cos x + \sin x +c \end{eqnarray*}]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200803123715+E9GrDv</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210604110049+kzMGZQ</text></tag>
+    </tags>
+    
+</question>
+</quiz>

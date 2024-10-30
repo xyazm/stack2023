@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="27255">
+        <parent>0</parent>
+        <name>36.1.5.6 Cumulative frequency curve or ogive</name>
+        <questiontext>&lt;p&gt;In the case of larger samples the quantities can be approximated by using a &lt;b&gt;cumulative frequency curve&lt;/b&gt; or &lt;b&gt;ogive&lt;/b&gt;. The cumulative frequency distribution for the heights of the 30 students given earlier is shown below. Notice that here, the class intervals are defined in such a way that the frequencies accumulate (hence the term &lt;i&gt;cumulative frequency&lt;/i&gt;) as the table is built up.&lt;/p&gt;
+&lt;table class="HELM_table" style="text-align: center; width: 90%;"&gt;
+&lt;thead&gt;
+&lt;tr style="border-bottom: 1px solid #000;"&gt;
+&lt;th&gt;Height&lt;/th&gt;&lt;th&gt;Cumulative Frequency&lt;/th&gt;&lt;th&gt;Cumulative Relative Frequency (to 3 d.p.)&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt; 
+&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;less than 145&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;0&lt;/td&gt;&lt;td&gt;&amp;nbsp;0.000&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;less than 150&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0.133&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 155&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;0.233&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 160&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;0.267&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 165&lt;/td&gt;&lt;td&gt;15&lt;/td&gt;&lt;td&gt;0.500&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 170&lt;/td&gt;&lt;td&gt;17&lt;/td&gt;&lt;td&gt;0.567&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 175&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;td&gt;0.667&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 180&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;td&gt;0.867&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;less than 185&lt;/td&gt;&lt;td&gt;27&lt;/td&gt;&lt;td&gt;0.900&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;less than 190&amp;nbsp;&lt;/td&gt;&lt;td&gt;&amp;nbsp;30&lt;/td&gt;&lt;td&gt;&amp;nbsp;1.000&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;&lt;p&gt;To plot the ogive or cumulative frequency curve, we plot the heights on the horizontal axis and the cumulative frequencies or cumulative relative frequencies on the vertical axis. The corresponding ogive is shown in the figure below.&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/ECDF_Heights_HELM.png" alt="Empirical CDF of heights (HELM)" width="600" height="445" class="img-responsive atto_image_button_text-bottom" style="font-size: 0.9375rem;"&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;The three statistics defined above can be read from the diagram as indicated. They are the values where the cumulative relative frequency is \(0.25, 0.50\) and \(0.75\). With \(n=30\), this corresponds to cumulative frequencies of \(7.5\), \(15.0\) and \(22.5\).&lt;/p&gt;
+&lt;p&gt;For the data set giving the heights of the 30 students, the three statistics, as obtained using the ogive, are as follows.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;b&gt;The Lower Quartile&lt;/b&gt; is \(155.3\).&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;The Median&lt;/b&gt; is \(165.15\).&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;The Upper Quartile&lt;/b&gt; is \(177.8\).&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200710191647+G0pPt2</stamp>
+        <version>stack-back1.maths.ed.ac.uk+211007180311+xOwEpr</version>
+        <hidden>0</hidden>
+        <timecreated>1594408607</timecreated>
+        <timemodified>1633629791</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>820</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

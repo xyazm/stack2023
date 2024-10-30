@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62100">
+        <parent>0</parent>
+        <name>23.2.2.6 Orthogonality Relation</name>
+        <questiontext>&lt;p&gt;&lt;/p&gt;
+&lt;div class="HELM_keypoint"&gt;
+&lt;h4&gt;Key Point&lt;/h4&gt;
+&lt;b&gt;Orthogonality Relation&lt;/b&gt;
+&lt;p&gt;&lt;/p&gt;
+For any integers \(m\), \(n\), including the case \(m = n\),
+\[ \displaystyle{ \int _{-\pi}^\pi } \sin nt \cos mt \hspace{0.15cm} dt = 0 \]
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+We shall use this result shortly but need a few more integrals first.
+&lt;p&gt;&lt;/p&gt;
+Consider next
+\[ \displaystyle{ \int _{-\pi}^\pi} \cos nt \cos mt \hspace{0.15cm} dt \]
+where \(m\) and \(n\) are integers. 
+&lt;p&gt;&lt;/p&gt;
+Using another trigonometric identity we have, for the case \( n \neq m \),
+\[ 
+\begin{align}
+\displaystyle{ \int _{-\pi}^\pi} \cos nt \cos mt \hspace{0.15cm} dt &amp;amp;= \dfrac{1}{2} \displaystyle{ \int _{-\pi}^\pi} \left\{ \cos(n+m)t + \cos(n - m)t \right\}dt \\
+&amp;amp;= \dfrac{1}{2} \left\{ 0 + 0 \right\} = 0
+\end{align}
+\]
+For the case \(n = m\) we must get a non-zero answer since \(\cos^2 nt\) is non-negative. In this case:
+\[ 
+\begin{align}
+\displaystyle{ \int _{-\pi}^\pi} \cos^2 nt \hspace{0.15cm} dt &amp;amp;= \dfrac{1}{2} \displaystyle{ \int _{-\pi}^\pi} ( 1 + \cos 2nt ) dt \\
+&amp;amp;= \dfrac{1}{2} \Big[ t + \dfrac{1}{2n} \sin  2nt \Big]_{-\pi}^\pi = \pi \hspace{1cm} \text{provided n} \neq 0
+\end{align}
+\]
+For the case \(n = m = 0\) we have 
+\[\displaystyle{ \int _{-\pi}^\pi} \cos nt \cos mt \hspace{0.15cm} dt = 2\pi\]</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200815192904+vYGzaH</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518093116+3vH2gC</version>
+        <hidden>0</hidden>
+        <timecreated>1597519744</timecreated>
+        <timemodified>1652866276</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

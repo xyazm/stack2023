@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="24572">
+        <parent>0</parent>
+        <name>15.2.1.9 COM of 5 masses on line</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise&lt;/p&gt;
+&lt;p&gt;Find the \(x\) coordinate of the centre of mass of 5 identical masses placed at \(x={@x1@}, x={@x2@}, x={@x3@}, x={@x4@}, x={@x5@}.\)&lt;/p&gt;&lt;p&gt;&lt;b&gt;Give your answer as a rational number (fraction).&lt;/b&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\(\bar{x}= \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;We are asked to find the \(x\) coordinate of the centre of mass of 5 identical masses placed at \(x={@x1@}, x={@x2@}, x={@x3@}, x={@x4@}, x={@x5@}.\)&lt;br&gt;&lt;/p&gt;
+We compute: \[\bar{x} = \dfrac{\sum_{i=1}^{5} x_i}{5} =&amp;nbsp; {@ta@}\]</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200817134706+V5Sl7N</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210609153247+KMKFI8</version>
+        <hidden>0</hidden>
+        <timecreated>1597672026</timecreated>
+        <timemodified>1623252767</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="16722">
+            <stackversion>2020120600</stackversion>
+            <questionvariables>x1 : 1 + rand(3);
+x2 : x1 + 1 + rand(3);
+x3 : x2 +1+rand(3);
+x4 : x3 + 1+rand(3);
+x5 : x4 + 1+rand(3);
+xt : x1 + x2 + x3 + x4 + x5;
+ta : xt/5;</questionvariables>
+            <specificfeedback/>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>points: {@x1@},{@x2@},{@x3@},{@x4@},{@x5@}, so \( \bar{x} = {@ta@}\)</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>dot</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="38784">
+              <name>ans1</name>
+              <type>algebraic</type>
+              <tans>ta</tans>
+              <boxsize>8</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>+</forbidwords>
+              <allowwords/>
+              <forbidfloat>1</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options/>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="33439">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="50507">
+                  <nodename>0</nodename>
+                  <answertest>AlgEquiv</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions/>
+                  <quiet>0</quiet>
+                  <truescoremode>=</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-1-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>=</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-1-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="38587">
+              <testcase>1</testcase>
+              <timemodified>1598446734</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82505">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71330">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="38588">
+              <testcase>2</testcase>
+              <timemodified>1606851817</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="82506">
+                  <inputname>ans1</inputname>
+                  <value>ev(ta+1,simp)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="71331">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-1-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="164705">
+              <seed>1038343036</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164706">
+              <seed>1846931960</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164707">
+              <seed>1101824154</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164708">
+              <seed>1712544634</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164709">
+              <seed>1943211141</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164710">
+              <seed>469814823</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164711">
+              <seed>413827208</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164712">
+              <seed>150637372</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164713">
+              <seed>285376279</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164714">
+              <seed>1417114881</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164715">
+              <seed>1682095670</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164716">
+              <seed>1806508940</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164717">
+              <seed>649635468</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164718">
+              <seed>1720287244</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="164719">
+              <seed>736271718</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="62120">
+        <parent>0</parent>
+        <name>23.3.1.4 Even and odd functions (copy)</name>
+        <questiontext>&lt;h4&gt;Even and odd functions (continued)&lt;/h4&gt;
+
+A Fourier series contains a sum of terms while the integral formulae for the Fourier coefficients \(a_n\)
+and \(b_n\) contain &lt;i&gt;products&lt;/i&gt; of the type \(f(t) \cos nt\) and \(f(t) \sin nt\). We need therefore results for sums and products of functions.
+&lt;p&gt;&lt;/p&gt;
+Suppose, for example, \(g(t)\) is an odd function and \(h(t)\) is an even function.
+&lt;p&gt;&lt;/p&gt;
+\[
+\begin{align}
+\text{Let } \hspace{1cm} F_1(t) &amp;amp;= g(t)h(t) \hspace{1cm} \text{(product of odd and even functions)} \\
+\text{so } \hspace{0.9cm} F_1(-t) &amp;amp;= g(-t)h(-t) \hspace{1cm}  \text{(replacing } t \text{ with } -t \text{)} \\
+&amp;amp;= (-g(t))h(t) \hspace{1cm} \text{(since } g \text{ is odd and } h \text{ is even)} \\
+&amp;amp;= -g(t)h(t) \\
+&amp;amp;= F_1(t)
+\end{align}
+\]
+So \(F_1(t) is odd.
+&lt;p&gt;&lt;/p&gt;
+Now suppose
+\[ 
+\begin{align}
+F_2(t) &amp;amp;= g(t) + h(t) \hspace{1cm} \text{(sum of odd and even functions)} \\
+\therefore \hspace{1cm} F_2(-t) &amp;amp;= g(-t) + h(t) \\
+&amp;amp;= -g(t) + h(t)
+\end{align}
+\]
+We see that 
+\[ F_2(-t) \neq F_2(t) \]
+and 
+\[F_2(-t) \neq -F_2(t) \]
+So \(F_2(t)\) is neither odd nor even.</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200828085219+FrVoMV</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220518103536+KjTvDq</version>
+        <hidden>0</hidden>
+        <timecreated>1598604739</timecreated>
+        <timemodified>1652870136</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27285 -->
+  <question type="stack">
+    <name>
+				<text>36.1.4.6 Histogram Example</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<br>
+<h4 class="HELM_example">Example</h4>
+<p>From the frequency table (for instance, the one in the previous exercise), we can represent the data diagrammatically using a histogram. For example, from the following frequency table, we obtain the corresponding histogram shown below.</p>
+<table class="HELM_table" style="width:75%">
+<thead>
+<tr style="border-bottom: 1px solid #000;">
+<th style="text-align: center;">Class interval (cm)</th>
+<th style="text-align: center;">Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="text-align: center;">\([145,150)\)</td><td style="text-align: center;">\(4\)</td></tr>
+<tr><td style="text-align: center;">\([150,155)\)</td><td style="text-align: center;">\(3\)</td></tr>
+<tr><td style="text-align: center;">\([155,160)\)</td><td style="text-align: center;">\(1\)</td></tr>
+<tr><td style="text-align: center;">\([160,165)\)</td><td style="text-align: center;">\(7\)</td></tr>
+<tr><td style="text-align: center;">\([165,170)\)</td><td style="text-align: center;">\(2\)</td></tr>
+<tr><td style="text-align: center;">\([170,175)\)</td><td style="text-align: center;">\(3\)</td></tr>
+<tr><td style="text-align: center;">\([175,180)\)</td><td style="text-align: center;">\(6\)</td></tr>
+<tr><td style="text-align: center;">\([180,185)\)</td><td style="text-align: center;">\(1\)</td></tr>
+<tr><td style="text-align: center;">\([185,190)\)</td><td style="text-align: center;">\(3\)</td></tr>
+</tbody>
+</table><br>
+<img src="@@PLUGINFILE@@/36-1-fig-8-histogram_of_heights.svg" alt="" width="483" height="205" class="img-responsive atto_image_button_text-bottom">]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200914145632+1zktGZ</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914145632+k9HPrj</text></tag>
+    </tags>
+    
+</question>
+</quiz>

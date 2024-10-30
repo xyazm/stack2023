@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26215">
+        <parent>0</parent>
+        <name>7.2.3.2 Between Task1 and Task2</name>
+        <questiontext>&lt;p&gt;It is clear that \(AB\) and \(BA\) are &lt;b&gt;not&lt;/b&gt; in general the same. In fact it is the &lt;b&gt;exception&lt;/b&gt; that \(AB=BA.\) In the special case in which \(AB=BA\) we say that the matrices \(A\) and \(B\) &lt;b&gt;commute&lt;/b&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>0</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>0</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619133424+iBRePa</stamp>
+        <version>stack2.maths.ed.ac.uk+200701144031+HFuX6j</version>
+        <hidden>0</hidden>
+        <timecreated>1592573664</timecreated>
+        <timemodified>1593614431</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

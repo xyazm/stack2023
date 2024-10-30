@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 27282 -->
+  <question type="stack">
+    <name>
+				<text>36.1.4.1 Graphical representations/ Bar charts</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3>Graphical representations</h3>
+<h4>Bar charts</h4>
+<p>Bar charts can be used to represent the frequencies for categorical or discrete data. In a bar chart, we draw a bar for each value of the variable. The length of the bar is proportional to the frequency for that value. Bars can be drawn vertically or horizontally.</p>
+<p>Absenteeism can be a problem for some engineering firms. The following discrete data represent the number of days off taken by 50 employees of a small engineering company.</p>
+<table style="width:70%">
+<tbody>
+<tr><td>6</td><td>4</td><td>4</td><td>5</td><td>0</td><td>4</td><td>3</td><td>6</td><td>1</td><td>3</td></tr>
+<tr><td>8</td> <td>3</td> <td>6</td> <td>1</td> <td>0</td> <td>6</td><td>11</td><td>5</td><td>10</td><td>8</td></tr>
+<tr><td>2</td> <td>4</td> <td>6</td> <td>6</td> <td>6</td> <td>6</td><td>5</td><td>13</td><td>11</td><td>6</td> </tr>
+<tr><td>4</td> <td>8</td> <td>4</td> <td>7</td> <td>7</td> <td>6</td><td>8</td><td>3</td><td>3</td><td>6</td></tr>
+<tr><td>3</td> <td>2</td> <td>3</td> <td>6</td> <td>2</td> <td>2</td> <td>3</td><td>2</td><td>4</td><td>0</td></tr>
+</tbody>
+</table>
+<br>
+<p>In order to construct a bar chart we can proceed as follows. </p>
+<ol>
+<li>Construct a frequency table for the data.</li>
+<li>Draw a diagram with the range (0 - 13) on one axis and the number of days corresponding to each value (number of days off) on the other. The length of each bar is proportional to the frequency (that is  proportional to the number of staff taking that number of days off). </li>
+</ol>
+The results appear as follows:<p><img src="@@PLUGINFILE@@/36-1-fig-1-bar_chart.svg" alt="" width="600" height="257" class="img-responsive atto_image_button_text-bottom"><br></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200914145525+VlabAG</text></tag>
+      <tag><text>version:stack2.maths.ed.ac.uk+200914145525+B0NBUL</text></tag>
+    </tags>
+    
+</question>
+</quiz>

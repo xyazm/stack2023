@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 24640 -->
+  <question type="stack">
+    <name>
+				<text>18.2.2.1 Second partial derivatives</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span>Second partial derivatives</span><br></h3>
+
+<p>Performing two successive partial differentiations of \(f(x,y)\) with respect to \(x\) (holding \(y\) constant) is denoted by \(\dfrac{\partial^2 f}{\partial x^2}\) (or \(f_{xx}(x,y)\)) and is defined by \(\dfrac{\partial^2 f}{\partial x^2}\equiv \dfrac{\partial}{\partial
+    x}\left(\dfrac{\partial f}{\partial x}\right)\)</p>
+<p>For functions of two or more variables as well as \(\dfrac{\partial^2 f}{\partial x^2}\) other second-order partial derivatives can be obtained. Most obvious is the second derivative of \(f(x,y)\) with respect to \(y\) is denoted by \(\dfrac{\partial^2
+    f}{\partial y^2}\) (or \(f_{yy}(x,y)\)) which is defined as: \(\dfrac{\partial^2 f}{\partial y^2}\equiv \dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial y}\right)\)</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \(\dfrac{\partial^2f}{\partial x^2}\) and \(\dfrac{\partial^2f}{\partial y^2}\) for \(f(x,y)=x^3+x^2y^2+2y^3+2x+y\).</p>
+
+<h4 class="HELM_solution">Solution</h4>
+\(\dfrac{\partial f}{\partial x}=3x^2+2xy^2+0+2+0=3x^2+2xy^2+2\)<br> \(\dfrac{\partial^2f}{\partial x^2}\equiv \dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial x}\right)=6x+2y^2+0=6x+2y^2.\)<br> \(\dfrac{\partial f}{\partial y}=0+x^2\times
+2y+6y^2+0+1=2x^2y+6y^2+1\)
+<br> \(\dfrac{\partial^2f}{\partial y^2}=\dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial y}\right)=2x^2+12y.\)
+<hr>
+
+<p>We can use the alternative notation when evaluating derivatives.</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \(f_{xx}(-1,1)\) and \(f_{yy}(2,-2)\) for \(f(x,y)=x^3+x^2y^2+2y^3+2x+y\).</p>
+
+<h4 class="HELM_solution">Solution</h4>
+\(f_{xx}(-1,1)=6\times (-1)+2\times (-1)^2=-4.\)<br> \(f_{yy}(2,-2)=2\times (2)^2+12\times (-2)=-16\)
+<hr>
+
+<p><br></p>
+<p><strong>Mixed second derivatives</strong></p>
+<p>It is possible to carry out a partial differentiation of \(f(x,y)\) with respect to \(x\) followed by a partial differentiation with respect to \(y\) (or vice-versa). The results are examples of <strong>mixed derivatives</strong>. We must be careful with
+    the notation here. We use \(\dfrac{\partial^2f}{\partial x\partial y}\) to mean ‘differentiate first with respect to \(y\) and then with respect to \(x\)’ and we use \(\dfrac{\partial^2f}{\partial y\partial x}\) to mean ‘differentiate first with respect
+    to \(x\) and then with respect to \(y\)’:</p>
+
+<p>i.e.\(\dfrac{\partial^2f}{\partial x\partial y}\equiv\dfrac{\partial}{\partial x}\left(\dfrac{\partial f}{\partial y}\right)\) and \(\dfrac{\partial^2f}{\partial y\partial x}\equiv\dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial x}\right).\)</p>
+<p>(This explains why the order is opposite of what we expect - the derivative ‘operates on the left’.)</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>For \(f(x,y)=x^3+2x^2y^2+y^3\) find \(\dfrac{\partial^2f}{\partial x\partial y}.\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+\(\dfrac{\partial f}{\partial y}=4x^2y+3y^2;\\ \dfrac{\partial^2f}{\partial x\partial y}=8xy\)
+<hr>
+
+<p>The remaining possibility is to differentiate first with respect to \(x\) and then with respect to \(y\) i.e. \(\dfrac{\partial}{\partial y}\left(\dfrac{\partial f}{\partial x}\right)\).</p>
+<p>For the function in the Example above \(\dfrac{\partial f}{\partial x}=3x^2+4xy^2\) and \(\dfrac{\partial^2 f}{\partial y\partial x}=8xy.\) Notice that for this function \(\dfrac{\partial^2f}{\partial x\partial y}\equiv \dfrac{\partial^2f}{\partial y\partial
+    x}.\) This equality of mixed derivatives is true for all functions which you are likely to meet in your studies. To evaluate a mixed derivative we can use the alternative notation. To evaluate \(\dfrac{\partial^2f}{\partial x\partial y}\) we write
+    \(f_{yx}(x,y)\) to indicate that the first differentiation is with respect to \(y\). Similarly, \(\dfrac{\partial^2f}{\partial y\partial x}\) is denoted by \(f_{xy}(x,y)\).</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \(f_{yx}(1,2)\) for the function \(f(x,y)=x^3+2x^2y^2+y^3\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p>\(f_x = 3x^2+4xy^2\)</p>
+<p>and \(f_{yx} = 8xy\)</p>
+<p>so \(f_{yx}(1,2)=8\times 1\times 2=16.\)</p>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find \(f_{xx}(1,2),\ f_{yy}(-2,-1),\) \(f_{xy}(3,3)\) for \(f(x,y)\equiv x^3+3x^2y^2+y^2.\)</p>
+
+<h4 class="HELM_solution">Solution</h4>
+<p>\(f_x=3x^2+6xy^2;\ \ f_y=6x^2y+2y\)</p><br>
+<p>\(f_{xx}=6x+6y^2;\ \ f_{yy}=6x^2+2;\ \ f_{xy}=f_{yx}=12xy\)</p>
+<br>
+<p>\(f_{xx}(1,2)=6+24=30;\ \ f_{yy}(-2,-1)=26;\ \ f_{xy}(3,3)=108\)</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200819123445+cWZXB1</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+220304125016+Sk8jtj</text></tag>
+    </tags>
+    
+</question>
+</quiz>

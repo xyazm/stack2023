@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 37771 -->
+  <question type="stack">
+    <name>
+				<text>1.1.5.1 Using Symbols</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<h3><span style="color: inherit; font-family: inherit;">Using Symbols</span><br></h3>
+<p>Mathematics provides a very rich language for the communication of engineering concepts and ideas, and a set of powerful tools for the solution of engineering problems. In order to use this language it is essential to appreciate how <strong>symbols</strong> are used to represent physical quantities, and to understand the rules and conventions which have been developed to manipulate these symbols.</p>
+<p>The choice of which letters or other symbols to use is largely up to the user although it is helpful to choose letters which have some meaning in any particular context. For instance if we wish to choose a symbol to represent the temperature in a room we might use the capital letter \(T\). Similarly the lower case letter \(t\) is often used to represent time. Because both time and temperature can vary we refer to \(T\) and \(t\) as <strong>variables</strong>.</p>
+<p>In a particular calculation some symbols represent fixed and unchanging quantities and we call these <strong>constants</strong>. Often we reserve the letters \(x\), \(y\) and \(z\) to stand for variables and use the earlier letters of the alphabet, such as \(a\), \(b\) and \(c\), to represent constants. The Greek letter pi, written \(\pi\), is used to represent the constant 3.14159.... which appears for example in the formula for the area of a circle. Other Greek letters are frequently used as symbols, and for reference, the Greek alphabet is given in the Table below.</p>
+<br>
+<p>\(\begin{aligned} \qquad &amp; A \quad \alpha \quad \text{alpha} &amp;&amp; \qquad I \quad \iota \quad \text{iota} &amp;&amp; \qquad R \quad \rho \quad \text{rho} \\ \qquad &amp; B \quad \beta \quad \text{beta} &amp;&amp; \qquad \Lambda \quad \lambda \quad \text{lambda} &amp;&amp; \qquad T \quad \tau \quad \text{tau} \\ \qquad &amp; \Gamma \quad \gamma \quad \text{gamma} &amp;&amp; \qquad K \quad \kappa \quad \text{kappa} &amp;&amp; \qquad \Sigma \quad \sigma \quad \text{sigma}  \\ \qquad &amp; \Delta \quad \delta \quad \text{delta} &amp;&amp; \qquad M \quad \mu \quad \text{mu} &amp;&amp; \qquad \Upsilon \quad \upsilon \quad \text{upsilon} \\ \qquad &amp; E \quad \epsilon \quad \text{epsilon} &amp;&amp; \qquad N \quad \nu \quad \text{nu} &amp;&amp; \qquad \Phi \quad \phi \quad \text{phi} \\ \qquad &amp; Z \quad \zeta \quad \text{zeta} &amp;&amp; \qquad Xi \quad \xi \quad \text{xi} &amp;&amp; \qquad X \quad \chi \quad \text{chi} \\ \qquad &amp; H \quad \eta \quad \text{eta} &amp;&amp; \qquad O \quad \omicron \quad \text{omicron} &amp;&amp; \qquad \Psi \quad \psi \quad \text{psi} \\ \qquad &amp; \Theta \quad \theta \quad \text{theta} &amp;&amp; \qquad  \Pi \quad \pi \quad \text{pi} &amp;&amp; \qquad \Omega \quad \omega \quad \text{omega} \end{aligned}\)</p>
+<p>\(\qquad\qquad\qquad\qquad\qquad \)<strong>Table</strong>: The Greek alphabet</p>
+<br>
+<p>Mathematics is a very precise language and care must be taken to note the exact position of any symbol in relation to any other. If \(x\) and \(y\) are two symbols, then the quantities \(xy\), \(x^y\), \(x_y\) can all mean different things. In the expression \(x^y\) you will note that the symbol \(y\) is placed to the right of and slightly higher than the symbol \(x\). In this context \(y\) is called a <strong>superscript</strong>. In the expression \(x_y\), \(y\) is placed lower than and to the right of \(x\), and is called a <strong>subscript</strong>.</p>
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>The temperature in a room is measured at four points as shown in the Figure below</p>
+<p><img src="@@PLUGINFILE@@/1-1-fig-3.svg" alt="The temperature is measured at four points" width="340" height="187" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p>Rather than use different letters to represent the four measurements we can use one symbol, \(T\), together with four subscripts to represent the temperature. Thus the four measurements are denoted by \(T_1\), \(T_2\), \(T_3\) and \(T_4\).</p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text></text>
+		</generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack-back1.maths.ed.ac.uk+210903135236+YUUGfC</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210903161230+wcc841</text></tag>
+    </tags>
+    
+</question>
+</quiz>

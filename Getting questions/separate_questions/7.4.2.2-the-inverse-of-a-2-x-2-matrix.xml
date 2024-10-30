@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26270">
+        <parent>0</parent>
+        <name>7.4.2.2 The inverse of a 2 x 2 matrix</name>
+        <questiontext>&lt;p&gt;Which of the following matrices has an inverse?&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.3333333</penalty>
+        <qtype>multichoice</qtype>
+        <length>1</length>
+        <stamp>stack2.maths.ed.ac.uk+200618112651+ZppJM6</stamp>
+        <version>stack2.maths.ed.ac.uk+200618114501+bCIwnO</version>
+        <hidden>0</hidden>
+        <timecreated>1592479611</timecreated>
+        <timemodified>1592480701</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_multichoice_question>
+          <answers>
+            <answer id="10045">
+              <answertext>&lt;p&gt;\(A=\left[{ \begin{array}{cc}1&amp;amp;0\\2&amp;amp;3\end{array}} \right]\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback>&lt;p&gt;\(|A|=1\times 3 - 0\times 2 = 3\).&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10046">
+              <answertext>&lt;p&gt;\(B=\left[{ \begin{array}{cc}1&amp;amp;1\\-1&amp;amp;1\end{array}} \right]\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback>&lt;p&gt;\(|B|=1+1 =2\).&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10047">
+              <answertext>&lt;p&gt;\(C=\left[{ \begin{array}{cc}1&amp;amp;-1\\-2&amp;amp;2\end{array}} \right]\)&lt;br&gt;&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.0000000</fraction>
+              <feedback>&lt;p&gt;\(|C|=2-2 =0\). Therefore \(C\) has no inverse because its determinant is zero.&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+            <answer id="10048">
+              <answertext>&lt;p&gt;\(D=\left[{ \begin{array}{cc}2&amp;amp;0\\0&amp;amp;2\end{array}} \right]\)&lt;/p&gt;</answertext>
+              <answerformat>1</answerformat>
+              <fraction>0.3333333</fraction>
+              <feedback>&lt;p&gt;\(|D|=4-0 =4\).&lt;br&gt;&lt;/p&gt;</feedback>
+              <feedbackformat>1</feedbackformat>
+            </answer>
+          </answers>
+          <multichoice id="1749">
+            <layout>0</layout>
+            <single>0</single>
+            <shuffleanswers>0</shuffleanswers>
+            <correctfeedback>Your answer is correct.</correctfeedback>
+            <correctfeedbackformat>1</correctfeedbackformat>
+            <partiallycorrectfeedback>Your answer is partially correct.</partiallycorrectfeedback>
+            <partiallycorrectfeedbackformat>1</partiallycorrectfeedbackformat>
+            <incorrectfeedback>Your answer is incorrect.</incorrectfeedback>
+            <incorrectfeedbackformat>1</incorrectfeedbackformat>
+            <answernumbering>none</answernumbering>
+            <shownumcorrect>1</shownumcorrect>
+            <showstandardinstruction>1</showstandardinstruction>
+          </multichoice>
+        </plugin_qtype_multichoice_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

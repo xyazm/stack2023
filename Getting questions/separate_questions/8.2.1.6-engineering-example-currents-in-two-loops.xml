@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26581">
+        <parent>0</parent>
+        <name>8.2.1.6 Engineering Example: Currents in two loops</name>
+        <questiontext>&lt;h4 class="HELM_example"&gt;Engineering Example: Currents in two loops&lt;/h4&gt;
+
+&lt;p&gt; In the circuit shown below find the currents \((i_1,\ i_2)\) in the loops: &lt;/p&gt;
+
+&lt;div style="text-align: center;"&gt;&lt;img src="@@PLUGINFILE@@/8-2-fig-1-currents.svg" alt="Figure displaying currents in two loops" class="img-responsive atto_image_button_text-bottom" width="257" height="115"&gt;&lt;/div&gt;
+&lt;p style="text-align: center;"&gt;&lt;strong&gt;Figure 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 class="HELM_solution"&gt;Solution&lt;/h4&gt;
+
+&lt;p&gt;We note that the current across the &lt;span class="math inline"&gt;\(3\ \Omega\)&lt;/span&gt; resistor (travelling top to bottom in the diagram) is given by &lt;span class="math inline"&gt;\((i_1-i_2)\)&lt;/span&gt;. With this proviso we can apply Kirchhoff&#8217;s law: &lt;span class="math display"&gt;\[\begin{matrix}
+    \text{In the left-hand loop} &amp;amp; 3(i_1-i_2)+5i_1=3  &amp;amp; \rightarrow &amp;amp; 8i_1-3i_2=3 \\
+    \text{In the right-hand loop} &amp;amp; 3(i_2-i_1)+6i_2=4 &amp;amp; \rightarrow &amp;amp; -3i_1+9i_2=4 \\
+\end{matrix}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;In matrix form: &lt;span class="math display"&gt;\[\left[
+\begin{matrix} 
+    8 &amp;amp; -3\\
+    -3 &amp;amp;  9 \\
+\end{matrix} 
+\right]
+\left[
+\begin{matrix}
+    i_1 \\
+    i_2 \\
+\end{matrix}
+\right]=
+\left[\begin{matrix}
+    3 \\
+    4 \\
+\end{matrix}
+\right].\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;The inverse of &lt;span class="math display"&gt;\[\left[\begin{matrix}\hfill 8&amp;amp; -3 \\ -3&amp;amp; 9\end{matrix}\right]\]&lt;/span&gt; is &lt;span class="math display"&gt;\[\dfrac{1}{63}\left[\begin{matrix}9&amp;amp;3\\3&amp;amp;8\end{matrix}\right]\]&lt;/span&gt; so solving gives
+    &lt;span class="math display"&gt;\[\left[\begin{matrix}i_1\\ i_2\end{matrix}\right]=\dfrac{1}{63}\left[\begin{matrix}9&amp;amp;3\\3&amp;amp;8\end{matrix}\right] \left[\begin{matrix}3\\ 4\end{matrix}\right] =\dfrac{1}{63}\left[\begin{matrix}39\\ 41\end{matrix}\right]\]
+        &lt;/span&gt; so &lt;span class="math inline"&gt;\(\displaystyle{i_1= \frac{39}{63}}\)&lt;/span&gt;, &lt;span class="math inline"&gt;\(\displaystyle{i_2= \frac{41}{63}}\)&lt;/span&gt;.&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200622131101+pjnbg2</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630131235+wx1noM</version>
+        <hidden>0</hidden>
+        <timecreated>1592831461</timecreated>
+        <timemodified>1625058755</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2662</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

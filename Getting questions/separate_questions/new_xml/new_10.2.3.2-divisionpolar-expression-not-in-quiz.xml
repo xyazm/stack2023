@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 26754 -->
+  <question type="stack">
+    <name>
+				<text>10.2.3.2 Division(Polar expression) (NOT IN QUIZ)</text>
+		</name>
+    <questiontext format="moodle_auto_format">
+				<text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>If <span class="math inline">\(z=r(\cos\theta +i\sin\theta )\)</span> and <span class="math inline">\(w=t(\cos\phi
++i\sin\phi )\)</span> find the polar expression for <span class="math inline">\({\dfrac{z}{w}}.\)</span></p>]]></text>
+		</questiontext>
+    <generalfeedback format="moodle_auto_format">
+				<text><![CDATA[<p>\(z=r(\cos\theta+i\sin\theta)\) and&nbsp;&nbsp;\(w=t(\cos\phi +i\sin\phi )\).</p><p>So,</p><p>\[\frac{z}{w}=\frac{r(\cos\theta+i\sin\theta)}{t(\cos\phi +i\sin\phi )}=\frac{r(\cos\theta+i\sin\theta)}{t(\cos\phi +i\sin\phi )}\frac{(\cos\phi -i\sin\phi )}{(\cos\phi -i\sin\phi )}\\=\frac{r((\cos\theta\cos\phi+\sin\theta\sin\phi)+i(\sin\theta\cos\phi-\cos\theta\sin\phi))}{t}\\=\frac{r((\cos\theta\cos(-\phi)-\sin\theta\sin(-\phi))+i(\sin\theta\cos(-\phi)+\cos\theta\sin(-\phi)))}{t}=\frac{r(\cos(\theta-\phi)+i(\sin(\theta-\phi))}{t}.\]</p>]]></text>
+		</generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <tags>
+      <tag><text>stamp:stack2.maths.ed.ac.uk+200630092225+3QwxsS</text></tag>
+      <tag><text>version:stack-back1.maths.ed.ac.uk+210702110508+UFPf5U</text></tag>
+    </tags>
+    
+</question>
+</quiz>

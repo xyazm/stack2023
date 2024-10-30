@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="26035">
+        <parent>0</parent>
+        <name>4.5.1.1 Applications of trigonometry to waves</name>
+        <questiontext>&lt;h4&gt;Two-dimensional motion&lt;/h4&gt;
+&lt;p&gt;Suppose that a wheel of radius \(R\) is rotating anticlockwise as shown in the figure below.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/4-5-fig38.svg" alt="Fig 38" class="atto_image_button_text-bottom" width="225" height="187"&gt;
+&lt;/figure&gt;
+&lt;p&gt;Assume that the wheel is rotating with an angular velocity \(\omega\) radians per second about \(O\) so that, in a time \(t\) seconds, a point \((x,y)\) initially at position&amp;nbsp; \(A\) on the rim of the wheel moves to a position \(B\) such that angle \(AOB=\omega t\) radians. &lt;br&gt;&lt;/p&gt;&lt;p style="text-align: left;"&gt; Then the coordinates \((x,y)\) of&amp;nbsp; \(B\) are given by \[ \quad \qquad x=OP=R\cos\omega t\] \[ \quad \qquad y=OQ=PB=R\sin\omega t\]&lt;/p&gt;
+&lt;p&gt; We know that both the standard sine and cosine functions have period \(2\pi\). Since the angular velocity is \(\omega\) radians per second the  wheel will make one complete revolution in \(\dfrac{2\pi}{\omega}\) seconds.&lt;/p&gt;
+&lt;p&gt;The time \(\dfrac{2\pi}{\omega}\) (measured in seconds in this case) for one complete revolution is called the &lt;b&gt;period&lt;/b&gt; of rotation of the wheel.&amp;nbsp; The number of complete revolutions per second is thus \(\dfrac{1}{T}=f\) say which is called the &lt;b&gt;frequency&lt;/b&gt; of revolution.&amp;nbsp; Clearly&amp;nbsp;\(f =\dfrac{1}{T}=\dfrac{\omega}{2\pi}\) relates the three quantities introduced here.&amp;nbsp; The angular velocity \(\omega=2\pi f\) is sometimes called the &lt;b&gt;angular frequency&lt;/b&gt;.&lt;/p&gt;
+
+&lt;h4&gt;One-dimensional motion&lt;/h4&gt;
+&lt;p&gt;The situation we have just outlined&amp;nbsp; is&amp;nbsp; two-dimensional motion.&amp;nbsp; More simply we might consider one-dimensional motion.&lt;/p&gt;&lt;p&gt;An example is the motion of the projection onto the \(x\)-axis of a point \(B\) which moves with uniform angular velocity \(\omega\) round a circle of radius \(R\) (see the figure below). As \(B\) moves round, its projection \(P\) moves to and fro across the diameter of the circle.&lt;/p&gt;
+&lt;figure class="HELM_figure"&gt;
+&lt;img src="@@PLUGINFILE@@/4-5-fig39.svg" alt="Fig 39" class="atto_image_button_text-bottom" width="225" height="187"&gt;
+&lt;/figure&gt;
+&lt;p&gt;The position of \(P\) is given by&lt;/p&gt;
+\[x=R\cos \omega t\]
+&lt;p&gt;Clearly, from the known properties of the cosine function, we can deduce the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;\(x\) varies periodically with \(t\) with period \(T=\dfrac{2\pi}{\omega}\).&lt;/li&gt;
+&lt;li&gt;\(x\) will have maximum value \(+R\) and minimum value \(-R\). (This quantity \(R\) is called the &lt;b&gt;amplitude&lt;/b&gt; of the motion.)&lt;/li&gt;
+&lt;/ol&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback/>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>0.0000000</defaultmark>
+        <penalty>0.0000000</penalty>
+        <qtype>description</qtype>
+        <length>0</length>
+        <stamp>stack2.maths.ed.ac.uk+200619132211+RXBCXq</stamp>
+        <version>stack-back1.maths.ed.ac.uk+210630122102+pGOJAB</version>
+        <hidden>0</hidden>
+        <timecreated>1592572931</timecreated>
+        <timemodified>1625055662</timemodified>
+        <createdby>642</createdby>
+        <modifiedby>2661</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>

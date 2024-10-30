@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question id="35808">
+        <parent>0</parent>
+        <name>1.5.2.10 Substitution</name>
+        <questiontext>&lt;p class="HELM_exercise"&gt;Exercise &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;If \(\eta = \dfrac{4Q_{p}}{\pi d^{2}Ln}\), find \(\eta\) if:&lt;/p&gt;&lt;p&gt;\(Q_p = {@dispdp(a1,4)@} \text{, } d = {@dispdp(float(a2),3)@} \text{, } L = {@dispdp(float(a3),3)@} \text{ and } R = {@dispdp(float(a4),3)@}.\)&lt;/p&gt;
+&lt;p&gt;(Give your answer as a decimal to three decimal places, note that trailing zeroes are required i.e. \(2.3\) must be written as \(2.300\).)&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;\(P =\) [[input:ans1]] [[validation:ans1]]&lt;/p&gt;</questiontext>
+        <questiontextformat>1</questiontextformat>
+        <generalfeedback>&lt;p&gt;In this example we have \( Q_p = {@dispdp(float(a1),4)@} \text{, } d = {@dispdp(float(a2),3)@} \text{, } L = {@dispdp(float(a3),3)@} \text{ and } R = {@dispdp(float(a4),3)@}\). Substituting these values into the formula we find:&lt;/p&gt;
+&lt;p&gt;\[\begin{align} \eta &amp;amp; = \dfrac{4Q_{p}}{\pi d^{2}Ln} = \dfrac{4\cdot{@dispdp(float(a1),4)@}}{\pi \cdot{@dispdp(float(a2),3)@}^2\cdot{@dispdp(float(a3),3)@}\cdot{@dispdp(float(a4),3)@}} \\ &amp;amp; = \dfrac{4 \cdot {@dispdp(float(a1),4)@}}{\pi\cdot{@dispdp(float(a2^2),3)@} \cdot {@dispdp(float(a3),3)@}\cdot{@dispdp(float(a4),3)@}}
+    = \dfrac{{@dispdp(float(4*a1),4)@}}{\pi \cdot{@dispdp(float((a2^2)*a3*a4),3)@}} \\ &amp;amp; = {@float(ev(eqs,w=a1,x=a2,y=a3,z=a4))@} \\ &amp;amp; = {@ta@}_{\text{ 3.d.p}} \end{align}\]&lt;/p&gt;</generalfeedback>
+        <generalfeedbackformat>1</generalfeedbackformat>
+        <defaultmark>1.0000000</defaultmark>
+        <penalty>0.1000000</penalty>
+        <qtype>stack</qtype>
+        <length>1</length>
+        <stamp>stack-back1.maths.ed.ac.uk+210812152816+RfFEdR</stamp>
+        <version>stack-back1.maths.ed.ac.uk+220113104616+2xrlUt</version>
+        <hidden>0</hidden>
+        <timecreated>1628782096</timecreated>
+        <timemodified>1642070776</timemodified>
+        <createdby>2762</createdby>
+        <modifiedby>642</modifiedby>
+        <idnumber>$@NULL@$</idnumber>
+        <plugin_qtype_stack_question>
+          <stackoptions id="24939">
+            <stackversion>2021072200</stackversion>
+            <questionvariables>eqs: (4*w)/(%pi*(x^2)*y*z);
+a1: rand([3/10000,5/10000]);
+a2: rand([1/20,1/40]);
+a3:rand([1/10, 1/5]);
+a4:2;
+ta: dispdp(float(ev(eqs,w=a1,x=a2,y=a3,z=a4)),3);</questionvariables>
+            <specificfeedback>[[feedback:prt1]]</specificfeedback>
+            <specificfeedbackformat>1</specificfeedbackformat>
+            <questionnote>\(\dfrac{4\cdot{@dispdp(float(a1),4)@}}{\pi \cdot{@dispdp(float(a2),3)@}^2\cdot{@dispdp(float(a3),3)@}\cdot{@dispdp(float(a4),3)@}} = {@ta@}\) 3.d.p</questionnote>
+            <questionsimplify>1</questionsimplify>
+            <assumepositive>0</assumepositive>
+            <assumereal>0</assumereal>
+            <prtcorrect>&lt;span style="font-size: 1.5em; color:green;"&gt;&lt;i class="fa fa-check"&gt;&lt;/i&gt;&lt;/span&gt; Correct answer, well done.</prtcorrect>
+            <prtcorrectformat>1</prtcorrectformat>
+            <prtpartiallycorrect>&lt;span style="font-size: 1.5em; color:orange;"&gt;&lt;i class="fa fa-adjust"&gt;&lt;/i&gt;&lt;/span&gt; Your answer is partially correct.</prtpartiallycorrect>
+            <prtpartiallycorrectformat>1</prtpartiallycorrectformat>
+            <prtincorrect>&lt;span style="font-size: 1.5em; color:red;"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;&lt;/span&gt; Incorrect answer.</prtincorrect>
+            <prtincorrectformat>1</prtincorrectformat>
+            <multiplicationsign>none</multiplicationsign>
+            <sqrtsign>1</sqrtsign>
+            <complexno>i</complexno>
+            <inversetrig>cos-1</inversetrig>
+            <logicsymbol>lang</logicsymbol>
+            <matrixparens>[</matrixparens>
+            <variantsselectionseed/>
+          </stackoptions>
+          <stackinputs>
+            <stackinput id="58178">
+              <name>ans1</name>
+              <type>numerical</type>
+              <tans>ta</tans>
+              <boxsize>6</boxsize>
+              <strictsyntax>1</strictsyntax>
+              <insertstars>0</insertstars>
+              <syntaxhint/>
+              <syntaxattribute>0</syntaxattribute>
+              <forbidwords>/</forbidwords>
+              <allowwords/>
+              <forbidfloat>0</forbidfloat>
+              <requirelowestterms>0</requirelowestterms>
+              <checkanswertype>0</checkanswertype>
+              <mustverify>1</mustverify>
+              <showvalidation>3</showvalidation>
+              <options>mindp:3</options>
+            </stackinput>
+          </stackinputs>
+          <stackprts>
+            <stackprt id="49845">
+              <name>prt1</name>
+              <value>1.0000000</value>
+              <autosimplify>1</autosimplify>
+              <feedbackstyle>1</feedbackstyle>
+              <feedbackvariables/>
+              <stackprtnodes>
+                <stackprtnode id="76244">
+                  <nodename>1</nodename>
+                  <answertest>NumAbsolute</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>0.011</testoptions>
+                  <quiet>1</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>0.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>2</truenextnode>
+                  <trueanswernote>prt1-2-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-2-F</falseanswernote>
+                  <falsefeedback/>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+                <stackprtnode id="76245">
+                  <nodename>2</nodename>
+                  <answertest>NumDecPlaces</answertest>
+                  <sans>ans1</sans>
+                  <tans>ta</tans>
+                  <testoptions>3</testoptions>
+                  <quiet>1</quiet>
+                  <truescoremode>+</truescoremode>
+                  <truescore>1.0000000</truescore>
+                  <truepenalty>$@NULL@$</truepenalty>
+                  <truenextnode>-1</truenextnode>
+                  <trueanswernote>prt1-3-T</trueanswernote>
+                  <truefeedback/>
+                  <truefeedbackformat>1</truefeedbackformat>
+                  <falsescoremode>-</falsescoremode>
+                  <falsescore>0.0000000</falsescore>
+                  <falsepenalty>$@NULL@$</falsepenalty>
+                  <falsenextnode>-1</falsenextnode>
+                  <falseanswernote>prt1-3-F</falseanswernote>
+                  <falsefeedback>Your final answer is almost correct, you may have made a mistake when rounding to three decimal places.</falsefeedback>
+                  <falsefeedbackformat>1</falsefeedbackformat>
+                </stackprtnode>
+              </stackprtnodes>
+            </stackprt>
+          </stackprts>
+          <stackqtests>
+            <stackqtest id="56618">
+              <testcase>1</testcase>
+              <timemodified>1628782096</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="123402">
+                  <inputname>ans1</inputname>
+                  <value>ta</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="105405">
+                  <prtname>prt1</prtname>
+                  <expectedscore>1.0000000</expectedscore>
+                  <expectedpenalty>0.0000000</expectedpenalty>
+                  <expectedanswernote>prt1-3-T</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="56619">
+              <testcase>2</testcase>
+              <timemodified>1630084360</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128368">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs,w=a1,x=a2,y=a3,z=a4)),2)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109873">
+                  <prtname>prt1</prtname>
+                  <expectedscore>$@NULL@$</expectedscore>
+                  <expectedpenalty>$@NULL@$</expectedpenalty>
+                  <expectedanswernote>NULL</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="59023">
+              <testcase>3</testcase>
+              <timemodified>1630084409</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128369">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs+0.1,w=a1,x=a2,y=a3,z=a4)),3)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109874">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-2-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+            <stackqtest id="59024">
+              <testcase>4</testcase>
+              <timemodified>1630084589</timemodified>
+              <stackqtestinputs>
+                <stackqtestinput id="128370">
+                  <inputname>ans1</inputname>
+                  <value>dispdp(float(ev(eqs+0.01,w=a1,x=a2,y=a3,z=a4)),3)</value>
+                </stackqtestinput>
+              </stackqtestinputs>
+              <stackqtestexpecteds>
+                <stackqtestexpected id="109875">
+                  <prtname>prt1</prtname>
+                  <expectedscore>0.0000000</expectedscore>
+                  <expectedpenalty>0.1000000</expectedpenalty>
+                  <expectedanswernote>prt1-3-F</expectedanswernote>
+                </stackqtestexpected>
+              </stackqtestexpecteds>
+            </stackqtest>
+          </stackqtests>
+          <stackdeployedseeds>
+            <stackdeployedseed id="244043">
+              <seed>78268699</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244044">
+              <seed>1405018131</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244045">
+              <seed>157136628</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244046">
+              <seed>1740770086</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244047">
+              <seed>1808451652</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244048">
+              <seed>201055404</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244049">
+              <seed>489847723</seed>
+            </stackdeployedseed>
+            <stackdeployedseed id="244050">
+              <seed>514530918</seed>
+            </stackdeployedseed>
+          </stackdeployedseeds>
+        </plugin_qtype_stack_question>
+        <question_hints>
+        </question_hints>
+        <tags>
+        </tags>
+      </question>
+      
+
+</quiz>
