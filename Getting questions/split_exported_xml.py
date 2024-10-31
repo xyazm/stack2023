@@ -48,15 +48,14 @@ questions=root.findall(".//question")
 
 for question in questions:
     if question not in root.findall(".//question[@type='category']"):
-        name=question.find('name').text
+        name_element = question.find('name')
+        if name_element is None:
+            continue  
+        name = name_element.text
         print(name)
+        question_id = question.get("id")
         filename=slugify(name)
-        path=os.path.join(folder,filename+'.xml')
-        i=0
-        while os.path.exists(path):
-            i+=1
-            print(colored("Error: File exists: "+path,"red"))
-            path=os.path.join(folder,filename+'___'+str(i)+'.xml')
+        path=os.path.join(folder,question_id+'_'+filename+'.xml')
         f=open(path,'wb')
         f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
         f.write(ET.tostring(question,pretty_print=True))
