@@ -9,6 +9,7 @@ directoryOfScript = pathlib.Path(__file__).parent.resolve()
 enviroment = Environment(loader=FileSystemLoader(directoryOfScript))
 template = enviroment.get_template("quiz_temp.xml.jinja")
 
+
 try:
     os.chdir(sys.argv[1])
 except OSError as error:

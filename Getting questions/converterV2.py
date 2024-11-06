@@ -2,40 +2,35 @@
 
 import os
 import sys
-import pyzipper
 import lxml.etree as ET
-from termcolor import colored
 import unicodedata
 import re
 import glob
 import pathlib
 from jinja2 import Environment, FileSystemLoader
-import shutil
+import tarfile
 
-
-def extract_mbz(mbz_file, extract_to):
+def get_question_from_mbz(mbz_file):
     if not os.path.isfile(mbz_file):
         print(f"File not found: {mbz_file}")
         sys.exit(1)
-
-    # Umbenennen der MBZ-Datei in ZIP
-    zip_file = mbz_file.replace('.mbz', '.zip')
-    shutil.copy(mbz_file, zip_file)
-
-    # Erstellen des Verzeichnisses zum Extrahieren
-    os.makedirs(extract_to, exist_ok=True)
+    
+    try:
+        tar = tarfile.open(mbz_file, "r:gz")
+    except:
+        sys.exit("Error while opening file. Make sure that it is a proper moodle course export (.mbz)")
 
     try:
-        # Extrahieren der ZIP-Datei
-       with pyzipper.AESZipFile(mbz_file, 'r') as zip_ref:
-        zip_ref.extractall(extract_to)
-        print("Extraction successful.")
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
-        sys.exit(1)
+        questions=[t for t in tar if t.name=="questions.xml"][0]
+    except:
+        sys.exit("Error: Could not find/extract questions.xml")
+    fileobj=tar.extractfile(questions)
 
-    # Rückgabe des Verzeichnispfades, in das extrahiert wurde
-    return extract_to
+    tree = ET.parse(fileobj)
+    root = tree.getroot()
+
+    return root
+
 
 def slugify(value, allow_unicode=False):
     value = str(value)
@@ -46,53 +41,42 @@ def slugify(value, allow_unicode=False):
     value = re.sub(r'[^\w\s\-\.]', '', value.lower())
     return re.sub(r'[-\s]+', '-', value).strip('-_')
 
-def split_xml():
-    filename = "question.xml" 
-    folder = "separate_questions"
-    
+def split_xml(root):
+
+    folder="separate_questions"
+
     if not os.path.exists(folder):
         os.makedirs(folder)
-
-    parser = ET.XMLParser(strip_cdata=False)
-    tree = ET.parse(filename, parser)
-    root = tree.getroot()
 
     questions = root.findall(".//question")
 
     for question in questions:
         if question not in root.findall(".//question[@type='category']"):
-            name = question.find('name').find('text').text
-            print(name)
-            filename = slugify(name)
-            path = os.path.join(folder, filename + '.xml')
-            i = 0
-            while os.path.exists(path):
-                i += 1
-                print(colored("Error: File exists: " + path, "red"))
-                path = os.path.join(folder, filename + '___' + str(i) + '.xml')
-            with open(path, 'wb') as f:
-                f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
-                f.write(ET.tostring(question, pretty_print=True))
-                f.write(b'\n</quiz>')
+            name_element = question.find('name')
+        if name_element is None:
+            continue  
+        name = name_element.text
+        print(name)
+        question_id = question.get("id")
+        filename=slugify(name)
+        path=os.path.join(folder,question_id+'_'+filename+'.xml')
+        f=open(path,'wb')
+        f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
+        f.write(ET.tostring(question,pretty_print=True))
+        f.write(b'\n</quiz>')
+        f.close()
 
 def convert2xml():
     directoryOfScript = pathlib.Path(__file__).parent.resolve()
     environment = Environment(loader=FileSystemLoader(directoryOfScript))
     template = environment.get_template("quiz_temp.xml.jinja")
 
-    try:
-        os.chdir(sys.argv[1])
-    except OSError as error:
-        print(error)
+    workingDirectory = directoryOfScript / "separate_questions"  
+    os.chdir(workingDirectory)
+    convertedDirectory = "convertedMoodleXml"
 
-    directory = 'convertedMoodleXml'
-    workingDirectory = pathlib.Path().resolve()
-    try: 
-        if not os.path.exists(directory):
-            path = os.path.join(workingDirectory, directory)
-            os.mkdir(path)
-    except OSError as error: 
-        print(error)
+    if not os.path.exists(convertedDirectory):
+        os.makedirs(convertedDirectory)
 
     filename = glob.glob('*.xml')
 
@@ -176,14 +160,14 @@ def convert2xml():
         tags.append(root[0].find('stamp'))
         tags.append(root[0].find('version'))
 
+        newfile = str(convertedDirectory) + f"/converted_{file}"
         content = template.render(info_template=infos, questionid=questionId, input_template=inputs, deployedseed=seeds, prt_template = prts, qtests = stackqtest, tag = tags)   
         try:
-            with open("new_xml/new_"+file, mode="w", encoding="utf-8") as newfile:
+            with open(newfile, mode="w", encoding="utf-8") as newfile:
                 newfile.write(content)
+                print(f"File {file} converted")
         except FileNotFoundError:
-            print("The 'new_xml_data' directory does not exist")
-        finally:
-            newfile.close() 
+            print(f"The {newfile} directory does not exist")
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
@@ -193,12 +177,10 @@ if __name__ == '__main__':
     mbz_file = sys.argv[1]
     
     # Step 1: Extract question.xml from mbz
-    extract_dir = extract_mbz(mbz_file, 'extracted_mbz')
-    os.chdir(extract_dir)
+    root = get_question_from_mbz(mbz_file)
 
     # Step 2: Split question.xml into separate files
-    split_xml()
+    split_xml(root)
 
     # Step 3: Process the separate XML files 
-    os.chdir("separate_questions")  # Korrigierte Schreibweise
     convert2xml()
