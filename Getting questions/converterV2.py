@@ -88,6 +88,11 @@ def convert2xml():
     for file in filename:
         tree = ET.parse(file)
         root = tree.getroot()  
+        question = root.find('question')
+
+        if question.find('qtype') is None or question.find('qtype').text != 'stack':
+            continue
+
         questionId= "<!-- question: "+ str(root[0].get('id')) +" -->"
 
         # regular information about question
@@ -160,7 +165,7 @@ def convert2xml():
         tags.append(root[0].find('stamp'))
         tags.append(root[0].find('version'))
 
-        newfile = str(convertedDirectory) + f"/converted_{file}"
+        newfile = str(convertedDirectory) + f"/converted_stack_{file}"
         content = template.render(info_template=infos, questionid=questionId, input_template=inputs, deployedseed=seeds, prt_template = prts, qtests = stackqtest, tag = tags)   
         try:
             with open(newfile, mode="w", encoding="utf-8") as newfile:

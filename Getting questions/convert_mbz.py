@@ -34,6 +34,13 @@ def checkForNone(checkvar):
 for file in filename:
     tree = ET.parse(file)
     root = tree.getroot()  
+
+    question = root.find('question')
+
+    if question.find('qtype') is None or question.find('qtype').text != 'stack':
+        print(question.find('qtype').text)
+        continue
+
     questionId= "<!-- question: "+ str(root[0].get('id')) +" -->"
 
     # regular information about question
